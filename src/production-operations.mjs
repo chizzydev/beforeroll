@@ -52,11 +52,11 @@ function resolveSceneWindow({date,timeZone,start,end,endsNextDay}){
  if(minutes<=0||minutes>24*60)throw Error('Scene UTC interval must be positive and no longer than 24 hours');
  return {startUtc,endUtc,endDate,durationMinutes:minutes};
 }
-function currentSchedule(w,entry){return sceneHash(w,entry.sceneId)===entry.sceneRowHash;}
+function currentSchedule(w,entry){return (sceneOf(w,entry.sceneId)?.sourceEpoch??0)===(entry.sceneEpoch??0)&&sceneHash(w,entry.sceneId)===entry.sceneRowHash;}
 function findSource(w,docId,unitId){const d=w.documents.find(d=>d.id===docId);const u=d?.units.find(u=>u.id===unitId);return {d,u};}
-function currentCondition(w,item){if(sceneHash(w,item.sceneId)!==item.sceneRowHash||latestScheduleEntries(w).get(item.sceneId)?.id!==item.scheduleId)return false;
+function currentCondition(w,item){if((sceneOf(w,item.sceneId)?.sourceEpoch??0)!==(item.sceneEpoch??0)||sceneHash(w,item.sceneId)!==item.sceneRowHash||latestScheduleEntries(w).get(item.sceneId)?.id!==item.scheduleId)return false;
  if(item.documentId){const {d,u}=findSource(w,item.documentId,item.unitId);
-  if(!d||!u||d.sourceHash!==item.documentHash||u.hash!==item.unitHash||!verifySourceUnit(d.text,u))return false;
+  if(!d||!u||(d.analysisEpoch??0)!==(item.documentEpoch??0)||d.sourceHash!==item.documentHash||u.hash!==item.unitHash||!verifySourceUnit(d.text,u))return false;
  }
  return true;
 }
@@ -68,7 +68,7 @@ export function recordSceneSchedule(w,{sceneId,date,timeZone,endsNextDay,reviewe
  if(!txt(reviewer,150)||!txt(reason,2000))throw Error('Schedule reviewer and source/date rationale required');
  const window=resolveSceneWindow({date,timeZone,start:s.start,end:s.end,endsNextDay});
  if((w.sceneSchedules?.length??0)>=2500)throw Error('Too many schedule history records');
- const base={sceneId,sceneRowHash:sceneHash(w,sceneId),date,timeZone,start:s.start,end:s.end,endsNextDay,reviewer,reason,...window};
+ const base={sceneId,sceneRowHash:sceneHash(w,sceneId),date,timeZone,start:s.start,end:s.end,endsNextDay,reviewer,reason,...window,...(s.sourceEpoch>0?{sceneEpoch:s.sourceEpoch}:{})};
  const id=digest(base);if((w.sceneSchedules??[]).some(e=>e.id===id))throw Error('Duplicate exact scene schedule');
  (w.sceneSchedules??(w.sceneSchedules=[])).push({...base,id,recordedAtRevision:w.revision+1,notClearance:true});
  w.revision++;return w;
@@ -89,7 +89,8 @@ export function recordCondition(w,{sceneId,title,documentId=null,unitId=null,due
   dueUtc=resolveLocalTime(dueLocal.slice(0,10),dueLocal.slice(11),current.timeZone);
  }
  if((w.conditions?.length??0)>=50000)throw Error('Too many condition records');
- const base={sceneId,sceneRowHash:sceneHash(w,sceneId),scheduleId:current.id,title,documentId,unitId,documentHash:docHash,unitHash,quote,dueLocal,dueUtc,timeZone:current.timeZone,reviewer,reason};
+ const documentEpoch=documentId?findSource(w,documentId,unitId).d.analysisEpoch??0:0;
+ const base={sceneId,sceneRowHash:sceneHash(w,sceneId),scheduleId:current.id,title,documentId,unitId,documentHash:docHash,unitHash,quote,dueLocal,dueUtc,timeZone:current.timeZone,reviewer,reason,...(s.sourceEpoch>0?{sceneEpoch:s.sourceEpoch}:{}),...(documentEpoch>0?{documentEpoch}:{})};
  const id=digest(base);if((w.conditions??[]).some(e=>e.id===id))throw Error('Duplicate source-bound prerequisite');
  (w.conditions??(w.conditions=[])).push({...base,id,recordedAtRevision:w.revision+1,notClearance:true});w.revision++;return w;
 }
@@ -105,6 +106,7 @@ export function decideCondition(w,{conditionId,decision,reviewer,reason}){
 export function assertProductionOperationsIntegrity(w){
  assertWorkspaceSources(w);
  const scheduleIds=new Set(),conditionIds=new Set(),decisionIds=new Set();
+ for(const record of [...w.sceneSchedules??[],...w.conditions??[]])for(const key of ['sceneEpoch','documentEpoch'])if(record[key]!==undefined&&(!Number.isSafeInteger(record[key])||record[key]<0))throw Error('Operational source lineage invalid');
  for(const e of w.sceneSchedules??[]){const {id,recordedAtRevision,notClearance,...base}=e;
   if(!hex(id)||id!==digest(base)||notClearance!==true||!Number.isSafeInteger(recordedAtRevision)||recordedAtRevision<1||!txt(e.reviewer,150)||!txt(e.reason,2000)||!txt(e.sceneRowHash,64)||!hex(e.sceneRowHash)||!validDate(e.date)||!txt(e.timeZone,80)||!txt(e.sceneId,80))throw Error('Corrupt scene schedule record');
   const derived=resolveSceneWindow(e);

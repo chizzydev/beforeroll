@@ -83,7 +83,7 @@ export function previewSourceChange(workspace,envelope,{documentId=null,persiste
   effect:'READ_ONLY_RECONCILIATION_NOT_CLEARANCE'
  };
  const output={schema:'beforeroll-readonly-source-impact-v1',productionId:workspace.id,persistedVersion,
-  requested:{kind:envelope.kind,documentId:envelope.kind==='permit'?documentId:null,fileName:envelope.name,originalFileSha256:envelope.rawHash,extractedTextSha256:envelope.normalizedHash},
+  requested:{kind:envelope.kind,documentId:envelope.kind==='permit'?documentId:null,fileName:envelope.name,originalFileSha256:envelope.rawHash,extractedTextSha256:envelope.normalizedHash,importEnvelopeSha256:sha(envelope)},
   changed:envelope.kind==='callSheet'?before.callSheetHash!==after.callSheet?.sourceHash:
    !before.documents.some(d=>d.id===documentId&&d.sourceHash===revisedDoc?.sourceHash&&d.rawHash===revisedDoc?.importReceipt?.rawHash),
   before:{planTasks:oldTaskCount,planBlocked:beforePlan.blocked,documents:before.documents.length,scenes:before.sceneIds.length,currentHumanReviewRecords:priorReviews,
@@ -93,6 +93,6 @@ export function previewSourceChange(workspace,envelope,{documentId=null,persiste
   tasks:affected,
   preservedHistory:{reviewRecords:workspace.reviewActions.length,authorityLinks:(workspace.authorityLinks??[]).length,sceneAuthorityClaims:(workspace.sceneAuthority??[]).length,operationalConditions:(workspace.conditions??[]).length},
   reconciliation,previewOnly:true,providerCalls:0,notClearance:true,
-  warning:'This is a non-mutating preview of the exact source update. Any intervening writer increments persistedVersion and blocks the actual import. Old model journals and human history remain archived, not re-authorized.'};
+  warning:'This is a non-mutating preview of the exact source update. Any intervening writer increments persistedVersion and blocks the actual import. Changed tasks and affected human bindings retire; exact unchanged tasks retain original evidence and reported costs without new requests or approvals.'};
   return {...output,previewSha256:sha(output)};
 }

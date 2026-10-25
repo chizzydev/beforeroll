@@ -27,18 +27,19 @@ export function recordAuthorityLink(workspace,{fromId,toId,kind,start,end,quote,
  if(!linkKinds.has(kind)||!nonempty(reviewer)||!nonempty(reason,2000)||!validSpan(from,start,end,quote))throw Error('Authority link needs supported kind and exact source-linked quotation');
  const links=workspace.authorityLinks??=[];
  if(links.length>=1000)throw Error('Document relationship cap reached; divide this project safely');
- const identity=sha({fromId,toId,kind,sourceHash:from.sourceHash,targetHash:to.sourceHash,start,end,quote});
+ const lineage={...(from.analysisEpoch>0?{fromEpoch:from.analysisEpoch}:{}),...(to.analysisEpoch>0?{toEpoch:to.analysisEpoch}:{})};
+ const identity=sha({fromId,toId,kind,sourceHash:from.sourceHash,targetHash:to.sourceHash,start,end,quote,...lineage});
  if(links.some(e=>e.id===identity))throw Error('Duplicate documentary link for the same original source');
  if(['AMENDS','SUPERSEDES'].includes(kind)){
   // Cannot prove chronology or precedence, but block impossible owner-entered cycles.
   const adjacency=new Map();
-  for(const e of links.filter(x=>['AMENDS','SUPERSEDES'].includes(x.kind)&&x.fromHash===workspace.documents.find(d=>d.id===x.fromId)?.sourceHash&&x.toHash===workspace.documents.find(d=>d.id===x.toId)?.sourceHash)){
+  for(const e of links.filter(x=>['AMENDS','SUPERSEDES'].includes(x.kind)&&current(x,new Map(workspace.documents.map(d=>[d.id,d]))))){
    const arr=adjacency.get(e.fromId)??[];arr.push(e.toId);adjacency.set(e.fromId,arr);
   }
   const stack=[toId],seen=new Set();
   while(stack.length){const id=stack.pop();if(id===fromId)throw Error('Circular amendment/supersession relationship');if(seen.has(id))continue;seen.add(id);stack.push(...(adjacency.get(id)??[]));}
  }
- links.push({id:identity,fromId,toId,kind,start,end,quote,fromHash:from.sourceHash,toHash:to.sourceHash,
+ links.push({id:identity,fromId,toId,kind,start,end,quote,fromHash:from.sourceHash,toHash:to.sourceHash,...lineage,
   reviewer,reason,declaredAtRevision:workspace.revision+1,state:'HUMAN_ASSERTED_UNVERIFIED',notClearance:true});
  workspace.revision++;return workspace;
 }
@@ -51,13 +52,14 @@ export function assertAuthorityIntegrity(workspace){
   if(!roles.has(meta.role)||!nonempty(meta.reference,200)||!nonempty(meta.issuer,200)||!certifiedDate(meta.issuedOn)||!nonempty(meta.reviewer)||!nonempty(meta.reason,2000)||meta.notClearance!==true||meta.sourceHash!==d.sourceHash||meta.reviewedAtRevision!==d.revision)throw Error('Document authority metadata stale or malformed');
  }
  for(const link of workspace.authorityLinks??[]){
+  for(const key of ['fromEpoch','toEpoch'])if(link[key]!==undefined&&(!Number.isSafeInteger(link[key])||link[key]<0))throw Error('Document relationship source lineage invalid');
   const from=docs.get(link.fromId),to=docs.get(link.toId);
   if(!from||!to||from.id===to.id||!linkKinds.has(link.kind)||!nonempty(link.reviewer)||!nonempty(link.reason,2000)||link.notClearance!==true||link.state!=='HUMAN_ASSERTED_UNVERIFIED'||(!validSpan(from,link.start,link.end,link.quote)&&link.fromHash===from.sourceHash))throw Error('Document relationship integrity failure');
-  if(link.id!==sha({fromId:link.fromId,toId:link.toId,kind:link.kind,sourceHash:link.fromHash,targetHash:link.toHash,start:link.start,end:link.end,quote:link.quote})||ids.has(link.id))throw Error('Document relationship identity or duplicate failure');ids.add(link.id);
+  if(link.id!==sha({fromId:link.fromId,toId:link.toId,kind:link.kind,sourceHash:link.fromHash,targetHash:link.toHash,start:link.start,end:link.end,quote:link.quote,...(link.fromEpoch>0?{fromEpoch:link.fromEpoch}:{}),...(link.toEpoch>0?{toEpoch:link.toEpoch}:{})})||ids.has(link.id))throw Error('Document relationship identity or duplicate failure');ids.add(link.id);
  }
  return true;
 }
-function current(link,docs){const a=docs.get(link.fromId),b=docs.get(link.toId);return Boolean(a&&b&&a.sourceHash===link.fromHash&&b.sourceHash===link.toHash&&validSpan(a,link.start,link.end,link.quote));}
+function current(link,docs){const a=docs.get(link.fromId),b=docs.get(link.toId);return Boolean(a&&b&&(a.analysisEpoch??0)===(link.fromEpoch??0)&&(b.analysisEpoch??0)===(link.toEpoch??0)&&a.sourceHash===link.fromHash&&b.sourceHash===link.toHash&&validSpan(a,link.start,link.end,link.quote));}
 export function projectAuthorityGraph(workspace,{offset=0,limit=60}={}){
  assertWorkspaceSources(workspace);assertAuthorityIntegrity(workspace);
  if(!Number.isSafeInteger(offset)||offset<0||offset>10000||!Number.isSafeInteger(limit)||limit<1||limit>100)throw Error('Authority graph pagination out of range');

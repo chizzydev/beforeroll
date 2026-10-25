@@ -48,12 +48,13 @@ export function planIntelligence(workspace,{maxTasks=MAX_PLAN_TASKS}={}){
   }
  }
  return {schema:'beforeroll-intelligence-plan-v1',workspaceId:workspace.id,workspaceRevision:workspace.revision,
-  callSheetHash:workspace.callSheet.sourceHash,documents:workspace.documents.map(d=>({id:d.id,hash:d.sourceHash,revision:d.revision,unitCount:d.units.length})),
+  callSheetHash:workspace.callSheet.sourceHash,sceneEpochs:workspace.callSheet.scenes.map(s=>[s.id,s.sourceEpoch??0]),documents:workspace.documents.map(d=>({id:d.id,hash:d.sourceHash,revision:d.revision,unitCount:d.units.length})),
   plannedCalls:tasks.length,taskIds:tasks.map(t=>t.id),tasks,complete:false,sourceCompleteClaim:false,
   note:'Source text covered by the candidate plan; no claim of legal completeness or authorization.'};
 }
 export function assertPlanFresh(workspace,plan){
  assertWorkspaceSources(workspace);
+ if(JSON.stringify(plan?.sceneEpochs)!==JSON.stringify(workspace.callSheet?.scenes.map(s=>[s.id,s.sourceEpoch??0])))throw Error('Plan is stale: scene source lineage changed');
  if(!plan||plan.schema!=='beforeroll-intelligence-plan-v1'||workspace.id!==plan.workspaceId||workspace.callSheet?.sourceHash!==plan.callSheetHash||JSON.stringify(plan.documents)!==JSON.stringify(workspace.documents.map(d=>({id:d.id,hash:d.sourceHash,revision:d.revision,unitCount:d.units.length}))))throw Error('Plan is stale or does not match current original sources');
  return true;
 }

@@ -130,7 +130,9 @@ test('project creation to model execution, human review, prerequisites, revision
   assert.equal(status(b.journey,'scope').status,'ATTENTION');
   assert.equal(status(b.journey,'review').status,'ATTENTION');
   assert(b.dossier.counts.staleHumanReviews>0);assert(b.dossier.counts.archivedModelRuns>=1);
-  assert.equal(b.dossier.counts.completedModelChecks,0,'historical model answers are not current source results');
+  assert.equal(b.dossier.counts.completedModelChecks,4,'only the unchanged amendment tasks retain exact model evidence');
+  assert.equal(b.execution.retainedAttempts,4);
+  assert.equal(b.execution.newPlanAttempts,0);
   assert.equal(b.journey.notClearance,true);
   const updated=await l.get(end+`/dossier?asOf=${encodeURIComponent(b.asOf)}&expectedVersion=${version}&expectedDossierSha256=${b.dossierSha256}`);assert.equal(updated.status,200);assert.equal(updated.body.sha256,b.dossierSha256);
   assert.equal((await l.get(end+'/dossier'+auditedQuery)).status,409,'stale evidence export cannot reuse former version');

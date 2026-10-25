@@ -82,7 +82,7 @@ test('source change and scene change stale human applicability separately withou
  const w=workspace();const a={sceneId:'S12',documentId:'permit',unitId:'U001',kind:'RESTRICTION',scope:'SCOPE_UNRESOLVED',reviewer:'Coordinator',reason:'Manual question'};
  recordSceneAuthority(w,a);setCallSheet(w,'Scene 12 | South loading bay | 10:00-11:00 | Handheld camera');
  assert.equal(projectSceneAuthority(w).summary.stale,1);assertSceneAuthorityIntegrity(w);
- setCallSheet(w,row);assert.equal(projectSceneAuthority(w).summary.current,1);
+ setCallSheet(w,row);assert.equal(projectSceneAuthority(w).summary.current,0,'same-text reversal must retain the old claim as historical');
  reviseDocument(w,'permit','No cameras.\n\nOnly Scene 12 may use the loading bay.');assert.equal(projectSceneAuthority(w).summary.stale,1);
 });
 test('scene authority refuses forged identities and source quotations',()=>{

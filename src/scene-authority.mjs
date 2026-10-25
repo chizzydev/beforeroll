@@ -32,18 +32,19 @@ function activeBinding(workspace,entry){
  const doc=workspace.documents.find(d=>d.id===entry.documentId),scene=workspace.callSheet?.scenes.find(s=>s.id===entry.sceneId);
  if(!doc||!scene)return false;
  const unit=doc.units.find(u=>u.id===entry.unitId);
- return doc.sourceHash===entry.documentHash&&sha(sceneRow(workspace,scene))===entry.sceneRowHash&&
+ return (doc.analysisEpoch??0)===(entry.documentEpoch??0)&&(scene.sourceEpoch??0)===(entry.sceneEpoch??0)&&doc.sourceHash===entry.documentHash&&sha(sceneRow(workspace,scene))===entry.sceneRowHash&&
   Boolean(unit&&unit.start===entry.start&&unit.end===entry.end&&unit.hash===entry.quoteHash&&unit.text===entry.quote&&verifySourceUnit(doc.text,unit));
 }
 export function assertSceneAuthorityIntegrity(workspace){
  guard(workspace);const seen=new Set();
  for(const e of workspace.sceneAuthority??[]){
+  for(const key of ['documentEpoch','sceneEpoch'])if(e[key]!==undefined&&(!Number.isSafeInteger(e[key])||e[key]<0))throw Error('Scene authority source lineage invalid');
   if(!str(e.id,64)||!/^[a-f0-9]{64}$/.test(e.id)||!str(e.sceneId,80)||!str(e.documentId,80)||!str(e.unitId,40)||
    !kinds.has(e.kind)||!scopes.has(e.scope)||!str(e.reviewer,150)||!str(e.reason,2000)||!str(e.quote,1750)||
    !/^[a-f0-9]{64}$/.test(e.documentHash)||!/^[a-f0-9]{64}$/.test(e.sceneRowHash)||!/^[a-f0-9]{64}$/.test(e.quoteHash)||sha(e.quote)!==e.quoteHash||
    !Number.isSafeInteger(e.start)||!Number.isSafeInteger(e.end)||e.start<0||e.end<=e.start||!checkApplicability(e.applicability)||e.notClearance!==true||e.status!=='HUMAN_RECORDED_NOT_VERIFIED')
    throw Error('Scene authority record corrupted');
-  if(seen.has(e.id)||e.id!==stable({sceneId:e.sceneId,sceneRowHash:e.sceneRowHash,documentId:e.documentId,documentHash:e.documentHash,unitId:e.unitId,quoteHash:e.quoteHash,start:e.start,end:e.end,kind:e.kind,scope:e.scope,reviewer:e.reviewer,reason:e.reason,...(e.applicability?{applicability:e.applicability}:{})}))throw Error('Scene authority identity mismatch or duplicate');
+  if(seen.has(e.id)||e.id!==stable({sceneId:e.sceneId,sceneRowHash:e.sceneRowHash,documentId:e.documentId,documentHash:e.documentHash,unitId:e.unitId,quoteHash:e.quoteHash,start:e.start,end:e.end,kind:e.kind,scope:e.scope,reviewer:e.reviewer,reason:e.reason,...(e.applicability?{applicability:e.applicability}:{}),...(e.documentEpoch>0?{documentEpoch:e.documentEpoch}:{}),...(e.sceneEpoch>0?{sceneEpoch:e.sceneEpoch}:{})}))throw Error('Scene authority identity mismatch or duplicate');
   seen.add(e.id);
   const d=workspace.documents.find(d=>d.id===e.documentId),s=workspace.callSheet?.scenes.find(s=>s.id===e.sceneId);
   if(!d)throw Error('Scene authority lost referenced document');
@@ -71,7 +72,7 @@ export function recordSceneAuthority(workspace,{sceneId,documentId,unitId,kind,s
   }
  }
  if((workspace.sceneAuthority?.length??0)>=2000)throw Error('Scene authority record limit; split the production');
- const base={sceneId,sceneRowHash:sha(sceneRow(workspace,s)),documentId,documentHash:d.sourceHash,unitId,quoteHash:u.hash,start:u.start,end:u.end,kind,scope,reviewer,reason,...(applicability?{applicability}:{})};
+ const base={sceneId,sceneRowHash:sha(sceneRow(workspace,s)),documentId,documentHash:d.sourceHash,unitId,quoteHash:u.hash,start:u.start,end:u.end,kind,scope,reviewer,reason,...(applicability?{applicability}:{}),...(d.analysisEpoch>0?{documentEpoch:d.analysisEpoch}:{}),...(s.sourceEpoch>0?{sceneEpoch:s.sourceEpoch}:{})};
  const id=stable(base);const previous=workspace.sceneAuthority??(workspace.sceneAuthority=[]);
  if(previous.some(e=>e.id===id))throw Error('Duplicate source-to-scene assertion');
  previous.push({...base,id,quote:u.text,status:'HUMAN_RECORDED_NOT_VERIFIED',recordedAtRevision:workspace.revision+1,notClearance:true});

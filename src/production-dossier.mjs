@@ -51,7 +51,7 @@ export function buildProductionDossier(w,{persistedVersion,asOf,modelEvidence=nu
   return {id:t.id,sceneId:t.sceneId,documentId:t.documentId,documentHash:t.documentHash,sceneHash:t.sceneHash,
    unitId:t.unitId,sourceRange:t.sourceRange,quote:t.sourceQuote,requestHash:t.requestHash,
    modelState:r?.status??'NOT_ATTEMPTED',modelOrigin:r?(r.finding?.replayOrigin??'LOCAL_OWNER_RUN_NOT_CRYPTOGRAPHICALLY_ATTESTED'):'NO_MODEL_RECORDING',
-   model:r?.finding??null,reportedCredits:r?.credits??null,error:r?.error??null,notClearance:true};
+   model:r?.finding??null,reportedCredits:r?.credits??null,error:r?.error??null,inheritedFromPlanKey:r?.inheritedFromPlanKey??null,notClearance:true};
  })??[];
  const documentary=projectDocumentaryReasoning(w,{asOf,modelRecords:records});
  const documentaryByScene=new Map(documentary.scenes.map(x=>[x.sceneId,x]));
@@ -162,6 +162,7 @@ export function dossierMarkdown(dossier){
    const review=dossier.currentTaskReviews.find(r=>r.evidenceId===t.id);
    lines.push(`- [${t.modelState}] ${safeLine(t.documentId)}/${safeLine(t.unitId)} [${t.sourceRange.join(',')}) SHA-256 ${t.documentHash}: ${safeLine(t.quote)}`);
    if(t.model)lines.push(`  - Clocked result: ${t.model.code} · activity link ${t.model.relevance??'unknown'} · grant ${t.model.grant??'unknown'} · scope ${t.model.scope?.matched===false?'UNVERIFIED':t.model.scope?.matched===true?'SCENE_NAMED_MODEL_ONLY':'NOT CLAIMED'} · request ${t.requestHash}`);
+   if(t.inheritedFromPlanKey)lines.push(`  - Retained exact unchanged task from journal ${t.inheritedFromPlanKey}; no new request or additional credit consumption for this retained result.`);
    if(review)lines.push(`  - Human review: ${review.decision}, ${safeLine(review.reviewer)} — ${safeLine(review.reason)}`);
   }
  }

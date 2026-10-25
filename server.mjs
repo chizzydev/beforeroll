@@ -27,11 +27,11 @@ import {buildSceneWorkbench} from './src/scene-workbench.mjs';
 import {buildProductionJourney} from './src/production-journey.mjs';
 import {certifyProductionConsistency} from './src/production-consistency.mjs';
 import {previewReviewSession,commitReviewSession} from './src/review-session.mjs';
-import {createLifecycleBackup} from './src/production-lifecycle.mjs';
+import {createLifecycleBackup,verifyLifecycleBackup,restoreLifecycleBackup} from './src/production-lifecycle.mjs';
 import {createSourceOriginalVault,referencedOriginals} from './src/source-originals.mjs';
 import {previewSourceChange,verifySourceChangeCommit} from './src/source-change-control.mjs';
 import {createOwnerSecurity,trustedOwnerRequest} from './src/owner-security.mjs';
-import {encryptOwnerBackup} from './src/secure-backup.mjs';
+import {encryptOwnerBackup,decryptOwnerBackup} from './src/secure-backup.mjs';
 import {makeEvaluationRuntime} from './src/evaluation-mode.mjs';
 import {loadLocalEnv} from './src/local-env.mjs';
 const ROOT=path.dirname(fileURLToPath(import.meta.url));
@@ -322,6 +322,20 @@ export function createAppServer(options={}){
   const parts=uri.pathname.split('/').slice(2);
   const id=parts[1]||null,action=parts[2]||null;
   try{
+   if(id==='recovery'&&['verify','restore'].includes(action)&&req.method==='POST'){
+    if(evaluationMode)return send(res,403,{error:'Private backup recovery is unavailable in the disposable evaluation sandbox. Open the private launcher.'});
+    if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
+    const input=await jsonBody(req,96*1024*1024);
+    const backup=await decryptOwnerBackup(input.backup,input.passphrase);
+    const verified=verifyLifecycleBackup(backup,execution);
+    const existing=await store.load(backup.workspaceId);
+    if(action==='verify')return send(res,200,{...verified,canRestore:!existing,existingVersion:existing?.version??null,
+     notice:existing?'Verified backup; recovery refuses to overwrite this existing production. Recover into a fresh local data folder.':'Verified backup; original files and journals can be restored without provider calls.'});
+    if(input.confirmId!==backup.workspaceId||input.previewSha256!==verified.backupSha256)throw Error('Verify this exact backup first and confirm its production ID');
+    if(existing)return send(res,409,{error:'Recovery refuses to overwrite an existing production. Your current production is unchanged.'});
+    const recovered=await restoreLifecycleBackup(backup,{workspaceStore:store,execution,sourceVault:originalVault,ownerConfirmed:true});
+    return send(res,201,recovered);
+   }
    if(!id&&req.method==='GET')return send(res,200,{schema:'beforeroll-workspace-list-v1',items:await store.list()});
    if(!id&&req.method==='POST'){
     if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
@@ -503,8 +517,18 @@ export function createAppServer(options={}){
     const originals={schema:'beforeroll-original-source-register-v1',productionId:id,persistedVersion:saved.version,
      referenced:inventory.referenced,preserved:inventory.preserved,missingOriginalSha256:inventory.missingOriginalSha256,files:inventory.items};
     const certificate=certifyProductionConsistency(saved.workspace,dossier,{persistedVersion:saved.version,originals});
+    let evidencePack=null;
+    if(parts[3]==='complete'){
+     const backup=await createLifecycleBackup(saved,execution,{asOf});
+     if(backup.integrity.dossierSha256!==dossier.sha256)return send(res,409,{error:'Model evidence changed during export; reload the current production.'});
+     evidencePack={schema:'beforeroll-complete-production-evidence-v1',productionId:id,persistedVersion:saved.version,
+      dossier,consistency:certificate,workspace:saved.workspace,journals:backup.journals,originals,
+      originalBytesIncluded:false,secretsIncluded:false,notClearance:true,
+      notice:'Includes current and historical model journals. Archived journals are checksum-checked, not revalidated against absent historical sources. Exact original bytes are available separately or in an encrypted lifecycle backup. Retained task credits are the original reported costs, never additional charges.'};
+    }
     const latest=await store.load(id);if(!latest||latest.version!==saved.version||latest.sha256!==saved.sha256)return send(res,409,{error:'Production changed during export. Refresh the evidence before exporting.',currentVersion:latest?.version??null});
     res.setHeader('X-BeforeRoll-Consistency-Sha256',certificate.sha256);
+    if(evidencePack)return send(res,200,evidencePack);
     if(parts[3]==='summary')return send(res,200,{schema:dossier.schema,productionId:dossier.productionId,title:dossier.title,
      persistedVersion:dossier.persistedVersion,revision:dossier.workspaceRevision,asOf:dossier.asOf,counts:dossier.counts,
      outstanding:dossier.outstanding,scenes:dossier.scenes.map(x=>({sceneId:x.sceneId,readiness:x.readiness,issues:x.issues,
@@ -568,7 +592,7 @@ export function createAppServer(options={}){
     const body=await jsonBody(req,12*1024*1024);
     const saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
     if(body.expectedVersion!==saved.version)return send(res,409,{error:'Version conflict: reload before previewing changes',currentVersion:saved.version});
-    const envelope=inspectImport(body.file||{});
+    const envelope=body.transcription?inspectReviewedCallSheet({file:{...body.file,kind:'callSheet'},transcription:body.transcription}):inspectImport(body.file||{});
     const impact=previewSourceChange(saved.workspace,envelope,{documentId:body.documentId,persistedVersion:saved.version});
     return send(res,200,impact);
    }
@@ -642,12 +666,12 @@ export function createAppServer(options={}){
    }
    if(req.method!=='POST'||!['import','commit-source-change','call-sheet-transcript','review','replace','review-task','authority-document','authority-link','scene-authority','pdf-transcription','scene-schedule','condition','condition-decision'].includes(action))return send(res,404,{error:'Unknown workspace route'});
    if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
-   const body=await jsonBody(req,['import','call-sheet-transcript'].includes(action)?12*1024*1024:BODY_MAX);
+   const body=await jsonBody(req,['import','commit-source-change','call-sheet-transcript'].includes(action)?12*1024*1024:BODY_MAX);
    const saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
    if(body.expectedVersion!==saved.version)return send(res,409,{error:'Version conflict: reload before modifying',currentVersion:saved.version});
    const w=saved.workspace;
    if(action==='import'||action==='commit-source-change'){
-    const envelope=inspectImport(body.file||{});
+    const envelope=body.transcription?inspectReviewedCallSheet({file:{...body.file,kind:'callSheet'},transcription:body.transcription}):inspectImport(body.file||{});
     if(action==='commit-source-change')verifySourceChangeCommit(w,envelope,{documentId:body.documentId,persistedVersion:saved.version,previewSha256:body.previewSha256});
     applySourceImport(w,envelope,{documentId:body.documentId});
     await originalVault.storeImport(body.file||{},envelope);

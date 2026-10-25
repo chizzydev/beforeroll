@@ -39,7 +39,7 @@ const getSummary=(run,plan,{stale=false,archivedRuns=0,offset=0,limit=20}={})=>{
   const scope=e.finding?.code==='CLOCKED_CONDITIONAL_AUTHORITY_REVIEW'?modelGrantScope(task.sourceQuote,task.sceneId):null;
   return {id:e.id,sceneId:task.sceneId,documentId:task.documentId,unitId:task.unitId,sourceQuote:task.sourceQuote,
    sourceRange:task.sourceRange,requestHash:e.requestHash,status:e.status,credits:e.credits,
-   relevance:e.finding?.relevance??null,grant:e.finding?.grant??null,finding:scope&&!scope.matched?'MODEL_GRANT_SCOPE_UNVERIFIED':e.finding?.code??null,scopeReason:scope?.reason??null,error:e.error,notClearance:true};
+   inheritedFromPlanKey:e.inheritedFromPlanKey??null,relevance:e.finding?.relevance??null,grant:e.finding?.grant??null,finding:scope&&!scope.matched?'MODEL_GRANT_SCOPE_UNVERIFIED':e.finding?.code??null,scopeReason:scope?.reason??null,error:e.error,notClearance:true};
  });
  const byScene=Object.create(null),byDocument=Object.create(null);for(let i=0;i<plan.tasks.length;i++){
   const id=plan.tasks[i].sceneId,s=byScene[id]??(byScene[id]={planned:0,attempted:0,complete:0,uncertain:0});
@@ -57,6 +57,7 @@ const getSummary=(run,plan,{stale=false,archivedRuns=0,offset=0,limit=20}={})=>{
  const estimate=sampleCount?{basis:'OBSERVED_REPORTED_ONLY_NOT_QUOTE',sampleCount,averageCreditsPerReportedCall:Number(average.toFixed(4)),remainingCreditsAtObservedMean:Math.ceil(average*remaining),unreportedAndFutureCostUncertain:true}:null;
  return {schema:'beforeroll-execution-status-v1',projectId:plan.workspaceId,planKey:planKey(plan),planned:cp.callsPlanned,attempts:cp.attempts,completed:cp.confirmedCompleted,unknownBilling:cp.unknownBilling,
   state:stale?'STALE_SOURCES':cp.state,stale,archivedRuns,byScene,byDocument,remaining,completionPercent:cp.callsPlanned?Number((100*cp.confirmedCompleted/cp.callsPlanned).toFixed(2)):100,knownCredits,creditProjection:estimate,unknownCreditEntries:cp.entries.filter(e=>e.status!=='NOT_ATTEMPTED'&&e.credits===null).length,
+  retainedAttempts:cp.entries.filter(e=>e.inheritedFromPlanKey).length,newPlanAttempts:cp.entries.filter(e=>e.status!=='NOT_ATTEMPTED'&&!e.inheritedFromPlanKey).length,
   pagination:{offset,limit,hasMore:offset+entries.length<cp.callsPlanned},entries,notClearance:true,
   notice:'Only segmented source candidates have been assessed. Provider outputs are uncalibrated; no filming clearance or document authenticity is established.'};
 };
@@ -126,11 +127,48 @@ export function createDurableExecution({directory}){
    finding:entry.finding,credits:entry.credits,error:entry.error,at};
  }
 
- async function read(plan){
+ async function readStored(plan){
   await init();let raw;try{raw=await fs.readFile(file(plan),'utf8');}catch(e){if(e.code==='ENOENT')return null;throw e;}
   let record;try{record=JSON.parse(raw);}catch{throw Error('Execution journal corrupted');}
   if(record?.envelope!=='beforeroll-atomic-execution-v1'||record.hash!==digest(record.run))throw Error('Execution journal SHA-256 integrity failure');
   return validate(await hydrate(record.run,planKey(plan)),plan);
+ }
+ // A changed production plan does not make unchanged exact tasks billable again.
+ // Reconcile by task identity (including source epochs), then independently
+ // validate quotes, request hashes and source hashes against the CURRENT plan.
+ // This projection is deterministic and read-only until an authorized run seals
+ // it as a new baseline. Backup exports include that same baseline.
+ function inheritExactTasks(plan,rows){
+  const entries=new Map(),currentIds=new Set(plan.taskIds),currentKey=planKey(plan);let updatedAt=null;
+  for(const row of rows){
+   if(row.planKey===currentKey)continue;
+   for(const e of row.run.checkpoint.entries){
+    if(e.status==='NOT_ATTEMPTED'||!currentIds.has(e.id))continue;
+    const prior=entries.get(e.id);
+    const identity=x=>JSON.stringify({requestHash:x.requestHash,status:x.status==='IN_FLIGHT'?'BILLING_UNKNOWN':x.status,finding:x.finding,credits:x.credits});
+    if(prior&&identity(prior.entry)!==identity(e))throw Error('Conflicting historical outcomes for the same exact task; owner investigation required');
+    entries.set(e.id,{entry:e,origin:e.inheritedFromPlanKey??row.planKey});
+   }
+   if(row.run.updatedAt&&(!updatedAt||row.run.updatedAt>updatedAt))updatedAt=row.run.updatedAt;
+  }
+  const cp=createCheckpoint(plan);let inherited=0;
+  for(let i=0;i<plan.tasks.length;i++){
+   const prior=entries.get(plan.tasks[i].id);if(!prior)continue;
+   const e=structuredClone(prior.entry);
+   e.inheritedFromPlanKey=prior.origin;
+   if(e.status==='IN_FLIGHT'){e.status='BILLING_UNKNOWN';e.error='Historical dispatch interrupted; billing unknown. No retry allowed.';}
+   cp.entries[i]=e;cp.attempts++;inherited++;
+   if(e.status==='COMPLETE')cp.confirmedCompleted++;
+   if(e.status==='BILLING_UNKNOWN')cp.unknownBilling++;
+  }
+  if(!inherited)return null;
+  cp.state=cp.unknownBilling?'HALTED_UNKNOWN_BILLING':cp.confirmedCompleted===cp.callsPlanned?'COMPLETE_FOR_PLANNED_UNITS_ONLY':'READY';
+  return validate({schema:'beforeroll-execution-run-v1',projectId:plan.workspaceId,planKey:planKey(plan),checkpoint:cp,createdAt:updatedAt,updatedAt,notClearance:true},plan);
+ }
+ async function read(plan){
+  const stored=await readStored(plan);if(stored)return stored;
+  const rows=await exportAllRuns(plan);
+  return rows.find(x=>x.planKey===planKey(plan))?.run??null;
  }
  async function write(plan,run){
   validate(run,plan);await init();
@@ -184,6 +222,10 @@ export function createDurableExecution({directory}){
    if(key===planKey(plan))validate(complete,plan);
    rows.push({planKey:key,run:complete,sha256:digest(complete),sourceValidation:key===planKey(plan)?'CURRENT_EXACT_PLAN':'ARCHIVED_NOT_SOURCE_REVALIDATED'});
   }
+  if(!rows.some(x=>x.planKey===planKey(plan))&&Array.isArray(plan.tasks)){
+   const inherited=inheritExactTasks(plan,rows);
+   if(inherited)rows.push({planKey:planKey(plan),run:inherited,sha256:digest(inherited),sourceValidation:'CURRENT_EXACT_PLAN'});
+  }
   return rows;
  }
  function verifyAllRuns(plan,rows){
@@ -232,7 +274,7 @@ export function createDurableExecution({directory}){
    const entry=cp.entries[i];
    return {id:task.id,documentId:task.documentId,documentHash:task.documentHash,documentRevision:task.documentRevision,
     sceneId:task.sceneId,sceneHash:task.sceneHash,unitId:task.unitId,sourceRange:task.sourceRange,
-    sourceQuote:task.sourceQuote,requestHash:task.requestHash,status:entry.status,credits:entry.credits,error:entry.error,
+    sourceQuote:task.sourceQuote,requestHash:task.requestHash,status:entry.status,credits:entry.credits,error:entry.error,inheritedFromPlanKey:entry.inheritedFromPlanKey??null,
     finding:entry.finding?{code:entry.finding.code,status:entry.finding.status,relevance:entry.finding.relevance,grant:entry.finding.grant,
      modelAnswers:entry.finding.modelAnswers,...(entry.finding.replayOrigin?{replayOrigin:entry.finding.replayOrigin,legacyRequestHash:entry.finding.legacyRequestHash}:{}),scope:entry.finding.code==='CLOCKED_CONDITIONAL_AUTHORITY_REVIEW'?modelGrantScope(task.sourceQuote,task.sceneId):null,notClearance:true}:null};
   });
@@ -249,7 +291,11 @@ export function createDurableExecution({directory}){
   assertPlanFresh(workspace,plan);await init();
   let lock;try{lock=await fs.open(lockfile(plan.workspaceId),'wx',0o600);}catch(e){if(e.code==='EEXIST'){const conflict=Error('An execution is active or a crashed lock needs owner inspection; no calls made');conflict.httpStatus=409;throw conflict;}throw e;}
   try{
-   let run=await read(plan);
+   let run=await readStored(plan);
+   if(!run){
+    run=await read(plan);
+    if(run){await write(plan,run);tails.set(run,digest(run));}
+   }
    if(!run){run={schema:'beforeroll-execution-run-v1',projectId:plan.workspaceId,planKey:planKey(plan),checkpoint:createCheckpoint(plan),createdAt:new Date().toISOString(),updatedAt:null,notClearance:true};await write(plan,run);tails.set(run,digest(run));}
    const cp=run.checkpoint;
    const unfinished=cp.entries.find(e=>e.status==='IN_FLIGHT');

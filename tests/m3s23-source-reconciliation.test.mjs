@@ -195,7 +195,7 @@ test('guided browser refuses to overwrite old permit source without a verified p
   assert.equal((await store.load('revision_s23')).version,1);assert(errors.some(e=>/requires PREVIEW first/.test(e)));
  }finally{if(server)await new Promise(ok=>server.close(ok));await rm(directory,{recursive:true,force:true});}
 });
-test('count-equal authority swaps still report exactly which earlier claims became historical',()=>{
+test('source reversal retires current authority claims without revalidating earlier same-text history',()=>{
  const w=fixture();const mark=()=>{
   const u=w.documents[0].units[0];recordAuthorityLink(w,{fromId:'permit',toId:'amend',kind:'REFERENCES',start:u.start,end:u.end,quote:u.text,reviewer:'AD',reason:'Linked source'});
   recordSceneAuthority(w,{sceneId:'S7',documentId:'permit',unitId:u.id,kind:'RESTRICTION',scope:'EXACT_SCENE',reviewer:'AD',reason:'Exact scene restriction'});
@@ -203,13 +203,13 @@ test('count-equal authority swaps still report exactly which earlier claims beca
  mark();reviseDocument(w,'permit',CHANGED_PERMIT);mark();
  const sourceBefore=JSON.stringify(w),p=preview(w,'permit',PERMIT,'permit');
  assert.equal(p.reconciliation.documentaryLinks.currentBefore,1);
- assert.equal(p.reconciliation.documentaryLinks.currentAfter,1);
+ assert.equal(p.reconciliation.documentaryLinks.currentAfter,0);
  assert.equal(p.reconciliation.documentaryLinks.becomingHistorical,1);
- assert.equal(p.reconciliation.documentaryLinks.revalidatedHistoric,1);
+ assert.equal(p.reconciliation.documentaryLinks.revalidatedHistoric,0);
  assert.equal(p.reconciliation.sceneAuthorityClaims.currentBefore,1);
- assert.equal(p.reconciliation.sceneAuthorityClaims.currentAfter,1);
+ assert.equal(p.reconciliation.sceneAuthorityClaims.currentAfter,0);
  assert.equal(p.reconciliation.sceneAuthorityClaims.becomingHistorical,1);
- assert.equal(p.reconciliation.sceneAuthorityClaims.revalidatedHistoric,1);
+ assert.equal(p.reconciliation.sceneAuthorityClaims.revalidatedHistoric,0);
  assert.equal(sourceBefore,JSON.stringify(w));
 });
 test('retirement fingerprint lists deterministic source-bound IDs with no stale model scores fabricated',()=>{

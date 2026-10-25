@@ -102,7 +102,7 @@ test('AES-256-GCM+scrypt encrypted lifecycle backups authenticate exact workspac
   const recovered=await decryptOwnerBackup(encrypted,secret);assert.equal(recovered.sha256,backup.sha256);
   assert.equal(verifyLifecycleBackup(recovered,l.execution).originalFileCount,1);
   await assert.rejects(()=>decryptOwnerBackup(encrypted,'wrong-passphrase'),/authentication failed/);
-  const edited=structuredClone(encrypted);edited.ciphertextBase64=edited.ciphertextBase64.replace(/^[A-Za-z0-9]/,c=>c==='A'?'B':'A');
+  const edited=structuredClone(encrypted);const damaged=Buffer.from(edited.ciphertextBase64,'base64');damaged[0]^=1;edited.ciphertextBase64=damaged.toString('base64');
   await assert.rejects(()=>decryptOwnerBackup(edited,secret),/authentication failed/);
   const target=await mkdtemp(path.join(os.tmpdir(),'br-s29-recover-'));
   try{const st=createWorkspaceStore({directory:target}),ex=createDurableExecution({directory:target});

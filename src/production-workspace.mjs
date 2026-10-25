@@ -131,6 +131,10 @@ export function assertWorkspaceSources(workspace){
   }
  }
  if(workspace.callSheet){
+  const parsed=parseCallSheet(workspace.callSheet.text);
+  const sourceScenes=workspace.callSheet.scenes.map(({sourceEpoch,...scene})=>scene);
+  if(JSON.stringify(sourceScenes)!==JSON.stringify(parsed.scenes)||JSON.stringify(workspace.callSheet.unsupported)!==JSON.stringify(parsed.unsupported)||workspace.callSheet.format!==parsed.format)throw Error('Call-sheet scene projection differs from original source rows');
+  if(Object.values(workspace.callSheet.historicalSceneEpochs??{}).some(e=>!Number.isSafeInteger(e)||e<0))throw Error('Historical scene revision lineage invalid');
   for(const scene of workspace.callSheet.scenes){const e=scene.sourceEpoch??0;
    if(!Number.isSafeInteger(e)||e<0||workspace.callSheet.historicalSceneEpochs?.[scene.id]!==undefined&&workspace.callSheet.historicalSceneEpochs[scene.id]!==e)throw Error('Call-sheet scene revision lineage invalid');
   }
