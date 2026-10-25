@@ -1,0 +1,320 @@
+{
+  "source": "live-clocked-decide-multi-scene",
+  "endpoint": "decide",
+  "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+  "scenes": [
+    {
+      "sceneId": "S31",
+      "sceneRow": "Scene 31 | NORTH GLASS GALLERY | 14:00-14:30 | Create low white wisps by letting pellets of solid carbon dioxide turn directly into gas near the performers.",
+      "sceneHash": "1732df78f99d5b8ea9f2f9140adca57dcad739d6ec46d2c6be792ac61fafd73a",
+      "status": "COMPLETE",
+      "scan": {
+        "source": "live-clocked-decide-condition-sweep",
+        "endpoint": "decide",
+        "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+        "sceneHash": "1732df78f99d5b8ea9f2f9140adca57dcad739d6ec46d2c6be792ac61fafd73a",
+        "scene": {
+          "text": "Scene 31 | NORTH GLASS GALLERY | 14:00-14:30 | Create low white wisps by letting pellets of solid carbon dioxide turn directly into gas near the performers."
+        },
+        "candidatesDetected": 4,
+        "candidatesEvaluated": 4,
+        "attempts": 4,
+        "sourceUnscanned": [],
+        "complete": true,
+        "interpretationScope": "ONLY_SEGMENTED_CLAUSES_NOT_ENTIRE_PERMIT_AUTHORITY",
+        "reportedCredits": 4,
+        "observedKnownCredits": 4,
+        "results": [
+          {
+            "index": 1,
+            "range": [
+              0,
+              49
+            ],
+            "clause": "ISSUED AGREEMENT GG-32 / The North Glass Gallery.",
+            "requestHash": "bf81a0d7aa05191bf32440239356dd53b3dd6c0ba77f84e48f889775c80f17fd",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "1732df78f99d5b8ea9f2f9140adca57dcad739d6ec46d2c6be792ac61fafd73a",
+            "finding": {
+              "code": "NO_SEMANTIC_LINK_DETECTED",
+              "title": "No link detected in this selected clause",
+              "status": "unresolved",
+              "relevance": 0.0107,
+              "grant": 0.004,
+              "explanation": "This does not establish unrestricted permission; another relevant clause may have been omitted."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.0107
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.004
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 2,
+            "range": [
+              50,
+              145
+            ],
+            "clause": "The usual venue terms require an authorized exception before atmospheric vapors are introduced.",
+            "requestHash": "cb0fb610936fc7b08697043832cb85c146bde35063c862e6afde52a0f7201756",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "1732df78f99d5b8ea9f2f9140adca57dcad739d6ec46d2c6be792ac61fafd73a",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_REVIEW",
+              "title": "Clocked linked an unfamiliar activity to a source condition",
+              "status": "review",
+              "relevance": 0.9888,
+              "grant": 0.0024,
+              "explanation": "This may be a restriction or approval prerequisite. The selected excerpt does not establish specific issued permission. Human review required."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9888
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0024
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 3,
+            "range": [
+              146,
+              370
+            ],
+            "clause": "SIGNED VARIATION SV-31 authorizes using frozen carbon dioxide to generate low-lying clouds for Scene 31 in the North Glass Gallery, 5 November 2026, only if rubber floor mats and a visibility steward are in place throughout.",
+            "requestHash": "a182e743588ddbff95d1f2210f6fceb2e04d77c5bd13a734cb19fb65a4b528ec",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "1732df78f99d5b8ea9f2f9140adca57dcad739d6ec46d2c6be792ac61fafd73a",
+            "finding": {
+              "code": "CLOCKED_CONDITIONAL_AUTHORITY_REVIEW",
+              "title": "Clocked linked the activity to a documented permission",
+              "status": "review",
+              "relevance": 0.9908,
+              "grant": 0.9854,
+              "explanation": "The excerpt describes a potential issued authorization. Verify signer, scene, date, location and every prerequisite before reliance. Never treat this as clearance."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9908
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.9854
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 4,
+            "range": [
+              371,
+              416
+            ],
+            "clause": "Any extension to Scene 32 remains unapproved.",
+            "requestHash": "a536107d28b08d7d21dcf6491f6e11c917cd69f5d40bad48348e742a57469fec",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "1732df78f99d5b8ea9f2f9140adca57dcad739d6ec46d2c6be792ac61fafd73a",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_AMBIGUOUS",
+              "title": "Semantic relationship remains uncertain",
+              "status": "unresolved",
+              "relevance": 0.4996,
+              "grant": 0.0023,
+              "explanation": "Model probabilities do not support a dependable conclusion. Review the complete documents manually."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.4996
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0023
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          }
+        ],
+        "error": null,
+        "notClearance": true,
+        "warning": "Results are limited to segmented source clauses; missing findings never imply permission."
+      }
+    },
+    {
+      "sceneId": "S32",
+      "sceneRow": "Scene 32 | NORTH GLASS GALLERY | 15:00-15:25 | Produce a drifting white atmosphere by sublimating frozen carbon dioxide near the set wall.",
+      "sceneHash": "90d342488389e053d4050546506950eedc55b489db779730dcebfd49a0a8662a",
+      "status": "COMPLETE",
+      "scan": {
+        "source": "live-clocked-decide-condition-sweep",
+        "endpoint": "decide",
+        "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+        "sceneHash": "90d342488389e053d4050546506950eedc55b489db779730dcebfd49a0a8662a",
+        "scene": {
+          "text": "Scene 32 | NORTH GLASS GALLERY | 15:00-15:25 | Produce a drifting white atmosphere by sublimating frozen carbon dioxide near the set wall."
+        },
+        "candidatesDetected": 4,
+        "candidatesEvaluated": 4,
+        "attempts": 4,
+        "sourceUnscanned": [],
+        "complete": true,
+        "interpretationScope": "ONLY_SEGMENTED_CLAUSES_NOT_ENTIRE_PERMIT_AUTHORITY",
+        "reportedCredits": 4,
+        "observedKnownCredits": 4,
+        "results": [
+          {
+            "index": 1,
+            "range": [
+              0,
+              49
+            ],
+            "clause": "ISSUED AGREEMENT GG-32 / The North Glass Gallery.",
+            "requestHash": "111762709e841ba4392928c6ad540e3dc323fcbe164c547673f16f24bde11008",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "90d342488389e053d4050546506950eedc55b489db779730dcebfd49a0a8662a",
+            "finding": {
+              "code": "NO_SEMANTIC_LINK_DETECTED",
+              "title": "No link detected in this selected clause",
+              "status": "unresolved",
+              "relevance": 0.0104,
+              "grant": 0.0568,
+              "explanation": "This does not establish unrestricted permission; another relevant clause may have been omitted."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.0104
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0568
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 2,
+            "range": [
+              50,
+              145
+            ],
+            "clause": "The usual venue terms require an authorized exception before atmospheric vapors are introduced.",
+            "requestHash": "c8a075b500bbb13c685366fc8dd12b5471cbae36b3456e2ca05b5f59e790e20e",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "90d342488389e053d4050546506950eedc55b489db779730dcebfd49a0a8662a",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_REVIEW",
+              "title": "Clocked linked an unfamiliar activity to a source condition",
+              "status": "review",
+              "relevance": 0.9896,
+              "grant": 0.0026,
+              "explanation": "This may be a restriction or approval prerequisite. The selected excerpt does not establish specific issued permission. Human review required."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9896
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0026
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 3,
+            "range": [
+              146,
+              370
+            ],
+            "clause": "SIGNED VARIATION SV-31 authorizes using frozen carbon dioxide to generate low-lying clouds for Scene 31 in the North Glass Gallery, 5 November 2026, only if rubber floor mats and a visibility steward are in place throughout.",
+            "requestHash": "c44def3e3e6621d8a31504507d6aeee6e8585dff2ff65aee7488b9ef7fcb495e",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "90d342488389e053d4050546506950eedc55b489db779730dcebfd49a0a8662a",
+            "finding": {
+              "code": "NO_SEMANTIC_LINK_DETECTED",
+              "title": "No link detected in this selected clause",
+              "status": "unresolved",
+              "relevance": 0.1656,
+              "grant": 0.0402,
+              "explanation": "This does not establish unrestricted permission; another relevant clause may have been omitted."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.1656
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0402
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 4,
+            "range": [
+              371,
+              416
+            ],
+            "clause": "Any extension to Scene 32 remains unapproved.",
+            "requestHash": "5e78b02d4190d6b8bdd6e78f93486f6fbe536cef5d1379cc386f53572268c5f0",
+            "permitHash": "4fa9ec3698a13046f609197876fa077c2581bcbb8f6607501be8a871a1079b22",
+            "sceneHash": "90d342488389e053d4050546506950eedc55b489db779730dcebfd49a0a8662a",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_REVIEW",
+              "title": "Clocked linked an unfamiliar activity to a source condition",
+              "status": "review",
+              "relevance": 0.967,
+              "grant": 0.0022,
+              "explanation": "This may be a restriction or approval prerequisite. The selected excerpt does not establish specific issued permission. Human review required."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.967
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0022
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          }
+        ],
+        "error": null,
+        "notClearance": true,
+        "warning": "Results are limited to segmented source clauses; missing findings never imply permission."
+      }
+    }
+  ],
+  "totalPlannedCalls": 8,
+  "attempts": 8,
+  "complete": true,
+  "interpretationScope": "SEGMENTED_CLAUSES_PER_SCENE_NOT_COMPLETE_PERMIT_AUTHORITY",
+  "reportedCredits": 8,
+  "observedKnownCredits": 8,
+  "error": null,
+  "notClearance": true,
+  "warning": "A scene not evaluated or with no model finding is NOT authorized. Resolve authority, conditions and all missing source evidence manually."
+}

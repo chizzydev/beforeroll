@@ -1,0 +1,296 @@
+
+> beforeroll-preflight@0.2.1 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: R7 F01 recorded permit spans and issued request decoy
+ok 1 - R7 F01 recorded permit spans and issued request decoy
+  ---
+  duration_ms: 2.746365
+  type: 'test'
+  ...
+# Subtest: call sheet row-local provenance for 3 distinct scenes
+ok 2 - call sheet row-local provenance for 3 distinct scenes
+  ---
+  duration_ms: 2.705855
+  type: 'test'
+  ...
+# Subtest: scene 15 catches real time and amplified sound violation
+ok 3 - scene 15 catches real time and amplified sound violation
+  ---
+  duration_ms: 6.955562
+  type: 'test'
+  ...
+# Subtest: scene 16 location excluded and drone denied, not implied permission
+ok 4 - scene 16 location excluded and drone denied, not implied permission
+  ---
+  duration_ms: 0.83614
+  type: 'test'
+  ...
+# Subtest: variation fields point to base-permit paragraph and CANNOT automatically grant
+ok 5 - variation fields point to base-permit paragraph and CANNOT automatically grant
+  ---
+  duration_ms: 3.475025
+  type: 'test'
+  ...
+# Subtest: empty permit fields cannot turn unknown into permissions
+ok 6 - empty permit fields cannot turn unknown into permissions
+  ---
+  duration_ms: 0.67385
+  type: 'test'
+  ...
+# Subtest: unsupported call sheet rows detected, not silently certified
+ok 7 - unsupported call sheet rows detected, not silently certified
+  ---
+  duration_ms: 0.231849
+  type: 'test'
+  ...
+# Subtest: edited or missing scene rows require review
+ok 8 - edited or missing scene rows require review
+  ---
+  duration_ms: 0.615966
+  type: 'test'
+  ...
+# Subtest: timestamps must be valid; overnight scenes cannot be assumed
+ok 9 - timestamps must be valid; overnight scenes cannot be assumed
+  ---
+  duration_ms: 3.338712
+  type: 'test'
+  ...
+# Subtest: live request schema is curated and never includes scene parsing
+ok 10 - live request schema is curated and never includes scene parsing
+  ---
+  duration_ms: 1.511411
+  type: 'test'
+  ...
+# Subtest: ambiguous amendment cannot make a within-variation North scene an asserted breach
+ok 11 - ambiguous amendment cannot make a within-variation North scene an asserted breach
+  ---
+  duration_ms: 1.290861
+  type: 'test'
+  ...
+# Subtest: human permit correction adds review even if values seem compliant
+ok 12 - human permit correction adds review even if values seem compliant
+  ---
+  duration_ms: 0.754236
+  type: 'test'
+  ...
+# Subtest: Clocked codepoint offsets remain correct after emoji; source citations are exact
+ok 13 - Clocked codepoint offsets remain correct after emoji; source citations are exact
+  ---
+  duration_ms: 1.964514
+  type: 'test'
+  ...
+# Subtest: different schedule date downgrades apparent documented breaches to conditional review
+ok 14 - different schedule date downgrades apparent documented breaches to conditional review
+  ---
+  duration_ms: 0.599582
+  type: 'test'
+  ...
+# Subtest: M2 FIX: 16:10 human-corrected amplified scene is within trusted 16:15 cutoff, not unknown
+ok 15 - M2 FIX: 16:10 human-corrected amplified scene is within trusted 16:15 cutoff, not unknown
+  ---
+  duration_ms: 6.996559
+  type: 'test'
+  ...
+# Subtest: M2: changing end to 16:20 correctly reports amplified-playback breach
+ok 16 - M2: changing end to 16:20 correctly reports amplified-playback breach
+  ---
+  duration_ms: 2.407765
+  type: 'test'
+  ...
+# Subtest: M2: missing or non-source-backed sound cutoff remains unresolved
+ok 17 - M2: missing or non-source-backed sound cutoff remains unresolved
+  ---
+  duration_ms: 1.376033
+  type: 'test'
+  ...
+# Subtest: M2: evidence inspector badge and narrative are conditional on verified citations
+ok 18 - M2: evidence inspector badge and narrative are conditional on verified citations
+  ---
+  duration_ms: 2.324798
+  type: 'test'
+  ...
+# Subtest: M2: mock live transport requires operator gate, posts Clocked Extract payload, and keeps API key server-side
+ok 19 - M2: mock live transport requires operator gate, posts Clocked Extract payload, and keeps API key server-side
+  ---
+  duration_ms: 70.874724
+  type: 'test'
+  ...
+# Subtest: frozen R8 synthetic packets are source-identical, not fabricated Decide responses
+ok 20 - frozen R8 synthetic packets are source-identical, not fabricated Decide responses
+  ---
+  duration_ms: 1.672245
+  type: 'test'
+  ...
+# Subtest: candidate source ranges are exact Unicode codepoints
+ok 21 - candidate source ranges are exact Unicode codepoints
+  ---
+  duration_ms: 0.441084
+  type: 'test'
+  ...
+# Subtest: Decide question performs semantic link, not hard-coded dry-ice mapping
+ok 22 - Decide question performs semantic link, not hard-coded dry-ice mapping
+  ---
+  duration_ms: 0.936571
+  type: 'test'
+  ...
+# Subtest: thresholds only create REVIEW, never authorized/cleared
+ok 23 - thresholds only create REVIEW, never authorized/cleared
+  ---
+  duration_ms: 0.369089
+  type: 'test'
+  ...
+# Subtest: invalid or unexpected API probabilities fail closed
+ok 24 - invalid or unexpected API probabilities fail closed
+  ---
+  duration_ms: 0.220485
+  type: 'test'
+  ...
+# Subtest: invalid source ranges, incomplete quotes and bad sizes blocked
+ok 25 - invalid source ranges, incomplete quotes and bad sizes blocked
+  ---
+  duration_ms: 0.591297
+  type: 'test'
+  ...
+# Subtest: semantic endpoint is disabled in recorded mode and cannot spend credits
+ok 26 - semantic endpoint is disabled in recorded mode and cannot spend credits
+  ---
+  duration_ms: 82.159026
+  type: 'test'
+  ...
+# Subtest: operator-gated live semantic route makes exactly one correctly scoped Clocked Decide request
+ok 27 - operator-gated live semantic route makes exactly one correctly scoped Clocked Decide request
+  ---
+  duration_ms: 25.317785
+  type: 'test'
+  ...
+# Subtest: mock granted contrast remains human review; invalid API body abstains
+ok 28 - mock granted contrast remains human review; invalid API body abstains
+  ---
+  duration_ms: 22.709666
+  type: 'test'
+  ...
+# Subtest: synthetic source packet and browser-safe module are served without authentication secrets
+ok 29 - synthetic source packet and browser-safe module are served without authentication secrets
+  ---
+  duration_ms: 24.448009
+  type: 'test'
+  ...
+# Subtest: held-out M3 demonstrator contains no hard-coded hazard identifier in Decide instructions
+ok 30 - held-out M3 demonstrator contains no hard-coded hazard identifier in Decide instructions
+  ---
+  duration_ms: 0.829623
+  type: 'test'
+  ...
+# Subtest: scan enumerates all detected clauses without semantic hardcoded hazard filters
+ok 31 - scan enumerates all detected clauses without semantic hardcoded hazard filters
+  ---
+  duration_ms: 4.348098
+  type: 'test'
+  ...
+# Subtest: rejects oversize scans before any billable call; never truncates silently
+ok 32 - rejects oversize scans before any billable call; never truncates silently
+  ---
+  duration_ms: 65.571452
+  type: 'test'
+  ...
+# Subtest: operator required and offline scan is nonbillable
+ok 33 - operator required and offline scan is nonbillable
+  ---
+  duration_ms: 33.407621
+  type: 'test'
+  ...
+# Subtest: each segmented clause receives one Clocked decision with exact evidence, no clearance
+ok 34 - each segmented clause receives one Clocked decision with exact evidence, no clearance
+  ---
+  duration_ms: 14.52073
+  type: 'test'
+  ...
+# Subtest: failure stops later requests and represents partial incomplete result
+ok 35 - failure stops later requests and represents partial incomplete result
+  ---
+  duration_ms: 36.223371
+  type: 'test'
+  ...
+# Subtest: invalid model scores stop the sweep and are not treated as clearance
+ok 36 - invalid model scores stop the sweep and are not treated as clearance
+  ---
+  duration_ms: 8.554665
+  type: 'test'
+  ...
+# Subtest: short omitted clause stays visible as unscanned source, never silently treated as clearance
+ok 37 - short omitted clause stays visible as unscanned source, never silently treated as clearance
+  ---
+  duration_ms: 0.724698
+  type: 'test'
+  ...
+# Subtest: recorded fixture route returns actual owner-run synthetic response
+ok 38 - recorded fixture route returns actual owner-run synthetic response
+  ---
+  duration_ms: 54.157964
+  type: 'test'
+  ...
+# Subtest: no key in health metadata and live is off by default
+ok 39 - no key in health metadata and live is off by default
+  ---
+  duration_ms: 8.061032
+  type: 'test'
+  ...
+# Subtest: unconfigured API cannot spend credits
+ok 40 - unconfigured API cannot spend credits
+  ---
+  duration_ms: 14.211007
+  type: 'test'
+  ...
+# Subtest: no arbitrary static path traversal
+ok 41 - no arbitrary static path traversal
+  ---
+  duration_ms: 15.188037
+  type: 'test'
+  ...
+# Subtest: CSP and no-cache are present
+ok 42 - CSP and no-cache are present
+  ---
+  duration_ms: 15.466725
+  type: 'test'
+  ...
+# Subtest: CSP-safe timetable helper is served as a first-party module
+ok 43 - CSP-safe timetable helper is served as a first-party module
+  ---
+  duration_ms: 10.339867
+  type: 'test'
+  ...
+# Subtest: Scene 15 geometry is positioned in 13:00–19:00 axis
+ok 44 - Scene 15 geometry is positioned in 13:00–19:00 axis
+  ---
+  duration_ms: 3.484886
+  type: 'test'
+  ...
+# Subtest: later variation scenes are not silently clipped at 19:00
+ok 45 - later variation scenes are not silently clipped at 19:00
+  ---
+  duration_ms: 0.234074
+  type: 'test'
+  ...
+# Subtest: unknown/invalid clocks do not generate authoritative geometry
+ok 46 - unknown/invalid clocks do not generate authoritative geometry
+  ---
+  duration_ms: 0.238072
+  type: 'test'
+  ...
+# Subtest: strict-CSP templates contain no inline HTML style attributes
+ok 47 - strict-CSP templates contain no inline HTML style attributes
+  ---
+  duration_ms: 1.250341
+  type: 'test'
+  ...
+1..47
+# tests 47
+# suites 0
+# pass 47
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 923.996255

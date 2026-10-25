@@ -1,0 +1,128 @@
+
+> beforeroll-preflight@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: R7 F01 recorded permit spans and issued request decoy
+ok 1 - R7 F01 recorded permit spans and issued request decoy
+  ---
+  duration_ms: 1.986186
+  type: 'test'
+  ...
+# Subtest: call sheet row-local provenance for 3 distinct scenes
+ok 2 - call sheet row-local provenance for 3 distinct scenes
+  ---
+  duration_ms: 1.727056
+  type: 'test'
+  ...
+# Subtest: scene 15 catches real time and amplified sound violation
+ok 3 - scene 15 catches real time and amplified sound violation
+  ---
+  duration_ms: 3.415264
+  type: 'test'
+  ...
+# Subtest: scene 16 location excluded and drone denied, not implied permission
+ok 4 - scene 16 location excluded and drone denied, not implied permission
+  ---
+  duration_ms: 0.869667
+  type: 'test'
+  ...
+# Subtest: variation fields point to base-permit paragraph and CANNOT automatically grant
+ok 5 - variation fields point to base-permit paragraph and CANNOT automatically grant
+  ---
+  duration_ms: 1.554467
+  type: 'test'
+  ...
+# Subtest: empty permit fields cannot turn unknown into permissions
+ok 6 - empty permit fields cannot turn unknown into permissions
+  ---
+  duration_ms: 0.422075
+  type: 'test'
+  ...
+# Subtest: unsupported call sheet rows detected, not silently certified
+ok 7 - unsupported call sheet rows detected, not silently certified
+  ---
+  duration_ms: 0.255424
+  type: 'test'
+  ...
+# Subtest: edited or missing scene rows require review
+ok 8 - edited or missing scene rows require review
+  ---
+  duration_ms: 0.516436
+  type: 'test'
+  ...
+# Subtest: timestamps must be valid; overnight scenes cannot be assumed
+ok 9 - timestamps must be valid; overnight scenes cannot be assumed
+  ---
+  duration_ms: 1.599765
+  type: 'test'
+  ...
+# Subtest: live request schema is curated and never includes scene parsing
+ok 10 - live request schema is curated and never includes scene parsing
+  ---
+  duration_ms: 0.743808
+  type: 'test'
+  ...
+# Subtest: ambiguous amendment cannot make a within-variation North scene an asserted breach
+ok 11 - ambiguous amendment cannot make a within-variation North scene an asserted breach
+  ---
+  duration_ms: 0.746932
+  type: 'test'
+  ...
+# Subtest: human permit correction adds review even if values seem compliant
+ok 12 - human permit correction adds review even if values seem compliant
+  ---
+  duration_ms: 0.481885
+  type: 'test'
+  ...
+# Subtest: Clocked codepoint offsets remain correct after emoji; source citations are exact
+ok 13 - Clocked codepoint offsets remain correct after emoji; source citations are exact
+  ---
+  duration_ms: 0.33917
+  type: 'test'
+  ...
+# Subtest: different schedule date downgrades apparent documented breaches to conditional review
+ok 14 - different schedule date downgrades apparent documented breaches to conditional review
+  ---
+  duration_ms: 0.405048
+  type: 'test'
+  ...
+# Subtest: recorded fixture route returns actual owner-run synthetic response
+ok 15 - recorded fixture route returns actual owner-run synthetic response
+  ---
+  duration_ms: 25.764648
+  type: 'test'
+  ...
+# Subtest: no key in health metadata and live is off by default
+ok 16 - no key in health metadata and live is off by default
+  ---
+  duration_ms: 3.846842
+  type: 'test'
+  ...
+# Subtest: unconfigured API cannot spend credits
+ok 17 - unconfigured API cannot spend credits
+  ---
+  duration_ms: 6.544166
+  type: 'test'
+  ...
+# Subtest: no arbitrary static path traversal
+ok 18 - no arbitrary static path traversal
+  ---
+  duration_ms: 4.142036
+  type: 'test'
+  ...
+# Subtest: CSP and no-cache are present
+ok 19 - CSP and no-cache are present
+  ---
+  duration_ms: 5.343513
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 197.016284

@@ -1,0 +1,15 @@
+BEFOREROLL - CODEX DESKTOP PROJECT SETUP (Windows)
+
+1. Extract this ZIP into C:\Users\HP\ so the final folder is:
+   C:\Users\HP\beforeroll-codex-phase1
+   This folder must directly contain: AGENTS.md, server.mjs, package.json, src, public, tests, _codex_mission.
+2. Open the Codex desktop app. Do NOT use the old PhotoSift project.
+3. Add new local project (Ctrl+O or project Add); select C:\Users\HP\beforeroll-codex-phase1.
+   Project label: BeforeRoll - Functional Cohesion.
+4. Start a new chat in THIS project; 'Work in' must show This computer (Local), not Cloud; repo/worktree can be Local so the source is right there.
+5. Select your preferred model/thinking level; Approve for me is sufficient for edits/tests, with prompts for external network/paths. You can approve individual network actions in-app. No Codex CLI or PowerShell launcher needed.
+6. Paste text from _codex_mission\FIRST_MESSAGE_TO_CODEX.txt into the project chat and send.
+7. Optional: configure private Clocked key locally. Double-click Configure-BeforeRoll-Private.cmd to create .env, then edit CLOCKED_API_KEY and BEFOREROLL_LIVE_ENABLED=true. Keep that file private; .gitignore excludes it. Codex is allowed to use the key only for generated fictional data and up to 32 new Clocked calls, never printing the key. The no-credential evaluation mode ignores .env by design.
+8. Keep working in the same Codex project/chat until the substantial functional engineering pass completes. Do not perform repeated small Windows GUI screenshot gates. End with one final owner GUI test.
+
+This archive includes source; do not separately copy a second M3-S31 ZIP into the workspace. No .env is included. No GitHub repo change is requested. The prior PhotoSift project remains untouched.

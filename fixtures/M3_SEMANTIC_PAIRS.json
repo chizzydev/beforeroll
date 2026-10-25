@@ -1,0 +1,61 @@
+{
+  "origin": "Frozen R8 preregistered research texts; NO Clocked Decide outputs or simulated decisions",
+  "cases": [
+    {
+      "id": "C02",
+      "title": "Condition requiring signed authorization",
+      "permit": "ISSUED LOCATION AGREEMENT GL-808 — Glass Museum Gallery.\nHandheld camera filming is approved on 5 November. Any aerosol, mist, vapor, or suspended particulate effect requires a signed conservator clearance before that effect is introduced, irrespective of whether the effect is described as smoke, haze, steam, or dry ice. A producer's email requesting a dry-ice atmosphere was received, but no signed clearance is enclosed with this packet. The email is a pending request and does not override the gallery restriction.",
+      "scene": "Scene 08 | GLASS MUSEUM GALLERY | 14:00-14:30 | Dry-ice vapor atmosphere; no clearance shown.",
+      "intended": "Identify requirement for a signed conservator clearance; do not treat requested dry ice as approved.",
+      "origin": "Owner-frozen fictional R8 fixture, not a recorded Decide result"
+    },
+    {
+      "id": "C06",
+      "title": "Counterfactual: written conservator clearance supplied",
+      "permit": "ISSUED LOCATION AGREEMENT GL-809 — Glass Museum Gallery.\nAny aerosol, mist, vapor, or suspended particulate effect requires signed conservator clearance before introduction. SIGNED CONSERVATOR CLEARANCE CC-21 states: dry-ice vapor is authorized in the Glass Museum Gallery for Scene 08 on 5 November, subject to continuous floor monitoring. An unsigned email asks about expanding the clearance to Scene 09 and remains pending.",
+      "scene": "Scene 08 | GLASS MUSEUM GALLERY | 14:00-14:30 | Dry ice vapor with floor monitoring.",
+      "intended": "Unlike C02, actual signed clearance exists for Scene 08 only; correctly distinguish conditions and scope.",
+      "origin": "Owner-frozen fictional R8 fixture, not a recorded Decide result"
+    },
+    {
+      "id": "C01",
+      "title": "Indirect sound restriction and unresolvable clock",
+      "permit": "CITY OF ALDERPORT FILM OFFICE — ISSUED PERMIT AA-41.\nProduction may record dialogue in the North Arcade. After the first evening bell, electrically reinforced speech and sound carried by powered public-address equipment are prohibited. The bell time is determined daily by venue staff and is not specified here. Recorded music played through a loudspeaker is subject to the same restriction. Quiet dialogue without electronic reinforcement is permitted. A draft location request for late-night speaker use is attached for information only and is NOT an issued amendment.",
+      "scene": "Scene 41 | NORTH ARCADE | 20:10-20:40 | Playback of prerecorded dialogue through a powered PA speaker.",
+      "intended": "The speaker restriction is pertinent; the actual bell time is unknown, therefore abstain from a definite time-based violation. Draft request grants nothing.",
+      "origin": "Owner-frozen fictional R8 fixture, not a recorded Decide result"
+    },
+    {
+      "id": "C05",
+      "title": "Counterfactual: actual issued late sound permission",
+      "permit": "CITY OF ALDERPORT FILM OFFICE — ISSUED PERMIT AA-42.\nFilming in North Arcade may include amplified speech from 19:30 to 21:00 on 5 November under SIGNED SOUND AUTHORIZATION A-6 issued by the city. Other public-address use requires separate approval. A canceled application asking for permission until midnight is attached only as administrative history.",
+      "scene": "Scene 41 | NORTH ARCADE | 20:10-20:40 | Prerecorded dialogue through a PA speaker.",
+      "intended": "Unlike C01, signed authorization now provides a stated late amplification window; no arbitrary refusal.",
+      "origin": "Owner-frozen fictional R8 fixture, not a recorded Decide result"
+    },
+    {
+      "id": "M3A",
+      "title": "Unfamiliar semantic restriction / CO2 without keyword overlap",
+      "permit": "ISSUED LOCATION AGREEMENT GG-31 / The North Glass Gallery.\nAn introduced airborne particulate or manufactured vapor effect must not be deployed until counter-signed conservator authorization is delivered to the venue. Mere production emails do not constitute that authorization. No such approval accompanies this packet.",
+      "scene": "Scene 31 | NORTH GLASS GALLERY | 14:00-14:30 | Create low white wisps by letting pellets of solid carbon dioxide turn directly into gas near the performers.",
+      "intended": "REVIEW: atmospheric substance may fall under manufactured vapor effect; permit packet does not establish countersigned authorization; do not claim absolute violation or legal clearance.",
+      "origin": "New synthetic M3 preregistered scenario; never submitted to Clocked at package creation."
+    },
+    {
+      "id": "M3B",
+      "title": "Narrow signed variant for the same unfamiliar effect",
+      "permit": "ISSUED AGREEMENT GG-32 / The North Glass Gallery.\nThe usual venue terms require an authorized exception before atmospheric vapors are introduced. SIGNED VARIATION SV-31 authorizes using frozen carbon dioxide to generate low-lying clouds for Scene 31 in the North Glass Gallery, 5 November 2026, only if rubber floor mats and a visibility steward are in place throughout. Any extension to Scene 32 remains unapproved.",
+      "scene": "Scene 31 | NORTH GLASS GALLERY | 14:00-14:30 | Create low white wisps by letting pellets of solid carbon dioxide turn directly into gas near the performers.",
+      "intended": "REVIEW: relevant signed variation for Scene 31 potentially applies, but actual safety conditions, source authority and date require verification; not clearance.",
+      "origin": "New synthetic M3 preregistered scenario; never submitted to Clocked at package creation."
+    },
+    {
+      "id": "M3N",
+      "title": "Negative control / unrelated sound recording",
+      "permit": "ISSUED AGREEMENT GG-33 / The North Glass Gallery.\nAll pyrotechnic discharge, ignition of live flame, or explosive flashes require a licensed effects supervisor and signed fire marshal authorization before deployment.",
+      "scene": "Scene 31 | NORTH GLASS GALLERY | 14:00-14:30 | Two actors whisper while the camera captures an unlit ceramic sculpture. No combustion or special effect planned.",
+      "intended": "No semantic link in the selected pyrotechnic clause; remain not-clearance because other documents may apply.",
+      "origin": "New synthetic M3 preregistered scenario; never submitted to Clocked at package creation."
+    }
+  ]
+}

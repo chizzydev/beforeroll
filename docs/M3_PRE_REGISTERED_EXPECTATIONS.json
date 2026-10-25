@@ -1,0 +1,12 @@
+{
+  "version": "M3-S1-GOLD-v1.0",
+  "frozen_before_owner_live_requests": true,
+  "scope": "synthetic paired scene-to-clause judgments; NOT legal/permit approval",
+  "gold": {
+    "M3A": {"activity_link": "true", "specific_signed_grant_from_selected_clause": "false", "ui": "review_required", "provenance": "human-selected full source clause + verbatim scene"},
+    "M3B": {"activity_link": "true", "specific_signed_grant_from_selected_clause": "true", "ui": "conditional_authorization_review", "required_human_checks": ["scene/date/location", "safety mats", "visibility steward", "signer/source authenticity"]},
+    "M3N": {"activity_link": "false", "specific_signed_grant_from_selected_clause": "false", "ui": "no_link_detected_not_clearance"}
+  },
+  "acceptance_rule": "Gold outcomes guide independent audit; 0.8 model-score thresholds are fixed before first live call. Any indeterminate output is recorded as failure/inconclusive, not adjusted post hoc.",
+  "status": "NO_M3_LIVE_CALLS_AT_FREEZE"
+}

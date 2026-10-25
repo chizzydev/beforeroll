@@ -1,0 +1,320 @@
+{
+  "source": "live-clocked-decide-multi-scene",
+  "endpoint": "decide",
+  "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+  "scenes": [
+    {
+      "sceneId": "S62",
+      "sceneRow": "Scene 62 | NORTH ARCADE | 12:20-12:45 | Place a foldout prop merchant booth beside the wall while extras pass through an open walkway.",
+      "sceneHash": "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+      "status": "COMPLETE",
+      "scan": {
+        "source": "live-clocked-decide-condition-sweep",
+        "endpoint": "decide",
+        "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+        "sceneHash": "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+        "scene": {
+          "text": "Scene 62 | NORTH ARCADE | 12:20-12:45 | Place a foldout prop merchant booth beside the wall while extras pass through an open walkway."
+        },
+        "candidatesDetected": 4,
+        "candidatesEvaluated": 4,
+        "attempts": 4,
+        "sourceUnscanned": [],
+        "complete": true,
+        "interpretationScope": "ONLY_SEGMENTED_CLAUSES_NOT_ENTIRE_PERMIT_AUTHORITY",
+        "reportedCredits": 4,
+        "observedKnownCredits": 4,
+        "results": [
+          {
+            "index": 1,
+            "range": [
+              0,
+              91
+            ],
+            "clause": "ISSUED PUBLIC ACCESS CONSENT VA-09 covers the North Arcade filming area on 9 November 2026.",
+            "requestHash": "77a7d15efd0142b4c1394391416714420e8984fec7564b003e130567600a8b4d",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+            "finding": {
+              "code": "CLOCKED_CONDITIONAL_AUTHORITY_REVIEW",
+              "title": "Clocked linked the activity to a documented permission",
+              "status": "review",
+              "relevance": 0.9661,
+              "grant": 0.8011,
+              "explanation": "The excerpt describes a potential issued authorization. Verify signer, scene, date, location and every prerequisite before reliance. Never treat this as clearance."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9661
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.8011
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 2,
+            "range": [
+              92,
+              233
+            ],
+            "clause": "Pedestrian egress channels must remain clear; temporary scenic installations that redirect visitors require a separately signed marshal plan.",
+            "requestHash": "c48eb9455863a20bfd2a37d3be9c18eb7149bf1f017ce794092f5b54073cfa89",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_REVIEW",
+              "title": "Clocked linked an unfamiliar activity to a source condition",
+              "status": "review",
+              "relevance": 0.9418,
+              "grant": 0.0022,
+              "explanation": "This may be a restriction or approval prerequisite. The selected excerpt does not establish specific issued permission. Human review required."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9418
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0022
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 3,
+            "range": [
+              234,
+              419
+            ],
+            "clause": "APPROVED ROUTE PLAN RP-7 permits Scene 62 to position a collapsible period market stall along the inner wall, provided a two-metre unobstructed public walkway is maintained by stewards.",
+            "requestHash": "d1fcf8b096cb7786b9704b8128f8412632680cb4638b9828540f436d542412eb",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+            "finding": {
+              "code": "CLOCKED_CONDITIONAL_AUTHORITY_REVIEW",
+              "title": "Clocked linked the activity to a documented permission",
+              "status": "review",
+              "relevance": 0.9927,
+              "grant": 0.9646,
+              "explanation": "The excerpt describes a potential issued authorization. Verify signer, scene, date, location and every prerequisite before reliance. Never treat this as clearance."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9927
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.9646
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 4,
+            "range": [
+              420,
+              555
+            ],
+            "clause": "The production team drafted a request to relocate the stall across the passage for Scene 63, but no revised route plan has been issued.",
+            "requestHash": "72cf8c8270c6cbcd8593ca710d3e357ca00e26a52baf01fe5d190b27258d6b2d",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+            "finding": {
+              "code": "NO_SEMANTIC_LINK_DETECTED",
+              "title": "No link detected in this selected clause",
+              "status": "unresolved",
+              "relevance": 0.1478,
+              "grant": 0.002,
+              "explanation": "This does not establish unrestricted permission; another relevant clause may have been omitted."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.1478
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.002
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          }
+        ],
+        "error": null,
+        "notClearance": true,
+        "warning": "Results are limited to segmented source clauses; missing findings never imply permission."
+      }
+    },
+    {
+      "sceneId": "S63",
+      "sceneRow": "Scene 63 | NORTH ARCADE | 13:20-13:40 | Set the same portable booth across the central pedestrian lane while a camera tracks the crowd.",
+      "sceneHash": "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4",
+      "status": "COMPLETE",
+      "scan": {
+        "source": "live-clocked-decide-condition-sweep",
+        "endpoint": "decide",
+        "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+        "sceneHash": "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4",
+        "scene": {
+          "text": "Scene 63 | NORTH ARCADE | 13:20-13:40 | Set the same portable booth across the central pedestrian lane while a camera tracks the crowd."
+        },
+        "candidatesDetected": 4,
+        "candidatesEvaluated": 4,
+        "attempts": 4,
+        "sourceUnscanned": [],
+        "complete": true,
+        "interpretationScope": "ONLY_SEGMENTED_CLAUSES_NOT_ENTIRE_PERMIT_AUTHORITY",
+        "reportedCredits": 4,
+        "observedKnownCredits": 4,
+        "results": [
+          {
+            "index": 1,
+            "range": [
+              0,
+              91
+            ],
+            "clause": "ISSUED PUBLIC ACCESS CONSENT VA-09 covers the North Arcade filming area on 9 November 2026.",
+            "requestHash": "1b0556d21fd4e376e4f7c6917f2ccf272342fbfcbe0f128b4549fee158e1b679",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4",
+            "finding": {
+              "code": "CLOCKED_CONDITIONAL_AUTHORITY_REVIEW",
+              "title": "Clocked linked the activity to a documented permission",
+              "status": "review",
+              "relevance": 0.9808,
+              "grant": 0.8781,
+              "explanation": "The excerpt describes a potential issued authorization. Verify signer, scene, date, location and every prerequisite before reliance. Never treat this as clearance."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9808
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.8781
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 2,
+            "range": [
+              92,
+              233
+            ],
+            "clause": "Pedestrian egress channels must remain clear; temporary scenic installations that redirect visitors require a separately signed marshal plan.",
+            "requestHash": "d49db5a214ab4a909fd9830c8cc16f97fa70b82b9c70efd470201a2907175e2b",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_REVIEW",
+              "title": "Clocked linked an unfamiliar activity to a source condition",
+              "status": "review",
+              "relevance": 0.9859,
+              "grant": 0.002,
+              "explanation": "This may be a restriction or approval prerequisite. The selected excerpt does not establish specific issued permission. Human review required."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.9859
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.002
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 3,
+            "range": [
+              234,
+              419
+            ],
+            "clause": "APPROVED ROUTE PLAN RP-7 permits Scene 62 to position a collapsible period market stall along the inner wall, provided a two-metre unobstructed public walkway is maintained by stewards.",
+            "requestHash": "fd4779c19883a0402aeae34d04fb844a983abb17331ffffc3ee026ff4b6c46e8",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_AMBIGUOUS",
+              "title": "Semantic relationship remains uncertain",
+              "status": "unresolved",
+              "relevance": 0.5415,
+              "grant": 0.0117,
+              "explanation": "Model probabilities do not support a dependable conclusion. Review the complete documents manually."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.5415
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.0117
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          },
+          {
+            "index": 4,
+            "range": [
+              420,
+              555
+            ],
+            "clause": "The production team drafted a request to relocate the stall across the passage for Scene 63, but no revised route plan has been issued.",
+            "requestHash": "374d06fdabd5c53edb1fba83b19c8dd291cee7fe5ae16b021f2dd269ea90bedc",
+            "permitHash": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+            "sceneHash": "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4",
+            "finding": {
+              "code": "CLOCKED_SEMANTIC_REVIEW",
+              "title": "Clocked linked an unfamiliar activity to a source condition",
+              "status": "review",
+              "relevance": 0.944,
+              "grant": 0.002,
+              "explanation": "This may be a restriction or approval prerequisite. The selected excerpt does not establish specific issued permission. Human review required."
+            },
+            "modelAnswers": {
+              "activity_link": {
+                "type": "noul",
+                "noul": 0.944
+              },
+              "granted_for_scene": {
+                "type": "noul",
+                "noul": 0.002
+              }
+            },
+            "reportedCredits": 1,
+            "notClearance": true
+          }
+        ],
+        "error": null,
+        "notClearance": true,
+        "warning": "Results are limited to segmented source clauses; missing findings never imply permission."
+      }
+    }
+  ],
+  "totalPlannedCalls": 8,
+  "attempts": 8,
+  "complete": true,
+  "interpretationScope": "SEGMENTED_CLAUSES_PER_SCENE_NOT_COMPLETE_PERMIT_AUTHORITY",
+  "reportedCredits": 8,
+  "observedKnownCredits": 8,
+  "error": null,
+  "notClearance": true,
+  "warning": "A scene not evaluated or with no model finding is NOT authorized. Resolve authority, conditions and all missing source evidence manually."
+}

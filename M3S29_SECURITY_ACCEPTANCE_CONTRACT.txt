@@ -1,0 +1,64 @@
+BEFOREROLL M3-S29 v0.27.0 - LOCAL OWNER SECURITY, PRIVACY, RETENTION, RECOVERY
+============================================================================
+Scope: single operator on a locally trusted machine. This is NOT a public, hosted,
+multi-user service. Do NOT run with HOST=0.0.0.0 expecting private data to work.
+
+ACCESS
+- Local workspace APIs (including reads, original binary downloads, backups,
+  all modifications and Clocked execution) require an owner-session cookie.
+- A 64-character random owner access token is created at server startup unless
+  BEFOREROLL_OWNER_TOKEN is provided. Token printed ONLY in local server terminal,
+  never in health, API error, exported data or browser assets.
+- Open http://127.0.0.1:3000. In the owner unlock panel paste the terminal's
+  LOCAL_OWNER_ACCESS_TOKEN, NOT the Clocked API key or billable operator token.
+- Session is RAM-only, HttpOnly, SameSite=Strict, 4h, with revocation and
+  bounded failed unlock attempts. Restarting the server revokes old sessions.
+- Host and connection endpoint must BOTH be loopback and have the exact port;
+  cross-site fetch metadata, conflicting Origin, forwarded-host headers and DNS
+  rebinding are rejected before access. No CORS access.
+- Clocked execution STILL requires separate deliberate operator token and existing
+  per-request no-retry journal policy. Owner auth alone cannot bill Clocked.
+
+PRIVACY
+- Originals remain private in the local content-addressed vault. Existing hashes,
+  source revisions, historical model journals and human decisions preserved.
+- Browser's new portable backup action exports AES-256-GCM encrypted JSON with a
+  unique per-backup random salt and IV; scrypt KDF. Supply >=14-character password.
+  No password is written to project data or browser persistent storage.
+- Plaintext backup API is blocked by default for authenticated owner sessions.
+  Deliberate legacy plaintext export requires special owner acknowledgement.
+- Other evidence exports (JSON/Markdown) remain plaintext by design; protect
+  them when copied off-device. Password loss means encrypted backup loss.
+- Local machine users with filesystem access or malware can still read locally
+  stored plaintext original files and project JSON; OS account security and disk
+  encryption remain owner responsibilities. No remote accounts or cloud storage.
+
+RECOVERY
+- scripts/lifecycle-cli.mjs supports backup-encrypted, verify-encrypted and
+  restore-encrypted. Set BEFOREROLL_BACKUP_PASSPHRASE by a masked local prompt.
+  NEVER pass it on a command line or commit it.
+- AES-GCM authenticates the full backup envelope; decryption then runs the existing
+  production/Clocked-journal/original-byte integrity verifier before recovery.
+- Restore requires an exact owner-confirmed ID and separate empty destination;
+  no overwrites, no Clocked calls, unknown billing remains non-retryable.
+- Existing plaintext CLI commands remain for legacy migration; prefer encryption.
+
+DATA RETENTION
+- NO automatic deletion, source expiry or journal pruning. Historical document
+  originals remain referenced and protected across source changes.
+- node scripts/retention-cli.mjs inspect: read-only inventory and plan hash.
+- node scripts/retention-cli.mjs prune-orphans <exact-plan-sha256>: owner-only,
+  explicit garbage collection of aged >=30-day, unreferenced original blobs.
+- Orphans might still be useful to EXTERNAL backups not mounted here. Review the
+  plan before deletion. Neither workspaces nor any journals are ever pruned.
+
+HARD LIMITS / LIMITATIONS
+- Existing 8 MiB per original, 32 MiB backup originals cap and bounded POST body
+  limits remain. Clocked project request limits and crash-safe journal remain.
+- Owner token is a local security barrier, NOT identity proof for multiple users.
+- Cryptographic file checksums alone do not authenticate permit issuers. Backups
+  are not evidence of legal filming authorization. No OCR or hosted login added.
+- No real provider calls during M3-S29 testing.
+
+Acceptance: verify-m3s29-source + 472 cumulative Node tests including 13 new
+security tests + U01/U02 original read-only source-bound scoring (5/5 each).

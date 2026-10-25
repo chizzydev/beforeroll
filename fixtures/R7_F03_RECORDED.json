@@ -1,0 +1,166 @@
+{
+  "recorded": "2026-10-24",
+  "origin": "Owner-run, real Clocked API response to synthetic fixture",
+  "case_id": "F03",
+  "endpoint": "extract",
+  "credits": 10,
+  "elapsed_seconds": 1.047,
+  "status": 200,
+  "source": "DAILY CALL SHEET CS-11 - Thursday 5 November 2026\nScene 14 | EAST COURTYARD | 15:30-16:05 | Interview, no playback.\nScene 15 | EAST COURTYARD | 16:05-17:20 | Music montage with amplified playback.\nScene 16 | WEST PLAZA | 14:00-14:25 | Drone aerial.\nEnd of call sheet. Production coordinator sign-off: PENDING.",
+  "fields": {
+    "scenes": {
+      "value": [
+        {
+          "scene_number": "14",
+          "location": "EAST COURTYARD",
+          "shoot_window": null,
+          "activity": null
+        },
+        {
+          "scene_number": "15",
+          "location": null,
+          "shoot_window": null,
+          "activity": null
+        },
+        {
+          "scene_number": "16",
+          "location": "WEST PLAZA",
+          "shoot_window": "14:00-14:25",
+          "activity": "Drone aerial"
+        }
+      ],
+      "items": [
+        {
+          "start": 50,
+          "end": 78,
+          "fields": {
+            "scene_number": {
+              "value": "14",
+              "start": 56,
+              "end": 58,
+              "confidence": 0.9999999985238286,
+              "p_verify": 0.9999999985238286
+            },
+            "location": {
+              "value": "EAST COURTYARD",
+              "start": 61,
+              "end": 75,
+              "p_start": 1,
+              "p_close": 1,
+              "p_point": 0.5,
+              "p_verify": 1,
+              "confidence": 1
+            },
+            "shoot_window": {
+              "value": null,
+              "confidence": 1,
+              "p_blank": 0,
+              "rejected_value": "14",
+              "rejected_p_verify": 0,
+              "reason": "verification_rejected"
+            },
+            "activity": {
+              "value": null,
+              "confidence": 1,
+              "p_blank": 0,
+              "rejected_value": "14",
+              "rejected_p_verify": 0,
+              "reason": "verification_rejected"
+            }
+          }
+        },
+        {
+          "start": 78,
+          "end": 84,
+          "fields": {
+            "scene_number": {
+              "value": "15",
+              "start": 78,
+              "end": 80,
+              "confidence": 0.9996627042060026,
+              "p_verify": 0.9996627042060026
+            },
+            "location": {
+              "value": null,
+              "confidence": 1,
+              "p_blank": 0,
+              "rejected_value": "15",
+              "rejected_p_verify": 0,
+              "reason": "verification_rejected"
+            },
+            "shoot_window": {
+              "value": null,
+              "confidence": 1,
+              "p_blank": 0,
+              "rejected_value": "15:30-",
+              "rejected_p_verify": 0,
+              "reason": "verification_rejected"
+            },
+            "activity": {
+              "value": null,
+              "confidence": 0,
+              "p_blank": 0
+            }
+          }
+        },
+        {
+          "start": 84,
+          "end": 248,
+          "fields": {
+            "scene_number": {
+              "value": "16",
+              "start": 84,
+              "end": 86,
+              "confidence": 0.9999999961529245,
+              "p_verify": 0.9999999961529245
+            },
+            "location": {
+              "value": "WEST PLAZA",
+              "start": 208,
+              "end": 218,
+              "p_start": 1,
+              "p_close": 1,
+              "p_point": 0.5,
+              "p_verify": 1,
+              "confidence": 1
+            },
+            "shoot_window": {
+              "value": "14:00-14:25",
+              "start": 221,
+              "end": 232,
+              "p_start": 1,
+              "p_close": 1,
+              "p_point": 0.68,
+              "p_verify": 1,
+              "alternatives": [
+                {
+                  "value": "16:05-17:20",
+                  "start": 144,
+                  "p_verify": 0
+                },
+                {
+                  "value": "14:25",
+                  "start": 227,
+                  "p_verify": 0
+                }
+              ],
+              "confidence": 1
+            },
+            "activity": {
+              "value": "Drone aerial",
+              "start": 235,
+              "end": 247,
+              "p_start": 1,
+              "p_close": 1,
+              "p_point": 0.5,
+              "p_verify": 1,
+              "confidence": 1
+            }
+          }
+        }
+      ],
+      "source": "extracted",
+      "row_anchor": "scene_number"
+    }
+  }
+}

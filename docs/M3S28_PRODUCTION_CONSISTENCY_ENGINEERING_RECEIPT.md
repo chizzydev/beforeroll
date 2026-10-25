@@ -1,0 +1,21 @@
+# M3-S28 — Production and evidence consistency, v0.26.0
+
+## Technical scope
+
+Cumulative engineering release based on M3-S27 v0.25.0, without a parallel evidence database or any new model-service integration. The aim is to ensure the same source data, project version, present/historical decisions and durable execution journal drive the workflow, action queue, scene workbench, and exports.
+
+**A source-bound reconciliation certificate** (`src/production-consistency.mjs`) independently checks the dossier against original workspace data, recalculates source plan and scene/task identities, cross-references document/scene/quotation hashes, confirms per-scene and global task totals, verifies current human review is the latest real history record, reconciles model completion/uncertainty/accounting and human decisions, verifies archived-vs-current review counts, and checks source custody, journey, work queue, scene workbench, and paginated overview when supplied. It fails closed on mismatches and never authenticates permits or grants.
+
+**Consistency endpoint**: `GET /api/workspaces/:id/consistency` returns a version- and dossier-bound read-only certificate. The unified `/workflow` returns that certificate alongside a single server-side dossier, original-file inventory, action queue, journey, and scene workbench. Evidence JSON and Markdown GET routes have a `X-BeforeRoll-Consistency-Sha256` response header. All support existing `expectedVersion`/`expectedDossierSha256` optimistic-read semantics where applicable; an intervening project mutation detected before the response results in 409 instead of knowingly emitting an old version as current. Standalone journey/action/workbench reads are consistency checked and re-fenced. Browser controller rejects workflows with missing/mismatched certificates; the evidence section labels the reconciliation as internal only.
+
+**Source lineage reversion fix**: Identical quoted text returning in a *later* document revision no longer resurrects human decisions or prior Clocked run records. On first S28-onward source change, changed document source has a monotonically increasing `analysisEpoch` included in source-task identity; unaffected documents keep their task IDs. Call-sheet changes retain task identity for *unchanged* scene rows, while changed/removed/reintroduced scene rows advance a per-scene source epoch retained in the call-sheet history. This avoids false revalidation of previously closed work if an original permit is revised and later restored to identical text. Legacy persisted workspaces lacking an epoch preserve their current accepted task identities until a new real revision; no forced journal migration or new Clocked call occurs on upgrade. Revisions still make historical evidence discoverable but not current. Source-change preview and commit use the identical epoch logic. Source epochs do not imply new legal status or documentary authority.
+
+## Verification / limitations
+
+- Local cumulative Node tests **459/459 passed**, including 14 new M3-S28 scenarios.
+- Synthetic HTTP provider transport was used for the new execution/revision tests; **zero** live Clocked calls in S28 testing.
+- Prior original U01/U02 owner-recorded Clocked evidence is unchanged; release verifier checks both frozen 5/5 scoring suites and U03 offline preflight.
+- Tested initial/partial/completed/uncertain evidence accounting, changed source + returned-original revisions, unchanged-scene retention, removed/reintroduced scene identity, historical reviews, source vault counts, altered dossier with recomputed checksum, tampered action/workbench/overview, independent certificate parity with workflow and bound exports.
+- A reconciliation PASS is **only internal data consistency**. It cannot prove all permits were supplied, original document validity, model accuracy, actual legal authority, safety prerequisites met, or permission to film.
+- Existing journal/source artifacts are not altered in place by installation. The owner has not yet provided Windows verification for M3-S23 through M3-S28. No Windows GUI or live-provider execution acceptance is claimed for this release.
+- Final UI design, repository/public deployment, walkthrough and submission remain explicitly outside this increment by owner direction.

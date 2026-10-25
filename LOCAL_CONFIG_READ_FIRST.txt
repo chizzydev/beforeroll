@@ -1,0 +1,34 @@
+BEFOREROLL M3-S31 / PRIVATE LIVE MODE WITH LOCAL .env
+
+Evaluation (no credentials, no fresh API calls):
+  Double-click Start-BeforeRoll-Evaluation.cmd. Works without any .env.
+  The browser supports real offline workspace actions and replay of previously
+  recorded Clocked Decide responses. It CANNOT run fresh model comparisons.
+
+Private local production (your Clocked account):
+  1. Double-click Configure-BeforeRoll-Private.cmd.
+  2. The first run creates .env with two different cryptographic random tokens.
+     Notepad opens it. Enter your actual CLOCKED_API_KEY, then change
+     BEFOREROLL_LIVE_ENABLED=false to BEFOREROLL_LIVE_ENABLED=true.
+     Save. Do not paste the Clocked key in the browser or terminal.
+  3. Double-click Start-BeforeRoll-Private.cmd. It opens your browser.
+  4. For private work, the browser asks for BEFOREROLL_OWNER_TOKEN from .env.
+     For intentional billable Clocked execution, use the DIFFERENT
+     BEFOREROLL_OPERATOR_TOKEN in the browser's password field.
+     No Clocked API key is entered in either browser field.
+  5. Close the launcher window to stop the server.
+
+WHY TWO CREDENTIALS?
+  Owner access protects sensitive documents. The separate operator token
+  protects against unexpected API spending even after a browser is unlocked.
+  Neither is your Clocked provider key.
+
+IMPORTANT SECURITY LIMITATIONS
+  .env is local plaintext. Keep it private. Never commit, email or share it.
+  The server is loopback-only. Evaluation mode never reads .env or enables
+  live calls, even if private mode is configured on the same computer.
+  A judge without a provider key can still use the separate evaluation mode,
+  including recorded model evidence, but cannot request fresh Clocked analysis.
+  To offer keyless live execution later, a trusted hosted backend must hold
+  the key and enforce strict server-side access and spending controls.
+  Nothing in this release creates that hosted capability.

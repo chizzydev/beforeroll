@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+.DS_Store
+
+# Local-only private production state
+.beforeroll-data/
+*.beforeroll-workspace.json

@@ -1,0 +1,75 @@
+{
+  "recorded": "2026-10-24",
+  "origin": "Owner-run, real Clocked API response to synthetic fixture",
+  "case_id": "F01",
+  "endpoint": "extract",
+  "credits": 5,
+  "elapsed_seconds": 2.328,
+  "status": 200,
+  "source": "CITY OF ALDERPORT FILM OFFICE\nISSUED LOCATION AUTHORIZATION FP-1042, approved 23 October 2026.\nLocation: EAST COURTYARD only. The adjoining WEST PLAZA is excluded.\nFor Thursday 5 November 2026, crew load-in may start at 07:30.\nPrincipal photography is permitted from 09:00 until 17:00.\nAmplified playback must cease at 16:15.\nDrone operation is NOT authorized by this permit.\nAll equipment must be clear by 18:00.\nATTACHMENT - application request submitted 18 October: proposed filming until 20:00 and a drone shot in WEST PLAZA. The application proposal is not an issued permission.",
+  "fields": {
+    "permit_number": {
+      "value": "FP-1042",
+      "start": 60,
+      "end": 67,
+      "confidence": 0.9999999996890863,
+      "p_verify": 0.9999999996890863
+    },
+    "issued_filming_location": {
+      "value": "EAST COURTYARD",
+      "start": 105,
+      "end": 119,
+      "confidence": 0.9999999992143824,
+      "p_verify": 0.9999999992143824
+    },
+    "issued_filming_date": {
+      "value": "Thursday 5 November 2026",
+      "start": 168,
+      "end": 192,
+      "confidence": 0.9999999993619506,
+      "p_verify": 0.9999999993619506
+    },
+    "load_in_start": {
+      "value": "07:30",
+      "start": 220,
+      "end": 225,
+      "confidence": 0.9999999997002513,
+      "p_verify": 0.9999999997002513
+    },
+    "principal_filming_start": {
+      "value": "09:00",
+      "start": 267,
+      "end": 272,
+      "confidence": 0.9999999998226909,
+      "p_verify": 0.9999999998226909
+    },
+    "principal_filming_end": {
+      "value": "17:00",
+      "start": 279,
+      "end": 284,
+      "confidence": 0.9999999995766653,
+      "p_verify": 0.9999999995766653
+    },
+    "amplified_sound_cutoff": {
+      "value": "16:15",
+      "start": 319,
+      "end": 324,
+      "confidence": 0.9999999999317866,
+      "p_verify": 0.9999999999317866
+    },
+    "equipment_clear_by": {
+      "value": "18:00",
+      "start": 407,
+      "end": 412,
+      "confidence": 0.9999999994723021,
+      "p_verify": 0.9999999994723021
+    },
+    "drone_authorization_clause": {
+      "value": "Drone operation is NOT authorized by this permit.",
+      "start": 326,
+      "end": 375,
+      "confidence": 0.9999999999190228,
+      "p_verify": 0.9999999999190228
+    }
+  }
+}

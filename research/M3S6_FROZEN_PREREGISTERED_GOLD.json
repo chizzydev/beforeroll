@@ -1,0 +1,115 @@
+{
+  "study": "BEFOREROLL_M3S6_UNFAMILIAR_PERMIT_CHAMPIONSHIP_v1.0",
+  "modelResultsAtFreeze": "NONE",
+  "scoringDisclaimer": "These are human-authored expected relations for fictional sources, not verified legal determinations. Model calibration and robustness not inferred.",
+  "scorePolicy": "Check only discriminative predeclared cells; label context cells as informative. Require complete identity verified responses. A score outside the expected band is a discrepancy, never auto-adjust thresholds.",
+  "probabilityBands": {
+    "low": "<=0.20",
+    "high": ">=0.80"
+  },
+  "caseRubric": [
+    {
+      "id": "U01",
+      "permitSha256": "6e1ab1ff894dee81e960a67d5bce23598b64235f9b38851e2faef73e575a034c",
+      "sceneSha256": [
+        "0fb199d799d904f865e254cf697f6c87fae4cdecca857db3c8eda5f1a9b5a505",
+        "08a36ade26cecdaef2a7b3e25ffc5253adc7ea3a4531f66be3009ceaae64a27d"
+      ],
+      "assertions": [
+        {
+          "sceneId": "S47",
+          "clause": 2,
+          "field": "activity_link",
+          "band": "high",
+          "why": "Wheeled camera dolly on original mosaic is covered by wheeled-platform restriction despite alternate terminology"
+        },
+        {
+          "sceneId": "S48",
+          "clause": 2,
+          "field": "activity_link",
+          "band": "high",
+          "why": "Same general movement restriction relevant to different scene"
+        },
+        {
+          "sceneId": "S47",
+          "clause": 3,
+          "field": "granted_for_scene",
+          "band": "high",
+          "why": "Signed addendum expressly identifies Scene 47, never proves protection installed"
+        },
+        {
+          "sceneId": "S48",
+          "clause": 3,
+          "field": "granted_for_scene",
+          "band": "low",
+          "why": "Scene 47 addendum cannot grant Scene 48 permission"
+        },
+        {
+          "sceneId": "S48",
+          "clause": 4,
+          "field": "granted_for_scene",
+          "band": "low",
+          "why": "Email request to extend is not issued consent"
+        }
+      ]
+    },
+    {
+      "id": "U02",
+      "permitSha256": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+      "sceneSha256": [
+        "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+        "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4"
+      ],
+      "assertions": [
+        {
+          "sceneId": "S62",
+          "clause": 2,
+          "field": "activity_link",
+          "band": "high",
+          "why": "Stall / public circulation intersects egress obligation"
+        },
+        {
+          "sceneId": "S63",
+          "clause": 2,
+          "field": "activity_link",
+          "band": "high",
+          "why": "Central lane obstruction intersects egress obligation"
+        },
+        {
+          "sceneId": "S62",
+          "clause": 3,
+          "field": "granted_for_scene",
+          "band": "high",
+          "why": "Route plan expressly permits Scene 62 under conditions"
+        },
+        {
+          "sceneId": "S63",
+          "clause": 3,
+          "field": "granted_for_scene",
+          "band": "low",
+          "why": "Route plan explicitly scoped to Scene 62, not Scene 63"
+        },
+        {
+          "sceneId": "S63",
+          "clause": 4,
+          "field": "granted_for_scene",
+          "band": "low",
+          "why": "Draft relocation request is not revised route plan"
+        }
+      ]
+    }
+  ],
+  "failureSentinel": {
+    "id": "U03",
+    "requiredMissingExcerpt": "No drones.",
+    "requiredUncoveredSourceAlert": true,
+    "noLiveRequests": true
+  },
+  "knownNon-Gates": [
+    "A 4/4 candidate scan does not establish full original permit coverage",
+    "High model confidence does not authenticate issuance",
+    "Band-scoring on these constructed cases is not a real-world accuracy estimate",
+    "A negative class does not imply safe/authorized filming",
+    "Source pair structure still shares features with prior experiment"
+  ]
+}

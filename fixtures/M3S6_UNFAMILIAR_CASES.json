@@ -1,0 +1,53 @@
+{
+  "study": "BEFOREROLL_M3S6_UNFAMILIAR_PERMIT_CHAMPIONSHIP_v1.0",
+  "created_date": "2026-10-25",
+  "origin": "Author-created fictional cases, deliberately not previously submitted to Clocked",
+  "api_results": "NONE; awaiting actual owner-run Clocked Decide evidence",
+  "method": "Independent two-scene × four detected-clause evaluation per case; no preselected clause, no semantic keyword mappings; no automatic retries",
+  "cases": [
+    {
+      "id": "U01",
+      "title": "Archive floor / rolling camera carriage",
+      "intent": "Cross-vocabulary camera movement with a scene-scoped signed exception and an unapproved email request.",
+      "permit": "LOCATION CONSENT HW-18 covers filming in Riverton Archive Atrium on 8 November 2026.\nPressure-bearing wheeled camera platforms must not cross the original tesserae until written registrar consent is issued.\nSIGNED ADDENDUM AD-4 specifically permits Scene 47 to use a rubber-tyred tracking carriage across the mosaic floor only while protective boards and an on-site registrar are present throughout.\nThe location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.",
+      "scenes": [
+        "Scene 47 | RIVERTON ARCHIVE ATRIUM | 10:05-10:25 | Follow the performer on a wheeled dolly as the camera glides over the ancient mosaic floor.",
+        "Scene 48 | RIVERTON ARCHIVE ATRIUM | 11:10-11:30 | Film a similar travelling shot using a rolling camera platform across the mosaic floor."
+      ],
+      "permitSha256": "6e1ab1ff894dee81e960a67d5bce23598b64235f9b38851e2faef73e575a034c",
+      "sceneSha256": [
+        "0fb199d799d904f865e254cf697f6c87fae4cdecca857db3c8eda5f1a9b5a505",
+        "08a36ade26cecdaef2a7b3e25ffc5253adc7ea3a4531f66be3009ceaae64a27d"
+      ]
+    },
+    {
+      "id": "U02",
+      "title": "Public passage / market-set obstruction",
+      "intent": "Operating permissions versus an unapproved plan, scope and wording deliberately different from atmospheric effects.",
+      "permit": "ISSUED PUBLIC ACCESS CONSENT VA-09 covers the North Arcade filming area on 9 November 2026.\nPedestrian egress channels must remain clear; temporary scenic installations that redirect visitors require a separately signed marshal plan.\nAPPROVED ROUTE PLAN RP-7 permits Scene 62 to position a collapsible period market stall along the inner wall, provided a two-metre unobstructed public walkway is maintained by stewards.\nThe production team drafted a request to relocate the stall across the passage for Scene 63, but no revised route plan has been issued.",
+      "scenes": [
+        "Scene 62 | NORTH ARCADE | 12:20-12:45 | Place a foldout prop merchant booth beside the wall while extras pass through an open walkway.",
+        "Scene 63 | NORTH ARCADE | 13:20-13:40 | Set the same portable booth across the central pedestrian lane while a camera tracks the crowd."
+      ],
+      "permitSha256": "8efad29fe4f45d6212fd526f241568ada43d62db930800f52603eb1841dc1ddb",
+      "sceneSha256": [
+        "58bcf7f2f2a6c4806c2e39810071a79b09229e35d1564055b77147e12b8a2af6",
+        "33b4f3a1a7910820f1d992216dcea78b10482b0ce5fa28d7a7c2b8abbecd73b4"
+      ]
+    },
+    {
+      "id": "U03",
+      "title": "Short standalone prohibition / segmentation failure sentinel",
+      "intent": "Offline-only failure discovery: short No drones clause is omitted by the 25-character source-excerpt minimum, so the app must disclose incomplete source coverage.",
+      "offline_only": true,
+      "permit": "ISSUED PLAZA AGREEMENT LX-55 allows ordinary handheld photography in the civic courtyard on 10 November 2026.\nNo drones.\nAny unattended power generator in the public passage requires separate written fire office authorization.",
+      "scenes": [
+        "Scene 77 | CIVIC COURTYARD | 16:10-16:25 | Obtain overhead establishing frames using a small quadcopter with a camera."
+      ],
+      "permitSha256": "b45e2bbde93f9df488c633543a85b319f6ea48093a8d2211d7d09592f8f865f0",
+      "sceneSha256": [
+        "fd5ab60987ed52870a5b6ca63c2d906272b86c74f4bd94b2229fe88a4f3284aa"
+      ]
+    }
+  ]
+}
