@@ -1,0 +1,35 @@
+{
+  "schema": "beforeroll-complete-production-evidence-v1",
+  "productionId": "design_gui_20261026",
+  "persistedVersion": 9,
+  "counts": {
+    "documents": 2,
+    "scenes": 2,
+    "unresolvedCallSheetRows": 0,
+    "planTasks": 8,
+    "completedModelChecks": 0,
+    "unattemptedChecks": 8,
+    "uncertainModelChecks": 0,
+    "archivedModelRuns": 0,
+    "currentReviewedTasks": 2,
+    "currentUnresolvedHumanReviews": 2,
+    "staleHumanReviews": 0,
+    "unresolvedPdfTranscriptions": 0,
+    "undatedScenes": 1,
+    "openPrerequisites": 1,
+    "pastDuePrerequisites": 0,
+    "unverifiedDocumentConflicts": 0,
+    "currentSceneScopeAssertions": 0,
+    "staleSceneScopeAssertions": 0,
+    "unreviewedDocumentProvenance": 2
+  },
+  "originals": {
+    "referenced": 3,
+    "preserved": 3,
+    "missing": 0
+  },
+  "originalBytesIncluded": false,
+  "secretsIncluded": false,
+  "notClearance": true,
+  "encryptedBackupSha256": "3fe83616cb34dcc25b0799fd1434ff6c83c2df185bb9dc7d10eece2854f9ad23"
+}

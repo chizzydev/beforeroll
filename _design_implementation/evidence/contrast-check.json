@@ -1,0 +1,61 @@
+{
+  "scope": "Static approved token pair calculations; not a formal full-page accessibility audit",
+  "contrast": [
+    {
+      "name": "Body on canvas",
+      "foreground": "#272d29",
+      "background": "#f4f4ef",
+      "ratio": 12.74,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Muted on canvas",
+      "foreground": "#61685f",
+      "background": "#f4f4ef",
+      "ratio": 5.21,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Primary label",
+      "foreground": "#fffefa",
+      "background": "#8c442f",
+      "ratio": 6.98,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Human label on paper",
+      "foreground": "#35576a",
+      "background": "#fbf8ef",
+      "ratio": 7.26,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Error text",
+      "foreground": "#793326",
+      "background": "#f6e9e3",
+      "ratio": 7.64,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "name": "Control boundary",
+      "foreground": "#7f877a",
+      "background": "#fffefa",
+      "ratio": 3.68,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "name": "Focus outline",
+      "foreground": "#245d82",
+      "background": "#f4f4ef",
+      "ratio": 6.42,
+      "minimum": 3,
+      "pass": true
+    }
+  ]
+}

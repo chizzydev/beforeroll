@@ -1,0 +1,21 @@
+✔ four destinations navigate the actual atomic controller without writes, provider calls or a shadow store (160.6908ms)
+✔ generic scene investigation keeps exact unfamiliar activity, quote, identity and honest no-model state (50.2435ms)
+✔ exact-source review stages, verifies and commits through the existing guarded HTTP transaction (184.3169ms)
+✔ staged work protects creation and recovery entry as well as production switching (52.5007ms)
+✔ source intake is progressive while all accepted original/transcription controls remain reachable (47.4483ms)
+✔ changing document presentation scopes draft keys without changing the production version (52.5374ms)
+✔ all new first-party UI modules and foundations are explicitly served with strict CSP, arbitrary directories remain inaccessible (64.2583ms)
+✔ controlled and earlier-contract origins stay distinguishable without deriving authority from a model-positive return (0.2821ms)
+✔ uncertain billing does not expose a new dispatch form even when live capability exists (45.8964ms)
+✔ selected human history resolves exact current source context without altering the saved review (125.5045ms)
+✔ long-source excerpts use exact codepoint ranges and retain the complete original, including astral Unicode (1.4946ms)
+✔ native diagnostic disclosure remains open across rerender and is isolated from another destination (0.3621ms)
+✔ comparison opens the exact passage from another document and scene beyond the first findings page (342.749ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1371.0548
