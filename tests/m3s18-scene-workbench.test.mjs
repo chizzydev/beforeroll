@@ -117,7 +117,7 @@ test('cold-start lifecycle: source import, checkpointed model, human review and 
   assert.equal(r.status,200);version=r.json.version;
   r=await request(s.base,api+'/scene-workbench?sceneId=S7');assert.equal(r.status,200);assert.equal(r.json.summary.currentTaskReviews,1);
   const preview=await request(s.base,api+'/impact',{method:'POST',body:{expectedVersion:version,documentId:'P',file:{kind:'permit',name:'P_changed.txt',text:permitA+'\n\nNo amplified sound.'}}});assert.equal(preview.status,200);assert.equal(preview.json.previewOnly,true);
-  r=await request(s.base,api+'/import',{method:'POST',body:{expectedVersion:version,documentId:'P',file:{kind:'permit',name:'P_changed.txt',text:permitA+'\n\nNo amplified sound.'}}});assert.equal(r.status,200);
+  r=await request(s.base,api+'/import',{method:'POST',body:{expectedVersion:version,previewSha256:preview.json.previewSha256,documentId:'P',file:{kind:'permit',name:'P_changed.txt',text:permitA+'\n\nNo amplified sound.'}}});assert.equal(r.status,200);
   r=await request(s.base,api+'/scene-workbench?sceneId=S7');assert.equal(r.status,200);assert.equal(r.json.summary.currentTaskReviews,0);assert.equal(r.json.summary.completedModelChecks,0);assert.equal(r.json.summary.planned,6);
   const dossier=await request(s.base,api+'/dossier/summary');assert.equal(dossier.status,200);assert.equal(dossier.json.counts.staleHumanReviews,1);
   assert.equal((await l.store.load('scene18')).version,version+1);

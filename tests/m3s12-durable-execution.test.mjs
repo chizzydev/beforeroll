@@ -153,7 +153,9 @@ test('provider rejection returns halted journal on original task, not a fabricat
 });
 test('local hourly budget stops a batch before dispatch and preserves checkpoint for next authorized batch',async()=>{
  const s=await liveServer({cap:8});try{await s.importData();
- await s.request('POST','/api/workspaces/station/import',{expectedVersion:3,documentId:'permit',file:{name:'permit.txt',kind:'permit',text:permit+'\n\nNo parking.\n\nKeep doors clear.'}});
+ const replacement={expectedVersion:3,documentId:'permit',file:{name:'permit.txt',kind:'permit',text:permit+'\n\nNo parking.\n\nKeep doors clear.'}};
+ const preview=await s.request('POST','/api/workspaces/station/impact',replacement);assert.equal(preview.status,200);
+ const updated=await s.request('POST','/api/workspaces/station/import',{...replacement,previewSha256:preview.data.previewSha256});assert.equal(updated.status,200);
  const r=await s.request('POST','/api/workspaces/station/execution',{confirm:'RUN_PROJECT_CLOCKED',maxCalls:32},{'X-Operator-Token':'separate-local-token'});
  assert.equal(r.status,200);assert.equal(r.data.attempts,8);assert.equal(s.calls(),8);
  const refused=await s.request('POST','/api/workspaces/station/execution',{confirm:'RUN_PROJECT_CLOCKED',maxCalls:8},{'X-Operator-Token':'separate-local-token'});

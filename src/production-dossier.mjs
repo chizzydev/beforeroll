@@ -50,7 +50,7 @@ export function buildProductionDossier(w,{persistedVersion,asOf,modelEvidence=nu
   const r=modelEvidence?.records[i];
   return {id:t.id,sceneId:t.sceneId,documentId:t.documentId,documentHash:t.documentHash,sceneHash:t.sceneHash,
    unitId:t.unitId,sourceRange:t.sourceRange,quote:t.sourceQuote,requestHash:t.requestHash,
-   modelState:r?.status??'NOT_ATTEMPTED',modelOrigin:r?(r.finding?.replayOrigin??'LOCAL_OWNER_RUN_NOT_CRYPTOGRAPHICALLY_ATTESTED'):'NO_MODEL_RECORDING',
+   modelState:r?.status??'NOT_ATTEMPTED',modelOrigin:r?(r.finding?.controlledTest?'CONTROLLED_TEST_RESPONSE_NOT_CLOCKED':r.finding?.replayOrigin??'LOCAL_OWNER_RUN_NOT_CRYPTOGRAPHICALLY_ATTESTED'):'NO_MODEL_RECORDING',
    model:r?.finding??null,reportedCredits:r?.credits??null,error:r?.error??null,inheritedFromPlanKey:r?.inheritedFromPlanKey??null,notClearance:true};
  })??[];
  const documentary=projectDocumentaryReasoning(w,{asOf,modelRecords:records});

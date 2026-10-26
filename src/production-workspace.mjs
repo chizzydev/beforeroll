@@ -73,6 +73,7 @@ export function applySourceImport(workspace,envelope,{documentId=null}={}){
  if(typeof envelope.text!=='string'||!envelope.text.trim())throw Error('Missing imported text');
  const receipt={kind:envelope.kind,name:envelope.name,sourceFormat:envelope.sourceFormat,rawHash:envelope.rawHash,normalizedHash:envelope.normalizedHash,byteCount:envelope.byteCount,sourceMap:envelope.sourceMap,warnings:envelope.warnings,reviewedAttestation:envelope.reviewedAttestation??null,reviewedPermitAttestation:envelope.reviewedPermitAttestation??null,requiresHumanTextReview:envelope.requiresHumanTextReview===true,extractionPartSha256:envelope.originalPartSha256??null,revision:workspace.revision+1};
  if(sourceFingerprint(envelope.text)!==receipt.normalizedHash)throw Error('Imported normalized hash mismatch');
+ if(envelope.kind==='permit')receipt.documentId=documentId;
  if(envelope.reviewedAttestation)verifyReviewedCallSheetReceipt(receipt,envelope.text);
  if(envelope.reviewedPermitAttestation)verifyReviewedPermitReceipt(receipt,envelope.text);
  if(envelope.kind==='permit'){
@@ -82,6 +83,7 @@ export function applySourceImport(workspace,envelope,{documentId=null}={}){
   if(found)reviseDocument(workspace,documentId,envelope.text);
   else addDocument(workspace,{id:documentId,name:envelope.name,text:envelope.text});
   const doc=workspace.documents.find(x=>x.id===documentId);
+  doc.name=envelope.name;
   doc.importReceipt={...receipt,documentId,sourceHash:doc.sourceHash};
   doc.pdfTranscriptionReview=null;
  }else if(envelope.kind==='callSheet'){

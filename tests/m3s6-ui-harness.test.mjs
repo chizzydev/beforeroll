@@ -9,7 +9,7 @@ test('browser-like no-network render: both never-run source cases load without l
  const app={set innerHTML(v){html=v;},get innerHTML(){return html;},querySelectorAll(){return []},addEventListener(type,cb){listeners[type]=cb;}};
  const rootBody={append(){}};
  globalThis.document={querySelector(q){return q==='#app'?app:null;},createElement(){return {textContent:'',remove(){}};},body:rootBody};
- globalThis.window={scrollTo(){}};
+ globalThis.window={scrollTo(){},addEventListener(type,cb){listeners['window:'+type]=cb;}};
  const savedTimer=setTimeout;
  globalThis.setTimeout=(fn,delay,...args)=>delay>1000?0:savedTimer(fn,delay,...args);
  const fakeRoutes={'/fixtures/F01':'fixtures/R7_F01_RECORDED.json','/fixtures/F03':'fixtures/R7_F03_RECORDED.json','/fixtures/M3S6_UNFAMILIAR_CASES':'fixtures/M3S6_UNFAMILIAR_CASES.json'};

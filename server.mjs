@@ -34,6 +34,8 @@ import {createOwnerSecurity,trustedOwnerRequest} from './src/owner-security.mjs'
 import {encryptOwnerBackup,decryptOwnerBackup} from './src/secure-backup.mjs';
 import {makeEvaluationRuntime} from './src/evaluation-mode.mjs';
 import {loadLocalEnv} from './src/local-env.mjs';
+import {productionHistory} from './src/production-history.mjs';
+import {recoveryDiagnostic} from './src/recovery-diagnostics.mjs';
 const ROOT=path.dirname(fileURLToPath(import.meta.url));
 const IS_ENTRY=Boolean(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url));
 const IS_EVALUATION=IS_ENTRY&&process.argv.includes('--evaluate');
@@ -254,6 +256,7 @@ async function currentDossier(saved,execution,asOf){
  return dossier;
 }
 export function createAppServer(options={}){
+ if(options.controlledTestMode===true&&typeof options.fetchImpl!=='function')throw Error('Controlled test mode requires an explicit non-provider transport');
  // Test seam: a fake transport exercises the live route without consuming credits.
  // Production uses only process environment secrets and the real global fetch.
  const apiKey=options.apiKey ?? process.env.CLOCKED_API_KEY;
@@ -275,6 +278,16 @@ export function createAppServer(options={}){
  // The ordinary installed owner server always uses an ephemeral/random owner secret.
  const ownerToken=evaluationMode?null:(options.ownerToken??(options.workspaceStore||!localOnly?null:(process.env.BEFOREROLL_OWNER_TOKEN||randomBytes(32).toString('hex'))));
  const owner=createOwnerSecurity({token:ownerToken});
+ const primaryStore=store;
+ const recoveryRoot=store?path.join(store.directory,'.recovered'):null;
+ async function recoveredProjects(){
+  if(!recoveryRoot||evaluationMode)return [];
+  let names;try{names=await fs.readdir(recoveryRoot);}catch(e){if(e.code==='ENOENT')return [];throw e;}
+  const items=[];for(const name of names.filter(n=>/^[a-f0-9]{64}$/.test(n))){
+   const recoveredStore=createWorkspaceStore({directory:path.join(recoveryRoot,name)});
+   for(const item of await recoveredStore.list())items.push({...item,recoverySpace:name});
+  }return items;
+ }
  const server=http.createServer(async(req,res)=>{
  for(const [k,v] of Object.entries(baseHeaders(req)))res.setHeader(k,v);
  let uri;try{uri=new URL(req.url,'http://localhost');}catch{return send(res,400,{error:'Malformed request target'});}
@@ -318,7 +331,12 @@ export function createAppServer(options={}){
  }
  // All production data, including read-only exports, requires this access fence.
  if(privateRoute){
-  if(!store)return send(res,403,{error:'Private project workspaces only enabled on loopback; no public file exposure.'});
+  if(!primaryStore)return send(res,403,{error:'Private project workspaces only enabled on loopback; no public file exposure.'});
+  const recoverySpace=req.headers['x-beforeroll-recovery-space']||uri.searchParams.get('recoverySpace')||'';
+  if(recoverySpace&&(!/^[a-f0-9]{64}$/.test(recoverySpace)||evaluationMode))return send(res,400,{error:'Invalid recovered workspace selection'});
+  const store=recoverySpace?createWorkspaceStore({directory:path.join(recoveryRoot,recoverySpace)}):primaryStore;
+  const execution=recoverySpace?createDurableExecution({directory:store.directory}):options.executionStore??createDurableExecution({directory:store.directory});
+  const originalVault=recoverySpace?createSourceOriginalVault({directory:store.directory}):options.sourceVault??createSourceOriginalVault({directory:store.directory});
   const parts=uri.pathname.split('/').slice(2);
   const id=parts[1]||null,action=parts[2]||null;
   try{
@@ -328,15 +346,33 @@ export function createAppServer(options={}){
     const input=await jsonBody(req,96*1024*1024);
     const backup=await decryptOwnerBackup(input.backup,input.passphrase);
     const verified=verifyLifecycleBackup(backup,execution);
-    const existing=await store.load(backup.workspaceId);
-    if(action==='verify')return send(res,200,{...verified,canRestore:!existing,existingVersion:existing?.version??null,
-     notice:existing?'Verified backup; recovery refuses to overwrite this existing production. Recover into a fresh local data folder.':'Verified backup; original files and journals can be restored without provider calls.'});
+    const separate=input.destination==='separate';
+    const targetSpace=separate?backup.sha256:'';
+    const destinationStore=separate?createWorkspaceStore({directory:path.join(recoveryRoot,targetSpace)}):store;
+    let targetExists=true;if(separate){try{await fs.access(destinationStore.directory);}catch(e){if(e.code==='ENOENT')targetExists=false;else throw e;}}
+    const existing=targetExists?await destinationStore.load(backup.workspaceId):null;
+    if(separate&&targetExists&&!existing)throw Error('Recovery destination exists but is incomplete. Preserve it for inspection; do not overwrite journals.');
+    if(action==='verify')return send(res,200,{...verified,recoverySpace:targetSpace,canRestore:!existing&&verified.missingOriginalFiles===0,existingVersion:existing?.version??null,
+     notice:verified.missingOriginalFiles?'Backup has missing original files. Reconnect the exact originals in the source production and export a complete encrypted backup; this incomplete backup will not be reported as a successful recovery.':existing?'This verified backup is already present. Open the recovered copy in Productions; no overwrite or duplicate recovery.':'Verified complete backup; original files and journals can be restored without provider calls into a separate workspace.'});
     if(input.confirmId!==backup.workspaceId||input.previewSha256!==verified.backupSha256)throw Error('Verify this exact backup first and confirm its production ID');
+    if(verified.missingOriginalFiles)throw Error('Original custody incomplete: reconnect missing original files and export a complete backup before recovery');
     if(existing)return send(res,409,{error:'Recovery refuses to overwrite an existing production. Your current production is unchanged.'});
+    if(separate){
+     await fs.mkdir(recoveryRoot,{recursive:true});
+     const staging=path.join(recoveryRoot,'.pending-'+randomUUID());
+     const stagingStore=createWorkspaceStore({directory:staging}),stagingExecution=createDurableExecution({directory:staging});
+     // A failed restore stays in an invisible diagnostic staging directory.
+     // Only fully restored sources, originals and journals are published together.
+     const recovered=await restoreLifecycleBackup(backup,{workspaceStore:stagingStore,execution:stagingExecution,ownerConfirmed:true});
+     const receipt={...recovered,recoverySpace:targetSpace,recoveredAt:new Date().toISOString(),originalProductionId:backup.workspaceId};
+     await fs.writeFile(path.join(staging,'.recovery-receipt.json'),JSON.stringify(receipt),{flag:'wx',mode:0o600});
+     await fs.rename(staging,path.join(recoveryRoot,targetSpace));
+     return send(res,201,receipt);
+    }
     const recovered=await restoreLifecycleBackup(backup,{workspaceStore:store,execution,sourceVault:originalVault,ownerConfirmed:true});
     return send(res,201,recovered);
    }
-   if(!id&&req.method==='GET')return send(res,200,{schema:'beforeroll-workspace-list-v1',items:await store.list()});
+   if(!id&&req.method==='GET')return send(res,200,{schema:'beforeroll-workspace-list-v1',items:[...await primaryStore.list(),...await recoveredProjects()]});
    if(!id&&req.method==='POST'){
     if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
     const input=await jsonBody(req);
@@ -347,6 +383,20 @@ export function createAppServer(options={}){
    if(!id||!/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,79}$/.test(id))return send(res,400,{error:'Invalid workspace id'});
    if(!action&&req.method==='GET'){
     const saved=await store.load(id);return saved?send(res,200,saved):send(res,404,{error:'Workspace not found'});
+   }
+   if(action==='diagnostics'&&req.method==='GET'){
+    const saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
+    const exists=async filename=>{try{await fs.access(filename);return true;}catch(e){if(e.code==='ENOENT')return false;throw e;}};
+    const writerLock=await exists(path.join(store.directory,'.beforeroll-write.lock'));
+    const executionLock=await exists(path.join(store.directory,'.clocked-execution',id+'.lock'));
+    let originals=null,journalState='VERIFIED',diagnostic=null;
+    try{originals=await originalVault.inventory(saved.workspace);}catch(e){diagnostic=recoveryDiagnostic(e);}
+    try{let plan;try{plan=planIntelligence(saved.workspace);}catch{plan={workspaceId:id,taskIds:[]};}await execution.exportAllRuns(plan);}catch(e){journalState='FAILED';diagnostic=recoveryDiagnostic(e);}
+    if(writerLock||executionLock)diagnostic=recoveryDiagnostic(Error('Storage writer lock requires inspection'));
+    return send(res,200,{schema:'beforeroll-recovery-diagnostics-v1',productionId:id,persistedVersion:saved.version,writerLock,executionLock,journalState,
+     missingOriginals:originals?.missingOriginalSha256??null,completeOriginalCustody:originals?.complete??false,
+     guidance:diagnostic?.recoveryGuidance??(originals?.complete?'Source custody and journals verified. This is storage integrity, not document authenticity.':'Reconnect the exact missing originals using their SHA-256 before making a complete recovery backup.'),
+     automaticClockedRetry:false,locksRemoved:false,notClearance:true});
    }
    if(action==='overview'&&req.method==='GET'){
     const saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
@@ -464,6 +514,9 @@ export function createAppServer(options={}){
     const sceneWorkbench=sceneId?buildSceneWorkbench(dossier,{sceneId,taskOffset:sceneTaskOffset,taskLimit:40,
       actionOffset:sceneActionOffset,actionLimit:30}):null;
     const actionQueue=buildProductionActions(dossier,{offset:actionOffset,limit:30,kind});
+    let recovery=null;try{recovery=JSON.parse(await fs.readFile(path.join(store.directory,'.recovery-receipt.json'),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
+    const journals=await execution.exportAllRuns(snapshot?.run?planIntelligence(w):{workspaceId:id,taskIds:[]});
+    const history=productionHistory(w,dossier,journals,{offset:Number(uri.searchParams.get('historyOffset')??0),kind:uri.searchParams.get('historyKind')??'ALL',state:uri.searchParams.get('historyState')??'ALL',search:uri.searchParams.get('historySearch')??'',selectedId:uri.searchParams.get('historySelected'),recovery});
     const consistency=certifyProductionConsistency(w,dossier,{persistedVersion:saved.version,executionStatus:snapshot?.status??null,overview,queue:actionQueue,workbench:sceneWorkbench,journey,originals});
     const latest=await store.load(id);if(!latest||latest.version!==saved.version||latest.sha256!==saved.sha256)return send(res,409,{error:'Production changed while preparing the workflow. Reload before continuing.',currentVersion:latest?.version??null});
     const summary={schema:dossier.schema,productionId:dossier.productionId,title:dossier.title,
@@ -474,7 +527,7 @@ export function createAppServer(options={}){
     return send(res,200,{schema:'beforeroll-atomic-production-workflow-v1',version:saved.version,workspace:saved.workspace,
       productionId:id,asOf,dossierSha256:dossier.sha256,originals,overview,execution:executionStatus,
       authority:{version:saved.version,...projectAuthorityGraph(w)},sceneAuthority:{version:saved.version,...projectSceneAuthority(w)},documentaryReasoning:dossier.documentaryReasoning,
-      operations:{version:saved.version,...projectOperations(w,{asOf})},dossier:summary,actionQueue,sceneWorkbench,journey,consistency,
+      operations:{version:saved.version,...projectOperations(w,{asOf})},dossier:summary,actionQueue,sceneWorkbench,journey,consistency,history,
       notClearance:true});
    }
    if(action==='journey'&&req.method==='GET'){
@@ -648,7 +701,7 @@ export function createAppServer(options={}){
        const resp=await config.fetchImpl('https://clocked.rezolve.ai/clocked/decide',{method:'POST',headers:{'Authorization':`Bearer ${config.apiKey}`,'Content-Type':'application/json','Accept':'application/json','Idempotency-Key':randomUUID(),'User-Agent':'BeforeRoll-Production-Execution/0.16.0'},body:JSON.stringify(payload),signal:AbortSignal.timeout(45000),cache:'no-store'});
        if(!resp.ok)throw Error('Provider rejected project request');
        const response=await resp.json();const credit=resp.headers.get('x-clocked-credits');
-       return {response,credits:credit&&/^\d+$/.test(credit)?Number(credit):null};
+       return {response,credits:credit&&/^\d+$/.test(credit)?Number(credit):null,controlledTest:options.controlledTestMode===true};
       }});
      return send(res,200,{...result,requestCap:input.maxCalls,noAutomaticRetries:true});
     }finally{config.activeProject=false;}
@@ -672,12 +725,14 @@ export function createAppServer(options={}){
    const w=saved.workspace;
    if(action==='import'||action==='commit-source-change'){
     const envelope=body.transcription?inspectReviewedCallSheet({file:{...body.file,kind:'callSheet'},transcription:body.transcription}):inspectImport(body.file||{});
-    if(action==='commit-source-change')verifySourceChangeCommit(w,envelope,{documentId:body.documentId,persistedVersion:saved.version,previewSha256:body.previewSha256});
+    const replaces=envelope.kind==='callSheet'?Boolean(w.callSheet):w.documents.some(d=>d.id===body.documentId);
+    if(action==='commit-source-change'||replaces)verifySourceChangeCommit(w,envelope,{documentId:body.documentId,persistedVersion:saved.version,previewSha256:body.previewSha256});
     applySourceImport(w,envelope,{documentId:body.documentId});
     await originalVault.storeImport(body.file||{},envelope);
    }else if(action==='call-sheet-transcript'){
     const file={...body.file,kind:'callSheet'};
     const envelope=inspectReviewedCallSheet({file,transcription:body.transcription});
+    if(w.callSheet)verifySourceChangeCommit(w,envelope,{persistedVersion:saved.version,previewSha256:body.previewSha256});
     applySourceImport(w,envelope);
     await originalVault.storeImport(file,envelope);
    }else if(action==='pdf-transcription'){
@@ -703,15 +758,12 @@ export function createAppServer(options={}){
    }else if(action==='review'){
     recordReview(w,{evidenceId:body.evidenceId,decision:body.decision,reason:body.reason,reviewer:body.reviewer});
    }else if(action==='replace'){
-    // Explicit full-state restore; requires fresh version and source integrity. No silent merge.
-    const imported=importWorkspace(JSON.stringify(body.workspace));
-    if(imported.id!==id)throw Error('Workspace identity differs from stored project');
-    Object.assign(w,imported);
+    return send(res,410,{error:'Whole-workspace replacement is retired. Use source impact preview and commit-source-change for revisions, or encrypted backup verification and recovery into a separate workspace.'});
    }
    assertWorkspaceSources(w);assertAuthorityIntegrity(w);assertSceneAuthorityIntegrity(w);assertProductionOperationsIntegrity(w);
    const next=await store.persist(w,{expectedVersion:saved.version});
    return send(res,200,{id:next.id,version:next.version,workspace:next.workspace});
-  }catch(e){return send(res,e.httpStatus||422,{error:e.message});}
+  }catch(e){const diagnosis=recoveryDiagnostic(e);return send(res,e.httpStatus||422,{error:e.message,...diagnosis});}
  }
  if(uri.pathname==='/api/production/plan'&&req.method==='POST'){
   if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
@@ -721,7 +773,7 @@ export function createAppServer(options={}){
     plannedCalls:plan.plannedCalls,planIdentity:plan.taskIds,warning:'This is offline analysis planning only. No Clocked calls. No legal or filming-clearance claim.'});
   }catch(e){return send(res,e.httpStatus||422,{error:e.message});}
  }
- if(uri.pathname==='/api/health'&&req.method==='GET')return send(res,200,{name:'BeforeRoll',version:'0.29.0',workspaceEngine:evaluationMode?'M3-S30-isolated-evaluation':'M3-S29-local-owner-security',workspacesEnabled:Boolean(store),ownerAccessRequired:Boolean(store&&owner.guarded),liveEnabled:config.enabled,localHourlyAttemptCap:config.maxCallsPerHour,mode:evaluationMode?'LOCAL_EVALUATION_SANDBOX':'local-owner-production',evaluationMode,recordedResponseNotice:evaluationMode?options.evaluationRuntime.notice:null});
+ if(uri.pathname==='/api/health'&&req.method==='GET')return send(res,200,{name:'BeforeRoll',version:'0.29.0',workspaceEngine:evaluationMode?'M3-S30-isolated-evaluation':'M3-S29-local-owner-security',workspacesEnabled:Boolean(store),ownerAccessRequired:Boolean(store&&owner.guarded),controlledTestMode:options.controlledTestMode===true,liveEnabled:config.enabled,localHourlyAttemptCap:config.maxCallsPerHour,mode:evaluationMode?'LOCAL_EVALUATION_SANDBOX':'local-owner-production',evaluationMode,recordedResponseNotice:evaluationMode?options.evaluationRuntime.notice:null});
  if(uri.pathname==='/api/extract'&&req.method==='POST')return handleLive(req,res,config);
  if(uri.pathname==='/api/semantic'&&req.method==='POST')return handleSemantic(req,res,config);
  if(uri.pathname==='/api/semantic-sweep'&&req.method==='POST')return handleSemanticSweep(req,res,config);

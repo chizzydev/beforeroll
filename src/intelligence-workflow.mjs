@@ -83,7 +83,7 @@ export function markAttempt(checkpoint,task){
  if(entry.status!=='NOT_ATTEMPTED')throw Error('This request was already attempted; refusing a duplicate');
  entry.status='IN_FLIGHT';checkpoint.attempts++;checkpoint.state='RUNNING';return entry;
 }
-export function commitAnswer(checkpoint,task,response,{credits=null,replayOrigin=null,legacyRequestHash=null}={}){
+export function commitAnswer(checkpoint,task,response,{credits=null,replayOrigin=null,legacyRequestHash=null,controlledTest=false}={}){
  const entry=checked(checkpoint,task);
  if(entry.status!=='IN_FLIGHT')throw Error('Unattempted or completed task cannot accept model evidence');
  const a=response?.answers;
@@ -92,6 +92,7 @@ export function commitAnswer(checkpoint,task,response,{credits=null,replayOrigin
  entry.finding={...conservativeSemanticFinding(a),modelAnswers:{activity_link:a.activity_link,granted_for_scene:a.granted_for_scene},
   sourceRange:task.sourceRange,sourceQuote:task.sourceQuote,documentHash:task.documentHash,sceneHash:task.sceneHash,
   requestHash:task.requestHash,notClearance:true};
+ if(controlledTest)entry.finding.controlledTest=true;
  if(replayOrigin!==null){
   if(replayOrigin!=='OWNER_RECORDED_DIFFERENT_REQUEST_CONTRACT'||typeof legacyRequestHash!=='string'||!/^[a-f0-9]{64}$/.test(legacyRequestHash))throw Error('Invalid recorded replay provenance');
   entry.finding.replayOrigin=replayOrigin;entry.finding.legacyRequestHash=legacyRequestHash;

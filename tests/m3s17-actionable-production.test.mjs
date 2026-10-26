@@ -156,7 +156,7 @@ test('end-to-end: preview + committed source revision retires prior reviews whil
   const before=await (await fetch(root+'/actions')).json();assert(before.total>0);
   const preview=await (await fetch(root+'/impact',{method:'POST',headers,body:JSON.stringify({expectedVersion:1,documentId:'P',file})})).json();
   assert.equal(preview.tasks.retired,6);assert.equal((await s.store.load('action17')).version,1);
-  const changed=await fetch(root+'/import',{method:'POST',headers,body:JSON.stringify({expectedVersion:1,documentId:'P',file})});
+  const changed=await fetch(root+'/import',{method:'POST',headers,body:JSON.stringify({expectedVersion:1,documentId:'P',file,previewSha256:preview.previewSha256})});
   assert.equal(changed.status,200);assert.equal((await changed.json()).version,2);
   const after=await (await fetch(root+'/dossier/summary')).json();assert.equal(after.counts.staleHumanReviews,1);
   const newActions=await (await fetch(root+'/actions?kind=HUMAN&limit=100')).json();assert(newActions.actions.filter(x=>x.code==='REVIEW_EXACT_SOURCE_TASK').length===8);
@@ -175,6 +175,6 @@ test('presentation renders action filters, source quotations, safe HTML and expl
 test('client action queue/controller never embeds Clocked API keys or triggers models to render work',async()=>{
  const {productionView}=await import('../public/workspace-desk.mjs');const w=fixture(),q=queue(w);
  const output=productionView({items:[],selected:{version:1,workspace:w},overview:null,execution:null,authority:null,sceneAuthority:null,operations:null,dossier:null,actionQueue:q,actionKind:'ALL',liveEnabled:false,busy:false});
- assert.match(output,/No AI response is manufactured/);assert.match(output,/NOT filming permission/);
+ assert.match(output,/people verify the documents/);assert.match(output,/NOT filming permission/);
  assert(!output.includes('CLOCKED_API_KEY'));assert(!output.includes('Authorization: Bearer'));
 });

@@ -17,6 +17,9 @@ export function annotateAuthorityDocument(workspace,{documentId,role,reference,i
  if(!d)throw Error('Authority document does not belong to the production');
  if(!roles.has(role)||!nonempty(reference,200)||!nonempty(issuer,200)||!certifiedDate(issuedOn)||!nonempty(reviewer)||!nonempty(reason,2000))throw Error('Document authority metadata requires role, reference, issuer, valid issued date, reviewer and reason');
  d.authority={role,reference,issuer,issuedOn,reviewer,reason,sourceHash:d.sourceHash,reviewedAtRevision:d.revision,meaning:'HUMAN_RECORDED_METADATA_NOT_AUTHENTICATION',notClearance:true};
+ const history=workspace.authorityDocumentHistory??(workspace.authorityDocumentHistory=[]);
+ const provenance={documentId,sequence:history.length+1,metadata:structuredClone(d.authority),documentEpoch:d.analysisEpoch??0};
+ history.push({...provenance,id:sha(provenance)});
  workspace.revision++;return workspace;
 }
 const validSpan=(d,start,end,quote)=>Number.isSafeInteger(start)&&Number.isSafeInteger(end)&&start>=0&&end>start&&end<=cp(d.text).length&&cp(d.text).slice(start,end).join('')===quote&&nonempty(quote,2000);
@@ -46,6 +49,10 @@ export function recordAuthorityLink(workspace,{fromId,toId,kind,start,end,quote,
 export function assertAuthorityIntegrity(workspace){
  guard(workspace);
  const ids=new Set(),docs=new Map(workspace.documents.map(d=>[d.id,d]));
+ for(const [i,row] of (workspace.authorityDocumentHistory??[]).entries()){
+  const {id,...body}=row;
+  if(row.sequence!==i+1||id!==sha(body)||!docs.has(row.documentId)||!Number.isSafeInteger(row.documentEpoch)||row.documentEpoch<0||row.metadata?.notClearance!==true||!roles.has(row.metadata.role)||!nonempty(row.metadata.reviewer)||!nonempty(row.metadata.reason,2000))throw Error('Document provenance history identity invalid');
+ }
  for(const d of workspace.documents){
   const meta=d.authority;
   if(!meta)continue;

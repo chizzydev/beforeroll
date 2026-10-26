@@ -15,6 +15,7 @@ export const planKey=plan=>digest(plan.taskIds);
 function validate(run,plan){
  if(run?.schema!=='beforeroll-execution-run-v1'||run.projectId!==plan.workspaceId||run.planKey!==planKey(plan)||run.checkpoint?.schema!=='beforeroll-checkpoint-v1'||run.checkpoint.planIdentity!==run.planKey)throw Error('Execution source plan identity mismatch');
  const cp=run.checkpoint;
+ if(run.taskManifest&&JSON.stringify(run.taskManifest)!==JSON.stringify(plan.tasks.map(t=>({id:t.id,requestHash:t.requestHash,sceneId:t.sceneId,documentId:t.documentId,unitId:t.unitId,sceneHash:t.sceneHash,documentHash:t.documentHash}))))throw Error('Execution task manifest differs from exact current plan');
  if(!Array.isArray(cp.entries)||cp.entries.length!==plan.tasks.length||cp.callsPlanned!==plan.tasks.length||!Number.isSafeInteger(cp.attempts)||!Number.isSafeInteger(cp.confirmedCompleted)||!Number.isSafeInteger(cp.unknownBilling))throw Error('Execution checkpoint counts invalid');
  let attempted=0,completed=0,unknown=0;
  for(let i=0;i<cp.entries.length;i++){
@@ -171,6 +172,7 @@ export function createDurableExecution({directory}){
   return rows.find(x=>x.planKey===planKey(plan))?.run??null;
  }
  async function write(plan,run){
+  run.taskManifest??=plan.tasks.map(t=>({id:t.id,requestHash:t.requestHash,sceneId:t.sceneId,documentId:t.documentId,unitId:t.unitId,sceneHash:t.sceneHash,documentHash:t.documentHash}));
   validate(run,plan);await init();
   const target=file(plan),tmp=path.join(root,'.'+randomUUID()+'.tmp');
   const wrapper={envelope:'beforeroll-atomic-execution-v1',hash:digest(run),run};
@@ -203,6 +205,7 @@ export function createDurableExecution({directory}){
    if(e.status==='COMPLETE')completed++;
    if(e.status==='BILLING_UNKNOWN')unknown++;
   }
+  if(run.taskManifest&&(!Array.isArray(run.taskManifest)||run.taskManifest.length!==cp.entries.length||run.taskManifest.some((t,i)=>t.id!==cp.entries[i].id||t.requestHash!==cp.entries[i].requestHash||!['sceneId','documentId','unitId'].every(k=>typeof t[k]==='string'&&t[k].length>0))))throw Error('Historical journal task manifest identity mismatch');
   if(cp.callsPlanned!==cp.entries.length||cp.attempts!==attempts||cp.confirmedCompleted!==completed||cp.unknownBilling!==unknown||
    (unknown>0&&cp.state!=='HALTED_UNKNOWN_BILLING'))throw Error('Historical journal checkpoint accounting mismatch');
   return run;
@@ -276,9 +279,9 @@ export function createDurableExecution({directory}){
     sceneId:task.sceneId,sceneHash:task.sceneHash,unitId:task.unitId,sourceRange:task.sourceRange,
     sourceQuote:task.sourceQuote,requestHash:task.requestHash,status:entry.status,credits:entry.credits,error:entry.error,inheritedFromPlanKey:entry.inheritedFromPlanKey??null,
     finding:entry.finding?{code:entry.finding.code,status:entry.finding.status,relevance:entry.finding.relevance,grant:entry.finding.grant,
-     modelAnswers:entry.finding.modelAnswers,...(entry.finding.replayOrigin?{replayOrigin:entry.finding.replayOrigin,legacyRequestHash:entry.finding.legacyRequestHash}:{}),scope:entry.finding.code==='CLOCKED_CONDITIONAL_AUTHORITY_REVIEW'?modelGrantScope(task.sourceQuote,task.sceneId):null,notClearance:true}:null};
+     modelAnswers:entry.finding.modelAnswers,...(entry.finding.controlledTest?{controlledTest:true}:{}),...(entry.finding.replayOrigin?{replayOrigin:entry.finding.replayOrigin,legacyRequestHash:entry.finding.legacyRequestHash}:{}),scope:entry.finding.code==='CLOCKED_CONDITIONAL_AUTHORITY_REVIEW'?modelGrantScope(task.sourceQuote,task.sceneId):null,notClearance:true}:null};
   });
-  const evidence={schema:'beforeroll-project-model-evidence-v1',origin:cp.entries.some(e=>e.finding?.replayOrigin)?'OWNER_RECORDED_DIFFERENT_REQUEST_CONTRACT': 'LOCAL_OWNER_RUN_NOT_CRYPTOGRAPHICALLY_ATTESTED',workspaceId:plan.workspaceId,
+  const evidence={schema:'beforeroll-project-model-evidence-v1',origin:cp.entries.some(e=>e.finding?.controlledTest)?'CONTROLLED_TEST_RESPONSE_NOT_CLOCKED':cp.entries.some(e=>e.finding?.replayOrigin)?'OWNER_RECORDED_DIFFERENT_REQUEST_CONTRACT': 'LOCAL_OWNER_RUN_NOT_CRYPTOGRAPHICALLY_ATTESTED',workspaceId:plan.workspaceId,
    planKey:planKey(plan),callSheetHash:plan.callSheetHash,documents:plan.documents,createdAt:run.createdAt,updatedAt:run.updatedAt,
    state:cp.state,planned:cp.callsPlanned,attempts:cp.attempts,confirmedCompleted:cp.confirmedCompleted,
    unknownBilling:cp.unknownBilling,records,notClearance:true,scope:'SEGMENTED_SOURCE_UNITS_NOT_COMPLETE_LEGAL_DOCUMENT_AUTHORITY',
@@ -316,7 +319,7 @@ export function createDurableExecution({directory}){
     try{
      const receipt=await transport(task.payload,task);
      if(!receipt?.response)throw Error('Provider returned no usable response');
-     commitAnswer(cp,task,receipt.response,{credits:receipt.credits??null,replayOrigin:receipt.replayOrigin??null,legacyRequestHash:receipt.legacyRequestHash??null});
+     commitAnswer(cp,task,receipt.response,{credits:receipt.credits??null,replayOrigin:receipt.replayOrigin??null,legacyRequestHash:receipt.legacyRequestHash??null,controlledTest:receipt.controlledTest===true});
     }catch{if(cp.entries.find(e=>e.id===task.id)?.status==='IN_FLIGHT')haltUnknown(cp,task,'Provider error/timeout/invalid JSON; billing unknown; no retry');}
     run.updatedAt=new Date().toISOString();if(journaled(plan))await appendEvent(plan,run,changeEvent(task,cp.entries.find(e=>e.id===task.id),run.updatedAt));else await write(plan,run);
     if(cp.state==='HALTED_UNKNOWN_BILLING')break;
