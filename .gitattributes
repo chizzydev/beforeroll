@@ -1,0 +1,3 @@
+# Preserve the exact bytes recorded by the closure evidence manifest on Windows.
+/_codex_mission/evidence/closure/*.json -text
+/_codex_mission/evidence/closure/*.jpg -text
