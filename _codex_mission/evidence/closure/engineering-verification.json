@@ -1,0 +1,58 @@
+{
+  "completedLocalDate": "2026-10-26",
+  "timezone": "Africa/Lagos",
+  "baselineCommit": "fa87423",
+  "engineeringCommits": [
+    "ce271b1",
+    "359f476"
+  ],
+  "baseline": {
+    "tests": 493,
+    "passed": 493,
+    "failed": 0,
+    "skipped": 0
+  },
+  "final": {
+    "command": "npm test",
+    "tests": 501,
+    "passed": 501,
+    "failed": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0,
+    "durationMs": 20965.9273
+  },
+  "frozenTrackedEvidenceChanged": false,
+  "uncommittedEngineeringChanges": false,
+  "priorLiveAudit": {
+    "distinctRequests": 12,
+    "comparisons": 24,
+    "passed": 24,
+    "unknown": 0,
+    "knownCredits": 12,
+    "newRequestsInThisAudit": 0,
+    "scope": "Generated-only integration expectations; not preregistered scientific accuracy, calibrated confidence or filming authority"
+  },
+  "currentLive": {
+    "requests": 16,
+    "reportedCredits": 16,
+    "unknown": 0,
+    "comparisons": 32,
+    "passed": 32,
+    "newCallsInAudit": 0
+  },
+  "missionNewCalls": 28,
+  "missionReportedCredits": 28,
+  "missionRequestLimit": 32,
+  "interactiveBrowser": "Actual Codex in-app browser; see CODEX_INTERACTIVE_BROWSER_ACCEPTANCE.md",
+  "screenshots": 15,
+  "status": {
+    "functional": "PASS",
+    "interactiveBrowser": "PASS",
+    "automatedEngineering": "PASS",
+    "realClockedEvidence": "VERIFIED",
+    "visualRedesign": "NOT_STARTED_BY_DESIGN"
+  },
+  "finalCommittedServerRestartSmoke": "PASS",
+  "temporaryAcceptanceServersStopped": true
+}

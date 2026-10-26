@@ -1,78 +1,68 @@
-# Functional engineering acceptance — 25 October 2026
+# Functional engineering acceptance — closure championship
 
-**CODEX_FUNCTIONAL_VERDICT=PARTIAL**
+Completed 26 October 2026 (Africa/Lagos).
 
-Substantial source-lineage, execution, browser workflow, export and recovery integration is implemented and verified. The complete requested championship is not claimed: GUI history pagination, legacy write-contract consolidation, recovery diagnostics and broader real-document/crash coverage remain in the gap register. Owner GUI acceptance is a separate, single bounded gate.
+```
+CODEX_FUNCTIONAL_VERDICT=PASS
+INTERACTIVE_BROWSER_ACCEPTANCE=PASS
+AUTOMATED_ENGINEERING=PASS
+REAL_CLOCKED_EVIDENCE=VERIFIED
+VISUAL_REDESIGN=NOT_STARTED_BY_DESIGN
+```
 
-## Baseline and source control
+PASS concerns the supported, exercised functional lifecycle. It does not mean every commercial document or filesystem failure is supported, every human review is resolved, or filming is authorized. The remaining practical limits are explicit below. No observed blocking lifecycle defect remains.
 
-- Instructions read completely before edits: `AGENTS.md`, `00_READ_FIRST.md`, `FUNCTIONAL_INTEGRATION_MISSION_v2.md`.
-- Independent local baseline: **`c850430`**. No pre-existing `.git`; the baseline excludes `.env` and `.beforeroll-data/`.
-- Initial independent `npm test`: **484 tests; 483 passed; 1 failed; 0 skipped**. The failure was the nondeterministic encrypted-tamper test documented as G14.
-- Initial science preflight: U01/U02 source identities and U03 missing-source sentinel passed; zero new provider requests.
-- Implementation: **`28bb878`**, followed by syntax correction **`48ef9a2`**. The clean-export run caught the final wording template error; it was corrected before final acceptance.
-- No dependencies added. No remote push, deployment, private document import, visual redesign or frozen evidence edit.
-- Exact-value credential scan of the 265 committed application/baseline files found **0 matches** for the configured key/owner/operator secrets. `.env` and the live receipt are confirmed ignored. Frozen fixtures/research and the original-vault implementation have no diff from the local baseline.
+## Baseline and auditable source
 
-## Final exact verification
+Read completely before changes: AGENTS.md, 00_READ_FIRST.md, FUNCTIONAL_INTEGRATION_MISSION_v2.md, prior gap register, functional acceptance and next owner gate. Continued from the clean committed `fa87423`, including `28bb878` and `48ef9a2`; did not restart from the original M3-S31 archive. The independent original baseline `c850430` and the previous PARTIAL reports remain in local Git.
 
-| Verification | Result | What it proves / limits |
+Re-ran the previous baseline independently: **493 tests, 493 passed, 0 failed, 0 skipped**. Final engineering commits:
+
+- `ce271b1`: complete evidence history, strict replacement contracts, separate recovery/diagnostics, browser workflow fixes and adversarial regressions.
+- `359f476`: explicit older-prerequisite review context and exact-selection regression.
+
+Final full `npm test` from committed `359f476`: **501 tests; 501 passed; 0 failed; 0 cancelled; 0 skipped; 0 todo**, duration **20,965.9273 ms**. Node.js 24.13.0 on Windows. Local test execution needed loopback/filesystem permissions; all checks completed. The eight new adversarial tests are in `tests/closure-championship.test.mjs`; these are engineering tests with controlled transports, not evidence of live-provider accuracy.
+
+The eight tests cover complete history/selection; provenance/revised filename identity; draft/staged-session protection; exact prerequisite draft isolation; strict HTTP replacement/stale preview; spawned offline CLI preview/replacement with byte custody; separate recovery preserving journals alongside original; missing custody/lock diagnostics. Existing tests exercise source reversals, tampered source projections, conservative extraction, uncertain billing, interruption fences, full exports, security boundaries and a 3,200-task mocked execution. Existing legacy-route tests were migrated to use the now-required preview rather than preserving a bypass. A harness window-event stub was updated for the new close warning. Archived entry validation remains before manifest validation so the precise underlying inconsistency is reported.
+
+## Three independent verification tracks
+
+| Track | Exact result | Interpretation |
 |---|---|---|
-| Full suite in working project after lineage changes | **493/493 passed**, zero failures/skips | Existing coverage plus nine new integration/adversarial tests. Tests alone are not product acceptance. |
-| Full suite in isolated Git export of final code | **493/493 passed**, zero failures/skips | Export has no `.env`, `.git`, private production store or live receipt; runs the actual source from the committed code. Log is local/ignored under `.beforeroll-data/isolated-final/verification.log`. |
-| New functional-cohesion tests | **9 cases** in `tests/functional-cohesion.test.mjs` | Exact-task retention and selective dispatch; unknown billing across revisions; source reversal freshness; restored-row integrity; documentary/operational reversal; authenticated encrypted HTTP recovery with original bytes and archived journals; large human-transcribed source replacement; second-scene navigation/state reset; 3,200-task inherited journal restart. Fake transports are explicitly used here. |
-| Frozen U01 read-only audit | **5/5 original assertions**, 8 historical calls / 8 historically reported credits | Owner-recorded older contract, not new calls or validation of the current contract. |
-| Frozen U02 read-only audit | **5/5 original assertions**, 8 historical calls / 8 historically reported credits | Same limitation. |
-| Frozen U03 | **Missing-source sentinel passed** | No model calls; omission remains visible. |
-| Actual Clocked HTTP integration | **12 distinct new attempts; 12 completed; 12 reported credits; 0 unknown-credit entries** | Generated fictional materials only. Eight initial calls, four after editing only the second scene. Four unchanged task results retained without a new request. No retries. |
-| Explicit live expectation audit | **24/24 field comparisons across all 12 distinct requests** | Both relevance and grant inspected for every passage/scene request. High ≥0.8, low ≤0.2. This is an engineering expectation audit, not preregistered science, calibrated confidence, signature authentication or clearance. |
-| Native in-app browser | See cases below | Actual UI controls, file pickers and downloaded files exercised; not merely HTML-string rendering. No screenshots/video/branding work. |
+| A — automated engineering | 501/501 final committed tests, zero failures/skips | Complete suite, including eight new adversarial regressions. Controlled model responses are explicitly labelled. |
+| B — actual interactive browser | All eight requested lifecycle scenarios completed, plus history pagination, concurrent stale export, draft protection and recovered prerequisite regression | Real Codex in-app browser: rendered pages, clicks, typed forms, file choosers, original PDF comparison, downloads, restart/reopen and visually inspected screenshots. See the separate interactive report, not controller tests. |
+| C — genuine Clocked integration | 16 new calls completed / 16 reported credits / 0 unknown; previous 12 calls still verified / 12 reported credits | Total new mission calls **28 of authorized 32**, reported credits **28**. Zero automatic retries. Current pass: 8 initial + 4 revised permit + 4 reversal; unchanged variation evidence retained without additional dispatch. |
+| Current live expectation audit | 32/32 field comparisons over all 16 new attempts; 16 unique source-task identities, 12 distinct request bodies | Raw request bodies intentionally repeat for four reversal tasks, whose lineage is new. Every request is matched to the durable dispatch ledger; no cherry-picked completions. High >=0.8 / low <=0.2 are generated engineering expectations, not scientific accuracy or calibrated confidence. |
+| Previous live expectation audit | 24/24 field comparisons across all 12 prior requests, 0 new audit calls | Read-only `scripts/audit-functional-live.mjs`; previous genuine evidence was not rewritten. |
+| Recovery comparison | Exact workspace, all three hydrated journals and all four original-file inventory entries match the original export | Independent read-only comparison after actual GUI restore into separate same-ID copy. Original wrapper version 18; recovered wrapper version 1, original version retained in receipt. |
+| Frozen evidence preservation | No changes to `fixtures/` or `research/` relative to `fa87423`; original source/recordings preserved | Existing frozen U01/U02 and missing-source tests passed. Their older recorded calls are historical and are not counted as new mission calls. No re-scoring or scientific claim. |
 
-Restricted-shell attempts sometimes denied localhost sockets or immutable-file hard links (`EACCES`/`EPERM`). Authorized local tests/server validation were rerun with those host operations available. The immutable source-vault behavior was not weakened to bypass the restriction.
+## Functional outcome
 
-The final isolated suite completed in **18.0033006 seconds** on Node **v24.13.0**, Windows. The Git export used the host's ordinary checkout line-ending conversion; it contained no private `.env`. The final browser module was reloaded after the template correction and emitted no browser console errors in that check.
+One production now carries the complete journey: create → original intake/verification → source/scene mapping → Clocked checks → exact-source human review → prerequisites → Preview/Commit revision → selective reanalysis → current/historical evidence export → restart/reopen → encrypted separate recovery.
 
-## Actual browser cases
+All sections use the atomic persisted workflow and dossier identity. Complete history provides visible totals, filters, navigation and exact selection instead of silently presenting a partial register as complete. Documentary metadata history is preserved, and new model journals retain scene/document identity manifests. Existing-source HTTP/CLI routes enforce the same preview/source/version contract; legacy full-state replacement is retired. Recovery publishes a separate copy only after sources, originals and journals have all restored, with actionable failure guidance and no automatic lock removal or provider retry.
 
-1. **No-key evaluation:** opened the isolated server; U01 starts with its honestly labelled historical recording. Replayed U02, explored scene findings, then reset disposable evaluation state. Reset returned the two supplied fictional productions; owner data was never used. Evaluation mode disabled live dispatch and hid private backup recovery.
-2. **Cold blank production:** entered an ID/title and pressed Enter; one production created. Imported generated UTF-8 permit text and CSV with two scenes using actual file pickers. Observed **1 document, 2 scenes, 6 planned checks, 0 model attempts**.
-3. **Human workflow with AI off:** opened an exact source task and saved a named `NEEDS_SOURCE` review. Recorded a dated scene, added a prerequisite and explicitly confirmed it as `HUMAN_CONFIRMED_NOT_AUTHORITY`. The shared operations view showed **0 open conditions** while retaining the no-clearance distinction.
-4. **Navigation:** second-scene action selected that scene; a typed schedule rationale survived switching to Evidence and back. Keyboard project creation worked. Action queues and source review still use the same versioned production state.
-5. **Export:** actual JSON download parsed as `beforeroll-complete-production-evidence-v1`: **1 document, 2 scenes, 1 current human review, 0 open prerequisites, 0 model checks, 2 preserved originals, secretsIncluded=false**. Encrypted backup downloaded through the GUI.
-6. **GUI recovery:** in a fresh guarded generated-only directory, unlocked with a fictional test owner token, selected that encrypted backup and entered its fictional passphrase. Verification showed **6 tasks, 0 journals, 2 originals, 0 missing originals**. Confirmed the exact ID and restored. Evidence view showed the human review and **2/2 byte-identical originals**. This path made no model requests. Separate HTTP regression restored current plus archived model journals, rejected overwrite/auth/origin/tamper errors, and preserved original bytes.
-7. **Honest PDF failure:** tried the supplied image-only generated PDF through normal permit intake. It failed with explicit human-reviewed transcription guidance; document/scene/model counts remained unchanged. No guessed extraction or OCR claim.
+Real browser testing found and fixed functional usability issues: weak first-use direction, optional recovery dominating the screen, missing stage focus, overflowing evidence identities, loss of drafts entering Research, silently discarded staged reviews, misleading prerequisite default selection, stale source filenames, unclear recovered-copy context and unreliable native evaluation reset confirmation. Selected older prerequisites now display their exact title/scene/status even when absent from the short register. These are functional content/navigation corrections; comprehensive visual design was not started.
 
-The actual browser blank-project path used text/CSV; realistic PDF/DOCX extraction and attested binary paths were covered by generated binary/HTTP tests. No claim is made that the browser independently corroborated a human transcription against arbitrary commercial originals. No real owner's Windows GUI actions have been signed off yet.
+Clocked is consequential in the tested product: it recognizes semantic links between motor-driven equipment and the restriction, distinguishes the issued scene-specific variation from an unsigned extension request, and feeds source-bound review work rather than only displaying deterministic timetable checks. The interface keeps model outputs, documentary assertions and human operational decisions separate. A general location consent never silently overrides a specific activity restriction. Recorded evaluation scores remain labelled as the older request contract, not new live checks.
 
-## Current provider contract and usage
-
-`scripts/validate-functional-live.mjs` exercised the actual local HTTP execution handler and real Clocked transport. It uses only local `.env` credentials, generated materials, an isolated ignored store, a non-removable-by-script start marker and an explicit maximum of 12 new calls. Re-running it refuses the existing mission marker. **Do not remove the marker to repeat spending.**
-
-All 12 requests completed. Reported credits were exactly 12; this is provider-header accounting, not an independently reconciled account balance or currency invoice. Twelve of the authorized 32 mission requests were used; the unused allowance was not spent.
-
-The issued exception's grant score was **0.9921** for its named scene; the second scene's unissued-request grant was **0.0023 initially / 0.0025 after the schedule edit**. Generic consent and the other scene's exception stayed low for the relevant non-grant cases. All passages and both fields were audited, not only these illustrative values. No model score or human entry was promoted to filming permission.
-
-Raw fictional sources, original bytes, live journals and the receipt remain ignored under `.beforeroll-data/functional-live-20261025/`. They are not committed or reproduced in this report. `scripts/audit-functional-live.mjs` reads those existing journals without loading `.env` or contacting the provider and prints the complete 24-comparison audit. It is expected to require that local evidence directory.
-
-## Architecture and evidence semantics
-
-- One durable workspace remains authoritative. There is no new parallel approval store.
-- Model results, human task reviews, documentary links, scene claims, schedules and prerequisites bind the appropriate source/scene lineage. Identical-text reversal is a new revision, not resurrection of earlier approval-like work.
-- Exact unchanged model tasks retain original journal provenance and reported cost. UI separates retained attempts from new attempts in the current plan. Summing every entry in every archived journal would double-count retained evidence; use task identity/provenance.
-- Historical uncertainty is never transformed into retry eligibility. No automatic retry was added. Restoring a backup makes no provider request.
-- Complete JSON export includes current and historical model journals. The current dossier/consistency hash must still match the reviewed workflow. Historical journals are checksum checked, not reauthenticated against missing historical source text or the provider.
-- Encrypted backup carries originals; ordinary JSON export lists original hashes and omits binary bytes. Existing-project recovery is refused. Source originals and historical U01/U02 evidence were not rewritten.
+The generated production's final dossier correctly retains unresolved work: 8 current model checks, 2 current human reviews, 1 historical human review, 2 archived model runs, 2 dated scenes, 2 current scope assertions and a confirmed prerequisite. Six source tasks still await individual human review and two human decisions still request source evidence. These are intentional fictional production work items, not application failures or asserted clearance.
 
 ## Changed file inventory
 
-Application: `server.mjs`; `public/app.js`; `public/workspace-desk.mjs`; `src/durable-execution.mjs`; `src/intelligence-workflow.mjs`; `src/production-workspace.mjs`; `src/production-dossier.mjs`; `src/source-change-control.mjs`; `src/document-authority.mjs`; `src/scene-authority.mjs`; `src/production-operations.mjs`.
+Application: `server.mjs`; `public/app.js`; `public/workspace-desk.mjs`; minimal evidence-wrapping rules in `public/styles.css`; `src/production-history.mjs`; `src/recovery-diagnostics.mjs`; `src/document-authority.mjs`; `src/durable-execution.mjs`; `src/intelligence-workflow.mjs`; `src/production-dossier.mjs`; `src/production-workspace.mjs`.
 
-Verification: new `tests/functional-cohesion.test.mjs`; revised `tests/m3s14-pdf-scene-authority.test.mjs`, `tests/m3s23-source-reconciliation.test.mjs`, `tests/m3s24-atomic-production-journey.test.mjs`, `tests/m3s29-owner-security.test.mjs`; new `scripts/validate-functional-live.mjs` and `scripts/audit-functional-live.mjs`.
+Tools: `scripts/workspace-cli.mjs`; generated-only `scripts/serve-closure-acceptance.mjs`; read-only `scripts/audit-closure-live.mjs`.
 
-Reports: this file, `CODEX_GAP_REGISTER.md`, `CODEX_NEXT_OWNER_GATE.md`.
+Tests: new `tests/closure-championship.test.mjs`; updated `tests/m3s12-durable-execution.test.mjs`, `tests/m3s17-actionable-production.test.mjs`, `tests/m3s18-scene-workbench.test.mjs`, `tests/m3s6-ui-harness.test.mjs`.
 
-## Remaining limits and next batch
+Reports: this file, CODEX_GAP_REGISTER.md, CODEX_NEXT_OWNER_GATE.md, CODEX_INTERACTIVE_BROWSER_ACCEPTANCE.md. Meaningful screenshots and sanitized verification/audit records are under `evidence/closure/` with SHA-256 manifest. Credentials, generated source originals, downloaded packs and encrypted working backups remain ignored locally. A configured-value scan found zero credential values in the nineteen changed engineering files at `ce271b1`; the final follow-up changes only selection context and its test. No `.env`, private owner data, remote push or deployment was involved.
 
-See R01–R04 in the gap register. Prioritize complete register/history pagination and exact-record navigation; then consolidate legacy API replacement contracts and add guarded recovery diagnostics. Expand independent Word/PDF examples and cross-process interruption tests. A 50,000-task ceiling and >3,000-task mocked execution are tested; no thousands-request billable production was run. Exhaustive filesystem failure points and histories near 1,000 archived journals were not exercised. Drafts are session memory, not durable unsaved-work recovery.
+## Practical limits and product assessment
 
-No production, model, documentary or operational status establishes legal authority or complete permit discovery. The final GUI owner gate is one procedure in `CODEX_NEXT_OWNER_GATE.md`; no repeated small manual tests are requested.
+No independent unfamiliar human has completed the final owner gate yet. Engineering browser acceptance was performed by this agent with a new generated production, not by borrowing the owner's personal documents. Conservative document extraction plus explicitly reviewed transcription is a deliberate supported contract; arbitrary Word/PDF layouts and legal completeness are not proven. The current pass interactively exercised DOCX, PDF and CSV, not every format permutation. Native before-unload dialogs were not separately certified across browsers; unsaved drafts are session memory, not crash recovery. Legacy identities never saved in old journals remain explicitly unknown.
+
+No exhaustive power-loss matrix, near-1,000-journal stress history, thousands of billable calls, external security audit, cloud collaboration or real-world authorization accuracy study was performed. A failed separate restore may leave an invisible diagnostic staging directory; it never appears as a successful restored production. Unknown billing remains fenced and non-retryable. UI screenshots are engineering evidence, not a visual-design deliverable.
+
+Within these limits, the functional product is credible and differentiated: it connects semantic documentary review to operational follow-up and preserves the meaning of evidence when sources change. Competition readiness still depends on a future visual phase and independent owner judgment; this PASS does not predict competition results. One coordinated Windows procedure is in CODEX_NEXT_OWNER_GATE.md.
