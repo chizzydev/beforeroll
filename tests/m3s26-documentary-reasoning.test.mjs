@@ -181,7 +181,7 @@ test('browser scope editor has date/activity/location/issuance, exact restrictio
   for(const label of ['project-scene-auth-activity','project-scene-auth-location','project-scene-auth-from','project-scene-auth-through','project-scene-auth-issuance','project-scene-auth-related','project-scene-auth-prerequisite','project-scene-auth-condition'])
    assert(html.includes(`id="${label}"`),label);
   assert.match(html,/Document says issued \(NOT authenticated\)/);
-  assert.match(html,/Scene-specific documentary applicability/);
+  assert.match(html,/Scene-specific documentary scope/);
  });
 });
 test('Clocked-only high grant score is explicitly not an issued documentary grant',()=>{

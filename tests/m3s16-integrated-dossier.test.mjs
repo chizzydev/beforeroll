@@ -117,9 +117,9 @@ test('local-owner HTTP routes return full JSON, concise summary and actual Markd
 });
 test('the unified desk exposes review counts and two export actions without publishing secret or source evidence',async()=>{
  const {productionView,createWorkspaceController}=await import('../public/workspace-desk.mjs');
- const html=productionView({selected:{version:1,workspace:fixture()},items:[],dossier:{counts:{completedModelChecks:2,planTasks:6,currentReviewedTasks:1},outstanding:[{code:'MODEL_SOURCE_CHECKS_OUTSTANDING',count:4}],scenes:[]}});
- assert.match(html,/EXPORT COMPLETE EVIDENCE PACK/);assert.match(html,/EXPORT HUMAN-READABLE REVIEW/);
- assert.match(html,/2\/6/);assert.match(html,/MODEL_SOURCE_CHECKS_OUTSTANDING/);
+ const html=productionView({workflowStage:'evidence',selected:{version:1,workspace:fixture()},items:[],dossier:{counts:{completedModelChecks:2,planTasks:6,currentReviewedTasks:1},outstanding:[{code:'MODEL_SOURCE_CHECKS_OUTSTANDING',count:4}],scenes:[]}});
+ assert.match(html,/Export complete evidence pack/);assert.match(html,/Export human-readable review/);
+ assert.match(html,/2\/6/);assert.match(html,/Source analysis remains/);
  assert.doesNotMatch(html,/CLOCKED_API_KEY|BEFOREROLL_OPERATOR_TOKEN/);
  assert.equal(typeof createWorkspaceController,'function');
 });

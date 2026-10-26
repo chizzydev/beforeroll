@@ -164,17 +164,17 @@ test('end-to-end: preview + committed source revision retires prior reviews whil
  }finally{await new Promise(ok=>server.close(ok));await s.clean();}
 });
 test('presentation renders action filters, source quotations, safe HTML and explicit review before commit',async()=>{
- const {productionView}=await import('../public/workspace-desk.mjs');
+ const {productionView}=await import('./helpers/ui-views.mjs');
  const w=fixture(),q=queue(w),preview=previewSourceChange(w,inspectImport({kind:'permit',name:'next.txt',text:SOURCE+'\n\nNo fireworks.'}),{documentId:'P',persistedVersion:1});
  const sample={items:[],selected:{version:1,workspace:{...w,title:'<script>alert("x")</script>'}},overview:{documents:[],scenes:[],plannedCalls:0,pagination:{offset:0,limit:40,shown:0,hasMore:false}},execution:{},authority:{},sceneAuthority:{},operations:{},dossier:{counts:{planTasks:6},outstanding:[],scenes:[]},actionQueue:q,impactPreview:preview,actionKind:'ALL',busy:false};
  const html=productionView(sample);
  assert.match(html,/project-action-apply/);assert.match(html,/project-action-next/);assert.match(html,/project-impact-commit/);
- assert.match(html,/RUN_UNEVALUATED_SOURCE_CHECK/);assert.match(html,/IMPORT EXACT PREVIEWED FILE/);
+ assert.match(html,/Clocked source checks/);assert.match(html,/Import exact previewed file/);
  assert(!html.includes('<script>alert'));assert(html.includes('&lt;script&gt;'));
 });
 test('client action queue/controller never embeds Clocked API keys or triggers models to render work',async()=>{
- const {productionView}=await import('../public/workspace-desk.mjs');const w=fixture(),q=queue(w);
+ const {productionView}=await import('./helpers/ui-views.mjs');const w=fixture(),q=queue(w);
  const output=productionView({items:[],selected:{version:1,workspace:w},overview:null,execution:null,authority:null,sceneAuthority:null,operations:null,dossier:null,actionQueue:q,actionKind:'ALL',liveEnabled:false,busy:false});
- assert.match(output,/people verify the documents/);assert.match(output,/NOT filming permission/);
+ assert.match(output,/human work/);assert.match(output,/never establishes filming permission/);
  assert(!output.includes('CLOCKED_API_KEY'));assert(!output.includes('Authorization: Bearer'));
 });

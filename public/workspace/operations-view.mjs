@@ -1,6 +1,6 @@
 import {esc,label} from './presentation.mjs';
 const pane=()=>'';
-function context(model){const {selected,originals,overview,execution,authority,sceneAuthority,operations,dossier,actionQueue,impactPreview,consistency,liveEnabled,busy}=model;const current=selected?.workspace;const locked=busy?'disabled':'';const focusId=model.activeSceneId;const page=overview?.pagination;const task=overview?.tasks?.find(x=>x.id===model.selectedTask)??overview?.tasks?.[0]??null;const tasks=overview?.tasks??[];const execEntries=new Map((execution?.entries??[]).map(e=>[e.id,e]));const currentEntry=task?execEntries.get(task.id):null;return {selected,originals,overview,execution,authority,sceneAuthority,operations,dossier,actionQueue,impactPreview,consistency,liveEnabled,busy,current,locked,focusId,page,task,tasks,execEntries,currentEntry};}
+import {context} from './view-context.mjs';
 
 export function operationsView(model){const {selected,originals,overview,execution,authority,sceneAuthority,operations,dossier,actionQueue,impactPreview,consistency,liveEnabled,busy,current,locked,focusId,page,task,tasks,execEntries,currentEntry}=context(model);return `  <section class="production-box${pane('operations',model.workflowStage)}" aria-label="Production schedule and prerequisites"><h2>Scene operations and prerequisites</h2>
    <p>Bind each original call-sheet row to an explicitly reviewed shoot date and IANA timezone. The overnight flag must be explicit. A local time skipped or repeated by daylight-saving transitions cannot be accepted silently.</p>

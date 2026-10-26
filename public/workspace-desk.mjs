@@ -55,10 +55,12 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  // explicit verify and restore clicks; no storage, DOM echo or model projection.
  let recoveryInput=null;
  const drafts=new Map();
- const draftKey=id=>JSON.stringify([model.recoverySpace,model.selected?.workspace.id??'create',model.selected?.version??0,model.activeSceneId,model.selectedTask,model.selectedCondition,model.focusDocumentId,id]);
+ const disclosures=new Map();
+ const disclosureKey=()=>JSON.stringify([model.recoverySpace,model.selected?.workspace.id??'create',model.workflowStage,model.focusDocumentId,model.sceneView]);
+ const draftKey=id=>JSON.stringify([model.recoverySpace,model.selected?.workspace.id??'create',model.selected?.version??0,model.activeSceneId,model.selectedTask,model.selectedCondition,/^project-(authority|link|scene-auth|pdf|permit|doc-)/.test(id)?model.focusDocumentId:null,id]);
  const editable=()=>[...(root.querySelectorAll?.('input[id],textarea[id],select[id]')??[])].filter(el=>
   !['password','file','button','submit'].includes(el.type)&&!el.closest?.('.workflow-pane-hidden'));
- const captureDrafts=()=>{model.recoveryExpanded=query('project-recovery-panel')?.open??false;for(const el of editable())drafts.set(draftKey(el.id),{value:el.value,checked:el.checked});};
+ const captureDrafts=()=>{model.recoveryExpanded=query('project-recovery-panel')?.open??false;disclosures.set(disclosureKey(),new Set([...(root.querySelectorAll?.('details[id]')??[])].filter(x=>x.open).map(x=>x.id)));for(const el of editable())drafts.set(draftKey(el.id),{value:el.value,checked:el.checked});};
  const restoreDrafts=()=>{
   const restore=()=>{for(const el of editable()){
    const d=drafts.get(draftKey(el.id));if(!d)continue;
@@ -66,6 +68,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
    el.value=d.value;if(el.type==='checkbox')el.checked=d.checked;
   }};
   restore();syncLinkUnits();syncSceneUnits();syncConditionUnits();restore();
+  const open=disclosures.get(disclosureKey());if(open)for(const el of root.querySelectorAll?.('details[id]')??[])el.open=open.has(el.id);
  };
  async function readRecovery(){
   const file=query('project-recovery-file')?.files?.[0],passphrase=query('project-recovery-passphrase')?.value??'';

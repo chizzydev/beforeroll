@@ -173,7 +173,7 @@ test('locked browser controller shows unlock screen, never projects a private pr
  };
  const root={querySelector:id=>id==='#owner-access-input'?{value:TOKEN}:null};
  const c=createWorkspaceController({fetchImpl,root});await c.load();assert.equal(c.model.authLocked,true);
- assert.match(productionView(c.model),/Unlock BeforeRoll/);assert.doesNotMatch(productionView(c.model),/No drones/);
+ assert.match(productionView(c.model),/Return to the work/);assert.doesNotMatch(productionView(c.model),/No drones/);
  await c.click({id:'owner-access-unlock',dataset:{}});assert.equal(c.model.authLocked,false);
  assert.equal(logins,1);assert.equal(privateReads,2);
 });

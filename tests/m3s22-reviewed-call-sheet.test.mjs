@@ -14,7 +14,7 @@ import {createLifecycleBackup,verifyLifecycleBackup,restoreLifecycleBackup} from
 import {buildProductionDossier,dossierMarkdown} from '../src/production-dossier.mjs';
 import {planIntelligence} from '../src/intelligence-workflow.mjs';
 import {createAppServer} from '../server.mjs';
-import {productionView} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 // This intentionally represents an original whose scene layout cannot be decoded by
 // the conservative text extractor. It is never presented as machine-verified text.
@@ -143,7 +143,7 @@ test('browser controller performs a complete human-transcribed PDF original impo
   await ctrl.click({id:'project-manual-call-submit',dataset:{}});
   assert.equal(ctrl.model.selected.workspace.callSheet.scenes.length,2);
   assert.equal(ctrl.model.originals.preserved,1);
-  assert.match(productionView(ctrl.model),/HUMAN-TRANSCRIBED FROM ORIGINAL/);
+  assert.match(productionView(ctrl.model),/Human-transcribed from original/);
  }finally{if(server)await new Promise(done=>server.close(done));await fs.rm(directory,{recursive:true,force:true});}
 });
 function zipStored(files){

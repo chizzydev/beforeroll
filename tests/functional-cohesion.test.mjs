@@ -164,7 +164,7 @@ test('second-scene workflow actions target that scene in authority, schedule and
   assert.match(html,/data-workflow-action="operations" data-action-scene="S2"/);
   ctl.model.stagedReviews=[{evidenceId:'old-production'}];ctl.model.actionOffset=30;ctl.model.selectedCondition='old-condition';
   ctl.selectProduction(ctl.model.selected);
-  assert.equal(ctl.model.workflowStage,'sources');assert.equal(ctl.model.activeSceneId,null);assert.equal(ctl.model.actionOffset,0);
+  assert.equal(ctl.model.workflowStage,'overview');assert.equal(ctl.model.activeSceneId,null);assert.equal(ctl.model.actionOffset,0);
   assert.equal(ctl.model.selectedCondition,null);assert.deepEqual(ctl.model.stagedReviews,[]);
   assert.equal(l.calls(),0);
  }finally{await l.close();}

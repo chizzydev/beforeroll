@@ -19,7 +19,8 @@ import {createSourceOriginalVault} from '../src/source-originals.mjs';
 import {createDurableExecution} from '../src/durable-execution.mjs';
 import {createLifecycleBackup,verifyLifecycleBackup,restoreLifecycleBackup} from '../src/production-lifecycle.mjs';
 import {createAppServer} from '../server.mjs';
-import {createWorkspaceController,productionView} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
+import {createWorkspaceController} from '../public/workspace-desk.mjs';
 const sha=b=>createHash('sha256').update(b).digest('hex');
 const binary=async name=>fs.readFile(new URL('../fixtures/testing/'+name,import.meta.url));
 const file=(bytes,name='location.pdf')=>({name,kind:'permit',contentBase64:bytes.toString('base64')});
@@ -173,7 +174,7 @@ test('browser imports reviewed original binary permit through actual local HTTP 
   const controller=createWorkspaceController({fetchImpl:(url,opts)=>fetch(base+url,opts),root});await controller.load();await controller.click({id:'',dataset:{projectOpen:'s25browser'}});
   await controller.click({id:'project-import-permit',dataset:{}});
   assert.equal(controller.model.selected.workspace.documents.length,1);assert.equal(controller.model.selected.workspace.documents[0].importReceipt.reviewedPermitAttestation.reviewer,'Human coordinator');
-  assert.match(productionView(controller.model),/OWNER-TRANSCRIBED ORIGINAL/);
+  assert.match(productionView(controller.model),/Human-transcribed original/);
  }finally{if(srv)await new Promise(ok=>srv.close(ok));await fs.rm(dir,{recursive:true,force:true});}
 });
 

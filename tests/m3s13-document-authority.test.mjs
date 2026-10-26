@@ -10,7 +10,8 @@ import {annotateAuthorityDocument,recordAuthorityLink,projectAuthorityGraph,asse
 import {planIntelligence} from '../src/intelligence-workflow.mjs';
 import {createWorkspaceStore} from '../src/workspace-store.mjs';
 import {createAppServer} from '../server.mjs';
-import {createWorkspaceController,productionView} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
+import {createWorkspaceController} from '../public/workspace-desk.mjs';
 const sha=x=>createHash('sha256').update(x).digest('hex');
 function crc32(b){let c=0xffffffff;for(const n of b){c^=n;for(let j=0;j<8;j++)c=(c>>>1)^(c&1?0xedb88320:0);}return(c^0xffffffff)>>>0;}
 const w16=x=>{const b=Buffer.alloc(2);b.writeUInt16LE(x);return b;};
@@ -110,7 +111,7 @@ test('browser controller renders documentary source graph and saves reviewer cla
  const s=await local();try{await populated(s);
  const values={'project-authority-document':'a2','project-authority-role':'AMENDMENT','project-authority-reference':'A2','project-authority-issuer':'Unverified office','project-authority-date':'2026-11-08','project-authority-reviewer':'A','project-authority-reason':'Original paper'};
  const root={querySelector:q=>({value:values[q.slice(1)]??'',dataset:{},files:[]})};const controller=createWorkspaceController({fetchImpl:s.fetchLocal,root});await controller.load();await controller.click({id:'',dataset:{projectOpen:'graph'}});
- assert.match(productionView(controller.model),/Documentary authority/);
+ assert.match(productionView(controller.model),/Document roles and relationships/);
  await controller.click({id:'project-authority-save',dataset:{}});
  assert.equal(controller.model.authority.documents.find(d=>d.id==='a2').metadata.role,'AMENDMENT');
  assert.equal(controller.model.authority.notClearance,true);

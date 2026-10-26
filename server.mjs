@@ -52,6 +52,7 @@ const BODY_MAX=280000; // Default owner API requests remain bounded; DOCX import
 const DEFAULT_MAX_CALLS_PER_HOUR=256;
 
 const staticFiles=new Map([
+ ['/workspace/view-context.mjs','public/workspace/view-context.mjs'],
  ['/workspace/analysis-view.mjs','public/workspace/analysis-view.mjs'],
  ['/workspace/authority-view.mjs','public/workspace/authority-view.mjs'],
  ['/workspace/export-view.mjs','public/workspace/export-view.mjs'],

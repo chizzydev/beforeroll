@@ -74,8 +74,8 @@ test('evaluation replay rejects document revisions rather than rebind old scores
  assert.equal(x.calls(),0);
  }finally{await x.close();}});
 test('browser assets expose a clear evaluation notice and real browser actions, never Clocked secrets',async()=>{
- const files=await Promise.all(['public/app.js','public/styles.css','scripts/Launch-Evaluation.ps1','Start-BeforeRoll-Evaluation.cmd'].map(f=>fs.readFile(new URL('../'+f,import.meta.url),'utf8')));
- assert.match(files[0],/INTERACTIVE EVALUATION/);assert.match(files[0],/evaluation-reset/);assert.match(files[0],/evaluation-replay/);
+ const files=await Promise.all(['public/app.js','public/workspace/shell.mjs','scripts/Launch-Evaluation.ps1','Start-BeforeRoll-Evaluation.cmd'].map(f=>fs.readFile(new URL('../'+f,import.meta.url),'utf8')));
+ assert.match(files[1],/Fictional evaluation/);assert.match(files[0],/evaluation-reset/);assert.match(files[0],/evaluation-replay/);
  assert.match(files[2],/Start-Process/);assert.match(files[3],/Launch-Evaluation\.ps1/);
  assert.match(EVALUATION_NOTICE,/No new API calls/);
 });

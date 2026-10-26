@@ -300,12 +300,12 @@ test('lifecycle route and export never dispatch Clocked provider even when live 
  }finally{if(server)await new Promise(resolve=>server.close(resolve));await s.cleanup();}
 });
 test('unified production browser exposes one private owner backup action without a new workflow database',async()=>{
- const {productionView}=await import('../public/workspace-desk.mjs');
+ const {productionView}=await import('./helpers/ui-views.mjs');
  const s=await setup();try{
   const html=productionView({selected:{version:1,workspace:s.saved.workspace},overview:{scenes:[],tasks:[],pagination:{}},dossier:{counts:{},outstanding:[],scenes:[]}});
   assert.match(html,/id="project-lifecycle-backup"/);
-  assert.match(html,/EXPORT PRIVATE LIFECYCLE BACKUP/);
-  assert.match(html,/EXPORT COMPLETE EVIDENCE PACK/);
+  assert.match(html,/Export private lifecycle backup/);
+  assert.match(html,/Export complete evidence pack/);
   assert.doesNotMatch(html,/<script[^>]*>/i);
  }finally{await s.cleanup();}
 });

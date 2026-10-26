@@ -7,7 +7,8 @@ import {createProduction,reviseDocument,setCallSheet,exportWorkspace,importWorks
 import {createWorkspaceStore} from '../src/workspace-store.mjs';
 import {createAppServer} from '../server.mjs';
 import {recordSceneSchedule,recordCondition,decideCondition,projectOperations,resolveLocalTime,assertProductionOperationsIntegrity} from '../src/production-operations.mjs';
-import {createWorkspaceController,productionView} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
+import {createWorkspaceController} from '../public/workspace-desk.mjs';
 
 const call='Shoot 25 October 2026\nScene 12 | North Arcade | 22:15-02:30 | Night street filming\nScene 13 | North Arcade | 08:00-11:30 | Handheld dialogue';
 const permit='Do not obstruct the two-metre public route.\n\nStewards must confirm pedestrian egress before first take.\n\nNo drones.';

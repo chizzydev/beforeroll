@@ -9,7 +9,8 @@ import {inspectImport} from '../src/source-intake.mjs';
 import {planIntelligence} from '../src/intelligence-workflow.mjs';
 import {createWorkspaceStore} from '../src/workspace-store.mjs';
 import {createDurableExecution,planKey} from '../src/durable-execution.mjs';
-import {productionView,createWorkspaceController} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
+import {createWorkspaceController} from '../public/workspace-desk.mjs';
 import {createAppServer} from '../server.mjs';
 const permit='Film at the station.\n\nNo drones.\n\nCamera crane movements require a written permit.';
 const csv='Scene,Location,Start,End,Activity\n21,Station,09:00,09:25,Drone flyover\n22,Station,11:00,11:30,Crane sweep';
@@ -168,7 +169,7 @@ test('browser controller integrates actual execution progress and never persists
  const root={querySelector:q=>({value:values[q.slice(1)]||'',dataset:{},files:[]})};
  const ctrl=createWorkspaceController({fetchImpl:s.fetchLocal,root});await ctrl.load();
  await ctrl.click({id:'',dataset:{projectOpen:'station'}});
- assert.match(ctrl.render(),/Durable Clocked analysis/);
+ assert.match(productionView(ctrl.model),/Durable Clocked analysis/);
  await ctrl.click({id:'project-run-clocked',dataset:{}});
  assert.equal(ctrl.model.execution.completed,2);assert.equal(s.calls(),2);
  assert(!JSON.stringify(ctrl.model).includes('separate-local-token'));

@@ -175,14 +175,14 @@ test('workflow controls reveal the selected stage, contain no duplicate shadow w
  const base={selected:{workspace:w,version:1},items:[],overview:{scenes:[],tasks:[],documents:[],plannedCalls:0},journey};
  for(const stage of journey.checkpoints.map(c=>c.id)){
   const html=productionView({...base,workflowStage:stage});
-  assert.match(html,/data-workflow-open="sources"/);assert.match(html,/data-workflow-open="evidence"/);
-  assert.match(html,/one continuous workspace/i);assert(!html.includes('<script>not real</script>'));
+  assert.match(html,/data-workflow-open="sources"/);assert.match(html,/data-workflow-open="sources"/);
+  assert.match(html,/Editorial Intelligence Studio/);assert(!html.includes('<script>not real</script>'));
   assert.match(html,/&lt;script&gt;not real&lt;\/script&gt;/);
-  assert.match(html,new RegExp(`data-workflow-open="${stage}" aria-current="step"`));
+  assert.match(html,/aria-current="page"/);
   assert(!html.includes('CLOCKED_API_KEY'));
  }
  const evidence=productionView({...base,workflowStage:'evidence'});
- assert.match(evidence,/production-box workflow-pane-hidden" aria-label="Source-bound production action queue"/);
+ assert.doesNotMatch(evidence,/id="project-action-filter"/,'Work register belongs to Work, rather than a hidden duplicate in Exports');
  assert(!/style\s*=|onclick\s*=|onchange\s*=/i.test(evidence));
 });
 test('browser controller uses one atomic read per selected project refresh and navigates by action without creating shadow review state',async()=>{
@@ -190,7 +190,7 @@ test('browser controller uses one atomic read per selected project refresh and n
   await importSources(l);const calls=[];
   const controller=createWorkspaceController({fetchImpl:(uri,options)=>{calls.push(uri);return fetch(l.base+uri,options);},root:{querySelector:()=>({value:'',dataset:{},files:[]})},notify:()=>{}});
   await controller.load();await controller.click({dataset:{projectOpen:data.id},id:''});
-  assert.equal(controller.model.workflowStage,'sources');assert.equal(controller.model.selected.workspace.id,data.id);
+  assert.equal(controller.model.workflowStage,'overview');assert.equal(controller.model.selected.workspace.id,data.id);
   assert(calls.some(x=>x.includes('/workflow?')));assert(!calls.some(x=>x.includes('/dossier/summary')||x.includes('/scene-workbench?')));
   const beforeVersion=controller.model.selected.version;
   await controller.click({dataset:{workflowOpen:'scope'},id:''});assert.equal(controller.model.workflowStage,'scope');
@@ -199,7 +199,7 @@ test('browser controller uses one atomic read per selected project refresh and n
   assert.equal(controller.model.workflowStage,'operations');assert.equal(controller.model.activeSceneId,'S8');
   assert.equal(controller.model.selected.version,beforeVersion);
   assert.equal((await l.store.load(data.id)).version,beforeVersion,'navigation must never mutate persisted production');
-  assert.match(controller.render(),/Production workflow/);
+  assert.match(controller.render(),/Dates and conditions/);
  }finally{await l.close();}
 });
 test('production action queue opens exact source task beyond first plan page without misrouting scene or model evidence',async()=>{

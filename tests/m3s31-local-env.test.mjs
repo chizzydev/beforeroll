@@ -34,11 +34,11 @@ test('missing .env remains safe and works without a key',async()=>{
 });
 test('private local mode requires explicit billable flag and protected owner+operator tokens',async()=>{
  const root=new URL('../',import.meta.url);
- const files=await Promise.all(['server.mjs','scripts/Launch-Private.ps1','scripts/Launch-Evaluation.ps1','public/workspace-desk.mjs','.gitignore'].map(f=>fs.readFile(new URL(f,root),'utf8')));
+ const files=await Promise.all(['server.mjs','scripts/Launch-Private.ps1','scripts/Launch-Evaluation.ps1','public/workspace/shell.mjs','.gitignore'].map(f=>fs.readFile(new URL(f,root),'utf8')));
  assert.match(files[0],/if\(IS_ENTRY&&!IS_EVALUATION\)loadLocalEnv/);
  assert.match(files[0],/BEFOREROLL_LIVE_ENABLED==='true'/);
  assert.match(files[1],/Start-Process \$Address/);
  assert.match(files[2],/--evaluate/);
- assert.match(files[3],/EVALUATION WORKSPACE \/ FICTIONAL DATA/);
+ assert.match(files[3],/Fictional evaluation/);
  assert.match(files[4],/^\.env$/m);
 });

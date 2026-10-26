@@ -33,7 +33,15 @@ export function productionHistory(w,d,journals,{offset=0,limit=20,kind='ALL',sta
  if(recovery)add('RECOVERY',`recovery:${recovery.backupSha256}`,'Verified encrypted recovery','CURRENT',recovery);
  const needle=search.trim().toLocaleLowerCase();
  const filtered=rows.filter(r=>(kind==='ALL'||r.category===kind)&&(state==='ALL'||r.status===state)&&(!needle||JSON.stringify(r).toLocaleLowerCase().includes(needle)));
- const selected=selectedId?rows.find(r=>r.id===selectedId)??null:null;
+ let selected=selectedId?rows.find(r=>r.id===selectedId)??null:null;
+ if(selected){
+  // Read-only source reader context. Never rewrite the immutable historical record,
+  // infer a missing old identity, or substitute today's quote for an obsolete task.
+  const evidenceId=selected.detail?.evidenceId??(selected.id.startsWith('attempt:')?selected.detail?.id:null);
+  let context=evidenceId?tasks.get(evidenceId):null;
+  if(!context&&evidenceId){for(const j of journals){const entry=j.run.checkpoint.entries.find(e=>e.id===evidenceId);const identity=(j.run.taskManifest??[]).find(t=>t.id===evidenceId);if(entry?.finding?.sourceQuote&&identity){context={...identity,quote:entry.finding.sourceQuote,sourceRange:entry.finding.sourceRange??null};break;}}}
+  selected={...selected,evidenceContext:context?{evidenceId,sceneId:context.sceneId,documentId:context.documentId,unitId:context.unitId,quote:context.quote??context.sourceQuote,documentHash:context.documentHash,sceneHash:context.sceneHash,sourceRange:context.sourceRange??null}:null};
+ }
  const page=filtered.slice(offset,offset+limit);
  const body={schema:'beforeroll-production-history-v1',productionId:w.id,persistedVersion:d.persistedVersion,dossierSha256:d.sha256,total:rows.length,filteredTotal:filtered.length,
   filter:{kind,state,search},pagination:{offset,limit,shown:page.length,hasMore:offset+page.length<filtered.length},

@@ -12,7 +12,8 @@ import {planIntelligence} from '../src/intelligence-workflow.mjs';
 import {recordSceneAuthority,projectSceneAuthority,assertSceneAuthorityIntegrity} from '../src/scene-authority.mjs';
 import {createWorkspaceStore} from '../src/workspace-store.mjs';
 import {createAppServer} from '../server.mjs';
-import {createWorkspaceController,productionView} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
+import {createWorkspaceController} from '../public/workspace-desk.mjs';
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 function pdf(lines=['No drones.','Only Scene 12 may use the south loading bay.'],{compressed=false,content=null}={}){
  let stream=content??`BT /F1 11 Tf 70 740 Td (${lines[0]}) Tj 0 -16 Td (${lines[1]}) Tj ET`;
@@ -145,7 +146,7 @@ test('owner browser project controller saves source-to-scene human link and rend
  const vals={'project-scene-auth-scene':'S12','project-scene-auth-doc':'permit','project-scene-auth-unit':'U001','project-scene-auth-kind':'RESTRICTION','project-scene-auth-scope':'EXACT_SCENE','project-scene-auth-reviewer':'Location manager','project-scene-auth-reason':'Reviewed the exact scene and clause'};
  const root={querySelector:q=>({value:vals[q.slice(1)]??'',files:[],dataset:{}})};
  const c=createWorkspaceController({fetchImpl:s.fetchLocal,root});await c.load();await c.click({id:'',dataset:{projectOpen:'ui'}});
- assert.match(productionView(c.model),/Scene-specific documentary applicability/);
+ assert.match(productionView(c.model),/Scene-specific documentary scope/);
  assert.match(productionView(c.model),/Source document/);
  await c.click({id:'project-scene-auth-save',dataset:{}});
  assert.equal(c.model.sceneAuthority.summary.current,1);assert.match(productionView(c.model),/CURRENT_UNVERIFIED/);

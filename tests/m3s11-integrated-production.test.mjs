@@ -10,7 +10,8 @@ import {createProduction,applySourceImport,reviseDocument,recordReview} from '..
 import {inspectImport} from '../src/source-intake.mjs';
 import {planIntelligence} from '../src/intelligence-workflow.mjs';
 import {productionReview,verifyTaskForReview} from '../src/production-review.mjs';
-import {productionView,createWorkspaceController} from '../public/workspace-desk.mjs';
+import {productionView} from './helpers/ui-views.mjs';
+import {createWorkspaceController} from '../public/workspace-desk.mjs';
 const permit='LOCATION PERMIT covers area B.\n\nNo drones.\n\nCrane movements require an issued marshal plan.';
 const csv='Scene,Location,Start,End,Activity\n11,Area B,09:00,09:30,Drone flyover\n12,Area B,12:00,12:30,Crane sweep';
 function project(){const w=createProduction({id:'film_11',title:'Film with <mark>Danger</mark>'});applySourceImport(w,inspectImport({name:'permit.txt',kind:'permit',text:permit}),{documentId:'Permit1'});applySourceImport(w,inspectImport({name:'sheet.csv',kind:'callSheet',text:csv}));return w;}
@@ -53,8 +54,8 @@ test('projection paginates all tasks without truncated or falsely evaluated outp
 test('browser projection escapes untrusted project and source content and never promotes manual review into AI evidence',()=>{
  const w=project(),p=productionReview(w),html=productionView({items:[{id:w.id,title:w.title,documentCount:1,sceneCount:2,version:3}],selected:{version:3,workspace:w},overview:p});
  assert(html.includes('&lt;mark&gt;Danger&lt;/mark&gt;'));assert(!html.includes('<mark>Danger</mark>'));
- assert(html.includes('No drones.'));assert(html.includes('MODEL: NOT EVALUATED'));
- assert(html.includes('NOT AI EVALUATED'));assert(html.includes('IMPORT CALL SHEET'));assert(html.includes('CREATE PRODUCTION'));
+ assert(html.includes('No drones.'));assert(html.includes('Unanalyzed checks stay explicitly not evaluated'));
+ assert(html.includes('NOT AI EVALUATED'));assert(html.includes('Import call sheet'));assert(html.includes('Create production'));
  assert(!html.includes('OWNER-RECORDED CLOCKED'));assert(!html.includes('style='));
 });
 test('integrated local owner API: create, import, source plan, review, persist, replay with zero Clocked calls',async()=>{
@@ -84,7 +85,7 @@ test('browser controller reload uses same versioned API and stays model-free',as
  const s=await localServer();try{
   const controller=createWorkspaceController({fetchImpl:s.fetchLocal,root:{querySelector:()=>null}});await controller.load();assert.equal(controller.model.items.length,0);
   await s.call('POST','/api/workspaces',{id:'one',title:'One'});await controller.load();assert.equal(controller.model.items[0].title,'One');
-  assert.equal(controller.model.selected,null);assert.match(controller.render(),/CREATE PRODUCTION/);
+  assert.equal(controller.model.selected,null);assert.match(productionView(controller.model),/Create production/);
  }finally{await s.close();}
 });
 test('browser module and markup preserve strict CSP with no inline event handlers',async()=>{
@@ -113,6 +114,6 @@ test('browser controller full owner workflow: create -> import permit -> import 
   await controller.click({dataset:{projectOpen:'from_ui'},id:''});
   assert.equal(controller.model.selected.version,4);
   assert.equal(controller.model.overview.reviewedCount,1);
-  assert.match(controller.render(),/Confirm original signed permit/);
+  assert.match(productionView(controller.model),/Confirm original signed permit/);
  }finally{await s.close();}
 });
