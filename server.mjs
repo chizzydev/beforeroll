@@ -52,6 +52,23 @@ const BODY_MAX=280000; // Default owner API requests remain bounded; DOCX import
 const DEFAULT_MAX_CALLS_PER_HOUR=256;
 
 const staticFiles=new Map([
+ ['/workspace/analysis-view.mjs','public/workspace/analysis-view.mjs'],
+ ['/workspace/authority-view.mjs','public/workspace/authority-view.mjs'],
+ ['/workspace/export-view.mjs','public/workspace/export-view.mjs'],
+ ['/workspace/history-view.mjs','public/workspace/history-view.mjs'],
+ ['/workspace/intake-controls.mjs','public/workspace/intake-controls.mjs'],
+ ['/workspace/operations-view.mjs','public/workspace/operations-view.mjs'],
+ ['/workspace/overview-view.mjs','public/workspace/overview-view.mjs'],
+ ['/workspace/presentation.mjs','public/workspace/presentation.mjs'],
+ ['/workspace/scene-view.mjs','public/workspace/scene-view.mjs'],
+ ['/workspace/shell.mjs','public/workspace/shell.mjs'],
+ ['/workspace/sources-view.mjs','public/workspace/sources-view.mjs'],
+ ['/workspace/view.mjs','public/workspace/view.mjs'],
+ ['/workspace/work-view.mjs','public/workspace/work-view.mjs'],
+ ['/design/tokens.css','public/design/tokens.css'],
+ ['/design/foundations.css','public/design/foundations.css'],
+ ['/design/components.css','public/design/components.css'],
+ ['/design/research.css','public/design/research.css'],
  ['/','public/index.html'],['/index.html','public/index.html'],['/styles.css','public/styles.css'],['/app.js','public/app.js'],['/workspace-desk.mjs','public/workspace-desk.mjs'],['/src/engine.mjs','src/engine.mjs'],['/src/timeline.mjs','src/timeline.mjs'],
  ['/src/semantic-source.mjs','src/semantic-source.mjs'],['/src/desk-semantic.mjs','src/desk-semantic.mjs'],['/src/authority-summary.mjs','src/authority-summary.mjs'],['/src/semantic-contract.mjs','src/semantic-contract.mjs'],['/fixtures/M3B_OWNER_SWEEP','fixtures/M3S2_OWNER_M3B_SWEEP_RECORDED.json'],['/fixtures/M3S4_TWO_SCENE_RECORDED','fixtures/audit/M3S4_OWNER_TWO_SCENE_LIVE.json'],['/fixtures/M3','fixtures/M3_SEMANTIC_PAIRS.json'],['/fixtures/M3S6_UNFAMILIAR_CASES','fixtures/M3S6_UNFAMILIAR_CASES.json'],['/fixtures/M3S6_U01_OWNER_RECORDED','fixtures/audit/M3S6_U01_OWNER_LIVE_EVIDENCE.json'],['/fixtures/M3S6_U02_OWNER_RECORDED','fixtures/audit/M3S6_U02_OWNER_LIVE_EVIDENCE.json'],
  ['/fixtures/F01','fixtures/R7_F01_RECORDED.json'],['/fixtures/F02','fixtures/R7_F02_RECORDED.json'],['/fixtures/F03','fixtures/R7_F03_RECORDED.json']
