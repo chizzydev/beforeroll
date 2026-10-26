@@ -1,3 +1,5 @@
 # Preserve the exact bytes recorded by the closure evidence manifest on Windows.
 /_codex_mission/evidence/closure/*.json -text
 /_codex_mission/evidence/closure/*.jpg -text
+# Design research is a frozen, byte-addressed record, including its HTML and JSON.
+/_design_championship/** -text

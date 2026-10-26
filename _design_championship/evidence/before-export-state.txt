@@ -1,0 +1,44 @@
+Browser tab: 1, Title: "BeforeRoll — Production preflight, with receipts", URL: "http://127.0.0.1:3040/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 83-90, 92-100, 102, 106, 112-199
+~				72 container CURRENT STEP / EVIDENCE Inspect and export current and historical production evidence. Exports document recorded evidence and limitations; never filming clearance. BROWSE COMPLETE EVIDENCE HISTORY
+~					73 text CURRENT STEP / EVIDENCE
+~					74 text Inspect and export current and historical production evidence.
+~					75 text Exports document recorded evidence and limitations; never filming clearance.
+~				77 container Unified production evidence status
+~					78 heading Integrated source-to-scene review status, Value: 2
+~						79 text Integrated source-to-scene review status
+~					80 text One read-only evidence inventory joins imported documents, the call sheet, dated scenes, documentary relationships, Clocked model records, and human work. A recorded review is never filming clearance.
+~					81 button CHECK STORAGE AND RECOVERY HEALTH, ID: project-diagnostics
+~					82 text MODEL CHECKS
++					83 text 8/8
++					84 text HUMAN REVIEWS
++					85 text 0
++					86 text UNRESOLVED ITEMS
++					87 text 3
++					88 container
++						89 text Internal evidence reconciliation: INTERNAL_RECONCILIATION_PASS_NOT_SOURCE_AUTHENTICATION
++						90 text Workspace v1 · current model 8 · current human reviews 0 · historical human reviews 0 · archive runs 0. This checks recorded data consistency, NOT authenticity, completeness or filming permission.
+~					91 content list
++						92 container
++							93 AXListMarker • 
++							94 text CURRENT_HUMAN_REVIEWS_INCOMPLETE : 8
++						95 container
++							96 AXListMarker • 
++							97 text SCENE_DATES_NOT_REVIEWED : 2
++						98 container
++							99 AXListMarker • 
++							100 text UNREVIEWED_DOCUMENT_PROVENANCE : 1
+~					101 button (collapsed) Per-scene integrated review states, Secondary Actions: Expand
++						102 text Per-scene integrated review states
+~					103 text Exact original uploads retained locally
+~					104 text 2/2 byte-identical originals currently available.
+~					105 button (collapsed) Download exact original permit / call-sheet files, Secondary Actions: Expand
++						106 text Download exact original permit / call-sheet files
+~					107 text Backup encryption passphrase (14+ characters; never stored)
+~					108 text field (settable) Backup encryption passphrase (14+ characters; never stored)
+~					109 button EXPORT PRIVATE LIFECYCLE BACKUP (ENCRYPTED), ID: project-lifecycle-backup
+~					110 button EXPORT COMPLETE EVIDENCE PACK (JSON), ID: project-dossier-json
+~					111 button EXPORT HUMAN-READABLE REVIEW (MARKDOWN), ID: project-dossier-markdown
++			112 text FICTIONAL EVALUATION — NOT FILMING CLEARANCE. Disposable examples; no owner credentials or billable Clocked requests.
+The focused UI element is 72 container CURRENT STEP / EVIDENCE Inspect and export current and historical production evidence. Exports document recorded evidence and limitations; never filming clearance. BROWSE COMPLETE EVIDENCE HISTORY

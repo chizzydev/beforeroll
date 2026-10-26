@@ -1,0 +1,231 @@
+[
+  {
+    "concept": "editorial",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 960,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 1440
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:17.188Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:05.879Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "lens",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 960,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 1440
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:22.126Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:08.797Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "studio",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 960,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 1440
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:26.963Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:11.654Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "editorial-studio",
+    "viewport": {
+      "width": 1440,
+      "height": 960
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 960,
+      "overflow": false,
+      "text": "Human review session / 1 staged\nInspect. Verify. Then apply.\n\nDesign sandbox checks only; the accepted engine enforces its own atomic version contract.\n\nScene 48 / HW-18 / paragraph 4\nNeeds source evidence\n\nThe location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.\n\nFictional four-way reviewer 1440 — Scene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nU01 / original source revision 1 / exact source identity retained\nRemove this staged review\nVerify selected sources\nApply prototype review\nReturn to scene",
+      "width": 1440
+    },
+    "result": {
+      "focusRole": "status",
+      "overflow": false,
+      "text": "Prototype review applied. The original Clocked recording is unchanged.\nSources\nHistory\nExports & recovery\nComplete evidence history\nWhat was recorded, and against what.\n\nOriginal model evidence remains historical. Human entries below are isolated prototype work.\n\nAdd design history stress\nFind a record\nRecord type\nAll records\nRecorded model\nHuman / design notes\nHistorical\nFilter history\n\n10 matching records · 10 total · this page is not the entire history\n\nS48\nNeeds source evidence\nThe original expressly says Scene 48 was not issued a signed amendment. Seek the issued scene-specific extension; do not inherit Scene 47 scope.\nDesign / human entry\nHistorical\nInspect ↗\nS48\nNeeds source evidence\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\nDesign / human entry\nPrototype current\nInspect ↗\nS47\nSemantic relationship remains uncertain\nOriginal recorded comparison / HW-18 paragraph 1\nGenuine earlier recording\nHistorical\nInspect ↗\nS47\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 2\nGenuine earlier recording\nHistorical\nInspect ↗\nS47\nClocked linked the activity to a documented permission\nOriginal recorded comparison / HW-18 paragraph 3\nGenuine earlier recording\nHistorical\nInspect ↗\nS47\nNo link detected in this selected clause\nOriginal recorded comparison / HW-18 paragraph 4\nGenuine earlier recording\nHistorical\nInspect ↗\nS48\nClocked linked the activity to a documented permission\nOriginal recorded comparison / HW-18 paragraph 1\nGenuine earlier recording\nHistorical\nInspect ↗\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 2\nGenuine earlier recording\nHistorical\nInspect ↗\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 3\nGenuine earlier recording\nHistorical\nInspect ↗\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 4\nGenuine earlier recording\nHistorical\nInspect ↗\n1–10 / 10\nPrevious history page\nNext history page"
+    }
+  },
+  {
+    "concept": "editorial",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 1024,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 768
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:17.188Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:05.879Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:20.961Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "lens",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 1024,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 768
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:22.126Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:08.797Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:23.972Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "studio",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 1024,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 768
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:26.963Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:11.654Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:26.921Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "editorial-studio",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 1024,
+      "overflow": false,
+      "text": "Human review session / 1 staged\nInspect. Verify. Then apply.\n\nDesign sandbox checks only; the accepted engine enforces its own atomic version contract.\n\nScene 48 / HW-18 / paragraph 4\nNeeds source evidence\n\nThe location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.\n\nFictional four-way reviewer 768 — Scene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nU01 / original source revision 1 / exact source identity retained\nRemove this staged review\nVerify selected sources\nApply prototype review\nReturn to scene",
+      "width": 768
+    },
+    "result": {
+      "focusRole": "status",
+      "overflow": false,
+      "text": "Prototype review applied. The original Clocked recording is unchanged.\nSources\nHistory\nExports & recovery\nComplete evidence history\nWhat was recorded, and against what.\n\nOriginal model evidence remains historical. Human entries below are isolated prototype work.\n\nAdd design history stress\nFind a record\nRecord type\nAll records\nRecorded model\nHuman / design notes\nHistorical\nFilter history\n\n11 matching records · 11 total · this page is not the entire history\n\nS48\nNeeds source evidence\nThe original expressly says Scene 48 was not issued a signed amendment. Seek the issued scene-specific extension; do not inherit Scene 47 scope.\nDesign / human entry\nHistorical\nS48\nNeeds source evidence\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\nDesign / human entry\nPrototype current\nS48\nNeeds source evidence\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\nDesign / human entry\nPrototype current\nS47\nSemantic relationship remains uncertain\nOriginal recorded comparison / HW-18 paragraph 1\nGenuine earlier recording\nHistorical\nS47\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 2\nGenuine earlier recording\nHistorical\nS47\nClocked linked the activity to a documented permission\nOriginal recorded comparison / HW-18 paragraph 3\nGenuine earlier recording\nHistorical\nS47\nNo link detected in this selected clause\nOriginal recorded comparison / HW-18 paragraph 4\nGenuine earlier recording\nHistorical\nS48\nClocked linked the activity to a documented permission\nOriginal recorded comparison / HW-18 paragraph 1\nGenuine earlier recording\nHistorical\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 2\nGenuine earlier recording\nHistorical\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 3\nGenuine earlier recording\nHistorical\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 4\nGenuine earlier recording\nHistorical\n1–11 / 11\nPrevious history page\nNext history page"
+    },
+    "note": "Rationale label lookup timed out once; fresh AX confirmed retained form and draft. Direct named textarea completed, no data lost."
+  },
+  {
+    "concept": "editorial",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 844,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 390\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 390
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:17.188Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:05.879Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:20.961Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 390\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:55:16.179Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "lens",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 844,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 390\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 390
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:22.126Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:08.797Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:23.972Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 390\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:55:19.124Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "studio",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 844,
+      "overflow": false,
+      "text": "Review session\nPrototype-only transaction\nInspect before applying.\nScene 48 · paragraph 4\n\n“The location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.”\n\nHW-18 · original paragraph 4 · revision 1\n\nNeeds source evidence · Fictional four-way reviewer 390\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nBound to U01 revision 1, exact scene and original source hash.\n\nVerify selected source Apply prototype review Edit review\n\nApplying affects this concept’s local prototype state only.",
+      "width": 390
+    },
+    "result": {
+      "focusRole": null,
+      "overflow": false,
+      "text": "Prototype review saved. The original Clocked recording is unchanged.\nReviews and provenance.\n\nRecorded model evidence is unchanged. Human entries below are explicitly prototype interactions.\n\nOriginal recording\n\nU01 · 8 genuine historical requests · 0 new calls in this study.\n\nInspect exact recorded source\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional design reviewer\n\nThe original says the Scene 48 request was not issued. Obtain an issued scene-specific amendment before relying on the exception.\n\n2026-10-26T04:17:26.963Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 1440\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:11.654Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 768\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:50:26.921Z\nPrototype human review\nScene 48 · paragraph 4\n\nNeeds source evidence · Fictional four-way reviewer 390\n\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\n2026-10-26T05:55:21.854Z\nReturn to work"
+    }
+  },
+  {
+    "concept": "editorial-studio",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "purposefulButtons": 7,
+    "preview": {
+      "height": 844,
+      "overflow": false,
+      "text": "Human review session / 1 staged\nInspect. Verify. Then apply.\n\nDesign sandbox checks only; the accepted engine enforces its own atomic version contract.\n\nScene 48 / HW-18 / paragraph 4\nNeeds source evidence\n\nThe location manager emailed a request to extend the exception to Scene 48, but that message was not issued as a signed amendment.\n\nFictional four-way reviewer 390 — Scene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\n\nU01 / original source revision 1 / exact source identity retained\nRemove this staged review\nVerify selected sources\nApply prototype review\nReturn to scene",
+      "width": 390
+    },
+    "result": {
+      "focusRole": "status",
+      "overflow": false,
+      "text": "Prototype review applied. The original Clocked recording is unchanged.\nSources\nHistory\nExports & recovery\nComplete evidence history\nWhat was recorded, and against what.\n\nOriginal model evidence remains historical. Human entries below are isolated prototype work.\n\nAdd design history stress\nFind a record\nRecord type\nAll records\nRecorded model\nHuman / design notes\nHistorical\nFilter history\n\n12 matching records · 12 total · this page is not the entire history\n\nS48\nNeeds source evidence\nThe original expressly says Scene 48 was not issued a signed amendment. Seek the issued scene-specific extension; do not inherit Scene 47 scope.\nDesign / human entry\nHistorical\nS48\nNeeds source evidence\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\nDesign / human entry\nPrototype current\nS48\nNeeds source evidence\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\nDesign / human entry\nPrototype current\nS48\nNeeds source evidence\nScene 48 has an unissued request, not the Scene 47 addendum. Seek an issued extension and retain the exact original passage.\nDesign / human entry\nPrototype current\nS47\nSemantic relationship remains uncertain\nOriginal recorded comparison / HW-18 paragraph 1\nGenuine earlier recording\nHistorical\nS47\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 2\nGenuine earlier recording\nHistorical\nS47\nClocked linked the activity to a documented permission\nOriginal recorded comparison / HW-18 paragraph 3\nGenuine earlier recording\nHistorical\nS47\nNo link detected in this selected clause\nOriginal recorded comparison / HW-18 paragraph 4\nGenuine earlier recording\nHistorical\nS48\nClocked linked the activity to a documented permission\nOriginal recorded comparison / HW-18 paragraph 1\nGenuine earlier recording\nHistorical\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 2\nGenuine earlier recording\nHistorical\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 3\nGenuine earlier recording\nHistorical\nS48\nClocked linked an unfamiliar activity to a source condition\nOriginal recorded comparison / HW-18 paragraph 4\nGenuine earlier recording\nHistorical\n1–12 / 12\nPrevious history page\nNext history page"
+    }
+  }
+]

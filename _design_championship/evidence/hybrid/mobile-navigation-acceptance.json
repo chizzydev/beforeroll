@@ -1,0 +1,15 @@
+{
+  "searchFocus": {
+    "id": "h-scene-search",
+    "top": 387.7604370117187
+  },
+  "chosenMobile": {
+    "focus": "H1",
+    "heading": "Scene 210 / Design test location\nUnexamined activity\nNext action ↓",
+    "selected": "<redacted>"
+  },
+  "returnedScene": {
+    "action": "04\nHuman action\nObtain an issued Scene 48 amendment.\n\nThe request is unissued. A similar activity does not inherit the other scene’s exception.\n\nRecord source review →\nCompare exception and request →",
+    "scene": "<redacted>"
+  }
+}
