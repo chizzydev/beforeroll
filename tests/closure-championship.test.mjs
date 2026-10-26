@@ -46,6 +46,7 @@ test('prerequisite decision drafts cannot overwrite another selected prerequisit
  const root={querySelector:selector=>selector==='#project-condition-decision'?field:null,querySelectorAll:()=>[field]};
  const ctl=createWorkspaceController({root});ctl.model.selected={version:1,workspace:make()};ctl.captureDrafts();
  await ctl.click({dataset:{conditionId:'confirmed'}});field.value='HUMAN_CONFIRMED_NOT_AUTHORITY';ctl.restoreDrafts();assert.equal(field.value,'HUMAN_CONFIRMED_NOT_AUTHORITY');
+ ctl.model.operations={...buildProductionDossier(make(),{persistedVersion:1}).operations,conditions:[{id:'confirmed',sceneId:'S31',title:'Exact older current prerequisite',sourceState:'CURRENT_HUMAN_CLAIM',decision:'HUMAN_CONFIRMED_NOT_AUTHORITY'}]};ctl.model.workflowStage='operations';assert.match(ctl.render(),/Selected prerequisite:<\/b> Exact older current prerequisite/);
  field.value='BLOCKED';ctl.captureDrafts();await ctl.click({dataset:{conditionId:'different'}});field.value='OPEN';ctl.restoreDrafts();assert.equal(field.value,'OPEN');
  await ctl.click({dataset:{conditionId:'confirmed'}});field.value='HUMAN_CONFIRMED_NOT_AUTHORITY';ctl.restoreDrafts();assert.equal(field.value,'BLOCKED');
 });
