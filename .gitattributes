@@ -5,3 +5,5 @@
 /_design_championship/** -text
 # Preserve captured production acceptance artifacts and their SHA-256 manifest.
 /_design_implementation/evidence/** -text
+# Owner acceptance originals must retain exact PDF/DOCX/CSV bytes.
+/_design_implementation/fixtures/** -text
