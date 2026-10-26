@@ -13,12 +13,12 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  Object.assign(model,{workflowStage:'overview',sceneView:'investigation',pickerOpen:false,sourceMode:'register',intakeKind:'permit',sceneSearch:'',sceneRegisterOffset:0});
  const sendNotice=notify;notify=(text,error=false)=>{if(error)model.error=text;else model.notice=text;sendNotice(text,error);};
  const selectProduction=(selected,workflowStage='overview')=>Object.assign(model,{selected,workflowStage,offset:0,actionOffset:0,actionKind:'ALL',historyOffset:0,historyKind:'ALL',historyState:'ALL',historySearch:'',historySelected:null,
-  sceneView:'investigation',sourceMode:'register',pickerOpen:false,recoveryView:false,sceneSearch:'',sceneRegisterOffset:0,sceneSearchOpen:false,compareSceneId:null,compareLeftUnit:null,compareRightUnit:null,
+  sceneView:'investigation',sourceMode:'register',pickerOpen:false,recoveryView:false,sceneSearch:'',sceneRegisterOffset:0,sceneSearchOpen:false,compareSceneId:null,compareLeftDocument:null,compareRightDocument:null,compareLeftUnit:null,compareRightUnit:null,
   activeSceneId:null,sceneWorkbench:null,sceneTaskOffset:0,sceneActionOffset:0,selectedTask:null,selectedCondition:null,
-  impactPreview:null,pendingSource:null,stagedReviews:[],reviewSessionPreview:null,stagingVersion:null,focusDocumentId:null,focusUnitId:null,diagnostics:null,dirtyDrafts:false});
+  impactPreview:null,pendingSource:null,stagedReviews:[],reviewSessionPreview:null,stagingVersion:null,focusDocumentId:null,focusUnitId:null,diagnostics:null,dirtyDrafts:false,notice:''});
  const api=async(method,path,payload)=>{
   const response=await fetchImpl(path,{method,cache:'no-store',headers:payload?{'Content-Type':'application/json'}:{},body:payload?JSON.stringify(payload):undefined});
-  const data=await response.json();if(response.status===401&&data.ownerUnlockRequired){model.authLocked=true;throw Error('Owner access locked. Enter your local owner token.');}if(!response.ok)throw Error([data.error||`Project API HTTP ${response.status}`,data.recoveryGuidance].filter(Boolean).join(' — '));return data;
+  const data=await response.json();if(response.status===401&&data.ownerUnlockRequired){model.authLocked=true;throw Error('Owner access locked. Enter your local owner token.');}if(!response.ok){const guidance=/\/(recovery|lifecycle|backup|diagnostics|originals|reconnect-original)(?:\/|$)/.test(path)?data.recoveryGuidance:/\/(import|preview-source-change|commit-source-change)$/.test(path)?'Source not imported. Choose a supported original for the selected document type and inspect its transcription.':null;throw Error([data.error||`Project API HTTP ${response.status}`,guidance].filter(Boolean).join(' — '));}return data;
  };
  const refresh=async()=>{
   try{const health=await api('GET','/api/health');model.controlledTestMode=health.controlledTestMode===true;model.liveEnabled=Boolean(health.liveEnabled);model.evaluationMode=health.evaluationMode===true;}catch{model.liveEnabled=false;model.evaluationMode=false;}
@@ -50,7 +50,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
   }
  };
  const load=async()=>{model.error=null;try{await refresh();}catch(e){model.error=e.message;}};
- const run=async(fn)=>{if(model.busy)return;const priorVersion=model.selected?.version;model.busy=true;model.error=null;model.notice='';try{await fn();await refresh();if(model.selected?.version!==priorVersion)model.dirtyDrafts=false;if(!model.notice)notify('Current production evidence refreshed.');}catch(e){model.error=e.message;notify(e.message,true);}finally{model.busy=false;}};
+ const run=async(fn)=>{if(model.busy)return;const priorVersion=model.selected?.version;model.busy=true;model.error=null;model.notice='';try{await fn();await refresh();if(model.selected?.version!==priorVersion)model.dirtyDrafts=false;if(!model.notice&&model.selected?.version!==priorVersion&&priorVersion!==undefined)notify('Saved against production version '+model.selected.version+'.');}catch(e){model.error=e.message;notify(e.message,true);}finally{model.busy=false;}};
  // Private file/passphrase remain in this controller closure only between the
  // explicit verify and restore clicks; no storage, DOM echo or model projection.
  let recoveryInput=null;
@@ -199,7 +199,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
    const id=encodeURIComponent(model.selected.workspace.id);
    const output=await api('POST',`/api/workspaces/${id}/review-session/commit`,{expectedVersion:v.expectedVersion,asOf:v.asOf,edits:reviewEdits(),previewSha256:v.sha256});
    model.stagedReviews=[];model.reviewSessionPreview=null;model.stagingVersion=null;
-   notify(`${output.applied} human source decisions recorded in one versioned transaction. No filming clearance.`);
+   notify(`${output.applied} human source decision${output.applied===1?'':'s'} recorded in one versioned transaction. No filming clearance.`);
   },
   'project-impact-permit':()=>previewFileImpact('permit'),
   'project-impact-call':()=>previewFileImpact('callSheet'),
@@ -210,6 +210,8 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
     await api('POST',`/api/workspaces/${encodeURIComponent(pending.projectId)}/commit-source-change`,{...pending.payload,previewSha256:model.impactPreview?.previewSha256});
     model.pendingSource=null;model.impactPreview=null;model.offset=0;model.actionOffset=0;model.selectedTask=null;
    }else await importFile(pending.kind,{previewed:true});
+   model.sourceMode='reader';model.workflowStage='sources';
+   notify('Source replacement committed. Affected checks and reviews need renewed attention; unchanged evidence is retained.');
   },
   'project-action-apply':async()=>{model.actionKind=value('project-action-filter')||'ALL';model.actionOffset=0;},
   'project-action-prev':async()=>{model.actionOffset=Math.max(0,model.actionOffset-30);},
@@ -364,6 +366,21 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  };
  const click=async(el)=>{
   captureDrafts();
+  if(el.dataset.compareReviewScene){
+   const scenes=model.overview?.scenes??[],documents=model.overview?.documents??[];
+   const sceneIndex=scenes.findIndex(s=>s.id===el.dataset.compareReviewScene),docIndex=documents.findIndex(d=>d.id===el.dataset.compareDocument);
+   const doc=documents[docIndex],unitIndex=doc?.units.findIndex(u=>u.id===el.dataset.compareUnit)??-1;
+   if(sceneIndex<0||docIndex<0||unitIndex<0||doc.sourceHash!==el.dataset.compareHash)throw Error('The compared source has changed. Inspect the current original before reviewing.');
+   const version=model.selected.version,local=documents.slice(0,docIndex).reduce((n,d)=>n+d.units.length,0)+unitIndex;
+   model.activeSceneId=scenes[sceneIndex].id;model.sceneTaskOffset=Math.floor(local/40)*40;model.sceneActionOffset=0;
+   await load();if(model.error||model.selected.version!==version)throw Error(model.error??'The production changed. Inspect the exact comparison again.');
+   const task=model.sceneWorkbench?.tasks.find(t=>t.sceneId===el.dataset.compareReviewScene&&t.documentId===doc.id&&t.unitId===el.dataset.compareUnit&&t.documentHash===doc.sourceHash);
+   if(!task)throw Error('This passage has no current source task. Verify source coverage before review.');
+   // Use the server's actual global coordinate, not a second client planner.
+   const offset=Math.floor(task.globalTaskIndex/40)*40;
+   if(model.offset!==offset){model.offset=offset;await load();if(model.error||model.selected.version!==version)throw Error(model.error??'The production changed while opening this source. Inspect it again.');}
+   model.selectedTask=task.id;model.workflowStage='review';model.sceneView='review';return true;
+  }
   if(el.dataset.designAction){const action=el.dataset.designAction;model.error=null;model.notice='';
    if(action==='picker')model.pickerOpen=!model.pickerOpen;
    if(action==='close-picker')model.pickerOpen=false;
@@ -406,7 +423,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
    await load();return true;
   }
   if(el.dataset.unstageTask){model.stagedReviews=model.stagedReviews.filter(r=>r.evidenceId!==el.dataset.unstageTask);model.reviewSessionPreview=null;return true;}
-  if(el.dataset.sceneFocus){model.activeSceneId=el.dataset.sceneFocus;model.sceneTaskOffset=0;model.sceneActionOffset=0;model.selectedTask=null;model.sceneView='investigation';model.workflowStage='review';model.sceneSearchOpen=false;model.compareLeftUnit=null;model.compareRightUnit=null;model.error=null;await load();return true;}
+  if(el.dataset.sceneFocus){model.activeSceneId=el.dataset.sceneFocus;model.sceneTaskOffset=0;model.sceneActionOffset=0;model.selectedTask=null;model.sceneView='investigation';model.workflowStage='review';model.sceneSearchOpen=false;model.compareLeftDocument=null;model.compareRightDocument=null;model.compareLeftUnit=null;model.compareRightUnit=null;model.error=null;await load();return true;}
   if(el.dataset.sceneOpenTask){
    const index=Number(el.dataset.taskPosition),localIndex=Number(el.dataset.sceneTaskPosition);
    if(!Number.isSafeInteger(index)||index<0||index>=50000||!Number.isSafeInteger(localIndex)||localIndex<0||localIndex>=50000)throw Error('Scene task pointer invalid');

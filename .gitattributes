@@ -3,3 +3,5 @@
 /_codex_mission/evidence/closure/*.jpg -text
 # Design research is a frozen, byte-addressed record, including its HTML and JSON.
 /_design_championship/** -text
+# Preserve captured production acceptance artifacts and their SHA-256 manifest.
+/_design_implementation/evidence/** -text

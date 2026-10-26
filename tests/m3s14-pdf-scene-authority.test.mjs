@@ -149,7 +149,7 @@ test('owner browser project controller saves source-to-scene human link and rend
  assert.match(productionView(c.model),/Scene-specific documentary scope/);
  assert.match(productionView(c.model),/Source document/);
  await c.click({id:'project-scene-auth-save',dataset:{}});
- assert.equal(c.model.sceneAuthority.summary.current,1);assert.match(productionView(c.model),/CURRENT_UNVERIFIED/);
+ assert.equal(c.model.sceneAuthority.summary.current,1);assert.match(productionView(c.model),/Current human claim · unverified/);
  assert.match(productionView(c.model),/No drones/);
  }finally{await s.close();}
 });

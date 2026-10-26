@@ -16,7 +16,7 @@ let toastTimer;
 const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const title=s=>h(s).replace(/_/g,' ');
 function toast(message,bad=false){let el=document.querySelector('.toast');if(el)el.remove();el=document.createElement('div');el.className='toast'+(bad?' bad':'');el.textContent=message;document.body.append(el);clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),5200);}
-const workspaceController=createWorkspaceController({notify:toast,root:document});
+const workspaceController=createWorkspaceController({root:document});
 function compute(){const result=evaluatePreflight({permitText:state.permitText,callSheetText:state.callSheetText,fields:state.fields,profile:state.profile,scenes:state.scenes,manualFields:state.manualFields});
  const attached=Object.values(state.deskClocked.byScene).flatMap(x=>x.findings||[]);
  return {...result,findings:[...result.findings,...attached],summary:{...result.summary,reviews:result.summary.reviews+attached.length},clockedAttached:attached.length};}
@@ -376,12 +376,15 @@ app.addEventListener('click',async(e)=>{const el=e.target.closest('button');if(!
  else if(state.evaluationMode&&el.id==='evaluation-replay'){if(workspaceController.model.stagedReviews.length)throw Error('Commit or remove staged decisions before switching the recorded example.');const response=await fetch('/api/evaluation/replay',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({projectId:'eval_arcade'})});const body=await response.json();if(!response.ok)throw Error(body.error||'Cannot replay recording');workspaceController.model.selected=null;await workspaceController.load();await autoOpenExample('eval_arcade');render();toast(body.alreadyReplayed?'U02 recording was already loaded. No new API calls.':'Original U02 answers replayed on matching fictional clauses. No new API calls.');}
  else if(el.dataset.tab){if(state.tab==='projects')workspaceController.captureDrafts();if(el.dataset.tab==='desk'&&!state.record)await preset('F01');else state.tab=el.dataset.tab;if(state.tab==='projects')await workspaceController.load();render();window.scrollTo({top:0,behavior:'smooth'});}
  else if(state.tab==='projects'){await workspaceController.click(el);render();
-  const notice=document.querySelector('[role="alert"]')??document.querySelector('[role="status"]');
+  if(workspaceController.model.error){const error=document.querySelector('[role="alert"]');if(error){error.tabIndex=-1;error.focus?.();error.scrollIntoView?.({block:'start'});}return;}
+  const notice=document.querySelector('[role="status"]');
   if(notice&&el.id?.startsWith('project-'))notice.focus?.();
   if(el.dataset.designAction==='scene-search')document.querySelector('#design-scene-search')?.focus();
   if(el.dataset.designAction==='picker')document.querySelector('#design-production-search')?.focus();
   if(el.dataset.designAction==='close-picker')document.querySelector('.production-trigger')?.focus();
-  if(el.dataset.sceneFocus||el.dataset.sceneOpenTask||el.dataset.designAction&&['session','comparison','source-reader','recover'].includes(el.dataset.designAction)){const focus=document.querySelector('.page-heading')??document.querySelector('#workspace-main');focus?.focus?.();focus?.scrollIntoView?.({block:'start'});}
+  const sourceTarget=el.dataset.designAction==='import'||el.dataset.designAction==='revise-call'||el.dataset.sourceMode==='revise'?'.intake-section':el.dataset.designAction==='source-reader'||el.dataset.sourceMode==='reader'?'.document-reader':['project-impact-permit','project-impact-call'].includes(el.id)?'.revision-preview':null;
+  if(sourceTarget){const target=document.querySelector(sourceTarget);if(target){target.tabIndex=-1;target.focus?.();target.scrollIntoView?.({block:'start'});}}
+  if(el.dataset.compareReviewScene||el.dataset.sceneFocus||el.dataset.sceneOpenTask||el.dataset.designAction&&['session','comparison','source-reader','recover'].includes(el.dataset.designAction)){const focus=document.querySelector('.page-heading')??document.querySelector('#workspace-main');focus?.focus?.();focus?.scrollIntoView?.({block:'start'});}
   const destination=el.dataset.historySelect?'[aria-label="Selected history record"]':el.dataset.workflowOpen||el.dataset.workflowAction||el.dataset.historyKind||el.dataset.projectOpen||el.id==='project-create'?'.production-active-step':null;
   if(destination){const target=document.querySelector(destination);if(target){target.tabIndex=-1;target.focus?.({preventScroll:true});target.scrollIntoView?.({block:'start'});}}
  }
@@ -430,6 +433,8 @@ document.addEventListener?.('change',async event=>{
  if(el.id==='design-mobile-scene')await workspaceController.click({dataset:{sceneFocus:el.value}});
  else if(el.id==='design-scene-source'){const t=m.sceneWorkbench?.tasks.find(x=>x.id===el.value);if(t)await workspaceController.click({dataset:{sceneOpenTask:t.id,taskPosition:String(t.globalTaskIndex),sceneTaskPosition:String(t.sceneTaskIndex),sceneView:'investigation'}});}
  else if(el.id==='design-intake-kind'){workspaceController.captureDrafts();m.intakeKind=el.value;}
+ else if(el.id==='design-compare-doc-left'){m.compareLeftDocument=el.value;m.compareLeftUnit=null;}
+ else if(el.id==='design-compare-doc-right'){m.compareRightDocument=el.value;m.compareRightUnit=null;}
  else if(el.id==='design-compare-scene')m.compareSceneId=el.value;
  else if(el.id==='design-compare-left')m.compareLeftUnit=el.value;
  else if(el.id==='design-compare-right')m.compareRightUnit=el.value;
