@@ -5,6 +5,8 @@ $PriorLive = $env:BEFOREROLL_LIVE_ENABLED
 $env:BEFOREROLL_LIVE_ENABLED = 'false'
 Push-Location -LiteralPath $ProjectRoot
 try {
+    & node.exe scripts/release/verify-distribution.mjs
+    if ($LASTEXITCODE -ne 0) { throw 'Public distribution inventory failed.' }
     & node.exe scripts/verify-coordinator-evidence.mjs
     if ($LASTEXITCODE -ne 0) { throw 'Historical source/receipt verification failed.' }
     & node.exe scripts/verify-last-light-recording.mjs

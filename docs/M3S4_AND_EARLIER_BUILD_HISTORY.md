@@ -6,7 +6,7 @@
 
 **Deliberate live two-scene gate**: stop server; restart with `...Run-BeforeRoll.ps1 -Live`; paste the Clocked key **locally at the masked terminal prompt only**; paste separate `LIVE_OPERATOR_TOKEN` into the Review Desk. Click `RUN CLOCKED FOR BOTH SCENES (8 MAX CALLS)` and confirm once. Exactly 2 original unedited scene rows × 4 segmented candidate clauses = **up to 8 separately billed Decide requests**, sequentially, **without retries**. Each call's price is unknown; the total is not a hard financial cap. If an upstream request fails, remaining scenes are marked NOT EVALUATED; billing may be unknown. Export the JSON evidence and dossier, review for secrets before sharing. Use fictional inputs only.
 
-**Version support**: Node.js >=20; no dependency installation required. Owner instructions: [M3S4_OWNER_ACCEPTANCE.md](docs/M3S4_OWNER_ACCEPTANCE.md). Technical change report: [M3S4_TECHNICAL_CHANGELOG.md](docs/M3S4_TECHNICAL_CHANGELOG.md). Competition demonstration and scoring map: [M3S4_JUDGE_STORY_AND_COMPETITIVE_CONTRACT.md](docs/M3S4_JUDGE_STORY_AND_COMPETITIVE_CONTRACT.md).
+**Version support**: Node.js >=20; no dependency installation required. Owner instructions: [M3S4_OWNER_ACCEPTANCE.md](M3S4_OWNER_ACCEPTANCE.md). Technical change report: [M3S4_TECHNICAL_CHANGELOG.md](M3S4_TECHNICAL_CHANGELOG.md). Competition demonstration and scoring map: [M3S4_JUDGE_STORY_AND_COMPETITIVE_CONTRACT.md](M3S4_JUDGE_STORY_AND_COMPETITIVE_CONTRACT.md).
 
 **Non-negotiable truthfulness:** typed Decide outputs are model probabilities, not legally validated facts. The app cannot establish issued permit authenticity, prerequisite fulfillment, document supremacy or unrestricted permission; source segmentation can miss operative conditions. No real Clocked multi-scene live test has been run during packaging. **DO NOT use this prototype for filming clearance.**
 
@@ -58,7 +58,7 @@ See `docs/M3S3_OWNER_ACCEPTANCE.md`, `docs/M3S3_TECHNICAL_CONTRACT_AND_LIMITATIO
 
 **New cumulative build, 24 October 2026.** This increment responds to the Clocked sponsor-indispensability challenge. After three owner-run Decide judgments passed narrow preregistered synthetic controls, the operator no longer needs to choose the relevant permit clause before running a scene-conditioned analysis. **One deliberate Clocked Decide call per detected clause** compares the full scene against the source clause, with no hazard keyword filtering or simulated AI results. Up to eight clauses, with explicit owner confirmation, in-order calls, and fail-closed partial evidence. Source-fragment omissions are disclosed. The application does not resolve legal authority or grant filming clearance.
 
-**Verification:** 47/47 tests pass, mock transport and Chromium offline harness pass; **new M3-S2 real Clocked sweep has not yet been run or accepted**. Earlier M3-S1 triad is audited separately. See [`docs/M3S2_SCOPE_ACCEPTANCE_AND_LIMITATIONS.md`](docs/M3S2_SCOPE_ACCEPTANCE_AND_LIMITATIONS.md) and `README_FIRST_WINDOWS.txt`.
+**Verification:** 47/47 tests pass, mock transport and Chromium offline harness pass; **new M3-S2 real Clocked sweep has not yet been run or accepted**. Earlier M3-S1 triad is audited separately. See [`docs/M3S2_SCOPE_ACCEPTANCE_AND_LIMITATIONS.md`](M3S2_SCOPE_ACCEPTANCE_AND_LIMITATIONS.md) and `README_FIRST_WINDOWS.txt`.
 
 # BeforeRoll v0.2.0 — M3-S1 Clocked Semantic Lens (24 October 2026)
 
@@ -87,7 +87,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Run-BeforeRoll.ps1
 
 Enter the Clocked API key only in the locally masked terminal prompt, **not the web page**. Copy the distinct printed `LIVE_OPERATOR_TOKEN` into the Semantic lens operator field. Click **RUN CLOCKED SEMANTIC LINK** once and confirm. The server makes at most **one actual Decide request** for that click; no automatic retries, server-side attempt limit, and unknown per-request credit cost. If returned, click **EXPORT ORIGINAL CLOCKED SEMANTIC EVIDENCE (JSON)** and inspect it before sharing. Do not share key or token. Reported probabilities are not ground truth.
 
-**Owner acceptance instructions:** [M3 live gate](docs/M3_OWNER_LIVE_GATE.md). **Judge-facing copy and truth boundaries:** [M3 storyboard](docs/M3_JUDGE_STORY_AND_SUBMISSION_CONTRACT.md). **Existing M2 product documentation follows unchanged below.**
+**Owner acceptance instructions:** [M3 live gate](M3_OWNER_LIVE_GATE.md). **Judge-facing copy and truth boundaries:** [M3 storyboard](M3_JUDGE_STORY_AND_SUBMISSION_CONTRACT.md). **Existing M2 product documentation follows unchanged below.**
 
 ---
 
@@ -98,7 +98,7 @@ Enter the Clocked API key only in the locally masked terminal prompt, **not the 
 
 > **Know the constraint before the take.** BeforeRoll helps a production coordinator compare a draft call sheet against the written conditions of a film-location permit. It highlights planned scenes needing attention, shows the source quotation behind each finding, and exports a human-review dossier. It never issues permission, verifies a document's legal authenticity, or labels a shoot “safe to film.”
 
-![M1 CSP-safe review-desk UI rendered in Chromium using recorded R7 synthetic fixtures](docs/M1_CSP_SAFE_OWNER_PREVIEW.png)
+![M1 CSP-safe review-desk UI rendered in Chromium using recorded R7 synthetic fixtures](M1_CSP_SAFE_OWNER_PREVIEW.png)
 
 ## M2 owner findings, fixes and remaining scope (24 October 2026)
 
@@ -228,7 +228,7 @@ No database; no login; nothing is saved to disk by the app. Refreshing resets lo
 - Auto-approval, OCR/PDF, cross-document authority graph, team sharing, accounts, external SMS/email, paid deployment and official submission have **not** been implemented.
 - Because the contest rewards both integrations and explanation, any final challenge submission must explicitly demonstrate Clocked's source-reading value over deterministic alternatives. **No final concept COMMIT has been declared**. Do not add token endpoint calls solely for scoring breadth.
 
-See [BUILD CONTRACT](docs/NEXT_INCREMENT_CONTRACT.md) for the non-negotiable remaining scope and [JUDGE TOUR](docs/JUDGE_TOUR_AND_WRITEUP.md) for the judged story. This README is a deliberately completed **first-day scored deliverable**, not a submission-night afterthought.
+See [BUILD CONTRACT](https://github.com/chizzydev/beforeroll/blob/790dd27b2a5e74c5f05f10478c6ab9e1017d11de/docs/NEXT_INCREMENT_CONTRACT.md) for the non-negotiable remaining scope and [JUDGE TOUR](JUDGE_TOUR_AND_WRITEUP.md) for the judged story. This README is a deliberately completed **first-day scored deliverable**, not a submission-night afterthought.
 
 ## M1 owner-screen correction (v0.1.1)
 

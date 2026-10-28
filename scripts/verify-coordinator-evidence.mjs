@@ -5,7 +5,7 @@ import {recordedCoordinatorEvidence} from '../src/recorded-coordinator-evidence.
 import {literalHash} from '../src/literal-requirements.mjs';
 import {verifyFrozen} from '../experiments/p0b/stage1/freeze.mjs';
 const {evidence,problem}=await recordedCoordinatorEvidence();assert.equal(problem,undefined);assert.ok(evidence);
-const accepted=JSON.parse(await readFile(new URL('../_codex_mission/BEFOREROLL_U01_PRODUCT_ENGINEERING_HANDOFF_v1.0/ACCEPTED_U01_EVIDENCE.json',import.meta.url),'utf8'));
+const accepted=JSON.parse(await readFile(new URL('../fixtures/audit/U01_ACCEPTED_EVIDENCE.json',import.meta.url),'utf8'));
 assert.equal(evidence.permitSha256,accepted.permitSha256);assert.equal(evidence.facts.length,3);
 for(const expected of accepted.candidateC.requirements){
  const fact=evidence.facts.find(f=>f.unitId===expected.sourceUnit&&f.field===expected.field);
@@ -19,4 +19,4 @@ const frozen=await verifyFrozen();
 console.log(JSON.stringify({status:'OFFLINE_SOURCE_AND_RECEIPT_PREFLIGHT_PASS',permitSha256:evidence.permitSha256,
  recordedResponseSha256:evidence.fieldStates.map(s=>s.responseSha256),literalFacts:3,sourceSelection:evidence.sourceSelection,
  stage0RequestFingerprint:frozen.manifest.requestContractFingerprint,brRegister:'ORIGINAL_COPY_HASH_VERIFIED',
- providerRequests:0,creditsSpentNow:0,ownerGuiAcceptance:'PENDING'},null,2));
+ providerRequests:0,creditsSpentNow:0,ownerGuiAcceptance:'NOT_MEASURED_BY_THIS_OFFLINE_VERIFIER'},null,2));

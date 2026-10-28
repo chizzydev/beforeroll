@@ -1,31 +1,53 @@
-# Verification scopes
+# Verification scopes and evidence
 
-27 October 2026. Node24.13.0 / npm11.6.2 on Windows. Node20+ is the declared minimum; no separate Node20 binary was installed/tested. No third-party dependencies or build step. All checks are offline with respect to Clocked.
+Current public distribution, 28 October 2026. Node 24.13.0 / npm 11.6.2 on Windows; Node 20+ is declared, not separately binary-tested. No runtime dependencies or build step. **No fresh Clocked requests are needed or authorized by these checks.**
 
-## Protected development scope — full preservation
+## Reproduce the public scope
 
-`npm test`: **662/662 PASS**,0failures/skips/cancellations,37,447.9905ms in `verification/batch-d-release/native-final-v3.txt`. This is the original657 plus five additive release HTTP/isolation tests. The archive assertion was moved **intact** from `batch-c-experience.test.mjs` to `protected-archive.test.mjs`; no hash, fixture expectation or assertion was weakened. The remaining20Batch C tests still execute. The full frozen harness is109tests; original evidence verification/recording pins remain separately checked.
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\release\Verify-Release.ps1 -NoLaunch
+```
 
-The owner explicitly required private/encrypted/disposable archives to stay local and authorized distinct public/protected scopes. The protected assertion requires all154Batch B evidence artifacts, including those excluded from public distribution. It remains runnable here and is not represented as passed by the public package.
+Portable equivalents:
 
-## Clean public application scope — no excluded archives
+```sh
+node scripts/release/verify-distribution.mjs
+node scripts/verify-coordinator-evidence.mjs
+node scripts/verify-last-light-recording.mjs
+node scripts/release/test-public.mjs
+node --test experiments/p0b/stage0.test.mjs experiments/p0b/stage1/stage1.test.mjs
+```
 
-`node scripts/release/test-public.mjs`: **661/661 PASS**,0failures/skips/cancellations,32,330.3630ms in the first clean portable run. It enumerates every native application test, excluding only the separately preserved archive-only test. The final public tree does not ship that test. `npm test` in the final public tree therefore also runs these661cases. No excluded archive, owner store, credential or Downloads path is needed.
+The accepted public baseline is **661/661 native application tests and 109/109 frozen tests, zero failures/skips/cancellations**. `npm test` also runs those 661 native cases in the public tree. Repeated runs are not added to these distinct totals. The final correction's rerun is recorded in [the final release receipt](FINAL_PUBLIC_RELEASE.md).
 
-`node --test experiments/p0b/stage0.test.mjs experiments/p0b/stage1/stage1.test.mjs`: **109/109 PASS**,0failures/skips/cancellations,29,352.5525ms in the initial clean checkout. Final-checkout repeats and exact durations are retained in the final engineering receipt. Test counts are distinct cases, not sums of repeats.
+Tests cover source identities, revisions, strict contracts/quotations, scene isolation, durable uncertainty, review persistence, exports/recovery, authenticated boundaries and Evaluation isolation. Controlled fake transports are offline engineering tests, not fresh provider results. The frozen harness preserves its existing request/baseline fingerprints; do not execute its paid runner or reset historical fences.
 
-`npm install --ignore-scripts --package-lock=false --no-audit --no-fund` with offline npm configuration: PASS, up to date in12seconds, no dependencies installed. `node scripts/verify-last-light-recording.mjs` validates the unchanged genuine recording; the frozen source/receipt verifier additionally checks the original U01/BR/harness identities.
+The coordinator verifier reads the exact accepted U01 evidence at `fixtures/audit/U01_ACCEPTED_EVIDENCE.json`. It is the unchanged JSON formerly carried in an internal handoff directory; the verifier's packaging path changed. Its stale acceptance-status diagnostic now says `NOT_MEASURED_BY_THIS_OFFLINE_VERIFIER`; owner acceptance is documented separately. Existing assertions are intact.
 
-Initial clean-run failures were useful and remain in protected logs: missing original M3-S6 gold dependency (fixed by including its exact frozen file), stale error-message assertion (fixed by retaining “No fresh” while accurately mentioning Last Light), and absent protected archive (resolved by owner-authorized scope separation, not fake artifacts or skipped assertions). Initial new security-test failures were wrong endpoint names and fetch's normalized Host behavior; corrected to actual routes and raw HTTP, with no security weakening.
+## Protected archive scope stays separate
 
-## Real rendered release acceptance
+The original protected workspace has **662 native cases**, including one unchanged archive-integrity assertion in `tests/protected-archive.test.mjs`. It requires private preservation archives, including encrypted backups and disposable stores explicitly excluded by the owner. That assertion and original archives remain local; neither is shipped or claimed as passed by the public 661-test procedure. No assertions, expected hashes or test semantics were weakened.
 
-Started `scripts/release/evaluate.mjs --port=0` from the separate candidate, at a new localhost origin without credentials or `.env`. Actual Codex in-app browser: Last Light default, S31/source exact LENDER/U001 and refreshed reading focus, S32 isolation/request, fictional acknowledgment saved atversion2, same review in Work/History, actual JSON/Markdown downloads, reset back toversion1, U01 and genuine recorded U02replay8/8. A separate Edge InPrivate window also opened the seed without authentication. This is agent-operated acceptance, not an independent human usability study or a newly created isolated browser profile guarantee.
+The [dated Batch D report](../BATCH_D_SUBMISSION_CHAMPIONSHIP_REPORT.md) documents the original 662/661 scope separation and failures repaired before release. Historical receipts describe their own build, not current pending actions.
 
-Evidence is `verification/batch-d-release/clean-*` and `cold-opening.png`. Screenshots were inspected. Downloaded JSON/Markdown retain8candidates,14assessments,23historical journal entries and the fictional review, with no fulfilled conditions/authority decisions. Shutdown receipt records0provider calls. Five additive HTTP tests cover static denial/CSP, all four legacy billable endpoints disabled, discovery/recovery denial, host/origin/forwarded-header fences and two independent temporary process stores/reset.
+## Genuine provider evidence
 
-Public source distribution is locally verified, not internet-hosted. No unauthenticated external URL has been tested or claimed. Two tabs on the same server share state; separate local processes are isolated. Private recovery retains full native regression and accepted Batch B/C browser evidence; no private archive is published.
+The exact [Last Light recording](../../fixtures/audit/LAST_LIGHT_COMPLETE_RECORDED_v1.json) is SHA-256:
 
-## Media and owner boundary
+`2cc34e798efe694df045418082e29f8b6c3b5b35f600f4167305a9ce5cc30954`
 
-Actual screenshots are provided. The window-only recording probe rendered black and is not a finished video. The owner has now reserved recording for their Microsoft video editor; storyboard/narration/quality checklist are supplied. No video publication or final-render acceptance is claimed. Exact authenticated form limits remain unverified behind sign-in; rules-required content is ready, with that owner action explicit.
+It contains **23 genuine requests / 62 reported credits**: 14 Decide, four Extract, five Fill. Its validated final projection has six prerequisites and two documentary investigations. The general venue Fill scope disagreement stays disclosed. No automatic authority/fulfillment decisions are inferred.
+
+The original adaptive Batch B campaign (39 requests/150 credits), earlier core campaign (57/102), U01/U02 records, failed attempts, frozen source/gold and request/response evidence remain historical and closed. Current release checks do not rerun them. Native decoder tests replay saved responses; genuine-provider status comes from the original receipts, not mocks.
+
+## Browser and independent acceptance
+
+Accepted agent-operated browser evidence covers Last Light, exact sources/refresh, S31/S32 isolation, explicit fictional review, Work/History, actual JSON/Markdown downloads, reset and U01/U02. Private separate-copy recovery has full regressions and accepted Batch B/C browser evidence. See [Batch C browser acceptance](../BATCH_C_BROWSER_ACCEPTANCE.md).
+
+The owner has now **independently accepted the essential Windows workflow** and completed the [narrated actual-use demonstration](https://youtu.be/Ng_lMzWNlTs). This status is owner-confirmed; it is not fabricated as a new agent-operated Windows session. Older reports accurately describe acceptance as pending at their dates.
+
+The release launcher runs a temporary fictional runtime with no credential and a throwing/counting provider transport. Graceful `stop` reports `providerCalls=0 temporaryDataDisposed=true`. Two tabs share one process; separate processes are isolated. Evaluation is local, not a hosted multi-user service. No additional owner GUI acceptance round is required for this documentation-only correction.
+
+## Distribution and historical receipts
+
+`RELEASE_MANIFEST.json` inventories the current public tree, excluding its own hash. [The RC1 inventory](../../verification/releases/RC1_RELEASE_MANIFEST.json) is preserved unchanged as a historical receipt; its old paths describe RC1. Published source history and [original/public mapping](PUBLIC_HISTORY_MAP.json) are retained. Excluded preservation archives remain local and do not become public merely to satisfy tests.

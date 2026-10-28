@@ -31,10 +31,10 @@ Run `node scripts/release/evaluate.mjs` from a clean extracted release, then ope
 ## Limitations / learnings
 Exact quoted text is not documentary authenticity or correct classification. Inventory covers imported units, not all applicable instruments. Last Light is an exposed small fictional packet, not a held-out benchmark or real production trial. Scope heuristics, partial target expressiveness and advisory disagreement remain visible. Failed/uncertain requests halt without blind retries. Model output cannot establish actual issue, legal applicability or physical fulfillment.
 
-## Links — owner actions, not invented URLs
-- Demo URL: **OWNER_ACTION_REQUIRED — approved public actual-use video URL or independently checked isolated app URL**.
-- Public repository URL: **OWNER_ACTION_REQUIRED — approved publication of audited candidate/history**.
-- Optional write-up: use public repository README and `docs/submission/TECHNICAL_WRITEUP.md` after publication; do not paste local filesystem links into the form.
+## Completed public links
+- Demo URL: [Completed actual-use demonstration](https://youtu.be/Ng_lMzWNlTs).
+- Public repository URL: [chizzydev/beforeroll](https://github.com/chizzydev/beforeroll).
+- Optional write-up: use public repository README and `docs/submission/TECHNICAL_WRITEUP.md` in the published repository; do not paste local filesystem links into the form.
 
 ## Recommended award selections
 - **Best Overall App: select**.
@@ -44,3 +44,5 @@ Exact quoted text is not documentary authenticity or correct classification. Inv
 
 ## Private owner completion fields
 For every actual team member: legal/public name as requested, private contact email, GitHub handle if any. Submitting Clocked account: owner's account. Required eligibility/team consent/terms declarations: owner reads and confirms truthfully. Never invent personal data or save it in the public repository. Review authenticated field limits and trim this copy to fit without deleting safety/recorded-origin qualifications. Stop before final save/submit unless separately authorized.
+
+Independent Windows acceptance is complete, as confirmed by the owner. Source/video publication is complete; no hosted app URL is claimed. This copy is preparation, not confirmation of an officially saved competition entry.

@@ -38,13 +38,14 @@ Only an explicit current preview, local operator token and billing affirmation c
 
 A source claim of issue is not actual issue/authenticity. A reference is not necessarily a requirement or proof of corpus-wide absence. Supporting evidence, activity applicability, personnel/protection readiness and permission remain human work. The app is useful for organizing investigation, not granting filming clearance.
 
-## One coordinated Windows verification gate
+## Verification and accepted status
 
-This is available for the final owner gate **after Batch C and the remaining programme**, not a request to repeat testing now:
+The owner has completed independent Windows acceptance. Watch the [completed actual-use demonstration](https://youtu.be/Ng_lMzWNlTs). The [public source](https://github.com/chizzydev/beforeroll) is available; official competition submission remains separate.
+
+From any public checkout, the joined offline gate is:
 
 ```powershell
-Set-Location 'C:\Users\HP\beforeroll-codex-phase1'
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\Verify-Batch-C.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\release\Verify-Release.ps1 -NoLaunch
 ```
 
-It verifies historical and Batch C evidence, runs the native/frozen suites and launches the same credential-free Evaluation Mode. Reserve this joined review until the complete programme is finished: overview → S31 and S32 → exact originals and comparison → one explicit fictional suggestion/source review → Work/History → actual JSON/Markdown downloads → U01/U02 → reset. Include refresh, Back/Forward and a narrow window. Confirm that S32 never inherits S31 handling tasks, the Fill disagreement remains visible, and no clearance/fulfillment was inferred. Private encrypted recovery can be part of that same final gate using the existing private launcher and the owner's own passphrase: verify → separate-copy restore → refresh → lock/unlock → select the distinguishable recovered copy. No new Clocked call is needed. Agent-performed acceptance is separate from independent owner acceptance.
+It verifies original U01/recording identities, the 661 public native cases and 109 frozen tests, without private archives or provider calls. Omit `-NoLaunch` to open Evaluation after tests. Stop its terminal with Ctrl+C or `stop`. The accepted journey above is available for reproduction, not a request for another owner acceptance round. Private recovery remains in authenticated owner mode, outside the fictional Evaluation distribution.
