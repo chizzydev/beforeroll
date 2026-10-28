@@ -220,8 +220,7 @@ Owner mode supports authenticated fresh-document intake and explicitly authorize
 Run the complete public gate without launching:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts
-elease\Verify-Release.ps1 -NoLaunch
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/release/Verify-Release.ps1 -NoLaunch
 ```
 
 Or run its portable components on any supported terminal:

@@ -1,6 +1,6 @@
 {
   "schema": "beforeroll-public-release-manifest-v2",
-  "at": "2026-10-28T18:37:12.249Z",
+  "at": "2026-10-28T18:40:50.197Z",
   "basePublicCommit": "790dd27b2a5e74c5f05f10478c6ab9e1017d11de",
   "scope": "Final public documentation/distribution correction. This inventory excludes its own hash and future commit identity. Original RC1 inventory retained under verification/releases.",
   "publicTests": {
@@ -979,8 +979,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 25222,
-      "sha256": "ae5c4e2f6eaa65ac0e1257a04eedeb7ad4833834e47392e2c31537b795f97053"
+      "bytes": 25223,
+      "sha256": "2e6372c48f190016474feb6af10e64ccbd95fcc16884b4c10999b6eb84497ba1"
     },
     {
       "path": "research/M3S6_FROZEN_PREREGISTERED_GOLD.json",
