@@ -1,0 +1,71 @@
+✔ complete source inventory needs no known terms or selected clauses; budget and source identity gates (21.288ms)
+✔ uniform Extract specification is byte-equivalent to accepted recorded request fields and instructions (17.4947ms)
+✔ controlled full job retains every pair, quarantines proposal/history/other-scene and yields distinct exact tasks (522.3862ms)
+✔ quota rejection durably stops and cannot retry (67.1346ms)
+✔ schema rejection durably stops and cannot retry (67.2125ms)
+✔ unknown credits durably stops and cannot retry (68.0269ms)
+✔ over-reserve credits durably stops and cannot retry (64.481ms)
+✔ malformed typed answer durably stops and cannot retry (58.041ms)
+✔ transport lost durably stops and cannot retry (59.123ms)
+✔ wrong offsets rejects Extract and stops subsequent units (336.6524ms)
+✔ unknown categories rejects Extract and stops subsequent units (385.8449ms)
+✔ wrong arrays rejects Extract and stops subsequent units (331.8456ms)
+✔ invented quote rejects Extract and stops subsequent units (338.0486ms)
+✔ invalid JSON shape rejects Extract and stops subsequent units (336.4073ms)
+✔ empty Extract arrays leave relevant source checks visible with no inferred tasks or permission (420.9726ms)
+✔ returned Decide coverage cannot disguise a failed Extract as a successful analysis journey (330.3308ms)
+✔ intent is durable before transport; cancellation waits for in-flight request then stops (62.538ms)
+✔ source replacement during dispatch stops; A to B to A cannot resurrect old candidates (46.2964ms)
+✔ scene activity changes invalidate candidates and source-bound suggestion review cannot close authority (445.8163ms)
+✔ corrupt journal response is rejected before projection; credential echoes are sealed and halt (45.6964ms)
+✔ explicit scope fence handles alphanumeric scene identities and mixed scenes conservatively (0.3642ms)
+✔ actual server preview is unbilled, guarded execution drives atomic dossier/history/exports and review (1844.9497ms)
+✔ server refuses missing live configuration, stale preview, missing custody and insufficient hourly allowance (74.8434ms)
+✔ server quota preflight makes zero attempts rather than truncating scope silently (50.9962ms)
+✔ lifecycle backup and separate-workspace recovery preserve discovery raw evidence and permanent fences (556.3206ms)
+✔ Evaluation rejects all discovery mutations with zero provider requests and states whole-run replay limitation (210.6735ms)
+✔ new coordinator cards never acquire historical U01 or Scene 47 labels from generic unit IDs (427.784ms)
+✔ raw malformed JSON and broken response streams retain received bytes and never continue (90.1584ms)
+✔ nonzero document and scene epochs validate after restart without restoring prior source evidence (521.3959ms)
+✔ legacy project execution cannot bypass a discovery unknown-outcome fence (133.6885ms)
+✔ shared legacy execution lock prevents discovery dispatch (16.0175ms)
+✔ changing selected scenes cannot bypass an uncertain request fence (54.7509ms)
+✔ recomputed checksum cannot disguise incomplete discovery as completed or change a source-bound request (429.891ms)
+✔ missing original custody and owner authentication fail before preview or dispatch (67.813ms)
+✔ owner cold-run client prepares unbilled then runs exclusively through guarded app handlers with fake transport (2673.3102ms)
+✔ genuine saved Fill revalidation 1 (not a fresh API call) (3.5227ms)
+✔ genuine saved Fill revalidation 2 (not a fresh API call) (0.7392ms)
+✔ genuine saved Fill revalidation 3 (not a fresh API call) (0.5856ms)
+✔ genuine saved Fill revalidation 4 (not a fresh API call) (0.463ms)
+✔ strict Fill decoder rejects missing (0.7523ms)
+✔ strict Fill decoder rejects extra (0.5888ms)
+✔ strict Fill decoder rejects unknownRole (0.4073ms)
+✔ strict Fill decoder rejects generated (0.3741ms)
+✔ strict Fill decoder rejects wrongSpan (0.4119ms)
+✔ strict Fill decoder rejects nonfinite (0.5337ms)
+✔ strict Fill decoder rejects foreignScene (0.4856ms)
+✔ strict Fill decoder rejects fakeQuote (0.6611ms)
+✔ strict Fill decoder rejects nativeImage (0.4833ms)
+✔ unissued quotation cannot support a claimed-issued classification (2.4515ms)
+✔ source/request integrity is required independently of semantic classification (0.445ms)
+✔ current contract exactly matches accepted v6 request and avoids independent NONE multiselect (0.8663ms)
+✔ opt-in Fill has its own fingerprint, reserves full units, and original two-endpoint plan stays compatible (23.7811ms)
+✖ controlled complete journal, documentary tasks, review, retirement and strict archive tamper checks (753.0877ms)
+ℹ tests 53
+ℹ suites 0
+ℹ pass 52
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11498.9495
+
+✖ failing tests:
+
+test at tests\documentary-intelligence.test.mjs:34:1
+✖ controlled complete journal, documentary tasks, review, retirement and strict archive tamper checks (753.0877ms)
+  Error: Unknown document
+      at reviseDocument (file:///C:/Users/HP/beforeroll-codex-phase1/src/production-workspace.mjs:26:82)
+      at TestContext.<anonymous> (file:///C:/Users/HP/beforeroll-codex-phase1/tests/documentary-intelligence.test.mjs:40:2)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7)

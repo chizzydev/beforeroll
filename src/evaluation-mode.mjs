@@ -14,6 +14,9 @@ import {createProduction,applySourceImport} from './production-workspace.mjs';
 import {inspectImport} from './source-intake.mjs';
 import {planIntelligence} from './intelligence-workflow.mjs';
 import {sha256} from './semantic.mjs';
+import {createDiscoveryExecution} from './discovery-execution.mjs';
+import {assertDiscoveryFresh} from './core-discovery.mjs';
+import {validateLastLightRecording,LAST_LIGHT_PRODUCTION_ID} from './recorded-last-light.mjs';
 const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const CASE_IDS=['U01','U02'];
 const DATA_IDS={U01:'eval_archive',U02:'eval_arcade'};
@@ -29,10 +32,12 @@ async function sourceCase(id){
  }
  return {meta,live};
 }
-export async function makeEvaluationRuntime({directory=null}={}){
+export async function makeEvaluationRuntime({directory=null,includeLastLight=false}={}){
  const root=directory??mkdtempSync(path.join(os.tmpdir(),'beforeroll-evaluation-'));
  if(!path.isAbsolute(root))throw Error('Evaluation workspace must be absolute');
  const store=createWorkspaceStore({directory:root}),execution=createDurableExecution({directory:root}),vault=createSourceOriginalVault({directory:root});
+ const discovery=createDiscoveryExecution({directory:root});
+ async function lastLight(){return validateLastLightRecording(await fs.readFile(path.join(ROOT,'fixtures/audit/LAST_LIGHT_COMPLETE_RECORDED_v1.json')),discovery);}
  async function seed(){
   for(const id of CASE_IDS){
    const {meta}=await sourceCase(id),pId=DATA_IDS[id];
@@ -42,6 +47,11 @@ export async function makeEvaluationRuntime({directory=null}={}){
    for(const file of files){const envelope=inspectImport(file);applySourceImport(w,envelope,{documentId:id+'_PERMIT'});await vault.storeImport(file,envelope);}
    const saved=await store.persist(w,{expectedVersion:0});
    if(id==='U01')await replayOne(saved.workspace,id); // immediate example with authentic recorded answers
+  }
+  if(includeLastLight&&!await store.load(LAST_LIGHT_PRODUCTION_ID)){
+   const b=await lastLight();
+   for(const o of b.originals){const file={kind:o.kind,name:o.name,contentBase64:o.base64};await vault.storeImport(file,inspectImport(file));}
+   await discovery.restore(b.productionId,b.jobs);await store.persist(b.workspace,{expectedVersion:0});
   }
  }
  async function replayOne(workspace,id){
@@ -68,6 +78,7 @@ export async function makeEvaluationRuntime({directory=null}={}){
   return {schema:'beforeroll-evaluation-recorded-replay-v1',caseId:id,checksReplayed:cursor,liveCalls:0,creditsConsumedNow:0,originalCalls:8,notClearance:true,notice:EVALUATION_NOTICE};
  }
  async function replay(id){
+  if(includeLastLight&&id===LAST_LIGHT_PRODUCTION_ID){const b=await lastLight(),saved=await store.load(id);if(!saved)throw Error('Recorded production unavailable');assertDiscoveryFresh(saved.workspace,b.jobs[0].plan);return {alreadyReplayed:true,recording:'PREVIOUSLY_RECORDED_GENUINE_COMPLETE_RUN',liveCalls:0,creditsConsumedNow:0,notClearance:true};}
   const caseId=Object.keys(DATA_IDS).find(key=>DATA_IDS[key]===id);
   if(!caseId)throw Error('Only generated evaluation examples support replay');
   const saved=await store.load(id);if(!saved)throw Error('Evaluation project missing');
@@ -85,6 +96,6 @@ export async function makeEvaluationRuntime({directory=null}={}){
   try{return await pending;}finally{pending=null;}
  }
  await seed();
- return {directory:root,store,execution,vault,replay,reset,notice:EVALUATION_NOTICE,
+ return {directory:root,store,execution,vault,replay,reset,defaultProjectId:includeLastLight?LAST_LIGHT_PRODUCTION_ID:'eval_archive',notice:includeLastLight?'Previously recorded genuine Last Light Decide/Extract/Fill run on fictional originals; seeded fictional review plus disposable reviewer activity. U01/U02 remain historical examples. Zero fresh calls; no authority or fulfillment.':EVALUATION_NOTICE,
   dispose:async()=>fs.rm(root,{recursive:true,force:true})};
 }

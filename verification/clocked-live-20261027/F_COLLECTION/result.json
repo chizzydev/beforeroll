@@ -1,0 +1,59 @@
+{
+  "schema": "beforeroll-live-case-result-v1",
+  "scenarioId": "F_COLLECTION",
+  "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+  "stopReason": null,
+  "coverage": {
+    "pairs": 8,
+    "assessed": 8,
+    "unassessed": 0,
+    "relevant": 2,
+    "ambiguous": 1,
+    "extractedUnits": 2,
+    "totalUnits": 4
+  },
+  "missing": [],
+  "extra": [],
+  "exactSpansAndProvenance": true,
+  "reviewPersistence": true,
+  "authorityRecords": 0,
+  "fulfilledConditions": 0,
+  "candidates": [
+    {
+      "sceneId": "S811",
+      "field": "required_written_documents",
+      "quote": "signed collection-loan agreement",
+      "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+      "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9"
+    },
+    {
+      "sceneId": "S811",
+      "field": "required_physical_protections",
+      "quote": "acid-free handling trays",
+      "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+      "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9"
+    },
+    {
+      "sceneId": "S811",
+      "field": "required_on_site_personnel",
+      "quote": "accredited collections technician",
+      "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+      "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9"
+    },
+    {
+      "sceneId": "S812",
+      "field": "required_written_documents",
+      "quote": "written interview-location release",
+      "requestSha256": "2998f0b3fd527bf681bc6641d239a230a11fd5407800faf38c93f8712302d331",
+      "responseSha256": "ac526d34f194c0f2dd580021801bf63a98a230b77b3c4cd17eec345603997491"
+    }
+  ],
+  "budgetAfter": {
+    "requests": 57,
+    "reportedCredits": 102,
+    "unknownCreditRequests": 0
+  },
+  "providerLatencyMs": 6820.272400000001,
+  "semanticVerdict": "PASS_FOR_FROZEN_CASE_ONLY",
+  "notClearance": true
+}

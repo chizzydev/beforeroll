@@ -1,0 +1,16 @@
+{
+  "schema": "p0b-stage1-runner-freeze-v1",
+  "files": {
+    ".gitignore": "83d8457029d417810b27a6867b16f52c729270f5197f092a377674e725d0b619",
+    "cli.mjs": "2d48d431398f68152149df8f899004b1378c0f7d109a827dc61effaae81ee762",
+    "credential.mjs": "96ca7a1010d20fd8544c2e48567701f6445e8154f5860774550e8ab6ec5a4981",
+    "freeze.mjs": "94c31b587be88d159fbb21a4da928c3438148fddcbbf62848ff221c4b3e49ab5",
+    "report.mjs": "bf4a0079a732947d75aff4cfc9eb43b297acd9800319d56661bd7f121fca45f6",
+    "runner.mjs": "9a267287a429e5d677881a6a18cf83251c375eb3b40490d9d5d470b4f1ffa00f",
+    "stage1.test.mjs": "980636278901d630d65eb86e37610f2e80ee5340748a57a7c183313a00a91201",
+    "store.mjs": "245c573bf9bd33b54f573df9e9b0cf9c14873f3bf543858cff0f9703e42291f2",
+    "transport.mjs": "e6489f2c36a9f76b449ce6bac06dbf605b28291ef892f7c0617d4da097c72c45"
+  },
+  "sourceFingerprint": "15756f16982c0c0ec31d3664f8a9ee8afea15ee85d3553feed3056a38f4e77e7",
+  "stage0Unchanged": true
+}

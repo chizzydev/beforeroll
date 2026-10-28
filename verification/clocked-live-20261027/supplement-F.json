@@ -1,0 +1,51 @@
+{
+  "schema": "beforeroll-live-campaign-supplement-v1",
+  "reason": "Independent new-case live retest after generic current-directive projection repair",
+  "frozenBeforeProviderResults": true,
+  "cases": [
+    {
+      "id": "F_COLLECTION",
+      "productionId": "live_20261027_F_collection",
+      "permit": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nScene 812 interview recording requires written interview-location release.\n\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+      "callSheet": "Scene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\nScene 812 | Interview room | 14:00-15:00 | interview recording",
+      "expected": [
+        [
+          "S811",
+          "required_written_documents",
+          "signed collection-loan agreement"
+        ],
+        [
+          "S811",
+          "required_physical_protections",
+          "acid-free handling trays"
+        ],
+        [
+          "S811",
+          "required_on_site_personnel",
+          "accredited collections technician"
+        ],
+        [
+          "S812",
+          "required_written_documents",
+          "written interview-location release"
+        ]
+      ],
+      "excludedQuotes": [
+        "former escort",
+        "smoke cordon observer",
+        "old permit"
+      ],
+      "uncertainty": "Current objects are not historical duties; past permits and drafts do not establish current authority.",
+      "acceptance": {
+        "allExpectedReviewCandidates": true,
+        "noUnsupportedCandidates": true,
+        "allOffsetsExact": true,
+        "noAuthorityOrFulfillment": true,
+        "allPairsAccounted": true,
+        "humanReviewPersists": true
+      },
+      "sourceSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+      "callSheetSha256": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69"
+    }
+  ]
+}

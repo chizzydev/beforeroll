@@ -1,0 +1,52 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas / version 7"
+- generic: Private local production
+- main:
+  - navigation "Evidence":
+    - button "Sources"
+    - button "Documentary scope"
+    - button "History"
+    - button "Exports & recovery"
+  - generic: Evidence exports
+  - heading "Keep the work and its evidence together." [level=1]
+  - region "Unified production evidence status":
+    - paragraph: Export the exact production snapshot you have inspected. The report retains outstanding work, current and historical evidence, and original-source custody limits.
+    - text: Current model checks
+    - strong: 0/14
+    - text: Human source reviews
+    - strong: "0"
+    - text: Historical human reviews
+    - strong: "0"
+    - paragraph: Version 7 · reviewed as of 2026-10-27T14:37:28.008Z. A changed production requires a fresh inspection before export.
+    - button "Export complete evidence pack (JSON)"
+    - button "Export human-readable review (Markdown)"
+    - heading "Outstanding evidence and work" [level=2]
+    - list:
+      - strong: Source checks need human review
+      - text: — 14
+      - strong: Confirm scene dates
+      - text: — 2
+      - strong: Document provenance needs review
+      - text: — 4
+    - heading "Original files stay with the evidence." [level=2]
+    - paragraph: 5/5 byte-identical originals available.
+    - generic "Original files and custody"
+    - generic "Encrypted backup for recovery"
+    - generic "Storage and recovery health"
+    - generic "Exact snapshot identity and scene states"
+  - button "Recover a separate production ↗"
+  - generic "Earlier research evidence and method"
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

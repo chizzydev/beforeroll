@@ -1,0 +1,29 @@
+{
+  "schema": "beforeroll-u01-pv-handoff-accepted-compact-v1",
+  "historicalProductCompareStatus": "POST_REVIEW_PREVIEW_NOT_PRODUCTION",
+  "permitSha256": "6e1ab1ff894dee81e960a67d5bce23598b64235f9b38851e2faef73e575a034c",
+  "experiments": {
+    "LFH": "4/4_SEMANTIC_PASS",
+    "MATCHED_U01": "3/3_SEMANTIC_PASS_AND_RECORDED"
+  },
+  "baselineA": {"aiOff": "DATE_UNKNOWN, LOCATION_UNKNOWN, END_UNKNOWN per scene", "humanEffortSeconds": null},
+  "baselineB": {"liveDecideCalls": 8, "clockedReviewFindings": 7, "totalOpenReviewQuestions": 13, "humanEffortSeconds": null},
+  "candidateC": {
+    "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+    "provenance": "Genuine owner-recorded Clocked Extract receipts; revalidate original files before claiming byte-level evidence import",
+    "humanEffortSeconds": null,
+    "taskCandidateStatus": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+    "requirements": [
+      {"scene":"S47","sourceUnit":"U002","field":"required_written_documents","quote":"written registrar consent","sourceOffset":[85,110],"permitOffset":[170,195],"responseSha256":"83222d1c35c473c2363a29fd546fb5ee5b68c12d1707e47cdc747b16b169a531","requestSha256":"1861046a663a37d3c40f1a3a21acd6b63766706d2ae2e1a64b44cc31b9131e71"},
+      {"scene":"S47","sourceUnit":"U003","field":"required_physical_protections","quote":"protective boards","sourceOffset":[126,143],"permitOffset":[333,350],"responseSha256":"ab347d9c5815d9f40836309fca11ae6def53004468e233bd0d84bcf238867503","requestSha256":"f617daea1cb0c21327f7342f879f3936031ddf84c5d7b5df4ff77fada280c666"},
+      {"scene":"S47","sourceUnit":"U003","field":"required_on_site_personnel","quote":"on-site registrar","sourceOffset":[151,168],"permitOffset":[358,375],"responseSha256":"ab347d9c5815d9f40836309fca11ae6def53004468e233bd0d84bcf238867503","requestSha256":"f617daea1cb0c21327f7342f879f3936031ddf84c5d7b5df4ff77fada280c666"},
+      {"scene":"S48","sourceUnit":"U002","field":"required_written_documents","quote":"written registrar consent","sourceOffset":[85,110],"permitOffset":[170,195],"responseSha256":"83222d1c35c473c2363a29fd546fb5ee5b68c12d1707e47cdc747b16b169a531","requestSha256":"1861046a663a37d3c40f1a3a21acd6b63766706d2ae2e1a64b44cc31b9131e71"}
+    ],
+    "u004": {"sourceUnit":"U004","requiredLiteralItems":0,"responseSha256":"43b7fefa475ec30ce8e2808a3e0b9faf7ea763adf7bc62167277243fbf53693d","requestSha256":"917c95af00bca23d1dff15d589de23be69ba160c0f5cabf5bf4ddf6d1493fb3f","existingScene48Review":"This particular request to extend Scene 47's exception to Scene 48 was not issued as a signed amendment. Verify whether any other applicable issued authorization exists."},
+    "preserveOriginalOpenReviewQuestions":13,
+    "noPermissionGranted":true,
+    "judgeEvaluationRequiresLiveApiCalls":false
+  },
+  "priorCompareProductionIntegrationAuthorized":false,
+  "newEngineeringDecision":"LIMITED_SOURCE_BOUND_REVIEW_ONLY_IMPLEMENTATION_GO_NOT_DEPLOYMENT"
+}

@@ -1,5 +1,0 @@
-{
-  "context": "Fictional Harbour Night — design acceptance · Recovered copy / version 1\nControlled transport · no provider calls",
-  "open": true,
-  "text": "Storage and recovery health\nCheck storage and recovery health\n\nSource custody and journals verified. This is storage integrity, not document authenticity.\n\nWriter lock absent · execution lock absent · journals VERIFIED · missing originals 0. No locks removed; no provider retries."
-}

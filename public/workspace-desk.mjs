@@ -1,6 +1,7 @@
 import {productionView} from './workspace/view.mjs';
 import {selectedSceneTask} from './workspace/presentation.mjs';
 export {productionView};
+export {workspaceLocation,restoreWorkspaceLocation,followWorkspaceAnchor} from './workspace/navigation.mjs';
 const workflowStages=new Set(['overview','work','sources','scope','analysis','review','operations','changes','evidence','history']);
 const stageForRoute={sources:'sources',authority:'scope','scene-authority':'scope',review:'review',execution:'analysis',operations:'operations',history:'history',changes:'changes',evidence:'evidence'};
 export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=document}={}){
@@ -14,14 +15,14 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  const sendNotice=notify;notify=(text,error=false)=>{if(error)model.error=text;else model.notice=text;sendNotice(text,error);};
  const selectProduction=(selected,workflowStage='overview')=>Object.assign(model,{selected,workflowStage,offset:0,actionOffset:0,actionKind:'ALL',historyOffset:0,historyKind:'ALL',historyState:'ALL',historySearch:'',historySelected:null,
   sceneView:'investigation',sourceMode:'register',pickerOpen:false,recoveryView:false,sceneSearch:'',sceneRegisterOffset:0,sceneSearchOpen:false,compareSceneId:null,compareLeftDocument:null,compareRightDocument:null,compareLeftUnit:null,compareRightUnit:null,
-  activeSceneId:null,sceneWorkbench:null,sceneTaskOffset:0,sceneActionOffset:0,selectedTask:null,selectedCondition:null,
+  activeSceneId:null,sceneWorkbench:null,coordinatorTasks:null,coordinatorReviewId:null,discoveryPreview:null,discoveryInput:null,sourceReturnSceneId:null,sceneTaskOffset:0,sceneActionOffset:0,selectedTask:null,selectedCondition:null,
   impactPreview:null,pendingSource:null,stagedReviews:[],reviewSessionPreview:null,stagingVersion:null,focusDocumentId:null,focusUnitId:null,diagnostics:null,dirtyDrafts:false,notice:''});
  const api=async(method,path,payload)=>{
   const response=await fetchImpl(path,{method,cache:'no-store',headers:payload?{'Content-Type':'application/json'}:{},body:payload?JSON.stringify(payload):undefined});
   const data=await response.json();if(response.status===401&&data.ownerUnlockRequired){model.authLocked=true;throw Error('Owner access locked. Enter your local owner token.');}if(!response.ok){const guidance=/\/(recovery|lifecycle|backup|diagnostics|originals|reconnect-original)(?:\/|$)/.test(path)?data.recoveryGuidance:/\/(import|preview-source-change|commit-source-change)$/.test(path)?'Source not imported. Choose a supported original for the selected document type and inspect its transcription.':null;throw Error([data.error||`Project API HTTP ${response.status}`,guidance].filter(Boolean).join(' — '));}return data;
  };
  const refresh=async()=>{
-  try{const health=await api('GET','/api/health');model.controlledTestMode=health.controlledTestMode===true;model.liveEnabled=Boolean(health.liveEnabled);model.evaluationMode=health.evaluationMode===true;}catch{model.liveEnabled=false;model.evaluationMode=false;}
+  try{const health=await api('GET','/api/health');model.controlledTestMode=health.controlledTestMode===true;model.liveEnabled=Boolean(health.liveEnabled);model.evaluationMode=health.evaluationMode===true;model.evaluationDefaultProjectId=health.evaluationDefaultProjectId;}catch{model.liveEnabled=false;model.evaluationMode=false;}
   const list=await api('GET','/api/workspaces');model.authLocked=false;model.items=list.items;
   if(model.selected){const id=model.selected.workspace.id;
    const url=`/api/workspaces/${encodeURIComponent(id)}/workflow?offset=${model.offset}&actionOffset=${model.actionOffset}&kind=${encodeURIComponent(model.actionKind)}&sceneTaskOffset=${model.sceneTaskOffset}&sceneActionOffset=${model.sceneActionOffset}${model.activeSceneId?'&sceneId='+encodeURIComponent(model.activeSceneId):''}`;
@@ -39,7 +40,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
    model.selected={version:snapshot.version,workspace:snapshot.workspace};
    model.originals=snapshot.originals;model.journey=snapshot.journey;model.consistency=snapshot.consistency;model.overview=snapshot.overview;model.execution=snapshot.execution;
    model.authority=snapshot.authority;model.sceneAuthority=snapshot.sceneAuthority;model.operations=snapshot.operations;
-   model.dossier=snapshot.dossier;model.actionQueue=snapshot.actionQueue;model.sceneWorkbench=snapshot.sceneWorkbench;
+   model.dossier=snapshot.dossier;model.actionQueue=snapshot.actionQueue;model.sceneWorkbench=snapshot.sceneWorkbench;model.coordinatorTasks=snapshot.coordinatorTasks;
    model.history=snapshot.history;
    const scenes=model.overview?.scenes??[];
    if(!scenes.some(sc=>sc.id===model.activeSceneId)){
@@ -57,18 +58,20 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  const drafts=new Map();
  const disclosures=new Map();
  const disclosureKey=()=>JSON.stringify([model.recoverySpace,model.selected?.workspace.id??'create',model.workflowStage,model.focusDocumentId,model.sceneView]);
- const draftKey=id=>JSON.stringify([model.recoverySpace,model.selected?.workspace.id??'create',model.selected?.version??0,model.activeSceneId,model.selectedTask,model.selectedCondition,/^project-(authority|link|scene-auth|pdf|permit|doc-)/.test(id)?model.focusDocumentId:null,id]);
+ const draftKey=id=>JSON.stringify([model.recoverySpace,model.selected?.workspace.id??'create',model.selected?.version??0,model.activeSceneId,model.selectedTask,model.selectedCondition,id.startsWith('project-coordinator')?model.coordinatorReviewId:null,/^project-(authority|link|scene-auth|pdf|permit|doc-)/.test(id)?model.focusDocumentId:null,id.startsWith('project-scene-auth')?model.focusUnitId:null,id]);
  const editable=()=>[...(root.querySelectorAll?.('input[id],textarea[id],select[id]')??[])].filter(el=>
-  !['password','file','button','submit'].includes(el.type)&&!el.closest?.('.workflow-pane-hidden'));
- const captureDrafts=()=>{model.recoveryExpanded=query('project-recovery-panel')?.open??false;disclosures.set(disclosureKey(),new Set([...(root.querySelectorAll?.('details[id]')??[])].filter(x=>x.open).map(x=>x.id)));for(const el of editable())drafts.set(draftKey(el.id),{value:el.value,checked:el.checked});};
+  !['project-scene-auth-scene','project-scene-auth-doc','project-scene-auth-unit'].includes(el.id)&&!['password','file','button','submit'].includes(el.type)&&!el.closest?.('.workflow-pane-hidden'));
+ const captureDrafts=()=>{model.recoveryExpanded=query('project-recovery-panel')?.open??false;disclosures.set(disclosureKey(),{known:new Set([...(root.querySelectorAll?.('details[id]')??[])].map(x=>x.id)),open:new Set([...(root.querySelectorAll?.('details[id]')??[])].filter(x=>x.open).map(x=>x.id))});for(const el of editable())drafts.set(draftKey(el.id),{value:el.value,checked:el.checked});};
  const restoreDrafts=()=>{
   const restore=()=>{for(const el of editable()){
    const d=drafts.get(draftKey(el.id));if(!d)continue;
    if(el.tagName==='SELECT'&&![...el.options].some(o=>o.value===d.value))continue;
    el.value=d.value;if(el.type==='checkbox')el.checked=d.checked;
   }};
-  restore();syncLinkUnits();syncSceneUnits();syncConditionUnits();restore();
-  const open=disclosures.get(disclosureKey());if(open)for(const el of root.querySelectorAll?.('details[id]')??[])el.open=open.has(el.id);
+  restore();syncLinkUnits();syncConditionUnits();restore();
+  if(model.scopeChoiceReset){for(const id of ['project-scene-auth-kind','project-scene-auth-attested']){const el=query(id);if(el){if(el.type==='checkbox')el.checked=false;else el.value='';drafts.set(draftKey(id),{value:el.value,checked:el.checked});}}model.scopeChoiceReset=false;}
+
+  const prior=disclosures.get(disclosureKey());if(prior)for(const el of root.querySelectorAll?.('details[id]')??[])if(prior.known.has(el.id))el.open=prior.open.has(el.id);
  };
  async function readRecovery(){
   const file=query('project-recovery-file')?.files?.[0],passphrase=query('project-recovery-passphrase')?.value??'';
@@ -165,6 +168,34 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  };
  const reviewEdits=()=>model.stagedReviews.map(({evidenceId,decision,reviewer,reason})=>({evidenceId,decision,reviewer,reason}));
  const actions={
+  'project-discovery-preview':async()=>{
+   if(!model.selected)throw Error('Select a production');
+   const picked=attribute=>[...(root.querySelectorAll?.('['+attribute+']')??[])].filter(x=>x.checked).map(x=>x.getAttribute(attribute));
+   const input={expectedVersion:model.selected.version,documentIds:picked('data-discovery-document'),sceneIds:picked('data-discovery-scene'),verifiedBy:value('project-discovery-verifier'),sourceConfirmed:query('project-discovery-source-confirmed')?.checked===true,includeDocumentary:query('project-discovery-documentary')?.checked===true,
+    maxCalls:Number(value('project-discovery-cap')),creditReservePerCall:Number(value('project-discovery-reserve')),creditBudget:Number(value('project-discovery-budget'))};
+   model.discoveryPreview=await api('POST',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/discovery/preview`,input);model.discoveryInput=input;
+  },
+  'project-discovery-run':async()=>{
+   if(!model.discoveryPreview||!model.discoveryInput||model.discoveryInput.expectedVersion!==model.selected?.version)throw Error('Preview the current production first');
+   if(query('project-discovery-billing')?.checked!==true)throw Error('Explicit bounded billing acknowledgement required');
+   const token=value('project-discovery-token');if(!token)throw Error('Enter the separate local operator token');
+   const r=await fetchImpl(`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/discovery/run`,{method:'POST',headers:{'Content-Type':'application/json','X-Operator-Token':token},body:JSON.stringify({...model.discoveryInput,previewSha256:model.discoveryPreview.previewSha256,confirm:'RUN_CORE_DISCOVERY',acceptBillingUncertainty:true})});
+   const body=await r.json();if(!r.ok)throw Error(body.error??'Discovery did not start');model.discoveryPreview=null;model.discoveryInput=null;notify('Bounded discovery started. Refresh status to inspect progress. Stop prevents the next dispatch; an in-flight request may finish.');
+  },
+  'project-discovery-refresh':async()=>{},
+  'project-discovery-export':async()=>{
+   const evidence=await api('GET',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/discovery/evidence`);
+   const url=URL.createObjectURL(new Blob([JSON.stringify(evidence,null,2)+'\n'],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=`BEFOREROLL_${model.selected.workspace.id}_DISCOVERY_EVIDENCE.json`;a.click();URL.revokeObjectURL(url);
+  },
+  'project-coordinator-save':async()=>{
+   if(model.stagedReviews.length)throw Error('Commit or remove staged source reviews before recording a separate suggestion review');
+   const candidate=model.coordinatorTasks?.candidates.find(c=>c.id===model.coordinatorReviewId);
+   if(!candidate)throw Error('Select a current source-grounded suggestion');
+   await api('POST',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/review-coordinator-suggestion`,{
+    expectedVersion:model.selected.version,candidateId:candidate.id,sceneId:candidate.sceneId,reviewer:value('project-coordinator-reviewer'),reason:value('project-coordinator-reason'),attestedReview:query('project-coordinator-attested')?.checked===true});
+   model.coordinatorReviewId=null;notify('Suggestion review saved. Fulfillment and documentary authority remain unverified.');
+  },
+  'project-coordinator-dismiss':async()=>{model.coordinatorReviewId=null;notify('Review form closed. Draft kept in this browser session; no decision saved.');},
   'project-diagnostics':async()=>{if(!model.selected)throw Error('Select a production');model.diagnostics=await api('GET',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/diagnostics`);},
   'project-history-filter':async()=>{model.historyOffset=0;model.historyKind=value('project-history-kind')||'ALL';model.historyState=value('project-history-state')||'ALL';model.historySearch=value('project-history-search');model.historySelected=null;},
   'project-history-prev':async()=>{model.historyOffset=Math.max(0,model.historyOffset-20);},
@@ -228,6 +259,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
   },
   'project-link-save':async()=>{
    if(!model.selected)throw Error('Select a production first');
+   if(!value('project-link-from')||!value('project-link-to')||value('project-link-from')===value('project-link-to')||!value('project-link-kind')||!value('project-link-unit'))throw Error('Choose two different source documents, an original quotation and an explicit relationship.');
    await api('POST',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/authority-link`,{
     expectedVersion:model.selected.version,fromId:value('project-link-from'),toId:value('project-link-to'),
     unitId:value('project-link-unit'),kind:value('project-link-kind'),reviewer:value('project-link-reviewer'),reason:value('project-link-reason')});
@@ -242,6 +274,9 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
   },
   'project-scene-auth-save':async()=>{
    if(!model.selected)throw Error('Select production before recording source-scene claim');
+   if(model.focusDocumentId&&value('project-scene-auth-doc')!==model.focusDocumentId||model.focusUnitId&&value('project-scene-auth-unit')!==model.focusUnitId||model.activeSceneId&&value('project-scene-auth-scene')!==model.activeSceneId)throw Error('The source selectors no longer match the visible review context. Reselect the original before saving.');
+   if(!value('project-scene-auth-kind'))throw Error('Choose your interpretation of this exact source before saving.');
+   const sourceAffirmation=query('project-scene-auth-attested');if(sourceAffirmation?.type==='checkbox'&&sourceAffirmation.checked!==true)throw Error('Confirm that you checked the exact scene and original quotation.');
    await api('POST',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/scene-authority`,{
     expectedVersion:model.selected.version,sceneId:value('project-scene-auth-scene'),documentId:value('project-scene-auth-doc'),unitId:value('project-scene-auth-unit'),
     kind:value('project-scene-auth-kind'),scope:value('project-scene-auth-scope'),reviewer:value('project-scene-auth-reviewer'),reason:value('project-scene-auth-reason'),
@@ -366,6 +401,16 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  };
  const click=async(el)=>{
   captureDrafts();
+  if(el.dataset.discoveryStop){await run(async()=>{await api('POST',`/api/workspaces/${encodeURIComponent(model.selected.workspace.id)}/discovery/stop`,{planId:el.dataset.discoveryStop});notify('Stop requested. No automatic retry; inspect final status after the in-flight request finishes.');});return true;}
+  if(el.dataset.coordinatorSource||el.dataset.coordinatorReview){
+   const id=el.dataset.coordinatorSource??el.dataset.coordinatorReview;
+   const item=[...(model.coordinatorTasks?.candidates??[]),...(model.coordinatorTasks?.warnings??[])].find(c=>c.id===id);
+   const document=model.selected?.workspace.documents.find(d=>d.id===item?.documentId);
+   if(!item||document?.sourceHash!==item.permitSha256)throw Error('The suggestion source has changed; reload current evidence');
+   if(el.dataset.coordinatorReview){model.coordinatorReviewId=id;return true;}
+   model.activeSceneId=item.sceneId;model.sourceReturnSceneId=item.sceneId;model.focusDocumentId=item.documentId;model.focusUnitId=item.unitId;
+   model.workflowStage='sources';model.sourceMode='reader';return true;
+  }
   if(el.dataset.compareReviewScene){
    const scenes=model.overview?.scenes??[],documents=model.overview?.documents??[];
    const sceneIndex=scenes.findIndex(s=>s.id===el.dataset.compareReviewScene),docIndex=documents.findIndex(d=>d.id===el.dataset.compareDocument);
@@ -387,6 +432,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
    if(action==='recover'){if(model.stagedReviews.length){model.error='Commit or remove staged reviews before entering recovery.';return true;}model.recoveryView=true;model.recoveryExpanded=true;model.pickerOpen=false;}
    if(action==='session'){model.workflowStage='review';model.sceneView='session';model.recoveryView=false;}
    if(action==='investigation'){model.workflowStage='review';model.sceneView='investigation';}
+   if(action==='return-to-coordinator-scene'){model.activeSceneId=model.sourceReturnSceneId;model.workflowStage='review';model.sceneView='investigation';model.sourceReturnSceneId=null;await load();}
    if(action==='comparison'){model.selectedTask=selectedSceneTask(model)?.id??null;model.sceneView='comparison';}
    if(action==='scene-search')model.sceneSearchOpen=!model.sceneSearchOpen;
    if(action==='scene-prev')model.sceneRegisterOffset=Math.max(0,model.sceneRegisterOffset-20);
@@ -394,13 +440,13 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
    if(action==='import'){model.sourceMode='import';model.intakeKind='permit';}
    if(action==='close-reader'||action==='close-intake'){model.sourceMode='register';model.workflowStage='sources';}
    if(action==='revise-call'){model.workflowStage='changes';model.sourceMode='revise';model.intakeKind='call';}
-   if(action==='source-reader'){model.focusDocumentId=selectedSceneTask(model)?.documentId??null;model.workflowStage='sources';model.sourceMode='reader';}
+   if(action==='source-reader'){const t=selectedSceneTask(model);model.focusDocumentId=t?.documentId??null;model.focusUnitId=t?.unitId??null;model.sourceReturnSceneId=t?.sceneId??null;model.workflowStage='sources';model.sourceMode='reader';}
    return true;
   }
-  if(el.dataset.designDocument){model.focusDocumentId=el.dataset.designDocument;model.sourceMode=el.dataset.sourceMode;model.intakeKind='permit';model.workflowStage=model.sourceMode==='revise'?'changes':'sources';return true;}
+  if(el.dataset.designDocument){model.focusDocumentId=el.dataset.designDocument;model.focusUnitId=null;model.sourceReturnSceneId=null;model.sourceMode=el.dataset.sourceMode;model.intakeKind='permit';model.workflowStage=model.sourceMode==='revise'?'changes':'sources';return true;}
   if(el.dataset.historyKind){model.historyKind=el.dataset.historyKind;model.historyState='ALL';model.historySearch='';model.historySelected=null;model.historyOffset=0;model.workflowStage='history';await load();return true;}
   if(el.dataset.historySelect){model.historySelected=el.dataset.historySelect;await load();return true;}
-  if(el.dataset.workflowOpen){if(!workflowStages.has(el.dataset.workflowOpen))throw Error('Unknown workflow step');model.workflowStage=el.dataset.workflowOpen;model.recoveryView=false;if(model.workflowStage==='review')model.sceneView='investigation';if(model.workflowStage==='changes'){model.sourceMode='revise';model.intakeKind='permit';}model.error=null;model.notice='';return true;}
+  if(el.dataset.workflowOpen){if(!workflowStages.has(el.dataset.workflowOpen))throw Error('Unknown workflow step');if(!model.selected&&el.dataset.workflowOpen!=='overview'){model.pickerOpen=true;model.notice='Choose a production to open its scenes, work and evidence.';return true;}model.workflowStage=el.dataset.workflowOpen;model.recoveryView=false;if(model.workflowStage==='review')model.sceneView='investigation';if(model.workflowStage==='changes'){model.sourceMode='revise';model.intakeKind='permit';}model.error=null;model.notice='';return true;}
   if(el.dataset.workflowAction){
    const stage=stageForRoute[el.dataset.workflowAction];if(!stage)throw Error('Unknown evidence action destination');
    model.workflowStage=stage;
@@ -435,6 +481,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
   if(el.dataset.conditionId){model.selectedCondition=el.dataset.conditionId;model.workflowStage='operations';notify('Selected source-bound condition for human review.');return true;}
   if(el.dataset.projectTask){model.selectedTask=el.dataset.projectTask;return true;}
   if(el.dataset.projectOpen){if(model.stagedReviews.length){model.error='Uncommitted review session: commit the verified decisions or remove the staged items before opening another production.';notify(model.error,true);return true;}await run(async()=>{model.recoverySpace=el.dataset.projectSpace||'';selectProduction(await api('GET','/api/workspaces/'+encodeURIComponent(el.dataset.projectOpen)));});return true;}
+  if(el.id==='owner-access-lock'){if(model.stagedReviews.length)throw Error('Commit or remove staged source reviews before locking this session.');await api('POST','/api/owner/lock',{});model.authLocked=true;model.selected=null;model.items=[];return true;}
   if(el.id==='owner-access-unlock'){
    await run(async()=>{
     const token=value('owner-access-input');if(!token)throw Error('Paste the local owner token from your terminal');
@@ -446,7 +493,7 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  const sourceUnitsFor=id=>model.overview?.documents?.find(d=>d.id===id)?.units??[];
  const syncLinkUnits=()=>{
   const target=query('project-link-unit');if(!target)return;
-  const units=sourceUnitsFor(value('project-link-from'));
+  const from=value('project-link-from');const to=query('project-link-to');if(to){const prior=to.value;to.replaceChildren(...[null,...model.overview.documents.filter(d=>d.id!==from)].map(d=>{const o=document.createElement('option');o.value=d?.id??'';o.textContent=d?d.name+' / '+d.id:'Choose a different document';o.selected=o.value===prior&&o.value!==from;return o;}));if(prior===from)to.value='';}const units=sourceUnitsFor(from);
   target.replaceChildren(...units.map(u=>{const option=document.createElement('option');option.value=u.id;option.textContent=`${u.id} · ${u.text.slice(0,60)}`;return option;}));
  };
  const syncConditionUnits=()=>{
@@ -461,5 +508,6 @@ export function createWorkspaceController({fetchImpl=fetch,notify=()=>{},root=do
  };
  const markDraftChange=el=>{if(el?.id?.startsWith('project-')&&!['password','file','button','submit'].includes(el.type))model.dirtyDrafts=true;};
  const hasUncommittedWork=()=>Boolean(model.dirtyDrafts||model.stagedReviews.length||model.pendingSource);
- return {model,load,click,selectProduction,syncLinkUnits,syncSceneUnits,syncConditionUnits,captureDrafts,restoreDrafts,markDraftChange,hasUncommittedWork,render:()=>productionView(model)};
+ const resetSessionDrafts=()=>{drafts.clear();disclosures.clear();model.stagedReviews=[];model.reviewSessionPreview=null;model.coordinatorReviewId=null;model.dirtyDrafts=false;};
+ return {model,load,click,resetSessionDrafts,selectProduction,syncLinkUnits,syncSceneUnits,syncConditionUnits,captureDrafts,restoreDrafts,markDraftChange,hasUncommittedWork,render:()=>productionView(model)};
 }

@@ -1,0 +1,60 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas / version 1"
+- generic: Fictional evaluation · recorded evidence · zero new calls
+- generic "Example controls"
+- main:
+  - generic: Before the first take
+  - heading "Know what the shot depends on." [level=1]:
+    - text: Know what the shot
+    - emphasis: depends on.
+  - paragraph: Clocked connects the activity on your call sheet with the language in your permit. Investigate the source. Keep the next human action in view.
+  - button "Investigate the scenes →"
+  - button "Open production work"
+  - article:
+    - generic: One scene. Two sources.
+    - generic: S31 / VENUE
+    - generic: Planned activity · excerpt
+    - strong: "insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table"
+    - generic: ↔
+    - generic: Original language · excerpt
+    - strong: "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room"
+    - paragraph: Discovery assessment recorded. Inspect the exact source and remaining documentary questions; this is not filming authority.
+    - generic: Clocked discovery result · original receipt retained
+    - strong: Discovery Decide recorded · human review remains
+    - button "Investigate the source ↗"
+  - 'heading "FICTIONAL — The Last Light: A Borrowed Star Atlas" [level=2]'
+  - button "Switch or create production"
+  - paragraph: 4 documents · 2 scenes · 14/14 current model checks · 0 human reviews of source tasks · 8 source-grounded suggestions · 1 recorded suggestion reviews (not fulfillment)
+  - generic: S31
+  - strong: "S31: discovery requires documentary investigation"
+  - generic: Document CORRESPONDENCE · Passage U001 · Exact source check · Human
+  - paragraph: "Source quotation: “UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request h…”"
+  - paragraph: RELEVANT_REVIEW_ONLY · NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.
+  - button "Open work ↗"
+  - generic: S31
+  - strong: "S31: discovery requires documentary investigation"
+  - generic: Document CORRESPONDENCE · Passage U002 · Exact source check · Human
+  - paragraph: "Source quotation: “Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record impos…”"
+  - paragraph: NO_LINK_DETECTED_NOT_EXONERATION · NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.
+  - button "Open work ↗"
+  - generic: S32
+  - strong: "S32: discovery requires documentary investigation"
+  - generic: Document CORRESPONDENCE · Passage U001 · Exact source check · Human
+  - paragraph: "Source quotation: “UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request h…”"
+  - paragraph: RELEVANT_REVIEW_ONLY · NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.
+  - button "Open work ↗"
+  - generic "Current evidence identity"
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

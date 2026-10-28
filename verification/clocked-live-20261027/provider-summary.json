@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "scenario": "A_DOCK",
+      "decideCalls": 8,
+      "extractCalls": 3,
+      "reportedCredits": 23,
+      "providerLatencyMs": 9901.8847,
+      "journalSha256": "54d51bbaf062b61515800a7978ad1ec4210bcc16ddfbe680304dfb136a2b8f02"
+    },
+    {
+      "scenario": "B_GALLERY",
+      "decideCalls": 6,
+      "extractCalls": 3,
+      "reportedCredits": 17,
+      "providerLatencyMs": 6032.292200000001,
+      "journalSha256": "5ba3abd6277808918773b59774390f929de6fae85a3fc111d35c1d63c10f6a36"
+    },
+    {
+      "scenario": "C_ORCHARD",
+      "decideCalls": 8,
+      "extractCalls": 2,
+      "reportedCredits": 16,
+      "providerLatencyMs": 6392.8269,
+      "journalSha256": "b785d36af7a21bdda7e3dcc6eec32b5655a246356249dbbb92ae0478673067ae"
+    },
+    {
+      "scenario": "D_ROAD",
+      "decideCalls": 6,
+      "extractCalls": 3,
+      "reportedCredits": 16,
+      "providerLatencyMs": 5236.4929999999995,
+      "journalSha256": "0f0bc03649b10c00cafbf08f71386b7b931871d73e81535931ab6a0ae6edd749"
+    },
+    {
+      "scenario": "E_PRESENT_PHOTO",
+      "decideCalls": 6,
+      "extractCalls": 2,
+      "reportedCredits": 14,
+      "providerLatencyMs": 5344.111399999999,
+      "journalSha256": "f897f09a1c370f485f06dd9e218bc4181611f6bfe739c85b7d000f98d4a52377"
+    },
+    {
+      "scenario": "F_COLLECTION",
+      "decideCalls": 8,
+      "extractCalls": 2,
+      "reportedCredits": 16,
+      "providerLatencyMs": 6820.272400000001,
+      "journalSha256": "4f759905152b2b2e8543568d9aed705b840fd2c372e8ed8313ad98885c67f64d"
+    }
+  ],
+  "totalRequests": 57,
+  "totalReportedCredits": 102,
+  "aggregateProviderLatencyMs": 39727.880600000004,
+  "models": {
+    "clocked-1.0": 57
+  },
+  "remainingRequests": 3,
+  "remainingCredits": 398,
+  "campaignClosed": true
+}

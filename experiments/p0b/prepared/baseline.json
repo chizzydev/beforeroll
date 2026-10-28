@@ -1,0 +1,16 @@
+{
+  "version": "ai-off-okapi-bm25-v1",
+  "k1": 1.2,
+  "b": 0.75,
+  "tokenizer": "NFKC then ECMAScript toLowerCase then Unicode letter/number runs",
+  "query": "Exact complete call-sheet row; each distinct query token once",
+  "corpus": "All supplied source units for the scenario, exactly once, no relevant-unit preselection",
+  "idf": "ln(1 + (N - df + 0.5)/(df + 0.5))",
+  "score": "sum(idf * tf*(k1+1)/(tf+k1*(1-b+b*length/averageLength)))",
+  "ties": "documentId then unitId in Unicode code-unit ascending order",
+  "stemming": false,
+  "synonyms": false,
+  "stopwords": false,
+  "minimumScore": null,
+  "output": "Full ranking including zero scores; retrieval only, no permission or action inference"
+}

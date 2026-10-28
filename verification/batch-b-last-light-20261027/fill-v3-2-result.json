@@ -1,0 +1,163 @@
+{
+  "id": "fill-v3-2",
+  "gold": {
+    "documentId": "LENDER",
+    "unitIndex": 1,
+    "role": "claims_issued_variation",
+    "sceneIds": [
+      "S31"
+    ],
+    "claimQuote": "Variation VA-17 as issued",
+    "reference": "Consent Schedule CS-9",
+    "scope": "the close-up in which the performer opens and unfolds the atlas only",
+    "unitId": "U002",
+    "unitRange": [
+      393,
+      688
+    ],
+    "payload": {
+      "text": "The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.",
+      "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+      "fields": {
+        "claimed_role": {
+          "type": "choice",
+          "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+          "options": [
+            "claims_issued_variation",
+            "request_only",
+            "historical_reference",
+            "current_condition",
+            "unrelated_or_unclear"
+          ]
+        },
+        "claim_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Copy the original clause that establishes the selected documentary role: the mandatory wording for a current condition, the claimed issuance wording for a variation, the request or awaiting-approval wording for a request, or the past-record wording for history. Include sufficient original words to evidence the role. Null only if no such words exist."
+        },
+        "referenced_instrument": {
+          "type": "extract",
+          "infer": false,
+          "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+        },
+        "scope_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+        },
+        "scene_scope": {
+          "type": "multiselect",
+          "description": "Which planned scenes does the documentary CLAIM or reference concern? Select the relevant scene IDs by activity, not merely location. A request for wider scope concerns its requested scene, not an established permission. Historical records need no current scene selection. Leave empty if scope cannot be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+          "options": [
+            "S31",
+            "S32"
+          ],
+          "threshold": 0.7
+        }
+      }
+    },
+    "requestSha256": "bf89c2aa714f4f050d05e7c55ad2bf460965052d07da39144da3e073b6ab7e0c",
+    "expectedSpans": {
+      "claimQuote": [
+        421,
+        446
+      ],
+      "reference": [
+        600,
+        621
+      ],
+      "scope": [
+        451,
+        519
+      ]
+    }
+  },
+  "decoded": {
+    "schema": "beforeroll-documentary-claim-v1",
+    "role": "claims_issued_variation",
+    "fields": {
+      "claimed_role": {
+        "value": "claims_issued_variation",
+        "confidence": 0.988,
+        "probabilities": {
+          "claims_issued_variation": 0.9900511451810642,
+          "request_only": 0.002600856758869898,
+          "historical_reference": 0.002175073617902541,
+          "current_condition": 0.0030239397596571894,
+          "unrelated_or_unclear": 0.002148984682506187
+        }
+      },
+      "claim_quote": {
+        "value": "Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only",
+        "unitRange": [
+          28,
+          126
+        ],
+        "permitRange": [
+          421,
+          519
+        ],
+        "confidence": 0.9999999943976996
+      },
+      "referenced_instrument": {
+        "value": "Consent Schedule CS-9",
+        "unitRange": [
+          207,
+          228
+        ],
+        "permitRange": [
+          600,
+          621
+        ],
+        "confidence": 0.9999996571800673
+      },
+      "scope_quote": {
+        "value": "the close-up in which the performer opens and unfolds the atlas only",
+        "unitRange": [
+          58,
+          126
+        ],
+        "permitRange": [
+          451,
+          519
+        ],
+        "confidence": 0.9999999989658663
+      },
+      "scene_scope": {
+        "value": [
+          "S31"
+        ],
+        "confidence": 0.802,
+        "probabilities": {
+          "S31": 0.9009692913030748,
+          "S32": 0.017246706161513137
+        }
+      }
+    },
+    "sceneIds": [
+      "S31"
+    ],
+    "documentId": "LENDER",
+    "unitId": "U002",
+    "sourceSentence": "The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.",
+    "requestSha256": "bf89c2aa714f4f050d05e7c55ad2bf460965052d07da39144da3e073b6ab7e0c",
+    "responseSha256": "800cb72049c069c105b1a98e2b851790e2df5ab7af8c5b81f7f4b894f5691d6a",
+    "model": "clocked-1.0",
+    "actualIssuance": "UNVERIFIED",
+    "authenticity": "UNVERIFIED",
+    "supportingEvidence": "UNESTABLISHED_REQUIRES_HUMAN_INVENTORY",
+    "fulfillment": "UNVERIFIED",
+    "notClearance": true
+  },
+  "error": null,
+  "roleMatch": true,
+  "referenceMatch": true,
+  "pass": true,
+  "budget": {
+    "requests": 4,
+    "credits": 20,
+    "remainingRequests": 76,
+    "remainingCredits": 380
+  },
+  "semanticReview": "Exact alternative quote boundaries require human inspection; no issuance/authenticity established."
+}

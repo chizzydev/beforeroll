@@ -1,0 +1,3057 @@
+{
+  "schema": "beforeroll-complete-production-evidence-v1",
+  "productionId": "live_20261027_F_collection",
+  "persistedVersion": 4,
+  "dossier": {
+    "schema": "beforeroll-integrated-production-dossier-v1",
+    "productionId": "live_20261027_F_collection",
+    "title": "Fictional live acceptance F_COLLECTION",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "asOf": "2026-10-27T11:57:53.742Z",
+    "authorityPolicy": "HUMAN_REVIEW_AND_MODEL_AID_NOT_FILMING_CLEARANCE",
+    "sourceDocuments": [
+      {
+        "id": "PERMIT",
+        "name": "F_COLLECTION-permit.txt",
+        "role": null,
+        "sourceSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "originalBytesSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sourceFormat": "UTF8_TEXT",
+        "units": 4,
+        "sourceCoverageGaps": [],
+        "requiresPdfTextReview": false,
+        "transcriptionReview": null,
+        "reviewedOriginalPermit": null,
+        "authorityMetadata": null,
+        "notClearance": true
+      }
+    ],
+    "callSheet": {
+      "sha256": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+      "format": "UTF8_TEXT",
+      "unsupportedRows": [],
+      "sceneCount": 2,
+      "reviewedOriginalTranscription": null
+    },
+    "documentaryLinks": [],
+    "sceneScopeClaims": [],
+    "documentaryReasoning": {
+      "schema": "beforeroll-documentary-reasoning-v1",
+      "workspaceId": "live_20261027_F_collection",
+      "workspaceRevision": 3,
+      "asOf": "2026-10-27T11:57:53.742Z",
+      "scenes": [
+        {
+          "sceneId": "S811",
+          "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+          "originalActivity": "macro filming of historical exhibit",
+          "originalLocation": "Display hall",
+          "restrictions": [],
+          "requests": [],
+          "amendments": [],
+          "requirements": [],
+          "conflicts": [],
+          "claims": [],
+          "modelOnlyFindings": [],
+          "openPrerequisites": 0,
+          "documentaryConflicts": 0,
+          "humanRecordedIssuedClaims": 0,
+          "unresolvedGrantClaims": 0,
+          "clockedModelEvidenceCount": 0,
+          "notClearance": true,
+          "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+        },
+        {
+          "sceneId": "S812",
+          "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+          "originalActivity": "interview recording",
+          "originalLocation": "Interview room",
+          "restrictions": [],
+          "requests": [],
+          "amendments": [],
+          "requirements": [],
+          "conflicts": [],
+          "claims": [],
+          "modelOnlyFindings": [],
+          "openPrerequisites": 0,
+          "documentaryConflicts": 0,
+          "humanRecordedIssuedClaims": 0,
+          "unresolvedGrantClaims": 0,
+          "clockedModelEvidenceCount": 0,
+          "notClearance": true,
+          "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+        }
+      ],
+      "summary": {
+        "scenes": 2,
+        "restrictions": 0,
+        "requests": 0,
+        "pendingGrantClaims": 0,
+        "scenesWithReview": 0,
+        "modelSupportedHumanClaims": 0,
+        "modelOnlyFindings": 0
+      },
+      "notClearance": true,
+      "warning": "Deterministic comparison of human-recorded facets only; NOT a legal authority determination, cryptographic signature check, verified issuance, permission to film, or proof all source documents were supplied."
+    },
+    "operations": {
+      "schema": "beforeroll-production-operations-v1",
+      "workspaceId": "live_20261027_F_collection",
+      "revision": 3,
+      "asOf": "2026-10-27T11:57:53.742Z",
+      "scenes": [
+        {
+          "sceneId": "S811",
+          "sceneSourceHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+          "scheduleState": "UNDATED_NO_AUTHORITY",
+          "startUtc": null,
+          "endUtc": null,
+          "timeZone": null,
+          "prerequisiteCount": 0,
+          "currentPrerequisites": 0,
+          "openPrerequisites": 0,
+          "pastDuePrerequisites": 0,
+          "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+          "notClearance": true
+        },
+        {
+          "sceneId": "S812",
+          "sceneSourceHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+          "scheduleState": "UNDATED_NO_AUTHORITY",
+          "startUtc": null,
+          "endUtc": null,
+          "timeZone": null,
+          "prerequisiteCount": 0,
+          "currentPrerequisites": 0,
+          "openPrerequisites": 0,
+          "pastDuePrerequisites": 0,
+          "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+          "notClearance": true
+        }
+      ],
+      "schedules": [],
+      "conditions": [],
+      "conditionDecisions": [],
+      "summary": {
+        "scenes": 2,
+        "dated": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "staleConditions": 0
+      },
+      "notClearance": true,
+      "notice": "Dates, scope, condition fulfillment and signatures are human-entered, NOT verified filming authorization. Never infer clearance from a zero count."
+    },
+    "modelExecution": {
+      "origin": "NO_CURRENT_MODEL_RECORDING",
+      "state": "READY",
+      "attempts": 0,
+      "archivedRuns": 0,
+      "knownSourceEvidenceOnly": true
+    },
+    "coordinatorTasks": {
+      "schema": "beforeroll-coordinator-suggestions-v1",
+      "state": "SOURCE_BOUND_SUGGESTIONS_REVIEW_ONLY",
+      "candidates": [
+        {
+          "field": "required_written_documents",
+          "quote": "signed collection-loan agreement",
+          "unitId": "U001",
+          "unitRange": [
+            81,
+            113
+          ],
+          "permitRange": [
+            81,
+            113
+          ],
+          "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "sourceUnitRange": [
+            0,
+            223
+          ],
+          "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+          "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+          "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_F_collection",
+          "sceneId": "S811",
+          "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+          "id": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+          "title": "Locate and verify signed collection-loan agreement.",
+          "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": {
+            "sequence": 1,
+            "candidateId": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+            "sceneId": "S811",
+            "source": {
+              "field": "required_written_documents",
+              "quote": "signed collection-loan agreement",
+              "unitId": "U001",
+              "unitRange": [
+                81,
+                113
+              ],
+              "permitRange": [
+                81,
+                113
+              ],
+              "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+              "sourceUnitRange": [
+                0,
+                223
+              ],
+              "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+              "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+              "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+              "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_F_collection",
+              "sceneId": "S811",
+              "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+              "id": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+              "title": "Locate and verify signed collection-loan agreement.",
+              "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+              "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED"
+            },
+            "reviewer": "Fictional campaign coordinator",
+            "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+            "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+            "at": "2026-10-27T11:44:56.681Z",
+            "workspaceRevision": 2,
+            "notClearance": true,
+            "sha256": "1600af85f8b94740c9314e2a217c11d203632482a20f07b7a9a1d25005830bf2",
+            "sourceState": "CURRENT_REVIEW_ONLY"
+          }
+        },
+        {
+          "field": "required_physical_protections",
+          "quote": "acid-free handling trays",
+          "unitId": "U001",
+          "unitRange": [
+            53,
+            77
+          ],
+          "permitRange": [
+            53,
+            77
+          ],
+          "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "sourceUnitRange": [
+            0,
+            223
+          ],
+          "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+          "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+          "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_F_collection",
+          "sceneId": "S811",
+          "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+          "id": "b8e9e02f9ee1ac7217c1891275df7cb22bf1440cb973577428f22c93bfb97a6a",
+          "title": "Confirm acid-free handling trays.",
+          "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": null
+        },
+        {
+          "field": "required_on_site_personnel",
+          "quote": "accredited collections technician",
+          "unitId": "U001",
+          "unitRange": [
+            140,
+            173
+          ],
+          "permitRange": [
+            140,
+            173
+          ],
+          "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "sourceUnitRange": [
+            0,
+            223
+          ],
+          "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+          "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+          "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_F_collection",
+          "sceneId": "S811",
+          "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+          "id": "febd9c44619101a5865c643366d1b83289bec6061ae5d9ad6d56325c5cabe501",
+          "title": "Confirm the accredited collections technician remains present throughout the take.",
+          "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": null
+        },
+        {
+          "field": "required_written_documents",
+          "quote": "written interview-location release",
+          "unitId": "U002",
+          "unitRange": [
+            39,
+            73
+          ],
+          "permitRange": [
+            264,
+            298
+          ],
+          "sourceSentence": "Scene 812 interview recording requires written interview-location release.",
+          "sourceUnitRange": [
+            225,
+            299
+          ],
+          "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "unitSha256": "81e1d970428d24803e683c08c0c7b4c432073b5a24900d7ff62a16de87de8eb2",
+          "requestSha256": "2998f0b3fd527bf681bc6641d239a230a11fd5407800faf38c93f8712302d331",
+          "responseSha256": "ac526d34f194c0f2dd580021801bf63a98a230b77b3c4cd17eec345603997491",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_F_collection",
+          "sceneId": "S812",
+          "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+          "id": "d0b6c7a85a6d424d24b443558b8b1d79a80054503c76e7a15782d4aa1784103e",
+          "title": "Locate and verify written interview-location release.",
+          "sourceTaskId": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": null
+        }
+      ],
+      "warnings": [],
+      "fieldStates": [],
+      "reviewHistory": [
+        {
+          "sequence": 1,
+          "candidateId": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+          "sceneId": "S811",
+          "source": {
+            "field": "required_written_documents",
+            "quote": "signed collection-loan agreement",
+            "unitId": "U001",
+            "unitRange": [
+              81,
+              113
+            ],
+            "permitRange": [
+              81,
+              113
+            ],
+            "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "sourceUnitRange": [
+              0,
+              223
+            ],
+            "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+            "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+            "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_F_collection",
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+            "id": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+            "title": "Locate and verify signed collection-loan agreement.",
+            "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+            "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          "reviewer": "Fictional campaign coordinator",
+          "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+          "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+          "at": "2026-10-27T11:44:56.681Z",
+          "workspaceRevision": 2,
+          "notClearance": true,
+          "sha256": "1600af85f8b94740c9314e2a217c11d203632482a20f07b7a9a1d25005830bf2",
+          "sourceState": "CURRENT_REVIEW_ONLY"
+        }
+      ],
+      "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+      "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+      "issuance": "UNKNOWN",
+      "notClearance": true,
+      "humanEffortSeconds": null,
+      "notice": "Model-assisted proposals, not human-confirmed duties or filming authority.",
+      "discovery": {
+        "schema": "beforeroll-core-discovery-projection-v1",
+        "jobs": [
+          {
+            "id": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+            "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+            "current": true,
+            "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "createdAt": "2026-10-27T11:44:48.141Z",
+            "updatedAt": "2026-10-27T11:44:55.472Z",
+            "stopReason": null,
+            "coverage": {
+              "pairs": 8,
+              "assessed": 8,
+              "unassessed": 0,
+              "relevant": 2,
+              "ambiguous": 1,
+              "extractedUnits": 2,
+              "totalUnits": 4
+            },
+            "pairs": [
+              {
+                "taskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+                "sceneId": "S811",
+                "documentId": "PERMIT",
+                "unitId": "U001",
+                "quote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+                "range": [
+                  0,
+                  223
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+                "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.994,
+                "modelGrantClaim": 0.0073,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+                },
+                "scopeCaution": null,
+                "notClearance": true
+              },
+              {
+                "taskId": "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+                "sceneId": "S811",
+                "documentId": "PERMIT",
+                "unitId": "U002",
+                "quote": "Scene 812 interview recording requires written interview-location release.",
+                "range": [
+                  225,
+                  299
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+                "decideResponseSha256": "73751e4973cfaf50e07540acad9a7da6a4b3b8d03099eb7e5034213b93917930",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.0492,
+                "modelGrantClaim": 0.0057,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+                "sceneId": "S811",
+                "documentId": "PERMIT",
+                "unitId": "U003",
+                "quote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+                "range": [
+                  301,
+                  413
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+                "decideResponseSha256": "2228621ee09919611a80a79d8a2fafa73bb4cb08deac7dc43f5695986a84ce69",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.0132,
+                "modelGrantClaim": 0.0031,
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+                "sceneId": "S811",
+                "documentId": "PERMIT",
+                "unitId": "U004",
+                "quote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+                "range": [
+                  415,
+                  534
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+                "decideResponseSha256": "525987887dfbb40fa5b0636d2a9d4161c8e80fb5a63cb28b0ca572100be97bab",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.0235,
+                "modelGrantClaim": 0.0026,
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+                "sceneId": "S812",
+                "documentId": "PERMIT",
+                "unitId": "U001",
+                "quote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+                "range": [
+                  0,
+                  223
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+                "decideResponseSha256": "b1346e69e715a1b3b85385cd7f50a65cc586426dc6b243da6edb25b334f21bd5",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.0046,
+                "modelGrantClaim": 0.003,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+                },
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+                "sceneId": "S812",
+                "documentId": "PERMIT",
+                "unitId": "U002",
+                "quote": "Scene 812 interview recording requires written interview-location release.",
+                "range": [
+                  225,
+                  299
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+                "decideResponseSha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.9913,
+                "modelGrantClaim": 0.0031,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": null,
+                "notClearance": true
+              },
+              {
+                "taskId": "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+                "sceneId": "S812",
+                "documentId": "PERMIT",
+                "unitId": "U003",
+                "quote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+                "range": [
+                  301,
+                  413
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+                "decideResponseSha256": "3323deefadcdbc75e9992591bcbc5d6546dc07bdae31321beb7ea7b43906e45f",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.018,
+                "modelGrantClaim": 0.0027,
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565",
+                "sceneId": "S812",
+                "documentId": "PERMIT",
+                "unitId": "U004",
+                "quote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+                "range": [
+                  415,
+                  534
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "AMBIGUOUS_MANUAL_REVIEW",
+                "decideRequestSha256": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+                "decideResponseSha256": "bdb0c636519e5d79c4897714700c1804f585fac525aab12e1000b0849c2168cb",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.4984,
+                "modelGrantClaim": 0.0024,
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              }
+            ],
+            "attempts": 10,
+            "unknownBilling": 0,
+            "reportedCredits": 16,
+            "unknownCreditEntries": 0,
+            "latencyMs": 6820.272400000001,
+            "notClearance": true,
+            "candidates": [
+              {
+                "field": "required_written_documents",
+                "quote": "signed collection-loan agreement",
+                "unitId": "U001",
+                "unitRange": [
+                  81,
+                  113
+                ],
+                "permitRange": [
+                  81,
+                  113
+                ],
+                "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+                "sourceUnitRange": [
+                  0,
+                  223
+                ],
+                "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+                "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+                "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+                "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_F_collection",
+                "sceneId": "S811",
+                "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+                "id": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+                "title": "Locate and verify signed collection-loan agreement.",
+                "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+                "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+                "contextUnitIds": [
+                  "U002"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_physical_protections",
+                "quote": "acid-free handling trays",
+                "unitId": "U001",
+                "unitRange": [
+                  53,
+                  77
+                ],
+                "permitRange": [
+                  53,
+                  77
+                ],
+                "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+                "sourceUnitRange": [
+                  0,
+                  223
+                ],
+                "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+                "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+                "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+                "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_F_collection",
+                "sceneId": "S811",
+                "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+                "id": "b8e9e02f9ee1ac7217c1891275df7cb22bf1440cb973577428f22c93bfb97a6a",
+                "title": "Confirm acid-free handling trays.",
+                "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+                "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+                "contextUnitIds": [
+                  "U002"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_on_site_personnel",
+                "quote": "accredited collections technician",
+                "unitId": "U001",
+                "unitRange": [
+                  140,
+                  173
+                ],
+                "permitRange": [
+                  140,
+                  173
+                ],
+                "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+                "sourceUnitRange": [
+                  0,
+                  223
+                ],
+                "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+                "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+                "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+                "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_F_collection",
+                "sceneId": "S811",
+                "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+                "id": "febd9c44619101a5865c643366d1b83289bec6061ae5d9ad6d56325c5cabe501",
+                "title": "Confirm the accredited collections technician remains present throughout the take.",
+                "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+                "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+                "contextUnitIds": [
+                  "U002"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_written_documents",
+                "quote": "written interview-location release",
+                "unitId": "U002",
+                "unitRange": [
+                  39,
+                  73
+                ],
+                "permitRange": [
+                  264,
+                  298
+                ],
+                "sourceSentence": "Scene 812 interview recording requires written interview-location release.",
+                "sourceUnitRange": [
+                  225,
+                  299
+                ],
+                "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+                "unitSha256": "81e1d970428d24803e683c08c0c7b4c432073b5a24900d7ff62a16de87de8eb2",
+                "requestSha256": "2998f0b3fd527bf681bc6641d239a230a11fd5407800faf38c93f8712302d331",
+                "responseSha256": "ac526d34f194c0f2dd580021801bf63a98a230b77b3c4cd17eec345603997491",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_F_collection",
+                "sceneId": "S812",
+                "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+                "id": "d0b6c7a85a6d424d24b443558b8b1d79a80054503c76e7a15782d4aa1784103e",
+                "title": "Locate and verify written interview-location release.",
+                "sourceTaskId": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+                "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+                "contextUnitIds": [
+                  "U001",
+                  "U003"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              }
+            ],
+            "comparison": {
+              "basis": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "aiOff": [
+                {
+                  "id": "S811:DATE_UNKNOWN",
+                  "sceneId": "S811",
+                  "code": "DATE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Date authority not established",
+                  "detail": "Confirm that the issued conditions apply to this shoot date.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 6,
+                      "end": 9,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S811:LOCATION_UNKNOWN",
+                  "sceneId": "S811",
+                  "code": "LOCATION_UNKNOWN",
+                  "severity": "review",
+                  "title": "Location scope requires source review",
+                  "detail": "No trustworthy issued location reading is available.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 12,
+                      "end": 24,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S811:END_UNKNOWN",
+                  "sceneId": "S811",
+                  "code": "END_UNKNOWN",
+                  "severity": "review",
+                  "title": "Filming deadline not source-backed",
+                  "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 27,
+                      "end": 38,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S812:DATE_UNKNOWN",
+                  "sceneId": "S812",
+                  "code": "DATE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Date authority not established",
+                  "detail": "Confirm that the issued conditions apply to this shoot date.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 83,
+                      "end": 86,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S812:LOCATION_UNKNOWN",
+                  "sceneId": "S812",
+                  "code": "LOCATION_UNKNOWN",
+                  "severity": "review",
+                  "title": "Location scope requires source review",
+                  "detail": "No trustworthy issued location reading is available.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 89,
+                      "end": 103,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S812:END_UNKNOWN",
+                  "sceneId": "S812",
+                  "code": "END_UNKNOWN",
+                  "severity": "review",
+                  "title": "Filming deadline not source-backed",
+                  "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 106,
+                      "end": 117,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                }
+              ],
+              "aiOffLiteralTaskCount": 0,
+              "modelDerivedTaskCount": 4,
+              "humanEffortSeconds": null,
+              "semanticAccuracy": "NOT_MEASURED_BY_ENGINEERING_TESTS"
+            }
+          }
+        ],
+        "candidates": [
+          {
+            "field": "required_written_documents",
+            "quote": "signed collection-loan agreement",
+            "unitId": "U001",
+            "unitRange": [
+              81,
+              113
+            ],
+            "permitRange": [
+              81,
+              113
+            ],
+            "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "sourceUnitRange": [
+              0,
+              223
+            ],
+            "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+            "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+            "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_F_collection",
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+            "id": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+            "title": "Locate and verify signed collection-loan agreement.",
+            "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+            "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_physical_protections",
+            "quote": "acid-free handling trays",
+            "unitId": "U001",
+            "unitRange": [
+              53,
+              77
+            ],
+            "permitRange": [
+              53,
+              77
+            ],
+            "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "sourceUnitRange": [
+              0,
+              223
+            ],
+            "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+            "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+            "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_F_collection",
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+            "id": "b8e9e02f9ee1ac7217c1891275df7cb22bf1440cb973577428f22c93bfb97a6a",
+            "title": "Confirm acid-free handling trays.",
+            "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+            "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_on_site_personnel",
+            "quote": "accredited collections technician",
+            "unitId": "U001",
+            "unitRange": [
+              140,
+              173
+            ],
+            "permitRange": [
+              140,
+              173
+            ],
+            "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "sourceUnitRange": [
+              0,
+              223
+            ],
+            "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+            "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+            "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_F_collection",
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+            "id": "febd9c44619101a5865c643366d1b83289bec6061ae5d9ad6d56325c5cabe501",
+            "title": "Confirm the accredited collections technician remains present throughout the take.",
+            "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+            "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_written_documents",
+            "quote": "written interview-location release",
+            "unitId": "U002",
+            "unitRange": [
+              39,
+              73
+            ],
+            "permitRange": [
+              264,
+              298
+            ],
+            "sourceSentence": "Scene 812 interview recording requires written interview-location release.",
+            "sourceUnitRange": [
+              225,
+              299
+            ],
+            "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "unitSha256": "81e1d970428d24803e683c08c0c7b4c432073b5a24900d7ff62a16de87de8eb2",
+            "requestSha256": "2998f0b3fd527bf681bc6641d239a230a11fd5407800faf38c93f8712302d331",
+            "responseSha256": "ac526d34f194c0f2dd580021801bf63a98a230b77b3c4cd17eec345603997491",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_F_collection",
+            "sceneId": "S812",
+            "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+            "id": "d0b6c7a85a6d424d24b443558b8b1d79a80054503c76e7a15782d4aa1784103e",
+            "title": "Locate and verify written interview-location release.",
+            "sourceTaskId": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+            "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          }
+        ],
+        "notClearance": true
+      }
+    },
+    "sceneTasks": [
+      {
+        "id": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+        "sceneId": "S811",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "unitId": "U001",
+        "sourceRange": [
+          0,
+          223
+        ],
+        "quote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+        "requestHash": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "sceneId": "S811",
+          "documentId": "PERMIT",
+          "unitId": "U001",
+          "quote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "range": [
+            0,
+            223
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "RELEVANT_REVIEW_ONLY",
+          "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+          "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.994,
+          "modelGrantClaim": 0.0073,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+            "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+            "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+          },
+          "scopeCaution": null,
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+        "sceneId": "S811",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "unitId": "U002",
+        "sourceRange": [
+          225,
+          299
+        ],
+        "quote": "Scene 812 interview recording requires written interview-location release.",
+        "requestHash": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+          "sceneId": "S811",
+          "documentId": "PERMIT",
+          "unitId": "U002",
+          "quote": "Scene 812 interview recording requires written interview-location release.",
+          "range": [
+            225,
+            299
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+          "decideRequestSha256": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+          "decideResponseSha256": "73751e4973cfaf50e07540acad9a7da6a4b3b8d03099eb7e5034213b93917930",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.0492,
+          "modelGrantClaim": 0.0057,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+            "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+            "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+          },
+          "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+        "sceneId": "S811",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "unitId": "U003",
+        "sourceRange": [
+          301,
+          413
+        ],
+        "quote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+        "requestHash": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+          "sceneId": "S811",
+          "documentId": "PERMIT",
+          "unitId": "U003",
+          "quote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+          "range": [
+            301,
+            413
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+          "decideRequestSha256": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+          "decideResponseSha256": "2228621ee09919611a80a79d8a2fafa73bb4cb08deac7dc43f5695986a84ce69",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.0132,
+          "modelGrantClaim": 0.0031,
+          "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+          "literalFieldStates": null,
+          "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+        "sceneId": "S811",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "unitId": "U004",
+        "sourceRange": [
+          415,
+          534
+        ],
+        "quote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+        "requestHash": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+          "sceneId": "S811",
+          "documentId": "PERMIT",
+          "unitId": "U004",
+          "quote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+          "range": [
+            415,
+            534
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+          "decideRequestSha256": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+          "decideResponseSha256": "525987887dfbb40fa5b0636d2a9d4161c8e80fb5a63cb28b0ca572100be97bab",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.0235,
+          "modelGrantClaim": 0.0026,
+          "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+          "literalFieldStates": null,
+          "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+        "sceneId": "S812",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "unitId": "U001",
+        "sourceRange": [
+          0,
+          223
+        ],
+        "quote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+        "requestHash": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+          "sceneId": "S812",
+          "documentId": "PERMIT",
+          "unitId": "U001",
+          "quote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "range": [
+            0,
+            223
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+          "decideRequestSha256": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+          "decideResponseSha256": "b1346e69e715a1b3b85385cd7f50a65cc586426dc6b243da6edb25b334f21bd5",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.0046,
+          "modelGrantClaim": 0.003,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+            "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+            "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+          },
+          "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+        "sceneId": "S812",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "unitId": "U002",
+        "sourceRange": [
+          225,
+          299
+        ],
+        "quote": "Scene 812 interview recording requires written interview-location release.",
+        "requestHash": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+          "sceneId": "S812",
+          "documentId": "PERMIT",
+          "unitId": "U002",
+          "quote": "Scene 812 interview recording requires written interview-location release.",
+          "range": [
+            225,
+            299
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "RELEVANT_REVIEW_ONLY",
+          "decideRequestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+          "decideResponseSha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.9913,
+          "modelGrantClaim": 0.0031,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+            "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+            "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+          },
+          "scopeCaution": null,
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+        "sceneId": "S812",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "unitId": "U003",
+        "sourceRange": [
+          301,
+          413
+        ],
+        "quote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+        "requestHash": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+          "sceneId": "S812",
+          "documentId": "PERMIT",
+          "unitId": "U003",
+          "quote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+          "range": [
+            301,
+            413
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+          "decideRequestSha256": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+          "decideResponseSha256": "3323deefadcdbc75e9992591bcbc5d6546dc07bdae31321beb7ea7b43906e45f",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.018,
+          "modelGrantClaim": 0.0027,
+          "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+          "literalFieldStates": null,
+          "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      },
+      {
+        "id": "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565",
+        "sceneId": "S812",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "unitId": "U004",
+        "sourceRange": [
+          415,
+          534
+        ],
+        "quote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+        "requestHash": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565",
+          "sceneId": "S812",
+          "documentId": "PERMIT",
+          "unitId": "U004",
+          "quote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+          "range": [
+            415,
+            534
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "AMBIGUOUS_MANUAL_REVIEW",
+          "decideRequestSha256": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+          "decideResponseSha256": "bdb0c636519e5d79c4897714700c1804f585fac525aab12e1000b0849c2168cb",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.4984,
+          "modelGrantClaim": 0.0024,
+          "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+          "literalFieldStates": null,
+          "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16"
+        }
+      }
+    ],
+    "reviewActions": [],
+    "currentTaskReviews": [],
+    "scenes": [
+      {
+        "sceneId": "S811",
+        "location": "Display hall",
+        "activity": "macro filming of historical exhibit",
+        "start": "13:00",
+        "end": "14:00",
+        "originalRow": "Scene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit",
+        "schedule": {
+          "sceneId": "S811",
+          "sceneSourceHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+          "scheduleState": "UNDATED_NO_AUTHORITY",
+          "startUtc": null,
+          "endUtc": null,
+          "timeZone": null,
+          "prerequisiteCount": 0,
+          "currentPrerequisites": 0,
+          "openPrerequisites": 0,
+          "pastDuePrerequisites": 0,
+          "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+          "notClearance": true
+        },
+        "claimIds": [],
+        "currentHumanClaims": 0,
+        "taskIds": [
+          "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+          "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+          "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0"
+        ],
+        "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "planned": 4,
+        "modelComplete": 0,
+        "neverAttempted": 4,
+        "interruptedOrBillingUnknown": 0,
+        "humanReviewed": 0,
+        "humanUnresolved": 0,
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "readiness": "OUTSTANDING_REVIEW",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S812",
+        "location": "Interview room",
+        "activity": "interview recording",
+        "start": "14:00",
+        "end": "15:00",
+        "originalRow": "Scene 812 | Interview room | 14:00-15:00 | interview recording",
+        "schedule": {
+          "sceneId": "S812",
+          "sceneSourceHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+          "scheduleState": "UNDATED_NO_AUTHORITY",
+          "startUtc": null,
+          "endUtc": null,
+          "timeZone": null,
+          "prerequisiteCount": 0,
+          "currentPrerequisites": 0,
+          "openPrerequisites": 0,
+          "pastDuePrerequisites": 0,
+          "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+          "notClearance": true
+        },
+        "claimIds": [],
+        "currentHumanClaims": 0,
+        "taskIds": [
+          "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+          "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+          "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+          "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565"
+        ],
+        "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "planned": 4,
+        "modelComplete": 0,
+        "neverAttempted": 4,
+        "interruptedOrBillingUnknown": 0,
+        "humanReviewed": 0,
+        "humanUnresolved": 0,
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "readiness": "OUTSTANDING_REVIEW",
+        "notClearance": true
+      }
+    ],
+    "counts": {
+      "documents": 1,
+      "scenes": 2,
+      "unresolvedCallSheetRows": 0,
+      "planTasks": 8,
+      "completedModelChecks": 0,
+      "unattemptedChecks": 8,
+      "uncertainModelChecks": 0,
+      "archivedModelRuns": 0,
+      "currentReviewedTasks": 0,
+      "currentUnresolvedHumanReviews": 0,
+      "staleHumanReviews": 0,
+      "unresolvedPdfTranscriptions": 0,
+      "undatedScenes": 2,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "unverifiedDocumentConflicts": 0,
+      "currentSceneScopeAssertions": 0,
+      "staleSceneScopeAssertions": 0,
+      "unreviewedDocumentProvenance": 1,
+      "discoveryAssessedChecks": 8,
+      "effectiveUnassessedChecks": 0,
+      "discoveryIncompleteRuns": 0
+    },
+    "outstanding": [
+      {
+        "code": "CURRENT_HUMAN_REVIEWS_INCOMPLETE",
+        "count": 8
+      },
+      {
+        "code": "SCENE_DATES_NOT_REVIEWED",
+        "count": 2
+      },
+      {
+        "code": "UNREVIEWED_DOCUMENT_PROVENANCE",
+        "count": 1
+      }
+    ],
+    "productionState": "OPEN_REVIEW_ITEMS",
+    "caveats": [
+      "Not filming clearance, permit authentication or legal advice.",
+      "Human assertions are unverified and require responsible sign-off outside this tool.",
+      "Clocked scores are not calibrated confidence and cannot override specific documentary restrictions.",
+      "Candidate source coverage is not proof that all operative documents or obligations have been supplied.",
+      "Unknown billing, interrupted requests, unsupported material and stale evidence remain unresolved."
+    ],
+    "notClearance": true,
+    "sha256": "1a4ebf099126be7431aa3132e6e5129dab86bc2d6fc5ca736985bb5fa413c705"
+  },
+  "consistency": {
+    "schema": "beforeroll-production-consistency-v1",
+    "productionId": "live_20261027_F_collection",
+    "persistedVersion": 4,
+    "workspaceRevision": 3,
+    "asOf": "2026-10-27T11:57:53.742Z",
+    "dossierSha256": "1a4ebf099126be7431aa3132e6e5129dab86bc2d6fc5ca736985bb5fa413c705",
+    "currentSourceInventory": {
+      "documents": 1,
+      "scenes": 2,
+      "sourcePlanTasks": 8
+    },
+    "currentEvidence": {
+      "modelComplete": 0,
+      "modelPending": 8,
+      "modelUncertain": 0,
+      "humanReviewed": 0,
+      "openHumanReviews": 0
+    },
+    "historicalEvidence": {
+      "humanReviews": 0,
+      "archivedModelRuns": 0,
+      "staleScopeClaims": 0
+    },
+    "originals": {
+      "referenced": 2,
+      "preserved": 2,
+      "missing": 0
+    },
+    "checks": [
+      "ORIGINAL_SOURCE_REFERENCES",
+      "PLAN_TO_DOSSIER_TASKS",
+      "SCENE_TOTALS",
+      "CURRENT_VS_HISTORICAL_REVIEWS",
+      "MODEL_ATTEMPT_ACCOUNTING",
+      "OPERATIONS_COUNTS",
+      "ORIGINAL_FILE_CUSTODY",
+      "ACTION_AND_WORKBENCH_ALIGNMENT",
+      "JOURNEY_ALIGNMENT"
+    ],
+    "state": "INTERNAL_RECONCILIATION_PASS_NOT_SOURCE_AUTHENTICATION",
+    "notClearance": true,
+    "limitation": "Checks internal source and recorded evidence consistency only; not external document authenticity, comprehensive permit coverage, model accuracy, legal authority or filming clearance.",
+    "sha256": "fd9d9697ac8b858e88086a91b6e70e24c5f522cec4463814001bf0d6e4fdb8de"
+  },
+  "workspace": {
+    "schema": "beforeroll-workspace-v1",
+    "id": "live_20261027_F_collection",
+    "title": "Fictional live acceptance F_COLLECTION",
+    "revision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "F_COLLECTION-permit.txt",
+        "role": "permit",
+        "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nScene 812 interview recording requires written interview-location release.\n\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+        "sourceHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 223,
+            "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "hash": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 225,
+            "end": 299,
+            "text": "Scene 812 interview recording requires written interview-location release.",
+            "hash": "81e1d970428d24803e683c08c0c7b4c432073b5a24900d7ff62a16de87de8eb2",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 301,
+            "end": 413,
+            "text": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+            "hash": "b3ad5a7307e11a0ef50b73f9a85638874cc900b8b6ae812a62c1117d4b1b301d",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 415,
+            "end": 534,
+            "text": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+            "hash": "17bba8b97fabd04309217196e314f4dcdfd73357e2d2d7db00f8d18cb5a8dd9f",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "F_COLLECTION-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "normalizedHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "byteCount": 534,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "callSheet": {
+      "text": "Scene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\nScene 812 | Interview room | 14:00-15:00 | interview recording",
+      "sourceHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+      "scenes": [
+        {
+          "id": "S811",
+          "number": "811",
+          "location": "Display hall",
+          "start": "13:00",
+          "end": "14:00",
+          "activity": "macro filming of historical exhibit",
+          "rawWindow": "13:00-14:00",
+          "source": {
+            "start": 0,
+            "end": 76,
+            "fields": {
+              "scene": {
+                "start": 6,
+                "end": 9
+              },
+              "location": {
+                "start": 12,
+                "end": 24
+              },
+              "window": {
+                "start": 27,
+                "end": 38
+              },
+              "activity": {
+                "start": 41,
+                "end": 76
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        },
+        {
+          "id": "S812",
+          "number": "812",
+          "location": "Interview room",
+          "start": "14:00",
+          "end": "15:00",
+          "activity": "interview recording",
+          "rawWindow": "14:00-15:00",
+          "source": {
+            "start": 77,
+            "end": 139,
+            "fields": {
+              "scene": {
+                "start": 83,
+                "end": 86
+              },
+              "location": {
+                "start": 89,
+                "end": 103
+              },
+              "window": {
+                "start": 106,
+                "end": 117
+              },
+              "activity": {
+                "start": 120,
+                "end": 139
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        }
+      ],
+      "unsupported": [],
+      "format": "Explicit pipe-delimited rows only",
+      "revision": 1,
+      "historicalSceneEpochs": {
+        "S811": 0,
+        "S812": 0
+      },
+      "importReceipt": {
+        "kind": "callSheet",
+        "name": "F_COLLECTION-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+        "normalizedHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+        "byteCount": 139,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2,
+        "sourceHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69"
+      }
+    },
+    "assessments": [],
+    "reviewActions": [],
+    "imports": [
+      {
+        "kind": "permit",
+        "name": "F_COLLECTION-permit.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "normalizedHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "byteCount": 534,
+        "sourceMap": [],
+        "warnings": [
+          "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+        ],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 1,
+        "documentId": "PERMIT"
+      },
+      {
+        "kind": "callSheet",
+        "name": "F_COLLECTION-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+        "normalizedHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+        "byteCount": 139,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2
+      }
+    ],
+    "authorityLinks": [],
+    "sceneAuthority": [],
+    "sceneSchedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "notClearance": true,
+    "coordinatorTaskReviews": [
+      {
+        "sequence": 1,
+        "candidateId": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+        "sceneId": "S811",
+        "source": {
+          "field": "required_written_documents",
+          "quote": "signed collection-loan agreement",
+          "unitId": "U001",
+          "unitRange": [
+            81,
+            113
+          ],
+          "permitRange": [
+            81,
+            113
+          ],
+          "sourceSentence": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "sourceUnitRange": [
+            0,
+            223
+          ],
+          "permitSha256": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "unitSha256": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+          "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+          "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_F_collection",
+          "sceneId": "S811",
+          "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+          "id": "8cefdaaccad41172a241877574ba15fa5fa1edc581872746217aff007315afca",
+          "title": "Locate and verify signed collection-loan agreement.",
+          "sourceTaskId": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "discoveryId": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        "reviewer": "Fictional campaign coordinator",
+        "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+        "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+        "at": "2026-10-27T11:44:56.681Z",
+        "workspaceRevision": 2,
+        "notClearance": true,
+        "sha256": "1600af85f8b94740c9314e2a217c11d203632482a20f07b7a9a1d25005830bf2"
+      }
+    ]
+  },
+  "journals": [],
+  "discoveryJournals": [
+    {
+      "schema": "beforeroll-core-discovery-journal-v1",
+      "plan": {
+        "schema": "beforeroll-core-discovery-plan-v1",
+        "id": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+        "workspaceId": "live_20261027_F_collection",
+        "documents": [
+          {
+            "id": "PERMIT",
+            "hash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "revision": 1,
+            "epoch": 0,
+            "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6"
+          }
+        ],
+        "scenes": [
+          {
+            "id": "S811",
+            "epoch": 0,
+            "hash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "row": "Scene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit"
+          },
+          {
+            "id": "S812",
+            "epoch": 0,
+            "hash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+            "row": "Scene 812 | Interview room | 14:00-15:00 | interview recording"
+          }
+        ],
+        "taskIds": [
+          "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+          "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+          "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+          "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+          "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+          "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+          "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565"
+        ],
+        "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+        "workspaceRevision": 2,
+        "documentIds": [
+          "PERMIT"
+        ],
+        "sceneIds": [
+          "S811",
+          "S812"
+        ],
+        "sources": [
+          {
+            "id": "PERMIT",
+            "name": "F_COLLECTION-permit.txt",
+            "role": "permit",
+            "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nScene 812 interview recording requires written interview-location release.\n\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+            "sourceHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "revision": 1,
+            "units": [
+              {
+                "id": "U001",
+                "start": 0,
+                "end": 223,
+                "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+                "hash": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U002",
+                "start": 225,
+                "end": 299,
+                "text": "Scene 812 interview recording requires written interview-location release.",
+                "hash": "81e1d970428d24803e683c08c0c7b4c432073b5a24900d7ff62a16de87de8eb2",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U003",
+                "start": 301,
+                "end": 413,
+                "text": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+                "hash": "b3ad5a7307e11a0ef50b73f9a85638874cc900b8b6ae812a62c1117d4b1b301d",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U004",
+                "start": 415,
+                "end": 534,
+                "text": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+                "hash": "17bba8b97fabd04309217196e314f4dcdfd73357e2d2d7db00f8d18cb5a8dd9f",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              }
+            ],
+            "coverage": {
+              "represented": true,
+              "gaps": []
+            },
+            "status": "SOURCE_UNVERIFIED",
+            "importReceipt": {
+              "kind": "permit",
+              "name": "F_COLLECTION-permit.txt",
+              "sourceFormat": "UTF8_TEXT",
+              "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+              "normalizedHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+              "byteCount": 534,
+              "sourceMap": [],
+              "warnings": [
+                "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+              ],
+              "reviewedAttestation": null,
+              "reviewedPermitAttestation": null,
+              "requiresHumanTextReview": false,
+              "extractionPartSha256": null,
+              "revision": 1,
+              "documentId": "PERMIT",
+              "sourceHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6"
+            },
+            "pdfTranscriptionReview": null
+          }
+        ],
+        "tasks": [
+          {
+            "id": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sourceRange": [
+              0,
+              223
+            ],
+            "sourceQuote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "unitId": "U001",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,223):\nFor Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 812 interview recording requires written interview-location release.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sourceRange": [
+              225,
+              299
+            ],
+            "sourceQuote": "Scene 812 interview recording requires written interview-location release.",
+            "unitId": "U002",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [225,299):\nScene 812 interview recording requires written interview-location release.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\nAFTER (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sourceRange": [
+              301,
+              413
+            ],
+            "sourceQuote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+            "unitId": "U003",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [301,413):\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 812 interview recording requires written interview-location release.\nAFTER (U004): An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S811",
+            "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+            "sourceRange": [
+              415,
+              534
+            ],
+            "sourceQuote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+            "unitId": "U004",
+            "contextUnitIds": [
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [415,534):\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S812",
+            "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+            "sourceRange": [
+              0,
+              223
+            ],
+            "sourceQuote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "unitId": "U001",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,223):\nFor Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 812 interview recording requires written interview-location release.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S812",
+            "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+            "sourceRange": [
+              225,
+              299
+            ],
+            "sourceQuote": "Scene 812 interview recording requires written interview-location release.",
+            "unitId": "U002",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [225,299):\nScene 812 interview recording requires written interview-location release.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\nAFTER (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S812",
+            "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+            "sourceRange": [
+              301,
+              413
+            ],
+            "sourceQuote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+            "unitId": "U003",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [301,413):\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 812 interview recording requires written interview-location release.\nAFTER (U004): An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565",
+            "documentId": "PERMIT",
+            "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+            "documentRevision": 1,
+            "sceneId": "S812",
+            "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+            "sourceRange": [
+              415,
+              534
+            ],
+            "sourceQuote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+            "unitId": "U004",
+            "contextUnitIds": [
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [415,534):\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          }
+        ],
+        "extracts": [
+          {
+            "id": "0d6962f2633f126871892f717a9cb60d5a3d7b55b6652545f9c25e4fd778e00c",
+            "documentId": "PERMIT",
+            "unitId": "U001",
+            "payload": {
+              "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "4138520dadd56a681afb1beced6d69da186863be962d52175212b1857cdc7250",
+            "documentId": "PERMIT",
+            "unitId": "U002",
+            "payload": {
+              "text": "Scene 812 interview recording requires written interview-location release.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "8868ea4bbd9d4ff0edc089df10d11e9b5709f821512f83640cc4035d4b46e346",
+            "documentId": "PERMIT",
+            "unitId": "U003",
+            "payload": {
+              "text": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "aef0b29bdebdecd26ea9227aa5739c8c97a77bb235f37a6fdb7d9763c94c87f8",
+            "documentId": "PERMIT",
+            "unitId": "U004",
+            "payload": {
+              "text": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          }
+        ],
+        "verifiedBy": "Codex fictional-document source verification",
+        "sourceConfirmed": true,
+        "limits": {
+          "maxCalls": 13,
+          "creditBudget": 256,
+          "creditReservePerCall": 8
+        },
+        "decideCalls": 8,
+        "maxExtractCalls": 4,
+        "worstCaseCalls": 12,
+        "concurrency": 1,
+        "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+        "notClearance": true
+      },
+      "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+      "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+      "entries": [
+        {
+          "id": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAxIFswLDIyMyk6XG5Gb3IgU2NlbmUgODExLCB0aGUgaGlzdG9yaWNhbCBleGhpYml0IG11c3QgcmVtYWluIGluIGFjaWQtZnJlZSBoYW5kbGluZyB0cmF5cywgYSBzaWduZWQgY29sbGVjdGlvbi1sb2FuIGFncmVlbWVudCBtdXN0IGJlIHByZXNlbnRlZCwgYW5kIGFuIGFjY3JlZGl0ZWQgY29sbGVjdGlvbnMgdGVjaG5pY2lhbiBtdXN0IHN0YXkgYmVzaWRlIHRoZSBkaXNwbGF5IHRocm91Z2hvdXQgdGhlIHRha2UuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5BRlRFUiAoVTAwMik6IFNjZW5lIDgxMiBpbnRlcnZpZXcgcmVjb3JkaW5nIHJlcXVpcmVzIHdyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA4MTEgfCBEaXNwbGF5IGhhbGwgfCAxMzowMC0xNDowMCB8IG1hY3JvIGZpbG1pbmcgb2YgaGlzdG9yaWNhbCBleGhpYml0XG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "d45bb4f1-333f-4335-b818-993b37ca3ff3",
+          "startedAt": "2026-10-27T11:44:48.169Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTR9LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsIm5vdWwiOjAuMDA3M319LCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjMzMiwib3V0cHV0X3Rva2VucyI6NH19",
+          "receipt": {
+            "requestSha256": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+            "storedBodySha256": "7d71b0823ca9b2dc499721f4692e444ca46e2a36d6a3a27f0bbb0d7625b077af",
+            "responseByteLength": 177,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:47 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:48.169Z",
+            "endedAt": "2026-10-27T11:44:49.652Z",
+            "latencyMs": 1469.5016999999998,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAyIFsyMjUsMjk5KTpcblNjZW5lIDgxMiBpbnRlcnZpZXcgcmVjb3JkaW5nIHJlcXVpcmVzIHdyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDEpOiBGb3IgU2NlbmUgODExLCB0aGUgaGlzdG9yaWNhbCBleGhpYml0IG11c3QgcmVtYWluIGluIGFjaWQtZnJlZSBoYW5kbGluZyB0cmF5cywgYSBzaWduZWQgY29sbGVjdGlvbi1sb2FuIGFncmVlbWVudCBtdXN0IGJlIHByZXNlbnRlZCwgYW5kIGFuIGFjY3JlZGl0ZWQgY29sbGVjdGlvbnMgdGVjaG5pY2lhbiBtdXN0IHN0YXkgYmVzaWRlIHRoZSBkaXNwbGF5IHRocm91Z2hvdXQgdGhlIHRha2UuXG5BRlRFUiAoVTAwMyk6IExhc3Qgc2Vhc29uJ3MgZm9vdGFnZSBjYXRhbG9ndWUgcmVjb3JkcyBhbiBvbGQgcGVybWl0IGFuZCBhIGZvcm1lciBlc2NvcnQ7IHRoZXNlIGFyZSBoaXN0b3JpY2FsIHJlZmVyZW5jZXMgb25seS5cblxuUFJPUE9TRUQgU0NFTkUgKGV4YWN0IGNhbGwtc2hlZXQgcm93KTpcblNjZW5lIDgxMSB8IERpc3BsYXkgaGFsbCB8IDEzOjAwLTE0OjAwIHwgbWFjcm8gZmlsbWluZyBvZiBoaXN0b3JpY2FsIGV4aGliaXRcblxuQXNzZXNzIHRoZSBleGFjdCBwYXNzYWdlIHdpdGggaXRzIGNvbnRleHQuIERvIG5vdCB0cmVhdCBhIGdlbmVyYWwgbG9jYXRpb24gY29uc2VudCBhcyBwZXJtaXNzaW9uIHRvIG92ZXJyaWRlIGEgbW9yZSBzcGVjaWZpYyBhY3Rpdml0eSByZXN0cmljdGlvbi4gTm8gZmlsbWluZy1jbGVhcmFuY2UgY29uY2x1c2lvbnMuIiwicXVlc3Rpb25zIjp7ImFjdGl2aXR5X2xpbmsiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2Ugc3RhdGUgYSByZXN0cmljdGlvbiwgcHJlcmVxdWlzaXRlLCBvciBjb25kaXRpb25hbCBhY3Rpdml0eSBwZXJtaXNzaW9uIG1hdGVyaWFsbHkgYXBwbGljYWJsZSB0byB0aGlzIHNjZW5lPyBTdXJyb3VuZGluZyBwYXNzYWdlcyBhcmUgY29udGV4dCBvbmx5LCBub3QgaW5kZXBlbmRlbnQgZ3JhbnRzLiIsImNyaXRlcmlhIjp7InRydWUiOiJFeGFjdCBwYXNzYWdlIGNvbmNlcm5zIHRoZSBwcm9wb3NlZCBzY2VuZSBhY3Rpdml0eSwgZXZlbiB3aGVuIHRlcm1pbm9sb2d5IGRpZmZlcnMuIiwiZmFsc2UiOiJFeGFjdCBwYXNzYWdlIGlzIHVucmVsYXRlZCBvciBnZW5lcmFsIGxvY2F0aW9uIG92ZXJsYXAgYWxvbmUgaXMgaW5zdWZmaWNpZW50LiJ9fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2UgZXhwbGljaXRseSBpc3N1ZSBwZXJtaXNzaW9uIGZvciB0aGlzIHNwZWNpZmljIHNjZW5lIGFjdGl2aXR5IGFuZCBhdXRob3JpemVkIHNjb3BlPyBBIHJlcXVlc3QsIGdlbmVyaWMgbG9jYXRpb24gY29uc2VudCwgZ3JhbnQgZm9yIGEgZGlmZmVyZW50IHNjZW5lLCBvciBwcmVyZXF1aXNpdGUgdGhhdCBoYXMgbm90IGJlZW4gZXZpZGVuY2VkIGlzIG5vdCBzY2VuZS1zcGVjaWZpYyBwZXJtaXNzaW9uLiIsImNyaXRlcmlhIjp7InRydWUiOiJRdW90ZWQgcGFzc2FnZSBleHBsaWNpdGx5IGdyYW50cyB0aGUgc3BlY2lmaWVkIHNjZW5lL2FjdGl2aXR5IHdpdGhpbiBzdGF0ZWQgc2NvcGUsIHN1YmplY3QgdG8gaHVtYW4gdmFsaWRhdGlvbi4iLCJmYWxzZSI6Ik5vIGlzc3VlZCwgc3VmZmljaWVudGx5IHNjb3BlZCBwZXJtaXNzaW9uIGlzIHN0YXRlZCBpbiB0aGlzIGV4YWN0IHBhc3NhZ2UuIn19fX0=",
+          "idempotencyKey": "234d75b5-9205-42e8-b2aa-40d70dc402b3",
+          "startedAt": "2026-10-27T11:44:49.688Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wNDkyfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwNTd9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNjMsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "73751e4973cfaf50e07540acad9a7da6a4b3b8d03099eb7e5034213b93917930",
+            "storedBodySha256": "73751e4973cfaf50e07540acad9a7da6a4b3b8d03099eb7e5034213b93917930",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:47 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:49.688Z",
+            "endedAt": "2026-10-27T11:44:50.432Z",
+            "latencyMs": 734.5979000000002,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAzIFszMDEsNDEzKTpcbkxhc3Qgc2Vhc29uJ3MgZm9vdGFnZSBjYXRhbG9ndWUgcmVjb3JkcyBhbiBvbGQgcGVybWl0IGFuZCBhIGZvcm1lciBlc2NvcnQ7IHRoZXNlIGFyZSBoaXN0b3JpY2FsIHJlZmVyZW5jZXMgb25seS5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMik6IFNjZW5lIDgxMiBpbnRlcnZpZXcgcmVjb3JkaW5nIHJlcXVpcmVzIHdyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UuXG5BRlRFUiAoVTAwNCk6IEFuIHVuc2lnbmVkIGRyYWZ0IGZvciBTY2VuZSA4MTIgcHJvcG9zZXMgYSBzbW9rZSBjb3Jkb24gb2JzZXJ2ZXI7IG5vIGN1cnJlbnQgZHV0eSBvciBhcHByb3ZhbCBpcyBpbXBvc2VkIGJ5IHRoYXQgZHJhZnQuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA4MTEgfCBEaXNwbGF5IGhhbGwgfCAxMzowMC0xNDowMCB8IG1hY3JvIGZpbG1pbmcgb2YgaGlzdG9yaWNhbCBleGhpYml0XG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "3d801173-68e4-4608-ba6d-d19a7aa9d70e",
+          "startedAt": "2026-10-27T11:44:50.463Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMTMyfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMzF9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNDYsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "2228621ee09919611a80a79d8a2fafa73bb4cb08deac7dc43f5695986a84ce69",
+            "storedBodySha256": "2228621ee09919611a80a79d8a2fafa73bb4cb08deac7dc43f5695986a84ce69",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:48 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:50.463Z",
+            "endedAt": "2026-10-27T11:44:51.144Z",
+            "latencyMs": 673.6102999999998,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDA0IFs0MTUsNTM0KTpcbkFuIHVuc2lnbmVkIGRyYWZ0IGZvciBTY2VuZSA4MTIgcHJvcG9zZXMgYSBzbW9rZSBjb3Jkb24gb2JzZXJ2ZXI7IG5vIGN1cnJlbnQgZHV0eSBvciBhcHByb3ZhbCBpcyBpbXBvc2VkIGJ5IHRoYXQgZHJhZnQuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDMpOiBMYXN0IHNlYXNvbidzIGZvb3RhZ2UgY2F0YWxvZ3VlIHJlY29yZHMgYW4gb2xkIHBlcm1pdCBhbmQgYSBmb3JtZXIgZXNjb3J0OyB0aGVzZSBhcmUgaGlzdG9yaWNhbCByZWZlcmVuY2VzIG9ubHkuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA4MTEgfCBEaXNwbGF5IGhhbGwgfCAxMzowMC0xNDowMCB8IG1hY3JvIGZpbG1pbmcgb2YgaGlzdG9yaWNhbCBleGhpYml0XG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "80bdcde8-ccf4-4b38-97ae-572d690517fa",
+          "startedAt": "2026-10-27T11:44:51.187Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMjM1fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMjZ9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMjQsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "525987887dfbb40fa5b0636d2a9d4161c8e80fb5a63cb28b0ca572100be97bab",
+            "storedBodySha256": "525987887dfbb40fa5b0636d2a9d4161c8e80fb5a63cb28b0ca572100be97bab",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:49 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:51.187Z",
+            "endedAt": "2026-10-27T11:44:51.633Z",
+            "latencyMs": 438.77059999999983,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAxIFswLDIyMyk6XG5Gb3IgU2NlbmUgODExLCB0aGUgaGlzdG9yaWNhbCBleGhpYml0IG11c3QgcmVtYWluIGluIGFjaWQtZnJlZSBoYW5kbGluZyB0cmF5cywgYSBzaWduZWQgY29sbGVjdGlvbi1sb2FuIGFncmVlbWVudCBtdXN0IGJlIHByZXNlbnRlZCwgYW5kIGFuIGFjY3JlZGl0ZWQgY29sbGVjdGlvbnMgdGVjaG5pY2lhbiBtdXN0IHN0YXkgYmVzaWRlIHRoZSBkaXNwbGF5IHRocm91Z2hvdXQgdGhlIHRha2UuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5BRlRFUiAoVTAwMik6IFNjZW5lIDgxMiBpbnRlcnZpZXcgcmVjb3JkaW5nIHJlcXVpcmVzIHdyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA4MTIgfCBJbnRlcnZpZXcgcm9vbSB8IDE0OjAwLTE1OjAwIHwgaW50ZXJ2aWV3IHJlY29yZGluZ1xuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "dd6fd34e-64dc-4834-b582-20f07daaebb9",
+          "startedAt": "2026-10-27T11:44:51.673Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMDQ2fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwM319LCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjMyOSwib3V0cHV0X3Rva2VucyI6NH19",
+          "receipt": {
+            "requestSha256": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "b1346e69e715a1b3b85385cd7f50a65cc586426dc6b243da6edb25b334f21bd5",
+            "storedBodySha256": "b1346e69e715a1b3b85385cd7f50a65cc586426dc6b243da6edb25b334f21bd5",
+            "responseByteLength": 177,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:49 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:51.673Z",
+            "endedAt": "2026-10-27T11:44:52.172Z",
+            "latencyMs": 487.5673999999999,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAyIFsyMjUsMjk5KTpcblNjZW5lIDgxMiBpbnRlcnZpZXcgcmVjb3JkaW5nIHJlcXVpcmVzIHdyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDEpOiBGb3IgU2NlbmUgODExLCB0aGUgaGlzdG9yaWNhbCBleGhpYml0IG11c3QgcmVtYWluIGluIGFjaWQtZnJlZSBoYW5kbGluZyB0cmF5cywgYSBzaWduZWQgY29sbGVjdGlvbi1sb2FuIGFncmVlbWVudCBtdXN0IGJlIHByZXNlbnRlZCwgYW5kIGFuIGFjY3JlZGl0ZWQgY29sbGVjdGlvbnMgdGVjaG5pY2lhbiBtdXN0IHN0YXkgYmVzaWRlIHRoZSBkaXNwbGF5IHRocm91Z2hvdXQgdGhlIHRha2UuXG5BRlRFUiAoVTAwMyk6IExhc3Qgc2Vhc29uJ3MgZm9vdGFnZSBjYXRhbG9ndWUgcmVjb3JkcyBhbiBvbGQgcGVybWl0IGFuZCBhIGZvcm1lciBlc2NvcnQ7IHRoZXNlIGFyZSBoaXN0b3JpY2FsIHJlZmVyZW5jZXMgb25seS5cblxuUFJPUE9TRUQgU0NFTkUgKGV4YWN0IGNhbGwtc2hlZXQgcm93KTpcblNjZW5lIDgxMiB8IEludGVydmlldyByb29tIHwgMTQ6MDAtMTU6MDAgfCBpbnRlcnZpZXcgcmVjb3JkaW5nXG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "ecf2267d-ded2-4dfe-9072-039a7c4e6afe",
+          "startedAt": "2026-10-27T11:44:52.210Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTEzfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMzF9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNjAsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+            "storedBodySha256": "21cbbb8a5dcaf077b643ee9f34d49abf2d99523b30ab9aef85d12a977ced46b5",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:50 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:52.210Z",
+            "endedAt": "2026-10-27T11:44:52.783Z",
+            "latencyMs": 561.9371000000001,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAzIFszMDEsNDEzKTpcbkxhc3Qgc2Vhc29uJ3MgZm9vdGFnZSBjYXRhbG9ndWUgcmVjb3JkcyBhbiBvbGQgcGVybWl0IGFuZCBhIGZvcm1lciBlc2NvcnQ7IHRoZXNlIGFyZSBoaXN0b3JpY2FsIHJlZmVyZW5jZXMgb25seS5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMik6IFNjZW5lIDgxMiBpbnRlcnZpZXcgcmVjb3JkaW5nIHJlcXVpcmVzIHdyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UuXG5BRlRFUiAoVTAwNCk6IEFuIHVuc2lnbmVkIGRyYWZ0IGZvciBTY2VuZSA4MTIgcHJvcG9zZXMgYSBzbW9rZSBjb3Jkb24gb2JzZXJ2ZXI7IG5vIGN1cnJlbnQgZHV0eSBvciBhcHByb3ZhbCBpcyBpbXBvc2VkIGJ5IHRoYXQgZHJhZnQuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA4MTIgfCBJbnRlcnZpZXcgcm9vbSB8IDE0OjAwLTE1OjAwIHwgaW50ZXJ2aWV3IHJlY29yZGluZ1xuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "121f80bc-891e-44c3-80d4-163d27fca7dc",
+          "startedAt": "2026-10-27T11:44:52.821Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMTh9LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsIm5vdWwiOjAuMDAyN319LCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjM0Mywib3V0cHV0X3Rva2VucyI6NH19",
+          "receipt": {
+            "requestSha256": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "3323deefadcdbc75e9992591bcbc5d6546dc07bdae31321beb7ea7b43906e45f",
+            "storedBodySha256": "3323deefadcdbc75e9992591bcbc5d6546dc07bdae31321beb7ea7b43906e45f",
+            "responseByteLength": 177,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:50 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:52.821Z",
+            "endedAt": "2026-10-27T11:44:53.601Z",
+            "latencyMs": 769.5533999999998,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDA0IFs0MTUsNTM0KTpcbkFuIHVuc2lnbmVkIGRyYWZ0IGZvciBTY2VuZSA4MTIgcHJvcG9zZXMgYSBzbW9rZSBjb3Jkb24gb2JzZXJ2ZXI7IG5vIGN1cnJlbnQgZHV0eSBvciBhcHByb3ZhbCBpcyBpbXBvc2VkIGJ5IHRoYXQgZHJhZnQuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDMpOiBMYXN0IHNlYXNvbidzIGZvb3RhZ2UgY2F0YWxvZ3VlIHJlY29yZHMgYW4gb2xkIHBlcm1pdCBhbmQgYSBmb3JtZXIgZXNjb3J0OyB0aGVzZSBhcmUgaGlzdG9yaWNhbCByZWZlcmVuY2VzIG9ubHkuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA4MTIgfCBJbnRlcnZpZXcgcm9vbSB8IDE0OjAwLTE1OjAwIHwgaW50ZXJ2aWV3IHJlY29yZGluZ1xuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "bc47f129-1719-4191-9e66-e7a541515c32",
+          "startedAt": "2026-10-27T11:44:53.645Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC40OTg0fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMjR9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMjEsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "bdb0c636519e5d79c4897714700c1804f585fac525aab12e1000b0849c2168cb",
+            "storedBodySha256": "bdb0c636519e5d79c4897714700c1804f585fac525aab12e1000b0849c2168cb",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:51 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:44:53.645Z",
+            "endedAt": "2026-10-27T11:44:54.137Z",
+            "latencyMs": 479.9855000000007,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "0d6962f2633f126871892f717a9cb60d5a3d7b55b6652545f9c25e4fd778e00c",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+          "requestBase64": "eyJ0ZXh0IjoiRm9yIFNjZW5lIDgxMSwgdGhlIGhpc3RvcmljYWwgZXhoaWJpdCBtdXN0IHJlbWFpbiBpbiBhY2lkLWZyZWUgaGFuZGxpbmcgdHJheXMsIGEgc2lnbmVkIGNvbGxlY3Rpb24tbG9hbiBhZ3JlZW1lbnQgbXVzdCBiZSBwcmVzZW50ZWQsIGFuZCBhbiBhY2NyZWRpdGVkIGNvbGxlY3Rpb25zIHRlY2huaWNpYW4gbXVzdCBzdGF5IGJlc2lkZSB0aGUgZGlzcGxheSB0aHJvdWdob3V0IHRoZSB0YWtlLiIsImluc3RydWN0aW9ucyI6IkNvcHkgb25seSBzaG9ydCB2ZXJiYXRpbSBzb3VyY2UgcGhyYXNlcyBpZGVudGlmeWluZyBkb2N1bWVudGFyeSBwcmVyZXF1aXNpdGVzLCByZXF1aXJlZCBwaHlzaWNhbCBwcm90ZWN0aW9ucywgb3IgcmVxdWlyZWQgb24tc2l0ZSBwZXJzb25uZWwuIEFwcGx5IHRoZSBzYW1lIHRocmVlIGZpZWxkcyB0byB0aGUgZW50aXJlIHN1cHBsaWVkIHBhc3NhZ2UuIFJlcG9ydCBmYWN0cyB0aGUgdGV4dCBleHByZXNzbHkgc3RhdGVzIGFyZSBSRVFVSVJFRCBmb3IgdGhlIGRlc2NyaWJlZCBhY3Rpdml0eSwgbm90IGhpc3RvcmljYWwgZXhhbXBsZXMsIHN1Z2dlc3Rpb25zLCBwcm9wb3NhbHMsIHJlcXVlc3RzIHRvIGV4dGVuZCBjb25kaXRpb25zIHRvIGFub3RoZXIgc2NlbmUsIG9yIGd1ZXNzZXMuIERvIG5vdCBkZWNpZGUgd2hldGhlciBhbnkgcGVybWlzc2lvbiBoYXMgYmVlbiBpc3N1ZWQsIGlzIGF1dGhlbnRpYywgYXBwbGllcyBsZWdhbGx5LCBvciBzYXRpc2ZpZXMgYSBwcmVyZXF1aXNpdGUuIERvIG5vdCBpbmZlciBjbGVhcmFuY2Ugb3IgY3JlYXRlIHRhc2tzLiBFYWNoIHJldHVybmVkIHBocmFzZSBtdXN0IG9jY3VyIGluIHRoZSBleGFjdCBvcmlnaW5hbCBzb3VyY2UgdGV4dC4gTGVhdmUgYW4gdW5zdXBwb3J0ZWQgbGlzdCBlbXB0eS4iLCJmaWVsZHMiOnsicmVxdWlyZWRfd3JpdHRlbl9kb2N1bWVudHMiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBwaHJhc2VzIG5hbWluZyB3cml0dGVuIGFwcHJvdmFscywgc2lnbmVkIHJlbGVhc2VzLCBvciB3cml0dGVuIGNvbnNlbnRzIHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSBzYXlzIG11c3QgYmUgb2J0YWluZWQgb3IgcHJlc2VudGVkIGJlZm9yZSBhbiBhY3Rpdml0eTsgY29weSBlYWNoIG9yaWdpbmFsIHBocmFzZSwgbm90IGFuIGlzc3VhbmNlIHZlcmRpY3QiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjUsImZvcm1hdCI6InRleHQifSwicmVxdWlyZWRfcGh5c2ljYWxfcHJvdGVjdGlvbnMiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBzb3VyY2UgcGhyYXNlcyBuYW1pbmcgcGh5c2ljYWwgcHJvdGVjdGl2ZSBtZWFzdXJlcyBvciBlcXVpcG1lbnQgdGhhdCB0aGUgcGFzc2FnZSBleHBsaWNpdGx5IHJlcXVpcmVzIGR1cmluZyBhbiBhY3Rpdml0eTsgbm90IHN1Z2dlc3Rpb25zLCBoaXN0b3JpYyBleGFtcGxlcywgb3Igb3B0aW9uYWwgZXF1aXBtZW50IiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo2LCJmb3JtYXQiOiJ0ZXh0In0sInJlcXVpcmVkX29uX3NpdGVfcGVyc29ubmVsIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgc291cmNlIHBocmFzZXMgbmFtaW5nIGEgc3VwZXJ2aXNpbmcgb3Igc2FmZXR5IHBlcnNvbiBvciByb2xlIHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSByZXF1aXJlcyBvbiBzaXRlIGR1cmluZyBhbiBhY3Rpdml0eTsgbm90IGEgZG9jdW1lbnQgc2lnbmF0b3J5LCBoaXN0b3JpY2FsIHBhcnRpY2lwYW50LCBvciBvcHRpb25hbCBvYnNlcnZlciIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NSwiZm9ybWF0IjoidGV4dCJ9fX0=",
+          "idempotencyKey": "2b25c737-7507-4a12-b472-cfc5b90241c4",
+          "startedAt": "2026-10-27T11:44:54.173Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbInNpZ25lZCBjb2xsZWN0aW9uLWxvYW4gYWdyZWVtZW50Il0sIml0ZW1zIjpbeyJ2YWx1ZSI6InNpZ25lZCBjb2xsZWN0aW9uLWxvYW4gYWdyZWVtZW50Iiwic3RhcnQiOjgxLCJlbmQiOjExMywiY29uZmlkZW5jZSI6MC45OTk5OTk5OTg2MDIyNTQzLCJwX3ZlcmlmeSI6MC45OTk5OTk5OTg2MDIyNTQzfV0sImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk4NjAyMjU0M30sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7InZhbHVlIjpbImFjaWQtZnJlZSBoYW5kbGluZyB0cmF5cyJdLCJpdGVtcyI6W3sidmFsdWUiOiJhY2lkLWZyZWUgaGFuZGxpbmcgdHJheXMiLCJzdGFydCI6NTMsImVuZCI6NzcsImNvbmZpZGVuY2UiOjAuOTk5OTk5OTE2MDA3NDA3OCwicF92ZXJpZnkiOjAuOTk5OTk5OTE2MDA3NDA3OH1dLCJjb25maWRlbmNlIjowLjk5OTk5OTkxNjAwNzQwNzh9LCJyZXF1aXJlZF9vbl9zaXRlX3BlcnNvbm5lbCI6eyJ2YWx1ZSI6WyJhY2NyZWRpdGVkIGNvbGxlY3Rpb25zIHRlY2huaWNpYW4iXSwiaXRlbXMiOlt7InZhbHVlIjoiYWNjcmVkaXRlZCBjb2xsZWN0aW9ucyB0ZWNobmljaWFuIiwic3RhcnQiOjE0MCwiZW5kIjoxNzMsImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk0Nzk0MDcwMSwicF92ZXJpZnkiOjAuOTk5OTk5OTk0Nzk0MDcwMX1dLCJjb25maWRlbmNlIjowLjk5OTk5OTk5NDc5NDA3MDF9fSwidGltaW5nIjp7InJlYWRfbXMiOjk1LCJmb3J3YXJkcyI6eyJmaWVsZHMiOls1LDFdfSwic3RhZ2VzIjp7ImZpZWxkcyI6eyJyZWFkZXIiOiJyZWNvZ25pdGlvbiIsImRvYyI6MiwiYnJhbmNoZXMiOjAsImdlbmVyYXRlIjo3NCwibG9jYXRlIjowLCJ2ZXJpZnkiOjE2LCJhc3NlbWJsZSI6MH19LCJ0b3RhbF9tcyI6OTUsInNlcnZlcl9tcyI6OTh9fQ==",
+          "receipt": {
+            "requestSha256": "111e6407733b75ad0b25282e5c5d6f08de010f76fc6c09d74f8236cc724a453f",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+            "storedBodySha256": "f92cc347a9933256a7f754d6b8f7e6f48d2df0fc303caa97ddfdefaaf39e3fa9",
+            "responseByteLength": 958,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "4",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:52 GMT",
+              "retry-after": null
+            },
+            "credits": 4,
+            "creditsAsReturned": "4",
+            "startedAt": "2026-10-27T11:44:54.173Z",
+            "endedAt": "2026-10-27T11:44:54.832Z",
+            "latencyMs": 648.8344000000006,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "4138520dadd56a681afb1beced6d69da186863be962d52175212b1857cdc7250",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "2998f0b3fd527bf681bc6641d239a230a11fd5407800faf38c93f8712302d331",
+          "requestBase64": "eyJ0ZXh0IjoiU2NlbmUgODEyIGludGVydmlldyByZWNvcmRpbmcgcmVxdWlyZXMgd3JpdHRlbiBpbnRlcnZpZXctbG9jYXRpb24gcmVsZWFzZS4iLCJpbnN0cnVjdGlvbnMiOiJDb3B5IG9ubHkgc2hvcnQgdmVyYmF0aW0gc291cmNlIHBocmFzZXMgaWRlbnRpZnlpbmcgZG9jdW1lbnRhcnkgcHJlcmVxdWlzaXRlcywgcmVxdWlyZWQgcGh5c2ljYWwgcHJvdGVjdGlvbnMsIG9yIHJlcXVpcmVkIG9uLXNpdGUgcGVyc29ubmVsLiBBcHBseSB0aGUgc2FtZSB0aHJlZSBmaWVsZHMgdG8gdGhlIGVudGlyZSBzdXBwbGllZCBwYXNzYWdlLiBSZXBvcnQgZmFjdHMgdGhlIHRleHQgZXhwcmVzc2x5IHN0YXRlcyBhcmUgUkVRVUlSRUQgZm9yIHRoZSBkZXNjcmliZWQgYWN0aXZpdHksIG5vdCBoaXN0b3JpY2FsIGV4YW1wbGVzLCBzdWdnZXN0aW9ucywgcHJvcG9zYWxzLCByZXF1ZXN0cyB0byBleHRlbmQgY29uZGl0aW9ucyB0byBhbm90aGVyIHNjZW5lLCBvciBndWVzc2VzLiBEbyBub3QgZGVjaWRlIHdoZXRoZXIgYW55IHBlcm1pc3Npb24gaGFzIGJlZW4gaXNzdWVkLCBpcyBhdXRoZW50aWMsIGFwcGxpZXMgbGVnYWxseSwgb3Igc2F0aXNmaWVzIGEgcHJlcmVxdWlzaXRlLiBEbyBub3QgaW5mZXIgY2xlYXJhbmNlIG9yIGNyZWF0ZSB0YXNrcy4gRWFjaCByZXR1cm5lZCBwaHJhc2UgbXVzdCBvY2N1ciBpbiB0aGUgZXhhY3Qgb3JpZ2luYWwgc291cmNlIHRleHQuIExlYXZlIGFuIHVuc3VwcG9ydGVkIGxpc3QgZW1wdHkuIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgcGhyYXNlcyBuYW1pbmcgd3JpdHRlbiBhcHByb3ZhbHMsIHNpZ25lZCByZWxlYXNlcywgb3Igd3JpdHRlbiBjb25zZW50cyB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgc2F5cyBtdXN0IGJlIG9idGFpbmVkIG9yIHByZXNlbnRlZCBiZWZvcmUgYW4gYWN0aXZpdHk7IGNvcHkgZWFjaCBvcmlnaW5hbCBwaHJhc2UsIG5vdCBhbiBpc3N1YW5jZSB2ZXJkaWN0IiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo1LCJmb3JtYXQiOiJ0ZXh0In0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgc291cmNlIHBocmFzZXMgbmFtaW5nIHBoeXNpY2FsIHByb3RlY3RpdmUgbWVhc3VyZXMgb3IgZXF1aXBtZW50IHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSByZXF1aXJlcyBkdXJpbmcgYW4gYWN0aXZpdHk7IG5vdCBzdWdnZXN0aW9ucywgaGlzdG9yaWMgZXhhbXBsZXMsIG9yIG9wdGlvbmFsIGVxdWlwbWVudCIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NiwiZm9ybWF0IjoidGV4dCJ9LCJyZXF1aXJlZF9vbl9zaXRlX3BlcnNvbm5lbCI6eyJkZXNjcmlwdGlvbiI6IkRpc3RpbmN0IHNob3J0IHNvdXJjZSBwaHJhc2VzIG5hbWluZyBhIHN1cGVydmlzaW5nIG9yIHNhZmV0eSBwZXJzb24gb3Igcm9sZSB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgcmVxdWlyZXMgb24gc2l0ZSBkdXJpbmcgYW4gYWN0aXZpdHk7IG5vdCBhIGRvY3VtZW50IHNpZ25hdG9yeSwgaGlzdG9yaWNhbCBwYXJ0aWNpcGFudCwgb3Igb3B0aW9uYWwgb2JzZXJ2ZXIiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjUsImZvcm1hdCI6InRleHQifX19",
+          "idempotencyKey": "69048516-9983-47d3-9018-1a1fc2bcc247",
+          "startedAt": "2026-10-27T11:44:54.877Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbIndyaXR0ZW4gaW50ZXJ2aWV3LWxvY2F0aW9uIHJlbGVhc2UiXSwiaXRlbXMiOlt7InZhbHVlIjoid3JpdHRlbiBpbnRlcnZpZXctbG9jYXRpb24gcmVsZWFzZSIsInN0YXJ0IjozOSwiZW5kIjo3MywiY29uZmlkZW5jZSI6MC45OTk5OTk5OTg2ODgzMDYxLCJwX3ZlcmlmeSI6MC45OTk5OTk5OTg2ODgzMDYxfV0sImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk4Njg4MzA2MX0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7InZhbHVlIjpbXSwiaXRlbXMiOltdLCJjb25maWRlbmNlIjoxfSwicmVxdWlyZWRfb25fc2l0ZV9wZXJzb25uZWwiOnsidmFsdWUiOltdLCJpdGVtcyI6W10sImNvbmZpZGVuY2UiOjF9fSwidGltaW5nIjp7InJlYWRfbXMiOjc1LCJmb3J3YXJkcyI6eyJmaWVsZHMiOls0LDFdfSwic3RhZ2VzIjp7ImZpZWxkcyI6eyJyZWFkZXIiOiJyZWNvZ25pdGlvbiIsImRvYyI6MSwiYnJhbmNoZXMiOjEsImdlbmVyYXRlIjo1OSwibG9jYXRlIjowLCJ2ZXJpZnkiOjEzLCJhc3NlbWJsZSI6MH19LCJ0b3RhbF9tcyI6NzUsInNlcnZlcl9tcyI6Nzh9fQ==",
+          "receipt": {
+            "requestSha256": "2998f0b3fd527bf681bc6641d239a230a11fd5407800faf38c93f8712302d331",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "ac526d34f194c0f2dd580021801bf63a98a230b77b3c4cd17eec345603997491",
+            "storedBodySha256": "ac526d34f194c0f2dd580021801bf63a98a230b77b3c4cd17eec345603997491",
+            "responseByteLength": 619,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "4",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:44:52 GMT",
+              "retry-after": null
+            },
+            "credits": 4,
+            "creditsAsReturned": "4",
+            "startedAt": "2026-10-27T11:44:54.877Z",
+            "endedAt": "2026-10-27T11:44:55.446Z",
+            "latencyMs": 555.9141,
+            "model": "clocked-1.0"
+          }
+        }
+      ],
+      "createdAt": "2026-10-27T11:44:48.141Z",
+      "updatedAt": "2026-10-27T11:44:55.472Z",
+      "notClearance": true,
+      "sha256": "4f759905152b2b2e8543568d9aed705b840fd2c372e8ed8313ad98885c67f64d"
+    }
+  ],
+  "originals": {
+    "schema": "beforeroll-original-source-register-v1",
+    "productionId": "live_20261027_F_collection",
+    "persistedVersion": 4,
+    "referenced": 2,
+    "preserved": 2,
+    "missingOriginalSha256": [],
+    "files": [
+      {
+        "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "byteCount": 534
+      },
+      {
+        "rawHash": "ca9951d1e1214d004c388c95993f1898f49f2294a7907c3cc60b05c2bc9e8d69",
+        "byteCount": 139
+      }
+    ]
+  },
+  "originalBytesIncluded": false,
+  "secretsIncluded": false,
+  "notClearance": true,
+  "notice": "Includes current and historical model journals. Archived journals are checksum-checked, not revalidated against absent historical sources. Exact original bytes are available separately or in an encrypted lifecycle backup. Retained task credits are the original reported costs, never additional charges."
+}

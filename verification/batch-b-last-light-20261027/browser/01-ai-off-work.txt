@@ -1,0 +1,269 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas / version 6"
+- generic: Private local production
+- main:
+  - generic: Production work
+  - heading "What the shoot still depends on." [level=1]
+  - paragraph: Follow source questions into individual reviews, conditions and dated scene work. Recording completion never establishes filming permission.
+  - text: Work type
+  - combobox "Work type":
+    - option "All current work" [selected]
+    - option "Sources and verification"
+    - option "Clocked source checks"
+    - option "Human documentary review"
+    - option "Dates and conditions"
+    - option "Historical changes"
+  - button "Show selected work"
+  - article:
+    - generic: S31
+    - 'heading "S31: confirm scene schedule" [level=2]'
+    - generic: Operations
+    - paragraph: Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - 'heading "S32: confirm scene schedule" [level=2]'
+    - generic: Operations
+    - paragraph: Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.
+    - button "Open work ↗"
+  - article:
+    - generic: All
+    - heading "Review document CORRESPONDENCE" [level=2]
+    - generic: Document CORRESPONDENCE · Human
+    - paragraph: Record claimed issuer, document role and reference from the original source; do not assume authenticity.
+    - button "Open work ↗"
+  - article:
+    - generic: All
+    - heading "Review document LENDER" [level=2]
+    - generic: Document LENDER · Human
+    - paragraph: Record claimed issuer, document role and reference from the original source; do not assume authenticity.
+    - button "Open work ↗"
+  - article:
+    - generic: All
+    - heading "Review document VENUE" [level=2]
+    - generic: Document VENUE · Human
+    - paragraph: Record claimed issuer, document role and reference from the original source; do not assume authenticity.
+    - button "Open work ↗"
+  - article:
+    - generic: All
+    - heading "Review document VISITOR" [level=2]
+    - generic: Document VISITOR · Human
+    - paragraph: Record claimed issuer, document role and reference from the original source; do not assume authenticity.
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U002" [level=2]
+    - generic: Document CORRESPONDENCE · Passage U002 · Exact source check · Human
+    - paragraph: "Source quotation: “Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record impos…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U001" [level=2]
+    - generic: Document CORRESPONDENCE · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request h…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U002" [level=2]
+    - generic: Document LENDER · Passage U002 · Exact source check · Human
+    - paragraph: "Source quotation: “The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the c…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U001" [level=2]
+    - generic: Document LENDER · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded tr…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U001" [level=2]
+    - generic: Document VENUE · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room …”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U001" [level=2]
+    - generic: Document VISITOR · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “The visitor café sells postcards of planets.”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - heading "Scene 31 · Review passage U002" [level=2]
+    - generic: Document VISITOR · Passage U002 · Exact source check · Human
+    - paragraph: "Source quotation: “Staff tea deliveries arrive at noon; the souvenir till accepts card payments.”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U002" [level=2]
+    - generic: Document CORRESPONDENCE · Passage U002 · Exact source check · Human
+    - paragraph: "Source quotation: “Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record impos…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U001" [level=2]
+    - generic: Document CORRESPONDENCE · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request h…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U002" [level=2]
+    - generic: Document LENDER · Passage U002 · Exact source check · Human
+    - paragraph: "Source quotation: “The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the c…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U001" [level=2]
+    - generic: Document LENDER · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded tr…”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U001" [level=2]
+    - generic: Document VENUE · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room …”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U001" [level=2]
+    - generic: Document VISITOR · Passage U001 · Exact source check · Human
+    - paragraph: "Source quotation: “The visitor café sells postcards of planets.”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - heading "Scene 32 · Review passage U002" [level=2]
+    - generic: Document VISITOR · Passage U002 · Exact source check · Human
+    - paragraph: "Source quotation: “Staff tea deliveries arrive at noon; the souvenir till accepts card payments.”"
+    - paragraph: Review the original source passage independently; no model finding is available yet.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: map permit to scene" [level=2]'
+    - generic: Human
+    - paragraph: Record relevant exact source clauses and review their applicability to this scene.
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - 'heading "S32: map permit to scene" [level=2]'
+    - generic: Human
+    - paragraph: Record relevant exact source clauses and review their applicability to this scene.
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document CORRESPONDENCE · Passage U002 · Exact source check · Execution
+    - paragraph: "Source quotation: “Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record impos…”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document CORRESPONDENCE · Passage U001 · Exact source check · Execution
+    - paragraph: "Source quotation: “UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request h…”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document LENDER · Passage U001 · Exact source check · Execution
+    - paragraph: "Source quotation: “Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded tr…”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document LENDER · Passage U002 · Exact source check · Execution
+    - paragraph: "Source quotation: “The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the c…”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document VENUE · Passage U001 · Exact source check · Execution
+    - paragraph: "Source quotation: “FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room …”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document VISITOR · Passage U002 · Exact source check · Execution
+    - paragraph: "Source quotation: “Staff tea deliveries arrive at noon; the souvenir till accepts card payments.”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S31
+    - 'heading "S31: source check not evaluated" [level=2]'
+    - generic: Document VISITOR · Passage U001 · Exact source check · Execution
+    - paragraph: "Source quotation: “The visitor café sells postcards of planets.”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - article:
+    - generic: S32
+    - 'heading "S32: source check not evaluated" [level=2]'
+    - generic: Document CORRESPONDENCE · Passage U001 · Exact source check · Execution
+    - paragraph: "Source quotation: “UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request h…”"
+    - paragraph: A Clocked comparison has not been sent for this exact passage and scene.
+    - generic "Read complete original passage"
+    - button "Open work ↗"
+  - navigation:
+    - button "Previous actions" [disabled]
+    - generic: 1–30 / 36 matching · 36 total
+    - button "Next actions"
+  - complementary:
+    - heading "Production pathways" [level=2]
+    - button "Import & verify ↗"
+    - button "Source checks ↗"
+    - button "Scene investigation ↗"
+    - button "Dates & conditions ↗"
+    - button "Documentary scope ↗"
+    - button "Source revision ↗"
+    - button "Complete history ↗"
+    - button "Export & recovery ↗"
+    - button "Review session ↗"
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

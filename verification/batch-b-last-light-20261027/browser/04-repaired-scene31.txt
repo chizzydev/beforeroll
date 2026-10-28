@@ -1,0 +1,176 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas / version 6"
+- generic: Private local production
+- main:
+  - complementary:
+    - heading "Scenes" [level=2]
+    - generic: "2"
+    - generic: Find a scene
+    - searchbox "Find a scene"
+    - navigation "Scene register":
+      - 'button "31 Morrow Observatory Archive 08:00–09:00 insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table"':
+        - generic: "31"
+        - strong: Morrow Observatory Archive
+        - generic: 08:00–09:00
+        - generic: "insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table"
+      - button "32 Morrow Observatory Archive 09:00–10:00 interview beside the closed display case; the atlas stays inside and nobody touches it":
+        - generic: "32"
+        - strong: Morrow Observatory Archive
+        - generic: 09:00–10:00
+        - generic: interview beside the closed display case; the atlas stays inside and nobody touches it
+    - generic: 1–2 / 2
+    - button "Previous scene page" [disabled]: ←
+    - button "Next scene page" [disabled]: →
+    - button "Production work ↗"
+  - generic: S31 / Morrow Observatory Archive
+  - heading "Scene 31. Follow the evidence." [level=1]
+  - paragraph: 08:00–09:00 · original call-sheet activity
+  - region "Source-grounded coordinator tasks":
+    - heading "What to verify before this take" [level=2]
+    - generic: 6 source-bound suggestions
+    - paragraph: Clocked-assisted source discovery · all suggestions need human verification. Review coverage and uncertainty in Analysis. Historical U01 recordings remain separately labeled. Fresh-document reliability and time savings are unmeasured.
+    - article:
+      - generic: S31 · U001 · Underlying restriction; applicability still requires human review
+      - generic: Needs human verification
+      - heading "Confirm the required venue duty officer is present." [level=3]
+      - blockquote:
+        - paragraph: "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+        - generic: VENUE / U001 · full original source unit
+      - paragraph:
+        - text: "Required phrase:"
+        - strong: venue duty officer
+      - paragraph: Issuance UNKNOWN. Documentary authenticity, scope, supporting evidence and physical fulfillment remain unverified.
+      - button "Read original & provenance ↗"
+      - button "Record suggestion review"
+      - generic "Exact quotation and Clocked provenance"
+    - article:
+      - generic: S31 · U001 · Underlying restriction; applicability still requires human review
+      - generic: Needs human verification
+      - heading "Locate and verify written lender consent." [level=3]
+      - blockquote:
+        - paragraph: Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.
+        - generic: LENDER / U001 · full original source unit
+      - paragraph:
+        - text: "Required phrase:"
+        - strong: written lender consent
+      - paragraph: Issuance UNKNOWN. Documentary authenticity, scope, supporting evidence and physical fulfillment remain unverified.
+      - button "Read original & provenance ↗"
+      - button "Record suggestion review"
+      - generic "Exact quotation and Clocked provenance"
+    - article:
+      - generic: S31 · U001 · Underlying restriction; applicability still requires human review
+      - generic: Needs human verification
+      - heading "Confirm supporting book cradle." [level=3]
+      - blockquote:
+        - paragraph: Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.
+        - generic: LENDER / U001 · full original source unit
+      - paragraph:
+        - text: "Required phrase:"
+        - strong: supporting book cradle
+      - paragraph: Issuance UNKNOWN. Documentary authenticity, scope, supporting evidence and physical fulfillment remain unverified.
+      - button "Read original & provenance ↗"
+      - button "Record suggestion review"
+      - generic "Exact quotation and Clocked provenance"
+    - article:
+      - generic: S31 · U001 · Underlying restriction; applicability still requires human review
+      - generic: Needs human verification
+      - heading "Confirm padded transfer tray." [level=3]
+      - blockquote:
+        - paragraph: Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.
+        - generic: LENDER / U001 · full original source unit
+      - paragraph:
+        - text: "Required phrase:"
+        - strong: padded transfer tray
+      - paragraph: Issuance UNKNOWN. Documentary authenticity, scope, supporting evidence and physical fulfillment remain unverified.
+      - button "Read original & provenance ↗"
+      - button "Record suggestion review"
+      - generic "Exact quotation and Clocked provenance"
+    - article:
+      - generic: S31 · U001 · Underlying restriction; applicability still requires human review
+      - generic: Needs human verification
+      - heading "Confirm the collections conservator remains present throughout the take." [level=3]
+      - blockquote:
+        - paragraph: Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.
+        - generic: LENDER / U001 · full original source unit
+      - paragraph:
+        - text: "Required phrase:"
+        - strong: collections conservator
+      - paragraph: Issuance UNKNOWN. Documentary authenticity, scope, supporting evidence and physical fulfillment remain unverified.
+      - button "Read original & provenance ↗"
+      - button "Record suggestion review"
+      - generic "Exact quotation and Clocked provenance"
+    - article:
+      - generic: S31 · U002 · Underlying restriction; applicability still requires human review
+      - generic: Needs human verification
+      - heading "Verify claimed variation · locate Consent Schedule CS-9" [level=3]
+      - blockquote:
+        - paragraph: The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.
+        - generic: LENDER / U002 · full original source unit
+      - paragraph:
+        - text: "Documentary statement to investigate:"
+        - strong: The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.
+      - paragraph:
+        - strong: "Source claims, not verified authority:"
+        - text: "claims_issued_variation. Supporting instrument: Consent Schedule CS-9. Locate and independently verify it; availability and actual issuance remain unestablished."
+      - paragraph: Issuance UNKNOWN. Documentary authenticity, scope, supporting evidence and physical fulfillment remain unverified.
+      - button "Read original & provenance ↗"
+      - button "Record suggestion review"
+      - generic "Exact quotation and Clocked provenance"
+    - generic "Suggestion review history · 0"
+  - link "Next human action ↓":
+    - /url: "#next-human-action"
+  - generic: "01"
+  - text: Planned activity
+  - paragraph: "insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table"
+  - generic "Exact original call-sheet row"
+  - generic: "02"
+  - text: Clocked intelligence
+  - heading "Clocked found a source relationship to investigate." [level=2]
+  - paragraph: Discovery assessment recorded. Inspect the exact source and remaining documentary questions; this is not filming authority.
+  - generic: Clocked discovery result · original receipt retained
+  - strong: Discovery Decide recorded · human review remains
+  - generic "Exact provenance & model fields"
+  - button "Inspect analysis scope ↗"
+  - generic: "03"
+  - text: Original documentary language
+  - text: Source passage
+  - combobox "Source passage":
+    - 'option "VENUE / U001 · FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filmi" [selected]'
+    - option "LENDER / U001 · Direct manipulation of the historical atlas must not begin until"
+    - option "LENDER / U002 · The lender letter describes Variation VA-17 as issued for the clo"
+    - option "CORRESPONDENCE / U001 · UNSIGNED REQUEST — the producer asks to move the atlas out of the"
+    - 'option "CORRESPONDENCE / U002 · Historical condition record from a previous exhibition: reference"'
+    - option "VISITOR / U001 · The visitor café sells postcards of planets."
+    - option "VISITOR / U002 · Staff tea deliveries arrive at noon; the souvenir till accepts ca"
+  - blockquote:
+    - paragraph: "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+    - generic: VENUE / U001 · revision 1 · original codepoints [0, 255)
+  - button "Read original & provenance ↗"
+  - paragraph: Original language is evidence. BeforeRoll does not authenticate its issuance.
+  - generic: "04"
+  - text: Human action
+  - heading "Check the source’s scene scope and conditions." [level=3]
+  - paragraph: Establish whether an issued variation applies to this activity and scene. Keep any request and outstanding condition separate.
+  - button "Record source review →"
+  - button "Compare documentary scope →"
+  - generic "All source checks for this scene · 7"
+  - navigation "Scene findings pages":
+    - button "Previous scene findings" [disabled]
+    - generic: 1–7 / 7
+    - button "Next scene findings" [disabled]
+  - generic "Scene scope, conditions and documentary reasoning"
+  - generic "Next scene work · 11"
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

@@ -1,0 +1,1949 @@
+{
+  "schema": "beforeroll-atomic-production-workflow-v1",
+  "version": 3,
+  "workspace": {
+    "schema": "beforeroll-workspace-v1",
+    "id": "live_20261027_D_road",
+    "title": "Fictional live acceptance D_ROAD",
+    "revision": 2,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "D_ROAD-permit.txt",
+        "role": "permit",
+        "text": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\n\nThe filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nAn unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 183,
+            "text": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+            "hash": "8b553089d869ff00cb5002ad6090863d20f45a9fe676a10c0f7093c958b9d418",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 185,
+            "end": 340,
+            "text": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+            "hash": "2612375093719bd030d3b5cc1e731befbf9267e744c96c8506e27a316e959c56",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 342,
+            "end": 485,
+            "text": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+            "hash": "bb5b3af861dc58172eebfadb7f3d36def6537cadb46871d0879ff4f809ba8954",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "D_ROAD-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "normalizedHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "byteCount": 485,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "callSheet": {
+      "text": "Scene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane\nScene 602 | Access road | 23:00-23:30 | tripod filming beside temporary filming lane",
+      "sourceHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+      "scenes": [
+        {
+          "id": "S601",
+          "number": "601",
+          "location": "Access road",
+          "start": "22:00",
+          "end": "23:00",
+          "activity": "travelling camera along temporary filming lane",
+          "rawWindow": "22:00-23:00",
+          "source": {
+            "start": 0,
+            "end": 86,
+            "fields": {
+              "scene": {
+                "start": 6,
+                "end": 9
+              },
+              "location": {
+                "start": 12,
+                "end": 23
+              },
+              "window": {
+                "start": 26,
+                "end": 37
+              },
+              "activity": {
+                "start": 40,
+                "end": 86
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        },
+        {
+          "id": "S602",
+          "number": "602",
+          "location": "Access road",
+          "start": "23:00",
+          "end": "23:30",
+          "activity": "tripod filming beside temporary filming lane",
+          "rawWindow": "23:00-23:30",
+          "source": {
+            "start": 87,
+            "end": 171,
+            "fields": {
+              "scene": {
+                "start": 93,
+                "end": 96
+              },
+              "location": {
+                "start": 99,
+                "end": 110
+              },
+              "window": {
+                "start": 113,
+                "end": 124
+              },
+              "activity": {
+                "start": 127,
+                "end": 171
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        }
+      ],
+      "unsupported": [],
+      "format": "Explicit pipe-delimited rows only",
+      "revision": 1,
+      "historicalSceneEpochs": {
+        "S601": 0,
+        "S602": 0
+      },
+      "importReceipt": {
+        "kind": "callSheet",
+        "name": "D_ROAD-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "normalizedHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "byteCount": 171,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2,
+        "sourceHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1"
+      }
+    },
+    "assessments": [],
+    "reviewActions": [],
+    "imports": [
+      {
+        "kind": "permit",
+        "name": "D_ROAD-permit.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "normalizedHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "byteCount": 485,
+        "sourceMap": [],
+        "warnings": [
+          "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+        ],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 1,
+        "documentId": "PERMIT"
+      },
+      {
+        "kind": "callSheet",
+        "name": "D_ROAD-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "normalizedHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "byteCount": 171,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2
+      }
+    ],
+    "authorityLinks": [],
+    "sceneAuthority": [],
+    "sceneSchedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "notClearance": true
+  },
+  "productionId": "live_20261027_D_road",
+  "asOf": "2026-10-27T11:38:45.912Z",
+  "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+  "originals": {
+    "schema": "beforeroll-original-source-register-v1",
+    "productionId": "live_20261027_D_road",
+    "persistedVersion": 3,
+    "referenced": 2,
+    "preserved": 2,
+    "missingOriginalSha256": [],
+    "files": [
+      {
+        "rawHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "byteCount": 171
+      },
+      {
+        "rawHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "byteCount": 485
+      }
+    ],
+    "notClearance": true
+  },
+  "overview": {
+    "version": 3,
+    "schema": "beforeroll-production-review-v1",
+    "id": "live_20261027_D_road",
+    "title": "Fictional live acceptance D_ROAD",
+    "revision": 2,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "D_ROAD-permit.txt",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "revision": 1,
+        "sourceFormat": "UTF8_TEXT",
+        "unitCount": 3,
+        "gaps": 0,
+        "pdfTranscription": null,
+        "rawSourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 183,
+            "text": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 185,
+            "end": 340,
+            "text": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 342,
+            "end": 485,
+            "text": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          }
+        ]
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S601",
+        "number": "601",
+        "location": "Access road",
+        "activity": "travelling camera along temporary filming lane",
+        "start": "22:00",
+        "end": "23:00",
+        "source": {
+          "start": 0,
+          "end": 86,
+          "fields": {
+            "scene": {
+              "start": 6,
+              "end": 9
+            },
+            "location": {
+              "start": 12,
+              "end": 23
+            },
+            "window": {
+              "start": 26,
+              "end": 37
+            },
+            "activity": {
+              "start": 40,
+              "end": 86
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      },
+      {
+        "id": "S602",
+        "number": "602",
+        "location": "Access road",
+        "activity": "tripod filming beside temporary filming lane",
+        "start": "23:00",
+        "end": "23:30",
+        "source": {
+          "start": 87,
+          "end": 171,
+          "fields": {
+            "scene": {
+              "start": 93,
+              "end": 96
+            },
+            "location": {
+              "start": 99,
+              "end": 110
+            },
+            "window": {
+              "start": 113,
+              "end": 124
+            },
+            "activity": {
+              "start": 127,
+              "end": 171
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      }
+    ],
+    "schedule": {
+      "present": true,
+      "sourceHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+      "sourceFormat": "UTF8_TEXT",
+      "unsupportedRows": 0
+    },
+    "sceneAuthority": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "sceneReview": [
+      {
+        "sceneId": "S601",
+        "location": "Access road",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S602",
+        "location": "Access road",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "operations": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "sceneOperations": [
+      {
+        "sceneId": "S601",
+        "sceneSourceHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S602",
+        "sceneSourceHash": "f889500d6405e5be45c21e8972e78bd0b38b959ce5895969fe2712a604fe276c",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "reviewActions": [],
+    "reviewedCount": 0,
+    "plannedCalls": 6,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "shown": 6,
+      "hasMore": false
+    },
+    "tasks": [
+      {
+        "id": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "0a4ca45f7d7e2be23ed3107ba4858c4358040caf0251e9ff86ef8d589eabe60b",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "59ec7142325091153ecf3083467fdc60993746c724c4455d25479939e2387413",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "714bf75b2a7c89098b41c1ca0c248823552e9556a11553b10d79901efd19a157",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "4e8233b19dc6c810b4d720ddd77bcbf7a62495e9bbae354535c2d0bec00114f3",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "9eefd04d03f0172a12b2f9ed383425bb6a33749702b913c5f25475350915d920",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "ade775a3130caf185e84230b8ac59b873d570fc1c199bcd3d467bfbb988ea1c5",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "dea78a34c34a62ccefcd8297fdf245ecff85b6f332fea09959151a0b6f66b4e7",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "b65ac7b31b87fb6b451e5b6f348bfdcf430ffee34e2904ad3fa3bddf93dcfcf1",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "af8f102211eff5de9b8382d4cd8e44172199f75c49c0ed81703930f4ce67b01e",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      }
+    ],
+    "state": "READY_FOR_HUMAN_SOURCE_REVIEW",
+    "notClearance": true,
+    "modelRequests": 0,
+    "notice": "Model attempts and human review are independent; no scene is authorized. Evaluated counts cover segmented candidates only."
+  },
+  "execution": {
+    "schema": "beforeroll-execution-status-v1",
+    "projectId": "live_20261027_D_road",
+    "planKey": "e2841a743ebd54359ea0dac8c1dda6035d73a341c0a0ea8ccc42b0838012b240",
+    "planned": 6,
+    "attempts": 0,
+    "completed": 0,
+    "unknownBilling": 0,
+    "state": "READY",
+    "stale": false,
+    "archivedRuns": 0,
+    "byScene": {
+      "S601": {
+        "planned": 3,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      },
+      "S602": {
+        "planned": 3,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "byDocument": {
+      "PERMIT": {
+        "planned": 6,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "remaining": 6,
+    "completionPercent": 0,
+    "knownCredits": 0,
+    "creditProjection": null,
+    "unknownCreditEntries": 0,
+    "retainedAttempts": 0,
+    "newPlanAttempts": 0,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "hasMore": false
+    },
+    "entries": [
+      {
+        "id": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "requestHash": "0a4ca45f7d7e2be23ed3107ba4858c4358040caf0251e9ff86ef8d589eabe60b",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "requestHash": "59ec7142325091153ecf3083467fdc60993746c724c4455d25479939e2387413",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "requestHash": "714bf75b2a7c89098b41c1ca0c248823552e9556a11553b10d79901efd19a157",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "4e8233b19dc6c810b4d720ddd77bcbf7a62495e9bbae354535c2d0bec00114f3",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "requestHash": "9eefd04d03f0172a12b2f9ed383425bb6a33749702b913c5f25475350915d920",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "ade775a3130caf185e84230b8ac59b873d570fc1c199bcd3d467bfbb988ea1c5",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "requestHash": "dea78a34c34a62ccefcd8297fdf245ecff85b6f332fea09959151a0b6f66b4e7",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "b65ac7b31b87fb6b451e5b6f348bfdcf430ffee34e2904ad3fa3bddf93dcfcf1",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "requestHash": "af8f102211eff5de9b8382d4cd8e44172199f75c49c0ed81703930f4ce67b01e",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Only segmented source candidates have been assessed. Provider outputs are uncalibrated; no filming clearance or document authenticity is established."
+  },
+  "authority": {
+    "version": 3,
+    "schema": "beforeroll-document-authority-graph-v1",
+    "workspaceId": "live_20261027_D_road",
+    "workspaceRevision": 2,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "D_ROAD-permit.txt",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "revision": 1,
+        "metadata": null,
+        "metadataStatus": "NOT_REVIEWED",
+        "notClearance": true
+      }
+    ],
+    "links": [],
+    "scenes": [
+      {
+        "sceneId": "S601",
+        "location": "Access road",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S602",
+        "location": "Access road",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      }
+    ],
+    "summary": {
+      "links": 0,
+      "currentLinks": 0,
+      "staleLinks": 0,
+      "unreviewedDocuments": [
+        "PERMIT"
+      ],
+      "unverifiedAmendments": 0,
+      "unresolvedConflicts": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 60,
+      "hasMore": false
+    },
+    "notClearance": true,
+    "warning": "Human-entered documentary graph, NOT legal precedence, signature authentication, grant validation, or proof that all permits have been supplied."
+  },
+  "sceneAuthority": {
+    "version": 3,
+    "schema": "beforeroll-scene-authority-register-v1",
+    "workspaceId": "live_20261027_D_road",
+    "revision": 2,
+    "scenes": [
+      {
+        "sceneId": "S601",
+        "location": "Access road",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S602",
+        "location": "Access road",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "records": [],
+    "pagination": {
+      "offset": 0,
+      "limit": 100,
+      "hasMore": false
+    },
+    "summary": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "notClearance": true,
+    "warning": "Human-recorded scope claims are not signature validation, fulfilled prerequisites, lawful authority or filming clearance."
+  },
+  "documentaryReasoning": {
+    "schema": "beforeroll-documentary-reasoning-v1",
+    "workspaceId": "live_20261027_D_road",
+    "workspaceRevision": 2,
+    "asOf": "2026-10-27T11:38:45.912Z",
+    "scenes": [
+      {
+        "sceneId": "S601",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "travelling camera along temporary filming lane",
+        "originalLocation": "Access road",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      },
+      {
+        "sceneId": "S602",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "tripod filming beside temporary filming lane",
+        "originalLocation": "Access road",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      }
+    ],
+    "summary": {
+      "scenes": 2,
+      "restrictions": 0,
+      "requests": 0,
+      "pendingGrantClaims": 0,
+      "scenesWithReview": 0,
+      "modelSupportedHumanClaims": 0,
+      "modelOnlyFindings": 0
+    },
+    "notClearance": true,
+    "warning": "Deterministic comparison of human-recorded facets only; NOT a legal authority determination, cryptographic signature check, verified issuance, permission to film, or proof all source documents were supplied."
+  },
+  "operations": {
+    "version": 3,
+    "schema": "beforeroll-production-operations-v1",
+    "workspaceId": "live_20261027_D_road",
+    "revision": 2,
+    "asOf": "2026-10-27T11:38:45.912Z",
+    "scenes": [
+      {
+        "sceneId": "S601",
+        "sceneSourceHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S602",
+        "sceneSourceHash": "f889500d6405e5be45c21e8972e78bd0b38b959ce5895969fe2712a604fe276c",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "schedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "summary": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "notClearance": true,
+    "notice": "Dates, scope, condition fulfillment and signatures are human-entered, NOT verified filming authorization. Never infer clearance from a zero count."
+  },
+  "dossier": {
+    "schema": "beforeroll-integrated-production-dossier-v1",
+    "productionId": "live_20261027_D_road",
+    "title": "Fictional live acceptance D_ROAD",
+    "persistedVersion": 3,
+    "revision": 2,
+    "asOf": "2026-10-27T11:38:45.912Z",
+    "counts": {
+      "documents": 1,
+      "scenes": 2,
+      "unresolvedCallSheetRows": 0,
+      "planTasks": 6,
+      "completedModelChecks": 0,
+      "unattemptedChecks": 6,
+      "uncertainModelChecks": 0,
+      "archivedModelRuns": 0,
+      "currentReviewedTasks": 0,
+      "currentUnresolvedHumanReviews": 0,
+      "staleHumanReviews": 0,
+      "unresolvedPdfTranscriptions": 0,
+      "undatedScenes": 2,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "unverifiedDocumentConflicts": 0,
+      "currentSceneScopeAssertions": 0,
+      "staleSceneScopeAssertions": 0,
+      "unreviewedDocumentProvenance": 1
+    },
+    "outstanding": [
+      {
+        "code": "MODEL_SOURCE_CHECKS_OUTSTANDING",
+        "count": 6
+      },
+      {
+        "code": "CURRENT_HUMAN_REVIEWS_INCOMPLETE",
+        "count": 6
+      },
+      {
+        "code": "SCENE_DATES_NOT_REVIEWED",
+        "count": 2
+      },
+      {
+        "code": "UNREVIEWED_DOCUMENT_PROVENANCE",
+        "count": 1
+      }
+    ],
+    "scenes": [
+      {
+        "sceneId": "S601",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 3,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      },
+      {
+        "sceneId": "S602",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 3,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      }
+    ],
+    "productionState": "OPEN_REVIEW_ITEMS",
+    "notClearance": true,
+    "sha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3"
+  },
+  "coordinatorTasks": {
+    "schema": "beforeroll-coordinator-suggestions-v1",
+    "state": "NO_MATCHING_RECORDED_LITERAL_EVIDENCE",
+    "candidates": [],
+    "warnings": [],
+    "fieldStates": [],
+    "reviewHistory": [],
+    "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+    "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+    "issuance": "UNKNOWN",
+    "notClearance": true,
+    "humanEffortSeconds": null,
+    "notice": "Literal facts become proposed human work, never issued permission or proof of fulfillment. Other clauses still require manual review."
+  },
+  "actionQueue": {
+    "schema": "beforeroll-production-action-queue-v1",
+    "productionId": "live_20261027_D_road",
+    "workspaceRevision": 2,
+    "persistedVersion": 3,
+    "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+    "total": 17,
+    "filteredTotal": 17,
+    "byCategory": {
+      "SOURCE": 0,
+      "EXECUTION": 6,
+      "HUMAN": 9,
+      "OPERATIONS": 2,
+      "HISTORY": 0
+    },
+    "byPriority": {
+      "BLOCKED": 0,
+      "UNCERTAIN": 0,
+      "SCOPE": 0,
+      "REVIEW": 11,
+      "PENDING": 6,
+      "HISTORY": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 30,
+      "hasMore": false
+    },
+    "filter": {
+      "kind": "ALL",
+      "sceneId": null
+    },
+    "actions": [
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S601: confirm scene schedule",
+        "sceneId": "S601",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "6036800babd93e593ffe38c2430435eb0679cf1416d27bd80ea6a42da3734cfa",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S602: confirm scene schedule",
+        "sceneId": "S602",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "41bd33a5b9d7517ccb4518a204165d71b5d7acb6c4daec172d1268806eaf07c6",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "RECORD_DOCUMENT_PROVENANCE",
+        "subject": "Review document PERMIT",
+        "sceneId": null,
+        "documentId": "PERMIT",
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "24e470d2925867253ee2046ab5a1cafbc5cfd2db7bbf658a5e312c0657c1cb48",
+        "detail": "Record claimed issuer, document role and reference from the original source; do not assume authenticity.",
+        "sourceQuote": null,
+        "route": "authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S601: source finding awaits human review",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "taskId": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "20f2ba8ebbecc41e00d8132be1aaa4f14c8ff34355c54708e083fdefd615bf2d",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "route": "review",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S601: source finding awaits human review",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "taskId": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "70b4b36f541dc16c5fc2168fac30caf6dbd4308cca84b3563adc8513787881aa",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "route": "review",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S601: source finding awaits human review",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "taskId": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "b4c6e3bb1a57e95775a0e66b6f4e5de3cf13d9d180b69edaa421c68a42e9ef8a",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "route": "review",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S602: source finding awaits human review",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "taskId": "b65ac7b31b87fb6b451e5b6f348bfdcf430ffee34e2904ad3fa3bddf93dcfcf1",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "0bd64875f6225a18a1b688e28f23e1770ab2974eadef26f6139a7f94b27140b1",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "route": "review",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S602: source finding awaits human review",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "taskId": "4e8233b19dc6c810b4d720ddd77bcbf7a62495e9bbae354535c2d0bec00114f3",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "40913d62058603319baf216737e1f286725f3d3137b69599a42d6bdda45a4912",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "route": "review",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S602: source finding awaits human review",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "taskId": "ade775a3130caf185e84230b8ac59b873d570fc1c199bcd3d467bfbb988ea1c5",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "f3982cafcc261a62a1979ad160b9442dd3527db6ff64eae7f883c2f258b3d01c",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "route": "review",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S601: map permit to scene",
+        "sceneId": "S601",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "3dd5ed593818261db37afbc95c56438126160641897617c29dfbf06b4446a0f2",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S602: map permit to scene",
+        "sceneId": "S602",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "7f796fb02f1ec8feb650503e23e701d08cbeee3ed0588ec48625b82a4bfa4f5f",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S601: source check not evaluated",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "taskId": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "22b6bc7883bd217b9aa5eba1e69352b4d97e039d2a2181a356560050949f7ed3",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "route": "execution",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S601: source check not evaluated",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "taskId": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "5624ce5864ba3b17d57db298a7547d14f7bd872605a50bb619a54f982d209024",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "route": "execution",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S601: source check not evaluated",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "taskId": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "f075a5655f5d403ebc5ad22c20f7a3b7c77b93111200c7088017ef190e6aa28d",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "route": "execution",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S602: source check not evaluated",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "taskId": "b65ac7b31b87fb6b451e5b6f348bfdcf430ffee34e2904ad3fa3bddf93dcfcf1",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "059ea6e56a9add5763906b787db7e5f1464df61c51fb2222f9b082e33ad0fe93",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "route": "execution",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S602: source check not evaluated",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "taskId": "ade775a3130caf185e84230b8ac59b873d570fc1c199bcd3d467bfbb988ea1c5",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "89b7660be3f423b116e5e629a09473ef33637dcaee8b8dac5495afe407b854f9",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "route": "execution",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S602: source check not evaluated",
+        "sceneId": "S602",
+        "documentId": "PERMIT",
+        "taskId": "4e8233b19dc6c810b4d720ddd77bcbf7a62495e9bbae354535c2d0bec00114f3",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "id": "8d0ce9411f8c65d191836801f608f2e7c1c833fcbdc56dd193bfcee09ae7058b",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "route": "execution",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+  },
+  "sceneWorkbench": {
+    "schema": "beforeroll-scene-workbench-v1",
+    "productionId": "live_20261027_D_road",
+    "title": "Fictional live acceptance D_ROAD",
+    "workspaceRevision": 2,
+    "persistedVersion": 3,
+    "asOf": "2026-10-27T11:38:45.912Z",
+    "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+    "scene": {
+      "sceneId": "S601",
+      "location": "Access road",
+      "activity": "travelling camera along temporary filming lane",
+      "start": "22:00",
+      "end": "23:00",
+      "originalRow": "Scene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane",
+      "schedule": {
+        "sceneId": "S601",
+        "sceneSourceHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      "claimIds": [],
+      "currentHumanClaims": 0,
+      "taskIds": [
+        "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3"
+      ],
+      "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "planned": 3,
+      "modelComplete": 0,
+      "neverAttempted": 3,
+      "interruptedOrBillingUnknown": 0,
+      "humanReviewed": 0,
+      "humanUnresolved": 0,
+      "issues": [
+        "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+        "MODEL_CHECKS_NOT_EVALUATED",
+        "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+        "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+      ],
+      "readiness": "OUTSTANDING_REVIEW",
+      "notClearance": true
+    },
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "D_ROAD-permit.txt",
+        "sourceSha256": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "originalBytesSha256": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "sourceFormat": "UTF8_TEXT",
+        "requiresPdfTextReview": false,
+        "sourceCoverageGaps": [],
+        "authorityMetadata": null,
+        "plannedSceneChecks": 3,
+        "evaluatedSceneChecks": 0,
+        "reviewedSceneChecks": 0,
+        "notClearance": true
+      }
+    ],
+    "scopeClaims": [],
+    "documentaryLinks": [],
+    "schedules": [],
+    "conditions": [],
+    "coordinatorTasks": {
+      "schema": "beforeroll-coordinator-suggestions-v1",
+      "state": "NO_MATCHING_RECORDED_LITERAL_EVIDENCE",
+      "candidates": [],
+      "warnings": [],
+      "fieldStates": [],
+      "reviewHistory": [],
+      "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+      "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+      "issuance": "UNKNOWN",
+      "notClearance": true,
+      "humanEffortSeconds": null,
+      "notice": "Literal facts become proposed human work, never issued permission or proof of fulfillment. Other clauses still require manual review."
+    },
+    "tasks": [
+      {
+        "id": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "sceneHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "unitId": "U001",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "quote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "requestHash": "0a4ca45f7d7e2be23ed3107ba4858c4358040caf0251e9ff86ef8d589eabe60b",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "sceneHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "unitId": "U002",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "quote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "requestHash": "59ec7142325091153ecf3083467fdc60993746c724c4455d25479939e2387413",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+        "sceneId": "S601",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "sceneHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "unitId": "U003",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "quote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "requestHash": "714bf75b2a7c89098b41c1ca0c248823552e9556a11553b10d79901efd19a157",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      }
+    ],
+    "taskPagination": {
+      "offset": 0,
+      "limit": 40,
+      "total": 3,
+      "hasMore": false
+    },
+    "actions": {
+      "schema": "beforeroll-production-action-queue-v1",
+      "productionId": "live_20261027_D_road",
+      "workspaceRevision": 2,
+      "persistedVersion": 3,
+      "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+      "total": 17,
+      "filteredTotal": 8,
+      "byCategory": {
+        "SOURCE": 0,
+        "EXECUTION": 6,
+        "HUMAN": 9,
+        "OPERATIONS": 2,
+        "HISTORY": 0
+      },
+      "byPriority": {
+        "BLOCKED": 0,
+        "UNCERTAIN": 0,
+        "SCOPE": 0,
+        "REVIEW": 11,
+        "PENDING": 6,
+        "HISTORY": 0
+      },
+      "pagination": {
+        "offset": 0,
+        "limit": 30,
+        "hasMore": false
+      },
+      "filter": {
+        "kind": "ALL",
+        "sceneId": "S601"
+      },
+      "actions": [
+        {
+          "category": "OPERATIONS",
+          "priority": 3,
+          "code": "DATE_SCENE",
+          "subject": "S601: confirm scene schedule",
+          "sceneId": "S601",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "6036800babd93e593ffe38c2430435eb0679cf1416d27bd80ea6a42da3734cfa",
+          "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+          "sourceQuote": null,
+          "route": "operations",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S601: source finding awaits human review",
+          "sceneId": "S601",
+          "documentId": "PERMIT",
+          "taskId": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "id": "20f2ba8ebbecc41e00d8132be1aaa4f14c8ff34355c54708e083fdefd615bf2d",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+          "route": "review",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S601: source finding awaits human review",
+          "sceneId": "S601",
+          "documentId": "PERMIT",
+          "taskId": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "id": "70b4b36f541dc16c5fc2168fac30caf6dbd4308cca84b3563adc8513787881aa",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+          "route": "review",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S601: source finding awaits human review",
+          "sceneId": "S601",
+          "documentId": "PERMIT",
+          "taskId": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "id": "b4c6e3bb1a57e95775a0e66b6f4e5de3cf13d9d180b69edaa421c68a42e9ef8a",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+          "route": "review",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_SCENE_SCOPE",
+          "subject": "S601: map permit to scene",
+          "sceneId": "S601",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "3dd5ed593818261db37afbc95c56438126160641897617c29dfbf06b4446a0f2",
+          "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+          "sourceQuote": null,
+          "route": "scene-authority",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S601: source check not evaluated",
+          "sceneId": "S601",
+          "documentId": "PERMIT",
+          "taskId": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "id": "22b6bc7883bd217b9aa5eba1e69352b4d97e039d2a2181a356560050949f7ed3",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+          "route": "execution",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S601: source check not evaluated",
+          "sceneId": "S601",
+          "documentId": "PERMIT",
+          "taskId": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "id": "5624ce5864ba3b17d57db298a7547d14f7bd872605a50bb619a54f982d209024",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+          "route": "execution",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S601: source check not evaluated",
+          "sceneId": "S601",
+          "documentId": "PERMIT",
+          "taskId": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "id": "f075a5655f5d403ebc5ad22c20f7a3b7c77b93111200c7088017ef190e6aa28d",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+          "route": "execution",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        }
+      ],
+      "notClearance": true,
+      "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+    },
+    "documentaryReasoning": {
+      "sceneId": "S601",
+      "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "originalActivity": "travelling camera along temporary filming lane",
+      "originalLocation": "Access road",
+      "restrictions": [],
+      "requests": [],
+      "amendments": [],
+      "requirements": [],
+      "conflicts": [],
+      "claims": [],
+      "modelOnlyFindings": [],
+      "openPrerequisites": 0,
+      "documentaryConflicts": 0,
+      "humanRecordedIssuedClaims": 0,
+      "unresolvedGrantClaims": 0,
+      "clockedModelEvidenceCount": 0,
+      "notClearance": true,
+      "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+    },
+    "summary": {
+      "planned": 3,
+      "completedModelChecks": 0,
+      "uncertainModelChecks": 0,
+      "currentTaskReviews": 0,
+      "currentScopeClaims": 0,
+      "staleScopeClaims": 0,
+      "currentPrerequisites": 0,
+      "openPrerequisites": 0,
+      "actionCount": 8
+    },
+    "sceneReviewState": "OUTSTANDING_REVIEW",
+    "notClearance": true,
+    "notice": "Single source-linked scene review, NOT a filming clearance, legal interpretation, authenticated permit or fulfilled condition.",
+    "sha256": "918be9fae12c648c67ff589cacd887bfd03343aa15d0223eb52bb0a7e3d51721"
+  },
+  "journey": {
+    "schema": "beforeroll-production-journey-v1",
+    "productionId": "live_20261027_D_road",
+    "workspaceRevision": 2,
+    "persistedVersion": 3,
+    "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+    "checkpoints": [
+      {
+        "id": "sources",
+        "number": "01",
+        "title": "Import and verify",
+        "description": "Load originals, transcribe where needed and confirm source coverage.",
+        "status": "CURRENT",
+        "summary": "1 documents · 2 scenes · 0 originals missing",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "scope",
+        "number": "02",
+        "title": "Map authority",
+        "description": "Review documentary provenance and exact scene applicability.",
+        "status": "ATTENTION",
+        "summary": "1 document roles unreviewed · 2 scenes without scope assertions",
+        "blockers": [
+          "Documentary provenance or scene scope needs responsible human review."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "analysis",
+        "number": "03",
+        "title": "Run source checks",
+        "description": "Perform current source-to-scene Clocked comparisons.",
+        "status": "ATTENTION",
+        "summary": "0/6 source checks recorded · 0 uncertain",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "review",
+        "number": "04",
+        "title": "Investigate findings",
+        "description": "Record source-bound human decisions and follow-up.",
+        "status": "ATTENTION",
+        "summary": "0/6 current human reviews · 0 follow-ups",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "operations",
+        "number": "05",
+        "title": "Resolve prerequisites",
+        "description": "Confirm scene dates, operating conditions and outstanding work.",
+        "status": "ATTENTION",
+        "summary": "0/2 scenes dated · 0 open prerequisites · 0 overdue",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "changes",
+        "number": "06",
+        "title": "Reconcile revisions",
+        "description": "Preview and commit changed originals, then revisit affected checks.",
+        "status": "AVAILABLE",
+        "summary": "0 historical human reviews · 0 archived Clocked runs",
+        "blockers": [
+          "Every replacement requires a separate source-bound impact preview and exact commit."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "evidence",
+        "number": "07",
+        "title": "Export evidence",
+        "description": "Inspect and export current and historical production evidence.",
+        "status": "ATTENTION",
+        "summary": "4 outstanding evidence classes · project version 3",
+        "blockers": [
+          "Exports document recorded evidence and limitations; never filming clearance."
+        ],
+        "notClearance": true
+      }
+    ],
+    "suggestedStage": "scope",
+    "allCheckpointsCurrent": false,
+    "caveat": "Operational checkpoints are not approval, authorization, calibrated model confidence or filming clearance.",
+    "notClearance": true,
+    "sha256": "68d10cd2609a0af7b0ced0b8a24aa346b2aec2e82926785e639da3a8f4b0af1c"
+  },
+  "consistency": {
+    "schema": "beforeroll-production-consistency-v1",
+    "productionId": "live_20261027_D_road",
+    "persistedVersion": 3,
+    "workspaceRevision": 2,
+    "asOf": "2026-10-27T11:38:45.912Z",
+    "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+    "currentSourceInventory": {
+      "documents": 1,
+      "scenes": 2,
+      "sourcePlanTasks": 6
+    },
+    "currentEvidence": {
+      "modelComplete": 0,
+      "modelPending": 6,
+      "modelUncertain": 0,
+      "humanReviewed": 0,
+      "openHumanReviews": 0
+    },
+    "historicalEvidence": {
+      "humanReviews": 0,
+      "archivedModelRuns": 0,
+      "staleScopeClaims": 0
+    },
+    "originals": {
+      "referenced": 2,
+      "preserved": 2,
+      "missing": 0
+    },
+    "checks": [
+      "ORIGINAL_SOURCE_REFERENCES",
+      "PLAN_TO_DOSSIER_TASKS",
+      "SCENE_TOTALS",
+      "CURRENT_VS_HISTORICAL_REVIEWS",
+      "MODEL_ATTEMPT_ACCOUNTING",
+      "OPERATIONS_COUNTS",
+      "ORIGINAL_FILE_CUSTODY",
+      "ACTION_AND_WORKBENCH_ALIGNMENT",
+      "JOURNEY_ALIGNMENT"
+    ],
+    "state": "INTERNAL_RECONCILIATION_PASS_NOT_SOURCE_AUTHENTICATION",
+    "notClearance": true,
+    "limitation": "Checks internal source and recorded evidence consistency only; not external document authenticity, comprehensive permit coverage, model accuracy, legal authority or filming clearance.",
+    "sha256": "520dbfbd36c8eb48752241d5f6743ac7a5e7714f967429f10f798ab3191beb9d"
+  },
+  "history": {
+    "schema": "beforeroll-production-history-v1",
+    "productionId": "live_20261027_D_road",
+    "persistedVersion": 3,
+    "dossierSha256": "ade5b13ef013c22ad5a0a95a2fab8d3d6a218879fac8a945caf95695838602d3",
+    "total": 2,
+    "filteredTotal": 2,
+    "filter": {
+      "kind": "ALL",
+      "state": "ALL",
+      "search": ""
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 20,
+      "shown": 2,
+      "hasMore": false
+    },
+    "records": [
+      {
+        "category": "SOURCES",
+        "id": "source:0:eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "title": "permit: D_ROAD-permit.txt",
+        "status": "CURRENT",
+        "documentId": "PERMIT",
+        "originalHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "notClearance": true
+      },
+      {
+        "category": "SOURCES",
+        "id": "source:1:0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "title": "callSheet: D_ROAD-call.txt",
+        "status": "CURRENT",
+        "documentId": null,
+        "originalHash": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+        "notClearance": true
+      }
+    ],
+    "selected": null,
+    "notClearance": true,
+    "sha256": "63e56a7946ab8ab64f0ad354432c9f7f3941e54d883d3522d491cfbc72d807c0"
+  },
+  "notClearance": true
+}

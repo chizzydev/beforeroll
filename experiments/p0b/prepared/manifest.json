@@ -1,0 +1,65 @@
+{
+  "stage": 0,
+  "status": "FROZEN_PREPARED_NOT_DISPATCHED",
+  "requestContractFingerprint": "c87e4120c2b4fbdc9ebdfffc44029d6397c6b63eac25969f51565d29fa8c4805",
+  "baselineConfigurationFingerprint": "5a2bf2aec826d54de89e1649a43d9a799ce663c3f5ffeb54aacb801a682de84e",
+  "baselineImplementationFingerprint": "2cbdf8b65fcb63165dfdfa44fd7af0faa288a8775e3d00acbcdaaa8c0286804f",
+  "sourceFiles": {
+    "experiments/p0b/baseline.mjs": "2cbdf8b65fcb63165dfdfa44fd7af0faa288a8775e3d00acbcdaaa8c0286804f",
+    "experiments/p0b/candidates.mjs": "c4b222e618a87cc5c9f49b93d090c0340ecdac2ba101d520c5c90e7cd6d301a2",
+    "experiments/p0b/contract.mjs": "b4f0ba0ac69ef6b1be2aa1608149509df22d52d3a21f5fa18e704f04cb1d2800",
+    "experiments/p0b/decoder.mjs": "84cbc69670907385d78f0ce7ea752b4bb1b3d12630a23ec8e7cd994c84f687d9",
+    "experiments/p0b/development.mjs": "086d9502676e1ff1ee5e36e66e4103ee521125dbbc2bb583085a7c4674aa5743",
+    "experiments/p0b/prepare.mjs": "d24c7d92c39eba0af9b54c22646252493f9799cd315bb8a296fb1ed56db9d1f8",
+    "experiments/p0b/stage0.test.mjs": "a1461e558cf4e87893b34dcba38fda84a5768692075b7ad112b6dda7f48f6b34",
+    "experiments/p0b/tasks.mjs": "26fe6da9bd5e4a35ce4f0fbf3f90e09c0a628896fe890722db44dd616b94e5ee",
+    "experiments/p0b/view.mjs": "3350f88373e8d597cbdfa24644e7f7f8659411d6262221bd6030707fb3fc8480",
+    "src/intelligence-workflow.mjs": "e9f6bda7c2e3e5080e85bbfb3c1ff6911b7a73325bc9e19267c9b0f71b273075",
+    "src/permit-intelligence.mjs": "1ed2afc8b71c1c47f0ed4215dcf585bf20e9dc7ebf4ee4c2f7401c956b4c21cc",
+    "src/engine.mjs": "fb87faaeff68562dfca985489a188d237172c001a19f3335fe7f4713e1f905b5"
+  },
+  "harnessSourceFingerprint": "608adc7470e4c0c998b1c6188cb9c125722a86d4919219f22c715b82d93b4067",
+  "preparationFingerprint": "351da7bff7785d4a63d5195a128533d080d1fbcb8d9dd0fd1d592690ba349982",
+  "probes": [
+    {
+      "taskId": "63f399ef71e64f2a18bd105ee9f263a727463012dfbe98efd849d3b926938d19",
+      "sceneId": "S47",
+      "unitId": "U002",
+      "requestHashes": {
+        "B": "c3c972e32844a5832c37135917246b2a41559e75e8d506f38d79e47fa5d6bbf0",
+        "C": "4fb271db78a63bc4a8bafecb65b7f69b25a3ccad9412f0128a67ae0c69425b17"
+      }
+    },
+    {
+      "taskId": "b40830d4fc340bee7ba557ff0f2401d86121b7544ec53e3501222ba7421b0526",
+      "sceneId": "S47",
+      "unitId": "U003",
+      "requestHashes": {
+        "B": "b3cf630ea5ca662b93e1ba24c2d18f7fdc650f931390d3e1b7a408394696f33f",
+        "C": "6ddd97af196743896cacb63e7698b45a2c9ca7a524610bb48c24f7f4699e2145"
+      }
+    },
+    {
+      "taskId": "0b2cf203659fe35ed6d2b9866e73971b17a87b026301ab39b5a51ac8f6eb1940",
+      "sceneId": "S48",
+      "unitId": "U004",
+      "requestHashes": {
+        "B": "88579f5fdab502f85c3b9710ad35377cfef7d89e04ba86189e3a86a50e9a2d2c",
+        "C": "6c8f4463ec64fe64f66e2cb6cc3771cba8f50669f1f43c26abf8a04a91a945ad"
+      }
+    },
+    {
+      "taskId": "81084385d8504fea4f716f6b222a42260e98f5a61977ab4e74f0a545c6cf2f05",
+      "sceneId": "S47",
+      "unitId": "U004",
+      "requestHashes": {
+        "B": "87c49ed7f0354ccf28dc46a245cb57db20d85a598f73245ff5387801bf5c7d31",
+        "C": "fba4a04d5588e77d89b2a0f6b1a1a7e682fa9e1d24ef325c7428862c327a41db"
+      }
+    }
+  ],
+  "calls": 0,
+  "credits": 0,
+  "providerSchemaAcceptance": "UNVERIFIED",
+  "policy": "No live execution or blind evaluation authorized. Source edits change fingerprints; no silent refresh of freeze."
+}

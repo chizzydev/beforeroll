@@ -42,12 +42,13 @@ export function buildProductionActions(d,{offset=0,limit=30,kind='ALL',sceneId=n
  for(const t of d.sceneTasks){
   const ref={sceneId:t.sceneId,documentId:t.documentId,unitId:t.unitId,taskId:t.id,sourceHash:t.documentHash,sourceQuote:t.quote,route:'review'};
   if(t.modelState==='IN_FLIGHT'||t.modelState==='BILLING_UNKNOWN')push('EXECUTION',1,'INVESTIGATE_PROVIDER_OUTCOME',`${t.sceneId}: uncertain Clocked request`,'An attempted provider request has an unknown outcome or billing. Inspect records; do not automatically retry.',{...ref,route:'execution'});
-  else if(t.modelState==='NOT_ATTEMPTED')push('EXECUTION',4,'RUN_UNEVALUATED_SOURCE_CHECK',`${t.sceneId}: source check not evaluated`,'A Clocked comparison has not been sent for this exact passage and scene.',{...ref,route:'execution'});
+  else if(t.modelState==='NOT_ATTEMPTED'&&t.discoveryCheck?.decideStatus!=='ACCEPTED')push('EXECUTION',4,'RUN_UNEVALUATED_SOURCE_CHECK',`${t.sceneId}: source check not evaluated`,'A Clocked comparison has not been sent for this exact passage and scene.',{...ref,route:'execution'});
+  if(t.discoveryCheck?.decideStatus==='ACCEPTED'&&(t.discoveryCheck.route==='AMBIGUOUS_MANUAL_REVIEW'||t.discoveryCheck.scopeCaution))push('HUMAN',2,'INVESTIGATE_DISCOVERY_UNCERTAINTY',`${t.sceneId}: discovery requires documentary investigation`,`${t.discoveryCheck.route} · ${t.discoveryCheck.scopeCaution??'Model relevance is ambiguous'}. Review the exact source; no applicability or authority established.`,ref);
   if(t.modelState==='COMPLETE'&&t.model?.code==='CLOCKED_CONDITIONAL_AUTHORITY_REVIEW'&&t.model?.scope?.matched!==true){
    push('HUMAN',2,'VERIFY_MODEL_GRANT_SCOPE',`${t.sceneId}: model grant scope unverified`,'Clocked identified a possible grant, but the exact original quotation has not established a sufficiently scoped scene authorization.',ref);
   }
   const review=reviews.get(t.id);
-  if(!review)push('HUMAN',3,'REVIEW_EXACT_SOURCE_TASK',`${t.sceneId}: source finding awaits human review`,t.modelState==='COMPLETE'?'Inspect the original passage, model result and documentary scope. Human review is not clearance.':'Review the original source passage independently; no model finding is available yet.',ref);
+  if(!review)push('HUMAN',3,'REVIEW_EXACT_SOURCE_TASK',`${t.sceneId}: source finding awaits human review`,t.modelState==='COMPLETE'||t.discoveryCheck?.decideStatus==='ACCEPTED'?'Inspect the original passage, model result and documentary scope. Human review is not clearance.':'Review the original source passage independently; no model finding is available yet.',ref);
   else if(review.decision!=='RESOLVED_BY_HUMAN')push('HUMAN',3,'FOLLOW_UP_HUMAN_REVIEW',`${t.sceneId}: human follow-up ${review.decision}`,`Current reviewer: ${review.reviewer}. Latest rationale: ${review.reason}`,ref);
  }
  const claimsByScene=new Map();for(const c of d.sceneScopeClaims){if(c.sourceState!=='CURRENT_UNVERIFIED')continue;const l=claimsByScene.get(c.sceneId)||[];l.push(c);claimsByScene.set(c.sceneId,l);}

@@ -1,0 +1,590 @@
+{
+  "plan": {
+    "schema": "beforeroll-core-discovery-plan-v1",
+    "id": "5c13bff2f13f59ec99f37c30e566ec19571e383fedded877649a0647943c2e16",
+    "workspaceId": "live_20261027_F_collection",
+    "documents": [
+      {
+        "id": "PERMIT",
+        "hash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "revision": 1,
+        "epoch": 0,
+        "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S811",
+        "epoch": 0,
+        "hash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "row": "Scene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit"
+      },
+      {
+        "id": "S812",
+        "epoch": 0,
+        "hash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "row": "Scene 812 | Interview room | 14:00-15:00 | interview recording"
+      }
+    ],
+    "taskIds": [
+      "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+      "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+      "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+      "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+      "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+      "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+      "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+      "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565"
+    ],
+    "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+    "workspaceRevision": 2,
+    "documentIds": [
+      "PERMIT"
+    ],
+    "sceneIds": [
+      "S811",
+      "S812"
+    ],
+    "sources": [
+      {
+        "id": "PERMIT",
+        "name": "F_COLLECTION-permit.txt",
+        "role": "permit",
+        "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nScene 812 interview recording requires written interview-location release.\n\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+        "sourceHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 223,
+            "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+            "hash": "11b3f6d77e1834654839dd8e851b1f3074f85459ef4f0bc0f6a5d6ca2976a832",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 225,
+            "end": 299,
+            "text": "Scene 812 interview recording requires written interview-location release.",
+            "hash": "81e1d970428d24803e683c08c0c7b4c432073b5a24900d7ff62a16de87de8eb2",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 301,
+            "end": 413,
+            "text": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+            "hash": "b3ad5a7307e11a0ef50b73f9a85638874cc900b8b6ae812a62c1117d4b1b301d",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 415,
+            "end": 534,
+            "text": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+            "hash": "17bba8b97fabd04309217196e314f4dcdfd73357e2d2d7db00f8d18cb5a8dd9f",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "F_COLLECTION-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "normalizedHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+          "byteCount": 534,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "tasks": [
+      {
+        "id": "c22d0b58030433723b584da0261d01ef0b5d6fa8cd56e878ae37f973b01cd94a",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S811",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "sourceRange": [
+          0,
+          223
+        ],
+        "sourceQuote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,223):\nFor Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 812 interview recording requires written interview-location release.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "549cf3b1c940649e43e3bc20cb7cab0abf825b7da54fea6a20f9be4a83287548",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "e419c80b53dda5fccc4a992967bed37327fde9702c6b98806a2a7903bb6f977d",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S811",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "sourceRange": [
+          225,
+          299
+        ],
+        "sourceQuote": "Scene 812 interview recording requires written interview-location release.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [225,299):\nScene 812 interview recording requires written interview-location release.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\nAFTER (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "f400dedb7fbaec510fbd1f24aa8dc2b7e28e33547fdab5e353e8cd5932c255b1",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "874662e2808dba44d09346126f19c0225ab697dbd52f9c119fa88f8051cb1f98",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S811",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "sourceRange": [
+          301,
+          413
+        ],
+        "sourceQuote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [301,413):\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 812 interview recording requires written interview-location release.\nAFTER (U004): An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "63a9394a4b46b42286a4e41b0ca93e2fce18fd0405cd76af4f8e3bf8d57e4353",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "3b5e8895a50cf202975ec74a648f2122964097183c471201dd3964d560d491f0",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S811",
+        "sceneHash": "296c247b88c49d4f607d4537545adaa779ecc80c7952c290ddbb62a7942f662f",
+        "sourceRange": [
+          415,
+          534
+        ],
+        "sourceQuote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+        "unitId": "U004",
+        "contextUnitIds": [
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [415,534):\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 811 | Display hall | 13:00-14:00 | macro filming of historical exhibit\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "42b85d49e5bf7177496feb18317926c3f6057b16328f0ef52f719769f1161eda",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "b38712b74491c70500d6d077ce8703e07495445cdb403dbd230e7a5d9de635b0",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S812",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "sourceRange": [
+          0,
+          223
+        ],
+        "sourceQuote": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,223):\nFor Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 812 interview recording requires written interview-location release.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "3f8d783cb5c244bf47b34603fdb4d8a0aab1d8151375848e32f140e1cf92abe7",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "00e81d84520e962033b9369480c38fab2ac2792ccd3c704e5320210d67810e50",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S812",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "sourceRange": [
+          225,
+          299
+        ],
+        "sourceQuote": "Scene 812 interview recording requires written interview-location release.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [225,299):\nScene 812 interview recording requires written interview-location release.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.\nAFTER (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "f77c33f3d82a122210ab15765a20284c63f78d1cd168abe9b98f1458a3de9b4d",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "0fe339566623c6d5d2aa5d81d19ae3a93708cba7c98b32dcc4306cc06ab689f3",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S812",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "sourceRange": [
+          301,
+          413
+        ],
+        "sourceQuote": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [301,413):\nLast season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 812 interview recording requires written interview-location release.\nAFTER (U004): An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "3ec3f781d6c707ab53ed1f322b900c9ea35014a1c2bded4e0b096142c493a397",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "cbf14f8219fc88d692714591f22a496d8c7a06b2efbed4c3eeac14fe86283565",
+        "documentId": "PERMIT",
+        "documentHash": "4fe77e4d68d9ddd1765fadbb2d59354a012ed50178fe05a5f24169e74112b3d6",
+        "documentRevision": 1,
+        "sceneId": "S812",
+        "sceneHash": "b80de61c30a16588db88ba379ffbf09745c4a427c5ed0f6f35a2ae8b71b35f00",
+        "sourceRange": [
+          415,
+          534
+        ],
+        "sourceQuote": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+        "unitId": "U004",
+        "contextUnitIds": [
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [415,534):\nAn unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): Last season's footage catalogue records an old permit and a former escort; these are historical references only.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 812 | Interview room | 14:00-15:00 | interview recording\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "63ae326ead361242cec7604233c4e982a133cb018adac01966bf2ba3a03defcf",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      }
+    ],
+    "extracts": [
+      {
+        "id": "0d6962f2633f126871892f717a9cb60d5a3d7b55b6652545f9c25e4fd778e00c",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "payload": {
+          "text": "For Scene 811, the historical exhibit must remain in acid-free handling trays, a signed collection-loan agreement must be presented, and an accredited collections technician must stay beside the display throughout the take.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "4138520dadd56a681afb1beced6d69da186863be962d52175212b1857cdc7250",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "payload": {
+          "text": "Scene 812 interview recording requires written interview-location release.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "8868ea4bbd9d4ff0edc089df10d11e9b5709f821512f83640cc4035d4b46e346",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "payload": {
+          "text": "Last season's footage catalogue records an old permit and a former escort; these are historical references only.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "aef0b29bdebdecd26ea9227aa5739c8c97a77bb235f37a6fdb7d9763c94c87f8",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "payload": {
+          "text": "An unsigned draft for Scene 812 proposes a smoke cordon observer; no current duty or approval is imposed by that draft.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      }
+    ],
+    "verifiedBy": "Codex fictional-document source verification",
+    "sourceConfirmed": true,
+    "limits": {
+      "maxCalls": 13,
+      "creditBudget": 256,
+      "creditReservePerCall": 8
+    },
+    "decideCalls": 8,
+    "maxExtractCalls": 4,
+    "worstCaseCalls": 12,
+    "concurrency": 1,
+    "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+    "notClearance": true
+  },
+  "previewSha256": "b5e54b9a2ac88ebd0ca4924f5ccf902c8ce873cf47ef5770b03df73bf7e05afc",
+  "existingFence": false,
+  "notClearance": true
+}

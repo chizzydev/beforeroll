@@ -1,0 +1,10 @@
+{
+  "schema": "beforeroll-live-campaign-closed-v1",
+  "requests": 57,
+  "providerReportedCredits": 102,
+  "remainingRequestAllowance": 3,
+  "remainingReportedCreditAllowance": 398,
+  "unknownOutcomes": 0,
+  "reason": "Six complete cases including independent post-repair retest; further paid requests unnecessary",
+  "budgetSha256": "590793d576bf3132461b6572513af5876049a9089057fab4bc0a2fa2d199119e"
+}

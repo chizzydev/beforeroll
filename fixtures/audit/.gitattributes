@@ -1,0 +1,3 @@
+# Preserve the exact imported artifact bytes used by the recorded-evidence integrity pin.
+U01_MATCHED_EXTRACT_OWNER_RECORDED_v1.json -text
+LAST_LIGHT_COMPLETE_RECORDED_v1.json -text

@@ -1,0 +1,664 @@
+TAP version 13
+# Subtest: contract is frozen, six typed questions only, all requested labels bounded by publisher limits
+ok 1 - contract is frozen, six typed questions only, all requested labels bounded by publisher limits
+  ---
+  duration_ms: 2.7943
+  type: 'test'
+  ...
+# Subtest: only the four named exposed U01 pairs are prepared; no outputs, credits or dispatch
+ok 2 - only the four named exposed U01 pairs are prepared; no outputs, credits or dispatch
+  ---
+  duration_ms: 4.7114
+  type: 'test'
+  ...
+# Subtest: B uses the exact production request, including original context and question order
+ok 3 - B uses the exact production request, including original context and question order
+  ---
+  duration_ms: 0.5353
+  type: 'test'
+  ...
+# Subtest: source binding is exact Unicode codepoint text with complete neighboring context
+ok 4 - source binding is exact Unicode codepoint text with complete neighboring context
+  ---
+  duration_ms: 0.9702
+  type: 'test'
+  ...
+# Subtest: changed document text invalidates task/candidate
+ok 5 - changed document text invalidates task/candidate
+  ---
+  duration_ms: 1.8416
+  type: 'test'
+  ...
+# Subtest: changed document revision invalidates task/candidate
+ok 6 - changed document revision invalidates task/candidate
+  ---
+  duration_ms: 1.1362
+  type: 'test'
+  ...
+# Subtest: changed document epoch invalidates task/candidate
+ok 7 - changed document epoch invalidates task/candidate
+  ---
+  duration_ms: 1.6686
+  type: 'test'
+  ...
+# Subtest: changed scene row invalidates task/candidate
+ok 8 - changed scene row invalidates task/candidate
+  ---
+  duration_ms: 1.1097
+  type: 'test'
+  ...
+# Subtest: changed scene epoch invalidates task/candidate
+ok 9 - changed scene epoch invalidates task/candidate
+  ---
+  duration_ms: 0.8009
+  type: 'test'
+  ...
+# Subtest: source reversal cannot resurrect an earlier task when epoch advances
+ok 10 - source reversal cannot resurrect an earlier task when epoch advances
+  ---
+  duration_ms: 0.9014
+  type: 'test'
+  ...
+# Subtest: deep unassessable JSON fails closed while preserving exact raw input
+ok 11 - deep unassessable JSON fails closed while preserving exact raw input
+  ---
+  duration_ms: 6.3936
+  type: 'test'
+  ...
+# Subtest: forged task quote, request, packet and scene identity rejected
+ok 12 - forged task quote, request, packet and scene identity rejected
+  ---
+  duration_ms: 2.8465
+  type: 'test'
+  ...
+# Subtest: raw valid unknown response stays unknown and never becomes a candidate or human resolution
+ok 13 - raw valid unknown response stays unknown and never becomes a candidate or human resolution
+  ---
+  duration_ms: 1.408
+  type: 'test'
+  ...
+# Subtest: missing required relation rejected without coercion
+ok 14 - missing required relation rejected without coercion
+  ---
+  duration_ms: 1.0138
+  type: 'test'
+  ...
+# Subtest: wrong relation type rejected
+ok 15 - wrong relation type rejected
+  ---
+  duration_ms: 0.2981
+  type: 'test'
+  ...
+# Subtest: missing required passage_roles rejected without coercion
+ok 16 - missing required passage_roles rejected without coercion
+  ---
+  duration_ms: 1.1098
+  type: 'test'
+  ...
+# Subtest: wrong passage_roles type rejected
+ok 17 - wrong passage_roles type rejected
+  ---
+  duration_ms: 0.2029
+  type: 'test'
+  ...
+# Subtest: missing required scene_scope rejected without coercion
+ok 18 - missing required scene_scope rejected without coercion
+  ---
+  duration_ms: 0.6255
+  type: 'test'
+  ...
+# Subtest: wrong scene_scope type rejected
+ok 19 - wrong scene_scope type rejected
+  ---
+  duration_ms: 0.2432
+  type: 'test'
+  ...
+# Subtest: missing required textual_issuance rejected without coercion
+ok 20 - missing required textual_issuance rejected without coercion
+  ---
+  duration_ms: 0.6981
+  type: 'test'
+  ...
+# Subtest: wrong textual_issuance type rejected
+ok 21 - wrong textual_issuance type rejected
+  ---
+  duration_ms: 0.2412
+  type: 'test'
+  ...
+# Subtest: missing required action_families rejected without coercion
+ok 22 - missing required action_families rejected without coercion
+  ---
+  duration_ms: 0.7189
+  type: 'test'
+  ...
+# Subtest: wrong action_families type rejected
+ok 23 - wrong action_families type rejected
+  ---
+  duration_ms: 0.2209
+  type: 'test'
+  ...
+# Subtest: missing required support_state rejected without coercion
+ok 24 - missing required support_state rejected without coercion
+  ---
+  duration_ms: 0.7785
+  type: 'test'
+  ...
+# Subtest: wrong support_state type rejected
+ok 25 - wrong support_state type rejected
+  ---
+  duration_ms: 0.1582
+  type: 'test'
+  ...
+# Subtest: extra field produces preserved schema failure
+ok 26 - extra field produces preserved schema failure
+  ---
+  duration_ms: 1.0375
+  type: 'test'
+  ...
+# Subtest: generated typed property produces preserved schema failure
+ok 27 - generated typed property produces preserved schema failure
+  ---
+  duration_ms: 0.8769
+  type: 'test'
+  ...
+# Subtest: unknown label produces preserved schema failure
+ok 28 - unknown label produces preserved schema failure
+  ---
+  duration_ms: 0.7863
+  type: 'test'
+  ...
+# Subtest: string confidence produces preserved schema failure
+ok 29 - string confidence produces preserved schema failure
+  ---
+  duration_ms: 1.2235
+  type: 'test'
+  ...
+# Subtest: negative probability produces preserved schema failure
+ok 30 - negative probability produces preserved schema failure
+  ---
+  duration_ms: 0.8111
+  type: 'test'
+  ...
+# Subtest: overflow numeric probability produces preserved schema failure
+ok 31 - overflow numeric probability produces preserved schema failure
+  ---
+  duration_ms: 0.695
+  type: 'test'
+  ...
+# Subtest: missing probability produces preserved schema failure
+ok 32 - missing probability produces preserved schema failure
+  ---
+  duration_ms: 1.1499
+  type: 'test'
+  ...
+# Subtest: extra probability produces preserved schema failure
+ok 33 - extra probability produces preserved schema failure
+  ---
+  duration_ms: 1.6088
+  type: 'test'
+  ...
+# Subtest: wrong choice probability produces preserved schema failure
+ok 34 - wrong choice probability produces preserved schema failure
+  ---
+  duration_ms: 1.4313
+  type: 'test'
+  ...
+# Subtest: nonunit choice distribution produces preserved schema failure
+ok 35 - nonunit choice distribution produces preserved schema failure
+  ---
+  duration_ms: 0.9618
+  type: 'test'
+  ...
+# Subtest: selected probability conflict produces preserved schema failure
+ok 36 - selected probability conflict produces preserved schema failure
+  ---
+  duration_ms: 1.1141
+  type: 'test'
+  ...
+# Subtest: unselected high probability produces preserved schema failure
+ok 37 - unselected high probability produces preserved schema failure
+  ---
+  duration_ms: 1.3785
+  type: 'test'
+  ...
+# Subtest: duplicate selected produces preserved schema failure
+ok 38 - duplicate selected produces preserved schema failure
+  ---
+  duration_ms: 0.9615
+  type: 'test'
+  ...
+# Subtest: unknown selected produces preserved schema failure
+ok 39 - unknown selected produces preserved schema failure
+  ---
+  duration_ms: 1.0832
+  type: 'test'
+  ...
+# Subtest: changed threshold produces preserved schema failure
+ok 40 - changed threshold produces preserved schema failure
+  ---
+  duration_ms: 1.394
+  type: 'test'
+  ...
+# Subtest: negative usage produces preserved schema failure
+ok 41 - negative usage produces preserved schema failure
+  ---
+  duration_ms: 1.7504
+  type: 'test'
+  ...
+# Subtest: missing usage produces preserved schema failure
+ok 42 - missing usage produces preserved schema failure
+  ---
+  duration_ms: 1.0718
+  type: 'test'
+  ...
+# Subtest: missing model produces preserved schema failure
+ok 43 - missing model produces preserved schema failure
+  ---
+  duration_ms: 1.0366
+  type: 'test'
+  ...
+# Subtest: image response produces preserved schema failure
+ok 44 - image response produces preserved schema failure
+  ---
+  duration_ms: 0.9097
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: not JSON
+ok 45 - malformed/ambiguous body retained: not JSON
+  ---
+  duration_ms: 0.2949
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: null
+ok 46 - malformed/ambiguous body retained: null
+  ---
+  duration_ms: 0.1036
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: []
+ok 47 - malformed/ambiguous body retained: []
+  ---
+  duration_ms: 0.0689
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: 1
+ok 48 - malformed/ambiguous body retained: 1
+  ---
+  duration_ms: 0.065
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"a":1,"a":2}
+ok 49 - malformed/ambiguous body retained: {"a":1,"a":2}
+  ---
+  duration_ms: 0.0558
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"a":1,"\\u0061":2}
+ok 50 - malformed/ambiguous body retained: {"a":1,"\\u0061":2}
+  ---
+  duration_ms: 0.0958
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"answers":{"x":1,"x":2}}
+ok 51 - malformed/ambiguous body retained: {"answers":{"x":1,"x":2}}
+  ---
+  duration_ms: 0.2254
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"model":1e999}
+ok 52 - malformed/ambiguous body retained: {"model":1e999}
+  ---
+  duration_ms: 0.18
+  type: 'test'
+  ...
+# Subtest: multiselect independent probabilities need not sum to one; explicit cutoff including boundary is frozen
+ok 53 - multiselect independent probabilities need not sum to one; explicit cutoff including boundary is frozen
+  ---
+  duration_ms: 0.6456
+  type: 'test'
+  ...
+# Subtest: NO_ACTION_STATED with concrete action is flagged and quarantined
+ok 54 - NO_ACTION_STATED with concrete action is flagged and quarantined
+  ---
+  duration_ms: 1.1252
+  type: 'test'
+  ...
+# Subtest: UNCERTAIN with concrete action is flagged and quarantined
+ok 55 - UNCERTAIN with concrete action is flagged and quarantined
+  ---
+  duration_ms: 0.9374
+  type: 'test'
+  ...
+# Subtest: request/issuance contradiction retained and cannot generate usable candidates
+ok 56 - request/issuance contradiction retained and cannot generate usable candidates
+  ---
+  duration_ms: 0.2831
+  type: 'test'
+  ...
+# Subtest: REQUIRED_SUPPORT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+ok 57 - REQUIRED_SUPPORT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+  ---
+  duration_ms: 0.9157
+  type: 'test'
+  ...
+# Subtest: REQUIRED_SUPPORT_NOT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+ok 58 - REQUIRED_SUPPORT_NOT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+  ---
+  duration_ms: 0.689
+  type: 'test'
+  ...
+# Subtest: hypothetical candidate binds full original source, raw classification and request; deterministic title only
+ok 59 - hypothetical candidate binds full original source, raw classification and request; deterministic title only
+  ---
+  duration_ms: 2.3275
+  type: 'test'
+  ...
+# Subtest: negative/empty/no-action checks retain inspectable source and human review
+ok 60 - negative/empty/no-action checks retain inspectable source and human review
+  ---
+  duration_ms: 0.8389
+  type: 'test'
+  ...
+# Subtest: BM25 reproduces an independent textbook calculation and includes zero scores
+ok 61 - BM25 reproduces an independent textbook calculation and includes zero scores
+  ---
+  duration_ms: 0.317
+  type: 'test'
+  ...
+# Subtest: lexical normalization, no synonym invention, stable ties and empty corpus behavior
+ok 62 - lexical normalization, no synonym invention, stable ties and empty corpus behavior
+  ---
+  duration_ms: 0.7003
+  type: 'test'
+  ...
+# Subtest: baseline sees full identical source corpus, no selection based on model answers
+ok 63 - baseline sees full identical source corpus, no selection based on model answers
+  ---
+  duration_ms: 0.2428
+  type: 'test'
+  ...
+# Subtest: standalone views escape documentary markup and preserve source coverage on schema errors
+ok 64 - standalone views escape documentary markup and preserve source coverage on schema errors
+  ---
+  duration_ms: 2.7323
+  type: 'test'
+  ...
+# Subtest: offline preparation does not access network even if a fetch implementation is present
+ok 65 - offline preparation does not access network even if a fetch implementation is present
+  ---
+  duration_ms: 36.8107
+  type: 'test'
+  ...
+# Subtest: runner rejects dispatch flags before preparing or writing anything
+ok 66 - runner rejects dispatch flags before preparing or writing anything
+  ---
+  duration_ms: 153.8072
+  type: 'test'
+  ...
+# Subtest: experimental modules cannot import a transport or read environment/owner stores
+ok 67 - experimental modules cannot import a transport or read environment/owner stores
+  ---
+  duration_ms: 8.4885
+  type: 'test'
+  ...
+# Subtest: all Stage 0 trust anchors and exact identities still verify
+ok 68 - all Stage 0 trust anchors and exact identities still verify
+  ---
+  duration_ms: 18.3883
+  type: 'test'
+  ...
+# Subtest: four C requests only, identical frozen bodies, durable intent already on disk at transport entry
+ok 69 - four C requests only, identical frozen bodies, durable intent already on disk at transport entry
+  ---
+  duration_ms: 596.4724
+  type: 'test'
+  ...
+# Subtest: accepted execution cannot be run again; no second transport invocation
+ok 70 - accepted execution cannot be run again; no second transport invocation
+  ---
+  duration_ms: 363.5893
+  type: 'test'
+  ...
+# Subtest: HTTP 301 halts after one original request and remains fenced
+ok 71 - HTTP 301 halts after one original request and remains fenced
+  ---
+  duration_ms: 149.694
+  type: 'test'
+  ...
+# Subtest: HTTP 400 halts after one original request and remains fenced
+ok 72 - HTTP 400 halts after one original request and remains fenced
+  ---
+  duration_ms: 132.1998
+  type: 'test'
+  ...
+# Subtest: HTTP 401 halts after one original request and remains fenced
+ok 73 - HTTP 401 halts after one original request and remains fenced
+  ---
+  duration_ms: 151.3971
+  type: 'test'
+  ...
+# Subtest: HTTP 422 halts after one original request and remains fenced
+ok 74 - HTTP 422 halts after one original request and remains fenced
+  ---
+  duration_ms: 123.1368
+  type: 'test'
+  ...
+# Subtest: HTTP 429 halts after one original request and remains fenced
+ok 75 - HTTP 429 halts after one original request and remains fenced
+  ---
+  duration_ms: 149.7014
+  type: 'test'
+  ...
+# Subtest: HTTP 500 halts after one original request and remains fenced
+ok 76 - HTTP 500 halts after one original request and remains fenced
+  ---
+  duration_ms: 125.6046
+  type: 'test'
+  ...
+# Subtest: invalid JSON halts and preserves exact response bytes
+ok 77 - invalid JSON halts and preserves exact response bytes
+  ---
+  duration_ms: 128.9146
+  type: 'test'
+  ...
+# Subtest: wrong envelope halts and preserves exact response bytes
+ok 78 - wrong envelope halts and preserves exact response bytes
+  ---
+  duration_ms: 106.8739
+  type: 'test'
+  ...
+# Subtest: invalid UTF8 halts and preserves exact response bytes
+ok 79 - invalid UTF8 halts and preserves exact response bytes
+  ---
+  duration_ms: 114.2759
+  type: 'test'
+  ...
+# Subtest: missing six-field answer halts and preserves exact response bytes
+ok 80 - missing six-field answer halts and preserves exact response bytes
+  ---
+  duration_ms: 108.8857
+  type: 'test'
+  ...
+# Subtest: semantic contradiction is retained and prevents subsequent probes or cards
+ok 81 - semantic contradiction is retained and prevents subsequent probes or cards
+  ---
+  duration_ms: 128.3901
+  type: 'test'
+  ...
+# Subtest: candidate construction remains frozen with actual execution provenance as a separate receipt
+ok 82 - candidate construction remains frozen with actual execution provenance as a separate receipt
+  ---
+  duration_ms: 308.6393
+  type: 'test'
+  ...
+# Subtest: lost response before-headers is uncertain, preserved and cannot retry
+ok 83 - lost response before-headers is uncertain, preserved and cannot retry
+  ---
+  duration_ms: 148.2479
+  type: 'test'
+  ...
+# Subtest: lost response after-chunk is uncertain, preserved and cannot retry
+ok 84 - lost response after-chunk is uncertain, preserved and cannot retry
+  ---
+  duration_ms: 128.3358
+  type: 'test'
+  ...
+# Subtest: raw status, duplicate headers, exact body, timestamps, latency, model, usage and credits persist
+ok 85 - raw status, duplicate headers, exact body, timestamps, latency, model, usage and credits persist
+  ---
+  duration_ms: 313.345
+  type: 'test'
+  ...
+# Subtest: missing or malformed credit information remains unknown, not zero
+ok 86 - missing or malformed credit information remains unknown, not zero
+  ---
+  duration_ms: 324.2816
+  type: 'test'
+  ...
+# Subtest: model and usage on an HTTP rejection are retained without accepting the result
+ok 87 - model and usage on an HTTP rejection are retained without accepting the result
+  ---
+  duration_ms: 122.75
+  type: 'test'
+  ...
+# Subtest: credential echo is sealed losslessly, absent from readable files, and halts
+ok 88 - credential echo is sealed losslessly, absent from readable files, and halts
+  ---
+  duration_ms: 127.2088
+  type: 'test'
+  ...
+# Subtest: credential in response headers also seals the complete raw response
+ok 89 - credential in response headers also seals the complete raw response
+  ---
+  duration_ms: 110.9529
+  type: 'test'
+  ...
+# Subtest: Unicode-escaped credential echo is sealed before normalized JSON reaches a report
+ok 90 - Unicode-escaped credential echo is sealed before normalized JSON reaches a report
+  ---
+  duration_ms: 133.2911
+  type: 'test'
+  ...
+# Subtest: oversized response stops at the received prefix and cannot be accepted
+ok 91 - oversized response stops at the received prefix and cannot be accepted
+  ---
+  duration_ms: 270.1134
+  type: 'test'
+  ...
+# Subtest: storage failure after a request leaves an unresolved durable intent; restart cannot send again
+ok 92 - storage failure after a request leaves an unresolved durable intent; restart cannot send again
+  ---
+  duration_ms: 85.2195
+  type: 'test'
+  ...
+# Subtest: abrupt process exit after synced intent remains uncertain and fenced
+ok 93 - abrupt process exit after synced intent remains uncertain and fenced
+  ---
+  duration_ms: 267.4677
+  type: 'test'
+  ...
+# Subtest: concurrent invocations claim the permanent fence only once
+ok 94 - concurrent invocations claim the permanent fence only once
+  ---
+  duration_ms: 335.838
+  type: 'test'
+  ...
+# Subtest: even an empty fence directory blocks all execution
+ok 95 - even an empty fence directory blocks all execution
+  ---
+  duration_ms: 22.6228
+  type: 'test'
+  ...
+# Subtest: forged verification objects and alternate live output directories cannot dispatch
+ok 96 - forged verification objects and alternate live output directories cannot dispatch
+  ---
+  duration_ms: 3.1612
+  type: 'test'
+  ...
+# Subtest: read-only inspection detects raw response tampering
+ok 97 - read-only inspection detects raw response tampering
+  ---
+  duration_ms: 356.5441
+  type: 'test'
+  ...
+# Subtest: read-only inspection detects journal tampering
+ok 98 - read-only inspection detects journal tampering
+  ---
+  duration_ms: 316.4757
+  type: 'test'
+  ...
+# Subtest: frozen file mutation experiments/p0b/prepared/development-probes.json stops verification
+ok 99 - frozen file mutation experiments/p0b/prepared/development-probes.json stops verification
+  ---
+  duration_ms: 147.8013
+  type: 'test'
+  ...
+# Subtest: frozen file mutation src/intelligence-workflow.mjs stops verification
+ok 100 - frozen file mutation src/intelligence-workflow.mjs stops verification
+  ---
+  duration_ms: 147.9783
+  type: 'test'
+  ...
+# Subtest: runtime credentials use environment or one unambiguous file value without mutating either
+ok 101 - runtime credentials use environment or one unambiguous file value without mutating either
+  ---
+  duration_ms: 18.1418
+  type: 'test'
+  ...
+# Subtest: HTTPS adapter uses one POST, fixed endpoint, no SDK/redirect/retry, and exact supplied bytes
+ok 102 - HTTPS adapter uses one POST, fixed endpoint, no SDK/redirect/retry, and exact supplied bytes
+  ---
+  duration_ms: 3.5139
+  type: 'test'
+  ...
+# Subtest: HTTPS adapter error before headers is one call, never exposes the transport error and never retries
+ok 103 - HTTPS adapter error before headers is one call, never exposes the transport error and never retries
+  ---
+  duration_ms: 141.6006
+  type: 'test'
+  ...
+# Subtest: CLI dry verification and inspection cannot read credentials, write owner execution or dispatch
+ok 104 - CLI dry verification and inspection cannot read credentials, write owner execution or dispatch
+  ---
+  duration_ms: 590.2708
+  type: 'test'
+  ...
+# Subtest: CLI rejects unsupported command --live
+ok 105 - CLI rejects unsupported command --live
+  ---
+  duration_ms: 171.8264
+  type: 'test'
+  ...
+# Subtest: CLI rejects unsupported command --retry
+ok 106 - CLI rejects unsupported command --retry
+  ---
+  duration_ms: 171.7109
+  type: 'test'
+  ...
+# Subtest: CLI rejects unsupported command --resume
+ok 107 - CLI rejects unsupported command --resume
+  ---
+  duration_ms: 177.6025
+  type: 'test'
+  ...
+# Subtest: CLI rejects unsupported command --live --acknowledge-four-one-shot-requests --out another
+ok 108 - CLI rejects unsupported command --live --acknowledge-four-one-shot-requests --out another
+  ---
+  duration_ms: 176.9746
+  type: 'test'
+  ...
+# Subtest: CLI rejects unsupported command --endpoint https://example.invalid
+ok 109 - CLI rejects unsupported command --endpoint https://example.invalid
+  ---
+  duration_ms: 176.9409
+  type: 'test'
+  ...
+1..109
+# tests 109
+# suites 0
+# pass 109
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7942.8209

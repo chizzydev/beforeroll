@@ -7,10 +7,14 @@ export function productionHistory(w,d,journals,{offset=0,limit=20,kind='ALL',sta
  if(!Number.isSafeInteger(offset)||offset<0||!Number.isSafeInteger(limit)||limit<1||limit>100||!kinds.includes(kind)||!['ALL','CURRENT','HISTORICAL','UNCERTAIN'].includes(state)||typeof search!=='string'||search.length>200)throw Error('History filters or pagination invalid');
  const rows=[],tasks=new Map(d.sceneTasks.map(t=>[t.id,t])),latest=new Map(d.currentTaskReviews.map(r=>[r.evidenceId,r.sequence]));
  const add=(category,id,title,status,detail,context={})=>rows.push({category,id,title,status,...context,detail,notClearance:true});
+ for(const j of d.coordinatorTasks?.discovery?.jobs??[])add('MODEL',`discovery:${j.id}`,`Source discovery: ${j.coverage.assessed}/${j.coverage.pairs} scene links assessed`,j.state==='IN_FLIGHT_OR_INTERRUPTED_NEVER_RETRY'?'UNCERTAIN':j.current?'CURRENT':'HISTORICAL',j);
  const imports=w.imports??[];
  imports.forEach((r,i)=>{const doc=w.documents.find(x=>r.documentId?x.id===r.documentId:x.importReceipt?.rawHash===r.rawHash&&x.importReceipt?.revision===r.revision),current=r.kind==='callSheet'?w.callSheet?.importReceipt?.revision===r.revision:doc?.importReceipt?.revision===r.revision;
   add('SOURCES',`source:${i}:${r.rawHash}`,`${r.kind}: ${r.name}`,current?'CURRENT':'HISTORICAL',r,{documentId:r.documentId??doc?.id??null,originalHash:r.rawHash});});
  for(const r of w.reviewActions??[])add('REVIEWS',`review:${r.sequence}`,`${r.decision} by ${r.reviewer}`,latest.get(r.evidenceId)===r.sequence?'CURRENT':'HISTORICAL',r,{sceneId:tasks.get(r.evidenceId)?.sceneId??null});
+ const suggestionReviews=d.coordinatorTasks?.reviewHistory??[];
+ for(const r of suggestionReviews)add('REVIEWS',`suggestion-review:${r.sequence}`,`Suggestion reviewed by ${r.reviewer} (not fulfillment)`,
+  r.sourceState==='CURRENT_REVIEW_ONLY'&&suggestionReviews.filter(x=>x.candidateId===r.candidateId).at(-1)?.sequence===r.sequence?'CURRENT':'HISTORICAL',r,{sceneId:r.sceneId,documentId:r.source.documentId});
  for(const r of d.documentaryLinks)add('AUTHORITY',`link:${r.id}`,`${r.fromId} ${r.kind} ${r.toId}`,r.status==='HUMAN_ASSERTED_UNVERIFIED'?'CURRENT':'HISTORICAL',r,{documentId:r.fromId});
  for(const r of d.sceneScopeClaims)add('AUTHORITY',`scope:${r.id}`,`${r.sceneId}: ${r.kind}`,r.sourceState==='CURRENT_UNVERIFIED'?'CURRENT':'HISTORICAL',r,{sceneId:r.sceneId,documentId:r.documentId});
  const lastProvenance=new Map();for(const r of w.authorityDocumentHistory??[])lastProvenance.set(r.documentId,r.id);
@@ -39,6 +43,10 @@ export function productionHistory(w,d,journals,{offset=0,limit=20,kind='ALL',sta
   // infer a missing old identity, or substitute today's quote for an obsolete task.
   const evidenceId=selected.detail?.evidenceId??(selected.id.startsWith('attempt:')?selected.detail?.id:null);
   let context=evidenceId?tasks.get(evidenceId):null;
+  if(selected.id.startsWith('suggestion-review:')){
+   const source=selected.detail.source;
+   if(source)context={sceneId:source.sceneId,documentId:source.documentId,unitId:source.unitId,quote:source.sourceSentence??source.quote,documentHash:source.permitSha256,sceneHash:source.sceneHash,sourceRange:source.permitRange};
+  }
   if(!context&&evidenceId){for(const j of journals){const entry=j.run.checkpoint.entries.find(e=>e.id===evidenceId);const identity=(j.run.taskManifest??[]).find(t=>t.id===evidenceId);if(entry?.finding?.sourceQuote&&identity){context={...identity,quote:entry.finding.sourceQuote,sourceRange:entry.finding.sourceRange??null};break;}}}
   selected={...selected,evidenceContext:context?{evidenceId,sceneId:context.sceneId,documentId:context.documentId,unitId:context.unitId,quote:context.quote??context.sourceQuote,documentHash:context.documentHash,sceneHash:context.sceneHash,sourceRange:context.sourceRange??null}:null};
  }

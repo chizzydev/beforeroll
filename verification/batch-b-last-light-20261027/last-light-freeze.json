@@ -1,0 +1,455 @@
+{
+  "schema": "beforeroll-batch-b-last-light-freeze-v1",
+  "registeredAt": "2026-10-27T14:06:17.940Z",
+  "fictional": true,
+  "scenes": [
+    {
+      "id": "S31",
+      "row": "Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table"
+    },
+    {
+      "id": "S32",
+      "row": "Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it"
+    }
+  ],
+  "callSheet": "Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\nScene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it",
+  "documents": [
+    {
+      "id": "VENUE",
+      "name": "Morrow_VenueAccess_FICTIONAL.txt",
+      "text": "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections.",
+      "sourceSha256": "386307e2e6d43bef9aa4a7f61a621aa8265afbc4d1947705eb6f65cccdeb58a8",
+      "rawSha256": "386307e2e6d43bef9aa4a7f61a621aa8265afbc4d1947705eb6f65cccdeb58a8",
+      "inventory": [
+        {
+          "id": "U001",
+          "start": 0,
+          "end": 255,
+          "text": "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections.",
+          "hash": "386307e2e6d43bef9aa4a7f61a621aa8265afbc4d1947705eb6f65cccdeb58a8",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "id": "LENDER",
+      "name": "Atlas_LenderConditions_FICTIONAL.txt",
+      "text": "Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.\n\nThe lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.",
+      "sourceSha256": "1b07a56aed1609c76e214305e7c383ec2510f0ca2d2777665b6916c5e85f3699",
+      "rawSha256": "1b07a56aed1609c76e214305e7c383ec2510f0ca2d2777665b6916c5e85f3699",
+      "inventory": [
+        {
+          "id": "U001",
+          "start": 0,
+          "end": 391,
+          "text": "Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.",
+          "hash": "9916f9f402e77bb0dadf0c2a30f3f830177e848c6d903024e33f97656bb412df",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        },
+        {
+          "id": "U002",
+          "start": 393,
+          "end": 688,
+          "text": "The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.",
+          "hash": "0c15e00057b0b17a0b64459907220eef7e4046321feb5bfacd0f7505f8093112",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "id": "CORRESPONDENCE",
+      "name": "Atlas_Correspondence_FICTIONAL.txt",
+      "text": "UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.\n\nHistorical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production.",
+      "sourceSha256": "84a73428f0658e39aadfb639526faa33055f0423a4f8c8ee3b18cc03dfe2beb7",
+      "rawSha256": "84a73428f0658e39aadfb639526faa33055f0423a4f8c8ee3b18cc03dfe2beb7",
+      "inventory": [
+        {
+          "id": "U001",
+          "start": 0,
+          "end": 238,
+          "text": "UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.",
+          "hash": "98df02bfeffc258388ab51df51ab9018e82f6802df5367433b2987cdd4d57387",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        },
+        {
+          "id": "U002",
+          "start": 240,
+          "end": 446,
+          "text": "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production.",
+          "hash": "6e8478d0605c045a355b29f6a8289dff142c58618c9610993b2e62a445f02d10",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        }
+      ]
+    },
+    {
+      "id": "VISITOR",
+      "name": "Morrow_VisitorInformation_FICTIONAL.txt",
+      "text": "The visitor café sells postcards of planets. Staff tea deliveries arrive at noon; the souvenir till accepts card payments.",
+      "sourceSha256": "c9d20195dd66874c0236250f52ca0335d1230a25db6ced52ea9304b8b92a2b7b",
+      "rawSha256": "c9d20195dd66874c0236250f52ca0335d1230a25db6ced52ea9304b8b92a2b7b",
+      "inventory": [
+        {
+          "id": "U001",
+          "start": 0,
+          "end": 44,
+          "text": "The visitor café sells postcards of planets.",
+          "hash": "717f3ea342fd62ba0071e2110f5147bbab591b45858840f688795d74f0bf4676",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        },
+        {
+          "id": "U002",
+          "start": 45,
+          "end": 122,
+          "text": "Staff tea deliveries arrive at noon; the souvenir till accepts card payments.",
+          "hash": "9118cb373417769125049c16d0f2ae54309a8646c2433084c57a4544305ba3d4",
+          "kind": "SOURCE_UNIT",
+          "status": "NOT_EVALUATED"
+        }
+      ]
+    }
+  ],
+  "expectedPrerequisites": [
+    [
+      "S31",
+      "required_on_site_personnel",
+      "venue duty officer"
+    ],
+    [
+      "S32",
+      "required_on_site_personnel",
+      "venue duty officer"
+    ],
+    [
+      "S31",
+      "required_written_documents",
+      "written lender consent"
+    ],
+    [
+      "S31",
+      "required_physical_protections",
+      "supporting book cradle"
+    ],
+    [
+      "S31",
+      "required_physical_protections",
+      "padded transfer tray"
+    ],
+    [
+      "S31",
+      "required_on_site_personnel",
+      "collections conservator"
+    ]
+  ],
+  "roles": [
+    {
+      "documentId": "LENDER",
+      "unitIndex": 0,
+      "role": "current_condition",
+      "sceneIds": [
+        "S31"
+      ],
+      "claimQuote": "must not begin until written lender consent has been presented",
+      "reference": "written lender consent",
+      "scope": "opening and unfolding the loaned volume",
+      "unitId": "U001",
+      "unitRange": [
+        0,
+        391
+      ],
+      "payload": {
+        "text": "Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.",
+        "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+        "fields": {
+          "claimed_role": {
+            "type": "choice",
+            "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+            "options": [
+              "claims_issued_variation",
+              "request_only",
+              "historical_reference",
+              "current_condition",
+              "unrelated_or_unclear"
+            ]
+          },
+          "claim_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "A short exact source phrase showing the claimed documentary role or status; null if none is stated."
+          },
+          "referenced_instrument": {
+            "type": "extract",
+            "infer": false,
+            "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+          },
+          "scope_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+          },
+          "scene_scope": {
+            "type": "multiselect",
+            "description": "Which planned scenes does the documentary CLAIM or reference concern? Select the relevant scene IDs by activity, not merely location. A request for wider scope concerns its requested scene, not an established permission. Historical records need no current scene selection. Leave empty if scope cannot be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+            "options": [
+              "S31",
+              "S32",
+              "scope_not_established"
+            ],
+            "threshold": 0.7
+          }
+        }
+      },
+      "requestSha256": "735bc05d8c73d94a6db9629ccc97ecfdd4c2ac719bb3fd8e542f3341ca522a29",
+      "expectedSpans": {
+        "claimQuote": [
+          44,
+          106
+        ],
+        "reference": [
+          65,
+          87
+        ],
+        "scope": [
+          310,
+          349
+        ]
+      }
+    },
+    {
+      "documentId": "LENDER",
+      "unitIndex": 1,
+      "role": "claims_issued_variation",
+      "sceneIds": [
+        "S31"
+      ],
+      "claimQuote": "Variation VA-17 as issued",
+      "reference": "Consent Schedule CS-9",
+      "scope": "the close-up in which the performer opens and unfolds the atlas only",
+      "unitId": "U002",
+      "unitRange": [
+        393,
+        688
+      ],
+      "payload": {
+        "text": "The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.",
+        "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+        "fields": {
+          "claimed_role": {
+            "type": "choice",
+            "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+            "options": [
+              "claims_issued_variation",
+              "request_only",
+              "historical_reference",
+              "current_condition",
+              "unrelated_or_unclear"
+            ]
+          },
+          "claim_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "A short exact source phrase showing the claimed documentary role or status; null if none is stated."
+          },
+          "referenced_instrument": {
+            "type": "extract",
+            "infer": false,
+            "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+          },
+          "scope_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+          },
+          "scene_scope": {
+            "type": "multiselect",
+            "description": "Which planned scenes does the documentary CLAIM or reference concern? Select the relevant scene IDs by activity, not merely location. A request for wider scope concerns its requested scene, not an established permission. Historical records need no current scene selection. Leave empty if scope cannot be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+            "options": [
+              "S31",
+              "S32",
+              "scope_not_established"
+            ],
+            "threshold": 0.7
+          }
+        }
+      },
+      "requestSha256": "b561d6b40c1d9f1673315f395bb9b5a97806adb64718fe2510934d19aae670df",
+      "expectedSpans": {
+        "claimQuote": [
+          421,
+          446
+        ],
+        "reference": [
+          600,
+          621
+        ],
+        "scope": [
+          451,
+          519
+        ]
+      }
+    },
+    {
+      "documentId": "CORRESPONDENCE",
+      "unitIndex": 0,
+      "role": "request_only",
+      "sceneIds": [
+        "S32"
+      ],
+      "claimQuote": "has not been issued as an amendment",
+      "reference": "Variation VA-17",
+      "scope": "during the interview",
+      "unitId": "U001",
+      "unitRange": [
+        0,
+        238
+      ],
+      "payload": {
+        "text": "UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.",
+        "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+        "fields": {
+          "claimed_role": {
+            "type": "choice",
+            "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+            "options": [
+              "claims_issued_variation",
+              "request_only",
+              "historical_reference",
+              "current_condition",
+              "unrelated_or_unclear"
+            ]
+          },
+          "claim_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "A short exact source phrase showing the claimed documentary role or status; null if none is stated."
+          },
+          "referenced_instrument": {
+            "type": "extract",
+            "infer": false,
+            "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+          },
+          "scope_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+          },
+          "scene_scope": {
+            "type": "multiselect",
+            "description": "Which planned scenes does the documentary CLAIM or reference concern? Select the relevant scene IDs by activity, not merely location. A request for wider scope concerns its requested scene, not an established permission. Historical records need no current scene selection. Leave empty if scope cannot be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+            "options": [
+              "S31",
+              "S32",
+              "scope_not_established"
+            ],
+            "threshold": 0.7
+          }
+        }
+      },
+      "requestSha256": "8b82dca6ffc94e6fcd175b38cb2d864c4ed80bd37a8a531a2173f675e444b209",
+      "expectedSpans": {
+        "claimQuote": [
+          169,
+          204
+        ],
+        "reference": [
+          110,
+          125
+        ],
+        "scope": [
+          71,
+          91
+        ]
+      }
+    },
+    {
+      "documentId": "CORRESPONDENCE",
+      "unitIndex": 1,
+      "role": "historical_reference",
+      "sceneIds": [],
+      "claimQuote": "Historical condition record from a previous exhibition",
+      "reference": null,
+      "scope": null,
+      "unitId": "U002",
+      "unitRange": [
+        240,
+        446
+      ],
+      "payload": {
+        "text": "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production.",
+        "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+        "fields": {
+          "claimed_role": {
+            "type": "choice",
+            "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+            "options": [
+              "claims_issued_variation",
+              "request_only",
+              "historical_reference",
+              "current_condition",
+              "unrelated_or_unclear"
+            ]
+          },
+          "claim_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "A short exact source phrase showing the claimed documentary role or status; null if none is stated."
+          },
+          "referenced_instrument": {
+            "type": "extract",
+            "infer": false,
+            "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+          },
+          "scope_quote": {
+            "type": "extract",
+            "infer": false,
+            "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+          },
+          "scene_scope": {
+            "type": "multiselect",
+            "description": "Which planned scenes does the documentary CLAIM or reference concern? Select the relevant scene IDs by activity, not merely location. A request for wider scope concerns its requested scene, not an established permission. Historical records need no current scene selection. Leave empty if scope cannot be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+            "options": [
+              "S31",
+              "S32",
+              "scope_not_established"
+            ],
+            "threshold": 0.7
+          }
+        }
+      },
+      "requestSha256": "c699af17e9488ad89a6fa8a5c35b1c5c881fdf0f4ccd7db07317be44cac555a8",
+      "expectedSpans": {
+        "claimQuote": [
+          240,
+          294
+        ],
+        "reference": null,
+        "scope": null
+      }
+    }
+  ],
+  "fillContract": "f6cbd592c70f74e152b4ae5f618eb112b2d41d015b5487a3dbca9eeae5172590",
+  "requiredDistinctWork": [
+    "Investigate claimed variation and locate Consent Schedule CS-9",
+    "Investigate unissued interview handling request"
+  ],
+  "forbidden": [
+    "S32 handling-only prerequisites",
+    "historical foam wedge or volunteer prerequisite",
+    "authentic/issued/cleared/fulfilled inferred from Clocked"
+  ],
+  "acceptance": {
+    "completeInventory": true,
+    "exactSpans": true,
+    "allExpectedPrerequisites": true,
+    "noUnsupportedPrerequisites": true,
+    "rolesAndReferences": true,
+    "noAuthorityOrFulfillment": true,
+    "baselineNotWeakened": true
+  },
+  "adjudication": "Gold phrase boundaries are preferred anchors; a different exact source span is semantically acceptable only if it expresses the identical role/reference/scope without adding or omitting a material limitation. Preserve literal and semantic judgments separately; no gold edits."
+}

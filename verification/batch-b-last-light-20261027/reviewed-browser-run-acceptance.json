@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-27T16:03:53.471Z",
+  "jobState": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+  "stopReason": null,
+  "coverage": {
+    "pairs": 14,
+    "assessed": 14,
+    "unassessed": 0,
+    "relevant": 6,
+    "ambiguous": 1,
+    "extractedUnits": 4,
+    "totalUnits": 7
+  },
+  "expected": [
+    [
+      "S31",
+      "required_on_site_personnel",
+      "venue duty officer"
+    ],
+    [
+      "S32",
+      "required_on_site_personnel",
+      "venue duty officer"
+    ],
+    [
+      "S31",
+      "required_written_documents",
+      "written lender consent"
+    ],
+    [
+      "S31",
+      "required_physical_protections",
+      "supporting book cradle"
+    ],
+    [
+      "S31",
+      "required_physical_protections",
+      "padded transfer tray"
+    ],
+    [
+      "S31",
+      "required_on_site_personnel",
+      "collections conservator"
+    ]
+  ],
+  "observed": [
+    [
+      "S31",
+      "required_on_site_personnel",
+      "venue duty officer"
+    ],
+    [
+      "S32",
+      "required_on_site_personnel",
+      "venue duty officer"
+    ],
+    [
+      "S31",
+      "required_written_documents",
+      "written lender consent"
+    ],
+    [
+      "S31",
+      "required_physical_protections",
+      "supporting book cradle"
+    ],
+    [
+      "S31",
+      "required_physical_protections",
+      "padded transfer tray"
+    ],
+    [
+      "S31",
+      "required_on_site_personnel",
+      "collections conservator"
+    ]
+  ],
+  "missing": [],
+  "unsupported": [],
+  "investigations": [
+    {
+      "sceneId": "S31",
+      "title": "Verify claimed variation · locate Consent Schedule CS-9",
+      "role": "claims_issued_variation",
+      "reference": "Consent Schedule CS-9"
+    },
+    {
+      "sceneId": "S32",
+      "title": "Investigate unissued change request · Variation VA-17",
+      "role": "request_only",
+      "reference": "Variation VA-17"
+    }
+  ],
+  "exactCandidateSpans": true,
+  "importedSources": [
+    {
+      "documentId": "VENUE",
+      "hashMatches": true
+    },
+    {
+      "documentId": "LENDER",
+      "hashMatches": true
+    },
+    {
+      "documentId": "CORRESPONDENCE",
+      "hashMatches": true
+    },
+    {
+      "documentId": "VISITOR",
+      "hashMatches": true
+    }
+  ],
+  "authorityRecords": 0,
+  "operationalDecisions": 0,
+  "notClearance": true
+}

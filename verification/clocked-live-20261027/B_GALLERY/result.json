@@ -1,0 +1,59 @@
+{
+  "schema": "beforeroll-live-case-result-v1",
+  "scenarioId": "B_GALLERY",
+  "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+  "stopReason": null,
+  "coverage": {
+    "pairs": 6,
+    "assessed": 6,
+    "unassessed": 0,
+    "relevant": 4,
+    "ambiguous": 1,
+    "extractedUnits": 3,
+    "totalUnits": 3
+  },
+  "missing": [],
+  "extra": [],
+  "exactSpansAndProvenance": true,
+  "reviewPersistence": true,
+  "authorityRecords": 0,
+  "fulfilledConditions": 0,
+  "candidates": [
+    {
+      "sceneId": "S401",
+      "field": "required_written_documents",
+      "quote": "written collections-team consent",
+      "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+      "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00"
+    },
+    {
+      "sceneId": "S401",
+      "field": "required_physical_protections",
+      "quote": "sacrificial runner sheets",
+      "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+      "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13"
+    },
+    {
+      "sceneId": "S401",
+      "field": "required_on_site_personnel",
+      "quote": "on-site floor warden",
+      "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+      "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13"
+    },
+    {
+      "sceneId": "S402",
+      "field": "required_written_documents",
+      "quote": "written collections-team consent",
+      "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+      "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00"
+    }
+  ],
+  "budgetAfter": {
+    "requests": 20,
+    "reportedCredits": 40,
+    "unknownCreditRequests": 0
+  },
+  "providerLatencyMs": 6032.292200000001,
+  "semanticVerdict": "PASS_FOR_FROZEN_CASE_ONLY",
+  "notClearance": true
+}

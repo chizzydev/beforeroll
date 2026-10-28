@@ -18,6 +18,7 @@ import {planKey} from './durable-execution.mjs';
 import {buildProductionDossier} from './production-dossier.mjs';
 import {buildProductionActions} from './production-actions.mjs';
 import {referencedOriginals,createSourceOriginalVault} from './source-originals.mjs';
+import {createDiscoveryExecution} from './discovery-execution.mjs';
 const sha=x=>createHash('sha256').update(JSON.stringify(x),'utf8').digest('hex');
 const iso=x=>typeof x==='string'&&/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/.test(x)&&!Number.isNaN(Date.parse(x))&&new Date(x).toISOString()===x;
 const BLOCKED=/^(Need source documents|Unsupported call-sheet|Invalid scene rows|Document coverage|PDF .* requires human verification|Document-scene plan requires more than)/;
@@ -32,12 +33,12 @@ function validStored(saved){
  if(saved.sha256!==sha(workspace))throw Error('Stored project checksum mismatch');
  return workspace;
 }
-function derived({workspace,version,asOf,plan,blocked,journals,execution}){
+function derived({workspace,version,asOf,plan,blocked,journals,execution,discoveryJournals=[]}){
  const current=journals.find(x=>x.planKey===planKey(plan));
  const record=blocked?null:execution.inspectRun(plan,current?.run??null);
  const status=record?.status??null;
  if(status)status.archivedRuns=journals.length-(current?1:0);
- const dossier=buildProductionDossier(workspace,{persistedVersion:version,asOf,modelEvidence:record?.evidence??null,executionSummary:status});
+ const dossier=buildProductionDossier(workspace,{persistedVersion:version,asOf,modelEvidence:record?.evidence??null,executionSummary:status,discoveryJournals});
  const actions=buildProductionActions(dossier,{offset:0,limit:1});
  if(!blocked&&dossier.sceneTasks.length!==plan.tasks.length)throw Error('Lifecycle dossier omitted source-bound plan tasks');
  if(dossier.productionId!==workspace.id||dossier.persistedVersion!==version||dossier.workspaceRevision!==workspace.revision)throw Error('Lifecycle dossier diverged from persistent workspace');
@@ -64,10 +65,11 @@ export async function createLifecycleBackup(saved,execution,{asOf=new Date().toI
  const {plan,blocked}=currentPlan(workspace);
  const journals=await execution.exportAllRuns(plan);
  execution.verifyAllRuns(plan,journals);
- const integrity=derived({workspace,version:saved.version,asOf,plan,blocked,journals,execution});
+ const discoveryJournals=await createDiscoveryExecution({directory:path.dirname(execution.directory)}).list(workspace.id);
+ const integrity=derived({workspace,version:saved.version,asOf,plan,blocked,journals,execution,discoveryJournals});
  const originals=sourceVault?await sourceVault.inventory(workspace,{includeBytes:true}):null;
  const base={schema:'beforeroll-owner-lifecycle-backup-v1',workspaceId:workspace.id,originalVersion:saved.version,originalUpdatedAt:saved.updatedAt,
-  asOf,workspace,workspaceSha256:sha(workspace),journals,integrity,
+  asOf,workspace,workspaceSha256:sha(workspace),journals,integrity,...(discoveryJournals.length?{discoveryJournals}:{}),
   ...(originals?{originalSources:originals}:{}),
   originalBytesIncluded:Boolean(originals?.items.length),secretsIncluded:false,notClearance:true,
   limitations:[originals?`Includes ${originals.preserved} exact original file(s); ${originals.missingOriginalSha256.length} historical original(s) were not found in the private local vault.`:'Contains exact currently normalized project sources and original import byte hashes, not original uploaded file bytes.',
@@ -109,10 +111,14 @@ export function verifyLifecycleBackup(bundle,execution){
  if(workspace.id!==bundle.workspaceId||sha(workspace)!==bundle.workspaceSha256)throw Error('Lifecycle project identity or source hash mismatch');
  const {plan,blocked}=currentPlan(workspace);
  const collection=execution.verifyAllRuns(plan,bundle.journals);
- const proof=derived({workspace,version:bundle.originalVersion,asOf:bundle.asOf,plan,blocked,journals:bundle.journals,execution});
+ const discovery=createDiscoveryExecution({directory:path.dirname(execution.directory)});
+ const discoveries=bundle.discoveryJournals??[];
+ if(!Array.isArray(discoveries)||discoveries.length>1000)throw Error('Invalid discovery archive');
+ const discoveryIds=new Set();for(const j of discoveries){discovery.validate(j);if(j.plan.workspaceId!==workspace.id||discoveryIds.has(j.plan.id))throw Error('Discovery archive identity mismatch');discoveryIds.add(j.plan.id);}
+ const proof=derived({workspace,version:bundle.originalVersion,asOf:bundle.asOf,plan,blocked,journals:bundle.journals,execution,discoveryJournals:discoveries});
  if(sha(proof)!==sha(bundle.integrity))throw Error('Lifecycle cross-system state differs from saved evidence receipt');
  return {schema:'beforeroll-lifecycle-verified-v1',workspaceId:workspace.id,originalVersion:bundle.originalVersion,
-  sourceRevision:workspace.revision,journalCount:collection.count,currentRun:collection.current,archivedRuns:collection.archived,
+  sourceRevision:workspace.revision,journalCount:collection.count,discoveryJournalCount:discoveries.length,totalClockedJournals:collection.count+discoveries.length,currentRun:collection.current,archivedRuns:collection.archived,
   originalFileCount:bundle.originalSources?.preserved??0,missingOriginalFiles:bundle.originalSources?.missingOriginalSha256.length??references.length,
   sourceTasks:proof.sourceTaskCount,openWorkItems:proof.workItems,backupSha256:bundle.sha256,
   consistency:'CURRENT_WORKSPACE_AND_ALL_JOURNAL_CHECKSUMS_VERIFIED',notClearance:true};
@@ -134,6 +140,7 @@ export async function restoreLifecycleBackup(bundle,{workspaceStore,execution,so
  for(const file of bundle.originalSources?.items??[])await originals.putBytes(Buffer.from(file.contentBase64,'base64'),file.rawHash);
  const {plan}=currentPlan(bundle.workspace);
  const restored=await execution.restoreAllRuns(plan,bundle.journals);
+ await createDiscoveryExecution({directory:workspaceStore.directory}).restore(bundle.workspaceId,bundle.discoveryJournals??[]);
  const saved=await workspaceStore.persist(bundle.workspace,{expectedVersion:0});
  return {...verified,recoveredVersion:saved.version,restoredJournals:restored.restored,
   originalVersionRetainedInBackup:bundle.originalVersion,restoredOriginals:bundle.originalSources?.items.length??0,

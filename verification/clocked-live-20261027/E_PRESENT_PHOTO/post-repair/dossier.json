@@ -1,0 +1,1640 @@
+{
+  "schema": "beforeroll-integrated-production-dossier-v1",
+  "productionId": "live_20261027_E_present_photo",
+  "title": "Fictional live acceptance E_PRESENT_PHOTO",
+  "workspaceRevision": 3,
+  "persistedVersion": 4,
+  "asOf": "2026-10-27T11:57:52.060Z",
+  "authorityPolicy": "HUMAN_REVIEW_AND_MODEL_AID_NOT_FILMING_CLEARANCE",
+  "sourceDocuments": [
+    {
+      "id": "PERMIT",
+      "name": "E_PRESENT_PHOTO-permit.txt",
+      "role": null,
+      "sourceSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "originalBytesSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sourceFormat": "UTF8_TEXT",
+      "units": 3,
+      "sourceCoverageGaps": [],
+      "requiresPdfTextReview": false,
+      "transcriptionReview": null,
+      "reviewedOriginalPermit": null,
+      "authorityMetadata": null,
+      "notClearance": true
+    }
+  ],
+  "callSheet": {
+    "sha256": "5f55a9ed84cc607f14468abd56374e75149a5615dc10ad8f9f0f4e9245c024c2",
+    "format": "UTF8_TEXT",
+    "unsupportedRows": [],
+    "sceneCount": 2,
+    "reviewedOriginalTranscription": null
+  },
+  "documentaryLinks": [],
+  "sceneScopeClaims": [],
+  "documentaryReasoning": {
+    "schema": "beforeroll-documentary-reasoning-v1",
+    "workspaceId": "live_20261027_E_present_photo",
+    "workspaceRevision": 3,
+    "asOf": "2026-10-27T11:57:52.060Z",
+    "scenes": [
+      {
+        "sceneId": "S701",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "close-ups of historical photograph on table",
+        "originalLocation": "Conservation room",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      },
+      {
+        "sceneId": "S702",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "recorded interviews",
+        "originalLocation": "Interview stage",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      }
+    ],
+    "summary": {
+      "scenes": 2,
+      "restrictions": 0,
+      "requests": 0,
+      "pendingGrantClaims": 0,
+      "scenesWithReview": 0,
+      "modelSupportedHumanClaims": 0,
+      "modelOnlyFindings": 0
+    },
+    "notClearance": true,
+    "warning": "Deterministic comparison of human-recorded facets only; NOT a legal authority determination, cryptographic signature check, verified issuance, permission to film, or proof all source documents were supplied."
+  },
+  "operations": {
+    "schema": "beforeroll-production-operations-v1",
+    "workspaceId": "live_20261027_E_present_photo",
+    "revision": 3,
+    "asOf": "2026-10-27T11:57:52.060Z",
+    "scenes": [
+      {
+        "sceneId": "S701",
+        "sceneSourceHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S702",
+        "sceneSourceHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "schedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "summary": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "notClearance": true,
+    "notice": "Dates, scope, condition fulfillment and signatures are human-entered, NOT verified filming authorization. Never infer clearance from a zero count."
+  },
+  "modelExecution": {
+    "origin": "NO_CURRENT_MODEL_RECORDING",
+    "state": "READY",
+    "attempts": 0,
+    "archivedRuns": 0,
+    "knownSourceEvidenceOnly": true
+  },
+  "coordinatorTasks": {
+    "schema": "beforeroll-coordinator-suggestions-v1",
+    "state": "SOURCE_BOUND_SUGGESTIONS_REVIEW_ONLY",
+    "candidates": [
+      {
+        "field": "required_written_documents",
+        "quote": "written image-owner consent",
+        "unitId": "U001",
+        "unitRange": [
+          57,
+          84
+        ],
+        "permitRange": [
+          57,
+          84
+        ],
+        "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "sourceUnitRange": [
+          0,
+          171
+        ],
+        "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+        "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+        "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_E_present_photo",
+        "sceneId": "S701",
+        "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+        "id": "eb495cb7143c485b5c575a2b6e1b27464e0abc724745c008074bb2f57950d485",
+        "title": "Locate and verify written image-owner consent.",
+        "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      },
+      {
+        "field": "required_physical_protections",
+        "quote": "lint-free cotton gloves",
+        "unitId": "U001",
+        "unitRange": [
+          86,
+          109
+        ],
+        "permitRange": [
+          86,
+          109
+        ],
+        "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "sourceUnitRange": [
+          0,
+          171
+        ],
+        "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+        "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+        "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_E_present_photo",
+        "sceneId": "S701",
+        "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+        "id": "d298653d44e1db962b4ee6cf39db92fe7f3c719aa6a078a0b580d04e85435acc",
+        "title": "Confirm lint-free cotton gloves.",
+        "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      },
+      {
+        "field": "required_on_site_personnel",
+        "quote": "paper conservator",
+        "unitId": "U001",
+        "unitRange": [
+          116,
+          133
+        ],
+        "permitRange": [
+          116,
+          133
+        ],
+        "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "sourceUnitRange": [
+          0,
+          171
+        ],
+        "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+        "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+        "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_E_present_photo",
+        "sceneId": "S701",
+        "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+        "id": "1a91f0773f9965d833af68258762c4035411362292cacce76afaa5e2691cfe3f",
+        "title": "Confirm the paper conservator remains present throughout the take.",
+        "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      },
+      {
+        "field": "required_written_documents",
+        "quote": "written sound-stage access consent",
+        "unitId": "U002",
+        "unitRange": [
+          29,
+          63
+        ],
+        "permitRange": [
+          202,
+          236
+        ],
+        "sourceSentence": "Scene 702 interviews require written sound-stage access consent.",
+        "sourceUnitRange": [
+          173,
+          237
+        ],
+        "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "unitSha256": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+        "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+        "responseSha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_E_present_photo",
+        "sceneId": "S702",
+        "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+        "id": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+        "title": "Locate and verify written sound-stage access consent.",
+        "sourceTaskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": {
+          "sequence": 1,
+          "candidateId": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+          "sceneId": "S702",
+          "source": {
+            "field": "required_written_documents",
+            "quote": "written sound-stage access consent",
+            "unitId": "U002",
+            "unitRange": [
+              29,
+              63
+            ],
+            "permitRange": [
+              202,
+              236
+            ],
+            "sourceSentence": "Scene 702 interviews require written sound-stage access consent.",
+            "sourceUnitRange": [
+              173,
+              237
+            ],
+            "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "unitSha256": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+            "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+            "responseSha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_E_present_photo",
+            "sceneId": "S702",
+            "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+            "id": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+            "title": "Locate and verify written sound-stage access consent.",
+            "sourceTaskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+            "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          "reviewer": "Fictional campaign coordinator",
+          "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+          "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+          "at": "2026-10-27T11:41:12.576Z",
+          "workspaceRevision": 2,
+          "notClearance": true,
+          "sha256": "38833b88837968593f677f097c5dd56d866e2cab14de21713e2ab0c1f6525d64",
+          "sourceState": "CURRENT_REVIEW_ONLY"
+        }
+      }
+    ],
+    "warnings": [],
+    "fieldStates": [],
+    "reviewHistory": [
+      {
+        "sequence": 1,
+        "candidateId": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+        "sceneId": "S702",
+        "source": {
+          "field": "required_written_documents",
+          "quote": "written sound-stage access consent",
+          "unitId": "U002",
+          "unitRange": [
+            29,
+            63
+          ],
+          "permitRange": [
+            202,
+            236
+          ],
+          "sourceSentence": "Scene 702 interviews require written sound-stage access consent.",
+          "sourceUnitRange": [
+            173,
+            237
+          ],
+          "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "unitSha256": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+          "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+          "responseSha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_E_present_photo",
+          "sceneId": "S702",
+          "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+          "id": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+          "title": "Locate and verify written sound-stage access consent.",
+          "sourceTaskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+          "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        "reviewer": "Fictional campaign coordinator",
+        "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+        "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+        "at": "2026-10-27T11:41:12.576Z",
+        "workspaceRevision": 2,
+        "notClearance": true,
+        "sha256": "38833b88837968593f677f097c5dd56d866e2cab14de21713e2ab0c1f6525d64",
+        "sourceState": "CURRENT_REVIEW_ONLY"
+      }
+    ],
+    "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+    "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+    "issuance": "UNKNOWN",
+    "notClearance": true,
+    "humanEffortSeconds": null,
+    "notice": "Model-assisted proposals, not human-confirmed duties or filming authority.",
+    "discovery": {
+      "schema": "beforeroll-core-discovery-projection-v1",
+      "jobs": [
+        {
+          "id": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+          "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+          "current": true,
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "createdAt": "2026-10-27T11:41:06.110Z",
+          "updatedAt": "2026-10-27T11:41:11.889Z",
+          "stopReason": null,
+          "coverage": {
+            "pairs": 6,
+            "assessed": 6,
+            "unassessed": 0,
+            "relevant": 2,
+            "ambiguous": 0,
+            "extractedUnits": 2,
+            "totalUnits": 3
+          },
+          "pairs": [
+            {
+              "taskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+              "sceneId": "S701",
+              "documentId": "PERMIT",
+              "unitId": "U001",
+              "quote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+              "range": [
+                0,
+                171
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+              "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.9939,
+              "modelGrantClaim": 0.0066,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+              },
+              "scopeCaution": null,
+              "notClearance": true
+            },
+            {
+              "taskId": "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+              "sceneId": "S701",
+              "documentId": "PERMIT",
+              "unitId": "U002",
+              "quote": "Scene 702 interviews require written sound-stage access consent.",
+              "range": [
+                173,
+                237
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+              "decideResponseSha256": "4e2c5da932de475d9605932c90e883ecfd3e81c3c61e4b44f36e771e7e576dcd",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.0238,
+              "modelGrantClaim": 0.0057,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+              "sceneId": "S701",
+              "documentId": "PERMIT",
+              "unitId": "U003",
+              "quote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+              "range": [
+                239,
+                349
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+              "decideResponseSha256": "0cb8077b7a60a007a75d5aa06ee3cef7a9fbd4b3c98c92a4d0c1e9bc9913cf6f",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.0053,
+              "modelGrantClaim": 0.0028,
+              "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+              "literalFieldStates": null,
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+              "sceneId": "S702",
+              "documentId": "PERMIT",
+              "unitId": "U001",
+              "quote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+              "range": [
+                0,
+                171
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+              "decideResponseSha256": "e2234f72addc591371c03e1a4d961d23cfb73679c33322be0dcc9554648a5742",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.0063,
+              "modelGrantClaim": 0.0035,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+              },
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+              "sceneId": "S702",
+              "documentId": "PERMIT",
+              "unitId": "U002",
+              "quote": "Scene 702 interviews require written sound-stage access consent.",
+              "range": [
+                173,
+                237
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+              "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.9932,
+              "modelGrantClaim": 0.0076,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": null,
+              "notClearance": true
+            },
+            {
+              "taskId": "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7",
+              "sceneId": "S702",
+              "documentId": "PERMIT",
+              "unitId": "U003",
+              "quote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+              "range": [
+                239,
+                349
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+              "decideResponseSha256": "8d69fe9dcc132a9ee3bdb336c8af797e686f6e0a7f5feb5a9b42786f051bb78d",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.016,
+              "modelGrantClaim": 0.003,
+              "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+              "literalFieldStates": null,
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            }
+          ],
+          "attempts": 8,
+          "unknownBilling": 0,
+          "reportedCredits": 14,
+          "unknownCreditEntries": 0,
+          "latencyMs": 5344.111399999999,
+          "notClearance": true,
+          "candidates": [
+            {
+              "field": "required_written_documents",
+              "quote": "written image-owner consent",
+              "unitId": "U001",
+              "unitRange": [
+                57,
+                84
+              ],
+              "permitRange": [
+                57,
+                84
+              ],
+              "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+              "sourceUnitRange": [
+                0,
+                171
+              ],
+              "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+              "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+              "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+              "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_E_present_photo",
+              "sceneId": "S701",
+              "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+              "id": "eb495cb7143c485b5c575a2b6e1b27464e0abc724745c008074bb2f57950d485",
+              "title": "Locate and verify written image-owner consent.",
+              "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+              "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_physical_protections",
+              "quote": "lint-free cotton gloves",
+              "unitId": "U001",
+              "unitRange": [
+                86,
+                109
+              ],
+              "permitRange": [
+                86,
+                109
+              ],
+              "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+              "sourceUnitRange": [
+                0,
+                171
+              ],
+              "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+              "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+              "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+              "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_E_present_photo",
+              "sceneId": "S701",
+              "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+              "id": "d298653d44e1db962b4ee6cf39db92fe7f3c719aa6a078a0b580d04e85435acc",
+              "title": "Confirm lint-free cotton gloves.",
+              "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+              "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_on_site_personnel",
+              "quote": "paper conservator",
+              "unitId": "U001",
+              "unitRange": [
+                116,
+                133
+              ],
+              "permitRange": [
+                116,
+                133
+              ],
+              "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+              "sourceUnitRange": [
+                0,
+                171
+              ],
+              "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+              "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+              "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+              "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_E_present_photo",
+              "sceneId": "S701",
+              "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+              "id": "1a91f0773f9965d833af68258762c4035411362292cacce76afaa5e2691cfe3f",
+              "title": "Confirm the paper conservator remains present throughout the take.",
+              "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+              "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_written_documents",
+              "quote": "written sound-stage access consent",
+              "unitId": "U002",
+              "unitRange": [
+                29,
+                63
+              ],
+              "permitRange": [
+                202,
+                236
+              ],
+              "sourceSentence": "Scene 702 interviews require written sound-stage access consent.",
+              "sourceUnitRange": [
+                173,
+                237
+              ],
+              "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+              "unitSha256": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+              "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+              "responseSha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_E_present_photo",
+              "sceneId": "S702",
+              "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+              "id": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+              "title": "Locate and verify written sound-stage access consent.",
+              "sourceTaskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+              "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+              "contextUnitIds": [
+                "U001",
+                "U003"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            }
+          ],
+          "comparison": {
+            "basis": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "aiOff": [
+              {
+                "id": "S701:DATE_UNKNOWN",
+                "sceneId": "S701",
+                "code": "DATE_UNKNOWN",
+                "severity": "review",
+                "title": "Date authority not established",
+                "detail": "Confirm that the issued conditions apply to this shoot date.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 6,
+                    "end": 9,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S701:LOCATION_UNKNOWN",
+                "sceneId": "S701",
+                "code": "LOCATION_UNKNOWN",
+                "severity": "review",
+                "title": "Location scope requires source review",
+                "detail": "No trustworthy issued location reading is available.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 12,
+                    "end": 29,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S701:END_UNKNOWN",
+                "sceneId": "S701",
+                "code": "END_UNKNOWN",
+                "severity": "review",
+                "title": "Filming deadline not source-backed",
+                "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 32,
+                    "end": 43,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S702:DATE_UNKNOWN",
+                "sceneId": "S702",
+                "code": "DATE_UNKNOWN",
+                "severity": "review",
+                "title": "Date authority not established",
+                "detail": "Confirm that the issued conditions apply to this shoot date.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 96,
+                    "end": 99,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S702:LOCATION_UNKNOWN",
+                "sceneId": "S702",
+                "code": "LOCATION_UNKNOWN",
+                "severity": "review",
+                "title": "Location scope requires source review",
+                "detail": "No trustworthy issued location reading is available.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 102,
+                    "end": 117,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S702:END_UNKNOWN",
+                "sceneId": "S702",
+                "code": "END_UNKNOWN",
+                "severity": "review",
+                "title": "Filming deadline not source-backed",
+                "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 120,
+                    "end": 131,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              }
+            ],
+            "aiOffLiteralTaskCount": 0,
+            "modelDerivedTaskCount": 4,
+            "humanEffortSeconds": null,
+            "semanticAccuracy": "NOT_MEASURED_BY_ENGINEERING_TESTS"
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "field": "required_written_documents",
+          "quote": "written image-owner consent",
+          "unitId": "U001",
+          "unitRange": [
+            57,
+            84
+          ],
+          "permitRange": [
+            57,
+            84
+          ],
+          "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+          "sourceUnitRange": [
+            0,
+            171
+          ],
+          "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+          "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+          "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_E_present_photo",
+          "sceneId": "S701",
+          "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+          "id": "eb495cb7143c485b5c575a2b6e1b27464e0abc724745c008074bb2f57950d485",
+          "title": "Locate and verify written image-owner consent.",
+          "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+          "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_physical_protections",
+          "quote": "lint-free cotton gloves",
+          "unitId": "U001",
+          "unitRange": [
+            86,
+            109
+          ],
+          "permitRange": [
+            86,
+            109
+          ],
+          "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+          "sourceUnitRange": [
+            0,
+            171
+          ],
+          "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+          "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+          "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_E_present_photo",
+          "sceneId": "S701",
+          "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+          "id": "d298653d44e1db962b4ee6cf39db92fe7f3c719aa6a078a0b580d04e85435acc",
+          "title": "Confirm lint-free cotton gloves.",
+          "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+          "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_on_site_personnel",
+          "quote": "paper conservator",
+          "unitId": "U001",
+          "unitRange": [
+            116,
+            133
+          ],
+          "permitRange": [
+            116,
+            133
+          ],
+          "sourceSentence": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+          "sourceUnitRange": [
+            0,
+            171
+          ],
+          "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "unitSha256": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+          "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+          "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_E_present_photo",
+          "sceneId": "S701",
+          "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+          "id": "1a91f0773f9965d833af68258762c4035411362292cacce76afaa5e2691cfe3f",
+          "title": "Confirm the paper conservator remains present throughout the take.",
+          "sourceTaskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+          "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_written_documents",
+          "quote": "written sound-stage access consent",
+          "unitId": "U002",
+          "unitRange": [
+            29,
+            63
+          ],
+          "permitRange": [
+            202,
+            236
+          ],
+          "sourceSentence": "Scene 702 interviews require written sound-stage access consent.",
+          "sourceUnitRange": [
+            173,
+            237
+          ],
+          "permitSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "unitSha256": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+          "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+          "responseSha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_E_present_photo",
+          "sceneId": "S702",
+          "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+          "id": "e93ef2ddc06c4423c7e1b79e367b0abaac24c8e725a78b12328142bc45f26d80",
+          "title": "Locate and verify written sound-stage access consent.",
+          "sourceTaskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+          "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        }
+      ],
+      "notClearance": true
+    }
+  },
+  "sceneTasks": [
+    {
+      "id": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+      "sceneId": "S701",
+      "documentId": "PERMIT",
+      "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+      "unitId": "U001",
+      "sourceRange": [
+        0,
+        171
+      ],
+      "quote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+      "requestHash": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+      "modelState": "NOT_ATTEMPTED",
+      "modelOrigin": "NO_MODEL_RECORDING",
+      "model": null,
+      "reportedCredits": null,
+      "error": null,
+      "inheritedFromPlanKey": null,
+      "notClearance": true,
+      "discoveryCheck": {
+        "taskId": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+        "sceneId": "S701",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "quote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "range": [
+          0,
+          171
+        ],
+        "decideStatus": "ACCEPTED",
+        "route": "RELEVANT_REVIEW_ONLY",
+        "decideRequestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+        "decideResponseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+        "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "relevance": 0.9939,
+        "modelGrantClaim": 0.0066,
+        "extractStatus": "ACCEPTED",
+        "literalFieldStates": {
+          "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+          "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+          "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+        },
+        "scopeCaution": null,
+        "notClearance": true,
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1"
+      }
+    },
+    {
+      "id": "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+      "sceneId": "S701",
+      "documentId": "PERMIT",
+      "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+      "unitId": "U002",
+      "sourceRange": [
+        173,
+        237
+      ],
+      "quote": "Scene 702 interviews require written sound-stage access consent.",
+      "requestHash": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+      "modelState": "NOT_ATTEMPTED",
+      "modelOrigin": "NO_MODEL_RECORDING",
+      "model": null,
+      "reportedCredits": null,
+      "error": null,
+      "inheritedFromPlanKey": null,
+      "notClearance": true,
+      "discoveryCheck": {
+        "taskId": "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+        "sceneId": "S701",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "quote": "Scene 702 interviews require written sound-stage access consent.",
+        "range": [
+          173,
+          237
+        ],
+        "decideStatus": "ACCEPTED",
+        "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+        "decideRequestSha256": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+        "decideResponseSha256": "4e2c5da932de475d9605932c90e883ecfd3e81c3c61e4b44f36e771e7e576dcd",
+        "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "relevance": 0.0238,
+        "modelGrantClaim": 0.0057,
+        "extractStatus": "ACCEPTED",
+        "literalFieldStates": {
+          "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+          "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+          "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+        },
+        "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+        "notClearance": true,
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1"
+      }
+    },
+    {
+      "id": "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+      "sceneId": "S701",
+      "documentId": "PERMIT",
+      "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+      "unitId": "U003",
+      "sourceRange": [
+        239,
+        349
+      ],
+      "quote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+      "requestHash": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+      "modelState": "NOT_ATTEMPTED",
+      "modelOrigin": "NO_MODEL_RECORDING",
+      "model": null,
+      "reportedCredits": null,
+      "error": null,
+      "inheritedFromPlanKey": null,
+      "notClearance": true,
+      "discoveryCheck": {
+        "taskId": "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+        "sceneId": "S701",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "quote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+        "range": [
+          239,
+          349
+        ],
+        "decideStatus": "ACCEPTED",
+        "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+        "decideRequestSha256": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+        "decideResponseSha256": "0cb8077b7a60a007a75d5aa06ee3cef7a9fbd4b3c98c92a4d0c1e9bc9913cf6f",
+        "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "relevance": 0.0053,
+        "modelGrantClaim": 0.0028,
+        "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+        "literalFieldStates": null,
+        "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+        "notClearance": true,
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1"
+      }
+    },
+    {
+      "id": "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+      "sceneId": "S702",
+      "documentId": "PERMIT",
+      "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+      "unitId": "U001",
+      "sourceRange": [
+        0,
+        171
+      ],
+      "quote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+      "requestHash": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+      "modelState": "NOT_ATTEMPTED",
+      "modelOrigin": "NO_MODEL_RECORDING",
+      "model": null,
+      "reportedCredits": null,
+      "error": null,
+      "inheritedFromPlanKey": null,
+      "notClearance": true,
+      "discoveryCheck": {
+        "taskId": "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+        "sceneId": "S702",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "quote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "range": [
+          0,
+          171
+        ],
+        "decideStatus": "ACCEPTED",
+        "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+        "decideRequestSha256": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+        "decideResponseSha256": "e2234f72addc591371c03e1a4d961d23cfb73679c33322be0dcc9554648a5742",
+        "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "relevance": 0.0063,
+        "modelGrantClaim": 0.0035,
+        "extractStatus": "ACCEPTED",
+        "literalFieldStates": {
+          "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+          "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+          "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+        },
+        "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+        "notClearance": true,
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1"
+      }
+    },
+    {
+      "id": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+      "sceneId": "S702",
+      "documentId": "PERMIT",
+      "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+      "unitId": "U002",
+      "sourceRange": [
+        173,
+        237
+      ],
+      "quote": "Scene 702 interviews require written sound-stage access consent.",
+      "requestHash": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+      "modelState": "NOT_ATTEMPTED",
+      "modelOrigin": "NO_MODEL_RECORDING",
+      "model": null,
+      "reportedCredits": null,
+      "error": null,
+      "inheritedFromPlanKey": null,
+      "notClearance": true,
+      "discoveryCheck": {
+        "taskId": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+        "sceneId": "S702",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "quote": "Scene 702 interviews require written sound-stage access consent.",
+        "range": [
+          173,
+          237
+        ],
+        "decideStatus": "ACCEPTED",
+        "route": "RELEVANT_REVIEW_ONLY",
+        "decideRequestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+        "decideResponseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+        "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "relevance": 0.9932,
+        "modelGrantClaim": 0.0076,
+        "extractStatus": "ACCEPTED",
+        "literalFieldStates": {
+          "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+          "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+          "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+        },
+        "scopeCaution": null,
+        "notClearance": true,
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1"
+      }
+    },
+    {
+      "id": "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7",
+      "sceneId": "S702",
+      "documentId": "PERMIT",
+      "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+      "unitId": "U003",
+      "sourceRange": [
+        239,
+        349
+      ],
+      "quote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+      "requestHash": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+      "modelState": "NOT_ATTEMPTED",
+      "modelOrigin": "NO_MODEL_RECORDING",
+      "model": null,
+      "reportedCredits": null,
+      "error": null,
+      "inheritedFromPlanKey": null,
+      "notClearance": true,
+      "discoveryCheck": {
+        "taskId": "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7",
+        "sceneId": "S702",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "quote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+        "range": [
+          239,
+          349
+        ],
+        "decideStatus": "ACCEPTED",
+        "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+        "decideRequestSha256": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+        "decideResponseSha256": "8d69fe9dcc132a9ee3bdb336c8af797e686f6e0a7f5feb5a9b42786f051bb78d",
+        "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "relevance": 0.016,
+        "modelGrantClaim": 0.003,
+        "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+        "literalFieldStates": null,
+        "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+        "notClearance": true,
+        "discoveryId": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1"
+      }
+    }
+  ],
+  "reviewActions": [],
+  "currentTaskReviews": [],
+  "scenes": [
+    {
+      "sceneId": "S701",
+      "location": "Conservation room",
+      "activity": "close-ups of historical photograph on table",
+      "start": "09:00",
+      "end": "10:00",
+      "originalRow": "Scene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table",
+      "schedule": {
+        "sceneId": "S701",
+        "sceneSourceHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      "claimIds": [],
+      "currentHumanClaims": 0,
+      "taskIds": [
+        "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+        "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+        "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016"
+      ],
+      "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "planned": 3,
+      "modelComplete": 0,
+      "neverAttempted": 3,
+      "interruptedOrBillingUnknown": 0,
+      "humanReviewed": 0,
+      "humanUnresolved": 0,
+      "issues": [
+        "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+        "MODEL_CHECKS_NOT_EVALUATED",
+        "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+        "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+      ],
+      "readiness": "OUTSTANDING_REVIEW",
+      "notClearance": true
+    },
+    {
+      "sceneId": "S702",
+      "location": "Interview stage",
+      "activity": "recorded interviews",
+      "start": "10:00",
+      "end": "11:00",
+      "originalRow": "Scene 702 | Interview stage | 10:00-11:00 | recorded interviews",
+      "schedule": {
+        "sceneId": "S702",
+        "sceneSourceHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      "claimIds": [],
+      "currentHumanClaims": 0,
+      "taskIds": [
+        "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+        "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+        "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7"
+      ],
+      "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "planned": 3,
+      "modelComplete": 0,
+      "neverAttempted": 3,
+      "interruptedOrBillingUnknown": 0,
+      "humanReviewed": 0,
+      "humanUnresolved": 0,
+      "issues": [
+        "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+        "MODEL_CHECKS_NOT_EVALUATED",
+        "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+        "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+      ],
+      "readiness": "OUTSTANDING_REVIEW",
+      "notClearance": true
+    }
+  ],
+  "counts": {
+    "documents": 1,
+    "scenes": 2,
+    "unresolvedCallSheetRows": 0,
+    "planTasks": 6,
+    "completedModelChecks": 0,
+    "unattemptedChecks": 6,
+    "uncertainModelChecks": 0,
+    "archivedModelRuns": 0,
+    "currentReviewedTasks": 0,
+    "currentUnresolvedHumanReviews": 0,
+    "staleHumanReviews": 0,
+    "unresolvedPdfTranscriptions": 0,
+    "undatedScenes": 2,
+    "openPrerequisites": 0,
+    "pastDuePrerequisites": 0,
+    "unverifiedDocumentConflicts": 0,
+    "currentSceneScopeAssertions": 0,
+    "staleSceneScopeAssertions": 0,
+    "unreviewedDocumentProvenance": 1,
+    "discoveryAssessedChecks": 6,
+    "effectiveUnassessedChecks": 0,
+    "discoveryIncompleteRuns": 0
+  },
+  "outstanding": [
+    {
+      "code": "CURRENT_HUMAN_REVIEWS_INCOMPLETE",
+      "count": 6
+    },
+    {
+      "code": "SCENE_DATES_NOT_REVIEWED",
+      "count": 2
+    },
+    {
+      "code": "UNREVIEWED_DOCUMENT_PROVENANCE",
+      "count": 1
+    }
+  ],
+  "productionState": "OPEN_REVIEW_ITEMS",
+  "caveats": [
+    "Not filming clearance, permit authentication or legal advice.",
+    "Human assertions are unverified and require responsible sign-off outside this tool.",
+    "Clocked scores are not calibrated confidence and cannot override specific documentary restrictions.",
+    "Candidate source coverage is not proof that all operative documents or obligations have been supplied.",
+    "Unknown billing, interrupted requests, unsupported material and stale evidence remain unresolved."
+  ],
+  "notClearance": true,
+  "sha256": "4f4ae1ebc19ccb2ec59a22f77e8ea127760d817739bfbf06e3f873813200384e"
+}

@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-27T14:34:47.662Z",
+  "deadPid": 25908,
+  "budgetSha256": "bc87f129ed7637c8b056ad80aebc17d7e893b462d3238c5cc44dcbfd2442687d",
+  "completedJobHashes": [
+    "2047ce2b5f54e2b5f6e457b22e09863d7db270ca2090164b57347325192c42e0"
+  ],
+  "permanentRequestFences": "UNCHANGED",
+  "reason": "Windows exec ended idle server before its cleanup handler completed."
+}

@@ -1,0 +1,590 @@
+{
+  "plan": {
+    "schema": "beforeroll-core-discovery-plan-v1",
+    "id": "22aacf3b805023fd7804c6eb9d8f2f5146ae7f2c2a66f5f77e2ee2f27fa8e79a",
+    "workspaceId": "live_20261027_A_dock",
+    "documents": [
+      {
+        "id": "PERMIT",
+        "hash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "revision": 1,
+        "epoch": 0,
+        "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S301",
+        "epoch": 0,
+        "hash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "row": "Scene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot"
+      },
+      {
+        "id": "S302",
+        "epoch": 0,
+        "hash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "row": "Scene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier"
+      }
+    ],
+    "taskIds": [
+      "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+      "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+      "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+      "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+      "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+      "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+      "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+      "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d"
+    ],
+    "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+    "workspaceRevision": 2,
+    "documentIds": [
+      "PERMIT"
+    ],
+    "sceneIds": [
+      "S301",
+      "S302"
+    ],
+    "sources": [
+      {
+        "id": "PERMIT",
+        "name": "A_DOCK-permit.txt",
+        "role": "permit",
+        "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 128,
+            "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+            "hash": "92dfa42eb32fa9b70ae543ae08f556c034c8ecbdf0559d061755e83d5049572c",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 130,
+            "end": 323,
+            "text": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+            "hash": "a567306cfb155bd7dd10bf083328ac0be4bd439138130962b1aeb04cf3b276eb",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 325,
+            "end": 432,
+            "text": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+            "hash": "ea83716dd7e79a4865d6b7491dfdc298228fee0cd060b61830dc69ef7a0a7d92",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 434,
+            "end": 510,
+            "text": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+            "hash": "8c12c31f4bfea646ca024fc7a666f8950979eacdc0be473c6a9e9f32072fad52",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "A_DOCK-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "normalizedHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "byteCount": 510,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "tasks": [
+      {
+        "id": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S301",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,128):\nScene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S301",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [130,323):\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\nAFTER (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S301",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [325,432):\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\nAFTER (U004): Visitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S301",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "unitId": "U004",
+        "contextUnitIds": [
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [434,510):\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S302",
+        "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,128):\nScene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "c37e5b10041e269138a5d9d16f74a952a10e584928b11882289fff95c40d174a",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S302",
+        "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [130,323):\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\nAFTER (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "11227c001627db32bdc7ed33b415b030da9eaf6c134dd3fe81f77360b9498173",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S302",
+        "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [325,432):\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\nAFTER (U004): Visitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "45cbf76b586484dd7deed565b4c51f4ae340d8cdb1d899fe03438eddae65727f",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "documentRevision": 1,
+        "sceneId": "S302",
+        "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "unitId": "U004",
+        "contextUnitIds": [
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [434,510):\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "2adbd385cf8fb9848ea02eeb951871025f9c0698f6073b75e0953db988ac3778",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      }
+    ],
+    "extracts": [
+      {
+        "id": "4b3700c880ec91f80f5427e7117492065d19fb3ea99b17667586db1c281951b7",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "payload": {
+          "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "b3383fc70f4928e8f50352ed0708531217b8a6b63b6212bce1804cc512ba8bf5",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "payload": {
+          "text": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "f3fa209c64f4c5dad8ba131be6668dadc307a108b61ead159d578608e75632e0",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "payload": {
+          "text": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "571d19fd237de7065ddd6ce6a124d06a6ea4d08f3347a35283c22e276e0d3c41",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "payload": {
+          "text": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      }
+    ],
+    "verifiedBy": "Codex fictional-document source verification",
+    "sourceConfirmed": true,
+    "limits": {
+      "maxCalls": 32,
+      "creditBudget": 256,
+      "creditReservePerCall": 8
+    },
+    "decideCalls": 8,
+    "maxExtractCalls": 4,
+    "worstCaseCalls": 12,
+    "concurrency": 1,
+    "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+    "notClearance": true
+  },
+  "previewSha256": "f66b2c197691bccbbb2c1bde0428115fae4dcd4457ff846c0220a96af03b8c26",
+  "existingFence": false,
+  "notClearance": true
+}

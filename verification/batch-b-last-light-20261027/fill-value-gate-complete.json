@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-27T14:11:52.948Z",
+  "version": "v6",
+  "fourFrozenProbesPass": true,
+  "budget": {
+    "requests": 16,
+    "credits": 88,
+    "remainingRequests": 64,
+    "remainingCredits": 312
+  },
+  "notClearance": true
+}

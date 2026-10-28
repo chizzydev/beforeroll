@@ -32,7 +32,7 @@ export function buildProductionJourney(d,{originals=null}={}) {
  if(unavailableOriginals)sourceBlockers.push(`${unavailableOriginals} archived originals are unavailable; reconnect exact matching bytes.`);
  for(const x of d.outstanding.filter(x=>x.code==='PLAN_BLOCKED'))sourceBlockers.push(`Analysis plan blocked: ${x.detail}`);
  const scopeOpen=c.unreviewedDocumentProvenance+d.scenes.filter(s=>!s.currentHumanClaims).length+c.unverifiedDocumentConflicts+(d.documentaryReasoning?.summary.pendingGrantClaims??0);
- const planLeft=Math.max(0,c.planTasks-c.completedModelChecks);
+ const planLeft=c.effectiveUnassessedChecks??Math.max(0,c.planTasks-c.completedModelChecks);
  const humanOpen=Math.max(0,c.planTasks-c.currentReviewedTasks)+c.currentUnresolvedHumanReviews;
  const undated=c.undatedScenes;
  const unsettled=c.openPrerequisites;
@@ -42,9 +42,9 @@ export function buildProductionJourney(d,{originals=null}={}) {
   scope:snapshot(!haveSources?'BLOCKED':scopeOpen?'ATTENTION':'CURRENT',
    `${c.unreviewedDocumentProvenance} document roles unreviewed · ${d.scenes.filter(s=>!s.currentHumanClaims).length} scenes without scope assertions`,
    !haveSources?['Import source documents and scenes first.']:scopeOpen?['Documentary provenance or scene scope needs responsible human review.']:[]),
-  analysis:snapshot(!planReady||c.unresolvedPdfTranscriptions||c.unresolvedCallSheetRows?'BLOCKED':c.uncertainModelChecks?'STOPPED':planLeft?'ATTENTION':'CURRENT',
-   `${c.completedModelChecks}/${c.planTasks} source checks recorded · ${c.uncertainModelChecks} uncertain`,
-   !planReady?['Resolve source-plan blockers before running Clocked.']:c.uncertainModelChecks?['Investigate uncertain provider outcomes; no automatic retries.']:[]),
+  analysis:snapshot(!planReady||c.unresolvedPdfTranscriptions||c.unresolvedCallSheetRows?'BLOCKED':c.uncertainModelChecks||c.discoveryIncompleteRuns?'STOPPED':planLeft?'ATTENTION':'CURRENT',
+   `${c.planTasks-planLeft}/${c.planTasks} source checks recorded${c.discoveryAssessedChecks?' (including discovery Decide)':''} · ${c.uncertainModelChecks} uncertain`,
+   !planReady?['Resolve source-plan blockers before running Clocked.']:c.uncertainModelChecks||c.discoveryIncompleteRuns?['Inspect incomplete/active discovery or uncertain provider outcomes; returned Decide checks alone do not complete Extract. No automatic retries.']:[]),
   review:snapshot(!planReady?'BLOCKED':humanOpen?'ATTENTION':'CURRENT',
    `${c.currentReviewedTasks}/${c.planTasks} current human reviews · ${c.currentUnresolvedHumanReviews} follow-ups`,
    !planReady?['Source plan must exist before exact-task review.']:[]),

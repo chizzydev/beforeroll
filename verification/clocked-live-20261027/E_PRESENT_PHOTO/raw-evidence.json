@@ -1,0 +1,744 @@
+{
+  "schema": "beforeroll-core-discovery-evidence-v1",
+  "workspaceId": "live_20261027_E_present_photo",
+  "jobs": [
+    {
+      "schema": "beforeroll-core-discovery-journal-v1",
+      "plan": {
+        "schema": "beforeroll-core-discovery-plan-v1",
+        "id": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+        "workspaceId": "live_20261027_E_present_photo",
+        "documents": [
+          {
+            "id": "PERMIT",
+            "hash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "revision": 1,
+            "epoch": 0,
+            "rawHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1"
+          }
+        ],
+        "scenes": [
+          {
+            "id": "S701",
+            "epoch": 0,
+            "hash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+            "row": "Scene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table"
+          },
+          {
+            "id": "S702",
+            "epoch": 0,
+            "hash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+            "row": "Scene 702 | Interview stage | 10:00-11:00 | recorded interviews"
+          }
+        ],
+        "taskIds": [
+          "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+          "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+          "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+          "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+          "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+          "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7"
+        ],
+        "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+        "workspaceRevision": 2,
+        "documentIds": [
+          "PERMIT"
+        ],
+        "sceneIds": [
+          "S701",
+          "S702"
+        ],
+        "sources": [
+          {
+            "id": "PERMIT",
+            "name": "E_PRESENT_PHOTO-permit.txt",
+            "role": "permit",
+            "text": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nScene 702 interviews require written sound-stage access consent.\n\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+            "sourceHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "revision": 1,
+            "units": [
+              {
+                "id": "U001",
+                "start": 0,
+                "end": 171,
+                "text": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+                "hash": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U002",
+                "start": 173,
+                "end": 237,
+                "text": "Scene 702 interviews require written sound-stage access consent.",
+                "hash": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U003",
+                "start": 239,
+                "end": 349,
+                "text": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+                "hash": "b0deea598d71989025eca86642c9478335b379e2ae22b868afd2949aec1abeac",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              }
+            ],
+            "coverage": {
+              "represented": true,
+              "gaps": []
+            },
+            "status": "SOURCE_UNVERIFIED",
+            "importReceipt": {
+              "kind": "permit",
+              "name": "E_PRESENT_PHOTO-permit.txt",
+              "sourceFormat": "UTF8_TEXT",
+              "rawHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+              "normalizedHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+              "byteCount": 349,
+              "sourceMap": [],
+              "warnings": [
+                "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+              ],
+              "reviewedAttestation": null,
+              "reviewedPermitAttestation": null,
+              "requiresHumanTextReview": false,
+              "extractionPartSha256": null,
+              "revision": 1,
+              "documentId": "PERMIT",
+              "sourceHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1"
+            },
+            "pdfTranscriptionReview": null
+          }
+        ],
+        "tasks": [
+          {
+            "id": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+            "documentId": "PERMIT",
+            "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "documentRevision": 1,
+            "sceneId": "S701",
+            "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+            "sourceRange": [
+              0,
+              171
+            ],
+            "sourceQuote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+            "unitId": "U001",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,171):\nScene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+            "documentId": "PERMIT",
+            "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "documentRevision": 1,
+            "sceneId": "S701",
+            "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+            "sourceRange": [
+              173,
+              237
+            ],
+            "sourceQuote": "Scene 702 interviews require written sound-stage access consent.",
+            "unitId": "U002",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [173,237):\nScene 702 interviews require written sound-stage access consent.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\nAFTER (U003): An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+            "documentId": "PERMIT",
+            "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "documentRevision": 1,
+            "sceneId": "S701",
+            "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+            "sourceRange": [
+              239,
+              349
+            ],
+            "sourceQuote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+            "unitId": "U003",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [239,349):\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+            "documentId": "PERMIT",
+            "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "documentRevision": 1,
+            "sceneId": "S702",
+            "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+            "sourceRange": [
+              0,
+              171
+            ],
+            "sourceQuote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+            "unitId": "U001",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,171):\nScene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+            "documentId": "PERMIT",
+            "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "documentRevision": 1,
+            "sceneId": "S702",
+            "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+            "sourceRange": [
+              173,
+              237
+            ],
+            "sourceQuote": "Scene 702 interviews require written sound-stage access consent.",
+            "unitId": "U002",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [173,237):\nScene 702 interviews require written sound-stage access consent.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\nAFTER (U003): An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7",
+            "documentId": "PERMIT",
+            "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+            "documentRevision": 1,
+            "sceneId": "S702",
+            "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+            "sourceRange": [
+              239,
+              349
+            ],
+            "sourceQuote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+            "unitId": "U003",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [239,349):\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          }
+        ],
+        "extracts": [
+          {
+            "id": "c25880f9206e691aa98b133bd092048e84f784c41170c4f3d1c7e23736c4590f",
+            "documentId": "PERMIT",
+            "unitId": "U001",
+            "payload": {
+              "text": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "c5bb52b0318a09fec1f78d91d4e98f968c50d10437949d1dfde733a99800e8e6",
+            "documentId": "PERMIT",
+            "unitId": "U002",
+            "payload": {
+              "text": "Scene 702 interviews require written sound-stage access consent.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "d3cfbedd46afe6a40cf195c5180f886c0609b124e6d1cc6da1ecff558ce536c0",
+            "documentId": "PERMIT",
+            "unitId": "U003",
+            "payload": {
+              "text": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          }
+        ],
+        "verifiedBy": "Codex fictional-document source verification",
+        "sourceConfirmed": true,
+        "limits": {
+          "maxCalls": 21,
+          "creditBudget": 256,
+          "creditReservePerCall": 8
+        },
+        "decideCalls": 6,
+        "maxExtractCalls": 3,
+        "worstCaseCalls": 9,
+        "concurrency": 1,
+        "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+        "notClearance": true
+      },
+      "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+      "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+      "entries": [
+        {
+          "id": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAxIFswLDE3MSk6XG5TY2VuZSA3MDEgY2xvc2UtdXBzIG9mIHRoZSBoaXN0b3JpY2FsIHBob3RvZ3JhcGggcmVxdWlyZSB3cml0dGVuIGltYWdlLW93bmVyIGNvbnNlbnQsIGxpbnQtZnJlZSBjb3R0b24gZ2xvdmVzIGFuZCBhIHBhcGVyIGNvbnNlcnZhdG9yIGJlc2lkZSB0aGUgdGFibGUgdGhyb3VnaG91dCB0aGUgdGFrZS5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkFGVEVSIChVMDAyKTogU2NlbmUgNzAyIGludGVydmlld3MgcmVxdWlyZSB3cml0dGVuIHNvdW5kLXN0YWdlIGFjY2VzcyBjb25zZW50LlxuXG5QUk9QT1NFRCBTQ0VORSAoZXhhY3QgY2FsbC1zaGVldCByb3cpOlxuU2NlbmUgNzAxIHwgQ29uc2VydmF0aW9uIHJvb20gfCAwOTowMC0xMDowMCB8IGNsb3NlLXVwcyBvZiBoaXN0b3JpY2FsIHBob3RvZ3JhcGggb24gdGFibGVcblxuQXNzZXNzIHRoZSBleGFjdCBwYXNzYWdlIHdpdGggaXRzIGNvbnRleHQuIERvIG5vdCB0cmVhdCBhIGdlbmVyYWwgbG9jYXRpb24gY29uc2VudCBhcyBwZXJtaXNzaW9uIHRvIG92ZXJyaWRlIGEgbW9yZSBzcGVjaWZpYyBhY3Rpdml0eSByZXN0cmljdGlvbi4gTm8gZmlsbWluZy1jbGVhcmFuY2UgY29uY2x1c2lvbnMuIiwicXVlc3Rpb25zIjp7ImFjdGl2aXR5X2xpbmsiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2Ugc3RhdGUgYSByZXN0cmljdGlvbiwgcHJlcmVxdWlzaXRlLCBvciBjb25kaXRpb25hbCBhY3Rpdml0eSBwZXJtaXNzaW9uIG1hdGVyaWFsbHkgYXBwbGljYWJsZSB0byB0aGlzIHNjZW5lPyBTdXJyb3VuZGluZyBwYXNzYWdlcyBhcmUgY29udGV4dCBvbmx5LCBub3QgaW5kZXBlbmRlbnQgZ3JhbnRzLiIsImNyaXRlcmlhIjp7InRydWUiOiJFeGFjdCBwYXNzYWdlIGNvbmNlcm5zIHRoZSBwcm9wb3NlZCBzY2VuZSBhY3Rpdml0eSwgZXZlbiB3aGVuIHRlcm1pbm9sb2d5IGRpZmZlcnMuIiwiZmFsc2UiOiJFeGFjdCBwYXNzYWdlIGlzIHVucmVsYXRlZCBvciBnZW5lcmFsIGxvY2F0aW9uIG92ZXJsYXAgYWxvbmUgaXMgaW5zdWZmaWNpZW50LiJ9fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2UgZXhwbGljaXRseSBpc3N1ZSBwZXJtaXNzaW9uIGZvciB0aGlzIHNwZWNpZmljIHNjZW5lIGFjdGl2aXR5IGFuZCBhdXRob3JpemVkIHNjb3BlPyBBIHJlcXVlc3QsIGdlbmVyaWMgbG9jYXRpb24gY29uc2VudCwgZ3JhbnQgZm9yIGEgZGlmZmVyZW50IHNjZW5lLCBvciBwcmVyZXF1aXNpdGUgdGhhdCBoYXMgbm90IGJlZW4gZXZpZGVuY2VkIGlzIG5vdCBzY2VuZS1zcGVjaWZpYyBwZXJtaXNzaW9uLiIsImNyaXRlcmlhIjp7InRydWUiOiJRdW90ZWQgcGFzc2FnZSBleHBsaWNpdGx5IGdyYW50cyB0aGUgc3BlY2lmaWVkIHNjZW5lL2FjdGl2aXR5IHdpdGhpbiBzdGF0ZWQgc2NvcGUsIHN1YmplY3QgdG8gaHVtYW4gdmFsaWRhdGlvbi4iLCJmYWxzZSI6Ik5vIGlzc3VlZCwgc3VmZmljaWVudGx5IHNjb3BlZCBwZXJtaXNzaW9uIGlzIHN0YXRlZCBpbiB0aGlzIGV4YWN0IHBhc3NhZ2UuIn19fX0=",
+          "idempotencyKey": "32708847-b5b5-4eb6-8a3f-7b57828fdb6d",
+          "startedAt": "2026-10-27T11:41:06.139Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTM5fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwNjZ9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMjgsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+            "storedBodySha256": "1dac4ad89e0c148bb55a950cf609f55cc873f22965b8e1a2759a1ee4727d35af",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:04 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:41:06.139Z",
+            "endedAt": "2026-10-27T11:41:07.511Z",
+            "latencyMs": 1356.2727,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAyIFsxNzMsMjM3KTpcblNjZW5lIDcwMiBpbnRlcnZpZXdzIHJlcXVpcmUgd3JpdHRlbiBzb3VuZC1zdGFnZSBhY2Nlc3MgY29uc2VudC5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMSk6IFNjZW5lIDcwMSBjbG9zZS11cHMgb2YgdGhlIGhpc3RvcmljYWwgcGhvdG9ncmFwaCByZXF1aXJlIHdyaXR0ZW4gaW1hZ2Utb3duZXIgY29uc2VudCwgbGludC1mcmVlIGNvdHRvbiBnbG92ZXMgYW5kIGEgcGFwZXIgY29uc2VydmF0b3IgYmVzaWRlIHRoZSB0YWJsZSB0aHJvdWdob3V0IHRoZSB0YWtlLlxuQUZURVIgKFUwMDMpOiBBbiB1bnNpZ25lZCBwcm9wb3NhbCBmb3IgU2NlbmUgNzAzIGxpc3RzIGEgc21va2Ugb2JzZXJ2ZXI7IHRoaXMgZHJhZnQgaW1wb3NlcyBubyBjdXJyZW50IGZpbG1pbmcgcmVxdWlyZW1lbnRzLlxuXG5QUk9QT1NFRCBTQ0VORSAoZXhhY3QgY2FsbC1zaGVldCByb3cpOlxuU2NlbmUgNzAxIHwgQ29uc2VydmF0aW9uIHJvb20gfCAwOTowMC0xMDowMCB8IGNsb3NlLXVwcyBvZiBoaXN0b3JpY2FsIHBob3RvZ3JhcGggb24gdGFibGVcblxuQXNzZXNzIHRoZSBleGFjdCBwYXNzYWdlIHdpdGggaXRzIGNvbnRleHQuIERvIG5vdCB0cmVhdCBhIGdlbmVyYWwgbG9jYXRpb24gY29uc2VudCBhcyBwZXJtaXNzaW9uIHRvIG92ZXJyaWRlIGEgbW9yZSBzcGVjaWZpYyBhY3Rpdml0eSByZXN0cmljdGlvbi4gTm8gZmlsbWluZy1jbGVhcmFuY2UgY29uY2x1c2lvbnMuIiwicXVlc3Rpb25zIjp7ImFjdGl2aXR5X2xpbmsiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2Ugc3RhdGUgYSByZXN0cmljdGlvbiwgcHJlcmVxdWlzaXRlLCBvciBjb25kaXRpb25hbCBhY3Rpdml0eSBwZXJtaXNzaW9uIG1hdGVyaWFsbHkgYXBwbGljYWJsZSB0byB0aGlzIHNjZW5lPyBTdXJyb3VuZGluZyBwYXNzYWdlcyBhcmUgY29udGV4dCBvbmx5LCBub3QgaW5kZXBlbmRlbnQgZ3JhbnRzLiIsImNyaXRlcmlhIjp7InRydWUiOiJFeGFjdCBwYXNzYWdlIGNvbmNlcm5zIHRoZSBwcm9wb3NlZCBzY2VuZSBhY3Rpdml0eSwgZXZlbiB3aGVuIHRlcm1pbm9sb2d5IGRpZmZlcnMuIiwiZmFsc2UiOiJFeGFjdCBwYXNzYWdlIGlzIHVucmVsYXRlZCBvciBnZW5lcmFsIGxvY2F0aW9uIG92ZXJsYXAgYWxvbmUgaXMgaW5zdWZmaWNpZW50LiJ9fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2UgZXhwbGljaXRseSBpc3N1ZSBwZXJtaXNzaW9uIGZvciB0aGlzIHNwZWNpZmljIHNjZW5lIGFjdGl2aXR5IGFuZCBhdXRob3JpemVkIHNjb3BlPyBBIHJlcXVlc3QsIGdlbmVyaWMgbG9jYXRpb24gY29uc2VudCwgZ3JhbnQgZm9yIGEgZGlmZmVyZW50IHNjZW5lLCBvciBwcmVyZXF1aXNpdGUgdGhhdCBoYXMgbm90IGJlZW4gZXZpZGVuY2VkIGlzIG5vdCBzY2VuZS1zcGVjaWZpYyBwZXJtaXNzaW9uLiIsImNyaXRlcmlhIjp7InRydWUiOiJRdW90ZWQgcGFzc2FnZSBleHBsaWNpdGx5IGdyYW50cyB0aGUgc3BlY2lmaWVkIHNjZW5lL2FjdGl2aXR5IHdpdGhpbiBzdGF0ZWQgc2NvcGUsIHN1YmplY3QgdG8gaHVtYW4gdmFsaWRhdGlvbi4iLCJmYWxzZSI6Ik5vIGlzc3VlZCwgc3VmZmljaWVudGx5IHNjb3BlZCBwZXJtaXNzaW9uIGlzIHN0YXRlZCBpbiB0aGlzIGV4YWN0IHBhc3NhZ2UuIn19fX0=",
+          "idempotencyKey": "4de732ba-0c53-445d-9366-aeffd312aa60",
+          "startedAt": "2026-10-27T11:41:07.549Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMjM4fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwNTd9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNjAsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "4e2c5da932de475d9605932c90e883ecfd3e81c3c61e4b44f36e771e7e576dcd",
+            "storedBodySha256": "4e2c5da932de475d9605932c90e883ecfd3e81c3c61e4b44f36e771e7e576dcd",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:05 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:41:07.549Z",
+            "endedAt": "2026-10-27T11:41:08.158Z",
+            "latencyMs": 598.3317999999999,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAzIFsyMzksMzQ5KTpcbkFuIHVuc2lnbmVkIHByb3Bvc2FsIGZvciBTY2VuZSA3MDMgbGlzdHMgYSBzbW9rZSBvYnNlcnZlcjsgdGhpcyBkcmFmdCBpbXBvc2VzIG5vIGN1cnJlbnQgZmlsbWluZyByZXF1aXJlbWVudHMuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDIpOiBTY2VuZSA3MDIgaW50ZXJ2aWV3cyByZXF1aXJlIHdyaXR0ZW4gc291bmQtc3RhZ2UgYWNjZXNzIGNvbnNlbnQuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA3MDEgfCBDb25zZXJ2YXRpb24gcm9vbSB8IDA5OjAwLTEwOjAwIHwgY2xvc2UtdXBzIG9mIGhpc3RvcmljYWwgcGhvdG9ncmFwaCBvbiB0YWJsZVxuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "5921a866-440a-4ca9-981e-7f7ab0c978ae",
+          "startedAt": "2026-10-27T11:41:08.213Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMDUzfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMjh9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMTYsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "0cb8077b7a60a007a75d5aa06ee3cef7a9fbd4b3c98c92a4d0c1e9bc9913cf6f",
+            "storedBodySha256": "0cb8077b7a60a007a75d5aa06ee3cef7a9fbd4b3c98c92a4d0c1e9bc9913cf6f",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:06 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:41:08.213Z",
+            "endedAt": "2026-10-27T11:41:08.816Z",
+            "latencyMs": 593.9180000000001,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAxIFswLDE3MSk6XG5TY2VuZSA3MDEgY2xvc2UtdXBzIG9mIHRoZSBoaXN0b3JpY2FsIHBob3RvZ3JhcGggcmVxdWlyZSB3cml0dGVuIGltYWdlLW93bmVyIGNvbnNlbnQsIGxpbnQtZnJlZSBjb3R0b24gZ2xvdmVzIGFuZCBhIHBhcGVyIGNvbnNlcnZhdG9yIGJlc2lkZSB0aGUgdGFibGUgdGhyb3VnaG91dCB0aGUgdGFrZS5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkFGVEVSIChVMDAyKTogU2NlbmUgNzAyIGludGVydmlld3MgcmVxdWlyZSB3cml0dGVuIHNvdW5kLXN0YWdlIGFjY2VzcyBjb25zZW50LlxuXG5QUk9QT1NFRCBTQ0VORSAoZXhhY3QgY2FsbC1zaGVldCByb3cpOlxuU2NlbmUgNzAyIHwgSW50ZXJ2aWV3IHN0YWdlIHwgMTA6MDAtMTE6MDAgfCByZWNvcmRlZCBpbnRlcnZpZXdzXG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "84b21dcd-7ea8-471d-ba06-cb06334502d9",
+          "startedAt": "2026-10-27T11:41:08.852Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMDYzfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMzV9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMjIsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "e2234f72addc591371c03e1a4d961d23cfb73679c33322be0dcc9554648a5742",
+            "storedBodySha256": "e2234f72addc591371c03e1a4d961d23cfb73679c33322be0dcc9554648a5742",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:06 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:41:08.852Z",
+            "endedAt": "2026-10-27T11:41:09.308Z",
+            "latencyMs": 446.0502999999999,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAyIFsxNzMsMjM3KTpcblNjZW5lIDcwMiBpbnRlcnZpZXdzIHJlcXVpcmUgd3JpdHRlbiBzb3VuZC1zdGFnZSBhY2Nlc3MgY29uc2VudC5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMSk6IFNjZW5lIDcwMSBjbG9zZS11cHMgb2YgdGhlIGhpc3RvcmljYWwgcGhvdG9ncmFwaCByZXF1aXJlIHdyaXR0ZW4gaW1hZ2Utb3duZXIgY29uc2VudCwgbGludC1mcmVlIGNvdHRvbiBnbG92ZXMgYW5kIGEgcGFwZXIgY29uc2VydmF0b3IgYmVzaWRlIHRoZSB0YWJsZSB0aHJvdWdob3V0IHRoZSB0YWtlLlxuQUZURVIgKFUwMDMpOiBBbiB1bnNpZ25lZCBwcm9wb3NhbCBmb3IgU2NlbmUgNzAzIGxpc3RzIGEgc21va2Ugb2JzZXJ2ZXI7IHRoaXMgZHJhZnQgaW1wb3NlcyBubyBjdXJyZW50IGZpbG1pbmcgcmVxdWlyZW1lbnRzLlxuXG5QUk9QT1NFRCBTQ0VORSAoZXhhY3QgY2FsbC1zaGVldCByb3cpOlxuU2NlbmUgNzAyIHwgSW50ZXJ2aWV3IHN0YWdlIHwgMTA6MDAtMTE6MDAgfCByZWNvcmRlZCBpbnRlcnZpZXdzXG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "f0828e1e-392d-43f8-b098-eaf8ef6fdfba",
+          "startedAt": "2026-10-27T11:41:09.348Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTMyfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwNzZ9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNTQsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+            "storedBodySha256": "f6c1bee5316b780a419cd93526a7920f835f0684149ea7677eea80bfce610291",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:07 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:41:09.348Z",
+            "endedAt": "2026-10-27T11:41:09.807Z",
+            "latencyMs": 449.02139999999963,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAzIFsyMzksMzQ5KTpcbkFuIHVuc2lnbmVkIHByb3Bvc2FsIGZvciBTY2VuZSA3MDMgbGlzdHMgYSBzbW9rZSBvYnNlcnZlcjsgdGhpcyBkcmFmdCBpbXBvc2VzIG5vIGN1cnJlbnQgZmlsbWluZyByZXF1aXJlbWVudHMuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDIpOiBTY2VuZSA3MDIgaW50ZXJ2aWV3cyByZXF1aXJlIHdyaXR0ZW4gc291bmQtc3RhZ2UgYWNjZXNzIGNvbnNlbnQuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSA3MDIgfCBJbnRlcnZpZXcgc3RhZ2UgfCAxMDowMC0xMTowMCB8IHJlY29yZGVkIGludGVydmlld3NcblxuQXNzZXNzIHRoZSBleGFjdCBwYXNzYWdlIHdpdGggaXRzIGNvbnRleHQuIERvIG5vdCB0cmVhdCBhIGdlbmVyYWwgbG9jYXRpb24gY29uc2VudCBhcyBwZXJtaXNzaW9uIHRvIG92ZXJyaWRlIGEgbW9yZSBzcGVjaWZpYyBhY3Rpdml0eSByZXN0cmljdGlvbi4gTm8gZmlsbWluZy1jbGVhcmFuY2UgY29uY2x1c2lvbnMuIiwicXVlc3Rpb25zIjp7ImFjdGl2aXR5X2xpbmsiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2Ugc3RhdGUgYSByZXN0cmljdGlvbiwgcHJlcmVxdWlzaXRlLCBvciBjb25kaXRpb25hbCBhY3Rpdml0eSBwZXJtaXNzaW9uIG1hdGVyaWFsbHkgYXBwbGljYWJsZSB0byB0aGlzIHNjZW5lPyBTdXJyb3VuZGluZyBwYXNzYWdlcyBhcmUgY29udGV4dCBvbmx5LCBub3QgaW5kZXBlbmRlbnQgZ3JhbnRzLiIsImNyaXRlcmlhIjp7InRydWUiOiJFeGFjdCBwYXNzYWdlIGNvbmNlcm5zIHRoZSBwcm9wb3NlZCBzY2VuZSBhY3Rpdml0eSwgZXZlbiB3aGVuIHRlcm1pbm9sb2d5IGRpZmZlcnMuIiwiZmFsc2UiOiJFeGFjdCBwYXNzYWdlIGlzIHVucmVsYXRlZCBvciBnZW5lcmFsIGxvY2F0aW9uIG92ZXJsYXAgYWxvbmUgaXMgaW5zdWZmaWNpZW50LiJ9fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2UgZXhwbGljaXRseSBpc3N1ZSBwZXJtaXNzaW9uIGZvciB0aGlzIHNwZWNpZmljIHNjZW5lIGFjdGl2aXR5IGFuZCBhdXRob3JpemVkIHNjb3BlPyBBIHJlcXVlc3QsIGdlbmVyaWMgbG9jYXRpb24gY29uc2VudCwgZ3JhbnQgZm9yIGEgZGlmZmVyZW50IHNjZW5lLCBvciBwcmVyZXF1aXNpdGUgdGhhdCBoYXMgbm90IGJlZW4gZXZpZGVuY2VkIGlzIG5vdCBzY2VuZS1zcGVjaWZpYyBwZXJtaXNzaW9uLiIsImNyaXRlcmlhIjp7InRydWUiOiJRdW90ZWQgcGFzc2FnZSBleHBsaWNpdGx5IGdyYW50cyB0aGUgc3BlY2lmaWVkIHNjZW5lL2FjdGl2aXR5IHdpdGhpbiBzdGF0ZWQgc2NvcGUsIHN1YmplY3QgdG8gaHVtYW4gdmFsaWRhdGlvbi4iLCJmYWxzZSI6Ik5vIGlzc3VlZCwgc3VmZmljaWVudGx5IHNjb3BlZCBwZXJtaXNzaW9uIGlzIHN0YXRlZCBpbiB0aGlzIGV4YWN0IHBhc3NhZ2UuIn19fX0=",
+          "idempotencyKey": "337d4719-f759-4f8c-8d0c-a7717aeeb134",
+          "startedAt": "2026-10-27T11:41:09.843Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMTZ9LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsIm5vdWwiOjAuMDAzfX0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MzEwLCJvdXRwdXRfdG9rZW5zIjo0fX0=",
+          "receipt": {
+            "requestSha256": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "8d69fe9dcc132a9ee3bdb336c8af797e686f6e0a7f5feb5a9b42786f051bb78d",
+            "storedBodySha256": "8d69fe9dcc132a9ee3bdb336c8af797e686f6e0a7f5feb5a9b42786f051bb78d",
+            "responseByteLength": 176,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:07 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:41:09.843Z",
+            "endedAt": "2026-10-27T11:41:10.346Z",
+            "latencyMs": 493.2424000000001,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "c25880f9206e691aa98b133bd092048e84f784c41170c4f3d1c7e23736c4590f",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+          "requestBase64": "eyJ0ZXh0IjoiU2NlbmUgNzAxIGNsb3NlLXVwcyBvZiB0aGUgaGlzdG9yaWNhbCBwaG90b2dyYXBoIHJlcXVpcmUgd3JpdHRlbiBpbWFnZS1vd25lciBjb25zZW50LCBsaW50LWZyZWUgY290dG9uIGdsb3ZlcyBhbmQgYSBwYXBlciBjb25zZXJ2YXRvciBiZXNpZGUgdGhlIHRhYmxlIHRocm91Z2hvdXQgdGhlIHRha2UuIiwiaW5zdHJ1Y3Rpb25zIjoiQ29weSBvbmx5IHNob3J0IHZlcmJhdGltIHNvdXJjZSBwaHJhc2VzIGlkZW50aWZ5aW5nIGRvY3VtZW50YXJ5IHByZXJlcXVpc2l0ZXMsIHJlcXVpcmVkIHBoeXNpY2FsIHByb3RlY3Rpb25zLCBvciByZXF1aXJlZCBvbi1zaXRlIHBlcnNvbm5lbC4gQXBwbHkgdGhlIHNhbWUgdGhyZWUgZmllbGRzIHRvIHRoZSBlbnRpcmUgc3VwcGxpZWQgcGFzc2FnZS4gUmVwb3J0IGZhY3RzIHRoZSB0ZXh0IGV4cHJlc3NseSBzdGF0ZXMgYXJlIFJFUVVJUkVEIGZvciB0aGUgZGVzY3JpYmVkIGFjdGl2aXR5LCBub3QgaGlzdG9yaWNhbCBleGFtcGxlcywgc3VnZ2VzdGlvbnMsIHByb3Bvc2FscywgcmVxdWVzdHMgdG8gZXh0ZW5kIGNvbmRpdGlvbnMgdG8gYW5vdGhlciBzY2VuZSwgb3IgZ3Vlc3Nlcy4gRG8gbm90IGRlY2lkZSB3aGV0aGVyIGFueSBwZXJtaXNzaW9uIGhhcyBiZWVuIGlzc3VlZCwgaXMgYXV0aGVudGljLCBhcHBsaWVzIGxlZ2FsbHksIG9yIHNhdGlzZmllcyBhIHByZXJlcXVpc2l0ZS4gRG8gbm90IGluZmVyIGNsZWFyYW5jZSBvciBjcmVhdGUgdGFza3MuIEVhY2ggcmV0dXJuZWQgcGhyYXNlIG11c3Qgb2NjdXIgaW4gdGhlIGV4YWN0IG9yaWdpbmFsIHNvdXJjZSB0ZXh0LiBMZWF2ZSBhbiB1bnN1cHBvcnRlZCBsaXN0IGVtcHR5LiIsImZpZWxkcyI6eyJyZXF1aXJlZF93cml0dGVuX2RvY3VtZW50cyI6eyJkZXNjcmlwdGlvbiI6IkRpc3RpbmN0IHNob3J0IHBocmFzZXMgbmFtaW5nIHdyaXR0ZW4gYXBwcm92YWxzLCBzaWduZWQgcmVsZWFzZXMsIG9yIHdyaXR0ZW4gY29uc2VudHMgdGhhdCB0aGUgcGFzc2FnZSBleHBsaWNpdGx5IHNheXMgbXVzdCBiZSBvYnRhaW5lZCBvciBwcmVzZW50ZWQgYmVmb3JlIGFuIGFjdGl2aXR5OyBjb3B5IGVhY2ggb3JpZ2luYWwgcGhyYXNlLCBub3QgYW4gaXNzdWFuY2UgdmVyZGljdCIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NSwiZm9ybWF0IjoidGV4dCJ9LCJyZXF1aXJlZF9waHlzaWNhbF9wcm90ZWN0aW9ucyI6eyJkZXNjcmlwdGlvbiI6IkRpc3RpbmN0IHNob3J0IHNvdXJjZSBwaHJhc2VzIG5hbWluZyBwaHlzaWNhbCBwcm90ZWN0aXZlIG1lYXN1cmVzIG9yIGVxdWlwbWVudCB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgcmVxdWlyZXMgZHVyaW5nIGFuIGFjdGl2aXR5OyBub3Qgc3VnZ2VzdGlvbnMsIGhpc3RvcmljIGV4YW1wbGVzLCBvciBvcHRpb25hbCBlcXVpcG1lbnQiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjYsImZvcm1hdCI6InRleHQifSwicmVxdWlyZWRfb25fc2l0ZV9wZXJzb25uZWwiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBzb3VyY2UgcGhyYXNlcyBuYW1pbmcgYSBzdXBlcnZpc2luZyBvciBzYWZldHkgcGVyc29uIG9yIHJvbGUgdGhhdCB0aGUgcGFzc2FnZSBleHBsaWNpdGx5IHJlcXVpcmVzIG9uIHNpdGUgZHVyaW5nIGFuIGFjdGl2aXR5OyBub3QgYSBkb2N1bWVudCBzaWduYXRvcnksIGhpc3RvcmljYWwgcGFydGljaXBhbnQsIG9yIG9wdGlvbmFsIG9ic2VydmVyIiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo1LCJmb3JtYXQiOiJ0ZXh0In19fQ==",
+          "idempotencyKey": "16d89378-0df1-44d6-aa55-e4f90362f4a9",
+          "startedAt": "2026-10-27T11:41:10.385Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbIndyaXR0ZW4gaW1hZ2Utb3duZXIgY29uc2VudCJdLCJpdGVtcyI6W3sidmFsdWUiOiJ3cml0dGVuIGltYWdlLW93bmVyIGNvbnNlbnQiLCJzdGFydCI6NTcsImVuZCI6ODQsImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk4MDQ4NTc4NSwicF92ZXJpZnkiOjAuOTk5OTk5OTk4MDQ4NTc4NX1dLCJjb25maWRlbmNlIjowLjk5OTk5OTk5ODA0ODU3ODV9LCJyZXF1aXJlZF9waHlzaWNhbF9wcm90ZWN0aW9ucyI6eyJ2YWx1ZSI6WyJsaW50LWZyZWUgY290dG9uIGdsb3ZlcyJdLCJpdGVtcyI6W3sidmFsdWUiOiJsaW50LWZyZWUgY290dG9uIGdsb3ZlcyIsInN0YXJ0Ijo4NiwiZW5kIjoxMDksImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk5MDg4NzYyOSwicF92ZXJpZnkiOjAuOTk5OTk5OTk5MDg4NzYyOX1dLCJjb25maWRlbmNlIjowLjk5OTk5OTk5OTA4ODc2Mjl9LCJyZXF1aXJlZF9vbl9zaXRlX3BlcnNvbm5lbCI6eyJ2YWx1ZSI6WyJwYXBlciBjb25zZXJ2YXRvciJdLCJpdGVtcyI6W3sidmFsdWUiOiJwYXBlciBjb25zZXJ2YXRvciIsInN0YXJ0IjoxMTYsImVuZCI6MTMzLCJjb25maWRlbmNlIjowLjk5OTk5OTk5NTAxNDUwODksInBfdmVyaWZ5IjowLjk5OTk5OTk5NTAxNDUwODl9XSwiY29uZmlkZW5jZSI6MC45OTk5OTk5OTUwMTQ1MDg5fX0sInRpbWluZyI6eyJyZWFkX21zIjo5MywiZm9yd2FyZHMiOnsiZmllbGRzIjpbNSwxXX0sInN0YWdlcyI6eyJmaWVsZHMiOnsicmVhZGVyIjoicmVjb2duaXRpb24iLCJkb2MiOjIsImJyYW5jaGVzIjoxLCJnZW5lcmF0ZSI6NzMsImxvY2F0ZSI6MCwidmVyaWZ5IjoxNSwiYXNzZW1ibGUiOjB9fSwidG90YWxfbXMiOjkzLCJzZXJ2ZXJfbXMiOjk2fX0=",
+          "receipt": {
+            "requestSha256": "95d7470028dd13636be821da93a7cb33e5a137dad45410f8945cc4eed42f5709",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+            "storedBodySha256": "b3c7cad59f30c2d581b8952cd9aadb0175149317b3fc8c053f7ba67a8ee23a24",
+            "responseByteLength": 914,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "4",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:08 GMT",
+              "retry-after": null
+            },
+            "credits": 4,
+            "creditsAsReturned": "4",
+            "startedAt": "2026-10-27T11:41:10.385Z",
+            "endedAt": "2026-10-27T11:41:11.291Z",
+            "latencyMs": 894.8905999999997,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "c5bb52b0318a09fec1f78d91d4e98f968c50d10437949d1dfde733a99800e8e6",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+          "requestBase64": "eyJ0ZXh0IjoiU2NlbmUgNzAyIGludGVydmlld3MgcmVxdWlyZSB3cml0dGVuIHNvdW5kLXN0YWdlIGFjY2VzcyBjb25zZW50LiIsImluc3RydWN0aW9ucyI6IkNvcHkgb25seSBzaG9ydCB2ZXJiYXRpbSBzb3VyY2UgcGhyYXNlcyBpZGVudGlmeWluZyBkb2N1bWVudGFyeSBwcmVyZXF1aXNpdGVzLCByZXF1aXJlZCBwaHlzaWNhbCBwcm90ZWN0aW9ucywgb3IgcmVxdWlyZWQgb24tc2l0ZSBwZXJzb25uZWwuIEFwcGx5IHRoZSBzYW1lIHRocmVlIGZpZWxkcyB0byB0aGUgZW50aXJlIHN1cHBsaWVkIHBhc3NhZ2UuIFJlcG9ydCBmYWN0cyB0aGUgdGV4dCBleHByZXNzbHkgc3RhdGVzIGFyZSBSRVFVSVJFRCBmb3IgdGhlIGRlc2NyaWJlZCBhY3Rpdml0eSwgbm90IGhpc3RvcmljYWwgZXhhbXBsZXMsIHN1Z2dlc3Rpb25zLCBwcm9wb3NhbHMsIHJlcXVlc3RzIHRvIGV4dGVuZCBjb25kaXRpb25zIHRvIGFub3RoZXIgc2NlbmUsIG9yIGd1ZXNzZXMuIERvIG5vdCBkZWNpZGUgd2hldGhlciBhbnkgcGVybWlzc2lvbiBoYXMgYmVlbiBpc3N1ZWQsIGlzIGF1dGhlbnRpYywgYXBwbGllcyBsZWdhbGx5LCBvciBzYXRpc2ZpZXMgYSBwcmVyZXF1aXNpdGUuIERvIG5vdCBpbmZlciBjbGVhcmFuY2Ugb3IgY3JlYXRlIHRhc2tzLiBFYWNoIHJldHVybmVkIHBocmFzZSBtdXN0IG9jY3VyIGluIHRoZSBleGFjdCBvcmlnaW5hbCBzb3VyY2UgdGV4dC4gTGVhdmUgYW4gdW5zdXBwb3J0ZWQgbGlzdCBlbXB0eS4iLCJmaWVsZHMiOnsicmVxdWlyZWRfd3JpdHRlbl9kb2N1bWVudHMiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBwaHJhc2VzIG5hbWluZyB3cml0dGVuIGFwcHJvdmFscywgc2lnbmVkIHJlbGVhc2VzLCBvciB3cml0dGVuIGNvbnNlbnRzIHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSBzYXlzIG11c3QgYmUgb2J0YWluZWQgb3IgcHJlc2VudGVkIGJlZm9yZSBhbiBhY3Rpdml0eTsgY29weSBlYWNoIG9yaWdpbmFsIHBocmFzZSwgbm90IGFuIGlzc3VhbmNlIHZlcmRpY3QiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjUsImZvcm1hdCI6InRleHQifSwicmVxdWlyZWRfcGh5c2ljYWxfcHJvdGVjdGlvbnMiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBzb3VyY2UgcGhyYXNlcyBuYW1pbmcgcGh5c2ljYWwgcHJvdGVjdGl2ZSBtZWFzdXJlcyBvciBlcXVpcG1lbnQgdGhhdCB0aGUgcGFzc2FnZSBleHBsaWNpdGx5IHJlcXVpcmVzIGR1cmluZyBhbiBhY3Rpdml0eTsgbm90IHN1Z2dlc3Rpb25zLCBoaXN0b3JpYyBleGFtcGxlcywgb3Igb3B0aW9uYWwgZXF1aXBtZW50IiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo2LCJmb3JtYXQiOiJ0ZXh0In0sInJlcXVpcmVkX29uX3NpdGVfcGVyc29ubmVsIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgc291cmNlIHBocmFzZXMgbmFtaW5nIGEgc3VwZXJ2aXNpbmcgb3Igc2FmZXR5IHBlcnNvbiBvciByb2xlIHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSByZXF1aXJlcyBvbiBzaXRlIGR1cmluZyBhbiBhY3Rpdml0eTsgbm90IGEgZG9jdW1lbnQgc2lnbmF0b3J5LCBoaXN0b3JpY2FsIHBhcnRpY2lwYW50LCBvciBvcHRpb25hbCBvYnNlcnZlciIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NSwiZm9ybWF0IjoidGV4dCJ9fX0=",
+          "idempotencyKey": "76a2866f-4284-4935-a5b2-21d21f0f14fe",
+          "startedAt": "2026-10-27T11:41:11.341Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbIndyaXR0ZW4gc291bmQtc3RhZ2UgYWNjZXNzIGNvbnNlbnQiXSwiaXRlbXMiOlt7InZhbHVlIjoid3JpdHRlbiBzb3VuZC1zdGFnZSBhY2Nlc3MgY29uc2VudCIsInN0YXJ0IjoyOSwiZW5kIjo2MywiY29uZmlkZW5jZSI6MC45OTk5OTk5OTgzMTI1OTkxLCJwX3ZlcmlmeSI6MC45OTk5OTk5OTgzMTI1OTkxfV0sImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk4MzEyNTk5MX0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7InZhbHVlIjpbXSwiaXRlbXMiOltdLCJjb25maWRlbmNlIjoxfSwicmVxdWlyZWRfb25fc2l0ZV9wZXJzb25uZWwiOnsidmFsdWUiOltdLCJpdGVtcyI6W10sImNvbmZpZGVuY2UiOjF9fSwidGltaW5nIjp7InJlYWRfbXMiOjc2LCJmb3J3YXJkcyI6eyJmaWVsZHMiOls0LDFdfSwic3RhZ2VzIjp7ImZpZWxkcyI6eyJyZWFkZXIiOiJyZWNvZ25pdGlvbiIsImRvYyI6MSwiYnJhbmNoZXMiOjAsImdlbmVyYXRlIjo2MCwibG9jYXRlIjowLCJ2ZXJpZnkiOjEzLCJhc3NlbWJsZSI6MH19LCJ0b3RhbF9tcyI6NzYsInNlcnZlcl9tcyI6Nzl9fQ==",
+          "receipt": {
+            "requestSha256": "b7fc5e4fb38a5f46721d4b1814029646720c28e8644165c690f9b428c11ff1f8",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+            "storedBodySha256": "91e9ea6d57475a3c4ed862588b93bd795eede1b6526607684e7ac564f7d0dfe1",
+            "responseByteLength": 619,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "4",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:41:09 GMT",
+              "retry-after": null
+            },
+            "credits": 4,
+            "creditsAsReturned": "4",
+            "startedAt": "2026-10-27T11:41:11.341Z",
+            "endedAt": "2026-10-27T11:41:11.863Z",
+            "latencyMs": 512.3841999999995,
+            "model": "clocked-1.0"
+          }
+        }
+      ],
+      "createdAt": "2026-10-27T11:41:06.110Z",
+      "updatedAt": "2026-10-27T11:41:11.889Z",
+      "notClearance": true,
+      "sha256": "f897f09a1c370f485f06dd9e218bc4181611f6bfe739c85b7d000f98d4a52377"
+    }
+  ],
+  "sha256": "4042992f2043cff1bf22c5e6e33422f595da8386b8a0be977a3b855f27369caa",
+  "notClearance": true
+}

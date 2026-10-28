@@ -1,0 +1,466 @@
+{
+  "plan": {
+    "schema": "beforeroll-core-discovery-plan-v1",
+    "id": "d4419015b1f8c443e51d3ff1e702f2ba4edaf1a6f383a4303c8c542e84263cf1",
+    "workspaceId": "live_20261027_E_present_photo",
+    "documents": [
+      {
+        "id": "PERMIT",
+        "hash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "revision": 1,
+        "epoch": 0,
+        "rawHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S701",
+        "epoch": 0,
+        "hash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "row": "Scene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table"
+      },
+      {
+        "id": "S702",
+        "epoch": 0,
+        "hash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "row": "Scene 702 | Interview stage | 10:00-11:00 | recorded interviews"
+      }
+    ],
+    "taskIds": [
+      "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+      "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+      "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+      "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+      "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+      "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7"
+    ],
+    "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+    "workspaceRevision": 2,
+    "documentIds": [
+      "PERMIT"
+    ],
+    "sceneIds": [
+      "S701",
+      "S702"
+    ],
+    "sources": [
+      {
+        "id": "PERMIT",
+        "name": "E_PRESENT_PHOTO-permit.txt",
+        "role": "permit",
+        "text": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nScene 702 interviews require written sound-stage access consent.\n\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+        "sourceHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 171,
+            "text": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+            "hash": "f24a2c58ea5fd887b627da51c122c9e75ae54dc44fa92df377736acd6eb82901",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 173,
+            "end": 237,
+            "text": "Scene 702 interviews require written sound-stage access consent.",
+            "hash": "5cf2caccb3aaf22ec84a21d0efa9e824f48772a944e015cac1452bf04ba674bd",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 239,
+            "end": 349,
+            "text": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+            "hash": "b0deea598d71989025eca86642c9478335b379e2ae22b868afd2949aec1abeac",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "E_PRESENT_PHOTO-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "normalizedHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+          "byteCount": 349,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "tasks": [
+      {
+        "id": "1237620067f536908a87c5bd2b189f4af8ef227bde66557bece93270ab67ff0f",
+        "documentId": "PERMIT",
+        "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "documentRevision": 1,
+        "sceneId": "S701",
+        "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "sourceRange": [
+          0,
+          171
+        ],
+        "sourceQuote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,171):\nScene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "e94b656ff2e20eb11ef5389449bc04fbf169b8d5aeee7796477c18daae90f9ed",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "cf1268e10aa4aeed3fe821310803ab3b0c6900b51c387aec096e2ff0e1594fc9",
+        "documentId": "PERMIT",
+        "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "documentRevision": 1,
+        "sceneId": "S701",
+        "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "sourceRange": [
+          173,
+          237
+        ],
+        "sourceQuote": "Scene 702 interviews require written sound-stage access consent.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [173,237):\nScene 702 interviews require written sound-stage access consent.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\nAFTER (U003): An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "42ffe50393044cd826165e22d0032b8b91ac86e32ad8a125419124d22a1f0888",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "5c0efc27204ed94cf40d73d7b4cec3d79993fa4881b4f7ad2f23426fd67aa016",
+        "documentId": "PERMIT",
+        "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "documentRevision": 1,
+        "sceneId": "S701",
+        "sceneHash": "e305a4662e880ca0005404525fff50ec4c30ebf48f83fcf2ba2de739613113ad",
+        "sourceRange": [
+          239,
+          349
+        ],
+        "sourceQuote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [239,349):\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "3a531d8d660568fcb76a89da0a32f26825953cc1ab7f4c7ec144306b983a9815",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "061f8de547d661ab9f45d52322dfc6caa431e9bb22a1a0cc303eaa6c48c608be",
+        "documentId": "PERMIT",
+        "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "documentRevision": 1,
+        "sceneId": "S702",
+        "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "sourceRange": [
+          0,
+          171
+        ],
+        "sourceQuote": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,171):\nScene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "7686da716175e9b8bc93973c5f0a02e6280eda08502a77e3d8d406ced4965164",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "94ac40570e2e54c84077edcf20ce78c6c7756c7b6bb48f3dd871d44445943f07",
+        "documentId": "PERMIT",
+        "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "documentRevision": 1,
+        "sceneId": "S702",
+        "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "sourceRange": [
+          173,
+          237
+        ],
+        "sourceQuote": "Scene 702 interviews require written sound-stage access consent.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [173,237):\nScene 702 interviews require written sound-stage access consent.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\nAFTER (U003): An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "2ed398a14fad7892855bdc27533fdfd86f8c1734446c97235d2d114e80293e3e",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "b4f900e401c8dfa4de23e8be720d8fde5f5f2ddf2dc2230e2b81764d39899ff7",
+        "documentId": "PERMIT",
+        "documentHash": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+        "documentRevision": 1,
+        "sceneId": "S702",
+        "sceneHash": "0dc73fc1203e54385ee12a06c586c8903b51517804831fc19ceb6c73d7607e3a",
+        "sourceRange": [
+          239,
+          349
+        ],
+        "sourceQuote": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [239,349):\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): Scene 702 interviews require written sound-stage access consent.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "d6fcad8cb41251a65b47f253c268d45e4110c2aa57f9f222b34072dca6f6daa9",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      }
+    ],
+    "extracts": [
+      {
+        "id": "c25880f9206e691aa98b133bd092048e84f784c41170c4f3d1c7e23736c4590f",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "payload": {
+          "text": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "c5bb52b0318a09fec1f78d91d4e98f968c50d10437949d1dfde733a99800e8e6",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "payload": {
+          "text": "Scene 702 interviews require written sound-stage access consent.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "d3cfbedd46afe6a40cf195c5180f886c0609b124e6d1cc6da1ecff558ce536c0",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "payload": {
+          "text": "An unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      }
+    ],
+    "verifiedBy": "Codex fictional-document source verification",
+    "sourceConfirmed": true,
+    "limits": {
+      "maxCalls": 21,
+      "creditBudget": 256,
+      "creditReservePerCall": 8
+    },
+    "decideCalls": 6,
+    "maxExtractCalls": 3,
+    "worstCaseCalls": 9,
+    "concurrency": 1,
+    "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+    "notClearance": true
+  },
+  "previewSha256": "fb66c4f31e2c8e688d4cf53032da5ba2fff4af3478695fc96cb48904bf6364c2",
+  "existingFence": false,
+  "notClearance": true
+}

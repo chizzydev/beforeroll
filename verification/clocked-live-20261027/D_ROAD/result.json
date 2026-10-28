@@ -1,0 +1,73 @@
+{
+  "schema": "beforeroll-live-case-result-v1",
+  "scenarioId": "D_ROAD",
+  "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+  "stopReason": null,
+  "coverage": {
+    "pairs": 6,
+    "assessed": 6,
+    "unassessed": 0,
+    "relevant": 5,
+    "ambiguous": 1,
+    "extractedUnits": 3,
+    "totalUnits": 3
+  },
+  "missing": [],
+  "extra": [],
+  "exactSpansAndProvenance": true,
+  "reviewPersistence": true,
+  "authorityRecords": 0,
+  "fulfilledConditions": 0,
+  "candidates": [
+    {
+      "sceneId": "S601",
+      "field": "required_written_documents",
+      "quote": "signed road-closure order",
+      "requestSha256": "9ce757432429cd69fdb1273e7750db9c33179fa16e3b0dda31eb3c4e4fdfd26f",
+      "responseSha256": "0c446c782aaf9c9d2f32ffb2eb0a0a3b0fdcfa5492ee597844a9125bff2e2242"
+    },
+    {
+      "sceneId": "S601",
+      "field": "required_physical_protections",
+      "quote": "amber barrier lamps",
+      "requestSha256": "9ce757432429cd69fdb1273e7750db9c33179fa16e3b0dda31eb3c4e4fdfd26f",
+      "responseSha256": "0c446c782aaf9c9d2f32ffb2eb0a0a3b0fdcfa5492ee597844a9125bff2e2242"
+    },
+    {
+      "sceneId": "S601",
+      "field": "required_on_site_personnel",
+      "quote": "named traffic steward",
+      "requestSha256": "9ce757432429cd69fdb1273e7750db9c33179fa16e3b0dda31eb3c4e4fdfd26f",
+      "responseSha256": "0c446c782aaf9c9d2f32ffb2eb0a0a3b0fdcfa5492ee597844a9125bff2e2242"
+    },
+    {
+      "sceneId": "S602",
+      "field": "required_written_documents",
+      "quote": "signed road-closure order",
+      "requestSha256": "9ce757432429cd69fdb1273e7750db9c33179fa16e3b0dda31eb3c4e4fdfd26f",
+      "responseSha256": "0c446c782aaf9c9d2f32ffb2eb0a0a3b0fdcfa5492ee597844a9125bff2e2242"
+    },
+    {
+      "sceneId": "S602",
+      "field": "required_physical_protections",
+      "quote": "amber barrier lamps",
+      "requestSha256": "9ce757432429cd69fdb1273e7750db9c33179fa16e3b0dda31eb3c4e4fdfd26f",
+      "responseSha256": "0c446c782aaf9c9d2f32ffb2eb0a0a3b0fdcfa5492ee597844a9125bff2e2242"
+    },
+    {
+      "sceneId": "S602",
+      "field": "required_on_site_personnel",
+      "quote": "named traffic steward",
+      "requestSha256": "9ce757432429cd69fdb1273e7750db9c33179fa16e3b0dda31eb3c4e4fdfd26f",
+      "responseSha256": "0c446c782aaf9c9d2f32ffb2eb0a0a3b0fdcfa5492ee597844a9125bff2e2242"
+    }
+  ],
+  "budgetAfter": {
+    "requests": 39,
+    "reportedCredits": 72,
+    "unknownCreditRequests": 0
+  },
+  "providerLatencyMs": 5236.4929999999995,
+  "semanticVerdict": "PASS_FOR_FROZEN_CASE_ONLY",
+  "notClearance": true
+}

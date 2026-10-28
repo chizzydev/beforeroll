@@ -3,7 +3,7 @@ import {timelineGeometry} from '/src/timeline.mjs';
 import {sentenceCandidates,previewSourceCoverage} from '/src/semantic-source.mjs';
 import {auditDeskSweep} from '/src/desk-semantic.mjs';
 import {sceneAuthoritySummary,authoritySummaryForDossier} from '/src/authority-summary.mjs';
-import {createWorkspaceController} from '/workspace-desk.mjs';
+import {createWorkspaceController,workspaceLocation,restoreWorkspaceLocation,followWorkspaceAnchor} from '/workspace-desk.mjs';
 const app=document.querySelector('#app');
 const M3S4_SECOND_SCENE='Scene 32 | NORTH GLASS GALLERY | 15:00-15:25 | Produce a drifting white atmosphere by sublimating frozen carbon dioxide near the set wall.';
 const FALLBACK_F02_CALLSHEET=`DAILY CALL SHEET CS-12 - Saturday 7 November 2026
@@ -17,6 +17,21 @@ const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt
 const title=s=>h(s).replace(/_/g,' ');
 function toast(message,bad=false){let el=document.querySelector('.toast');if(el)el.remove();el=document.createElement('div');el.className='toast'+(bad?' bad':'');el.textContent=message;document.body.append(el);clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),5200);}
 const workspaceController=createWorkspaceController({root:document});
+let restoringPosition=false,positionInitialized=false;
+function focusReadingPosition(){const m=workspaceController.model;if(m.workflowStage==='sources'&&m.sourceMode==='reader'&&m.focusUnitId){const t=document.querySelector('#source-unit-'+m.focusUnitId);t?.focus?.();t?.scrollIntoView?.({block:'center'});}}
+function publishReadingPosition(){
+ if(restoringPosition||!workspaceController.model.selected)return;
+ const next=workspaceLocation(workspaceController.model);
+ if(!positionInitialized){history.replaceState(null,'',next);positionInitialized=true;}
+ else if(location.hash!==next)history.pushState(null,'',next);
+}
+window.addEventListener('popstate',async()=>{
+ if(state.tab!=='projects')return;
+ const prior=workspaceLocation(workspaceController.model);restoringPosition=true;
+ try{await restoreWorkspaceLocation(workspaceController,location.hash);render();focusReadingPosition();}
+ catch(e){history.replaceState(null,'',prior);toast(e.message,true);}
+ finally{restoringPosition=false;}
+});
 function compute(){const result=evaluatePreflight({permitText:state.permitText,callSheetText:state.callSheetText,fields:state.fields,profile:state.profile,scenes:state.scenes,manualFields:state.manualFields});
  const attached=Object.values(state.deskClocked.byScene).flatMap(x=>x.findings||[]);
  return {...result,findings:[...result.findings,...attached],summary:{...result.summary,reviews:result.summary.reviews+attached.length},clockedAttached:attached.length};}
@@ -189,7 +204,7 @@ function method(result){return `<div class="about"><section class="panel"><div c
 function header(result){return `<a class="skip-link" href="#research-main">Skip to research</a><header class="studio-header"><button class="wordmark" data-tab="projects">BeforeRoll<span>.</span></button><nav aria-label="Historical research"><button data-tab="projects">Production workspace</button><button data-tab="desk">Recorded experiments</button><button data-tab="sources">Experiment sources</button><button data-tab="semantic">Semantic lens</button><button data-tab="method">Method & limits</button></nav><button id="export-report">Export research notes</button></header><div class="context-bar"><span>Historical research archive</span><span>Earlier experiments · fictional material · separate from production evidence</span></div><div id="research-main" class="research-intro"><h1>Trace the experiment.</h1><p>These earlier research surfaces retain their original evidence and contract labels. Use Production workspace for the current durable application.</p></div>`;}
 function render(){if(state.tab==='projects'){
   workspaceController.model.evaluationResetPending=state.evaluationResetPending===true;
-  app.innerHTML=workspaceController.render();workspaceController.restoreDrafts();return;
+  app.innerHTML=workspaceController.render();workspaceController.restoreDrafts();publishReadingPosition();return;
  }
  const result=compute();const fallback=result.scenes.find(s=>s.id===state.selectedScene);if(!fallback&&result.scenes.length)state.selectedScene=result.scenes[0].id;
  app.innerHTML=header(result)+(state.tab==='desk'?desk(result):state.tab==='sources'?sources(result):state.tab==='semantic'?semanticLens():method(result))+`<footer class="footer"><span><strong>BEFOREROLL / EXPERIMENT 001</strong> · Fictional source texts · Human review required</span><span>Clocked Extract + Decide · server-side key only · No user documents stored on server</span></footer>`;applyCspSafeGeometry();}
@@ -369,15 +384,17 @@ async function runLive(){if(!state.liveEnabled||state.busy)return;const el=docum
  }catch(e){toast(`Live extraction stopped: ${e.message}. No automatic retry; billing may be unknown.`,true);}
  finally{state.busy=false;render();}
 }
-app.addEventListener('click',async(e)=>{const el=e.target.closest('button');if(!el)return;if(el.id==='project-create')e.preventDefault();const result=state.tab==='projects'?null:compute();try{
+app.addEventListener('click',async(e)=>{if(state.tab==='projects'){const jumped=followWorkspaceAnchor(e,document);if(jumped){if(jumped==='MISSING')toast('Reading target unavailable; your current position is retained.',true);return;}}const el=e.target.closest('button');if(!el)return;if(el.id==='project-create')e.preventDefault();const result=state.tab==='projects'?null:compute();try{
  if(state.evaluationMode&&el.id==='evaluation-reset'){state.evaluationResetPending=true;workspaceController.captureDrafts();render();}
  else if(state.evaluationMode&&el.id==='evaluation-reset-cancel'){state.evaluationResetPending=false;render();}
- else if(state.evaluationMode&&el.id==='evaluation-reset-confirm'){state.evaluationResetPending=false;const response=await fetch('/api/evaluation/reset',{method:'POST'});const body=await response.json();if(!response.ok)throw Error(body.error||'Cannot reset examples');workspaceController.model.selected=null;workspaceController.model.activeSceneId=null;await workspaceController.load();await autoOpenExample();render();toast('Fictional examples reset. No owner data touched.');}
+ else if(state.evaluationMode&&el.id==='evaluation-reset-confirm'){state.evaluationResetPending=false;const response=await fetch('/api/evaluation/reset',{method:'POST'});const body=await response.json();if(!response.ok)throw Error(body.error||'Cannot reset examples');workspaceController.resetSessionDrafts();workspaceController.model.selected=null;workspaceController.model.activeSceneId=null;await workspaceController.load();await autoOpenExample();render();toast('Fictional examples reset. No owner data touched.');}
  else if(state.evaluationMode&&el.id==='evaluation-replay'){if(workspaceController.model.stagedReviews.length)throw Error('Commit or remove staged decisions before switching the recorded example.');const response=await fetch('/api/evaluation/replay',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({projectId:'eval_arcade'})});const body=await response.json();if(!response.ok)throw Error(body.error||'Cannot replay recording');workspaceController.model.selected=null;await workspaceController.load();await autoOpenExample('eval_arcade');render();toast(body.alreadyReplayed?'U02 recording was already loaded. No new API calls.':'Original U02 answers replayed on matching fictional clauses. No new API calls.');}
  else if(el.dataset.tab){if(state.tab==='projects')workspaceController.captureDrafts();if(el.dataset.tab==='desk'&&!state.record)await preset('F01');else state.tab=el.dataset.tab;if(state.tab==='projects')await workspaceController.load();render();window.scrollTo({top:0,behavior:'smooth'});}
- else if(state.tab==='projects'){await workspaceController.click(el);render();
+ else if(state.tab==='projects'){await workspaceController.click(el);if(el.id==='owner-access-unlock'&&!workspaceController.model.authLocked&&!workspaceController.model.selected&&location.hash.startsWith('#br?'))await restoreWorkspaceLocation(workspaceController,location.hash);render();
   if(workspaceController.model.error){const error=document.querySelector('[role="alert"]');if(error){error.tabIndex=-1;error.focus?.();error.scrollIntoView?.({block:'start'});}return;}
   const notice=document.querySelector('[role="status"]');
+  if(el.dataset.coordinatorSource){const target=document.querySelector('#source-unit-'+workspaceController.model.focusUnitId);target?.focus?.();target?.scrollIntoView?.({block:'center'});}
+  if(el.dataset.coordinatorReview){const target=document.querySelector('#coordinator-review-form');target?.focus?.();target?.scrollIntoView?.({block:'center'});}
   if(notice&&el.id?.startsWith('project-'))notice.focus?.();
   if(el.dataset.designAction==='scene-search')document.querySelector('#design-scene-search')?.focus();
   if(el.dataset.designAction==='picker')document.querySelector('#design-production-search')?.focus();
@@ -386,7 +403,8 @@ app.addEventListener('click',async(e)=>{const el=e.target.closest('button');if(!
   if(sourceTarget){const target=document.querySelector(sourceTarget);if(target){target.tabIndex=-1;target.focus?.();target.scrollIntoView?.({block:'start'});}}
   if(el.dataset.compareReviewScene||el.dataset.sceneFocus||el.dataset.sceneOpenTask||el.dataset.designAction&&['session','comparison','source-reader','recover'].includes(el.dataset.designAction)){const focus=document.querySelector('.page-heading')??document.querySelector('#workspace-main');focus?.focus?.();focus?.scrollIntoView?.({block:'start'});}
   const destination=el.dataset.historySelect?'[aria-label="Selected history record"]':el.dataset.workflowOpen||el.dataset.workflowAction||el.dataset.historyKind||el.dataset.projectOpen||el.id==='project-create'?'.production-active-step':null;
-  if(destination){const target=document.querySelector(destination);if(target){target.tabIndex=-1;target.focus?.({preventScroll:true});target.scrollIntoView?.({block:'start'});}}
+  if(el.dataset.designAction==='source-reader')focusReadingPosition();
+  if(destination){const target=document.querySelector(workspaceController.model.workflowStage==='scope'?'#documentary-scene-review':destination);if(target){target.tabIndex=-1;target.focus?.({preventScroll:true});target.scrollIntoView?.({block:'start'});}}
  }
  else if(el.dataset.scene){state.selectedScene=el.dataset.scene;state.selectedFinding=null;state.sourceDoc='permit';render();}
  else if(el.dataset.finding){state.selectedFinding=el.dataset.finding;state.sourceDoc='permit';render();}
@@ -422,23 +440,32 @@ app.addEventListener('click',async(e)=>{const el=e.target.closest('button');if(!
 });
 app.addEventListener('submit',async e=>{if(state.tab==='projects'){e.preventDefault();if(e.target.matches('.production-create')){await workspaceController.click({id:'project-create',dataset:{}});render();}}});
 app.addEventListener('input',e=>{workspaceController.markDraftChange(e.target);if(e.target.id==='operator-token'||e.target.id==='semantic-token'||e.target.id==='desk-operator-token')state.operatorToken=e.target.value;});
+app.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&state.tab==='projects'&&workspaceController.model.pickerOpen){
+  e.preventDefault();workspaceController.model.pickerOpen=false;render();
+  document.querySelector('.production-trigger')?.focus();
+ }
+});
 window.addEventListener('beforeunload',e=>{if(workspaceController.hasUncommittedWork()){e.preventDefault();e.returnValue='';}});
 if(typeof document.addEventListener==='function')document.addEventListener('change',event=>{if(state.tab==='projects'&&event.target?.id==='project-link-from')workspaceController.syncLinkUnits();if(state.tab==='projects'&&event.target?.id==='project-scene-auth-doc')workspaceController.syncSceneUnits();if(state.tab==='projects'&&event.target?.id==='project-condition-document')workspaceController.syncConditionUnits();});
-async function autoOpenExample(id='eval_archive'){const response=await fetch('/api/workspaces/'+id,{cache:'no-store'});if(!response.ok)throw Error('Evaluation example unavailable');workspaceController.selectProduction(await response.json());await workspaceController.load();}
-(async()=>{try{const health=await (await fetch('/api/health',{cache:'no-store'})).json();state.liveEnabled=Boolean(health.liveEnabled);state.evaluationMode=health.evaluationMode===true;if(health.workspacesEnabled){await workspaceController.load();if(state.evaluationMode)await autoOpenExample();state.tab='projects';render();}else await preset('F01');}catch(e){app.innerHTML=`<div class="loading-screen"><div class="kicker">LOAD FAILURE</div><h1>Could not open the production workspace.</h1><p>${h(e.message)}</p></div>`;}})();
+async function autoOpenExample(id=workspaceController.model.evaluationDefaultProjectId??'eval_archive'){const response=await fetch('/api/workspaces/'+id,{cache:'no-store'});if(!response.ok)throw Error('Evaluation example unavailable');workspaceController.selectProduction(await response.json());await workspaceController.load();}
+(async()=>{try{const health=await (await fetch('/api/health',{cache:'no-store'})).json();state.liveEnabled=Boolean(health.liveEnabled);state.evaluationMode=health.evaluationMode===true;if(health.workspacesEnabled){await workspaceController.load();if(state.evaluationMode&&!location.hash.startsWith('#br?'))await autoOpenExample();state.tab='projects';if(location.hash.startsWith('#br?')&&!workspaceController.model.authLocked){restoringPosition=true;try{await restoreWorkspaceLocation(workspaceController,location.hash);}catch(error){toast(error.message,true);}finally{restoringPosition=false;}}render();focusReadingPosition();}else await preset('F01');}catch(e){app.innerHTML=`<div class="loading-screen"><div class="kicker">LOAD FAILURE</div><h1>Could not open the production workspace.</h1><p>${h(e.message)}</p></div>`;}})();
 
 // Presentation selection only; durable evidence mutations stay in the existing controller.
 document.addEventListener?.('change',async event=>{
  if(state.tab!=='projects')return;const el=event.target,m=workspaceController.model;let handled=true;
  if(el.id==='design-mobile-scene')await workspaceController.click({dataset:{sceneFocus:el.value}});
- else if(el.id==='design-scene-source'){const t=m.sceneWorkbench?.tasks.find(x=>x.id===el.value);if(t)await workspaceController.click({dataset:{sceneOpenTask:t.id,taskPosition:String(t.globalTaskIndex),sceneTaskPosition:String(t.sceneTaskIndex),sceneView:'investigation'}});}
+ else if(el.id==='design-scene-source'){const t=m.sceneWorkbench?.tasks.find(x=>x.id===el.value);if(t)await workspaceController.click({dataset:{sceneOpenTask:t.id,taskPosition:String(t.globalTaskIndex),sceneTaskPosition:String(t.sceneTaskIndex),sceneView:m.sceneView==='review'?'review':'investigation'}});}
  else if(el.id==='design-intake-kind'){workspaceController.captureDrafts();m.intakeKind=el.value;}
  else if(el.id==='design-compare-doc-left'){m.compareLeftDocument=el.value;m.compareLeftUnit=null;}
  else if(el.id==='design-compare-doc-right'){m.compareRightDocument=el.value;m.compareRightUnit=null;}
- else if(el.id==='design-compare-scene')m.compareSceneId=el.value;
+ else if(el.id==='design-compare-scene'){m.compareSceneId=el.value;m.compareRightDocument=null;m.compareRightUnit=null;}
+ else if(el.id==='project-scene-auth-doc'){workspaceController.captureDrafts();m.focusDocumentId=el.value;m.focusUnitId=document.querySelector('#project-scene-auth-unit')?.value??null;}
+ else if(el.id==='project-scene-auth-unit'){workspaceController.captureDrafts();m.focusDocumentId=document.querySelector('#project-scene-auth-doc')?.value??null;m.focusUnitId=el.value;}
+ else if(el.id==='project-scene-auth-scene'){workspaceController.captureDrafts();m.focusDocumentId=document.querySelector('#project-scene-auth-doc')?.value??null;m.focusUnitId=document.querySelector('#project-scene-auth-unit')?.value??null;m.activeSceneId=el.value;}
  else if(el.id==='design-compare-left')m.compareLeftUnit=el.value;
  else if(el.id==='design-compare-right')m.compareRightUnit=el.value;
  else handled=false;
- if(handled){render();const focus=document.querySelector('#'+el.id)??document.querySelector('.page-heading');focus?.focus?.();}
+ if(handled){if(['project-scene-auth-doc','project-scene-auth-unit','project-scene-auth-scene'].includes(el.id)){m.scopeChoiceReset=true;m.notice='Source selection changed. Choose the interpretation again and check any retained draft against the visible quotation.';}render();const focus=document.querySelector('#'+el.id)??document.querySelector('.page-heading');focus?.focus?.();}
 });
 app.addEventListener('input',event=>{if(state.tab!=='projects')return;const el=event.target,m=workspaceController.model;if(el.id==='design-scene-search'||el.id==='design-production-search'){workspaceController.captureDrafts();m[el.id==='design-scene-search'?'sceneSearch':'productionSearch']=el.value;if(el.id==='design-scene-search')m.sceneRegisterOffset=0;render();document.querySelector('#'+el.id)?.focus();}});

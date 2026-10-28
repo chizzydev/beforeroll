@@ -1,0 +1,2188 @@
+{
+  "schema": "beforeroll-atomic-production-workflow-v1",
+  "version": 3,
+  "workspace": {
+    "schema": "beforeroll-workspace-v1",
+    "id": "live_20261027_A_dock",
+    "title": "Fictional live acceptance A_DOCK",
+    "revision": 2,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "A_DOCK-permit.txt",
+        "role": "permit",
+        "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 128,
+            "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+            "hash": "92dfa42eb32fa9b70ae543ae08f556c034c8ecbdf0559d061755e83d5049572c",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 130,
+            "end": 323,
+            "text": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+            "hash": "a567306cfb155bd7dd10bf083328ac0be4bd439138130962b1aeb04cf3b276eb",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 325,
+            "end": 432,
+            "text": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+            "hash": "ea83716dd7e79a4865d6b7491dfdc298228fee0cd060b61830dc69ef7a0a7d92",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 434,
+            "end": 510,
+            "text": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+            "hash": "8c12c31f4bfea646ca024fc7a666f8950979eacdc0be473c6a9e9f32072fad52",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "A_DOCK-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "normalizedHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "byteCount": 510,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "callSheet": {
+      "text": "Scene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier",
+      "sourceHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+      "scenes": [
+        {
+          "id": "S301",
+          "number": "301",
+          "location": "Quay",
+          "start": "06:00",
+          "end": "07:00",
+          "activity": "powered cable run for night-to-dawn crane shot",
+          "rawWindow": "06:00-07:00",
+          "source": {
+            "start": 0,
+            "end": 79,
+            "fields": {
+              "scene": {
+                "start": 6,
+                "end": 9
+              },
+              "location": {
+                "start": 12,
+                "end": 16
+              },
+              "window": {
+                "start": 19,
+                "end": 30
+              },
+              "activity": {
+                "start": 33,
+                "end": 79
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        },
+        {
+          "id": "S302",
+          "number": "302",
+          "location": "Quay",
+          "start": "07:00",
+          "end": "08:00",
+          "activity": "pedestrian close-ups on the pier",
+          "rawWindow": "07:00-08:00",
+          "source": {
+            "start": 80,
+            "end": 145,
+            "fields": {
+              "scene": {
+                "start": 86,
+                "end": 89
+              },
+              "location": {
+                "start": 92,
+                "end": 96
+              },
+              "window": {
+                "start": 99,
+                "end": 110
+              },
+              "activity": {
+                "start": 113,
+                "end": 145
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        }
+      ],
+      "unsupported": [],
+      "format": "Explicit pipe-delimited rows only",
+      "revision": 1,
+      "historicalSceneEpochs": {
+        "S301": 0,
+        "S302": 0
+      },
+      "importReceipt": {
+        "kind": "callSheet",
+        "name": "A_DOCK-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "normalizedHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "byteCount": 145,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2,
+        "sourceHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810"
+      }
+    },
+    "assessments": [],
+    "reviewActions": [],
+    "imports": [
+      {
+        "kind": "permit",
+        "name": "A_DOCK-permit.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "normalizedHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "byteCount": 510,
+        "sourceMap": [],
+        "warnings": [
+          "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+        ],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 1,
+        "documentId": "PERMIT"
+      },
+      {
+        "kind": "callSheet",
+        "name": "A_DOCK-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "normalizedHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "byteCount": 145,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2
+      }
+    ],
+    "authorityLinks": [],
+    "sceneAuthority": [],
+    "sceneSchedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "notClearance": true
+  },
+  "productionId": "live_20261027_A_dock",
+  "asOf": "2026-10-27T11:37:11.635Z",
+  "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+  "originals": {
+    "schema": "beforeroll-original-source-register-v1",
+    "productionId": "live_20261027_A_dock",
+    "persistedVersion": 3,
+    "referenced": 2,
+    "preserved": 2,
+    "missingOriginalSha256": [],
+    "files": [
+      {
+        "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "byteCount": 510
+      },
+      {
+        "rawHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "byteCount": 145
+      }
+    ],
+    "notClearance": true
+  },
+  "overview": {
+    "version": 3,
+    "schema": "beforeroll-production-review-v1",
+    "id": "live_20261027_A_dock",
+    "title": "Fictional live acceptance A_DOCK",
+    "revision": 2,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "A_DOCK-permit.txt",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "revision": 1,
+        "sourceFormat": "UTF8_TEXT",
+        "unitCount": 4,
+        "gaps": 0,
+        "pdfTranscription": null,
+        "rawSourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 128,
+            "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 130,
+            "end": 323,
+            "text": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 325,
+            "end": 432,
+            "text": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 434,
+            "end": 510,
+            "text": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          }
+        ]
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S301",
+        "number": "301",
+        "location": "Quay",
+        "activity": "powered cable run for night-to-dawn crane shot",
+        "start": "06:00",
+        "end": "07:00",
+        "source": {
+          "start": 0,
+          "end": 79,
+          "fields": {
+            "scene": {
+              "start": 6,
+              "end": 9
+            },
+            "location": {
+              "start": 12,
+              "end": 16
+            },
+            "window": {
+              "start": 19,
+              "end": 30
+            },
+            "activity": {
+              "start": 33,
+              "end": 79
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      },
+      {
+        "id": "S302",
+        "number": "302",
+        "location": "Quay",
+        "activity": "pedestrian close-ups on the pier",
+        "start": "07:00",
+        "end": "08:00",
+        "source": {
+          "start": 80,
+          "end": 145,
+          "fields": {
+            "scene": {
+              "start": 86,
+              "end": 89
+            },
+            "location": {
+              "start": 92,
+              "end": 96
+            },
+            "window": {
+              "start": 99,
+              "end": 110
+            },
+            "activity": {
+              "start": 113,
+              "end": 145
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      }
+    ],
+    "schedule": {
+      "present": true,
+      "sourceHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+      "sourceFormat": "UTF8_TEXT",
+      "unsupportedRows": 0
+    },
+    "sceneAuthority": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "sceneReview": [
+      {
+        "sceneId": "S301",
+        "location": "Quay",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S302",
+        "location": "Quay",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "operations": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "sceneOperations": [
+      {
+        "sceneId": "S301",
+        "sceneSourceHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S302",
+        "sceneSourceHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "reviewActions": [],
+    "reviewedCount": 0,
+    "plannedCalls": 8,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "shown": 8,
+      "hasMore": false
+    },
+    "tasks": [
+      {
+        "id": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "requestHash": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "contextUnitIds": [
+          "U003"
+        ],
+        "requestHash": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "c37e5b10041e269138a5d9d16f74a952a10e584928b11882289fff95c40d174a",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "11227c001627db32bdc7ed33b415b030da9eaf6c134dd3fe81f77360b9498173",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "requestHash": "45cbf76b586484dd7deed565b4c51f4ae340d8cdb1d899fe03438eddae65727f",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "contextUnitIds": [
+          "U003"
+        ],
+        "requestHash": "2adbd385cf8fb9848ea02eeb951871025f9c0698f6073b75e0953db988ac3778",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      }
+    ],
+    "state": "READY_FOR_HUMAN_SOURCE_REVIEW",
+    "notClearance": true,
+    "modelRequests": 0,
+    "notice": "Model attempts and human review are independent; no scene is authorized. Evaluated counts cover segmented candidates only."
+  },
+  "execution": {
+    "schema": "beforeroll-execution-status-v1",
+    "projectId": "live_20261027_A_dock",
+    "planKey": "b9d680d6b315564fea6aa51bd1c02d62ced4890a05f879e9b1a4335b224f7260",
+    "planned": 8,
+    "attempts": 0,
+    "completed": 0,
+    "unknownBilling": 0,
+    "state": "READY",
+    "stale": false,
+    "archivedRuns": 0,
+    "byScene": {
+      "S301": {
+        "planned": 4,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      },
+      "S302": {
+        "planned": 4,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "byDocument": {
+      "PERMIT": {
+        "planned": 8,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "remaining": 8,
+    "completionPercent": 0,
+    "knownCredits": 0,
+    "creditProjection": null,
+    "unknownCreditEntries": 0,
+    "retainedAttempts": 0,
+    "newPlanAttempts": 0,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "hasMore": false
+    },
+    "entries": [
+      {
+        "id": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "requestHash": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "requestHash": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "requestHash": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "requestHash": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "requestHash": "c37e5b10041e269138a5d9d16f74a952a10e584928b11882289fff95c40d174a",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "requestHash": "11227c001627db32bdc7ed33b415b030da9eaf6c134dd3fe81f77360b9498173",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "requestHash": "45cbf76b586484dd7deed565b4c51f4ae340d8cdb1d899fe03438eddae65727f",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "requestHash": "2adbd385cf8fb9848ea02eeb951871025f9c0698f6073b75e0953db988ac3778",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Only segmented source candidates have been assessed. Provider outputs are uncalibrated; no filming clearance or document authenticity is established."
+  },
+  "authority": {
+    "version": 3,
+    "schema": "beforeroll-document-authority-graph-v1",
+    "workspaceId": "live_20261027_A_dock",
+    "workspaceRevision": 2,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "A_DOCK-permit.txt",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "revision": 1,
+        "metadata": null,
+        "metadataStatus": "NOT_REVIEWED",
+        "notClearance": true
+      }
+    ],
+    "links": [],
+    "scenes": [
+      {
+        "sceneId": "S301",
+        "location": "Quay",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S302",
+        "location": "Quay",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      }
+    ],
+    "summary": {
+      "links": 0,
+      "currentLinks": 0,
+      "staleLinks": 0,
+      "unreviewedDocuments": [
+        "PERMIT"
+      ],
+      "unverifiedAmendments": 0,
+      "unresolvedConflicts": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 60,
+      "hasMore": false
+    },
+    "notClearance": true,
+    "warning": "Human-entered documentary graph, NOT legal precedence, signature authentication, grant validation, or proof that all permits have been supplied."
+  },
+  "sceneAuthority": {
+    "version": 3,
+    "schema": "beforeroll-scene-authority-register-v1",
+    "workspaceId": "live_20261027_A_dock",
+    "revision": 2,
+    "scenes": [
+      {
+        "sceneId": "S301",
+        "location": "Quay",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S302",
+        "location": "Quay",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "records": [],
+    "pagination": {
+      "offset": 0,
+      "limit": 100,
+      "hasMore": false
+    },
+    "summary": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "notClearance": true,
+    "warning": "Human-recorded scope claims are not signature validation, fulfilled prerequisites, lawful authority or filming clearance."
+  },
+  "documentaryReasoning": {
+    "schema": "beforeroll-documentary-reasoning-v1",
+    "workspaceId": "live_20261027_A_dock",
+    "workspaceRevision": 2,
+    "asOf": "2026-10-27T11:37:11.635Z",
+    "scenes": [
+      {
+        "sceneId": "S301",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "powered cable run for night-to-dawn crane shot",
+        "originalLocation": "Quay",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      },
+      {
+        "sceneId": "S302",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "pedestrian close-ups on the pier",
+        "originalLocation": "Quay",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      }
+    ],
+    "summary": {
+      "scenes": 2,
+      "restrictions": 0,
+      "requests": 0,
+      "pendingGrantClaims": 0,
+      "scenesWithReview": 0,
+      "modelSupportedHumanClaims": 0,
+      "modelOnlyFindings": 0
+    },
+    "notClearance": true,
+    "warning": "Deterministic comparison of human-recorded facets only; NOT a legal authority determination, cryptographic signature check, verified issuance, permission to film, or proof all source documents were supplied."
+  },
+  "operations": {
+    "version": 3,
+    "schema": "beforeroll-production-operations-v1",
+    "workspaceId": "live_20261027_A_dock",
+    "revision": 2,
+    "asOf": "2026-10-27T11:37:11.635Z",
+    "scenes": [
+      {
+        "sceneId": "S301",
+        "sceneSourceHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S302",
+        "sceneSourceHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "schedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "summary": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "notClearance": true,
+    "notice": "Dates, scope, condition fulfillment and signatures are human-entered, NOT verified filming authorization. Never infer clearance from a zero count."
+  },
+  "dossier": {
+    "schema": "beforeroll-integrated-production-dossier-v1",
+    "productionId": "live_20261027_A_dock",
+    "title": "Fictional live acceptance A_DOCK",
+    "persistedVersion": 3,
+    "revision": 2,
+    "asOf": "2026-10-27T11:37:11.635Z",
+    "counts": {
+      "documents": 1,
+      "scenes": 2,
+      "unresolvedCallSheetRows": 0,
+      "planTasks": 8,
+      "completedModelChecks": 0,
+      "unattemptedChecks": 8,
+      "uncertainModelChecks": 0,
+      "archivedModelRuns": 0,
+      "currentReviewedTasks": 0,
+      "currentUnresolvedHumanReviews": 0,
+      "staleHumanReviews": 0,
+      "unresolvedPdfTranscriptions": 0,
+      "undatedScenes": 2,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "unverifiedDocumentConflicts": 0,
+      "currentSceneScopeAssertions": 0,
+      "staleSceneScopeAssertions": 0,
+      "unreviewedDocumentProvenance": 1
+    },
+    "outstanding": [
+      {
+        "code": "MODEL_SOURCE_CHECKS_OUTSTANDING",
+        "count": 8
+      },
+      {
+        "code": "CURRENT_HUMAN_REVIEWS_INCOMPLETE",
+        "count": 8
+      },
+      {
+        "code": "SCENE_DATES_NOT_REVIEWED",
+        "count": 2
+      },
+      {
+        "code": "UNREVIEWED_DOCUMENT_PROVENANCE",
+        "count": 1
+      }
+    ],
+    "scenes": [
+      {
+        "sceneId": "S301",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 4,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      },
+      {
+        "sceneId": "S302",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 4,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      }
+    ],
+    "productionState": "OPEN_REVIEW_ITEMS",
+    "notClearance": true,
+    "sha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4"
+  },
+  "coordinatorTasks": {
+    "schema": "beforeroll-coordinator-suggestions-v1",
+    "state": "NO_MATCHING_RECORDED_LITERAL_EVIDENCE",
+    "candidates": [],
+    "warnings": [],
+    "fieldStates": [],
+    "reviewHistory": [],
+    "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+    "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+    "issuance": "UNKNOWN",
+    "notClearance": true,
+    "humanEffortSeconds": null,
+    "notice": "Literal facts become proposed human work, never issued permission or proof of fulfillment. Other clauses still require manual review."
+  },
+  "actionQueue": {
+    "schema": "beforeroll-production-action-queue-v1",
+    "productionId": "live_20261027_A_dock",
+    "workspaceRevision": 2,
+    "persistedVersion": 3,
+    "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+    "total": 21,
+    "filteredTotal": 21,
+    "byCategory": {
+      "SOURCE": 0,
+      "EXECUTION": 8,
+      "HUMAN": 11,
+      "OPERATIONS": 2,
+      "HISTORY": 0
+    },
+    "byPriority": {
+      "BLOCKED": 0,
+      "UNCERTAIN": 0,
+      "SCOPE": 0,
+      "REVIEW": 13,
+      "PENDING": 8,
+      "HISTORY": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 30,
+      "hasMore": false
+    },
+    "filter": {
+      "kind": "ALL",
+      "sceneId": null
+    },
+    "actions": [
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S301: confirm scene schedule",
+        "sceneId": "S301",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "507b0cfb3389754af43212c7be4a7906380748b056e7f6e4411ecaf2d1f72c8b",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S302: confirm scene schedule",
+        "sceneId": "S302",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "2fce4b04ecd286da7001581272ccc62b3ac56c55b523f759fa57ed0b9099b689",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "RECORD_DOCUMENT_PROVENANCE",
+        "subject": "Review document PERMIT",
+        "sceneId": null,
+        "documentId": "PERMIT",
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "578f30116badfefa4c700a838872da923ef99e80980d87748fec4df1f1e57a88",
+        "detail": "Record claimed issuer, document role and reference from the original source; do not assume authenticity.",
+        "sourceQuote": null,
+        "route": "authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S301: source finding awaits human review",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "3398ec89dee00b9dd65a80fa5552f6d89e369c458c1b2f97897718a415f0d810",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "route": "review",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S301: source finding awaits human review",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "860a4918cf78b39078bd8a4d7c3a51332134f428251337f114f5693ccc8b4108",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "route": "review",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S301: source finding awaits human review",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "c99364d0e99a76eb9869c22da986f2e56a59e8307a4a9595dcbec04691ed8c78",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "route": "review",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S301: source finding awaits human review",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "fb8b8863283f95edeecba45cb4365de1d79d040ddc00c3d919e2ba6a0c8a32eb",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "route": "review",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S302: source finding awaits human review",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "05649cd7179166958d2cde2d309a8275ac534661d7c1f45b78b024a0b581b221",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "route": "review",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S302: source finding awaits human review",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "3d91923bc66561bc008d052077c1b860b34d29cf1cd65d7df432290a391ae9be",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "route": "review",
+        "globalTaskIndex": 7,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S302: source finding awaits human review",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "44270258a52d7c6eb6d6f70ee29f0346b1e2dde4be94f9493e3f4c2c5bdbd966",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "route": "review",
+        "globalTaskIndex": 6,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S302: source finding awaits human review",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "821f44ceee33dda1f381a3f51e9fe7b7c8d5c55769caa90fdaa399bc8cd68f0b",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "route": "review",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S301: map permit to scene",
+        "sceneId": "S301",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "4dcde7525aec1c67fe2d64562152110f34444c9c439c4f5c553abe39d98b454a",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S302: map permit to scene",
+        "sceneId": "S302",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "30a1ca8ff69bcd7fc071b12990720481a961b2b7c3e8917922c75e3b0f9bfac3",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S301: source check not evaluated",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "6a34d70bee13e7c7c246fd0039e9dafee51d0e278f7720f8d72206b749f9c27c",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "route": "execution",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S301: source check not evaluated",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "96f3a7e5f00065d9cdeff0fe193441bacd207b66c3288d61f34d72c04e1207c7",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "route": "execution",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S301: source check not evaluated",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "b318fd58fc5a5e8c7c5e8e16daa6eaa0bec37ef73b49b8045a9f5985c142cc39",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "route": "execution",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S301: source check not evaluated",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "taskId": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "bb8ef5d48a34d552814db56de5dafa7f3094fa81fa5a53b7b6b12767f9020ca3",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "route": "execution",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S302: source check not evaluated",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "0eb586ef6183d2bbb3441ae8ad1f268ce7096ada6a5911170b5a5cd9278265f0",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "route": "execution",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S302: source check not evaluated",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "1332cda3adf1e658692eaf0fd8c5e9a869108ed4b78beef20ce7854c80e0e438",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "route": "execution",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S302: source check not evaluated",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "3169335138a5513ad1bda63951c61e2e00f995dc22d15bec74aaf91aa7e40648",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "route": "execution",
+        "globalTaskIndex": 6,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S302: source check not evaluated",
+        "sceneId": "S302",
+        "documentId": "PERMIT",
+        "taskId": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "id": "826eed6c282a6c65966f8c72a88f5ddee64d5f6f99657ec0cbab506c2f832c2a",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "route": "execution",
+        "globalTaskIndex": 7,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+  },
+  "sceneWorkbench": {
+    "schema": "beforeroll-scene-workbench-v1",
+    "productionId": "live_20261027_A_dock",
+    "title": "Fictional live acceptance A_DOCK",
+    "workspaceRevision": 2,
+    "persistedVersion": 3,
+    "asOf": "2026-10-27T11:37:11.635Z",
+    "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+    "scene": {
+      "sceneId": "S301",
+      "location": "Quay",
+      "activity": "powered cable run for night-to-dawn crane shot",
+      "start": "06:00",
+      "end": "07:00",
+      "originalRow": "Scene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot",
+      "schedule": {
+        "sceneId": "S301",
+        "sceneSourceHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      "claimIds": [],
+      "currentHumanClaims": 0,
+      "taskIds": [
+        "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a"
+      ],
+      "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "planned": 4,
+      "modelComplete": 0,
+      "neverAttempted": 4,
+      "interruptedOrBillingUnknown": 0,
+      "humanReviewed": 0,
+      "humanUnresolved": 0,
+      "issues": [
+        "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+        "MODEL_CHECKS_NOT_EVALUATED",
+        "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+        "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+      ],
+      "readiness": "OUTSTANDING_REVIEW",
+      "notClearance": true
+    },
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "A_DOCK-permit.txt",
+        "sourceSha256": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "originalBytesSha256": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "sourceFormat": "UTF8_TEXT",
+        "requiresPdfTextReview": false,
+        "sourceCoverageGaps": [],
+        "authorityMetadata": null,
+        "plannedSceneChecks": 4,
+        "evaluatedSceneChecks": 0,
+        "reviewedSceneChecks": 0,
+        "notClearance": true
+      }
+    ],
+    "scopeClaims": [],
+    "documentaryLinks": [],
+    "schedules": [],
+    "conditions": [],
+    "coordinatorTasks": {
+      "schema": "beforeroll-coordinator-suggestions-v1",
+      "state": "NO_MATCHING_RECORDED_LITERAL_EVIDENCE",
+      "candidates": [],
+      "warnings": [],
+      "fieldStates": [],
+      "reviewHistory": [],
+      "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+      "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+      "issuance": "UNKNOWN",
+      "notClearance": true,
+      "humanEffortSeconds": null,
+      "notice": "Literal facts become proposed human work, never issued permission or proof of fulfillment. Other clauses still require manual review."
+    },
+    "tasks": [
+      {
+        "id": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "unitId": "U001",
+        "sourceRange": [
+          0,
+          128
+        ],
+        "quote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+        "requestHash": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "unitId": "U002",
+        "sourceRange": [
+          130,
+          323
+        ],
+        "quote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+        "requestHash": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "unitId": "U003",
+        "sourceRange": [
+          325,
+          432
+        ],
+        "quote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+        "requestHash": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+        "sceneId": "S301",
+        "documentId": "PERMIT",
+        "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+        "unitId": "U004",
+        "sourceRange": [
+          434,
+          510
+        ],
+        "quote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+        "requestHash": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 3,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      }
+    ],
+    "taskPagination": {
+      "offset": 0,
+      "limit": 40,
+      "total": 4,
+      "hasMore": false
+    },
+    "actions": {
+      "schema": "beforeroll-production-action-queue-v1",
+      "productionId": "live_20261027_A_dock",
+      "workspaceRevision": 2,
+      "persistedVersion": 3,
+      "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+      "total": 21,
+      "filteredTotal": 10,
+      "byCategory": {
+        "SOURCE": 0,
+        "EXECUTION": 8,
+        "HUMAN": 11,
+        "OPERATIONS": 2,
+        "HISTORY": 0
+      },
+      "byPriority": {
+        "BLOCKED": 0,
+        "UNCERTAIN": 0,
+        "SCOPE": 0,
+        "REVIEW": 13,
+        "PENDING": 8,
+        "HISTORY": 0
+      },
+      "pagination": {
+        "offset": 0,
+        "limit": 30,
+        "hasMore": false
+      },
+      "filter": {
+        "kind": "ALL",
+        "sceneId": "S301"
+      },
+      "actions": [
+        {
+          "category": "OPERATIONS",
+          "priority": 3,
+          "code": "DATE_SCENE",
+          "subject": "S301: confirm scene schedule",
+          "sceneId": "S301",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "507b0cfb3389754af43212c7be4a7906380748b056e7f6e4411ecaf2d1f72c8b",
+          "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+          "sourceQuote": null,
+          "route": "operations",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S301: source finding awaits human review",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "3398ec89dee00b9dd65a80fa5552f6d89e369c458c1b2f97897718a415f0d810",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+          "route": "review",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S301: source finding awaits human review",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "860a4918cf78b39078bd8a4d7c3a51332134f428251337f114f5693ccc8b4108",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+          "route": "review",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S301: source finding awaits human review",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "c99364d0e99a76eb9869c22da986f2e56a59e8307a4a9595dcbec04691ed8c78",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+          "route": "review",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S301: source finding awaits human review",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+          "conditionId": null,
+          "unitId": "U004",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "fb8b8863283f95edeecba45cb4365de1d79d040ddc00c3d919e2ba6a0c8a32eb",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+          "route": "review",
+          "globalTaskIndex": 3,
+          "sceneTaskIndex": 3,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_SCENE_SCOPE",
+          "subject": "S301: map permit to scene",
+          "sceneId": "S301",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "4dcde7525aec1c67fe2d64562152110f34444c9c439c4f5c553abe39d98b454a",
+          "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+          "sourceQuote": null,
+          "route": "scene-authority",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S301: source check not evaluated",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "6a34d70bee13e7c7c246fd0039e9dafee51d0e278f7720f8d72206b749f9c27c",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+          "route": "execution",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S301: source check not evaluated",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "96f3a7e5f00065d9cdeff0fe193441bacd207b66c3288d61f34d72c04e1207c7",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+          "route": "execution",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S301: source check not evaluated",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "b318fd58fc5a5e8c7c5e8e16daa6eaa0bec37ef73b49b8045a9f5985c142cc39",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+          "route": "execution",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S301: source check not evaluated",
+          "sceneId": "S301",
+          "documentId": "PERMIT",
+          "taskId": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+          "conditionId": null,
+          "unitId": "U004",
+          "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+          "id": "bb8ef5d48a34d552814db56de5dafa7f3094fa81fa5a53b7b6b12767f9020ca3",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+          "route": "execution",
+          "globalTaskIndex": 3,
+          "sceneTaskIndex": 3,
+          "notClearance": true
+        }
+      ],
+      "notClearance": true,
+      "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+    },
+    "documentaryReasoning": {
+      "sceneId": "S301",
+      "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "originalActivity": "powered cable run for night-to-dawn crane shot",
+      "originalLocation": "Quay",
+      "restrictions": [],
+      "requests": [],
+      "amendments": [],
+      "requirements": [],
+      "conflicts": [],
+      "claims": [],
+      "modelOnlyFindings": [],
+      "openPrerequisites": 0,
+      "documentaryConflicts": 0,
+      "humanRecordedIssuedClaims": 0,
+      "unresolvedGrantClaims": 0,
+      "clockedModelEvidenceCount": 0,
+      "notClearance": true,
+      "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+    },
+    "summary": {
+      "planned": 4,
+      "completedModelChecks": 0,
+      "uncertainModelChecks": 0,
+      "currentTaskReviews": 0,
+      "currentScopeClaims": 0,
+      "staleScopeClaims": 0,
+      "currentPrerequisites": 0,
+      "openPrerequisites": 0,
+      "actionCount": 10
+    },
+    "sceneReviewState": "OUTSTANDING_REVIEW",
+    "notClearance": true,
+    "notice": "Single source-linked scene review, NOT a filming clearance, legal interpretation, authenticated permit or fulfilled condition.",
+    "sha256": "6938d07fbd751a291061a17b015e4504451ec8e2f19247e0a34ab9770defff3d"
+  },
+  "journey": {
+    "schema": "beforeroll-production-journey-v1",
+    "productionId": "live_20261027_A_dock",
+    "workspaceRevision": 2,
+    "persistedVersion": 3,
+    "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+    "checkpoints": [
+      {
+        "id": "sources",
+        "number": "01",
+        "title": "Import and verify",
+        "description": "Load originals, transcribe where needed and confirm source coverage.",
+        "status": "CURRENT",
+        "summary": "1 documents · 2 scenes · 0 originals missing",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "scope",
+        "number": "02",
+        "title": "Map authority",
+        "description": "Review documentary provenance and exact scene applicability.",
+        "status": "ATTENTION",
+        "summary": "1 document roles unreviewed · 2 scenes without scope assertions",
+        "blockers": [
+          "Documentary provenance or scene scope needs responsible human review."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "analysis",
+        "number": "03",
+        "title": "Run source checks",
+        "description": "Perform current source-to-scene Clocked comparisons.",
+        "status": "ATTENTION",
+        "summary": "0/8 source checks recorded · 0 uncertain",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "review",
+        "number": "04",
+        "title": "Investigate findings",
+        "description": "Record source-bound human decisions and follow-up.",
+        "status": "ATTENTION",
+        "summary": "0/8 current human reviews · 0 follow-ups",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "operations",
+        "number": "05",
+        "title": "Resolve prerequisites",
+        "description": "Confirm scene dates, operating conditions and outstanding work.",
+        "status": "ATTENTION",
+        "summary": "0/2 scenes dated · 0 open prerequisites · 0 overdue",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "changes",
+        "number": "06",
+        "title": "Reconcile revisions",
+        "description": "Preview and commit changed originals, then revisit affected checks.",
+        "status": "AVAILABLE",
+        "summary": "0 historical human reviews · 0 archived Clocked runs",
+        "blockers": [
+          "Every replacement requires a separate source-bound impact preview and exact commit."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "evidence",
+        "number": "07",
+        "title": "Export evidence",
+        "description": "Inspect and export current and historical production evidence.",
+        "status": "ATTENTION",
+        "summary": "4 outstanding evidence classes · project version 3",
+        "blockers": [
+          "Exports document recorded evidence and limitations; never filming clearance."
+        ],
+        "notClearance": true
+      }
+    ],
+    "suggestedStage": "scope",
+    "allCheckpointsCurrent": false,
+    "caveat": "Operational checkpoints are not approval, authorization, calibrated model confidence or filming clearance.",
+    "notClearance": true,
+    "sha256": "f155429f76ecaf29e68604cf59a7613a498218dc5b46aaa55829d4d0f9ae867e"
+  },
+  "consistency": {
+    "schema": "beforeroll-production-consistency-v1",
+    "productionId": "live_20261027_A_dock",
+    "persistedVersion": 3,
+    "workspaceRevision": 2,
+    "asOf": "2026-10-27T11:37:11.635Z",
+    "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+    "currentSourceInventory": {
+      "documents": 1,
+      "scenes": 2,
+      "sourcePlanTasks": 8
+    },
+    "currentEvidence": {
+      "modelComplete": 0,
+      "modelPending": 8,
+      "modelUncertain": 0,
+      "humanReviewed": 0,
+      "openHumanReviews": 0
+    },
+    "historicalEvidence": {
+      "humanReviews": 0,
+      "archivedModelRuns": 0,
+      "staleScopeClaims": 0
+    },
+    "originals": {
+      "referenced": 2,
+      "preserved": 2,
+      "missing": 0
+    },
+    "checks": [
+      "ORIGINAL_SOURCE_REFERENCES",
+      "PLAN_TO_DOSSIER_TASKS",
+      "SCENE_TOTALS",
+      "CURRENT_VS_HISTORICAL_REVIEWS",
+      "MODEL_ATTEMPT_ACCOUNTING",
+      "OPERATIONS_COUNTS",
+      "ORIGINAL_FILE_CUSTODY",
+      "ACTION_AND_WORKBENCH_ALIGNMENT",
+      "JOURNEY_ALIGNMENT"
+    ],
+    "state": "INTERNAL_RECONCILIATION_PASS_NOT_SOURCE_AUTHENTICATION",
+    "notClearance": true,
+    "limitation": "Checks internal source and recorded evidence consistency only; not external document authenticity, comprehensive permit coverage, model accuracy, legal authority or filming clearance.",
+    "sha256": "6df6af7b67a560b9d05df6858683793b6ab249e494b56a6382916e87770c9016"
+  },
+  "history": {
+    "schema": "beforeroll-production-history-v1",
+    "productionId": "live_20261027_A_dock",
+    "persistedVersion": 3,
+    "dossierSha256": "6d85b996380b6d1afdb729044632bb32b3f3de93a7a29c7dceeae5272553bec4",
+    "total": 2,
+    "filteredTotal": 2,
+    "filter": {
+      "kind": "ALL",
+      "state": "ALL",
+      "search": ""
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 20,
+      "shown": 2,
+      "hasMore": false
+    },
+    "records": [
+      {
+        "category": "SOURCES",
+        "id": "source:0:5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "title": "permit: A_DOCK-permit.txt",
+        "status": "CURRENT",
+        "documentId": "PERMIT",
+        "originalHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+        "notClearance": true
+      },
+      {
+        "category": "SOURCES",
+        "id": "source:1:b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "title": "callSheet: A_DOCK-call.txt",
+        "status": "CURRENT",
+        "documentId": null,
+        "originalHash": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+        "notClearance": true
+      }
+    ],
+    "selected": null,
+    "notClearance": true,
+    "sha256": "c91831dd05e0faf41f62550f41418e7cbfcde05176bc5dc6f9a0c99179e3e7f9"
+  },
+  "notClearance": true
+}

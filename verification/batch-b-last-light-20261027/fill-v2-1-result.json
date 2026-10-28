@@ -1,0 +1,88 @@
+{
+  "id": "fill-v2-1",
+  "gold": {
+    "documentId": "LENDER",
+    "unitIndex": 0,
+    "role": "current_condition",
+    "sceneIds": [
+      "S31"
+    ],
+    "claimQuote": "must not begin until written lender consent has been presented",
+    "reference": "written lender consent",
+    "scope": "opening and unfolding the loaned volume",
+    "unitId": "U001",
+    "unitRange": [
+      0,
+      391
+    ],
+    "payload": {
+      "text": "Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.",
+      "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+      "fields": {
+        "claimed_role": {
+          "type": "choice",
+          "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+          "options": [
+            "claims_issued_variation",
+            "request_only",
+            "historical_reference",
+            "current_condition",
+            "unrelated_or_unclear"
+          ]
+        },
+        "claim_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Copy the original clause that establishes the selected documentary role: the mandatory wording for a current condition, the claimed issuance wording for a variation, the request or awaiting-approval wording for a request, or the past-record wording for history. Include sufficient original words to evidence the role. Null only if no such words exist."
+        },
+        "referenced_instrument": {
+          "type": "extract",
+          "infer": false,
+          "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+        },
+        "scope_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+        },
+        "scene_scope": {
+          "type": "multiselect",
+          "description": "Which planned scenes does the documentary CLAIM or reference concern? Select the relevant scene IDs by activity, not merely location. A request for wider scope concerns its requested scene, not an established permission. Historical records need no current scene selection. Leave empty if scope cannot be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+          "options": [
+            "S31",
+            "S32",
+            "scope_not_established"
+          ],
+          "threshold": 0.7
+        }
+      }
+    },
+    "requestSha256": "66814104c4180c52b83abd439ebdb352cbb1167e6d9ea5c9d98252672ba6419e",
+    "expectedSpans": {
+      "claimQuote": [
+        44,
+        106
+      ],
+      "reference": [
+        65,
+        87
+      ],
+      "scope": [
+        310,
+        349
+      ]
+    }
+  },
+  "decoded": null,
+  "error": "DOCUMENTARY_SCOPE_CONTRADICTION",
+  "roleMatch": false,
+  "referenceMatch": false,
+  "pass": false,
+  "budget": {
+    "requests": 2,
+    "credits": 10,
+    "remainingRequests": 78,
+    "remainingCredits": 390
+  },
+  "semanticReview": "Exact alternative quote boundaries require human inspection; no issuance/authenticity established."
+}

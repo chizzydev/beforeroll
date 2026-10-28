@@ -36,6 +36,10 @@ import {makeEvaluationRuntime} from './src/evaluation-mode.mjs';
 import {loadLocalEnv} from './src/local-env.mjs';
 import {productionHistory} from './src/production-history.mjs';
 import {recoveryDiagnostic} from './src/recovery-diagnostics.mjs';
+import {recordedCoordinatorEvidence} from './src/recorded-coordinator-evidence.mjs';
+import {createDiscoveryExecution,hasUncertainDiscoveryOverlap} from './src/discovery-execution.mjs';
+import {discoveryPlan,projectDiscovery,discoveryHash} from './src/core-discovery.mjs';
+import {recordCoordinatorSuggestionReview} from './src/coordinator-tasks.mjs';
 const ROOT=path.dirname(fileURLToPath(import.meta.url));
 const IS_ENTRY=Boolean(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url));
 const IS_EVALUATION=IS_ENTRY&&process.argv.includes('--evaluate');
@@ -44,7 +48,7 @@ const IS_EVALUATION=IS_ENTRY&&process.argv.includes('--evaluate');
 if(IS_ENTRY&&!IS_EVALUATION)loadLocalEnv({directory:ROOT});
 const HOST=process.env.HOST || '127.0.0.1';
 const PORT=Number(process.env.PORT || 3000);
-const LIVE=process.env.BEFOREROLL_LIVE_ENABLED==='true' && !!process.env.CLOCKED_API_KEY && !!process.env.BEFOREROLL_OPERATOR_TOKEN;
+const LIVE=!IS_EVALUATION && process.env.BEFOREROLL_LIVE_ENABLED==='true' && !!process.env.CLOCKED_API_KEY && !!process.env.BEFOREROLL_OPERATOR_TOKEN;
 const BODY_MAX=280000; // Default owner API requests remain bounded; DOCX import has a separate cap.
  // Exact source documents in offline production planning; legacy routes enforce narrower field caps.
 // Local owner-configurable throttle, separate from Clocked's upstream limits.
@@ -52,6 +56,8 @@ const BODY_MAX=280000; // Default owner API requests remain bounded; DOCX import
 const DEFAULT_MAX_CALLS_PER_HOUR=256;
 
 const staticFiles=new Map([
+ ['/workspace/coordinator-view.mjs','public/workspace/coordinator-view.mjs'],
+ ['/workspace/navigation.mjs','public/workspace/navigation.mjs'],
  ['/workspace/view-context.mjs','public/workspace/view-context.mjs'],
  ['/workspace/analysis-view.mjs','public/workspace/analysis-view.mjs'],
  ['/workspace/authority-view.mjs','public/workspace/authority-view.mjs'],
@@ -66,6 +72,7 @@ const staticFiles=new Map([
  ['/workspace/sources-view.mjs','public/workspace/sources-view.mjs'],
  ['/workspace/view.mjs','public/workspace/view.mjs'],
  ['/workspace/work-view.mjs','public/workspace/work-view.mjs'],
+ ['/workspace/action-presentation.mjs','public/workspace/action-presentation.mjs'],
  ['/design/tokens.css','public/design/tokens.css'],
  ['/design/foundations.css','public/design/foundations.css'],
  ['/design/components.css','public/design/components.css'],
@@ -269,7 +276,7 @@ async function currentDossier(saved,execution,asOf){
  }catch(e){
   if(!/^(Need source documents|Unsupported call-sheet|Invalid scene rows|Document coverage|PDF .* requires human verification|Document-scene plan requires more than)/.test(e.message))throw e;
  }
- const dossier=buildProductionDossier(saved.workspace,{persistedVersion:saved.version,asOf,modelEvidence,executionSummary});
+ const dossier=buildProductionDossier(saved.workspace,{persistedVersion:saved.version,asOf,modelEvidence,executionSummary,coordinatorEvidence:await recordedCoordinatorEvidence(),discoveryJournals:await createDiscoveryExecution({directory:path.dirname(execution.directory)}).list(id)});
  certifyProductionConsistency(saved.workspace,dossier,{persistedVersion:saved.version,executionStatus:executionSummary});
  return dossier;
 }
@@ -277,9 +284,9 @@ export function createAppServer(options={}){
  if(options.controlledTestMode===true&&typeof options.fetchImpl!=='function')throw Error('Controlled test mode requires an explicit non-provider transport');
  // Test seam: a fake transport exercises the live route without consuming credits.
  // Production uses only process environment secrets and the real global fetch.
- const apiKey=options.apiKey ?? process.env.CLOCKED_API_KEY;
- const operatorToken=options.operatorToken ?? process.env.BEFOREROLL_OPERATOR_TOKEN;
  const evaluationMode=options.evaluationMode===true;
+ const apiKey=evaluationMode?null:(options.apiKey ?? process.env.CLOCKED_API_KEY);
+ const operatorToken=evaluationMode?null:(options.operatorToken ?? process.env.BEFOREROLL_OPERATOR_TOKEN);
  if(evaluationMode&&(!options.workspaceStore||!options.evaluationRuntime))throw Error('Evaluation mode requires an explicitly initialized isolated sandbox');
  const requested=evaluationMode?false:(options.enabled ?? LIVE);
  const maxCallsPerHour=options.maxCallsPerHour ?? (process.env.BEFOREROLL_MAX_CALLS_PER_HOUR ? Number(process.env.BEFOREROLL_MAX_CALLS_PER_HOUR) : DEFAULT_MAX_CALLS_PER_HOUR);
@@ -461,7 +468,7 @@ export function createAppServer(options={}){
     const content=await originalVault.read(hash);if(!content)return send(res,404,{error:'Referenced original bytes not retained in the local vault'});
     const receipt=(saved.workspace.imports??[]).find(x=>x.rawHash===hash)||saved.workspace.documents.find(x=>x.importReceipt?.rawHash===hash)?.importReceipt||saved.workspace.callSheet?.importReceipt;
     const suffix=/\.(pdf|docx|txt|md|csv|json)$/i.exec(receipt?.name??'')?.[0]?.toLowerCase()??'.bin';
-    res.writeHead(200,{'Content-Type':'application/octet-stream','Content-Disposition':`attachment; filename="BEFOREROLL_ORIGINAL_${hash.slice(0,16)}${suffix}"`,
+    res.writeHead(200,{'Content-Type':'application/octet-stream','Content-Disposition':`attachment; filename="${String(receipt?.name??('BEFOREROLL_ORIGINAL_'+hash.slice(0,16)+suffix)).replace(/[^A-Za-z0-9_. -]/g,'_').slice(0,180)}"`,
      'Content-Length':content.length});return res.end(content);
    }
    if(action==='lifecycle'&&parts[3]==='backup-encrypted'&&req.method==='POST'){
@@ -513,7 +520,7 @@ export function createAppServer(options={}){
      catch(e){if(!/^(Need source documents|Unsupported call-sheet|Invalid scene rows|Document coverage|PDF .* requires human verification|Document-scene plan requires more than)/.test(e.message))throw e;planError=e.message;}
     }
     const dossier=buildProductionDossier(w,{persistedVersion:saved.version,asOf,
-     modelEvidence:snapshot?.evidence??null,executionSummary:snapshot?.status??null});
+     modelEvidence:snapshot?.evidence??null,executionSummary:snapshot?.status??null,coordinatorEvidence:await recordedCoordinatorEvidence(),discoveryJournals:await createDiscoveryExecution({directory:store.directory}).list(id)});
     let overview;
     try{overview={version:saved.version,...productionReview(w,{offset,limit:40,asOf,executionStatus:snapshot?.status??null})};}
     catch(e){if(!planError)throw e;overview={schema:'beforeroll-production-review-v1',version:saved.version,id,title:w.title,
@@ -545,7 +552,7 @@ export function createAppServer(options={}){
     return send(res,200,{schema:'beforeroll-atomic-production-workflow-v1',version:saved.version,workspace:saved.workspace,
       productionId:id,asOf,dossierSha256:dossier.sha256,originals,overview,execution:executionStatus,
       authority:{version:saved.version,...projectAuthorityGraph(w)},sceneAuthority:{version:saved.version,...projectSceneAuthority(w)},documentaryReasoning:dossier.documentaryReasoning,
-      operations:{version:saved.version,...projectOperations(w,{asOf})},dossier:summary,actionQueue,sceneWorkbench,journey,consistency,history,
+      operations:{version:saved.version,...projectOperations(w,{asOf})},dossier:summary,coordinatorTasks:dossier.coordinatorTasks,actionQueue,sceneWorkbench,journey,consistency,history,
       notClearance:true});
    }
    if(action==='journey'&&req.method==='GET'){
@@ -593,8 +600,10 @@ export function createAppServer(options={}){
      const backup=await createLifecycleBackup(saved,execution,{asOf});
      if(backup.integrity.dossierSha256!==dossier.sha256)return send(res,409,{error:'Model evidence changed during export; reload the current production.'});
      evidencePack={schema:'beforeroll-complete-production-evidence-v1',productionId:id,persistedVersion:saved.version,
-      dossier,consistency:certificate,workspace:saved.workspace,journals:backup.journals,originals,
+      dossier,consistency:certificate,workspace:saved.workspace,journals:backup.journals,...(backup.discoveryJournals?.length?{discoveryJournals:backup.discoveryJournals}:{}),originals,
       originalBytesIncluded:false,secretsIncluded:false,notClearance:true,
+      counterSemantics:{legacyJournal:'dossier.counts.completedModelChecks/unattemptedChecks describe the original Decide-only journal',effectiveAssessed:dossier.counts.effectiveUnassessedChecks===undefined?dossier.counts.completedModelChecks:dossier.counts.planTasks-dossier.counts.effectiveUnassessedChecks,suggestionReviews:dossier.coordinatorTasks?.reviewHistory.length??0},
+      ...(evaluationMode?{evidenceUse:'PREVIOUSLY_RECORDED_GENUINE_CLOCKED_WITH_DISPOSABLE_EVALUATION_ACTIVITY',freshProviderRequests:0}:{}),
       notice:'Includes current and historical model journals. Archived journals are checksum-checked, not revalidated against absent historical sources. Exact original bytes are available separately or in an encrypted lifecycle backup. Retained task credits are the original reported costs, never additional charges.'};
     }
     const latest=await store.load(id);if(!latest||latest.version!==saved.version||latest.sha256!==saved.sha256)return send(res,409,{error:'Production changed during export. Refresh the evidence before exporting.',currentVersion:latest?.version??null});
@@ -606,7 +615,7 @@ export function createAppServer(options={}){
       modelComplete:x.modelComplete,planned:x.planned,humanReviewed:x.humanReviewed,openPrerequisites:x.schedule?.openPrerequisites??null})),
      productionState:dossier.productionState,notClearance:true,sha256:dossier.sha256});
     if(parts[3]==='markdown'){
-     const markdown=dossierMarkdown(dossier);
+     const markdown=(evaluationMode?'Previously recorded genuine Clocked evidence; Evaluation Mode makes zero fresh provider calls. Seeded fictional development reviews and disposable reviewer activity are not documentary authority.\n\n':'')+dossierMarkdown(dossier);
      res.writeHead(200,{'Content-Type':'text/markdown; charset=utf-8',
       'Content-Disposition':`attachment; filename="BEFOREROLL_${id}_INTEGRATED_REVIEW.md"`});return res.end(markdown);
     }
@@ -634,6 +643,15 @@ export function createAppServer(options={}){
     certifyProductionConsistency(saved.workspace,dossier,{persistedVersion:saved.version,queue});
     const current=await store.load(id);if(!current||current.version!==saved.version||current.sha256!==saved.sha256)return send(res,409,{error:'Production changed during action review; reload current evidence'});
     return send(res,200,queue);
+   }
+   if(action==='review-coordinator-suggestion'&&req.method==='POST'){
+    if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
+    const input=await jsonBody(req,8192),saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
+    if(input.expectedVersion!==saved.version)return send(res,409,{error:'Suggestion review version changed; reload before recording',currentVersion:saved.version});
+    const dossier=await currentDossier(saved,execution,new Date().toISOString());
+    recordCoordinatorSuggestionReview(saved.workspace,dossier.coordinatorTasks,input);
+    const next=await store.persist(saved.workspace,{expectedVersion:saved.version});
+    return send(res,200,{version:next.version,decision:'SUGGESTION_REVIEWED_NOT_FULFILLMENT',notClearance:true});
    }
    if(action==='review-session'&&req.method==='POST'&&['preview','commit'].includes(parts[3])){
     if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
@@ -697,6 +715,42 @@ export function createAppServer(options={}){
     const now=Date.now();while(config.recent.length&&config.recent[0]<=now-3600000)config.recent.shift();
     return send(res,200,{...status,hourlyAllowance:{configured:config.maxCallsPerHour,remaining:Math.max(0,config.maxCallsPerHour-config.recent.length),localProcessOnly:true,notProviderQuota:true}});
    }
+   if(action==='discovery'){
+    const discovery=createDiscoveryExecution({directory:store.directory});
+    const saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
+    if(req.method==='GET'){
+     const jobs=await discovery.list(id);
+     return send(res,200,parts[3]==='evidence'?{schema:'beforeroll-core-discovery-evidence-v1',workspaceId:id,jobs,sha256:discoveryHash(jobs),notClearance:true}:projectDiscovery(saved.workspace,jobs));
+    }
+    if(req.method!=='POST')return send(res,405,{error:'Use POST for discovery commands'});
+    if(evaluationMode)return send(res,403,{error:'Evaluation replays previously recorded Last Light and historical examples. No fresh Clocked requests are allowed here; use the authenticated private workflow for a separately authorized new scope.'});
+    if(req.headers['content-type']?.split(';')[0]?.trim()!=='application/json')return send(res,415,{error:'Use application/json'});
+    const input=await jsonBody(req);
+    if(parts[3]==='stop')return send(res,200,await discovery.stop(id,input.planId));
+    if(input.expectedVersion!==saved.version)return send(res,409,{error:'Version conflict: reload and preview current production'});
+    const plan=discoveryPlan(saved.workspace,input);
+    const originals=await originalVault.inventory(saved.workspace);
+    if(plan.documents.some(d=>originals.missingOriginalSha256.includes(d.rawHash)))return send(res,422,{error:'Original source custody is incomplete. Restore and verify original files before discovery.'});
+    if(parts[3]==='preview')return send(res,200,{plan,previewSha256:discoveryHash(plan),existingFence:Boolean(await discovery.read(id,plan.id)),notClearance:true});
+    if(parts[3]!=='run')return send(res,404,{error:'Unknown discovery command'});
+    if(!config.enabled)return send(res,503,{error:'Owner live Clocked configuration is incomplete or disabled; no requests made'});
+    const token=String(req.headers['x-operator-token']??'');
+    if(!token||!constantEqual(token,config.operatorToken))return send(res,401,{error:'Valid separate local operator token required'});
+    if(input.confirm!=='RUN_CORE_DISCOVERY'||input.acceptBillingUncertainty!==true||input.previewSha256!==discoveryHash(plan))return send(res,422,{error:'Exact current preview, explicit RUN_CORE_DISCOVERY and billing uncertainty acknowledgement required'});
+    if(config.activeProject||config.activeSweep)return send(res,409,{error:'Another model session is active'});
+    const now=Date.now();while(config.recent.length&&config.recent[0]<=now-3600000)config.recent.shift();
+    if(config.maxCallsPerHour-config.recent.length<plan.worstCaseCalls)return send(res,429,{error:'Insufficient local hourly request allowance for the complete preview; no requests made'});
+    // A legacy uncertain Decide attempt must not acquire a new retry path here.
+    const old=await execution.status(planIntelligence(saved.workspace),{offset:0,limit:1});
+    if(old.unknownBilling)return send(res,409,{error:'Existing Clocked outcome is uncertain. Discovery cannot bypass the execution fence.'});
+    config.activeProject=true;
+    let ready,failed;const started=new Promise((resolve,reject)=>{ready=resolve;failed=reject;});
+    void discovery.run({workspace:saved.workspace,plan,operatorAuthorized:true,apiKey:config.apiKey,fetchImpl:config.fetchImpl,controlledTest:options.controlledTestMode===true,
+     onReady:ready,checkFresh:async()=>{const s=await store.load(id);if(!s)throw Error('PRODUCTION_REMOVED');for(const d of plan.documents)if(!await originalVault.read(d.rawHash))throw Error('ORIGINAL_SOURCE_CUSTODY_LOST');return s.workspace;},
+     beforeCall:async()=>{const at=Date.now();while(config.recent.length&&config.recent[0]<=at-3600000)config.recent.shift();if(config.recent.length>=config.maxCallsPerHour)throw Error('HOURLY_ALLOWANCE_EXHAUSTED');config.recent.push(at);}
+    }).catch(failed).finally(()=>{config.activeProject=false;});
+    return send(res,202,{...await started,noAutomaticRetries:true});
+   }
    if(action==='execution'&&req.method==='POST'){
     if(!config.enabled)return send(res,503,{error:'Live Clocked project analysis disabled. Offline source review remains available.'});
     const token=(req.headers['x-operator-token']||'').toString();
@@ -707,6 +761,7 @@ export function createAppServer(options={}){
     if(input.confirm!=='RUN_PROJECT_CLOCKED'||!Number.isSafeInteger(input.maxCalls)||input.maxCalls<1||input.maxCalls>32)return send(res,400,{error:'Explicit RUN_PROJECT_CLOCKED confirmation and 1-32 maxCalls required'});
     const saved=await store.load(id);if(!saved)return send(res,404,{error:'Workspace not found'});
     const plan=planIntelligence(saved.workspace);
+    if(hasUncertainDiscoveryOverlap(await createDiscoveryExecution({directory:store.directory}).list(id),plan.taskIds))return send(res,409,{error:'Discovery has an uncertain outcome or cost. The original Decide path cannot bypass its request fence.'});
     const now=Date.now();while(config.recent.length&&config.recent[0]<=now-3600000)config.recent.shift();
     const available=config.maxCallsPerHour-config.recent.length;
     if(available<1)return send(res,429,{error:'Local hourly attempt cap reached. No new calls made.'});
@@ -791,14 +846,14 @@ export function createAppServer(options={}){
     plannedCalls:plan.plannedCalls,planIdentity:plan.taskIds,warning:'This is offline analysis planning only. No Clocked calls. No legal or filming-clearance claim.'});
   }catch(e){return send(res,e.httpStatus||422,{error:e.message});}
  }
- if(uri.pathname==='/api/health'&&req.method==='GET')return send(res,200,{name:'BeforeRoll',version:'0.29.0',workspaceEngine:evaluationMode?'M3-S30-isolated-evaluation':'M3-S29-local-owner-security',workspacesEnabled:Boolean(store),ownerAccessRequired:Boolean(store&&owner.guarded),controlledTestMode:options.controlledTestMode===true,liveEnabled:config.enabled,localHourlyAttemptCap:config.maxCallsPerHour,mode:evaluationMode?'LOCAL_EVALUATION_SANDBOX':'local-owner-production',evaluationMode,recordedResponseNotice:evaluationMode?options.evaluationRuntime.notice:null});
+ if(uri.pathname==='/api/health'&&req.method==='GET')return send(res,200,{name:'BeforeRoll',version:'0.29.0',workspaceEngine:evaluationMode?'M3-S30-isolated-evaluation':'M3-S29-local-owner-security',workspacesEnabled:Boolean(store),ownerAccessRequired:Boolean(store&&owner.guarded),controlledTestMode:options.controlledTestMode===true,liveEnabled:config.enabled,localHourlyAttemptCap:config.maxCallsPerHour,mode:evaluationMode?'LOCAL_EVALUATION_SANDBOX':'local-owner-production',evaluationMode,evaluationDefaultProjectId:evaluationMode?options.evaluationRuntime.defaultProjectId:null,recordedResponseNotice:evaluationMode?options.evaluationRuntime.notice:null});
  if(uri.pathname==='/api/extract'&&req.method==='POST')return handleLive(req,res,config);
  if(uri.pathname==='/api/semantic'&&req.method==='POST')return handleSemantic(req,res,config);
  if(uri.pathname==='/api/semantic-sweep'&&req.method==='POST')return handleSemanticSweep(req,res,config);
  if(uri.pathname==='/api/semantic-batch'&&req.method==='POST')return handleMultiScene(req,res,config);
  if(req.method==='GET'&&staticFiles.has(uri.pathname)){
    const rel=staticFiles.get(uri.pathname);const full=path.join(ROOT,rel);
-   try {const content=await fs.readFile(full);res.writeHead(200,{'Content-Type':mime[path.extname(full)]||'application/octet-stream'});return res.end(content);}
+   try {const content=await fs.readFile(full);res.writeHead(200,{'Content-Type':mime[path.extname(full)]||'application/octet-stream','Cache-Control':'no-store'});return res.end(content);}
    catch{return send(res,404,{error:'Missing local build asset'});}
  }
  return send(res,404,{error:'Not found'});
@@ -811,7 +866,7 @@ if(IS_ENTRY){
  if(!IS_EVALUATION&&process.env.BEFOREROLL_LIVE_ENABLED==='true'&&!LIVE)throw Error('Live mode requires CLOCKED_API_KEY and BEFOREROLL_OPERATOR_TOKEN in the local .env (or process environment).');
  if(!Number.isInteger(PORT)||PORT<1||PORT>65535)throw Error('Invalid PORT');
  const evaluationMode=process.argv.includes('--evaluate');
- const runtime=evaluationMode?await makeEvaluationRuntime():null;
+ const runtime=evaluationMode?await makeEvaluationRuntime({includeLastLight:true}):null;
  const server=createAppServer(evaluationMode?{
   evaluationMode:true,evaluationRuntime:runtime,workspaceStore:runtime.store,
   executionStore:runtime.execution,sourceVault:runtime.vault,enabled:false,apiKey:null,operatorToken:null

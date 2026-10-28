@@ -1,0 +1,80 @@
+{
+  "schema": "beforeroll-live-case-result-v1",
+  "scenarioId": "A_DOCK",
+  "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+  "stopReason": null,
+  "coverage": {
+    "pairs": 8,
+    "assessed": 8,
+    "unassessed": 0,
+    "relevant": 3,
+    "ambiguous": 1,
+    "extractedUnits": 3,
+    "totalUnits": 4
+  },
+  "missing": [],
+  "extra": [],
+  "exactSpansAndProvenance": true,
+  "reviewPersistence": true,
+  "authorityRecords": 0,
+  "fulfilledConditions": 0,
+  "candidates": [
+    {
+      "sceneId": "S301",
+      "field": "required_written_documents",
+      "quote": "signed electrical isolation certificate",
+      "requestSha256": "82166e10416780ebf25cd21b4e19ddf007ed715decc6c3b8e3efc6e71e898dd7",
+      "responseSha256": "1d07b2386a157e912367049882d7c7b28bf975bb5735ee1e2ab6b9c99f6cae64"
+    },
+    {
+      "sceneId": "S301",
+      "field": "required_written_documents",
+      "quote": "written dock access approval",
+      "requestSha256": "82166e10416780ebf25cd21b4e19ddf007ed715decc6c3b8e3efc6e71e898dd7",
+      "responseSha256": "1d07b2386a157e912367049882d7c7b28bf975bb5735ee1e2ab6b9c99f6cae64"
+    },
+    {
+      "sceneId": "S301",
+      "field": "required_physical_protections",
+      "quote": "load-rated cable covers",
+      "requestSha256": "e23a1fa1741acfd763098b603be95f25d77fe199b03214c966205626fd48f4cc",
+      "responseSha256": "e298ad927c8aac3f38cf128e84208d4bdbd16076f1008bc02512889ed19cf3e5"
+    },
+    {
+      "sceneId": "S301",
+      "field": "required_physical_protections",
+      "quote": "anti-slip interlocking panels",
+      "requestSha256": "e23a1fa1741acfd763098b603be95f25d77fe199b03214c966205626fd48f4cc",
+      "responseSha256": "e298ad927c8aac3f38cf128e84208d4bdbd16076f1008bc02512889ed19cf3e5"
+    },
+    {
+      "sceneId": "S301",
+      "field": "required_on_site_personnel",
+      "quote": "qualified marine electrician",
+      "requestSha256": "e23a1fa1741acfd763098b603be95f25d77fe199b03214c966205626fd48f4cc",
+      "responseSha256": "e298ad927c8aac3f38cf128e84208d4bdbd16076f1008bc02512889ed19cf3e5"
+    },
+    {
+      "sceneId": "S302",
+      "field": "required_written_documents",
+      "quote": "written pier manager consent",
+      "requestSha256": "0cc97610f0d28f60814c8d4653312701322980c29c9587d3d3ef929bdc2e04e3",
+      "responseSha256": "fa72687b50d5a887cf2c39399a620fd3433ebecb987349f34d83685e29c5f893"
+    },
+    {
+      "sceneId": "S302",
+      "field": "required_physical_protections",
+      "quote": "non-marking shoe covers",
+      "requestSha256": "0cc97610f0d28f60814c8d4653312701322980c29c9587d3d3ef929bdc2e04e3",
+      "responseSha256": "fa72687b50d5a887cf2c39399a620fd3433ebecb987349f34d83685e29c5f893"
+    }
+  ],
+  "budgetAfter": {
+    "requests": 11,
+    "reportedCredits": 23,
+    "unknownCreditRequests": 0
+  },
+  "providerLatencyMs": 9901.8847,
+  "semanticVerdict": "PASS_FOR_FROZEN_CASE_ONLY",
+  "notClearance": true
+}

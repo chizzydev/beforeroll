@@ -1,0 +1,32 @@
+✔ genuine saved Fill revalidation 1 (not a fresh API call) (3.9978ms)
+✔ genuine saved Fill revalidation 2 (not a fresh API call) (0.8598ms)
+✔ genuine saved Fill revalidation 3 (not a fresh API call) (0.7112ms)
+✔ genuine saved Fill revalidation 4 (not a fresh API call) (0.4982ms)
+✔ strict Fill decoder rejects missing (0.88ms)
+✔ strict Fill decoder rejects extra (0.3706ms)
+✔ strict Fill decoder rejects unknownRole (0.5076ms)
+✔ strict Fill decoder rejects generated (0.3937ms)
+✔ strict Fill decoder rejects wrongSpan (0.475ms)
+✔ strict Fill decoder rejects nonfinite (0.6418ms)
+✔ strict Fill decoder rejects foreignScene (0.4759ms)
+✔ strict Fill decoder rejects fakeQuote (0.8791ms)
+✔ strict Fill decoder rejects nativeImage (0.5952ms)
+✔ unissued quotation cannot support a claimed-issued classification (3.0694ms)
+✔ source/request integrity is required independently of semantic classification (0.4501ms)
+✔ current contract exactly matches accepted v6 request and avoids independent NONE multiselect (1.0703ms)
+✔ preserved real browser run after generic repairs: six prerequisites, two distinct investigations, no transferred or false duties (72.2802ms)
+✔ opt-in Fill has its own fingerprint, reserves full units, and original two-endpoint plan stays compatible (18.8203ms)
+✔ controlled complete journal, documentary tasks, review, retirement and strict archive tamper checks (771.723ms)
+✔ full recorded run is immediate, exact, three-endpoint and credential-free through actual HTTP workflow (672.7412ms)
+✔ all billable paths stay disabled despite ambient configuration; replay is a zero-call identity check (372.1151ms)
+✔ disposable review saves with exact History context, exports retain provenance, reset restores recorded seed only (1117.9921ms)
+✔ changed source scene or request contract cannot reactivate recording; modified bundle is rejected (505.4262ms)
+✔ browser workspace modules link correctly after counter and provenance repairs (25.5548ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3124.2229

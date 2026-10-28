@@ -23,7 +23,7 @@ export function buildSceneWorkbench(d,{sceneId,taskOffset=0,taskLimit=40,actionO
  const selected=taskIndexes.slice(taskOffset,taskOffset+taskLimit);
  const localPositions=new Map(taskIndexes.map((x,i)=>[x.t.id,i]));
  const tasks=selected.map(({t,i})=>({...t,globalTaskIndex:i,sceneTaskIndex:localPositions.get(t.id),currentHumanReview:reviews.get(t.id)??null,
-  evidenceClass:t.modelState==='COMPLETE'?'OWNER_RECORDED_MODEL_NOT_AUTHORITY':t.modelState==='NOT_ATTEMPTED'?'NOT_AI_EVALUATED':'PROVIDER_OUTCOME_UNCERTAIN',notClearance:true}));
+  evidenceClass:t.modelState==='COMPLETE'?'OWNER_RECORDED_MODEL_NOT_AUTHORITY':t.discoveryCheck?.decideStatus==='ACCEPTED'?'CLOCKED_DISCOVERY_RECORDED_NOT_AUTHORITY':t.modelState==='NOT_ATTEMPTED'?'NOT_AI_EVALUATED':'PROVIDER_OUTCOME_UNCERTAIN',notClearance:true}));
  const documents=d.sourceDocuments.map(doc=>{
   const matches=taskIndexes.filter(x=>x.t.documentId===doc.id);
   return {id:doc.id,name:doc.name,sourceSha256:doc.sourceSha256,originalBytesSha256:doc.originalBytesSha256,
@@ -44,6 +44,7 @@ export function buildSceneWorkbench(d,{sceneId,taskOffset=0,taskLimit=40,actionO
  const packet={schema:'beforeroll-scene-workbench-v1',productionId:d.productionId,title:d.title,
   workspaceRevision:d.workspaceRevision,persistedVersion:d.persistedVersion,asOf:d.asOf,dossierSha256:d.sha256,
   scene:{...scene,notClearance:true},documents,scopeClaims,documentaryLinks,schedules,conditions,
+  coordinatorTasks:d.coordinatorTasks?{...d.coordinatorTasks,candidates:d.coordinatorTasks.candidates.filter(c=>c.sceneId===sceneId),warnings:d.coordinatorTasks.warnings.filter(c=>c.sceneId===sceneId),reviewHistory:d.coordinatorTasks.reviewHistory.filter(c=>c.sceneId===sceneId)}:null,
   tasks,taskPagination:{offset:taskOffset,limit:taskLimit,total:taskIndexes.length,hasMore:taskOffset+tasks.length<taskIndexes.length},
   actions,documentaryReasoning:d.documentaryReasoning?.scenes.find(x=>x.sceneId===sceneId)??null,
   summary:{planned:taskIndexes.length,completedModelChecks:taskIndexes.filter(x=>x.t.modelState==='COMPLETE').length,

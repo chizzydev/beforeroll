@@ -1,0 +1,90 @@
+✔ complete source inventory needs no known terms or selected clauses; budget and source identity gates (31.4892ms)
+✔ uniform Extract specification is byte-equivalent to accepted recorded request fields and instructions (26.8654ms)
+✔ controlled full job retains every pair, quarantines proposal/history/other-scene and yields distinct exact tasks (668.2223ms)
+✔ quota rejection durably stops and cannot retry (66.6108ms)
+✔ schema rejection durably stops and cannot retry (66.2224ms)
+✔ unknown credits durably stops and cannot retry (71.0739ms)
+✔ over-reserve credits durably stops and cannot retry (74.2509ms)
+✔ malformed typed answer durably stops and cannot retry (65.8815ms)
+✔ transport lost durably stops and cannot retry (62.9707ms)
+✔ wrong offsets rejects Extract and stops subsequent units (347.4591ms)
+✔ unknown categories rejects Extract and stops subsequent units (341.1436ms)
+✔ wrong arrays rejects Extract and stops subsequent units (353.8906ms)
+✔ invented quote rejects Extract and stops subsequent units (324.1123ms)
+✔ invalid JSON shape rejects Extract and stops subsequent units (337.307ms)
+✔ empty Extract arrays leave relevant source checks visible with no inferred tasks or permission (448.6301ms)
+✔ returned Decide coverage cannot disguise a failed Extract as a successful analysis journey (355.5779ms)
+✔ intent is durable before transport; cancellation waits for in-flight request then stops (66.8669ms)
+✔ source replacement during dispatch stops; A to B to A cannot resurrect old candidates (51.0276ms)
+✔ scene activity changes invalidate candidates and source-bound suggestion review cannot close authority (471.6378ms)
+✔ corrupt journal response is rejected before projection; credential echoes are sealed and halt (53.0302ms)
+✔ explicit scope fence handles alphanumeric scene identities and mixed scenes conservatively (0.5171ms)
+✔ actual server preview is unbilled, guarded execution drives atomic dossier/history/exports and review (2050.8971ms)
+✔ server refuses missing live configuration, stale preview, missing custody and insufficient hourly allowance (99.0482ms)
+✔ server quota preflight makes zero attempts rather than truncating scope silently (53.2934ms)
+✔ lifecycle backup and separate-workspace recovery preserve discovery raw evidence and permanent fences (797.2565ms)
+✔ Evaluation rejects all discovery mutations with zero provider requests and states whole-run replay limitation (333.8419ms)
+✔ new coordinator cards never acquire historical U01 or Scene 47 labels from generic unit IDs (582.0906ms)
+✔ raw malformed JSON and broken response streams retain received bytes and never continue (113.8099ms)
+✔ nonzero document and scene epochs validate after restart without restoring prior source evidence (592.3457ms)
+✔ legacy project execution cannot bypass a discovery unknown-outcome fence (208.8525ms)
+✔ shared legacy execution lock prevents discovery dispatch (22.3476ms)
+✔ changing selected scenes cannot bypass an uncertain request fence (78.1129ms)
+✔ recomputed checksum cannot disguise incomplete discovery as completed or change a source-bound request (479.7693ms)
+✔ missing original custody and owner authentication fail before preview or dispatch (70.1666ms)
+✔ owner cold-run client prepares unbilled then runs exclusively through guarded app handlers with fake transport (2968.9834ms)
+✔ genuine saved Fill revalidation 1 (not a fresh API call) (8.9315ms)
+✔ genuine saved Fill revalidation 2 (not a fresh API call) (1.6279ms)
+✔ genuine saved Fill revalidation 3 (not a fresh API call) (1.1505ms)
+✔ genuine saved Fill revalidation 4 (not a fresh API call) (0.6433ms)
+✔ strict Fill decoder rejects missing (1.6492ms)
+✔ strict Fill decoder rejects extra (0.7564ms)
+✔ strict Fill decoder rejects unknownRole (0.5473ms)
+✔ strict Fill decoder rejects generated (0.7125ms)
+✔ strict Fill decoder rejects wrongSpan (0.8645ms)
+✔ strict Fill decoder rejects nonfinite (0.6324ms)
+✔ strict Fill decoder rejects foreignScene (0.507ms)
+✔ strict Fill decoder rejects fakeQuote (0.8001ms)
+✔ strict Fill decoder rejects nativeImage (0.3428ms)
+✔ unissued quotation cannot support a claimed-issued classification (1.2746ms)
+✔ source/request integrity is required independently of semantic classification (0.6247ms)
+✔ current contract exactly matches accepted v6 request and avoids independent NONE multiselect (1.3879ms)
+✔ preserved real browser run after generic repairs: six prerequisites, two distinct investigations, no transferred or false duties (86.2637ms)
+✔ opt-in Fill has its own fingerprint, reserves full units, and original two-endpoint plan stays compatible (26.368ms)
+✔ controlled complete journal, documentary tasks, review, retirement and strict archive tamper checks (909.3407ms)
+✔ full recorded run is immediate, exact, three-endpoint and credential-free through actual HTTP workflow (857.1876ms)
+✔ all billable paths stay disabled despite ambient configuration; replay is a zero-call identity check (422.5269ms)
+✔ disposable review saves with exact History context, exports retain provenance, reset restores recorded seed only (1283.2114ms)
+✔ changed source scene or request contract cannot reactivate recording; modified bundle is rejected (474.3664ms)
+✔ browser workspace modules link correctly after counter and provenance repairs (8.7925ms)
+✔ genuine complete-run lifecycle verifies and restores discovery count, bytes, reviews and non-retryable fence (570.7659ms)
+✔ effective export counts do not mislabel discovery checks as unattempted; reset confirmation disclosure has a stable identity (1.0005ms)
+✔ genuine recorded A_DOCK stays source-bound and produces all frozen candidates without dispatch (76.0386ms)
+✔ genuine recorded B_GALLERY stays source-bound and produces all frozen candidates without dispatch (31.7695ms)
+✔ genuine recorded C_ORCHARD stays source-bound and produces all frozen candidates without dispatch (26.2973ms)
+✔ genuine recorded D_ROAD stays source-bound and produces all frozen candidates without dispatch (26.753ms)
+✔ genuine recorded E_PRESENT_PHOTO stays source-bound and produces all frozen candidates without dispatch (21.455ms)
+✔ genuine recorded F_COLLECTION stays source-bound and produces all frozen candidates without dispatch (19.3162ms)
+✔ historical object words do not suppress an explicit current focal-scene requirement; actual narrative/unsigned scope stays quarantined (0.9678ms)
+✔ genuine discovery results reconcile source queue, journey, source-review evidence and exports without rewriting legacy execution (76.4157ms)
+ℹ tests 69
+ℹ suites 0
+ℹ pass 69
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13354.0472
+ℹ start of coverage report
+ℹ ------------------------------------------------------------------------------
+ℹ file                          | line % | branch % | funcs % | uncovered lines
+ℹ ------------------------------------------------------------------------------
+ℹ src                           |        |          |         | 
+ℹ  core-discovery.mjs           | 100.00 |    95.54 |   97.53 | 
+ℹ  discovery-execution.mjs      | 100.00 |    83.41 |  100.00 | 
+ℹ  documentary-intelligence.mjs | 100.00 |    80.00 |  100.00 | 
+ℹ  recorded-last-light.mjs      | 100.00 |    70.83 |  100.00 | 
+ℹ ------------------------------------------------------------------------------
+ℹ all files                     | 100.00 |    87.13 |   98.64 | 
+ℹ ------------------------------------------------------------------------------
+ℹ end of coverage report

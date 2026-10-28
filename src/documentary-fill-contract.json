@@ -1,0 +1,31 @@
+{
+  "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+  "fields": {
+    "claimed_role": {
+      "type": "choice",
+      "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+      "options": [
+        "claims_issued_variation",
+        "request_only",
+        "historical_reference",
+        "current_condition",
+        "unrelated_or_unclear"
+      ]
+    },
+    "claim_quote": {
+      "type": "extract",
+      "infer": false,
+      "description": "The complete supplied original passage, copied verbatim as the statement a human must inspect. Include historical statements and negative or unissued statements unchanged. This field copies source text; it does not decide its role."
+    },
+    "referenced_instrument": {
+      "type": "extract",
+      "infer": false,
+      "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+    },
+    "scope_quote": {
+      "type": "extract",
+      "infer": false,
+      "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+    }
+  }
+}

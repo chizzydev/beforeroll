@@ -1,0 +1,3858 @@
+{
+  "schema": "beforeroll-atomic-production-workflow-v1",
+  "version": 4,
+  "workspace": {
+    "schema": "beforeroll-workspace-v1",
+    "id": "live_20261027_C_orchard",
+    "title": "Fictional live acceptance C_ORCHARD",
+    "revision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "C_ORCHARD-permit.txt",
+        "role": "permit",
+        "text": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\n\nAn unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nScene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nBackground correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 194,
+            "text": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+            "hash": "4010e963b13aa2058553d21379d375560f296e99cdfd855bb98d3b8649a4f040",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 196,
+            "end": 363,
+            "text": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+            "hash": "83c627e21e5bc5fb044ff11fac80f42aa01150812ca282c99c3ecf7c5a53fd6a",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 365,
+            "end": 510,
+            "text": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "hash": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 512,
+            "end": 655,
+            "text": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+            "hash": "9beaf5824abcf9d478ff56c5095361a16c330f9f1deaf64ff8370b484f060d2d",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "C_ORCHARD-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "normalizedHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "byteCount": 655,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "callSheet": {
+      "text": "Scene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge\nScene 502 | Orchard | 21:00-22:00 | proposed drone survey",
+      "sourceHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+      "scenes": [
+        {
+          "id": "S501",
+          "number": "501",
+          "location": "Orchard",
+          "start": "20:00",
+          "end": "21:00",
+          "activity": "starlight rigging beside hedge",
+          "rawWindow": "20:00-21:00",
+          "source": {
+            "start": 0,
+            "end": 66,
+            "fields": {
+              "scene": {
+                "start": 6,
+                "end": 9
+              },
+              "location": {
+                "start": 12,
+                "end": 19
+              },
+              "window": {
+                "start": 22,
+                "end": 33
+              },
+              "activity": {
+                "start": 36,
+                "end": 66
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        },
+        {
+          "id": "S502",
+          "number": "502",
+          "location": "Orchard",
+          "start": "21:00",
+          "end": "22:00",
+          "activity": "proposed drone survey",
+          "rawWindow": "21:00-22:00",
+          "source": {
+            "start": 67,
+            "end": 124,
+            "fields": {
+              "scene": {
+                "start": 73,
+                "end": 76
+              },
+              "location": {
+                "start": 79,
+                "end": 86
+              },
+              "window": {
+                "start": 89,
+                "end": 100
+              },
+              "activity": {
+                "start": 103,
+                "end": 124
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        }
+      ],
+      "unsupported": [],
+      "format": "Explicit pipe-delimited rows only",
+      "revision": 1,
+      "historicalSceneEpochs": {
+        "S501": 0,
+        "S502": 0
+      },
+      "importReceipt": {
+        "kind": "callSheet",
+        "name": "C_ORCHARD-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "normalizedHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "byteCount": 124,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2,
+        "sourceHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d"
+      }
+    },
+    "assessments": [],
+    "reviewActions": [],
+    "imports": [
+      {
+        "kind": "permit",
+        "name": "C_ORCHARD-permit.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "normalizedHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "byteCount": 655,
+        "sourceMap": [],
+        "warnings": [
+          "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+        ],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 1,
+        "documentId": "PERMIT"
+      },
+      {
+        "kind": "callSheet",
+        "name": "C_ORCHARD-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "normalizedHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "byteCount": 124,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2
+      }
+    ],
+    "authorityLinks": [],
+    "sceneAuthority": [],
+    "sceneSchedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "notClearance": true,
+    "coordinatorTaskReviews": [
+      {
+        "sequence": 1,
+        "candidateId": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+        "sceneId": "S501",
+        "source": {
+          "field": "required_written_documents",
+          "quote": "current written estate access licence",
+          "unitId": "U003",
+          "unitRange": [
+            39,
+            76
+          ],
+          "permitRange": [
+            404,
+            441
+          ],
+          "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "sourceUnitRange": [
+            365,
+            510
+          ],
+          "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+          "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+          "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_C_orchard",
+          "sceneId": "S501",
+          "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+          "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+          "title": "Locate and verify current written estate access licence.",
+          "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+          "contextUnitIds": [
+            "U002",
+            "U004"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        "reviewer": "Fictional campaign coordinator",
+        "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+        "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+        "at": "2026-10-27T11:38:31.949Z",
+        "workspaceRevision": 2,
+        "notClearance": true,
+        "sha256": "1a7584eeb8b896ba4d63482083c6910b2426ad98d410bf8e11d7cd7141e4f902"
+      }
+    ]
+  },
+  "productionId": "live_20261027_C_orchard",
+  "asOf": "2026-10-27T11:38:31.985Z",
+  "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+  "originals": {
+    "schema": "beforeroll-original-source-register-v1",
+    "productionId": "live_20261027_C_orchard",
+    "persistedVersion": 4,
+    "referenced": 2,
+    "preserved": 2,
+    "missingOriginalSha256": [],
+    "files": [
+      {
+        "rawHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "byteCount": 655
+      },
+      {
+        "rawHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "byteCount": 124
+      }
+    ],
+    "notClearance": true
+  },
+  "overview": {
+    "version": 4,
+    "schema": "beforeroll-production-review-v1",
+    "id": "live_20261027_C_orchard",
+    "title": "Fictional live acceptance C_ORCHARD",
+    "revision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "C_ORCHARD-permit.txt",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "revision": 1,
+        "sourceFormat": "UTF8_TEXT",
+        "unitCount": 4,
+        "gaps": 0,
+        "pdfTranscription": null,
+        "rawSourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 194,
+            "text": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 196,
+            "end": 363,
+            "text": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 365,
+            "end": 510,
+            "text": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 512,
+            "end": 655,
+            "text": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          }
+        ]
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S501",
+        "number": "501",
+        "location": "Orchard",
+        "activity": "starlight rigging beside hedge",
+        "start": "20:00",
+        "end": "21:00",
+        "source": {
+          "start": 0,
+          "end": 66,
+          "fields": {
+            "scene": {
+              "start": 6,
+              "end": 9
+            },
+            "location": {
+              "start": 12,
+              "end": 19
+            },
+            "window": {
+              "start": 22,
+              "end": 33
+            },
+            "activity": {
+              "start": 36,
+              "end": 66
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      },
+      {
+        "id": "S502",
+        "number": "502",
+        "location": "Orchard",
+        "activity": "proposed drone survey",
+        "start": "21:00",
+        "end": "22:00",
+        "source": {
+          "start": 67,
+          "end": 124,
+          "fields": {
+            "scene": {
+              "start": 73,
+              "end": 76
+            },
+            "location": {
+              "start": 79,
+              "end": 86
+            },
+            "window": {
+              "start": 89,
+              "end": 100
+            },
+            "activity": {
+              "start": 103,
+              "end": 124
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      }
+    ],
+    "schedule": {
+      "present": true,
+      "sourceHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+      "sourceFormat": "UTF8_TEXT",
+      "unsupportedRows": 0
+    },
+    "sceneAuthority": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "sceneReview": [
+      {
+        "sceneId": "S501",
+        "location": "Orchard",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S502",
+        "location": "Orchard",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "operations": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "sceneOperations": [
+      {
+        "sceneId": "S501",
+        "sceneSourceHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S502",
+        "sceneSourceHash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "reviewActions": [],
+    "reviewedCount": 0,
+    "plannedCalls": 8,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "shown": 8,
+      "hasMore": false
+    },
+    "tasks": [
+      {
+        "id": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "30c2848833b5bc322dfc91e745292fa5ca54a92431259503cbb6668dfb6cbfa6",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "a4879ae6cfd023607594f7ac89a38e885049476e56140a48766cc7ef529e07dc",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "requestHash": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "contextUnitIds": [
+          "U003"
+        ],
+        "requestHash": "0341941886abc8dd9c40198ae04c1d320af3e65c57a6c158e9ca9a8ea7ead514",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "eae748ebb19835464f7d0c4ce59c786361b090ed063b328a9ffeec92ff275d5e",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "5d8ca628ced4606108ec6179de780fcdce0c922692b6ab8f0ffbc5b4e530814c",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "requestHash": "9e9134a1dd0100743e59063d66b8138e276820e5aae9a20ca23e47ba2f633f01",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "contextUnitIds": [
+          "U003"
+        ],
+        "requestHash": "ec6479e030d6713411ce150a653bb60b2c9318d7aced8f81cf60511c583d9921",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      }
+    ],
+    "state": "READY_FOR_HUMAN_SOURCE_REVIEW",
+    "notClearance": true,
+    "modelRequests": 0,
+    "notice": "Model attempts and human review are independent; no scene is authorized. Evaluated counts cover segmented candidates only."
+  },
+  "execution": {
+    "schema": "beforeroll-execution-status-v1",
+    "projectId": "live_20261027_C_orchard",
+    "planKey": "f18dde5626304902b1d9d27235fdf5630103d0ea7941a2e3f00303da8134447e",
+    "planned": 8,
+    "attempts": 0,
+    "completed": 0,
+    "unknownBilling": 0,
+    "state": "READY",
+    "stale": false,
+    "archivedRuns": 0,
+    "byScene": {
+      "S501": {
+        "planned": 4,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      },
+      "S502": {
+        "planned": 4,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "byDocument": {
+      "PERMIT": {
+        "planned": 8,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "remaining": 8,
+    "completionPercent": 0,
+    "knownCredits": 0,
+    "creditProjection": null,
+    "unknownCreditEntries": 0,
+    "retainedAttempts": 0,
+    "newPlanAttempts": 0,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "hasMore": false
+    },
+    "entries": [
+      {
+        "id": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "requestHash": "30c2848833b5bc322dfc91e745292fa5ca54a92431259503cbb6668dfb6cbfa6",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "requestHash": "a4879ae6cfd023607594f7ac89a38e885049476e56140a48766cc7ef529e07dc",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "requestHash": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "requestHash": "0341941886abc8dd9c40198ae04c1d320af3e65c57a6c158e9ca9a8ea7ead514",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "requestHash": "eae748ebb19835464f7d0c4ce59c786361b090ed063b328a9ffeec92ff275d5e",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "requestHash": "5d8ca628ced4606108ec6179de780fcdce0c922692b6ab8f0ffbc5b4e530814c",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "requestHash": "9e9134a1dd0100743e59063d66b8138e276820e5aae9a20ca23e47ba2f633f01",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "requestHash": "ec6479e030d6713411ce150a653bb60b2c9318d7aced8f81cf60511c583d9921",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Only segmented source candidates have been assessed. Provider outputs are uncalibrated; no filming clearance or document authenticity is established."
+  },
+  "authority": {
+    "version": 4,
+    "schema": "beforeroll-document-authority-graph-v1",
+    "workspaceId": "live_20261027_C_orchard",
+    "workspaceRevision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "C_ORCHARD-permit.txt",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "revision": 1,
+        "metadata": null,
+        "metadataStatus": "NOT_REVIEWED",
+        "notClearance": true
+      }
+    ],
+    "links": [],
+    "scenes": [
+      {
+        "sceneId": "S501",
+        "location": "Orchard",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S502",
+        "location": "Orchard",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      }
+    ],
+    "summary": {
+      "links": 0,
+      "currentLinks": 0,
+      "staleLinks": 0,
+      "unreviewedDocuments": [
+        "PERMIT"
+      ],
+      "unverifiedAmendments": 0,
+      "unresolvedConflicts": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 60,
+      "hasMore": false
+    },
+    "notClearance": true,
+    "warning": "Human-entered documentary graph, NOT legal precedence, signature authentication, grant validation, or proof that all permits have been supplied."
+  },
+  "sceneAuthority": {
+    "version": 4,
+    "schema": "beforeroll-scene-authority-register-v1",
+    "workspaceId": "live_20261027_C_orchard",
+    "revision": 3,
+    "scenes": [
+      {
+        "sceneId": "S501",
+        "location": "Orchard",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S502",
+        "location": "Orchard",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "records": [],
+    "pagination": {
+      "offset": 0,
+      "limit": 100,
+      "hasMore": false
+    },
+    "summary": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "notClearance": true,
+    "warning": "Human-recorded scope claims are not signature validation, fulfilled prerequisites, lawful authority or filming clearance."
+  },
+  "documentaryReasoning": {
+    "schema": "beforeroll-documentary-reasoning-v1",
+    "workspaceId": "live_20261027_C_orchard",
+    "workspaceRevision": 3,
+    "asOf": "2026-10-27T11:38:31.985Z",
+    "scenes": [
+      {
+        "sceneId": "S501",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "starlight rigging beside hedge",
+        "originalLocation": "Orchard",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      },
+      {
+        "sceneId": "S502",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "proposed drone survey",
+        "originalLocation": "Orchard",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      }
+    ],
+    "summary": {
+      "scenes": 2,
+      "restrictions": 0,
+      "requests": 0,
+      "pendingGrantClaims": 0,
+      "scenesWithReview": 0,
+      "modelSupportedHumanClaims": 0,
+      "modelOnlyFindings": 0
+    },
+    "notClearance": true,
+    "warning": "Deterministic comparison of human-recorded facets only; NOT a legal authority determination, cryptographic signature check, verified issuance, permission to film, or proof all source documents were supplied."
+  },
+  "operations": {
+    "version": 4,
+    "schema": "beforeroll-production-operations-v1",
+    "workspaceId": "live_20261027_C_orchard",
+    "revision": 3,
+    "asOf": "2026-10-27T11:38:31.985Z",
+    "scenes": [
+      {
+        "sceneId": "S501",
+        "sceneSourceHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S502",
+        "sceneSourceHash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "schedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "summary": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "notClearance": true,
+    "notice": "Dates, scope, condition fulfillment and signatures are human-entered, NOT verified filming authorization. Never infer clearance from a zero count."
+  },
+  "dossier": {
+    "schema": "beforeroll-integrated-production-dossier-v1",
+    "productionId": "live_20261027_C_orchard",
+    "title": "Fictional live acceptance C_ORCHARD",
+    "persistedVersion": 4,
+    "revision": 3,
+    "asOf": "2026-10-27T11:38:31.985Z",
+    "counts": {
+      "documents": 1,
+      "scenes": 2,
+      "unresolvedCallSheetRows": 0,
+      "planTasks": 8,
+      "completedModelChecks": 0,
+      "unattemptedChecks": 8,
+      "uncertainModelChecks": 0,
+      "archivedModelRuns": 0,
+      "currentReviewedTasks": 0,
+      "currentUnresolvedHumanReviews": 0,
+      "staleHumanReviews": 0,
+      "unresolvedPdfTranscriptions": 0,
+      "undatedScenes": 2,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "unverifiedDocumentConflicts": 0,
+      "currentSceneScopeAssertions": 0,
+      "staleSceneScopeAssertions": 0,
+      "unreviewedDocumentProvenance": 1
+    },
+    "outstanding": [
+      {
+        "code": "MODEL_SOURCE_CHECKS_OUTSTANDING",
+        "count": 8
+      },
+      {
+        "code": "CURRENT_HUMAN_REVIEWS_INCOMPLETE",
+        "count": 8
+      },
+      {
+        "code": "SCENE_DATES_NOT_REVIEWED",
+        "count": 2
+      },
+      {
+        "code": "UNREVIEWED_DOCUMENT_PROVENANCE",
+        "count": 1
+      }
+    ],
+    "scenes": [
+      {
+        "sceneId": "S501",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 4,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      },
+      {
+        "sceneId": "S502",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 4,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      }
+    ],
+    "productionState": "OPEN_REVIEW_ITEMS",
+    "notClearance": true,
+    "sha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee"
+  },
+  "coordinatorTasks": {
+    "schema": "beforeroll-coordinator-suggestions-v1",
+    "state": "SOURCE_BOUND_SUGGESTIONS_REVIEW_ONLY",
+    "candidates": [
+      {
+        "field": "required_written_documents",
+        "quote": "current written estate access licence",
+        "unitId": "U003",
+        "unitRange": [
+          39,
+          76
+        ],
+        "permitRange": [
+          404,
+          441
+        ],
+        "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "sourceUnitRange": [
+          365,
+          510
+        ],
+        "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+        "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+        "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_C_orchard",
+        "sceneId": "S501",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+        "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+        "title": "Locate and verify current written estate access licence.",
+        "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": {
+          "sequence": 1,
+          "candidateId": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+          "sceneId": "S501",
+          "source": {
+            "field": "required_written_documents",
+            "quote": "current written estate access licence",
+            "unitId": "U003",
+            "unitRange": [
+              39,
+              76
+            ],
+            "permitRange": [
+              404,
+              441
+            ],
+            "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "sourceUnitRange": [
+              365,
+              510
+            ],
+            "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+            "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+            "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+            "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_C_orchard",
+            "sceneId": "S501",
+            "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+            "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+            "title": "Locate and verify current written estate access licence.",
+            "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+            "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          "reviewer": "Fictional campaign coordinator",
+          "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+          "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+          "at": "2026-10-27T11:38:31.949Z",
+          "workspaceRevision": 2,
+          "notClearance": true,
+          "sha256": "1a7584eeb8b896ba4d63482083c6910b2426ad98d410bf8e11d7cd7141e4f902",
+          "sourceState": "CURRENT_REVIEW_ONLY"
+        }
+      },
+      {
+        "field": "required_on_site_personnel",
+        "quote": "staffed wildlife lookout",
+        "unitId": "U003",
+        "unitRange": [
+          83,
+          107
+        ],
+        "permitRange": [
+          448,
+          472
+        ],
+        "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "sourceUnitRange": [
+          365,
+          510
+        ],
+        "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+        "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+        "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_C_orchard",
+        "sceneId": "S501",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+        "id": "41e0e63e7e194e04f2639b28812b256c7504d468fa46693b8b9e66b6d6ab8ccb",
+        "title": "Confirm the required staffed wildlife lookout is present.",
+        "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      }
+    ],
+    "warnings": [],
+    "fieldStates": [],
+    "reviewHistory": [
+      {
+        "sequence": 1,
+        "candidateId": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+        "sceneId": "S501",
+        "source": {
+          "field": "required_written_documents",
+          "quote": "current written estate access licence",
+          "unitId": "U003",
+          "unitRange": [
+            39,
+            76
+          ],
+          "permitRange": [
+            404,
+            441
+          ],
+          "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "sourceUnitRange": [
+            365,
+            510
+          ],
+          "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+          "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+          "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_C_orchard",
+          "sceneId": "S501",
+          "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+          "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+          "title": "Locate and verify current written estate access licence.",
+          "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+          "contextUnitIds": [
+            "U002",
+            "U004"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        "reviewer": "Fictional campaign coordinator",
+        "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+        "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+        "at": "2026-10-27T11:38:31.949Z",
+        "workspaceRevision": 2,
+        "notClearance": true,
+        "sha256": "1a7584eeb8b896ba4d63482083c6910b2426ad98d410bf8e11d7cd7141e4f902",
+        "sourceState": "CURRENT_REVIEW_ONLY"
+      }
+    ],
+    "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+    "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+    "issuance": "UNKNOWN",
+    "notClearance": true,
+    "humanEffortSeconds": null,
+    "notice": "Model-assisted proposals, not human-confirmed duties or filming authority.",
+    "discovery": {
+      "schema": "beforeroll-core-discovery-projection-v1",
+      "jobs": [
+        {
+          "id": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+          "current": true,
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "createdAt": "2026-10-27T11:38:24.417Z",
+          "updatedAt": "2026-10-27T11:38:31.358Z",
+          "stopReason": null,
+          "coverage": {
+            "pairs": 8,
+            "assessed": 8,
+            "unassessed": 0,
+            "relevant": 2,
+            "ambiguous": 1,
+            "extractedUnits": 2,
+            "totalUnits": 4
+          },
+          "pairs": [
+            {
+              "taskId": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+              "sceneId": "S501",
+              "documentId": "PERMIT",
+              "unitId": "U001",
+              "quote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+              "range": [
+                0,
+                194
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "30c2848833b5bc322dfc91e745292fa5ca54a92431259503cbb6668dfb6cbfa6",
+              "decideResponseSha256": "f2c4a4e45c387139e74877f38ee1e0f1ee5985f708482318c354f22cf7794784",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+              "literalFieldStates": null,
+              "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+              "sceneId": "S501",
+              "documentId": "PERMIT",
+              "unitId": "U002",
+              "quote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+              "range": [
+                196,
+                363
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "a4879ae6cfd023607594f7ac89a38e885049476e56140a48766cc7ef529e07dc",
+              "decideResponseSha256": "888df1b9e75c71f5532d86318a2f041c60722d280d18b72160529342d80e35f6",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+              "sceneId": "S501",
+              "documentId": "PERMIT",
+              "unitId": "U003",
+              "quote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+              "range": [
+                365,
+                510
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+              "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+              },
+              "scopeCaution": null,
+              "notClearance": true
+            },
+            {
+              "taskId": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+              "sceneId": "S501",
+              "documentId": "PERMIT",
+              "unitId": "U004",
+              "quote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+              "range": [
+                512,
+                655
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "AMBIGUOUS_MANUAL_REVIEW",
+              "decideRequestSha256": "0341941886abc8dd9c40198ae04c1d320af3e65c57a6c158e9ca9a8ea7ead514",
+              "decideResponseSha256": "228287670cf9d4a3ac93786cda5338525c7e7414b7e13c00e8becd8cc3b10d4a",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+              "literalFieldStates": null,
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+              "sceneId": "S502",
+              "documentId": "PERMIT",
+              "unitId": "U001",
+              "quote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+              "range": [
+                0,
+                194
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "eae748ebb19835464f7d0c4ce59c786361b090ed063b328a9ffeec92ff275d5e",
+              "decideResponseSha256": "6eb4498ff327077eaebd9e5140285080f31b666615f2ffd669165deea7b2cf17",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+              "literalFieldStates": null,
+              "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+              "sceneId": "S502",
+              "documentId": "PERMIT",
+              "unitId": "U002",
+              "quote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+              "range": [
+                196,
+                363
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "5d8ca628ced4606108ec6179de780fcdce0c922692b6ab8f0ffbc5b4e530814c",
+              "decideResponseSha256": "0581ea19cae485ce162b82552e25529af4bb060bf01cf1c2c2f0a4002c2d3b1b",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+              "sceneId": "S502",
+              "documentId": "PERMIT",
+              "unitId": "U003",
+              "quote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+              "range": [
+                365,
+                510
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "9e9134a1dd0100743e59063d66b8138e276820e5aae9a20ca23e47ba2f633f01",
+              "decideResponseSha256": "af91bf64430181a95f0fe62f31218dc19a378bf3f0f7f2e7719fba2133cbe78d",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+              },
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+              "sceneId": "S502",
+              "documentId": "PERMIT",
+              "unitId": "U004",
+              "quote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+              "range": [
+                512,
+                655
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "ec6479e030d6713411ce150a653bb60b2c9318d7aced8f81cf60511c583d9921",
+              "decideResponseSha256": "8cb58a10245f3c82e28f64cd82a87b0f082553f1ce66aece6df1f9e71802e6b3",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+              "literalFieldStates": null,
+              "scopeCaution": null,
+              "notClearance": true
+            }
+          ],
+          "attempts": 10,
+          "unknownBilling": 0,
+          "reportedCredits": 16,
+          "unknownCreditEntries": 0,
+          "latencyMs": 6392.8269,
+          "notClearance": true,
+          "candidates": [
+            {
+              "field": "required_written_documents",
+              "quote": "current written estate access licence",
+              "unitId": "U003",
+              "unitRange": [
+                39,
+                76
+              ],
+              "permitRange": [
+                404,
+                441
+              ],
+              "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+              "sourceUnitRange": [
+                365,
+                510
+              ],
+              "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+              "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+              "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+              "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_C_orchard",
+              "sceneId": "S501",
+              "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+              "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+              "title": "Locate and verify current written estate access licence.",
+              "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+              "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+              "contextUnitIds": [
+                "U002",
+                "U004"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_on_site_personnel",
+              "quote": "staffed wildlife lookout",
+              "unitId": "U003",
+              "unitRange": [
+                83,
+                107
+              ],
+              "permitRange": [
+                448,
+                472
+              ],
+              "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+              "sourceUnitRange": [
+                365,
+                510
+              ],
+              "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+              "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+              "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+              "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_C_orchard",
+              "sceneId": "S501",
+              "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+              "id": "41e0e63e7e194e04f2639b28812b256c7504d468fa46693b8b9e66b6d6ab8ccb",
+              "title": "Confirm the required staffed wildlife lookout is present.",
+              "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+              "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+              "contextUnitIds": [
+                "U002",
+                "U004"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            }
+          ],
+          "comparison": {
+            "basis": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "aiOff": [
+              {
+                "id": "S501:DATE_UNKNOWN",
+                "sceneId": "S501",
+                "code": "DATE_UNKNOWN",
+                "severity": "review",
+                "title": "Date authority not established",
+                "detail": "Confirm that the issued conditions apply to this shoot date.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 6,
+                    "end": 9,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S501:LOCATION_UNKNOWN",
+                "sceneId": "S501",
+                "code": "LOCATION_UNKNOWN",
+                "severity": "review",
+                "title": "Location scope requires source review",
+                "detail": "No trustworthy issued location reading is available.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 12,
+                    "end": 19,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S501:END_UNKNOWN",
+                "sceneId": "S501",
+                "code": "END_UNKNOWN",
+                "severity": "review",
+                "title": "Filming deadline not source-backed",
+                "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 22,
+                    "end": 33,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S502:DATE_UNKNOWN",
+                "sceneId": "S502",
+                "code": "DATE_UNKNOWN",
+                "severity": "review",
+                "title": "Date authority not established",
+                "detail": "Confirm that the issued conditions apply to this shoot date.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 73,
+                    "end": 76,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S502:LOCATION_UNKNOWN",
+                "sceneId": "S502",
+                "code": "LOCATION_UNKNOWN",
+                "severity": "review",
+                "title": "Location scope requires source review",
+                "detail": "No trustworthy issued location reading is available.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 79,
+                    "end": 86,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S502:END_UNKNOWN",
+                "sceneId": "S502",
+                "code": "END_UNKNOWN",
+                "severity": "review",
+                "title": "Filming deadline not source-backed",
+                "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 89,
+                    "end": 100,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S502:DRONE_UNKNOWN",
+                "sceneId": "S502",
+                "code": "DRONE_UNKNOWN",
+                "severity": "review",
+                "title": "Drone authorization must be verified",
+                "detail": "Supplied issued terms do not establish a verified drone permission.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 103,
+                    "end": 124,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              }
+            ],
+            "aiOffLiteralTaskCount": 0,
+            "modelDerivedTaskCount": 2,
+            "humanEffortSeconds": null,
+            "semanticAccuracy": "NOT_MEASURED_BY_ENGINEERING_TESTS"
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "field": "required_written_documents",
+          "quote": "current written estate access licence",
+          "unitId": "U003",
+          "unitRange": [
+            39,
+            76
+          ],
+          "permitRange": [
+            404,
+            441
+          ],
+          "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "sourceUnitRange": [
+            365,
+            510
+          ],
+          "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+          "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+          "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_C_orchard",
+          "sceneId": "S501",
+          "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+          "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+          "title": "Locate and verify current written estate access licence.",
+          "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+          "contextUnitIds": [
+            "U002",
+            "U004"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_on_site_personnel",
+          "quote": "staffed wildlife lookout",
+          "unitId": "U003",
+          "unitRange": [
+            83,
+            107
+          ],
+          "permitRange": [
+            448,
+            472
+          ],
+          "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "sourceUnitRange": [
+            365,
+            510
+          ],
+          "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+          "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+          "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_C_orchard",
+          "sceneId": "S501",
+          "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+          "id": "41e0e63e7e194e04f2639b28812b256c7504d468fa46693b8b9e66b6d6ab8ccb",
+          "title": "Confirm the required staffed wildlife lookout is present.",
+          "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+          "contextUnitIds": [
+            "U002",
+            "U004"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        }
+      ],
+      "notClearance": true
+    }
+  },
+  "actionQueue": {
+    "schema": "beforeroll-production-action-queue-v1",
+    "productionId": "live_20261027_C_orchard",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+    "total": 21,
+    "filteredTotal": 21,
+    "byCategory": {
+      "SOURCE": 0,
+      "EXECUTION": 8,
+      "HUMAN": 11,
+      "OPERATIONS": 2,
+      "HISTORY": 0
+    },
+    "byPriority": {
+      "BLOCKED": 0,
+      "UNCERTAIN": 0,
+      "SCOPE": 0,
+      "REVIEW": 13,
+      "PENDING": 8,
+      "HISTORY": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 30,
+      "hasMore": false
+    },
+    "filter": {
+      "kind": "ALL",
+      "sceneId": null
+    },
+    "actions": [
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S501: confirm scene schedule",
+        "sceneId": "S501",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "8581c989b1c39c9767883a08526c6db9d83f9e3501d798f2605da47ac1ced2a5",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S502: confirm scene schedule",
+        "sceneId": "S502",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "a2d6d64e233053d603fc47075ef6921f48ab441bfa7fcd6eab1f3c643a82005e",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "RECORD_DOCUMENT_PROVENANCE",
+        "subject": "Review document PERMIT",
+        "sceneId": null,
+        "documentId": "PERMIT",
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "7c42de1a8231e832031e0d6809bed43c68d46ff58c259dedfa27d3f3a30e37cf",
+        "detail": "Record claimed issuer, document role and reference from the original source; do not assume authenticity.",
+        "sourceQuote": null,
+        "route": "authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S501: source finding awaits human review",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "0fe32dcc973c91f97a16420711d0a4b4c169d9b3cd681d9f79e60bd42576c524",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "route": "review",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S501: source finding awaits human review",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "5838f1f196806d7a3e90bbf84f2998b25b46bb62e962291568b3acb52ee6ba9a",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "route": "review",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S501: source finding awaits human review",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "7aa10d00be390b6233b51713cea443eb1858c8f605790211467e314f6a310a4d",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "route": "review",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S501: source finding awaits human review",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "9fccbcd4baa7d6b71b7bc20e8d12cd143c7ec7474b3524adcac6a59294ba6567",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "route": "review",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S502: source finding awaits human review",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "600639b8b421aaab98a5771fd92ac9daff13f8e7d3bc2a49fa2bb39629785f86",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "route": "review",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S502: source finding awaits human review",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "881720fe24b2782ef1282c55e09bd036410d62b0ee33d7cc701b28cfc2ad86be",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "route": "review",
+        "globalTaskIndex": 7,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S502: source finding awaits human review",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "9157c5df77ffe4e057932514ec160c772da6e6f120481e67290c8c57e0c67a41",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "route": "review",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S502: source finding awaits human review",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "d96033334a77570f876e3b580933811bca7a7b5b6b77141b1aaa3f9426e50557",
+        "detail": "Review the original source passage independently; no model finding is available yet.",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "route": "review",
+        "globalTaskIndex": 6,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S501: map permit to scene",
+        "sceneId": "S501",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "3b2c39f1f5862704399c278dd91c7b31d7eefce38a04e455301d2341215e7123",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S502: map permit to scene",
+        "sceneId": "S502",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "16d7328f01ec17f9686992e80c6707ce3d7986f9f3619c8bfd7558d3b9008063",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S501: source check not evaluated",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "48c0f8a18829d8e2ae1d866ed2cc9acba0af28b297030921cdf02cba15a92ba2",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "route": "execution",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S501: source check not evaluated",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "6692ac163e3f45a7fca01dbd5562cc16cb33563da7f8aa1b8fefe91c33d61ec2",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "route": "execution",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S501: source check not evaluated",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "80460f963166b1aa94a576cbe7fe0222fa591099e2f39da38771837574ebf816",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "route": "execution",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S501: source check not evaluated",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "taskId": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "f61e6efa6008b9bed7624ebd0426d7f788d86bb7a0b008c3f1faaf9af1b8e582",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "route": "execution",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S502: source check not evaluated",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "706c8e782ec4fbbee83fd8bd8fdfffda025fe6c08cb8f75d6f16dad3ffbe82e5",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "route": "execution",
+        "globalTaskIndex": 6,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S502: source check not evaluated",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+        "conditionId": null,
+        "unitId": "U004",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "ac656c00316928a34d973581bdecff05ae4858fbb1922a29d0720a6cfb7fe9bc",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "route": "execution",
+        "globalTaskIndex": 7,
+        "sceneTaskIndex": 3,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S502: source check not evaluated",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "ed7b9f601e43cfd23b3913d864937d6f562abe1c5d9d68061266bc1bdaf3125c",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "route": "execution",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "EXECUTION",
+        "priority": 4,
+        "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+        "subject": "S502: source check not evaluated",
+        "sceneId": "S502",
+        "documentId": "PERMIT",
+        "taskId": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "id": "f858a650036f5393469e33da7959315b127a579eb9423592c3ed1a8d7e810e2b",
+        "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "route": "execution",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+  },
+  "sceneWorkbench": {
+    "schema": "beforeroll-scene-workbench-v1",
+    "productionId": "live_20261027_C_orchard",
+    "title": "Fictional live acceptance C_ORCHARD",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "asOf": "2026-10-27T11:38:31.985Z",
+    "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+    "scene": {
+      "sceneId": "S501",
+      "location": "Orchard",
+      "activity": "starlight rigging beside hedge",
+      "start": "20:00",
+      "end": "21:00",
+      "originalRow": "Scene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge",
+      "schedule": {
+        "sceneId": "S501",
+        "sceneSourceHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      "claimIds": [],
+      "currentHumanClaims": 0,
+      "taskIds": [
+        "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689"
+      ],
+      "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "planned": 4,
+      "modelComplete": 0,
+      "neverAttempted": 4,
+      "interruptedOrBillingUnknown": 0,
+      "humanReviewed": 0,
+      "humanUnresolved": 0,
+      "issues": [
+        "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+        "MODEL_CHECKS_NOT_EVALUATED",
+        "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+        "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+      ],
+      "readiness": "OUTSTANDING_REVIEW",
+      "notClearance": true
+    },
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "C_ORCHARD-permit.txt",
+        "sourceSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "originalBytesSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "sourceFormat": "UTF8_TEXT",
+        "requiresPdfTextReview": false,
+        "sourceCoverageGaps": [],
+        "authorityMetadata": null,
+        "plannedSceneChecks": 4,
+        "evaluatedSceneChecks": 0,
+        "reviewedSceneChecks": 0,
+        "notClearance": true
+      }
+    ],
+    "scopeClaims": [],
+    "documentaryLinks": [],
+    "schedules": [],
+    "conditions": [],
+    "coordinatorTasks": {
+      "schema": "beforeroll-coordinator-suggestions-v1",
+      "state": "SOURCE_BOUND_SUGGESTIONS_REVIEW_ONLY",
+      "candidates": [
+        {
+          "field": "required_written_documents",
+          "quote": "current written estate access licence",
+          "unitId": "U003",
+          "unitRange": [
+            39,
+            76
+          ],
+          "permitRange": [
+            404,
+            441
+          ],
+          "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "sourceUnitRange": [
+            365,
+            510
+          ],
+          "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+          "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+          "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_C_orchard",
+          "sceneId": "S501",
+          "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+          "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+          "title": "Locate and verify current written estate access licence.",
+          "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+          "contextUnitIds": [
+            "U002",
+            "U004"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": {
+            "sequence": 1,
+            "candidateId": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+            "sceneId": "S501",
+            "source": {
+              "field": "required_written_documents",
+              "quote": "current written estate access licence",
+              "unitId": "U003",
+              "unitRange": [
+                39,
+                76
+              ],
+              "permitRange": [
+                404,
+                441
+              ],
+              "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+              "sourceUnitRange": [
+                365,
+                510
+              ],
+              "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+              "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+              "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+              "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_C_orchard",
+              "sceneId": "S501",
+              "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+              "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+              "title": "Locate and verify current written estate access licence.",
+              "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+              "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+              "contextUnitIds": [
+                "U002",
+                "U004"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED"
+            },
+            "reviewer": "Fictional campaign coordinator",
+            "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+            "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+            "at": "2026-10-27T11:38:31.949Z",
+            "workspaceRevision": 2,
+            "notClearance": true,
+            "sha256": "1a7584eeb8b896ba4d63482083c6910b2426ad98d410bf8e11d7cd7141e4f902",
+            "sourceState": "CURRENT_REVIEW_ONLY"
+          }
+        },
+        {
+          "field": "required_on_site_personnel",
+          "quote": "staffed wildlife lookout",
+          "unitId": "U003",
+          "unitRange": [
+            83,
+            107
+          ],
+          "permitRange": [
+            448,
+            472
+          ],
+          "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "sourceUnitRange": [
+            365,
+            510
+          ],
+          "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+          "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+          "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_C_orchard",
+          "sceneId": "S501",
+          "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+          "id": "41e0e63e7e194e04f2639b28812b256c7504d468fa46693b8b9e66b6d6ab8ccb",
+          "title": "Confirm the required staffed wildlife lookout is present.",
+          "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+          "contextUnitIds": [
+            "U002",
+            "U004"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": null
+        }
+      ],
+      "warnings": [],
+      "fieldStates": [],
+      "reviewHistory": [
+        {
+          "sequence": 1,
+          "candidateId": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+          "sceneId": "S501",
+          "source": {
+            "field": "required_written_documents",
+            "quote": "current written estate access licence",
+            "unitId": "U003",
+            "unitRange": [
+              39,
+              76
+            ],
+            "permitRange": [
+              404,
+              441
+            ],
+            "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "sourceUnitRange": [
+              365,
+              510
+            ],
+            "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+            "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+            "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+            "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_C_orchard",
+            "sceneId": "S501",
+            "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+            "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+            "title": "Locate and verify current written estate access licence.",
+            "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+            "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          "reviewer": "Fictional campaign coordinator",
+          "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+          "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+          "at": "2026-10-27T11:38:31.949Z",
+          "workspaceRevision": 2,
+          "notClearance": true,
+          "sha256": "1a7584eeb8b896ba4d63482083c6910b2426ad98d410bf8e11d7cd7141e4f902",
+          "sourceState": "CURRENT_REVIEW_ONLY"
+        }
+      ],
+      "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+      "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+      "issuance": "UNKNOWN",
+      "notClearance": true,
+      "humanEffortSeconds": null,
+      "notice": "Model-assisted proposals, not human-confirmed duties or filming authority.",
+      "discovery": {
+        "schema": "beforeroll-core-discovery-projection-v1",
+        "jobs": [
+          {
+            "id": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+            "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+            "current": true,
+            "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "createdAt": "2026-10-27T11:38:24.417Z",
+            "updatedAt": "2026-10-27T11:38:31.358Z",
+            "stopReason": null,
+            "coverage": {
+              "pairs": 8,
+              "assessed": 8,
+              "unassessed": 0,
+              "relevant": 2,
+              "ambiguous": 1,
+              "extractedUnits": 2,
+              "totalUnits": 4
+            },
+            "pairs": [
+              {
+                "taskId": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+                "sceneId": "S501",
+                "documentId": "PERMIT",
+                "unitId": "U001",
+                "quote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+                "range": [
+                  0,
+                  194
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "30c2848833b5bc322dfc91e745292fa5ca54a92431259503cbb6668dfb6cbfa6",
+                "decideResponseSha256": "f2c4a4e45c387139e74877f38ee1e0f1ee5985f708482318c354f22cf7794784",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+                "sceneId": "S501",
+                "documentId": "PERMIT",
+                "unitId": "U002",
+                "quote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+                "range": [
+                  196,
+                  363
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "a4879ae6cfd023607594f7ac89a38e885049476e56140a48766cc7ef529e07dc",
+                "decideResponseSha256": "888df1b9e75c71f5532d86318a2f041c60722d280d18b72160529342d80e35f6",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+                "sceneId": "S501",
+                "documentId": "PERMIT",
+                "unitId": "U003",
+                "quote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+                "range": [
+                  365,
+                  510
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+                "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+                },
+                "scopeCaution": null,
+                "notClearance": true
+              },
+              {
+                "taskId": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+                "sceneId": "S501",
+                "documentId": "PERMIT",
+                "unitId": "U004",
+                "quote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+                "range": [
+                  512,
+                  655
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "AMBIGUOUS_MANUAL_REVIEW",
+                "decideRequestSha256": "0341941886abc8dd9c40198ae04c1d320af3e65c57a6c158e9ca9a8ea7ead514",
+                "decideResponseSha256": "228287670cf9d4a3ac93786cda5338525c7e7414b7e13c00e8becd8cc3b10d4a",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+                "sceneId": "S502",
+                "documentId": "PERMIT",
+                "unitId": "U001",
+                "quote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+                "range": [
+                  0,
+                  194
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "eae748ebb19835464f7d0c4ce59c786361b090ed063b328a9ffeec92ff275d5e",
+                "decideResponseSha256": "6eb4498ff327077eaebd9e5140285080f31b666615f2ffd669165deea7b2cf17",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+                "sceneId": "S502",
+                "documentId": "PERMIT",
+                "unitId": "U002",
+                "quote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+                "range": [
+                  196,
+                  363
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "5d8ca628ced4606108ec6179de780fcdce0c922692b6ab8f0ffbc5b4e530814c",
+                "decideResponseSha256": "0581ea19cae485ce162b82552e25529af4bb060bf01cf1c2c2f0a4002c2d3b1b",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+                "sceneId": "S502",
+                "documentId": "PERMIT",
+                "unitId": "U003",
+                "quote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+                "range": [
+                  365,
+                  510
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "9e9134a1dd0100743e59063d66b8138e276820e5aae9a20ca23e47ba2f633f01",
+                "decideResponseSha256": "af91bf64430181a95f0fe62f31218dc19a378bf3f0f7f2e7719fba2133cbe78d",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+                },
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+                "sceneId": "S502",
+                "documentId": "PERMIT",
+                "unitId": "U004",
+                "quote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+                "range": [
+                  512,
+                  655
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "ec6479e030d6713411ce150a653bb60b2c9318d7aced8f81cf60511c583d9921",
+                "decideResponseSha256": "8cb58a10245f3c82e28f64cd82a87b0f082553f1ce66aece6df1f9e71802e6b3",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "extractStatus": "NOT_ROUTED_NOT_PROVEN_IRRELEVANT",
+                "literalFieldStates": null,
+                "scopeCaution": null,
+                "notClearance": true
+              }
+            ],
+            "attempts": 10,
+            "unknownBilling": 0,
+            "reportedCredits": 16,
+            "unknownCreditEntries": 0,
+            "latencyMs": 6392.8269,
+            "notClearance": true,
+            "candidates": [
+              {
+                "field": "required_written_documents",
+                "quote": "current written estate access licence",
+                "unitId": "U003",
+                "unitRange": [
+                  39,
+                  76
+                ],
+                "permitRange": [
+                  404,
+                  441
+                ],
+                "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+                "sourceUnitRange": [
+                  365,
+                  510
+                ],
+                "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+                "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+                "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+                "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_C_orchard",
+                "sceneId": "S501",
+                "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+                "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+                "title": "Locate and verify current written estate access licence.",
+                "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+                "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+                "contextUnitIds": [
+                  "U002",
+                  "U004"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_on_site_personnel",
+                "quote": "staffed wildlife lookout",
+                "unitId": "U003",
+                "unitRange": [
+                  83,
+                  107
+                ],
+                "permitRange": [
+                  448,
+                  472
+                ],
+                "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+                "sourceUnitRange": [
+                  365,
+                  510
+                ],
+                "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+                "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+                "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+                "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_C_orchard",
+                "sceneId": "S501",
+                "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+                "id": "41e0e63e7e194e04f2639b28812b256c7504d468fa46693b8b9e66b6d6ab8ccb",
+                "title": "Confirm the required staffed wildlife lookout is present.",
+                "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+                "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+                "contextUnitIds": [
+                  "U002",
+                  "U004"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              }
+            ],
+            "comparison": {
+              "basis": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "aiOff": [
+                {
+                  "id": "S501:DATE_UNKNOWN",
+                  "sceneId": "S501",
+                  "code": "DATE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Date authority not established",
+                  "detail": "Confirm that the issued conditions apply to this shoot date.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 6,
+                      "end": 9,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S501:LOCATION_UNKNOWN",
+                  "sceneId": "S501",
+                  "code": "LOCATION_UNKNOWN",
+                  "severity": "review",
+                  "title": "Location scope requires source review",
+                  "detail": "No trustworthy issued location reading is available.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 12,
+                      "end": 19,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S501:END_UNKNOWN",
+                  "sceneId": "S501",
+                  "code": "END_UNKNOWN",
+                  "severity": "review",
+                  "title": "Filming deadline not source-backed",
+                  "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 22,
+                      "end": 33,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S502:DATE_UNKNOWN",
+                  "sceneId": "S502",
+                  "code": "DATE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Date authority not established",
+                  "detail": "Confirm that the issued conditions apply to this shoot date.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 73,
+                      "end": 76,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S502:LOCATION_UNKNOWN",
+                  "sceneId": "S502",
+                  "code": "LOCATION_UNKNOWN",
+                  "severity": "review",
+                  "title": "Location scope requires source review",
+                  "detail": "No trustworthy issued location reading is available.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 79,
+                      "end": 86,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S502:END_UNKNOWN",
+                  "sceneId": "S502",
+                  "code": "END_UNKNOWN",
+                  "severity": "review",
+                  "title": "Filming deadline not source-backed",
+                  "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 89,
+                      "end": 100,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S502:DRONE_UNKNOWN",
+                  "sceneId": "S502",
+                  "code": "DRONE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Drone authorization must be verified",
+                  "detail": "Supplied issued terms do not establish a verified drone permission.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 103,
+                      "end": 124,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                }
+              ],
+              "aiOffLiteralTaskCount": 0,
+              "modelDerivedTaskCount": 2,
+              "humanEffortSeconds": null,
+              "semanticAccuracy": "NOT_MEASURED_BY_ENGINEERING_TESTS"
+            }
+          }
+        ],
+        "candidates": [
+          {
+            "field": "required_written_documents",
+            "quote": "current written estate access licence",
+            "unitId": "U003",
+            "unitRange": [
+              39,
+              76
+            ],
+            "permitRange": [
+              404,
+              441
+            ],
+            "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "sourceUnitRange": [
+              365,
+              510
+            ],
+            "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+            "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+            "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+            "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_C_orchard",
+            "sceneId": "S501",
+            "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+            "id": "92f545318205f836ccdf76423f37d1aecf5a3907d6d57d8c85a7fc63681b6e78",
+            "title": "Locate and verify current written estate access licence.",
+            "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+            "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_on_site_personnel",
+            "quote": "staffed wildlife lookout",
+            "unitId": "U003",
+            "unitRange": [
+              83,
+              107
+            ],
+            "permitRange": [
+              448,
+              472
+            ],
+            "sourceSentence": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "sourceUnitRange": [
+              365,
+              510
+            ],
+            "permitSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+            "unitSha256": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+            "requestSha256": "11e5b6c829a2abbe7c1054ceecba987c8493828cf037a3dbc57ed2a3e3841bf9",
+            "responseSha256": "944443ecf9aa09e97e8be0bb3db5b8e49288aedc9785a7347ecb994f9d346c04",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_C_orchard",
+            "sceneId": "S501",
+            "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "356ea2a466ed18bccfceaac145da52fd3d4c60e0a70f65a4291a952e1cfa2605",
+            "id": "41e0e63e7e194e04f2639b28812b256c7504d468fa46693b8b9e66b6d6ab8ccb",
+            "title": "Confirm the required staffed wildlife lookout is present.",
+            "sourceTaskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+            "discoveryId": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          }
+        ],
+        "notClearance": true
+      }
+    },
+    "tasks": [
+      {
+        "id": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "unitId": "U001",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "quote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "requestHash": "30c2848833b5bc322dfc91e745292fa5ca54a92431259503cbb6668dfb6cbfa6",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "unitId": "U002",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "quote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "requestHash": "a4879ae6cfd023607594f7ac89a38e885049476e56140a48766cc7ef529e07dc",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "unitId": "U003",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "quote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "requestHash": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      },
+      {
+        "id": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "unitId": "U004",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "quote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "requestHash": "0341941886abc8dd9c40198ae04c1d320af3e65c57a6c158e9ca9a8ea7ead514",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 3,
+        "currentHumanReview": null,
+        "evidenceClass": "NOT_AI_EVALUATED"
+      }
+    ],
+    "taskPagination": {
+      "offset": 0,
+      "limit": 40,
+      "total": 4,
+      "hasMore": false
+    },
+    "actions": {
+      "schema": "beforeroll-production-action-queue-v1",
+      "productionId": "live_20261027_C_orchard",
+      "workspaceRevision": 3,
+      "persistedVersion": 4,
+      "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+      "total": 21,
+      "filteredTotal": 10,
+      "byCategory": {
+        "SOURCE": 0,
+        "EXECUTION": 8,
+        "HUMAN": 11,
+        "OPERATIONS": 2,
+        "HISTORY": 0
+      },
+      "byPriority": {
+        "BLOCKED": 0,
+        "UNCERTAIN": 0,
+        "SCOPE": 0,
+        "REVIEW": 13,
+        "PENDING": 8,
+        "HISTORY": 0
+      },
+      "pagination": {
+        "offset": 0,
+        "limit": 30,
+        "hasMore": false
+      },
+      "filter": {
+        "kind": "ALL",
+        "sceneId": "S501"
+      },
+      "actions": [
+        {
+          "category": "OPERATIONS",
+          "priority": 3,
+          "code": "DATE_SCENE",
+          "subject": "S501: confirm scene schedule",
+          "sceneId": "S501",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "8581c989b1c39c9767883a08526c6db9d83f9e3501d798f2605da47ac1ced2a5",
+          "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+          "sourceQuote": null,
+          "route": "operations",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S501: source finding awaits human review",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "0fe32dcc973c91f97a16420711d0a4b4c169d9b3cd681d9f79e60bd42576c524",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+          "route": "review",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S501: source finding awaits human review",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+          "conditionId": null,
+          "unitId": "U004",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "5838f1f196806d7a3e90bbf84f2998b25b46bb62e962291568b3acb52ee6ba9a",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+          "route": "review",
+          "globalTaskIndex": 3,
+          "sceneTaskIndex": 3,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S501: source finding awaits human review",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "7aa10d00be390b6233b51713cea443eb1858c8f605790211467e314f6a310a4d",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+          "route": "review",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S501: source finding awaits human review",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "9fccbcd4baa7d6b71b7bc20e8d12cd143c7ec7474b3524adcac6a59294ba6567",
+          "detail": "Review the original source passage independently; no model finding is available yet.",
+          "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "route": "review",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_SCENE_SCOPE",
+          "subject": "S501: map permit to scene",
+          "sceneId": "S501",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "3b2c39f1f5862704399c278dd91c7b31d7eefce38a04e455301d2341215e7123",
+          "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+          "sourceQuote": null,
+          "route": "scene-authority",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S501: source check not evaluated",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "48c0f8a18829d8e2ae1d866ed2cc9acba0af28b297030921cdf02cba15a92ba2",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "route": "execution",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S501: source check not evaluated",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "6692ac163e3f45a7fca01dbd5562cc16cb33563da7f8aa1b8fefe91c33d61ec2",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+          "route": "execution",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S501: source check not evaluated",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "80460f963166b1aa94a576cbe7fe0222fa591099e2f39da38771837574ebf816",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+          "route": "execution",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        },
+        {
+          "category": "EXECUTION",
+          "priority": 4,
+          "code": "RUN_UNEVALUATED_SOURCE_CHECK",
+          "subject": "S501: source check not evaluated",
+          "sceneId": "S501",
+          "documentId": "PERMIT",
+          "taskId": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+          "conditionId": null,
+          "unitId": "U004",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "id": "f61e6efa6008b9bed7624ebd0426d7f788d86bb7a0b008c3f1faaf9af1b8e582",
+          "detail": "A Clocked comparison has not been sent for this exact passage and scene.",
+          "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+          "route": "execution",
+          "globalTaskIndex": 3,
+          "sceneTaskIndex": 3,
+          "notClearance": true
+        }
+      ],
+      "notClearance": true,
+      "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+    },
+    "documentaryReasoning": {
+      "sceneId": "S501",
+      "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "originalActivity": "starlight rigging beside hedge",
+      "originalLocation": "Orchard",
+      "restrictions": [],
+      "requests": [],
+      "amendments": [],
+      "requirements": [],
+      "conflicts": [],
+      "claims": [],
+      "modelOnlyFindings": [],
+      "openPrerequisites": 0,
+      "documentaryConflicts": 0,
+      "humanRecordedIssuedClaims": 0,
+      "unresolvedGrantClaims": 0,
+      "clockedModelEvidenceCount": 0,
+      "notClearance": true,
+      "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+    },
+    "summary": {
+      "planned": 4,
+      "completedModelChecks": 0,
+      "uncertainModelChecks": 0,
+      "currentTaskReviews": 0,
+      "currentScopeClaims": 0,
+      "staleScopeClaims": 0,
+      "currentPrerequisites": 0,
+      "openPrerequisites": 0,
+      "actionCount": 10
+    },
+    "sceneReviewState": "OUTSTANDING_REVIEW",
+    "notClearance": true,
+    "notice": "Single source-linked scene review, NOT a filming clearance, legal interpretation, authenticated permit or fulfilled condition.",
+    "sha256": "c81b1b77b54444387d5b15a726bd2299fe3b992404693f7863fc50acd57f16a5"
+  },
+  "journey": {
+    "schema": "beforeroll-production-journey-v1",
+    "productionId": "live_20261027_C_orchard",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+    "checkpoints": [
+      {
+        "id": "sources",
+        "number": "01",
+        "title": "Import and verify",
+        "description": "Load originals, transcribe where needed and confirm source coverage.",
+        "status": "CURRENT",
+        "summary": "1 documents · 2 scenes · 0 originals missing",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "scope",
+        "number": "02",
+        "title": "Map authority",
+        "description": "Review documentary provenance and exact scene applicability.",
+        "status": "ATTENTION",
+        "summary": "1 document roles unreviewed · 2 scenes without scope assertions",
+        "blockers": [
+          "Documentary provenance or scene scope needs responsible human review."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "analysis",
+        "number": "03",
+        "title": "Run source checks",
+        "description": "Perform current source-to-scene Clocked comparisons.",
+        "status": "ATTENTION",
+        "summary": "0/8 source checks recorded · 0 uncertain",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "review",
+        "number": "04",
+        "title": "Investigate findings",
+        "description": "Record source-bound human decisions and follow-up.",
+        "status": "ATTENTION",
+        "summary": "0/8 current human reviews · 0 follow-ups",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "operations",
+        "number": "05",
+        "title": "Resolve prerequisites",
+        "description": "Confirm scene dates, operating conditions and outstanding work.",
+        "status": "ATTENTION",
+        "summary": "0/2 scenes dated · 0 open prerequisites · 0 overdue",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "changes",
+        "number": "06",
+        "title": "Reconcile revisions",
+        "description": "Preview and commit changed originals, then revisit affected checks.",
+        "status": "AVAILABLE",
+        "summary": "0 historical human reviews · 0 archived Clocked runs",
+        "blockers": [
+          "Every replacement requires a separate source-bound impact preview and exact commit."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "evidence",
+        "number": "07",
+        "title": "Export evidence",
+        "description": "Inspect and export current and historical production evidence.",
+        "status": "ATTENTION",
+        "summary": "4 outstanding evidence classes · project version 4",
+        "blockers": [
+          "Exports document recorded evidence and limitations; never filming clearance."
+        ],
+        "notClearance": true
+      }
+    ],
+    "suggestedStage": "scope",
+    "allCheckpointsCurrent": false,
+    "caveat": "Operational checkpoints are not approval, authorization, calibrated model confidence or filming clearance.",
+    "notClearance": true,
+    "sha256": "3d1ed4a80d80929ef1e6ba00ed237f429f4b4890881c0bc8304212cd3f18d4e1"
+  },
+  "consistency": {
+    "schema": "beforeroll-production-consistency-v1",
+    "productionId": "live_20261027_C_orchard",
+    "persistedVersion": 4,
+    "workspaceRevision": 3,
+    "asOf": "2026-10-27T11:38:31.985Z",
+    "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+    "currentSourceInventory": {
+      "documents": 1,
+      "scenes": 2,
+      "sourcePlanTasks": 8
+    },
+    "currentEvidence": {
+      "modelComplete": 0,
+      "modelPending": 8,
+      "modelUncertain": 0,
+      "humanReviewed": 0,
+      "openHumanReviews": 0
+    },
+    "historicalEvidence": {
+      "humanReviews": 0,
+      "archivedModelRuns": 0,
+      "staleScopeClaims": 0
+    },
+    "originals": {
+      "referenced": 2,
+      "preserved": 2,
+      "missing": 0
+    },
+    "checks": [
+      "ORIGINAL_SOURCE_REFERENCES",
+      "PLAN_TO_DOSSIER_TASKS",
+      "SCENE_TOTALS",
+      "CURRENT_VS_HISTORICAL_REVIEWS",
+      "MODEL_ATTEMPT_ACCOUNTING",
+      "OPERATIONS_COUNTS",
+      "ORIGINAL_FILE_CUSTODY",
+      "ACTION_AND_WORKBENCH_ALIGNMENT",
+      "JOURNEY_ALIGNMENT"
+    ],
+    "state": "INTERNAL_RECONCILIATION_PASS_NOT_SOURCE_AUTHENTICATION",
+    "notClearance": true,
+    "limitation": "Checks internal source and recorded evidence consistency only; not external document authenticity, comprehensive permit coverage, model accuracy, legal authority or filming clearance.",
+    "sha256": "a8b82639aa705409e12ac033096f16b2ef218c3428f5c969652ed993e8489517"
+  },
+  "history": {
+    "schema": "beforeroll-production-history-v1",
+    "productionId": "live_20261027_C_orchard",
+    "persistedVersion": 4,
+    "dossierSha256": "450077a8594298963385af8ea780fb9ca4a0d34344f48d7fb3445a72cc84e9ee",
+    "total": 4,
+    "filteredTotal": 4,
+    "filter": {
+      "kind": "ALL",
+      "state": "ALL",
+      "search": ""
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 20,
+      "shown": 4,
+      "hasMore": false
+    },
+    "records": [
+      {
+        "category": "MODEL",
+        "id": "discovery:065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+        "title": "Source discovery: 8/8 scene links assessed",
+        "status": "CURRENT",
+        "notClearance": true
+      },
+      {
+        "category": "SOURCES",
+        "id": "source:0:9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "title": "permit: C_ORCHARD-permit.txt",
+        "status": "CURRENT",
+        "documentId": "PERMIT",
+        "originalHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "notClearance": true
+      },
+      {
+        "category": "SOURCES",
+        "id": "source:1:b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "title": "callSheet: C_ORCHARD-call.txt",
+        "status": "CURRENT",
+        "documentId": null,
+        "originalHash": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+        "notClearance": true
+      },
+      {
+        "category": "REVIEWS",
+        "id": "suggestion-review:1",
+        "title": "Suggestion reviewed by Fictional campaign coordinator (not fulfillment)",
+        "status": "CURRENT",
+        "sceneId": "S501",
+        "documentId": "PERMIT",
+        "notClearance": true
+      }
+    ],
+    "selected": null,
+    "notClearance": true,
+    "sha256": "badee882dd8d9ecc6d672f7fa5cd61c913ccece67024009a51554d71379860f7"
+  },
+  "notClearance": true
+}

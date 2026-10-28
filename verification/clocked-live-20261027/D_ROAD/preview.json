@@ -1,0 +1,466 @@
+{
+  "plan": {
+    "schema": "beforeroll-core-discovery-plan-v1",
+    "id": "351c45597ceb2978e0ba6020e7e979b035335fc1bb19a5304915d33e5073f0fd",
+    "workspaceId": "live_20261027_D_road",
+    "documents": [
+      {
+        "id": "PERMIT",
+        "hash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "revision": 1,
+        "epoch": 0,
+        "rawHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S601",
+        "epoch": 0,
+        "hash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "row": "Scene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane"
+      },
+      {
+        "id": "S602",
+        "epoch": 0,
+        "hash": "f889500d6405e5be45c21e8972e78bd0b38b959ce5895969fe2712a604fe276c",
+        "row": "Scene 602 | Access road | 23:00-23:30 | tripod filming beside temporary filming lane"
+      }
+    ],
+    "taskIds": [
+      "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+      "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+      "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+      "4e8233b19dc6c810b4d720ddd77bcbf7a62495e9bbae354535c2d0bec00114f3",
+      "ade775a3130caf185e84230b8ac59b873d570fc1c199bcd3d467bfbb988ea1c5",
+      "b65ac7b31b87fb6b451e5b6f348bfdcf430ffee34e2904ad3fa3bddf93dcfcf1"
+    ],
+    "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+    "workspaceRevision": 2,
+    "documentIds": [
+      "PERMIT"
+    ],
+    "sceneIds": [
+      "S601",
+      "S602"
+    ],
+    "sources": [
+      {
+        "id": "PERMIT",
+        "name": "D_ROAD-permit.txt",
+        "role": "permit",
+        "text": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\n\nThe filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nAn unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 183,
+            "text": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+            "hash": "8b553089d869ff00cb5002ad6090863d20f45a9fe676a10c0f7093c958b9d418",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 185,
+            "end": 340,
+            "text": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+            "hash": "2612375093719bd030d3b5cc1e731befbf9267e744c96c8506e27a316e959c56",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 342,
+            "end": 485,
+            "text": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+            "hash": "bb5b3af861dc58172eebfadb7f3d36def6537cadb46871d0879ff4f809ba8954",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "D_ROAD-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "normalizedHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+          "byteCount": 485,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "tasks": [
+      {
+        "id": "6435f6bcb4d7a55a3ef099434a0d8948176b7c68e69186b3239e69f967f36ee0",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "documentRevision": 1,
+        "sceneId": "S601",
+        "sceneHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,183):\nRoad filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "0a4ca45f7d7e2be23ed3107ba4858c4358040caf0251e9ff86ef8d589eabe60b",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "8ceabacc80a5d70290d6901a90c9a307a9370e9748548b3b3a4e3ccdba447eaf",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "documentRevision": 1,
+        "sceneId": "S601",
+        "sceneHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [185,340):\nThe filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\nAFTER (U003): An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "59ec7142325091153ecf3083467fdc60993746c724c4455d25479939e2387413",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "5879b121884650a4cb82dbf6039a3c406bac3e6f5457eaf29ec1e68aeb1214b3",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "documentRevision": 1,
+        "sceneId": "S601",
+        "sceneHash": "b436796773763682e445af3ed2e84ee585318c8ce27d3a757c5a56dac2c3867a",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [342,485):\nAn unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "714bf75b2a7c89098b41c1ca0c248823552e9556a11553b10d79901efd19a157",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "4e8233b19dc6c810b4d720ddd77bcbf7a62495e9bbae354535c2d0bec00114f3",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "documentRevision": 1,
+        "sceneId": "S602",
+        "sceneHash": "f889500d6405e5be45c21e8972e78bd0b38b959ce5895969fe2712a604fe276c",
+        "sourceRange": [
+          0,
+          183
+        ],
+        "sourceQuote": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,183):\nRoad filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 602 | Access road | 23:00-23:30 | tripod filming beside temporary filming lane\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "9eefd04d03f0172a12b2f9ed383425bb6a33749702b913c5f25475350915d920",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "ade775a3130caf185e84230b8ac59b873d570fc1c199bcd3d467bfbb988ea1c5",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "documentRevision": 1,
+        "sceneId": "S602",
+        "sceneHash": "f889500d6405e5be45c21e8972e78bd0b38b959ce5895969fe2712a604fe276c",
+        "sourceRange": [
+          185,
+          340
+        ],
+        "sourceQuote": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [185,340):\nThe filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\nAFTER (U003): An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 602 | Access road | 23:00-23:30 | tripod filming beside temporary filming lane\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "dea78a34c34a62ccefcd8297fdf245ecff85b6f332fea09959151a0b6f66b4e7",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "b65ac7b31b87fb6b451e5b6f348bfdcf430ffee34e2904ad3fa3bddf93dcfcf1",
+        "documentId": "PERMIT",
+        "documentHash": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+        "documentRevision": 1,
+        "sceneId": "S602",
+        "sceneHash": "f889500d6405e5be45c21e8972e78bd0b38b959ce5895969fe2712a604fe276c",
+        "sourceRange": [
+          342,
+          485
+        ],
+        "sourceQuote": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [342,485):\nAn unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 602 | Access road | 23:00-23:30 | tripod filming beside temporary filming lane\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "af8f102211eff5de9b8382d4cd8e44172199f75c49c0ed81703930f4ce67b01e",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      }
+    ],
+    "extracts": [
+      {
+        "id": "88f9355bb085619a8ed320730a4919163e0add2d4dbaf3def34b54d0b2e139fe",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "payload": {
+          "text": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "d671f15d03fe71be91d02ed2fa7d4fb0cc617accf6760de86a43262265460479",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "payload": {
+          "text": "The filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "fc92eb4c768c7f9b82e45b07dd559f8ca415906dedcf2e66c00f5c4ba7981f36",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "payload": {
+          "text": "An unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      }
+    ],
+    "verifiedBy": "Codex fictional-document source verification",
+    "sourceConfirmed": true,
+    "limits": {
+      "maxCalls": 30,
+      "creditBudget": 256,
+      "creditReservePerCall": 8
+    },
+    "decideCalls": 6,
+    "maxExtractCalls": 3,
+    "worstCaseCalls": 9,
+    "concurrency": 1,
+    "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+    "notClearance": true
+  },
+  "previewSha256": "67891384607dcd1988b13658aead3220baff47d4b200679c37d241d34c13e090",
+  "existingFence": false,
+  "notClearance": true
+}

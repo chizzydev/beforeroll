@@ -1,0 +1,138 @@
+{
+  "id": "fill-v6-4",
+  "gold": {
+    "documentId": "CORRESPONDENCE",
+    "unitIndex": 1,
+    "role": "historical_reference",
+    "sceneIds": [],
+    "claimQuote": "Historical condition record from a previous exhibition",
+    "reference": null,
+    "scope": null,
+    "unitId": "U002",
+    "unitRange": [
+      240,
+      446
+    ],
+    "payload": {
+      "text": "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production.",
+      "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+      "fields": {
+        "claimed_role": {
+          "type": "choice",
+          "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+          "options": [
+            "claims_issued_variation",
+            "request_only",
+            "historical_reference",
+            "current_condition",
+            "unrelated_or_unclear"
+          ]
+        },
+        "claim_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "The complete supplied original passage, copied verbatim as the statement a human must inspect. Include historical statements and negative or unissued statements unchanged. This field copies source text; it does not decide its role."
+        },
+        "referenced_instrument": {
+          "type": "extract",
+          "infer": false,
+          "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+        },
+        "scope_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+        },
+        "scene_scope": {
+          "type": "choice",
+          "description": "Identify the target scene(s) of this documentary investigation. For current conditions and variations, match the described activity. For a request or proposal, identify WHICH existing scene the proposed change asks to alter, even when the requested action contradicts that scene's current plan; e.g. a proposed change to an interview targets the interview scene, not a different scene already doing the requested action. This association does NOT mean approval or an imposed obligation. Do not match merely by shared location. Historical-only records need no current target. Leave empty when no target can be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+          "options": [
+            "S31",
+            "S32",
+            "all_selected_scenes",
+            "scope_not_established"
+          ]
+        }
+      }
+    },
+    "requestSha256": "4a898c31b9387d2bf470936d1e68f99806b4fbbffa8cdcde80bef5a7b656917b",
+    "expectedSpans": {
+      "claimQuote": [
+        240,
+        294
+      ],
+      "reference": null,
+      "scope": null
+    }
+  },
+  "decoded": {
+    "schema": "beforeroll-documentary-claim-v1",
+    "role": "historical_reference",
+    "fields": {
+      "claimed_role": {
+        "value": "historical_reference",
+        "confidence": 0.988,
+        "probabilities": {
+          "claims_issued_variation": 0.0019597226200579617,
+          "request_only": 0.0019293976424092495,
+          "historical_reference": 0.9906743598549616,
+          "current_condition": 0.00305285899571409,
+          "unrelated_or_unclear": 0.0023836608868571486
+        }
+      },
+      "claim_quote": {
+        "value": "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production.",
+        "unitRange": [
+          0,
+          206
+        ],
+        "permitRange": [
+          240,
+          446
+        ],
+        "confidence": 0.9999999994610624
+      },
+      "referenced_instrument": {
+        "value": null,
+        "confidence": 1
+      },
+      "scope_quote": {
+        "value": null,
+        "confidence": 1
+      },
+      "scene_scope": {
+        "value": "scope_not_established",
+        "confidence": 0.961,
+        "probabilities": {
+          "S31": 0.009034687978314592,
+          "S32": 0.009484884534600863,
+          "all_selected_scenes": 0.010783960096737225,
+          "scope_not_established": 0.9706964673903473
+        }
+      }
+    },
+    "sceneIds": [],
+    "documentId": "CORRESPONDENCE",
+    "unitId": "U002",
+    "sourceSentence": "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production.",
+    "requestSha256": "4a898c31b9387d2bf470936d1e68f99806b4fbbffa8cdcde80bef5a7b656917b",
+    "responseSha256": "64e028bb2eb820df3bc8fc9b660030f146832a181efe2dc8c0b39e64a5121f17",
+    "model": "clocked-1.0",
+    "actualIssuance": "UNVERIFIED",
+    "authenticity": "UNVERIFIED",
+    "supportingEvidence": "UNESTABLISHED_REQUIRES_HUMAN_INVENTORY",
+    "fulfillment": "UNVERIFIED",
+    "notClearance": true
+  },
+  "error": null,
+  "roleMatch": true,
+  "referenceMatch": true,
+  "pass": true,
+  "budget": {
+    "requests": 16,
+    "credits": 88,
+    "remainingRequests": 64,
+    "remainingCredits": 312
+  },
+  "semanticReview": "Exact alternative quote boundaries require human inspection; no issuance/authenticity established."
+}

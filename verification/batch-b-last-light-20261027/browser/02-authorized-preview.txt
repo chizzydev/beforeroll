@@ -1,0 +1,184 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas / version 6"
+- generic: Private local production
+- main:
+  - generic: Clocked source checks
+  - heading "Inspect scope before analysis." [level=1]
+  - button "Back to scenes"
+  - button "Production work"
+  - region "Clocked coordinator discovery":
+    - heading "Discover documentary review tasks" [level=2]
+    - paragraph: Choose production scenes and imported permits. BeforeRoll inventories every passage, uses Clocked Decide to investigate scene relevance, then the fixed three-field Extract contract to propose exact source-bound review tasks. It cannot authenticate or issue permission.
+    - heading "Unbilled scope and budget preview" [level=3]
+    - checkbox "Morrow_VenueAccess_FICTIONAL.txt · revision 1 · 1 source units · 386307e2e6d43bef9aa4a7f61a621aa8265afbc4d1947705eb6f65cccdeb58a8" [checked]
+    - text: Morrow_VenueAccess_FICTIONAL.txt · revision 1 · 1 source units · 386307e2e6d43bef9aa4a7f61a621aa8265afbc4d1947705eb6f65cccdeb58a8
+    - checkbox "Atlas_LenderConditions_FICTIONAL.txt · revision 1 · 2 source units · 1b07a56aed1609c76e214305e7c383ec2510f0ca2d2777665b6916c5e85f3699" [checked]
+    - text: Atlas_LenderConditions_FICTIONAL.txt · revision 1 · 2 source units · 1b07a56aed1609c76e214305e7c383ec2510f0ca2d2777665b6916c5e85f3699
+    - checkbox "Atlas_Correspondence_FICTIONAL.txt · revision 1 · 2 source units · 84a73428f0658e39aadfb639526faa33055f0423a4f8c8ee3b18cc03dfe2beb7" [checked]
+    - text: Atlas_Correspondence_FICTIONAL.txt · revision 1 · 2 source units · 84a73428f0658e39aadfb639526faa33055f0423a4f8c8ee3b18cc03dfe2beb7
+    - checkbox "Morrow_VisitorInformation_FICTIONAL.txt · revision 1 · 2 source units · c9d20195dd66874c0236250f52ca0335d1230a25db6ced52ea9304b8b92a2b7b" [checked]
+    - text: Morrow_VisitorInformation_FICTIONAL.txt · revision 1 · 2 source units · c9d20195dd66874c0236250f52ca0335d1230a25db6ced52ea9304b8b92a2b7b
+    - 'checkbox "S31 · insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table" [checked]'
+    - text: "S31 · insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table"
+    - checkbox "S32 · interview beside the closed display case; the atlas stays inside and nobody touches it" [checked]
+    - text: S32 · interview beside the closed display case; the atlas stays inside and nobody touches it
+    - 'checkbox "Include Clocked Fill documentary-status investigations: claimed variations, requests and referenced instruments. These remain unverified." [checked]'
+    - text: "Include Clocked Fill documentary-status investigations: claimed variations, requests and referenced instruments. These remain unverified."
+    - generic: Who verified these imported source identities?
+    - textbox "Who verified these imported source identities?": Fictional Batch B coordinator — original text compared
+    - checkbox "I checked the original files and transcription. This does not authenticate authorization." [checked]
+    - text: I checked the original files and transcription. This does not authenticate authorization.
+    - generic: Maximum requests (1–128)
+    - spinbutton "Maximum requests (1–128)": "32"
+    - generic: Credit reserve per request (not a provider quote)
+    - spinbutton "Credit reserve per request (not a provider quote)": "12"
+    - generic: Total reserved credit budget
+    - spinbutton "Total reserved credit budget": "312"
+    - button "Preview discovery · no calls"
+    - heading "Exact authorization preview" [level=3]
+    - paragraph: 14 Decide requests; at most 7 Extract requests; 5 Fill requests; 26 maximum total; concurrency 1. Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.
+    - paragraph:
+      - text: "Scope fingerprint:"
+      - code: 61fbe2c54bb82e46d79974d4659106dcf73399b1533390235bd36de6c6557bfe
+      - text: · preview
+      - code: 414a2a8355284bda835ba18ff0a487893bbe2ca96c6fbb763afda5217c94a081
+    - paragraph: "Selected scenes: S31, S32 · permits VENUE, LENDER, CORRESPONDENCE, VISITOR · verified by Fictional Batch B coordinator — original text compared."
+    - generic "Complete planned passage inventory (14 scene pairs)" [active]
+    - paragraph: "S31 / VENUE / U001 [0, 255): FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+    - paragraph: "S32 / VENUE / U001 [0, 255): FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+    - paragraph: "S31 / LENDER / U001 [0, 391): Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case."
+    - paragraph: "S31 / LENDER / U002 [393, 688): The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter."
+    - paragraph: "S32 / LENDER / U001 [0, 391): Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case."
+    - paragraph: "S32 / LENDER / U002 [393, 688): The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter."
+    - paragraph: "S31 / CORRESPONDENCE / U001 [0, 238): UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response."
+    - paragraph: "S31 / CORRESPONDENCE / U002 [240, 446): Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production."
+    - paragraph: "S32 / CORRESPONDENCE / U001 [0, 238): UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response."
+    - paragraph: "S32 / CORRESPONDENCE / U002 [240, 446): Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production."
+    - paragraph: "S31 / VISITOR / U001 [0, 44): The visitor café sells postcards of planets."
+    - paragraph: "S31 / VISITOR / U002 [45, 122): Staff tea deliveries arrive at noon; the souvenir till accepts card payments."
+    - paragraph: "S32 / VISITOR / U001 [0, 44): The visitor café sells postcards of planets."
+    - paragraph: "S32 / VISITOR / U002 [45, 122): Staff tea deliveries arrive at noon; the souvenir till accepts card payments."
+    - generic: Separate local operator token · never API key
+    - textbox "Separate local operator token · never API key"
+    - checkbox "I authorize this exact bounded plan and accept that one provider charge can exceed the reserve. Unknown costs stop further calls."
+    - text: I authorize this exact bounded plan and accept that one provider charge can exceed the reserve. Unknown costs stop further calls.
+    - button "Authorize bounded Clocked discovery"
+    - button "Refresh discovery status"
+  - heading "Current source-to-scene analysis plan" [level=2]
+  - paragraph: Every supported scene is paired with every discovered permit unit, including short restrictions. Planning is local and unbilled.
+  - button "Refresh plan"
+  - generic: 14 checks planned across 4 documents and 2 scenes · 0 human-reviewed · 0 recorded model checks. Text coverage is NOT completeness of legal authority.
+  - 'button "S31 / VENUE / U001 FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender''s permission to handle loaned collections. OPEN · NOT_ATTEMPTED"':
+    - strong: S31 / VENUE / U001
+    - generic: "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+    - generic: OPEN · NOT_ATTEMPTED
+  - 'button "S32 / VENUE / U001 FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender''s permission to handle loaned collections. OPEN · NOT_ATTEMPTED"':
+    - strong: S32 / VENUE / U001
+    - generic: "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S31 / LENDER / U001 Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case. OPEN · NOT_ATTEMPTED":
+    - strong: S31 / LENDER / U001
+    - generic: Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S31 / LENDER / U002 The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter. OPEN · NOT_ATTEMPTED":
+    - strong: S31 / LENDER / U002
+    - generic: The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S32 / LENDER / U001 Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case. OPEN · NOT_ATTEMPTED":
+    - strong: S32 / LENDER / U001
+    - generic: Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S32 / LENDER / U002 The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter. OPEN · NOT_ATTEMPTED":
+    - strong: S32 / LENDER / U002
+    - generic: The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S31 / CORRESPONDENCE / U001 UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response. OPEN · NOT_ATTEMPTED":
+    - strong: S31 / CORRESPONDENCE / U001
+    - generic: UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.
+    - generic: OPEN · NOT_ATTEMPTED
+  - 'button "S31 / CORRESPONDENCE / U002 Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production. OPEN · NOT_ATTEMPTED"':
+    - strong: S31 / CORRESPONDENCE / U002
+    - generic: "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production."
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S32 / CORRESPONDENCE / U001 UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response. OPEN · NOT_ATTEMPTED":
+    - strong: S32 / CORRESPONDENCE / U001
+    - generic: UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.
+    - generic: OPEN · NOT_ATTEMPTED
+  - 'button "S32 / CORRESPONDENCE / U002 Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production. OPEN · NOT_ATTEMPTED"':
+    - strong: S32 / CORRESPONDENCE / U002
+    - generic: "Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production."
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S31 / VISITOR / U001 The visitor café sells postcards of planets. OPEN · NOT_ATTEMPTED":
+    - strong: S31 / VISITOR / U001
+    - generic: The visitor café sells postcards of planets.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S31 / VISITOR / U002 Staff tea deliveries arrive at noon; the souvenir till accepts card payments. OPEN · NOT_ATTEMPTED":
+    - strong: S31 / VISITOR / U002
+    - generic: Staff tea deliveries arrive at noon; the souvenir till accepts card payments.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S32 / VISITOR / U001 The visitor café sells postcards of planets. OPEN · NOT_ATTEMPTED":
+    - strong: S32 / VISITOR / U001
+    - generic: The visitor café sells postcards of planets.
+    - generic: OPEN · NOT_ATTEMPTED
+  - button "S32 / VISITOR / U002 Staff tea deliveries arrive at noon; the souvenir till accepts card payments. OPEN · NOT_ATTEMPTED":
+    - strong: S32 / VISITOR / U002
+    - generic: Staff tea deliveries arrive at noon; the souvenir till accepts card payments.
+    - generic: OPEN · NOT_ATTEMPTED
+  - generic: EXACT ORIGINAL SOURCE
+  - heading "S31 × U001" [level=3]
+  - blockquote: "FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections."
+  - text: Codepoint offset [0,255) · Source-bound task ID 5a9f52ad885a33c466128ceaa12739e87cb39822e8bd26504d5b8e759ad98ef9
+  - paragraph: "Semantic status: NOT_ATTEMPTED. Human review does not assert permission."
+  - generic: Reviewer
+  - textbox "Reviewer":
+    - /placeholder: Production coordinator
+  - generic: Human decision
+  - combobox "Human decision":
+    - option "Needs original source" [selected]
+    - option "Acknowledged for follow-up"
+    - option "Open for review"
+    - option "Human-reviewed (not clearance)"
+  - generic: Reason / required action
+  - textbox "Reason / required action":
+    - /placeholder: Describe the evidence or outstanding requirement
+  - button "Save human review"
+  - button "Stage this individual review"
+  - navigation:
+    - button "Previous" [disabled]
+    - generic: 1–14 / 14
+    - button "Next" [disabled]
+  - region "Clocked project execution":
+    - heading "Durable Clocked analysis" [level=2]
+    - paragraph: Run the original source-to-scene plan in bounded batches. Every attempt is journaled BEFORE contacting Clocked, and completed evidence survives application restarts. An interrupted or uncertain call is never automatically repeated.
+    - text: PLANNED
+    - strong: "14"
+    - text: ATTEMPTED
+    - strong: "0"
+    - text: COMPLETED
+    - strong: "0"
+    - text: UNKNOWN
+    - strong: "0"
+    - paragraph: "Execution state: READY · 0% complete · 14 not attempted · Reported credits for current tasks 0 (includes retained evidence; not a new charge) · 0 retained attempts · 0 new attempts in this plan · Unknown credit records 0 · 0 retained historical source-plan runs."
+    - paragraph: No confirmed per-request credit sample yet. Remaining cost is unknown until provider reports it.
+    - generic "Analysis progress by source document"
+    - generic: Local operator token · never your API key
+    - textbox "Local operator token · never your API key":
+      - /placeholder: Separate local operator token
+    - generic: Maximum new requests in this owner-authorized run (1–256, submitted as durable batches of up to 32)
+    - spinbutton "Maximum new requests in this owner-authorized run (1–256, submitted as durable batches of up to 32)": "32"
+    - button "Run owner-authorized Clocked session"
+    - paragraph: Unanalyzed checks stay explicitly not evaluated. Saved results are bound to exact source fingerprints, not authorization. Changing any original document creates a distinct plan and retains the historical execution.
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

@@ -1,0 +1,590 @@
+{
+  "plan": {
+    "schema": "beforeroll-core-discovery-plan-v1",
+    "id": "065072f46688d188fd4e9d0ab32d63d857a158dfcd6b83d2fc33da116cf2cb84",
+    "workspaceId": "live_20261027_C_orchard",
+    "documents": [
+      {
+        "id": "PERMIT",
+        "hash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "revision": 1,
+        "epoch": 0,
+        "rawHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S501",
+        "epoch": 0,
+        "hash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "row": "Scene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge"
+      },
+      {
+        "id": "S502",
+        "epoch": 0,
+        "hash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "row": "Scene 502 | Orchard | 21:00-22:00 | proposed drone survey"
+      }
+    ],
+    "taskIds": [
+      "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+      "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+      "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+      "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+      "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+      "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+      "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+      "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2"
+    ],
+    "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+    "workspaceRevision": 2,
+    "documentIds": [
+      "PERMIT"
+    ],
+    "sceneIds": [
+      "S501",
+      "S502"
+    ],
+    "sources": [
+      {
+        "id": "PERMIT",
+        "name": "C_ORCHARD-permit.txt",
+        "role": "permit",
+        "text": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\n\nAn unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nScene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nBackground correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 194,
+            "text": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+            "hash": "4010e963b13aa2058553d21379d375560f296e99cdfd855bb98d3b8649a4f040",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 196,
+            "end": 363,
+            "text": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+            "hash": "83c627e21e5bc5fb044ff11fac80f42aa01150812ca282c99c3ecf7c5a53fd6a",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 365,
+            "end": 510,
+            "text": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+            "hash": "d7c7f195a7e25a9385404e82affdb9cfbe3d67c21b4f32b3ca41834de71ab4b0",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U004",
+            "start": 512,
+            "end": 655,
+            "text": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+            "hash": "9beaf5824abcf9d478ff56c5095361a16c330f9f1deaf64ff8370b484f060d2d",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "C_ORCHARD-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "normalizedHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+          "byteCount": 655,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "tasks": [
+      {
+        "id": "ef918162f6d61905991bbd204da251b869859f868349994a5cd0efbe1cf6581f",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S501",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,194):\nThe historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "30c2848833b5bc322dfc91e745292fa5ca54a92431259503cbb6668dfb6cbfa6",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "098710cfc016f09202e2383dbb949d53e2e70ac67b04523664c8fbd3e3c53fb8",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S501",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [196,363):\nAn unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\nAFTER (U003): Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "a4879ae6cfd023607594f7ac89a38e885049476e56140a48766cc7ef529e07dc",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "b512c6950ea5fb5376e11d6cfc1e77e5c5c2a9d4fe7b8fbc9b6d7035c54d497f",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S501",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [365,510):\nScene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\nAFTER (U004): Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "cc4cec21d7cf4ca3e05035100a08696f86e91e47cc848a1591e9a2df3430b6a2",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "8314c3ae5ac7ccacd895c6842db9088391d737b746aa5db78e43b613acf4d689",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S501",
+        "sceneHash": "1a00faba20707928ed470c6f8400b20e2de25261300a994c8b98660767b2ed63",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "unitId": "U004",
+        "contextUnitIds": [
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [512,655):\nBackground correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "0341941886abc8dd9c40198ae04c1d320af3e65c57a6c158e9ca9a8ea7ead514",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "92bb44142be21a1df1372243fcb834cac8ecd5b0443560d60134538739cf2d9f",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S502",
+        "sceneHash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "sourceRange": [
+          0,
+          194
+        ],
+        "sourceQuote": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+        "unitId": "U001",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,194):\nThe historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 502 | Orchard | 21:00-22:00 | proposed drone survey\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "eae748ebb19835464f7d0c4ce59c786361b090ed063b328a9ffeec92ff275d5e",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "240d0175e7e6b917eabcfc9b5183128ed614e707412f1d6a1ef199717d79123b",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S502",
+        "sceneHash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "sourceRange": [
+          196,
+          363
+        ],
+        "sourceQuote": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+        "unitId": "U002",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [196,363):\nAn unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\nAFTER (U003): Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 502 | Orchard | 21:00-22:00 | proposed drone survey\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "5d8ca628ced4606108ec6179de780fcdce0c922692b6ab8f0ffbc5b4e530814c",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "9c3c159815dfe0b8cefd1f68a6753ca351180a9b6a45bf1bb6cc8a0f3f7f0de3",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S502",
+        "sceneHash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "sourceRange": [
+          365,
+          510
+        ],
+        "sourceQuote": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+        "unitId": "U003",
+        "contextUnitIds": [
+          "U002",
+          "U004"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [365,510):\nScene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\nAFTER (U004): Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 502 | Orchard | 21:00-22:00 | proposed drone survey\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "9e9134a1dd0100743e59063d66b8138e276820e5aae9a20ca23e47ba2f633f01",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      },
+      {
+        "id": "daef0ab53475110f0519ab6e12c6542654796175c23fa9b96f64711fd2b93dd2",
+        "documentId": "PERMIT",
+        "documentHash": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+        "documentRevision": 1,
+        "sceneId": "S502",
+        "sceneHash": "eb2d518ea04e227210c78327578313a785ee869504dc8e38dc28957fbee542d6",
+        "sourceRange": [
+          512,
+          655
+        ],
+        "sourceQuote": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+        "unitId": "U004",
+        "contextUnitIds": [
+          "U003"
+        ],
+        "payload": {
+          "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [512,655):\nBackground correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 502 | Orchard | 21:00-22:00 | proposed drone survey\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+          "questions": {
+            "activity_link": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+              "criteria": {
+                "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+              }
+            },
+            "granted_for_scene": {
+              "type": "noul",
+              "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+              "criteria": {
+                "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+              }
+            }
+          }
+        },
+        "requestHash": "ec6479e030d6713411ce150a653bb60b2c9318d7aced8f81cf60511c583d9921",
+        "status": "NOT_EVALUATED",
+        "notClearance": true
+      }
+    ],
+    "extracts": [
+      {
+        "id": "2b182d3756956b626edf0c2b00f00ff69f39987cbd56dfb08e97f229e484bc87",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "payload": {
+          "text": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "54fea6e9357a4d25979f1c64852fa39931462a0e3e1a5fce906ebe203dc32c56",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "payload": {
+          "text": "An unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "90bbbd989355b5683bfaf22a84418b61ac81131255599e37a5b549d6a5b34564",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "payload": {
+          "text": "Scene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      },
+      {
+        "id": "d8ad2d3185fe9c38f05ccbc437357e2d598a5bf4f4cda40ff8a4b7d5ebfe9e99",
+        "documentId": "PERMIT",
+        "unitId": "U004",
+        "payload": {
+          "text": "Background correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+          "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+          "fields": {
+            "required_written_documents": {
+              "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            },
+            "required_physical_protections": {
+              "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+              "list": true,
+              "max_items": 6,
+              "format": "text"
+            },
+            "required_on_site_personnel": {
+              "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+              "list": true,
+              "max_items": 5,
+              "format": "text"
+            }
+          }
+        }
+      }
+    ],
+    "verifiedBy": "Codex fictional-document source verification",
+    "sourceConfirmed": true,
+    "limits": {
+      "maxCalls": 32,
+      "creditBudget": 256,
+      "creditReservePerCall": 8
+    },
+    "decideCalls": 8,
+    "maxExtractCalls": 4,
+    "worstCaseCalls": 12,
+    "concurrency": 1,
+    "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+    "notClearance": true
+  },
+  "previewSha256": "d8ff8bcb28b7931879160f6a1d4a69836163506e1d6d3eb4e2a976d28ad3742f",
+  "existingFence": false,
+  "notClearance": true
+}

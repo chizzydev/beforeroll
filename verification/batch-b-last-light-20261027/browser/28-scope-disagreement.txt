@@ -1,0 +1,34 @@
+Browser tab: 7, Title: "BeforeRoll — Know what the shot depends on.", URL: "http://127.0.0.1:53202/#br?p=last_light_browser_01&stage=analysis&s=S32&doc=&unit=&view=investigation&mode=register&fromScene=0".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~					35 button (expanded) Documentary claims and supporting references (5), Secondary Actions: Collapse
++					144 container
++						145 heading VENUE / U001 · Current condition, Value: 4
++							146 text VENUE / U001 · Current condition
++						147 text Model scope signals differ: Decide linked additional scenes that Fill did not name. Investigate the original scope; do not treat this target list as exhaustive. Existing condition tasks keep their separate source-to-scene evidence. Model-suggested investigation target: S31. Actual issuance and authenticity remain unverified. FICTIONAL CONTRACT — Morrow Observatory Archive: commercial filming in the reading room requires a venue duty officer to remain present for both planned activities; room access alone says nothing about the lender's permission to handle loaned collections. Referenced instrument: not stated; supporting evidence remains unestablished.
++						148 button (collapsed) Validated source spans and typed interpretation, Secondary Actions: Expand
++							149 text Validated source spans and typed interpretation
++					150 container
++						151 heading LENDER / U001 · Current condition, Value: 4
++							152 text LENDER / U001 · Current condition
++						153 text Model-suggested investigation target: S31. Actual issuance and authenticity remain unverified. Direct manipulation of the historical atlas must not begin until written lender consent has been presented; during that handling, a supporting book cradle and a padded transfer tray are mandatory, and a collections conservator must remain beside the reading table throughout the take; these conditions concern opening and unfolding the loaned volume, not an interview beside its closed case. Referenced instrument: written lender consent; supporting evidence remains unestablished.
++						154 button (collapsed) Validated source spans and typed interpretation, Secondary Actions: Expand
++							155 text Validated source spans and typed interpretation
++					156 container
++						157 heading LENDER / U002 · Claims issued variation, Value: 4
++							158 text LENDER / U002 · Claims issued variation
++						159 text Model-suggested investigation target: S31. Actual issuance and authenticity remain unverified. The lender letter describes Variation VA-17 as issued for the close-up in which the performer opens and unfolds the atlas only; it does not extend that variation to the case-only interview; the letter cites Consent Schedule CS-9 as its supporting instrument, but no copy accompanies this letter. Referenced instrument: Consent Schedule CS-9; supporting evidence remains unestablished.
++						160 button (collapsed) Validated source spans and typed interpretation, Secondary Actions: Expand
++							161 text Validated source spans and typed interpretation
++					162 container
++						163 heading CORRESPONDENCE / U001 · Request only, Value: 4
++							164 text CORRESPONDENCE / U001 · Request only
++						165 text Model-suggested investigation target: S32. Actual issuance and authenticity remain unverified. UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response. Referenced instrument: Variation VA-17; supporting evidence remains unestablished.
++						166 button (collapsed) Validated source spans and typed interpretation, Secondary Actions: Expand
++							167 text Validated source spans and typed interpretation
++					168 container
++						169 heading CORRESPONDENCE / U002 · Historical reference, Value: 4
++							170 text CORRESPONDENCE / U002 · Historical reference
++						171 text Model-suggested investigation target: not established. Actual issuance and authenticity remain unverified. Historical condition record from a previous exhibition: reference photographs show the atlas on a foam wedge with a volunteer demonstrator; that past display record imposes no conditions on this production. Referenced instrument: not stated; supporting evidence remains unestablished.
++						172 button (collapsed) Validated source spans and typed interpretation, Secondary Actions: Expand
++							173 text Validated source spans and typed interpretation
+The focused UI element is 35 button (expanded) Documentary claims and supporting references (5), Secondary Actions: Collapse

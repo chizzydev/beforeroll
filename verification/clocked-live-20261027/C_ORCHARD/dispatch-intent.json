@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-27T11:38:24.382Z",
+  "sourceScenarioHash": "e8266c6e5dbc5de448760c2be794866f9c2d6a2ee74923f31cd18b6d19201264",
+  "previewSha256": "d8ff8bcb28b7931879160f6a1d4a69836163506e1d6d3eb4e2a976d28ad3742f",
+  "productionId": "live_20261027_C_orchard",
+  "budgetBefore": {
+    "requests": 20,
+    "reportedCredits": 40,
+    "unknownCreditRequests": 0
+  },
+  "ceiling": {
+    "requests": 60,
+    "credits": 500
+  }
+}

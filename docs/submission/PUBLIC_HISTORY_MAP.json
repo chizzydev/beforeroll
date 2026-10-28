@@ -1,0 +1,108 @@
+{
+  "schema": "beforeroll-transparent-public-history-derivative-v1",
+  "at": "2026-10-27T22:49:09.500Z",
+  "originalHead": "bb5559a02944d8cec10c01fd77d46f2ebfacaf22",
+  "publicHead": "d61ad2f72c20cafb0e95602677018e96c590ed8c",
+  "excludedResearchImages": [
+    "_design_championship/evidence/bfi-editorial.jpg",
+    "_design_championship/evidence/dealforge-evidence.jpg",
+    "_design_championship/evidence/dealforge-first.jpg",
+    "_design_championship/evidence/decide-compare.jpg",
+    "_design_championship/evidence/decide-first.jpg",
+    "_design_championship/evidence/frame-review.jpg",
+    "_design_championship/evidence/geist-system.jpg",
+    "_design_championship/evidence/harvey-vault.jpg",
+    "_design_championship/evidence/linear-issues.jpg",
+    "_design_championship/evidence/skillsroom-community.jpg",
+    "_design_championship/evidence/skillsroom-first.jpg",
+    "_design_championship/evidence/studiobinder-callsheets.jpg",
+    "_design_championship/evidence/studiobinder-workflow.jpg"
+  ],
+  "commits": [
+    {
+      "originalCommit": "c8504303ff268bbad4163d9efc8b64df1a7d9be0",
+      "publicCommit": "c8504303ff268bbad4163d9efc8b64df1a7d9be0",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "28bb8786571227ea519710617a9682c84b01d705",
+      "publicCommit": "28bb8786571227ea519710617a9682c84b01d705",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "48ef9a20c9134855d2ad5f04d501f02b8b03c726",
+      "publicCommit": "48ef9a20c9134855d2ad5f04d501f02b8b03c726",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "fa87423be03819924a65587bd7f1565d323bdbb9",
+      "publicCommit": "fa87423be03819924a65587bd7f1565d323bdbb9",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "ce271b19c16932aeb0bcb57e4199d3e255ccc25c",
+      "publicCommit": "ce271b19c16932aeb0bcb57e4199d3e255ccc25c",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "359f4768b7730096e9905fc8b7ed9ce6dcb4613f",
+      "publicCommit": "359f4768b7730096e9905fc8b7ed9ce6dcb4613f",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "2b37a94366a77acce0e0e55900831f0b0a8e800b",
+      "publicCommit": "2b37a94366a77acce0e0e55900831f0b0a8e800b",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "355cd5a3607ee615a891efdc9ad98bea6cb3bb57",
+      "publicCommit": "355cd5a3607ee615a891efdc9ad98bea6cb3bb57",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "677e02d36e41eed6b45e45d8b9803f4e1ef4c967",
+      "publicCommit": "37dc15ec52c7ee9cdaf44df149cb76ef5a44e575",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "213687c758689da07d718b5b3ac848b166b2cae6",
+      "publicCommit": "401030e66b14a03993f33a3bc518bde67dca47fc",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "a3f80fac8cb189f54becd67cb79cc8cd115d61b0",
+      "publicCommit": "bcd72070d9d77211769d58e7950ef8656d13af2f",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "3e142e79eb4603bcb627fbd8b25ebbefc201f4c6",
+      "publicCommit": "897411e65a145f8f9ee2ae2518b094f633095295",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "5bdc548b321ca8cadb4b19827aa4cffe043b207f",
+      "publicCommit": "95b24aacf61fb635aa332348545b55c2c426cd79",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    },
+    {
+      "originalCommit": "bb5559a02944d8cec10c01fd77d46f2ebfacaf22",
+      "publicCommit": "d61ad2f72c20cafb0e95602677018e96c590ed8c",
+      "authorDateMessageUnchanged": true,
+      "onlyTreeChange": "Exclude listed third-party/other-owner-app research screenshots; no source, gold, provider answer or failure evidence changed"
+    }
+  ],
+  "reason": "Rights/private-other-application media exclusion, not concealment of BeforeRoll failures. Full original objects/history remain outside the public package."
+}

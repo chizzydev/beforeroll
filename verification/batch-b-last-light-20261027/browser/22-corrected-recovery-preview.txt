@@ -1,0 +1,31 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas · Recovered copy / version 1"
+- generic: Private local production
+- main:
+  - generic: Private lifecycle recovery
+  - heading "Verify. Then restore separately." [level=1]
+  - paragraph: Original production IDs, evidence and journals stay intact. Recovery creates a separate copy and makes no Clocked requests.
+  - generic "Recover a production from an encrypted backup"
+  - generic: Encrypted owner backup · JSON, up to 90 MiB
+  - button "Encrypted owner backup · JSON, up to 90 MiB"
+  - generic: Backup passphrase
+  - textbox "Backup passphrase"
+  - button "Verify encrypted backup"
+  - status:
+    - heading "last_light_browser_01" [level=2]
+    - paragraph: 14 source checks · 1 Clocked journals (1 discovery) · 5 originals · 0 missing
+    - paragraph: This verified backup is already present. Open the recovered copy in Productions; no overwrite or duplicate recovery.
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

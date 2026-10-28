@@ -1,0 +1,23 @@
+{
+  "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+  "fields": {
+    "required_written_documents": {
+      "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+      "list": true,
+      "max_items": 5,
+      "format": "text"
+    },
+    "required_physical_protections": {
+      "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+      "list": true,
+      "max_items": 6,
+      "format": "text"
+    },
+    "required_on_site_personnel": {
+      "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+      "list": true,
+      "max_items": 5,
+      "format": "text"
+    }
+  }
+}

@@ -1,0 +1,967 @@
+{
+  "schema": "beforeroll-core-discovery-evidence-v1",
+  "workspaceId": "live_20261027_A_dock",
+  "jobs": [
+    {
+      "schema": "beforeroll-core-discovery-journal-v1",
+      "plan": {
+        "schema": "beforeroll-core-discovery-plan-v1",
+        "id": "22aacf3b805023fd7804c6eb9d8f2f5146ae7f2c2a66f5f77e2ee2f27fa8e79a",
+        "workspaceId": "live_20261027_A_dock",
+        "documents": [
+          {
+            "id": "PERMIT",
+            "hash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "revision": 1,
+            "epoch": 0,
+            "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e"
+          }
+        ],
+        "scenes": [
+          {
+            "id": "S301",
+            "epoch": 0,
+            "hash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+            "row": "Scene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot"
+          },
+          {
+            "id": "S302",
+            "epoch": 0,
+            "hash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+            "row": "Scene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier"
+          }
+        ],
+        "taskIds": [
+          "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+          "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+          "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+          "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+          "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+          "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+          "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+          "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d"
+        ],
+        "extractContract": "14b50c8aa805ad76ba020e58a6ae9d2ffa98c87dd2da53355e451d972c79f879",
+        "workspaceRevision": 2,
+        "documentIds": [
+          "PERMIT"
+        ],
+        "sceneIds": [
+          "S301",
+          "S302"
+        ],
+        "sources": [
+          {
+            "id": "PERMIT",
+            "name": "A_DOCK-permit.txt",
+            "role": "permit",
+            "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.",
+            "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "revision": 1,
+            "units": [
+              {
+                "id": "U001",
+                "start": 0,
+                "end": 128,
+                "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+                "hash": "92dfa42eb32fa9b70ae543ae08f556c034c8ecbdf0559d061755e83d5049572c",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U002",
+                "start": 130,
+                "end": 323,
+                "text": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+                "hash": "a567306cfb155bd7dd10bf083328ac0be4bd439138130962b1aeb04cf3b276eb",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U003",
+                "start": 325,
+                "end": 432,
+                "text": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+                "hash": "ea83716dd7e79a4865d6b7491dfdc298228fee0cd060b61830dc69ef7a0a7d92",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              },
+              {
+                "id": "U004",
+                "start": 434,
+                "end": 510,
+                "text": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+                "hash": "8c12c31f4bfea646ca024fc7a666f8950979eacdc0be473c6a9e9f32072fad52",
+                "kind": "SOURCE_UNIT",
+                "status": "NOT_EVALUATED"
+              }
+            ],
+            "coverage": {
+              "represented": true,
+              "gaps": []
+            },
+            "status": "SOURCE_UNVERIFIED",
+            "importReceipt": {
+              "kind": "permit",
+              "name": "A_DOCK-permit.txt",
+              "sourceFormat": "UTF8_TEXT",
+              "rawHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+              "normalizedHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+              "byteCount": 510,
+              "sourceMap": [],
+              "warnings": [
+                "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+              ],
+              "reviewedAttestation": null,
+              "reviewedPermitAttestation": null,
+              "requiresHumanTextReview": false,
+              "extractionPartSha256": null,
+              "revision": 1,
+              "documentId": "PERMIT",
+              "sourceHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e"
+            },
+            "pdfTranscriptionReview": null
+          }
+        ],
+        "tasks": [
+          {
+            "id": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S301",
+            "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+            "sourceRange": [
+              0,
+              128
+            ],
+            "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+            "unitId": "U001",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,128):\nScene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S301",
+            "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+            "sourceRange": [
+              130,
+              323
+            ],
+            "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+            "unitId": "U002",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [130,323):\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\nAFTER (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S301",
+            "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+            "sourceRange": [
+              325,
+              432
+            ],
+            "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+            "unitId": "U003",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [325,432):\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\nAFTER (U004): Visitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S301",
+            "sceneHash": "188b5617651f74e816ccfa2f83648db6b1b97e778f9eaa2b91292795a8c76a9e",
+            "sourceRange": [
+              434,
+              510
+            ],
+            "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+            "unitId": "U004",
+            "contextUnitIds": [
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [434,510):\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S302",
+            "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+            "sourceRange": [
+              0,
+              128
+            ],
+            "sourceQuote": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+            "unitId": "U001",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U001 [0,128):\nScene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nAFTER (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "c37e5b10041e269138a5d9d16f74a952a10e584928b11882289fff95c40d174a",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S302",
+            "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+            "sourceRange": [
+              130,
+              323
+            ],
+            "sourceQuote": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+            "unitId": "U002",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U002 [130,323):\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U001): Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\nAFTER (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "11227c001627db32bdc7ed33b415b030da9eaf6c134dd3fe81f77360b9498173",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S302",
+            "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+            "sourceRange": [
+              325,
+              432
+            ],
+            "sourceQuote": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+            "unitId": "U003",
+            "contextUnitIds": [
+              "U002",
+              "U004"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U003 [325,432):\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U002): During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\nAFTER (U004): Visitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "45cbf76b586484dd7deed565b4c51f4ae340d8cdb1d899fe03438eddae65727f",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          },
+          {
+            "id": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+            "documentId": "PERMIT",
+            "documentHash": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+            "documentRevision": 1,
+            "sceneId": "S302",
+            "sceneHash": "60bcf5c27780002c80b97aa3b35ccdc8bd45f111bbe1784ae87d8307de7ddee2",
+            "sourceRange": [
+              434,
+              510
+            ],
+            "sourceQuote": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+            "unitId": "U004",
+            "contextUnitIds": [
+              "U003"
+            ],
+            "payload": {
+              "state": "PERMIT DOCUMENT PERMIT (unverified; do not authenticate):\nEXACT PASSAGE U004 [434,510):\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.\n\nNEIGHBOR CONTEXT ONLY (cannot itself supply permission):\nBEFORE (U003): For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nPROPOSED SCENE (exact call-sheet row):\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier\n\nAssess the exact passage with its context. Do not treat a general location consent as permission to override a more specific activity restriction. No filming-clearance conclusions.",
+              "questions": {
+                "activity_link": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage state a restriction, prerequisite, or conditional activity permission materially applicable to this scene? Surrounding passages are context only, not independent grants.",
+                  "criteria": {
+                    "true": "Exact passage concerns the proposed scene activity, even when terminology differs.",
+                    "false": "Exact passage is unrelated or general location overlap alone is insufficient."
+                  }
+                },
+                "granted_for_scene": {
+                  "type": "noul",
+                  "instructions": "Does the exact quoted source passage explicitly issue permission for this specific scene activity and authorized scope? A request, generic location consent, grant for a different scene, or prerequisite that has not been evidenced is not scene-specific permission.",
+                  "criteria": {
+                    "true": "Quoted passage explicitly grants the specified scene/activity within stated scope, subject to human validation.",
+                    "false": "No issued, sufficiently scoped permission is stated in this exact passage."
+                  }
+                }
+              }
+            },
+            "requestHash": "2adbd385cf8fb9848ea02eeb951871025f9c0698f6073b75e0953db988ac3778",
+            "status": "NOT_EVALUATED",
+            "notClearance": true
+          }
+        ],
+        "extracts": [
+          {
+            "id": "4b3700c880ec91f80f5427e7117492065d19fb3ea99b17667586db1c281951b7",
+            "documentId": "PERMIT",
+            "unitId": "U001",
+            "payload": {
+              "text": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "b3383fc70f4928e8f50352ed0708531217b8a6b63b6212bce1804cc512ba8bf5",
+            "documentId": "PERMIT",
+            "unitId": "U002",
+            "payload": {
+              "text": "During Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "f3fa209c64f4c5dad8ba131be6668dadc307a108b61ead159d578608e75632e0",
+            "documentId": "PERMIT",
+            "unitId": "U003",
+            "payload": {
+              "text": "For Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          },
+          {
+            "id": "571d19fd237de7065ddd6ce6a124d06a6ea4d08f3347a35283c22e276e0d3c41",
+            "documentId": "PERMIT",
+            "unitId": "U004",
+            "payload": {
+              "text": "Visitor information: the souvenir kiosk opens at noon and sells tide charts.",
+              "instructions": "Copy only short verbatim source phrases identifying documentary prerequisites, required physical protections, or required on-site personnel. Apply the same three fields to the entire supplied passage. Report facts the text expressly states are REQUIRED for the described activity, not historical examples, suggestions, proposals, requests to extend conditions to another scene, or guesses. Do not decide whether any permission has been issued, is authentic, applies legally, or satisfies a prerequisite. Do not infer clearance or create tasks. Each returned phrase must occur in the exact original source text. Leave an unsupported list empty.",
+              "fields": {
+                "required_written_documents": {
+                  "description": "Distinct short phrases naming written approvals, signed releases, or written consents that the passage explicitly says must be obtained or presented before an activity; copy each original phrase, not an issuance verdict",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                },
+                "required_physical_protections": {
+                  "description": "Distinct short source phrases naming physical protective measures or equipment that the passage explicitly requires during an activity; not suggestions, historic examples, or optional equipment",
+                  "list": true,
+                  "max_items": 6,
+                  "format": "text"
+                },
+                "required_on_site_personnel": {
+                  "description": "Distinct short source phrases naming a supervising or safety person or role that the passage explicitly requires on site during an activity; not a document signatory, historical participant, or optional observer",
+                  "list": true,
+                  "max_items": 5,
+                  "format": "text"
+                }
+              }
+            }
+          }
+        ],
+        "verifiedBy": "Codex fictional-document source verification",
+        "sourceConfirmed": true,
+        "limits": {
+          "maxCalls": 32,
+          "creditBudget": 256,
+          "creditReservePerCall": 8
+        },
+        "decideCalls": 8,
+        "maxExtractCalls": 4,
+        "worstCaseCalls": 12,
+        "concurrency": 1,
+        "costWarning": "Owner reserve is not a provider quote or enforceable provider billing cap. Unknown or excessive reported cost stops further calls.",
+        "notClearance": true
+      },
+      "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+      "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+      "entries": [
+        {
+          "id": "b803a6b3524a1d79e47e2d445654c0462e3280f29b9e7004950fff975d183771",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAxIFswLDEyOCk6XG5TY2VuZSAzMDEgcXVheSBmaWxtaW5nIG11c3Qgd2FpdCB1bnRpbCBhIHNpZ25lZCBlbGVjdHJpY2FsIGlzb2xhdGlvbiBjZXJ0aWZpY2F0ZSBhbmQgd3JpdHRlbiBkb2NrIGFjY2VzcyBhcHByb3ZhbCBhcmUgcHJlc2VudGVkLlxuXG5ORUlHSEJPUiBDT05URVhUIE9OTFkgKGNhbm5vdCBpdHNlbGYgc3VwcGx5IHBlcm1pc3Npb24pOlxuQUZURVIgKFUwMDIpOiBEdXJpbmcgU2NlbmUgMzAxIHRoZSBjYWJsZSBydW4gbXVzdCBoYXZlIGxvYWQtcmF0ZWQgY2FibGUgY292ZXJzIGFuZCBhbnRpLXNsaXAgaW50ZXJsb2NraW5nIHBhbmVscywgYW5kIGEgcXVhbGlmaWVkIG1hcmluZSBlbGVjdHJpY2lhbiBtdXN0IHJlbWFpbiBhdCB0aGUgZGlzdHJpYnV0aW9uIGJvYXJkIHRocm91Z2hvdXQgdGhlIHRha2UuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSAzMDEgfCBRdWF5IHwgMDY6MDAtMDc6MDAgfCBwb3dlcmVkIGNhYmxlIHJ1biBmb3IgbmlnaHQtdG8tZGF3biBjcmFuZSBzaG90XG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "eac909f5-ae4d-451f-b61a-dad960c1111b",
+          "startedAt": "2026-10-27T11:37:11.844Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTA5fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMjh9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNDEsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "aa8f639aae2c76e25ac9b0fc56a64ba30fe4a35e774d8feaadc49d0ee6e06821",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "12e24c2b12894e3c7b37b20aaf481fac0682acf8d5aecd9d4896426b4b47616d",
+            "storedBodySha256": "12e24c2b12894e3c7b37b20aaf481fac0682acf8d5aecd9d4896426b4b47616d",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:11 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:11.844Z",
+            "endedAt": "2026-10-27T11:37:14.233Z",
+            "latencyMs": 2372.5774,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "fb40f14b0600c334274dab72f2409eb2faea7a5bcfcef1ecd5d1c3ee518aebef",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAyIFsxMzAsMzIzKTpcbkR1cmluZyBTY2VuZSAzMDEgdGhlIGNhYmxlIHJ1biBtdXN0IGhhdmUgbG9hZC1yYXRlZCBjYWJsZSBjb3ZlcnMgYW5kIGFudGktc2xpcCBpbnRlcmxvY2tpbmcgcGFuZWxzLCBhbmQgYSBxdWFsaWZpZWQgbWFyaW5lIGVsZWN0cmljaWFuIG11c3QgcmVtYWluIGF0IHRoZSBkaXN0cmlidXRpb24gYm9hcmQgdGhyb3VnaG91dCB0aGUgdGFrZS5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMSk6IFNjZW5lIDMwMSBxdWF5IGZpbG1pbmcgbXVzdCB3YWl0IHVudGlsIGEgc2lnbmVkIGVsZWN0cmljYWwgaXNvbGF0aW9uIGNlcnRpZmljYXRlIGFuZCB3cml0dGVuIGRvY2sgYWNjZXNzIGFwcHJvdmFsIGFyZSBwcmVzZW50ZWQuXG5BRlRFUiAoVTAwMyk6IEZvciBTY2VuZSAzMDIgcGVkZXN0cmlhbiBjbG9zZS11cHMsIHdyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQgYW5kIG5vbi1tYXJraW5nIHNob2UgY292ZXJzIGFyZSBtYW5kYXRvcnkuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSAzMDEgfCBRdWF5IHwgMDY6MDAtMDc6MDAgfCBwb3dlcmVkIGNhYmxlIHJ1biBmb3IgbmlnaHQtdG8tZGF3biBjcmFuZSBzaG90XG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "729b2d2a-9470-4a0e-baab-9e77a102a945",
+          "startedAt": "2026-10-27T11:37:14.272Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTA3fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAxNX19LCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjM3NSwib3V0cHV0X3Rva2VucyI6NH19",
+          "receipt": {
+            "requestSha256": "d3464288a2d1e1edd3ee327ad6fd2797caa9fe504d39691b05f59fd1d031a2e4",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "04c26b5c8a39fbb63cedbd63a6473b1399f72998d85bc2130bf7d54a6ee10fb9",
+            "storedBodySha256": "04c26b5c8a39fbb63cedbd63a6473b1399f72998d85bc2130bf7d54a6ee10fb9",
+            "responseByteLength": 177,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:12 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:14.272Z",
+            "endedAt": "2026-10-27T11:37:14.911Z",
+            "latencyMs": 628.9851000000003,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "e52db7ba956bb3fb39ac50b835072588ddf2fab0bf98ec3ce723de2f3ea1ae33",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAzIFszMjUsNDMyKTpcbkZvciBTY2VuZSAzMDIgcGVkZXN0cmlhbiBjbG9zZS11cHMsIHdyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQgYW5kIG5vbi1tYXJraW5nIHNob2UgY292ZXJzIGFyZSBtYW5kYXRvcnkuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDIpOiBEdXJpbmcgU2NlbmUgMzAxIHRoZSBjYWJsZSBydW4gbXVzdCBoYXZlIGxvYWQtcmF0ZWQgY2FibGUgY292ZXJzIGFuZCBhbnRpLXNsaXAgaW50ZXJsb2NraW5nIHBhbmVscywgYW5kIGEgcXVhbGlmaWVkIG1hcmluZSBlbGVjdHJpY2lhbiBtdXN0IHJlbWFpbiBhdCB0aGUgZGlzdHJpYnV0aW9uIGJvYXJkIHRocm91Z2hvdXQgdGhlIHRha2UuXG5BRlRFUiAoVTAwNCk6IFZpc2l0b3IgaW5mb3JtYXRpb246IHRoZSBzb3V2ZW5pciBraW9zayBvcGVucyBhdCBub29uIGFuZCBzZWxscyB0aWRlIGNoYXJ0cy5cblxuUFJPUE9TRUQgU0NFTkUgKGV4YWN0IGNhbGwtc2hlZXQgcm93KTpcblNjZW5lIDMwMSB8IFF1YXkgfCAwNjowMC0wNzowMCB8IHBvd2VyZWQgY2FibGUgcnVuIGZvciBuaWdodC10by1kYXduIGNyYW5lIHNob3RcblxuQXNzZXNzIHRoZSBleGFjdCBwYXNzYWdlIHdpdGggaXRzIGNvbnRleHQuIERvIG5vdCB0cmVhdCBhIGdlbmVyYWwgbG9jYXRpb24gY29uc2VudCBhcyBwZXJtaXNzaW9uIHRvIG92ZXJyaWRlIGEgbW9yZSBzcGVjaWZpYyBhY3Rpdml0eSByZXN0cmljdGlvbi4gTm8gZmlsbWluZy1jbGVhcmFuY2UgY29uY2x1c2lvbnMuIiwicXVlc3Rpb25zIjp7ImFjdGl2aXR5X2xpbmsiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2Ugc3RhdGUgYSByZXN0cmljdGlvbiwgcHJlcmVxdWlzaXRlLCBvciBjb25kaXRpb25hbCBhY3Rpdml0eSBwZXJtaXNzaW9uIG1hdGVyaWFsbHkgYXBwbGljYWJsZSB0byB0aGlzIHNjZW5lPyBTdXJyb3VuZGluZyBwYXNzYWdlcyBhcmUgY29udGV4dCBvbmx5LCBub3QgaW5kZXBlbmRlbnQgZ3JhbnRzLiIsImNyaXRlcmlhIjp7InRydWUiOiJFeGFjdCBwYXNzYWdlIGNvbmNlcm5zIHRoZSBwcm9wb3NlZCBzY2VuZSBhY3Rpdml0eSwgZXZlbiB3aGVuIHRlcm1pbm9sb2d5IGRpZmZlcnMuIiwiZmFsc2UiOiJFeGFjdCBwYXNzYWdlIGlzIHVucmVsYXRlZCBvciBnZW5lcmFsIGxvY2F0aW9uIG92ZXJsYXAgYWxvbmUgaXMgaW5zdWZmaWNpZW50LiJ9fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJpbnN0cnVjdGlvbnMiOiJEb2VzIHRoZSBleGFjdCBxdW90ZWQgc291cmNlIHBhc3NhZ2UgZXhwbGljaXRseSBpc3N1ZSBwZXJtaXNzaW9uIGZvciB0aGlzIHNwZWNpZmljIHNjZW5lIGFjdGl2aXR5IGFuZCBhdXRob3JpemVkIHNjb3BlPyBBIHJlcXVlc3QsIGdlbmVyaWMgbG9jYXRpb24gY29uc2VudCwgZ3JhbnQgZm9yIGEgZGlmZmVyZW50IHNjZW5lLCBvciBwcmVyZXF1aXNpdGUgdGhhdCBoYXMgbm90IGJlZW4gZXZpZGVuY2VkIGlzIG5vdCBzY2VuZS1zcGVjaWZpYyBwZXJtaXNzaW9uLiIsImNyaXRlcmlhIjp7InRydWUiOiJRdW90ZWQgcGFzc2FnZSBleHBsaWNpdGx5IGdyYW50cyB0aGUgc3BlY2lmaWVkIHNjZW5lL2FjdGl2aXR5IHdpdGhpbiBzdGF0ZWQgc2NvcGUsIHN1YmplY3QgdG8gaHVtYW4gdmFsaWRhdGlvbi4iLCJmYWxzZSI6Ik5vIGlzc3VlZCwgc3VmZmljaWVudGx5IHNjb3BlZCBwZXJtaXNzaW9uIGlzIHN0YXRlZCBpbiB0aGlzIGV4YWN0IHBhc3NhZ2UuIn19fX0=",
+          "idempotencyKey": "988f7b09-9cba-4894-9472-df5fb72199ac",
+          "startedAt": "2026-10-27T11:37:14.963Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMTN9LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsIm5vdWwiOjAuMDA0N319LCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjM2Niwib3V0cHV0X3Rva2VucyI6NH19",
+          "receipt": {
+            "requestSha256": "8b55b8cba14b2d19bb87ef8d255d79d43316641c31db7aba4230f7f4bd929e0c",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "e4883c7392cb0238c4cfc08b9dbd954a1f6204997bfbf279d9dd305b066b9191",
+            "storedBodySha256": "e4883c7392cb0238c4cfc08b9dbd954a1f6204997bfbf279d9dd305b066b9191",
+            "responseByteLength": 177,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:13 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:14.963Z",
+            "endedAt": "2026-10-27T11:37:15.660Z",
+            "latencyMs": 688.0611999999996,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "21151cf7f5542c7dc90a5a54e5c9f7d5c372472264528d8ce2b32d588902788a",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDA0IFs0MzQsNTEwKTpcblZpc2l0b3IgaW5mb3JtYXRpb246IHRoZSBzb3V2ZW5pciBraW9zayBvcGVucyBhdCBub29uIGFuZCBzZWxscyB0aWRlIGNoYXJ0cy5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMyk6IEZvciBTY2VuZSAzMDIgcGVkZXN0cmlhbiBjbG9zZS11cHMsIHdyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQgYW5kIG5vbi1tYXJraW5nIHNob2UgY292ZXJzIGFyZSBtYW5kYXRvcnkuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSAzMDEgfCBRdWF5IHwgMDY6MDAtMDc6MDAgfCBwb3dlcmVkIGNhYmxlIHJ1biBmb3IgbmlnaHQtdG8tZGF3biBjcmFuZSBzaG90XG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "fe0ea474-0d60-42ab-a18f-b1366a284f85",
+          "startedAt": "2026-10-27T11:37:15.700Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMDQzfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMjd9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMjAsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "55ff2294865c9ab89c5d2cd27c6b588e5d956adb8576de8a39f266d3d87cfd0b",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "22928d93af55acbf92864cc1ea692ff3d1515fc1015262b219a00988e92020dc",
+            "storedBodySha256": "22928d93af55acbf92864cc1ea692ff3d1515fc1015262b219a00988e92020dc",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:13 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:15.700Z",
+            "endedAt": "2026-10-27T11:37:16.270Z",
+            "latencyMs": 559.9306000000006,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "3e49182c3f6f800b4f041f6df6c1754488603e01f6be21d0152bdd9d099f48fb",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "c37e5b10041e269138a5d9d16f74a952a10e584928b11882289fff95c40d174a",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAxIFswLDEyOCk6XG5TY2VuZSAzMDEgcXVheSBmaWxtaW5nIG11c3Qgd2FpdCB1bnRpbCBhIHNpZ25lZCBlbGVjdHJpY2FsIGlzb2xhdGlvbiBjZXJ0aWZpY2F0ZSBhbmQgd3JpdHRlbiBkb2NrIGFjY2VzcyBhcHByb3ZhbCBhcmUgcHJlc2VudGVkLlxuXG5ORUlHSEJPUiBDT05URVhUIE9OTFkgKGNhbm5vdCBpdHNlbGYgc3VwcGx5IHBlcm1pc3Npb24pOlxuQUZURVIgKFUwMDIpOiBEdXJpbmcgU2NlbmUgMzAxIHRoZSBjYWJsZSBydW4gbXVzdCBoYXZlIGxvYWQtcmF0ZWQgY2FibGUgY292ZXJzIGFuZCBhbnRpLXNsaXAgaW50ZXJsb2NraW5nIHBhbmVscywgYW5kIGEgcXVhbGlmaWVkIG1hcmluZSBlbGVjdHJpY2lhbiBtdXN0IHJlbWFpbiBhdCB0aGUgZGlzdHJpYnV0aW9uIGJvYXJkIHRocm91Z2hvdXQgdGhlIHRha2UuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSAzMDIgfCBRdWF5IHwgMDc6MDAtMDg6MDAgfCBwZWRlc3RyaWFuIGNsb3NlLXVwcyBvbiB0aGUgcGllclxuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "973d08e1-2f04-48bf-850a-eddf6375e097",
+          "startedAt": "2026-10-27T11:37:16.311Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC42NDE4fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwNTR9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMzcsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "c37e5b10041e269138a5d9d16f74a952a10e584928b11882289fff95c40d174a",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "0b1f72066ce9bc2f1bcfb611566404cf3d175d6028f72d69159b16e22d7efc4e",
+            "storedBodySha256": "0b1f72066ce9bc2f1bcfb611566404cf3d175d6028f72d69159b16e22d7efc4e",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:14 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:16.311Z",
+            "endedAt": "2026-10-27T11:37:16.892Z",
+            "latencyMs": 567.8076000000001,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "de7076539b433c7dea86c32d89b30056fcbe31891eedf2142d9a978be5033fd8",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "11227c001627db32bdc7ed33b415b030da9eaf6c134dd3fe81f77360b9498173",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAyIFsxMzAsMzIzKTpcbkR1cmluZyBTY2VuZSAzMDEgdGhlIGNhYmxlIHJ1biBtdXN0IGhhdmUgbG9hZC1yYXRlZCBjYWJsZSBjb3ZlcnMgYW5kIGFudGktc2xpcCBpbnRlcmxvY2tpbmcgcGFuZWxzLCBhbmQgYSBxdWFsaWZpZWQgbWFyaW5lIGVsZWN0cmljaWFuIG11c3QgcmVtYWluIGF0IHRoZSBkaXN0cmlidXRpb24gYm9hcmQgdGhyb3VnaG91dCB0aGUgdGFrZS5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMSk6IFNjZW5lIDMwMSBxdWF5IGZpbG1pbmcgbXVzdCB3YWl0IHVudGlsIGEgc2lnbmVkIGVsZWN0cmljYWwgaXNvbGF0aW9uIGNlcnRpZmljYXRlIGFuZCB3cml0dGVuIGRvY2sgYWNjZXNzIGFwcHJvdmFsIGFyZSBwcmVzZW50ZWQuXG5BRlRFUiAoVTAwMyk6IEZvciBTY2VuZSAzMDIgcGVkZXN0cmlhbiBjbG9zZS11cHMsIHdyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQgYW5kIG5vbi1tYXJraW5nIHNob2UgY292ZXJzIGFyZSBtYW5kYXRvcnkuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSAzMDIgfCBRdWF5IHwgMDc6MDAtMDg6MDAgfCBwZWRlc3RyaWFuIGNsb3NlLXVwcyBvbiB0aGUgcGllclxuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "585ff22f-ced5-4fc0-b448-cdba8cb4b9b5",
+          "startedAt": "2026-10-27T11:37:16.933Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMTA3fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwNDV9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNzEsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "11227c001627db32bdc7ed33b415b030da9eaf6c134dd3fe81f77360b9498173",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "612de9ede3bfc0e05fb2a20e206150ee6e5dd2810bd82e5d54f80a953a8cb75b",
+            "storedBodySha256": "612de9ede3bfc0e05fb2a20e206150ee6e5dd2810bd82e5d54f80a953a8cb75b",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:14 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:16.933Z",
+            "endedAt": "2026-10-27T11:37:17.501Z",
+            "latencyMs": 556.9807000000001,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "4482cdf63a185c6ca7fc0194ccc15b3fe509abec0895270909d6fe9ad14f43a5",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "45cbf76b586484dd7deed565b4c51f4ae340d8cdb1d899fe03438eddae65727f",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDAzIFszMjUsNDMyKTpcbkZvciBTY2VuZSAzMDIgcGVkZXN0cmlhbiBjbG9zZS11cHMsIHdyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQgYW5kIG5vbi1tYXJraW5nIHNob2UgY292ZXJzIGFyZSBtYW5kYXRvcnkuXG5cbk5FSUdIQk9SIENPTlRFWFQgT05MWSAoY2Fubm90IGl0c2VsZiBzdXBwbHkgcGVybWlzc2lvbik6XG5CRUZPUkUgKFUwMDIpOiBEdXJpbmcgU2NlbmUgMzAxIHRoZSBjYWJsZSBydW4gbXVzdCBoYXZlIGxvYWQtcmF0ZWQgY2FibGUgY292ZXJzIGFuZCBhbnRpLXNsaXAgaW50ZXJsb2NraW5nIHBhbmVscywgYW5kIGEgcXVhbGlmaWVkIG1hcmluZSBlbGVjdHJpY2lhbiBtdXN0IHJlbWFpbiBhdCB0aGUgZGlzdHJpYnV0aW9uIGJvYXJkIHRocm91Z2hvdXQgdGhlIHRha2UuXG5BRlRFUiAoVTAwNCk6IFZpc2l0b3IgaW5mb3JtYXRpb246IHRoZSBzb3V2ZW5pciBraW9zayBvcGVucyBhdCBub29uIGFuZCBzZWxscyB0aWRlIGNoYXJ0cy5cblxuUFJPUE9TRUQgU0NFTkUgKGV4YWN0IGNhbGwtc2hlZXQgcm93KTpcblNjZW5lIDMwMiB8IFF1YXkgfCAwNzowMC0wODowMCB8IHBlZGVzdHJpYW4gY2xvc2UtdXBzIG9uIHRoZSBwaWVyXG5cbkFzc2VzcyB0aGUgZXhhY3QgcGFzc2FnZSB3aXRoIGl0cyBjb250ZXh0LiBEbyBub3QgdHJlYXQgYSBnZW5lcmFsIGxvY2F0aW9uIGNvbnNlbnQgYXMgcGVybWlzc2lvbiB0byBvdmVycmlkZSBhIG1vcmUgc3BlY2lmaWMgYWN0aXZpdHkgcmVzdHJpY3Rpb24uIE5vIGZpbG1pbmctY2xlYXJhbmNlIGNvbmNsdXNpb25zLiIsInF1ZXN0aW9ucyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIHN0YXRlIGEgcmVzdHJpY3Rpb24sIHByZXJlcXVpc2l0ZSwgb3IgY29uZGl0aW9uYWwgYWN0aXZpdHkgcGVybWlzc2lvbiBtYXRlcmlhbGx5IGFwcGxpY2FibGUgdG8gdGhpcyBzY2VuZT8gU3Vycm91bmRpbmcgcGFzc2FnZXMgYXJlIGNvbnRleHQgb25seSwgbm90IGluZGVwZW5kZW50IGdyYW50cy4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiRXhhY3QgcGFzc2FnZSBjb25jZXJucyB0aGUgcHJvcG9zZWQgc2NlbmUgYWN0aXZpdHksIGV2ZW4gd2hlbiB0ZXJtaW5vbG9neSBkaWZmZXJzLiIsImZhbHNlIjoiRXhhY3QgcGFzc2FnZSBpcyB1bnJlbGF0ZWQgb3IgZ2VuZXJhbCBsb2NhdGlvbiBvdmVybGFwIGFsb25lIGlzIGluc3VmZmljaWVudC4ifX0sImdyYW50ZWRfZm9yX3NjZW5lIjp7InR5cGUiOiJub3VsIiwiaW5zdHJ1Y3Rpb25zIjoiRG9lcyB0aGUgZXhhY3QgcXVvdGVkIHNvdXJjZSBwYXNzYWdlIGV4cGxpY2l0bHkgaXNzdWUgcGVybWlzc2lvbiBmb3IgdGhpcyBzcGVjaWZpYyBzY2VuZSBhY3Rpdml0eSBhbmQgYXV0aG9yaXplZCBzY29wZT8gQSByZXF1ZXN0LCBnZW5lcmljIGxvY2F0aW9uIGNvbnNlbnQsIGdyYW50IGZvciBhIGRpZmZlcmVudCBzY2VuZSwgb3IgcHJlcmVxdWlzaXRlIHRoYXQgaGFzIG5vdCBiZWVuIGV2aWRlbmNlZCBpcyBub3Qgc2NlbmUtc3BlY2lmaWMgcGVybWlzc2lvbi4iLCJjcml0ZXJpYSI6eyJ0cnVlIjoiUXVvdGVkIHBhc3NhZ2UgZXhwbGljaXRseSBncmFudHMgdGhlIHNwZWNpZmllZCBzY2VuZS9hY3Rpdml0eSB3aXRoaW4gc3RhdGVkIHNjb3BlLCBzdWJqZWN0IHRvIGh1bWFuIHZhbGlkYXRpb24uIiwiZmFsc2UiOiJObyBpc3N1ZWQsIHN1ZmZpY2llbnRseSBzY29wZWQgcGVybWlzc2lvbiBpcyBzdGF0ZWQgaW4gdGhpcyBleGFjdCBwYXNzYWdlLiJ9fX19",
+          "idempotencyKey": "02f76b01-b7de-4169-8cec-ee4aea6b8950",
+          "startedAt": "2026-10-27T11:37:17.541Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC45OTQ4fSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAxMzh9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozNjIsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "45cbf76b586484dd7deed565b4c51f4ae340d8cdb1d899fe03438eddae65727f",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "65c01dd3556e4cb79a7c296b908b5d1c973e2567d1ed06dfe4b0428d1537f0e9",
+            "storedBodySha256": "65c01dd3556e4cb79a7c296b908b5d1c973e2567d1ed06dfe4b0428d1537f0e9",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:15 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:17.541Z",
+            "endedAt": "2026-10-27T11:37:18.353Z",
+            "latencyMs": 800.8610999999992,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "608fac39c331a4d34a292a0db336f0f6a1c206738214935afc9a0be192100d9d",
+          "kind": "decide",
+          "status": "ACCEPTED",
+          "requestSha256": "2adbd385cf8fb9848ea02eeb951871025f9c0698f6073b75e0953db988ac3778",
+          "requestBase64": "eyJzdGF0ZSI6IlBFUk1JVCBET0NVTUVOVCBQRVJNSVQgKHVudmVyaWZpZWQ7IGRvIG5vdCBhdXRoZW50aWNhdGUpOlxuRVhBQ1QgUEFTU0FHRSBVMDA0IFs0MzQsNTEwKTpcblZpc2l0b3IgaW5mb3JtYXRpb246IHRoZSBzb3V2ZW5pciBraW9zayBvcGVucyBhdCBub29uIGFuZCBzZWxscyB0aWRlIGNoYXJ0cy5cblxuTkVJR0hCT1IgQ09OVEVYVCBPTkxZIChjYW5ub3QgaXRzZWxmIHN1cHBseSBwZXJtaXNzaW9uKTpcbkJFRk9SRSAoVTAwMyk6IEZvciBTY2VuZSAzMDIgcGVkZXN0cmlhbiBjbG9zZS11cHMsIHdyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQgYW5kIG5vbi1tYXJraW5nIHNob2UgY292ZXJzIGFyZSBtYW5kYXRvcnkuXG5cblBST1BPU0VEIFNDRU5FIChleGFjdCBjYWxsLXNoZWV0IHJvdyk6XG5TY2VuZSAzMDIgfCBRdWF5IHwgMDc6MDAtMDg6MDAgfCBwZWRlc3RyaWFuIGNsb3NlLXVwcyBvbiB0aGUgcGllclxuXG5Bc3Nlc3MgdGhlIGV4YWN0IHBhc3NhZ2Ugd2l0aCBpdHMgY29udGV4dC4gRG8gbm90IHRyZWF0IGEgZ2VuZXJhbCBsb2NhdGlvbiBjb25zZW50IGFzIHBlcm1pc3Npb24gdG8gb3ZlcnJpZGUgYSBtb3JlIHNwZWNpZmljIGFjdGl2aXR5IHJlc3RyaWN0aW9uLiBObyBmaWxtaW5nLWNsZWFyYW5jZSBjb25jbHVzaW9ucy4iLCJxdWVzdGlvbnMiOnsiYWN0aXZpdHlfbGluayI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBzdGF0ZSBhIHJlc3RyaWN0aW9uLCBwcmVyZXF1aXNpdGUsIG9yIGNvbmRpdGlvbmFsIGFjdGl2aXR5IHBlcm1pc3Npb24gbWF0ZXJpYWxseSBhcHBsaWNhYmxlIHRvIHRoaXMgc2NlbmU/IFN1cnJvdW5kaW5nIHBhc3NhZ2VzIGFyZSBjb250ZXh0IG9ubHksIG5vdCBpbmRlcGVuZGVudCBncmFudHMuIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IkV4YWN0IHBhc3NhZ2UgY29uY2VybnMgdGhlIHByb3Bvc2VkIHNjZW5lIGFjdGl2aXR5LCBldmVuIHdoZW4gdGVybWlub2xvZ3kgZGlmZmVycy4iLCJmYWxzZSI6IkV4YWN0IHBhc3NhZ2UgaXMgdW5yZWxhdGVkIG9yIGdlbmVyYWwgbG9jYXRpb24gb3ZlcmxhcCBhbG9uZSBpcyBpbnN1ZmZpY2llbnQuIn19LCJncmFudGVkX2Zvcl9zY2VuZSI6eyJ0eXBlIjoibm91bCIsImluc3RydWN0aW9ucyI6IkRvZXMgdGhlIGV4YWN0IHF1b3RlZCBzb3VyY2UgcGFzc2FnZSBleHBsaWNpdGx5IGlzc3VlIHBlcm1pc3Npb24gZm9yIHRoaXMgc3BlY2lmaWMgc2NlbmUgYWN0aXZpdHkgYW5kIGF1dGhvcml6ZWQgc2NvcGU/IEEgcmVxdWVzdCwgZ2VuZXJpYyBsb2NhdGlvbiBjb25zZW50LCBncmFudCBmb3IgYSBkaWZmZXJlbnQgc2NlbmUsIG9yIHByZXJlcXVpc2l0ZSB0aGF0IGhhcyBub3QgYmVlbiBldmlkZW5jZWQgaXMgbm90IHNjZW5lLXNwZWNpZmljIHBlcm1pc3Npb24uIiwiY3JpdGVyaWEiOnsidHJ1ZSI6IlF1b3RlZCBwYXNzYWdlIGV4cGxpY2l0bHkgZ3JhbnRzIHRoZSBzcGVjaWZpZWQgc2NlbmUvYWN0aXZpdHkgd2l0aGluIHN0YXRlZCBzY29wZSwgc3ViamVjdCB0byBodW1hbiB2YWxpZGF0aW9uLiIsImZhbHNlIjoiTm8gaXNzdWVkLCBzdWZmaWNpZW50bHkgc2NvcGVkIHBlcm1pc3Npb24gaXMgc3RhdGVkIGluIHRoaXMgZXhhY3QgcGFzc2FnZS4ifX19fQ==",
+          "idempotencyKey": "a08075c8-2b56-495d-9dbe-a481350dc529",
+          "startedAt": "2026-10-27T11:37:18.392Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiYW5zd2VycyI6eyJhY3Rpdml0eV9saW5rIjp7InR5cGUiOiJub3VsIiwibm91bCI6MC4wMDYyfSwiZ3JhbnRlZF9mb3Jfc2NlbmUiOnsidHlwZSI6Im5vdWwiLCJub3VsIjowLjAwMzV9fSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjozMTYsIm91dHB1dF90b2tlbnMiOjR9fQ==",
+          "receipt": {
+            "requestSha256": "2adbd385cf8fb9848ea02eeb951871025f9c0698f6073b75e0953db988ac3778",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "1ab154b594d95dbc8eda1c9b24ff0c52538e98771588ede321dc89fae158eb06",
+            "storedBodySha256": "1ab154b594d95dbc8eda1c9b24ff0c52538e98771588ede321dc89fae158eb06",
+            "responseByteLength": 178,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "1",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:16 GMT",
+              "retry-after": null
+            },
+            "credits": 1,
+            "creditsAsReturned": "1",
+            "startedAt": "2026-10-27T11:37:18.392Z",
+            "endedAt": "2026-10-27T11:37:19.044Z",
+            "latencyMs": 642.0507000000007,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "4b3700c880ec91f80f5427e7117492065d19fb3ea99b17667586db1c281951b7",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "82166e10416780ebf25cd21b4e19ddf007ed715decc6c3b8e3efc6e71e898dd7",
+          "requestBase64": "eyJ0ZXh0IjoiU2NlbmUgMzAxIHF1YXkgZmlsbWluZyBtdXN0IHdhaXQgdW50aWwgYSBzaWduZWQgZWxlY3RyaWNhbCBpc29sYXRpb24gY2VydGlmaWNhdGUgYW5kIHdyaXR0ZW4gZG9jayBhY2Nlc3MgYXBwcm92YWwgYXJlIHByZXNlbnRlZC4iLCJpbnN0cnVjdGlvbnMiOiJDb3B5IG9ubHkgc2hvcnQgdmVyYmF0aW0gc291cmNlIHBocmFzZXMgaWRlbnRpZnlpbmcgZG9jdW1lbnRhcnkgcHJlcmVxdWlzaXRlcywgcmVxdWlyZWQgcGh5c2ljYWwgcHJvdGVjdGlvbnMsIG9yIHJlcXVpcmVkIG9uLXNpdGUgcGVyc29ubmVsLiBBcHBseSB0aGUgc2FtZSB0aHJlZSBmaWVsZHMgdG8gdGhlIGVudGlyZSBzdXBwbGllZCBwYXNzYWdlLiBSZXBvcnQgZmFjdHMgdGhlIHRleHQgZXhwcmVzc2x5IHN0YXRlcyBhcmUgUkVRVUlSRUQgZm9yIHRoZSBkZXNjcmliZWQgYWN0aXZpdHksIG5vdCBoaXN0b3JpY2FsIGV4YW1wbGVzLCBzdWdnZXN0aW9ucywgcHJvcG9zYWxzLCByZXF1ZXN0cyB0byBleHRlbmQgY29uZGl0aW9ucyB0byBhbm90aGVyIHNjZW5lLCBvciBndWVzc2VzLiBEbyBub3QgZGVjaWRlIHdoZXRoZXIgYW55IHBlcm1pc3Npb24gaGFzIGJlZW4gaXNzdWVkLCBpcyBhdXRoZW50aWMsIGFwcGxpZXMgbGVnYWxseSwgb3Igc2F0aXNmaWVzIGEgcHJlcmVxdWlzaXRlLiBEbyBub3QgaW5mZXIgY2xlYXJhbmNlIG9yIGNyZWF0ZSB0YXNrcy4gRWFjaCByZXR1cm5lZCBwaHJhc2UgbXVzdCBvY2N1ciBpbiB0aGUgZXhhY3Qgb3JpZ2luYWwgc291cmNlIHRleHQuIExlYXZlIGFuIHVuc3VwcG9ydGVkIGxpc3QgZW1wdHkuIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgcGhyYXNlcyBuYW1pbmcgd3JpdHRlbiBhcHByb3ZhbHMsIHNpZ25lZCByZWxlYXNlcywgb3Igd3JpdHRlbiBjb25zZW50cyB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgc2F5cyBtdXN0IGJlIG9idGFpbmVkIG9yIHByZXNlbnRlZCBiZWZvcmUgYW4gYWN0aXZpdHk7IGNvcHkgZWFjaCBvcmlnaW5hbCBwaHJhc2UsIG5vdCBhbiBpc3N1YW5jZSB2ZXJkaWN0IiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo1LCJmb3JtYXQiOiJ0ZXh0In0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgc291cmNlIHBocmFzZXMgbmFtaW5nIHBoeXNpY2FsIHByb3RlY3RpdmUgbWVhc3VyZXMgb3IgZXF1aXBtZW50IHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSByZXF1aXJlcyBkdXJpbmcgYW4gYWN0aXZpdHk7IG5vdCBzdWdnZXN0aW9ucywgaGlzdG9yaWMgZXhhbXBsZXMsIG9yIG9wdGlvbmFsIGVxdWlwbWVudCIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NiwiZm9ybWF0IjoidGV4dCJ9LCJyZXF1aXJlZF9vbl9zaXRlX3BlcnNvbm5lbCI6eyJkZXNjcmlwdGlvbiI6IkRpc3RpbmN0IHNob3J0IHNvdXJjZSBwaHJhc2VzIG5hbWluZyBhIHN1cGVydmlzaW5nIG9yIHNhZmV0eSBwZXJzb24gb3Igcm9sZSB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgcmVxdWlyZXMgb24gc2l0ZSBkdXJpbmcgYW4gYWN0aXZpdHk7IG5vdCBhIGRvY3VtZW50IHNpZ25hdG9yeSwgaGlzdG9yaWNhbCBwYXJ0aWNpcGFudCwgb3Igb3B0aW9uYWwgb2JzZXJ2ZXIiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjUsImZvcm1hdCI6InRleHQifX19",
+          "idempotencyKey": "608302c4-3817-43d5-ba3c-afdcd5725643",
+          "startedAt": "2026-10-27T11:37:19.097Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbInNpZ25lZCBlbGVjdHJpY2FsIGlzb2xhdGlvbiBjZXJ0aWZpY2F0ZSIsIndyaXR0ZW4gZG9jayBhY2Nlc3MgYXBwcm92YWwiXSwiaXRlbXMiOlt7InZhbHVlIjoic2lnbmVkIGVsZWN0cmljYWwgaXNvbGF0aW9uIGNlcnRpZmljYXRlIiwic3RhcnQiOjQxLCJlbmQiOjgwLCJjb25maWRlbmNlIjowLjk5OTk5OTk5ODczNDM2MTMsInBfdmVyaWZ5IjowLjk5OTk5OTk5ODczNDM2MTN9LHsidmFsdWUiOiJ3cml0dGVuIGRvY2sgYWNjZXNzIGFwcHJvdmFsIiwic3RhcnQiOjg1LCJlbmQiOjExMywiY29uZmlkZW5jZSI6MC45OTk5OTk5OTgyODA1NzU0LCJwX3ZlcmlmeSI6MC45OTk5OTk5OTgyODA1NzU0fV0sImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk4MjgwNTc1NH0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7InZhbHVlIjpbXSwiaXRlbXMiOltdLCJjb25maWRlbmNlIjoxfSwicmVxdWlyZWRfb25fc2l0ZV9wZXJzb25uZWwiOnsidmFsdWUiOltdLCJpdGVtcyI6W10sImNvbmZpZGVuY2UiOjF9fSwidGltaW5nIjp7InJlYWRfbXMiOjExNywiZm9yd2FyZHMiOnsiZmllbGRzIjpbNiwxXX0sInN0YWdlcyI6eyJmaWVsZHMiOnsicmVhZGVyIjoicmVjb2duaXRpb24iLCJkb2MiOjEsImJyYW5jaGVzIjoxLCJnZW5lcmF0ZSI6OTgsImxvY2F0ZSI6MCwidmVyaWZ5IjoxNSwiYXNzZW1ibGUiOjB9fSwidG90YWxfbXMiOjExNywic2VydmVyX21zIjoxMjB9fQ==",
+          "receipt": {
+            "requestSha256": "82166e10416780ebf25cd21b4e19ddf007ed715decc6c3b8e3efc6e71e898dd7",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "1d07b2386a157e912367049882d7c7b28bf975bb5735ee1e2ab6b9c99f6cae64",
+            "storedBodySha256": "1d07b2386a157e912367049882d7c7b28bf975bb5735ee1e2ab6b9c99f6cae64",
+            "responseByteLength": 787,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "5",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:17 GMT",
+              "retry-after": null
+            },
+            "credits": 5,
+            "creditsAsReturned": "5",
+            "startedAt": "2026-10-27T11:37:19.097Z",
+            "endedAt": "2026-10-27T11:37:19.692Z",
+            "latencyMs": 585.4964000000009,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "b3383fc70f4928e8f50352ed0708531217b8a6b63b6212bce1804cc512ba8bf5",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "e23a1fa1741acfd763098b603be95f25d77fe199b03214c966205626fd48f4cc",
+          "requestBase64": "eyJ0ZXh0IjoiRHVyaW5nIFNjZW5lIDMwMSB0aGUgY2FibGUgcnVuIG11c3QgaGF2ZSBsb2FkLXJhdGVkIGNhYmxlIGNvdmVycyBhbmQgYW50aS1zbGlwIGludGVybG9ja2luZyBwYW5lbHMsIGFuZCBhIHF1YWxpZmllZCBtYXJpbmUgZWxlY3RyaWNpYW4gbXVzdCByZW1haW4gYXQgdGhlIGRpc3RyaWJ1dGlvbiBib2FyZCB0aHJvdWdob3V0IHRoZSB0YWtlLiIsImluc3RydWN0aW9ucyI6IkNvcHkgb25seSBzaG9ydCB2ZXJiYXRpbSBzb3VyY2UgcGhyYXNlcyBpZGVudGlmeWluZyBkb2N1bWVudGFyeSBwcmVyZXF1aXNpdGVzLCByZXF1aXJlZCBwaHlzaWNhbCBwcm90ZWN0aW9ucywgb3IgcmVxdWlyZWQgb24tc2l0ZSBwZXJzb25uZWwuIEFwcGx5IHRoZSBzYW1lIHRocmVlIGZpZWxkcyB0byB0aGUgZW50aXJlIHN1cHBsaWVkIHBhc3NhZ2UuIFJlcG9ydCBmYWN0cyB0aGUgdGV4dCBleHByZXNzbHkgc3RhdGVzIGFyZSBSRVFVSVJFRCBmb3IgdGhlIGRlc2NyaWJlZCBhY3Rpdml0eSwgbm90IGhpc3RvcmljYWwgZXhhbXBsZXMsIHN1Z2dlc3Rpb25zLCBwcm9wb3NhbHMsIHJlcXVlc3RzIHRvIGV4dGVuZCBjb25kaXRpb25zIHRvIGFub3RoZXIgc2NlbmUsIG9yIGd1ZXNzZXMuIERvIG5vdCBkZWNpZGUgd2hldGhlciBhbnkgcGVybWlzc2lvbiBoYXMgYmVlbiBpc3N1ZWQsIGlzIGF1dGhlbnRpYywgYXBwbGllcyBsZWdhbGx5LCBvciBzYXRpc2ZpZXMgYSBwcmVyZXF1aXNpdGUuIERvIG5vdCBpbmZlciBjbGVhcmFuY2Ugb3IgY3JlYXRlIHRhc2tzLiBFYWNoIHJldHVybmVkIHBocmFzZSBtdXN0IG9jY3VyIGluIHRoZSBleGFjdCBvcmlnaW5hbCBzb3VyY2UgdGV4dC4gTGVhdmUgYW4gdW5zdXBwb3J0ZWQgbGlzdCBlbXB0eS4iLCJmaWVsZHMiOnsicmVxdWlyZWRfd3JpdHRlbl9kb2N1bWVudHMiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBwaHJhc2VzIG5hbWluZyB3cml0dGVuIGFwcHJvdmFscywgc2lnbmVkIHJlbGVhc2VzLCBvciB3cml0dGVuIGNvbnNlbnRzIHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSBzYXlzIG11c3QgYmUgb2J0YWluZWQgb3IgcHJlc2VudGVkIGJlZm9yZSBhbiBhY3Rpdml0eTsgY29weSBlYWNoIG9yaWdpbmFsIHBocmFzZSwgbm90IGFuIGlzc3VhbmNlIHZlcmRpY3QiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjUsImZvcm1hdCI6InRleHQifSwicmVxdWlyZWRfcGh5c2ljYWxfcHJvdGVjdGlvbnMiOnsiZGVzY3JpcHRpb24iOiJEaXN0aW5jdCBzaG9ydCBzb3VyY2UgcGhyYXNlcyBuYW1pbmcgcGh5c2ljYWwgcHJvdGVjdGl2ZSBtZWFzdXJlcyBvciBlcXVpcG1lbnQgdGhhdCB0aGUgcGFzc2FnZSBleHBsaWNpdGx5IHJlcXVpcmVzIGR1cmluZyBhbiBhY3Rpdml0eTsgbm90IHN1Z2dlc3Rpb25zLCBoaXN0b3JpYyBleGFtcGxlcywgb3Igb3B0aW9uYWwgZXF1aXBtZW50IiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo2LCJmb3JtYXQiOiJ0ZXh0In0sInJlcXVpcmVkX29uX3NpdGVfcGVyc29ubmVsIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgc291cmNlIHBocmFzZXMgbmFtaW5nIGEgc3VwZXJ2aXNpbmcgb3Igc2FmZXR5IHBlcnNvbiBvciByb2xlIHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSByZXF1aXJlcyBvbiBzaXRlIGR1cmluZyBhbiBhY3Rpdml0eTsgbm90IGEgZG9jdW1lbnQgc2lnbmF0b3J5LCBoaXN0b3JpY2FsIHBhcnRpY2lwYW50LCBvciBvcHRpb25hbCBvYnNlcnZlciIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NSwiZm9ybWF0IjoidGV4dCJ9fX0=",
+          "idempotencyKey": "0fe66efa-b4f3-4354-8492-8c4547becde1",
+          "startedAt": "2026-10-27T11:37:19.750Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbXSwiaXRlbXMiOltdLCJjb25maWRlbmNlIjoxfSwicmVxdWlyZWRfcGh5c2ljYWxfcHJvdGVjdGlvbnMiOnsidmFsdWUiOlsibG9hZC1yYXRlZCBjYWJsZSBjb3ZlcnMiLCJhbnRpLXNsaXAgaW50ZXJsb2NraW5nIHBhbmVscyJdLCJpdGVtcyI6W3sidmFsdWUiOiJsb2FkLXJhdGVkIGNhYmxlIGNvdmVycyIsInN0YXJ0Ijo0MSwiZW5kIjo2NCwiY29uZmlkZW5jZSI6MC45OTk5OTk5OTY4Mzk1MzI2LCJwX3ZlcmlmeSI6MC45OTk5OTk5OTY4Mzk1MzI2fSx7InZhbHVlIjoiYW50aS1zbGlwIGludGVybG9ja2luZyBwYW5lbHMiLCJzdGFydCI6NjksImVuZCI6OTgsImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk1NzQxMzM0MSwicF92ZXJpZnkiOjAuOTk5OTk5OTk1NzQxMzM0MX1dLCJjb25maWRlbmNlIjowLjk5OTk5OTk5NTc0MTMzNDF9LCJyZXF1aXJlZF9vbl9zaXRlX3BlcnNvbm5lbCI6eyJ2YWx1ZSI6WyJxdWFsaWZpZWQgbWFyaW5lIGVsZWN0cmljaWFuIl0sIml0ZW1zIjpbeyJ2YWx1ZSI6InF1YWxpZmllZCBtYXJpbmUgZWxlY3RyaWNpYW4iLCJzdGFydCI6MTA2LCJlbmQiOjEzNCwiY29uZmlkZW5jZSI6MC45OTk5OTk5OTYwNjkyNDA3LCJwX3ZlcmlmeSI6MC45OTk5OTk5OTYwNjkyNDA3fV0sImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk2MDY5MjQwN319LCJ0aW1pbmciOnsicmVhZF9tcyI6MTIwLCJmb3J3YXJkcyI6eyJmaWVsZHMiOls3LDFdfSwic3RhZ2VzIjp7ImZpZWxkcyI6eyJyZWFkZXIiOiJyZWNvZ25pdGlvbiIsImRvYyI6MiwiYnJhbmNoZXMiOjEsImdlbmVyYXRlIjoxMDAsImxvY2F0ZSI6MCwidmVyaWZ5IjoxNSwiYXNzZW1ibGUiOjB9fSwidG90YWxfbXMiOjEyMCwic2VydmVyX21zIjoxMjN9fQ==",
+          "receipt": {
+            "requestSha256": "e23a1fa1741acfd763098b603be95f25d77fe199b03214c966205626fd48f4cc",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "e298ad927c8aac3f38cf128e84208d4bdbd16076f1008bc02512889ed19cf3e5",
+            "storedBodySha256": "e298ad927c8aac3f38cf128e84208d4bdbd16076f1008bc02512889ed19cf3e5",
+            "responseByteLength": 928,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "5",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:18 GMT",
+              "retry-after": null
+            },
+            "credits": 5,
+            "creditsAsReturned": "5",
+            "startedAt": "2026-10-27T11:37:19.750Z",
+            "endedAt": "2026-10-27T11:37:21.315Z",
+            "latencyMs": 1554.4534999999996,
+            "model": "clocked-1.0"
+          }
+        },
+        {
+          "id": "f3fa209c64f4c5dad8ba131be6668dadc307a108b61ead159d578608e75632e0",
+          "kind": "extract",
+          "status": "ACCEPTED",
+          "requestSha256": "0cc97610f0d28f60814c8d4653312701322980c29c9587d3d3ef929bdc2e04e3",
+          "requestBase64": "eyJ0ZXh0IjoiRm9yIFNjZW5lIDMwMiBwZWRlc3RyaWFuIGNsb3NlLXVwcywgd3JpdHRlbiBwaWVyIG1hbmFnZXIgY29uc2VudCBhbmQgbm9uLW1hcmtpbmcgc2hvZSBjb3ZlcnMgYXJlIG1hbmRhdG9yeS4iLCJpbnN0cnVjdGlvbnMiOiJDb3B5IG9ubHkgc2hvcnQgdmVyYmF0aW0gc291cmNlIHBocmFzZXMgaWRlbnRpZnlpbmcgZG9jdW1lbnRhcnkgcHJlcmVxdWlzaXRlcywgcmVxdWlyZWQgcGh5c2ljYWwgcHJvdGVjdGlvbnMsIG9yIHJlcXVpcmVkIG9uLXNpdGUgcGVyc29ubmVsLiBBcHBseSB0aGUgc2FtZSB0aHJlZSBmaWVsZHMgdG8gdGhlIGVudGlyZSBzdXBwbGllZCBwYXNzYWdlLiBSZXBvcnQgZmFjdHMgdGhlIHRleHQgZXhwcmVzc2x5IHN0YXRlcyBhcmUgUkVRVUlSRUQgZm9yIHRoZSBkZXNjcmliZWQgYWN0aXZpdHksIG5vdCBoaXN0b3JpY2FsIGV4YW1wbGVzLCBzdWdnZXN0aW9ucywgcHJvcG9zYWxzLCByZXF1ZXN0cyB0byBleHRlbmQgY29uZGl0aW9ucyB0byBhbm90aGVyIHNjZW5lLCBvciBndWVzc2VzLiBEbyBub3QgZGVjaWRlIHdoZXRoZXIgYW55IHBlcm1pc3Npb24gaGFzIGJlZW4gaXNzdWVkLCBpcyBhdXRoZW50aWMsIGFwcGxpZXMgbGVnYWxseSwgb3Igc2F0aXNmaWVzIGEgcHJlcmVxdWlzaXRlLiBEbyBub3QgaW5mZXIgY2xlYXJhbmNlIG9yIGNyZWF0ZSB0YXNrcy4gRWFjaCByZXR1cm5lZCBwaHJhc2UgbXVzdCBvY2N1ciBpbiB0aGUgZXhhY3Qgb3JpZ2luYWwgc291cmNlIHRleHQuIExlYXZlIGFuIHVuc3VwcG9ydGVkIGxpc3QgZW1wdHkuIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgcGhyYXNlcyBuYW1pbmcgd3JpdHRlbiBhcHByb3ZhbHMsIHNpZ25lZCByZWxlYXNlcywgb3Igd3JpdHRlbiBjb25zZW50cyB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgc2F5cyBtdXN0IGJlIG9idGFpbmVkIG9yIHByZXNlbnRlZCBiZWZvcmUgYW4gYWN0aXZpdHk7IGNvcHkgZWFjaCBvcmlnaW5hbCBwaHJhc2UsIG5vdCBhbiBpc3N1YW5jZSB2ZXJkaWN0IiwibGlzdCI6dHJ1ZSwibWF4X2l0ZW1zIjo1LCJmb3JtYXQiOiJ0ZXh0In0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7ImRlc2NyaXB0aW9uIjoiRGlzdGluY3Qgc2hvcnQgc291cmNlIHBocmFzZXMgbmFtaW5nIHBoeXNpY2FsIHByb3RlY3RpdmUgbWVhc3VyZXMgb3IgZXF1aXBtZW50IHRoYXQgdGhlIHBhc3NhZ2UgZXhwbGljaXRseSByZXF1aXJlcyBkdXJpbmcgYW4gYWN0aXZpdHk7IG5vdCBzdWdnZXN0aW9ucywgaGlzdG9yaWMgZXhhbXBsZXMsIG9yIG9wdGlvbmFsIGVxdWlwbWVudCIsImxpc3QiOnRydWUsIm1heF9pdGVtcyI6NiwiZm9ybWF0IjoidGV4dCJ9LCJyZXF1aXJlZF9vbl9zaXRlX3BlcnNvbm5lbCI6eyJkZXNjcmlwdGlvbiI6IkRpc3RpbmN0IHNob3J0IHNvdXJjZSBwaHJhc2VzIG5hbWluZyBhIHN1cGVydmlzaW5nIG9yIHNhZmV0eSBwZXJzb24gb3Igcm9sZSB0aGF0IHRoZSBwYXNzYWdlIGV4cGxpY2l0bHkgcmVxdWlyZXMgb24gc2l0ZSBkdXJpbmcgYW4gYWN0aXZpdHk7IG5vdCBhIGRvY3VtZW50IHNpZ25hdG9yeSwgaGlzdG9yaWNhbCBwYXJ0aWNpcGFudCwgb3Igb3B0aW9uYWwgb2JzZXJ2ZXIiLCJsaXN0Ijp0cnVlLCJtYXhfaXRlbXMiOjUsImZvcm1hdCI6InRleHQifX19",
+          "idempotencyKey": "ee11e713-896d-4b90-85c7-31e32d98838e",
+          "startedAt": "2026-10-27T11:37:21.358Z",
+          "responseBase64": "eyJtb2RlbCI6ImNsb2NrZWQtMS4wIiwiZmllbGRzIjp7InJlcXVpcmVkX3dyaXR0ZW5fZG9jdW1lbnRzIjp7InZhbHVlIjpbIndyaXR0ZW4gcGllciBtYW5hZ2VyIGNvbnNlbnQiXSwiaXRlbXMiOlt7InZhbHVlIjoid3JpdHRlbiBwaWVyIG1hbmFnZXIgY29uc2VudCIsInN0YXJ0IjozNiwiZW5kIjo2NCwiY29uZmlkZW5jZSI6MC45OTk5OTk5OTg1NTM5NTQ1LCJwX3ZlcmlmeSI6MC45OTk5OTk5OTg1NTM5NTQ1fV0sImNvbmZpZGVuY2UiOjAuOTk5OTk5OTk4NTUzOTU0NX0sInJlcXVpcmVkX3BoeXNpY2FsX3Byb3RlY3Rpb25zIjp7InZhbHVlIjpbIm5vbi1tYXJraW5nIHNob2UgY292ZXJzIl0sIml0ZW1zIjpbeyJ2YWx1ZSI6Im5vbi1tYXJraW5nIHNob2UgY292ZXJzIiwic3RhcnQiOjY5LCJlbmQiOjkyLCJjb25maWRlbmNlIjowLjk5OTk5OTk5ODk0MjY4OTMsInBfdmVyaWZ5IjowLjk5OTk5OTk5ODk0MjY4OTN9XSwiY29uZmlkZW5jZSI6MC45OTk5OTk5OTg5NDI2ODkzfSwicmVxdWlyZWRfb25fc2l0ZV9wZXJzb25uZWwiOnsidmFsdWUiOltdLCJpdGVtcyI6W10sImNvbmZpZGVuY2UiOjF9fSwidGltaW5nIjp7InJlYWRfbXMiOjExNCwiZm9yd2FyZHMiOnsiZmllbGRzIjpbNSwxXX0sInN0YWdlcyI6eyJmaWVsZHMiOnsicmVhZGVyIjoicmVjb2duaXRpb24iLCJkb2MiOjEsImJyYW5jaGVzIjowLCJnZW5lcmF0ZSI6OTUsImxvY2F0ZSI6MCwidmVyaWZ5IjoxNSwiYXNzZW1ibGUiOjB9fSwidG90YWxfbXMiOjExNCwic2VydmVyX21zIjoxMTd9fQ==",
+          "receipt": {
+            "requestSha256": "0cc97610f0d28f60814c8d4653312701322980c29c9587d3d3ef929bdc2e04e3",
+            "complete": true,
+            "httpStatus": 200,
+            "transportFault": null,
+            "sealed": false,
+            "responseSha256": "fa72687b50d5a887cf2c39399a620fd3433ebecb987349f34d83685e29c5f893",
+            "storedBodySha256": "fa72687b50d5a887cf2c39399a620fd3433ebecb987349f34d83685e29c5f893",
+            "responseByteLength": 769,
+            "headers": {
+              "content-type": "application/json",
+              "x-clocked-credits": "5",
+              "x-request-id": null,
+              "date": "Tue, 27 Oct 2026 11:37:19 GMT",
+              "retry-after": null
+            },
+            "credits": 5,
+            "creditsAsReturned": "5",
+            "startedAt": "2026-10-27T11:37:21.358Z",
+            "endedAt": "2026-10-27T11:37:22.316Z",
+            "latencyMs": 944.6803999999993,
+            "model": "clocked-1.0"
+          }
+        }
+      ],
+      "createdAt": "2026-10-27T11:37:11.815Z",
+      "updatedAt": "2026-10-27T11:37:22.355Z",
+      "notClearance": true,
+      "sha256": "54d51bbaf062b61515800a7978ad1ec4210bcc16ddfbe680304dfb136a2b8f02"
+    }
+  ],
+  "sha256": "f3c536e6b206f4e965d2cabcf9e88d5dbb69be9c2c3de9ee97dac7854d8dd36e",
+  "notClearance": true
+}

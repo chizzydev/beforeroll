@@ -1,0 +1,303 @@
+{
+  "schema": "beforeroll-batch-b-offline-comparison-v1",
+  "at": "2026-10-27T16:42:43.109Z",
+  "comparisonMethod": "A uses unchanged deterministic source processing. B is a non-dispatched offline ablation of the same genuine Decide/Extract receipts with no Fill interpretation. C is the genuine browser-dispatched complete three-endpoint job after generic projection repair. No independent timing/time-saving trial.",
+  "campaign": {
+    "requests": 39,
+    "credits": 150,
+    "latencyMs": 30522.2643999994,
+    "byEndpoint": {
+      "decide": {
+        "requests": 14,
+        "credits": 14,
+        "latencyMs": 8749.775799999712
+      },
+      "extract": {
+        "requests": 4,
+        "credits": 16,
+        "latencyMs": 2574.347399999853
+      },
+      "fill": {
+        "requests": 21,
+        "credits": 120,
+        "latencyMs": 19198.141199999834
+      }
+    },
+    "requestCeiling": 80,
+    "creditCeiling": 400,
+    "remainingRequests": 41,
+    "remainingCredits": 250,
+    "unknownOutcomes": 0
+  },
+  "heroByEndpoint": {
+    "decide": {
+      "requests": 14,
+      "credits": 14,
+      "latencyMs": 9221.028200000292
+    },
+    "extract": {
+      "requests": 4,
+      "credits": 16,
+      "latencyMs": 2692.42499999993
+    },
+    "fill": {
+      "requests": 5,
+      "credits": 32,
+      "latencyMs": 3554.29580000008
+    }
+  },
+  "inventoryIntegrity": [
+    {
+      "documentId": "VENUE",
+      "units": 1,
+      "unrepresentedNonWhitespace": 0,
+      "overlappingCodepoints": 0
+    },
+    {
+      "documentId": "LENDER",
+      "units": 2,
+      "unrepresentedNonWhitespace": 0,
+      "overlappingCodepoints": 0
+    },
+    {
+      "documentId": "CORRESPONDENCE",
+      "units": 2,
+      "unrepresentedNonWhitespace": 0,
+      "overlappingCodepoints": 0
+    },
+    {
+      "documentId": "VISITOR",
+      "units": 2,
+      "unrepresentedNonWhitespace": 0,
+      "overlappingCodepoints": 0
+    }
+  ],
+  "expectedSpanDerivation": [
+    {
+      "sceneId": "S31",
+      "field": "required_on_site_personnel",
+      "quote": "venue duty officer",
+      "documentId": "VENUE",
+      "permitRange": [
+        99,
+        117
+      ]
+    },
+    {
+      "sceneId": "S32",
+      "field": "required_on_site_personnel",
+      "quote": "venue duty officer",
+      "documentId": "VENUE",
+      "permitRange": [
+        99,
+        117
+      ]
+    },
+    {
+      "sceneId": "S31",
+      "field": "required_written_documents",
+      "quote": "written lender consent",
+      "documentId": "LENDER",
+      "permitRange": [
+        65,
+        87
+      ]
+    },
+    {
+      "sceneId": "S31",
+      "field": "required_physical_protections",
+      "quote": "supporting book cradle",
+      "documentId": "LENDER",
+      "permitRange": [
+        132,
+        154
+      ]
+    },
+    {
+      "sceneId": "S31",
+      "field": "required_physical_protections",
+      "quote": "padded transfer tray",
+      "documentId": "LENDER",
+      "permitRange": [
+        161,
+        181
+      ]
+    },
+    {
+      "sceneId": "S31",
+      "field": "required_on_site_personnel",
+      "quote": "collections conservator",
+      "documentId": "LENDER",
+      "permitRange": [
+        203,
+        226
+      ]
+    }
+  ],
+  "A": {
+    "modelDerivedCandidates": 0,
+    "sourceTasks": 14,
+    "originalManualReviewsPreserved": true,
+    "projectionCpuMs": 27.06669999999997,
+    "providerRequests": 0
+  },
+  "B": {
+    "prerequisites": [
+      {
+        "sceneId": "S31",
+        "field": "required_on_site_personnel",
+        "quote": "venue duty officer"
+      },
+      {
+        "sceneId": "S32",
+        "field": "required_on_site_personnel",
+        "quote": "venue duty officer"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_written_documents",
+        "quote": "written lender consent"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_physical_protections",
+        "quote": "supporting book cradle"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_physical_protections",
+        "quote": "padded transfer tray"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_on_site_personnel",
+        "quote": "collections conservator"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_written_documents",
+        "quote": "Consent Schedule CS-9"
+      }
+    ],
+    "correct": 6,
+    "omissions": [],
+    "unsupported": [
+      {
+        "sceneId": "S31",
+        "quote": "Consent Schedule CS-9"
+      }
+    ],
+    "documentaryInvestigations": [],
+    "exactSpans": true,
+    "requests": 18,
+    "credits": 30,
+    "latencyMs": 11913.453200000222,
+    "freshRequestsForComparison": 0
+  },
+  "C": {
+    "prerequisites": [
+      {
+        "sceneId": "S31",
+        "field": "required_on_site_personnel",
+        "quote": "venue duty officer"
+      },
+      {
+        "sceneId": "S32",
+        "field": "required_on_site_personnel",
+        "quote": "venue duty officer"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_written_documents",
+        "quote": "written lender consent"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_physical_protections",
+        "quote": "supporting book cradle"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_physical_protections",
+        "quote": "padded transfer tray"
+      },
+      {
+        "sceneId": "S31",
+        "field": "required_on_site_personnel",
+        "quote": "collections conservator"
+      }
+    ],
+    "correct": 6,
+    "omissions": [],
+    "unsupported": [],
+    "documentaryInvestigations": [
+      {
+        "sceneId": "S31",
+        "role": "claims_issued_variation",
+        "reference": "Consent Schedule CS-9"
+      },
+      {
+        "sceneId": "S32",
+        "role": "request_only",
+        "reference": "Variation VA-17"
+      }
+    ],
+    "exactSpans": true,
+    "requests": 23,
+    "credits": 62,
+    "latencyMs": 15467.749000000302,
+    "coverage": {
+      "pairs": 14,
+      "assessed": 14,
+      "unassessed": 0,
+      "relevant": 6,
+      "ambiguous": 1,
+      "extractedUnits": 4,
+      "totalUnits": 7
+    },
+    "documentaryCoverage": {
+      "inventoriedUnits": 7,
+      "eligibleUnits": 5,
+      "acceptedUnits": 5,
+      "skippedUnits": [
+        {
+          "documentId": "VISITOR",
+          "unitId": "U001",
+          "reason": "NO_DOCUMENTARY_ROUTING_CUE_NOT_PROOF_IRRELEVANT"
+        },
+        {
+          "documentId": "VISITOR",
+          "unitId": "U002",
+          "reason": "NO_DOCUMENTARY_ROUTING_CUE_NOT_PROOF_IRRELEVANT"
+        }
+      ]
+    },
+    "advisoryScopeDisagreements": [
+      {
+        "documentId": "VENUE",
+        "unitId": "U001",
+        "fillTargets": [
+          "S31"
+        ],
+        "decideRelevantScenes": [
+          "S31",
+          "S32"
+        ],
+        "disposition": "VISIBLE_MANUAL_SCOPE_REVIEW_NOT_EXHAUSTIVE; prerequisite tasks retain independent Decide bindings"
+      }
+    ],
+    "quarantinedRequirements": [
+      {
+        "sceneId": "S31",
+        "quote": "Consent Schedule CS-9",
+        "reason": "DOCUMENTARY_CLAIM_OR_REFERENCE_NOT_ESTABLISHED_AS_IMPOSED_REQUIREMENT"
+      }
+    ],
+    "authorityRecords": 0,
+    "fulfilledConditions": 0
+  },
+  "historicalArtifactsChecked": 120,
+  "historicalArtifactsMismatched": 0,
+  "recordedBundleSha256": "2cc34e798efe694df045418082e29f8b6c3b5b35f600f4167305a9ce5cc30954",
+  "notClearance": true
+}

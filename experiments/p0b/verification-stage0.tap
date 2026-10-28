@@ -1,0 +1,412 @@
+TAP version 13
+# Subtest: contract is frozen, six typed questions only, all requested labels bounded by publisher limits
+ok 1 - contract is frozen, six typed questions only, all requested labels bounded by publisher limits
+  ---
+  duration_ms: 2.6449
+  type: 'test'
+  ...
+# Subtest: only the four named exposed U01 pairs are prepared; no outputs, credits or dispatch
+ok 2 - only the four named exposed U01 pairs are prepared; no outputs, credits or dispatch
+  ---
+  duration_ms: 5.0067
+  type: 'test'
+  ...
+# Subtest: B uses the exact production request, including original context and question order
+ok 3 - B uses the exact production request, including original context and question order
+  ---
+  duration_ms: 0.6693
+  type: 'test'
+  ...
+# Subtest: source binding is exact Unicode codepoint text with complete neighboring context
+ok 4 - source binding is exact Unicode codepoint text with complete neighboring context
+  ---
+  duration_ms: 0.7512
+  type: 'test'
+  ...
+# Subtest: changed document text invalidates task/candidate
+ok 5 - changed document text invalidates task/candidate
+  ---
+  duration_ms: 1.6186
+  type: 'test'
+  ...
+# Subtest: changed document revision invalidates task/candidate
+ok 6 - changed document revision invalidates task/candidate
+  ---
+  duration_ms: 0.9486
+  type: 'test'
+  ...
+# Subtest: changed document epoch invalidates task/candidate
+ok 7 - changed document epoch invalidates task/candidate
+  ---
+  duration_ms: 1.3727
+  type: 'test'
+  ...
+# Subtest: changed scene row invalidates task/candidate
+ok 8 - changed scene row invalidates task/candidate
+  ---
+  duration_ms: 0.914
+  type: 'test'
+  ...
+# Subtest: changed scene epoch invalidates task/candidate
+ok 9 - changed scene epoch invalidates task/candidate
+  ---
+  duration_ms: 1.5046
+  type: 'test'
+  ...
+# Subtest: source reversal cannot resurrect an earlier task when epoch advances
+ok 10 - source reversal cannot resurrect an earlier task when epoch advances
+  ---
+  duration_ms: 1.2469
+  type: 'test'
+  ...
+# Subtest: deep unassessable JSON fails closed while preserving exact raw input
+ok 11 - deep unassessable JSON fails closed while preserving exact raw input
+  ---
+  duration_ms: 6.358
+  type: 'test'
+  ...
+# Subtest: forged task quote, request, packet and scene identity rejected
+ok 12 - forged task quote, request, packet and scene identity rejected
+  ---
+  duration_ms: 3.9551
+  type: 'test'
+  ...
+# Subtest: raw valid unknown response stays unknown and never becomes a candidate or human resolution
+ok 13 - raw valid unknown response stays unknown and never becomes a candidate or human resolution
+  ---
+  duration_ms: 2.138
+  type: 'test'
+  ...
+# Subtest: missing required relation rejected without coercion
+ok 14 - missing required relation rejected without coercion
+  ---
+  duration_ms: 1.5172
+  type: 'test'
+  ...
+# Subtest: wrong relation type rejected
+ok 15 - wrong relation type rejected
+  ---
+  duration_ms: 0.3864
+  type: 'test'
+  ...
+# Subtest: missing required passage_roles rejected without coercion
+ok 16 - missing required passage_roles rejected without coercion
+  ---
+  duration_ms: 0.9395
+  type: 'test'
+  ...
+# Subtest: wrong passage_roles type rejected
+ok 17 - wrong passage_roles type rejected
+  ---
+  duration_ms: 0.209
+  type: 'test'
+  ...
+# Subtest: missing required scene_scope rejected without coercion
+ok 18 - missing required scene_scope rejected without coercion
+  ---
+  duration_ms: 1.243
+  type: 'test'
+  ...
+# Subtest: wrong scene_scope type rejected
+ok 19 - wrong scene_scope type rejected
+  ---
+  duration_ms: 0.5121
+  type: 'test'
+  ...
+# Subtest: missing required textual_issuance rejected without coercion
+ok 20 - missing required textual_issuance rejected without coercion
+  ---
+  duration_ms: 1.1991
+  type: 'test'
+  ...
+# Subtest: wrong textual_issuance type rejected
+ok 21 - wrong textual_issuance type rejected
+  ---
+  duration_ms: 0.2441
+  type: 'test'
+  ...
+# Subtest: missing required action_families rejected without coercion
+ok 22 - missing required action_families rejected without coercion
+  ---
+  duration_ms: 1.0437
+  type: 'test'
+  ...
+# Subtest: wrong action_families type rejected
+ok 23 - wrong action_families type rejected
+  ---
+  duration_ms: 0.1891
+  type: 'test'
+  ...
+# Subtest: missing required support_state rejected without coercion
+ok 24 - missing required support_state rejected without coercion
+  ---
+  duration_ms: 0.5683
+  type: 'test'
+  ...
+# Subtest: wrong support_state type rejected
+ok 25 - wrong support_state type rejected
+  ---
+  duration_ms: 0.1294
+  type: 'test'
+  ...
+# Subtest: extra field produces preserved schema failure
+ok 26 - extra field produces preserved schema failure
+  ---
+  duration_ms: 0.9355
+  type: 'test'
+  ...
+# Subtest: generated typed property produces preserved schema failure
+ok 27 - generated typed property produces preserved schema failure
+  ---
+  duration_ms: 0.7053
+  type: 'test'
+  ...
+# Subtest: unknown label produces preserved schema failure
+ok 28 - unknown label produces preserved schema failure
+  ---
+  duration_ms: 0.9621
+  type: 'test'
+  ...
+# Subtest: string confidence produces preserved schema failure
+ok 29 - string confidence produces preserved schema failure
+  ---
+  duration_ms: 0.6889
+  type: 'test'
+  ...
+# Subtest: negative probability produces preserved schema failure
+ok 30 - negative probability produces preserved schema failure
+  ---
+  duration_ms: 0.626
+  type: 'test'
+  ...
+# Subtest: overflow numeric probability produces preserved schema failure
+ok 31 - overflow numeric probability produces preserved schema failure
+  ---
+  duration_ms: 0.639
+  type: 'test'
+  ...
+# Subtest: missing probability produces preserved schema failure
+ok 32 - missing probability produces preserved schema failure
+  ---
+  duration_ms: 0.7818
+  type: 'test'
+  ...
+# Subtest: extra probability produces preserved schema failure
+ok 33 - extra probability produces preserved schema failure
+  ---
+  duration_ms: 1.0303
+  type: 'test'
+  ...
+# Subtest: wrong choice probability produces preserved schema failure
+ok 34 - wrong choice probability produces preserved schema failure
+  ---
+  duration_ms: 0.7135
+  type: 'test'
+  ...
+# Subtest: nonunit choice distribution produces preserved schema failure
+ok 35 - nonunit choice distribution produces preserved schema failure
+  ---
+  duration_ms: 1.1769
+  type: 'test'
+  ...
+# Subtest: selected probability conflict produces preserved schema failure
+ok 36 - selected probability conflict produces preserved schema failure
+  ---
+  duration_ms: 0.9413
+  type: 'test'
+  ...
+# Subtest: unselected high probability produces preserved schema failure
+ok 37 - unselected high probability produces preserved schema failure
+  ---
+  duration_ms: 1.04
+  type: 'test'
+  ...
+# Subtest: duplicate selected produces preserved schema failure
+ok 38 - duplicate selected produces preserved schema failure
+  ---
+  duration_ms: 0.7024
+  type: 'test'
+  ...
+# Subtest: unknown selected produces preserved schema failure
+ok 39 - unknown selected produces preserved schema failure
+  ---
+  duration_ms: 0.8662
+  type: 'test'
+  ...
+# Subtest: changed threshold produces preserved schema failure
+ok 40 - changed threshold produces preserved schema failure
+  ---
+  duration_ms: 1.1462
+  type: 'test'
+  ...
+# Subtest: negative usage produces preserved schema failure
+ok 41 - negative usage produces preserved schema failure
+  ---
+  duration_ms: 1.7888
+  type: 'test'
+  ...
+# Subtest: missing usage produces preserved schema failure
+ok 42 - missing usage produces preserved schema failure
+  ---
+  duration_ms: 0.9578
+  type: 'test'
+  ...
+# Subtest: missing model produces preserved schema failure
+ok 43 - missing model produces preserved schema failure
+  ---
+  duration_ms: 0.8771
+  type: 'test'
+  ...
+# Subtest: image response produces preserved schema failure
+ok 44 - image response produces preserved schema failure
+  ---
+  duration_ms: 0.8502
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: not JSON
+ok 45 - malformed/ambiguous body retained: not JSON
+  ---
+  duration_ms: 0.1704
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: null
+ok 46 - malformed/ambiguous body retained: null
+  ---
+  duration_ms: 0.0485
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: []
+ok 47 - malformed/ambiguous body retained: []
+  ---
+  duration_ms: 0.0524
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: 1
+ok 48 - malformed/ambiguous body retained: 1
+  ---
+  duration_ms: 0.052
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"a":1,"a":2}
+ok 49 - malformed/ambiguous body retained: {"a":1,"a":2}
+  ---
+  duration_ms: 0.0461
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"a":1,"\\u0061":2}
+ok 50 - malformed/ambiguous body retained: {"a":1,"\\u0061":2}
+  ---
+  duration_ms: 0.0818
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"answers":{"x":1,"x":2}}
+ok 51 - malformed/ambiguous body retained: {"answers":{"x":1,"x":2}}
+  ---
+  duration_ms: 0.0492
+  type: 'test'
+  ...
+# Subtest: malformed/ambiguous body retained: {"model":1e999}
+ok 52 - malformed/ambiguous body retained: {"model":1e999}
+  ---
+  duration_ms: 0.0992
+  type: 'test'
+  ...
+# Subtest: multiselect independent probabilities need not sum to one; explicit cutoff including boundary is frozen
+ok 53 - multiselect independent probabilities need not sum to one; explicit cutoff including boundary is frozen
+  ---
+  duration_ms: 0.7227
+  type: 'test'
+  ...
+# Subtest: NO_ACTION_STATED with concrete action is flagged and quarantined
+ok 54 - NO_ACTION_STATED with concrete action is flagged and quarantined
+  ---
+  duration_ms: 1.4272
+  type: 'test'
+  ...
+# Subtest: UNCERTAIN with concrete action is flagged and quarantined
+ok 55 - UNCERTAIN with concrete action is flagged and quarantined
+  ---
+  duration_ms: 0.8628
+  type: 'test'
+  ...
+# Subtest: request/issuance contradiction retained and cannot generate usable candidates
+ok 56 - request/issuance contradiction retained and cannot generate usable candidates
+  ---
+  duration_ms: 0.2805
+  type: 'test'
+  ...
+# Subtest: REQUIRED_SUPPORT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+ok 57 - REQUIRED_SUPPORT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+  ---
+  duration_ms: 0.7788
+  type: 'test'
+  ...
+# Subtest: REQUIRED_SUPPORT_NOT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+ok 58 - REQUIRED_SUPPORT_NOT_LOCATED_IN_SUPPLIED_PACKET blocked for unassessed packet
+  ---
+  duration_ms: 0.6046
+  type: 'test'
+  ...
+# Subtest: hypothetical candidate binds full original source, raw classification and request; deterministic title only
+ok 59 - hypothetical candidate binds full original source, raw classification and request; deterministic title only
+  ---
+  duration_ms: 2.6336
+  type: 'test'
+  ...
+# Subtest: negative/empty/no-action checks retain inspectable source and human review
+ok 60 - negative/empty/no-action checks retain inspectable source and human review
+  ---
+  duration_ms: 0.8376
+  type: 'test'
+  ...
+# Subtest: BM25 reproduces an independent textbook calculation and includes zero scores
+ok 61 - BM25 reproduces an independent textbook calculation and includes zero scores
+  ---
+  duration_ms: 0.2789
+  type: 'test'
+  ...
+# Subtest: lexical normalization, no synonym invention, stable ties and empty corpus behavior
+ok 62 - lexical normalization, no synonym invention, stable ties and empty corpus behavior
+  ---
+  duration_ms: 0.6606
+  type: 'test'
+  ...
+# Subtest: baseline sees full identical source corpus, no selection based on model answers
+ok 63 - baseline sees full identical source corpus, no selection based on model answers
+  ---
+  duration_ms: 0.1742
+  type: 'test'
+  ...
+# Subtest: standalone views escape documentary markup and preserve source coverage on schema errors
+ok 64 - standalone views escape documentary markup and preserve source coverage on schema errors
+  ---
+  duration_ms: 2.4061
+  type: 'test'
+  ...
+# Subtest: offline preparation does not access network even if a fetch implementation is present
+ok 65 - offline preparation does not access network even if a fetch implementation is present
+  ---
+  duration_ms: 34.4421
+  type: 'test'
+  ...
+# Subtest: runner rejects dispatch flags before preparing or writing anything
+ok 66 - runner rejects dispatch flags before preparing or writing anything
+  ---
+  duration_ms: 161.7539
+  type: 'test'
+  ...
+# Subtest: experimental modules cannot import a transport or read environment/owner stores
+ok 67 - experimental modules cannot import a transport or read environment/owner stores
+  ---
+  duration_ms: 7.9442
+  type: 'test'
+  ...
+1..67
+# tests 67
+# suites 0
+# pass 67
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 483.7751

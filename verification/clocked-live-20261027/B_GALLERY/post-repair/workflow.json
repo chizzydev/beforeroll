@@ -1,0 +1,4091 @@
+{
+  "schema": "beforeroll-atomic-production-workflow-v1",
+  "version": 4,
+  "workspace": {
+    "schema": "beforeroll-workspace-v1",
+    "id": "live_20261027_B_gallery",
+    "title": "Fictional live acceptance B_GALLERY",
+    "revision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "B_GALLERY-permit.txt",
+        "role": "permit",
+        "text": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.\n\nThe issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.\n\nAn unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "revision": 1,
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 105,
+            "text": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+            "hash": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 107,
+            "end": 275,
+            "text": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+            "hash": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 277,
+            "end": 404,
+            "text": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+            "hash": "68f9f4902f77370d98bfbcb6d08d1903fe36dd52eead62df20eec7c6ce45557a",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_EVALUATED"
+          }
+        ],
+        "coverage": {
+          "represented": true,
+          "gaps": []
+        },
+        "status": "SOURCE_UNVERIFIED",
+        "importReceipt": {
+          "kind": "permit",
+          "name": "B_GALLERY-permit.txt",
+          "sourceFormat": "UTF8_TEXT",
+          "rawHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "normalizedHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "byteCount": 404,
+          "sourceMap": [],
+          "warnings": [
+            "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+          ],
+          "reviewedAttestation": null,
+          "reviewedPermitAttestation": null,
+          "requiresHumanTextReview": false,
+          "extractionPartSha256": null,
+          "revision": 1,
+          "documentId": "PERMIT",
+          "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056"
+        },
+        "pdfTranscriptionReview": null
+      }
+    ],
+    "callSheet": {
+      "text": "Scene 401 | Gallery | 10:00-11:00 | motorized tracking base across resin finish\nScene 402 | Gallery | 11:00-12:00 | battery-powered camera pod across resin finish",
+      "sourceHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+      "scenes": [
+        {
+          "id": "S401",
+          "number": "401",
+          "location": "Gallery",
+          "start": "10:00",
+          "end": "11:00",
+          "activity": "motorized tracking base across resin finish",
+          "rawWindow": "10:00-11:00",
+          "source": {
+            "start": 0,
+            "end": 79,
+            "fields": {
+              "scene": {
+                "start": 6,
+                "end": 9
+              },
+              "location": {
+                "start": 12,
+                "end": 19
+              },
+              "window": {
+                "start": 22,
+                "end": 33
+              },
+              "activity": {
+                "start": 36,
+                "end": 79
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        },
+        {
+          "id": "S402",
+          "number": "402",
+          "location": "Gallery",
+          "start": "11:00",
+          "end": "12:00",
+          "activity": "battery-powered camera pod across resin finish",
+          "rawWindow": "11:00-12:00",
+          "source": {
+            "start": 80,
+            "end": 162,
+            "fields": {
+              "scene": {
+                "start": 86,
+                "end": 89
+              },
+              "location": {
+                "start": 92,
+                "end": 99
+              },
+              "window": {
+                "start": 102,
+                "end": 113
+              },
+              "activity": {
+                "start": 116,
+                "end": 162
+              }
+            }
+          },
+          "edited": false,
+          "needsReview": false,
+          "sourceEpoch": 0
+        }
+      ],
+      "unsupported": [],
+      "format": "Explicit pipe-delimited rows only",
+      "revision": 1,
+      "historicalSceneEpochs": {
+        "S401": 0,
+        "S402": 0
+      },
+      "importReceipt": {
+        "kind": "callSheet",
+        "name": "B_GALLERY-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "normalizedHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "byteCount": 162,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2,
+        "sourceHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452"
+      }
+    },
+    "assessments": [],
+    "reviewActions": [],
+    "imports": [
+      {
+        "kind": "permit",
+        "name": "B_GALLERY-permit.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "normalizedHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "byteCount": 404,
+        "sourceMap": [],
+        "warnings": [
+          "Automated segmentation is not proof of exhaustive permit authority or authentic signatures."
+        ],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 1,
+        "documentId": "PERMIT"
+      },
+      {
+        "kind": "callSheet",
+        "name": "B_GALLERY-call.txt",
+        "sourceFormat": "UTF8_TEXT",
+        "rawHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "normalizedHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "byteCount": 162,
+        "sourceMap": [],
+        "warnings": [],
+        "reviewedAttestation": null,
+        "reviewedPermitAttestation": null,
+        "requiresHumanTextReview": false,
+        "extractionPartSha256": null,
+        "revision": 2
+      }
+    ],
+    "authorityLinks": [],
+    "sceneAuthority": [],
+    "sceneSchedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "notClearance": true,
+    "coordinatorTaskReviews": [
+      {
+        "sequence": 1,
+        "candidateId": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+        "sceneId": "S401",
+        "source": {
+          "field": "required_written_documents",
+          "quote": "written collections-team consent",
+          "unitId": "U001",
+          "unitRange": [
+            72,
+            104
+          ],
+          "permitRange": [
+            72,
+            104
+          ],
+          "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "sourceUnitRange": [
+            0,
+            105
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+          "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+          "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+          "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+          "title": "Locate and verify written collections-team consent.",
+          "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        "reviewer": "Fictional campaign coordinator",
+        "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+        "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+        "at": "2026-10-27T11:38:05.161Z",
+        "workspaceRevision": 2,
+        "notClearance": true,
+        "sha256": "38429bcd18eda5d37593ee0b8ab7a3aec3aa4d562bcb692c67513a7dbd24afdf"
+      }
+    ]
+  },
+  "productionId": "live_20261027_B_gallery",
+  "asOf": "2026-10-27T11:57:49.291Z",
+  "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+  "originals": {
+    "schema": "beforeroll-original-source-register-v1",
+    "productionId": "live_20261027_B_gallery",
+    "persistedVersion": 4,
+    "referenced": 2,
+    "preserved": 2,
+    "missingOriginalSha256": [],
+    "files": [
+      {
+        "rawHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "byteCount": 162
+      },
+      {
+        "rawHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "byteCount": 404
+      }
+    ],
+    "notClearance": true
+  },
+  "overview": {
+    "version": 4,
+    "schema": "beforeroll-production-review-v1",
+    "id": "live_20261027_B_gallery",
+    "title": "Fictional live acceptance B_GALLERY",
+    "revision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "B_GALLERY-permit.txt",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "revision": 1,
+        "sourceFormat": "UTF8_TEXT",
+        "unitCount": 3,
+        "gaps": 0,
+        "pdfTranscription": null,
+        "rawSourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "units": [
+          {
+            "id": "U001",
+            "start": 0,
+            "end": 105,
+            "text": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U002",
+            "start": 107,
+            "end": 275,
+            "text": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          },
+          {
+            "id": "U003",
+            "start": 277,
+            "end": 404,
+            "text": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+            "kind": "SOURCE_UNIT",
+            "status": "NOT_AI_EVALUATED"
+          }
+        ]
+      }
+    ],
+    "scenes": [
+      {
+        "id": "S401",
+        "number": "401",
+        "location": "Gallery",
+        "activity": "motorized tracking base across resin finish",
+        "start": "10:00",
+        "end": "11:00",
+        "source": {
+          "start": 0,
+          "end": 79,
+          "fields": {
+            "scene": {
+              "start": 6,
+              "end": 9
+            },
+            "location": {
+              "start": 12,
+              "end": 19
+            },
+            "window": {
+              "start": 22,
+              "end": 33
+            },
+            "activity": {
+              "start": 36,
+              "end": 79
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      },
+      {
+        "id": "S402",
+        "number": "402",
+        "location": "Gallery",
+        "activity": "battery-powered camera pod across resin finish",
+        "start": "11:00",
+        "end": "12:00",
+        "source": {
+          "start": 80,
+          "end": 162,
+          "fields": {
+            "scene": {
+              "start": 86,
+              "end": 89
+            },
+            "location": {
+              "start": 92,
+              "end": 99
+            },
+            "window": {
+              "start": 102,
+              "end": 113
+            },
+            "activity": {
+              "start": 116,
+              "end": 162
+            }
+          }
+        },
+        "ai": "NOT_EVALUATED"
+      }
+    ],
+    "schedule": {
+      "present": true,
+      "sourceHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+      "sourceFormat": "UTF8_TEXT",
+      "unsupportedRows": 0
+    },
+    "sceneAuthority": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "sceneReview": [
+      {
+        "sceneId": "S401",
+        "location": "Gallery",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S402",
+        "location": "Gallery",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "operations": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "sceneOperations": [
+      {
+        "sceneId": "S401",
+        "sceneSourceHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S402",
+        "sceneSourceHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "reviewActions": [],
+    "reviewedCount": 0,
+    "plannedCalls": 6,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "shown": 6,
+      "hasMore": false
+    },
+    "tasks": [
+      {
+        "id": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "sourceRange": [
+          0,
+          105
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "sourceRange": [
+          107,
+          275
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "sourceRange": [
+          277,
+          404
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "0e1efdee260ccbe01d8ac96a85ea6a06dc711e06ce9617cec09ce604b8d13d42",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "sourceRange": [
+          0,
+          105
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "e67ed278186668d6c5c4eca1755e064e14a203614a43a6419926853d25caa2de",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "sourceRange": [
+          107,
+          275
+        ],
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "requestHash": "9ba2e852973202272bed7e5125218534e4f7bc39bb51866d241c2f5a5a9f8ad3",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      },
+      {
+        "id": "fc0e995dded177dd8f67b8d2ddfe5a805ea7d9ad802256f447376c1c2e5bdc9c",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "sourceRange": [
+          277,
+          404
+        ],
+        "contextUnitIds": [
+          "U002"
+        ],
+        "requestHash": "de62f169a7106d16fc779797dd05e0df838165b41c848f3e7198dbcd8008f93d",
+        "status": "NOT_ATTEMPTED",
+        "modelFinding": null,
+        "humanReview": null,
+        "notClearance": true
+      }
+    ],
+    "state": "READY_FOR_HUMAN_SOURCE_REVIEW",
+    "notClearance": true,
+    "modelRequests": 0,
+    "notice": "Model attempts and human review are independent; no scene is authorized. Evaluated counts cover segmented candidates only."
+  },
+  "execution": {
+    "schema": "beforeroll-execution-status-v1",
+    "projectId": "live_20261027_B_gallery",
+    "planKey": "32c1d1ac5441af46fafe8fcfaefedfaeefb9eea93360201abad8ea77d2015d99",
+    "planned": 6,
+    "attempts": 0,
+    "completed": 0,
+    "unknownBilling": 0,
+    "state": "READY",
+    "stale": false,
+    "archivedRuns": 0,
+    "byScene": {
+      "S401": {
+        "planned": 3,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      },
+      "S402": {
+        "planned": 3,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "byDocument": {
+      "PERMIT": {
+        "planned": 6,
+        "attempted": 0,
+        "complete": 0,
+        "uncertain": 0
+      }
+    },
+    "remaining": 6,
+    "completionPercent": 0,
+    "knownCredits": 0,
+    "creditProjection": null,
+    "unknownCreditEntries": 0,
+    "retainedAttempts": 0,
+    "newPlanAttempts": 0,
+    "pagination": {
+      "offset": 0,
+      "limit": 40,
+      "hasMore": false
+    },
+    "entries": [
+      {
+        "id": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "sourceRange": [
+          0,
+          105
+        ],
+        "requestHash": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "sourceRange": [
+          107,
+          275
+        ],
+        "requestHash": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "sourceRange": [
+          277,
+          404
+        ],
+        "requestHash": "0e1efdee260ccbe01d8ac96a85ea6a06dc711e06ce9617cec09ce604b8d13d42",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "unitId": "U001",
+        "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "sourceRange": [
+          0,
+          105
+        ],
+        "requestHash": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "e67ed278186668d6c5c4eca1755e064e14a203614a43a6419926853d25caa2de",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "unitId": "U002",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "sourceRange": [
+          107,
+          275
+        ],
+        "requestHash": "9ba2e852973202272bed7e5125218534e4f7bc39bb51866d241c2f5a5a9f8ad3",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      },
+      {
+        "id": "fc0e995dded177dd8f67b8d2ddfe5a805ea7d9ad802256f447376c1c2e5bdc9c",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "unitId": "U003",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "sourceRange": [
+          277,
+          404
+        ],
+        "requestHash": "de62f169a7106d16fc779797dd05e0df838165b41c848f3e7198dbcd8008f93d",
+        "status": "NOT_ATTEMPTED",
+        "credits": null,
+        "inheritedFromPlanKey": null,
+        "relevance": null,
+        "grant": null,
+        "finding": null,
+        "scopeReason": null,
+        "error": null,
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Only segmented source candidates have been assessed. Provider outputs are uncalibrated; no filming clearance or document authenticity is established."
+  },
+  "authority": {
+    "version": 4,
+    "schema": "beforeroll-document-authority-graph-v1",
+    "workspaceId": "live_20261027_B_gallery",
+    "workspaceRevision": 3,
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "B_GALLERY-permit.txt",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "revision": 1,
+        "metadata": null,
+        "metadataStatus": "NOT_REVIEWED",
+        "notClearance": true
+      }
+    ],
+    "links": [],
+    "scenes": [
+      {
+        "sceneId": "S401",
+        "location": "Gallery",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S402",
+        "location": "Gallery",
+        "authorityState": "DOCUMENT_RELATIONSHIPS_REQUIRE_HUMAN_REVIEW",
+        "documentsToCheck": [
+          "PERMIT"
+        ],
+        "unresolvedConflicts": 0,
+        "unverifiedAmendments": 0,
+        "note": "Do not apply one document as a scene-specific grant without verified activity, scene, date, prerequisites and operative precedence.",
+        "notClearance": true
+      }
+    ],
+    "summary": {
+      "links": 0,
+      "currentLinks": 0,
+      "staleLinks": 0,
+      "unreviewedDocuments": [
+        "PERMIT"
+      ],
+      "unverifiedAmendments": 0,
+      "unresolvedConflicts": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 60,
+      "hasMore": false
+    },
+    "notClearance": true,
+    "warning": "Human-entered documentary graph, NOT legal precedence, signature authentication, grant validation, or proof that all permits have been supplied."
+  },
+  "sceneAuthority": {
+    "version": 4,
+    "schema": "beforeroll-scene-authority-register-v1",
+    "workspaceId": "live_20261027_B_gallery",
+    "revision": 3,
+    "scenes": [
+      {
+        "sceneId": "S401",
+        "location": "Gallery",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S402",
+        "location": "Gallery",
+        "claims": 0,
+        "currentClaims": 0,
+        "staleClaims": 0,
+        "explicitHumanReviewItems": 0,
+        "authorityState": "AUTHORITY_NOT_ESTABLISHED",
+        "notClearance": true
+      }
+    ],
+    "records": [],
+    "pagination": {
+      "offset": 0,
+      "limit": 100,
+      "hasMore": false
+    },
+    "summary": {
+      "total": 0,
+      "current": 0,
+      "stale": 0
+    },
+    "notClearance": true,
+    "warning": "Human-recorded scope claims are not signature validation, fulfilled prerequisites, lawful authority or filming clearance."
+  },
+  "documentaryReasoning": {
+    "schema": "beforeroll-documentary-reasoning-v1",
+    "workspaceId": "live_20261027_B_gallery",
+    "workspaceRevision": 3,
+    "asOf": "2026-10-27T11:57:49.291Z",
+    "scenes": [
+      {
+        "sceneId": "S401",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "motorized tracking base across resin finish",
+        "originalLocation": "Gallery",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      },
+      {
+        "sceneId": "S402",
+        "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+        "originalActivity": "battery-powered camera pod across resin finish",
+        "originalLocation": "Gallery",
+        "restrictions": [],
+        "requests": [],
+        "amendments": [],
+        "requirements": [],
+        "conflicts": [],
+        "claims": [],
+        "modelOnlyFindings": [],
+        "openPrerequisites": 0,
+        "documentaryConflicts": 0,
+        "humanRecordedIssuedClaims": 0,
+        "unresolvedGrantClaims": 0,
+        "clockedModelEvidenceCount": 0,
+        "notClearance": true,
+        "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+      }
+    ],
+    "summary": {
+      "scenes": 2,
+      "restrictions": 0,
+      "requests": 0,
+      "pendingGrantClaims": 0,
+      "scenesWithReview": 0,
+      "modelSupportedHumanClaims": 0,
+      "modelOnlyFindings": 0
+    },
+    "notClearance": true,
+    "warning": "Deterministic comparison of human-recorded facets only; NOT a legal authority determination, cryptographic signature check, verified issuance, permission to film, or proof all source documents were supplied."
+  },
+  "operations": {
+    "version": 4,
+    "schema": "beforeroll-production-operations-v1",
+    "workspaceId": "live_20261027_B_gallery",
+    "revision": 3,
+    "asOf": "2026-10-27T11:57:49.291Z",
+    "scenes": [
+      {
+        "sceneId": "S401",
+        "sceneSourceHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      {
+        "sceneId": "S402",
+        "sceneSourceHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      }
+    ],
+    "schedules": [],
+    "conditions": [],
+    "conditionDecisions": [],
+    "summary": {
+      "scenes": 2,
+      "dated": 0,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "staleConditions": 0
+    },
+    "notClearance": true,
+    "notice": "Dates, scope, condition fulfillment and signatures are human-entered, NOT verified filming authorization. Never infer clearance from a zero count."
+  },
+  "dossier": {
+    "schema": "beforeroll-integrated-production-dossier-v1",
+    "productionId": "live_20261027_B_gallery",
+    "title": "Fictional live acceptance B_GALLERY",
+    "persistedVersion": 4,
+    "revision": 3,
+    "asOf": "2026-10-27T11:57:49.291Z",
+    "counts": {
+      "documents": 1,
+      "scenes": 2,
+      "unresolvedCallSheetRows": 0,
+      "planTasks": 6,
+      "completedModelChecks": 0,
+      "unattemptedChecks": 6,
+      "uncertainModelChecks": 0,
+      "archivedModelRuns": 0,
+      "currentReviewedTasks": 0,
+      "currentUnresolvedHumanReviews": 0,
+      "staleHumanReviews": 0,
+      "unresolvedPdfTranscriptions": 0,
+      "undatedScenes": 2,
+      "openPrerequisites": 0,
+      "pastDuePrerequisites": 0,
+      "unverifiedDocumentConflicts": 0,
+      "currentSceneScopeAssertions": 0,
+      "staleSceneScopeAssertions": 0,
+      "unreviewedDocumentProvenance": 1,
+      "discoveryAssessedChecks": 6,
+      "effectiveUnassessedChecks": 0,
+      "discoveryIncompleteRuns": 0
+    },
+    "outstanding": [
+      {
+        "code": "CURRENT_HUMAN_REVIEWS_INCOMPLETE",
+        "count": 6
+      },
+      {
+        "code": "SCENE_DATES_NOT_REVIEWED",
+        "count": 2
+      },
+      {
+        "code": "UNREVIEWED_DOCUMENT_PROVENANCE",
+        "count": 1
+      }
+    ],
+    "scenes": [
+      {
+        "sceneId": "S401",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 3,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      },
+      {
+        "sceneId": "S402",
+        "readiness": "OUTSTANDING_REVIEW",
+        "issues": [
+          "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+          "MODEL_CHECKS_NOT_EVALUATED",
+          "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+          "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+        ],
+        "modelComplete": 0,
+        "planned": 3,
+        "humanReviewed": 0,
+        "openPrerequisites": 0
+      }
+    ],
+    "productionState": "OPEN_REVIEW_ITEMS",
+    "notClearance": true,
+    "sha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a"
+  },
+  "coordinatorTasks": {
+    "schema": "beforeroll-coordinator-suggestions-v1",
+    "state": "SOURCE_BOUND_SUGGESTIONS_REVIEW_ONLY",
+    "candidates": [
+      {
+        "field": "required_written_documents",
+        "quote": "written collections-team consent",
+        "unitId": "U001",
+        "unitRange": [
+          72,
+          104
+        ],
+        "permitRange": [
+          72,
+          104
+        ],
+        "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "sourceUnitRange": [
+          0,
+          105
+        ],
+        "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+        "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+        "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_B_gallery",
+        "sceneId": "S401",
+        "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+        "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+        "title": "Locate and verify written collections-team consent.",
+        "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+        "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": {
+          "sequence": 1,
+          "candidateId": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+          "sceneId": "S401",
+          "source": {
+            "field": "required_written_documents",
+            "quote": "written collections-team consent",
+            "unitId": "U001",
+            "unitRange": [
+              72,
+              104
+            ],
+            "permitRange": [
+              72,
+              104
+            ],
+            "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+            "sourceUnitRange": [
+              0,
+              105
+            ],
+            "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+            "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+            "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+            "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_B_gallery",
+            "sceneId": "S401",
+            "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+            "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+            "title": "Locate and verify written collections-team consent.",
+            "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+            "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          "reviewer": "Fictional campaign coordinator",
+          "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+          "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+          "at": "2026-10-27T11:38:05.161Z",
+          "workspaceRevision": 2,
+          "notClearance": true,
+          "sha256": "38429bcd18eda5d37593ee0b8ab7a3aec3aa4d562bcb692c67513a7dbd24afdf",
+          "sourceState": "CURRENT_REVIEW_ONLY"
+        }
+      },
+      {
+        "field": "required_physical_protections",
+        "quote": "sacrificial runner sheets",
+        "unitId": "U002",
+        "unitRange": [
+          86,
+          111
+        ],
+        "permitRange": [
+          193,
+          218
+        ],
+        "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "sourceUnitRange": [
+          107,
+          275
+        ],
+        "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+        "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+        "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_B_gallery",
+        "sceneId": "S401",
+        "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+        "id": "f8508caf5607232900ad20808501d27b35026bd94aae0192f7e00857427e3b65",
+        "title": "Confirm sacrificial runner sheets.",
+        "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      },
+      {
+        "field": "required_on_site_personnel",
+        "quote": "on-site floor warden",
+        "unitId": "U002",
+        "unitRange": [
+          119,
+          139
+        ],
+        "permitRange": [
+          226,
+          246
+        ],
+        "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "sourceUnitRange": [
+          107,
+          275
+        ],
+        "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+        "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+        "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_B_gallery",
+        "sceneId": "S401",
+        "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+        "id": "8e929c91033355b02c905829b3b174702acc021327562b69322ddd16ee0970bc",
+        "title": "Confirm the on-site floor warden remains present throughout the take.",
+        "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+        "contextUnitIds": [
+          "U001",
+          "U003"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      },
+      {
+        "field": "required_written_documents",
+        "quote": "written collections-team consent",
+        "unitId": "U001",
+        "unitRange": [
+          72,
+          104
+        ],
+        "permitRange": [
+          72,
+          104
+        ],
+        "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "sourceUnitRange": [
+          0,
+          105
+        ],
+        "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+        "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+        "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+        "model": "clocked-1.0",
+        "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+        "issuance": "UNKNOWN",
+        "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+        "notClearance": true,
+        "productionId": "live_20261027_B_gallery",
+        "sceneId": "S402",
+        "sceneHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+        "sceneEpoch": 0,
+        "documentId": "PERMIT",
+        "documentRevision": 1,
+        "documentEpoch": 0,
+        "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+        "id": "013c522cb5d556b56c7e978d231db96901012fdca0b0c494058efe5258d72321",
+        "title": "Locate and verify written collections-team consent.",
+        "sourceTaskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+        "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+        "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+        "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+        "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+        "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+        "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+        "contextUnitIds": [
+          "U002"
+        ],
+        "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+        "scopeVerification": "HUMAN_REQUIRED",
+        "authenticity": "UNVERIFIED",
+        "fulfillment": "UNVERIFIED",
+        "humanReview": null
+      }
+    ],
+    "warnings": [],
+    "fieldStates": [],
+    "reviewHistory": [
+      {
+        "sequence": 1,
+        "candidateId": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+        "sceneId": "S401",
+        "source": {
+          "field": "required_written_documents",
+          "quote": "written collections-team consent",
+          "unitId": "U001",
+          "unitRange": [
+            72,
+            104
+          ],
+          "permitRange": [
+            72,
+            104
+          ],
+          "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "sourceUnitRange": [
+            0,
+            105
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+          "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+          "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+          "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+          "title": "Locate and verify written collections-team consent.",
+          "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        "reviewer": "Fictional campaign coordinator",
+        "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+        "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+        "at": "2026-10-27T11:38:05.161Z",
+        "workspaceRevision": 2,
+        "notClearance": true,
+        "sha256": "38429bcd18eda5d37593ee0b8ab7a3aec3aa4d562bcb692c67513a7dbd24afdf",
+        "sourceState": "CURRENT_REVIEW_ONLY"
+      }
+    ],
+    "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+    "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+    "issuance": "UNKNOWN",
+    "notClearance": true,
+    "humanEffortSeconds": null,
+    "notice": "Model-assisted proposals, not human-confirmed duties or filming authority.",
+    "discovery": {
+      "schema": "beforeroll-core-discovery-projection-v1",
+      "jobs": [
+        {
+          "id": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+          "current": true,
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "createdAt": "2026-10-27T11:37:57.655Z",
+          "updatedAt": "2026-10-27T11:38:04.172Z",
+          "stopReason": null,
+          "coverage": {
+            "pairs": 6,
+            "assessed": 6,
+            "unassessed": 0,
+            "relevant": 4,
+            "ambiguous": 1,
+            "extractedUnits": 3,
+            "totalUnits": 3
+          },
+          "pairs": [
+            {
+              "taskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+              "sceneId": "S401",
+              "documentId": "PERMIT",
+              "unitId": "U001",
+              "quote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+              "range": [
+                0,
+                105
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+              "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.9941,
+              "modelGrantClaim": 0.005,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": null,
+              "notClearance": true
+            },
+            {
+              "taskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+              "sceneId": "S401",
+              "documentId": "PERMIT",
+              "unitId": "U002",
+              "quote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+              "range": [
+                107,
+                275
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+              "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.9928,
+              "modelGrantClaim": 0.946,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+              },
+              "scopeCaution": null,
+              "notClearance": true
+            },
+            {
+              "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+              "sceneId": "S401",
+              "documentId": "PERMIT",
+              "unitId": "U003",
+              "quote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+              "range": [
+                277,
+                404
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "AMBIGUOUS_MANUAL_REVIEW",
+              "decideRequestSha256": "0e1efdee260ccbe01d8ac96a85ea6a06dc711e06ce9617cec09ce604b8d13d42",
+              "decideResponseSha256": "e0931619bbd3916fcb491c6f7d8036ee04c476385d249076cbf428a7e5d7a423",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.5956,
+              "modelGrantClaim": 0.0036,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+              "sceneId": "S402",
+              "documentId": "PERMIT",
+              "unitId": "U001",
+              "quote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+              "range": [
+                0,
+                105
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+              "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.9945,
+              "modelGrantClaim": 0.005,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": null,
+              "notClearance": true
+            },
+            {
+              "taskId": "e67ed278186668d6c5c4eca1755e064e14a203614a43a6419926853d25caa2de",
+              "sceneId": "S402",
+              "documentId": "PERMIT",
+              "unitId": "U002",
+              "quote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+              "range": [
+                107,
+                275
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+              "decideRequestSha256": "9ba2e852973202272bed7e5125218534e4f7bc39bb51866d241c2f5a5a9f8ad3",
+              "decideResponseSha256": "2b82fbb371a6e49ad761a0ce6545c624ab73728506f1aae058f4eae29c35af65",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.1192,
+              "modelGrantClaim": 0.0043,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+              },
+              "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            },
+            {
+              "taskId": "fc0e995dded177dd8f67b8d2ddfe5a805ea7d9ad802256f447376c1c2e5bdc9c",
+              "sceneId": "S402",
+              "documentId": "PERMIT",
+              "unitId": "U003",
+              "quote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+              "range": [
+                277,
+                404
+              ],
+              "decideStatus": "ACCEPTED",
+              "route": "RELEVANT_REVIEW_ONLY",
+              "decideRequestSha256": "de62f169a7106d16fc779797dd05e0df838165b41c848f3e7198dbcd8008f93d",
+              "decideResponseSha256": "dfd626d4983659074ac7a72f5272b615c23a10b9477e5928847e2a3cae2ce1f7",
+              "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "relevance": 0.8144,
+              "modelGrantClaim": 0.003,
+              "extractStatus": "ACCEPTED",
+              "literalFieldStates": {
+                "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+              },
+              "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+              "notClearance": true
+            }
+          ],
+          "attempts": 9,
+          "unknownBilling": 0,
+          "reportedCredits": 17,
+          "unknownCreditEntries": 0,
+          "latencyMs": 6032.292200000001,
+          "notClearance": true,
+          "candidates": [
+            {
+              "field": "required_written_documents",
+              "quote": "written collections-team consent",
+              "unitId": "U001",
+              "unitRange": [
+                72,
+                104
+              ],
+              "permitRange": [
+                72,
+                104
+              ],
+              "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+              "sourceUnitRange": [
+                0,
+                105
+              ],
+              "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+              "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+              "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+              "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_B_gallery",
+              "sceneId": "S401",
+              "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+              "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+              "title": "Locate and verify written collections-team consent.",
+              "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+              "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_physical_protections",
+              "quote": "sacrificial runner sheets",
+              "unitId": "U002",
+              "unitRange": [
+                86,
+                111
+              ],
+              "permitRange": [
+                193,
+                218
+              ],
+              "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+              "sourceUnitRange": [
+                107,
+                275
+              ],
+              "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+              "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+              "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+              "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_B_gallery",
+              "sceneId": "S401",
+              "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+              "id": "f8508caf5607232900ad20808501d27b35026bd94aae0192f7e00857427e3b65",
+              "title": "Confirm sacrificial runner sheets.",
+              "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+              "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+              "contextUnitIds": [
+                "U001",
+                "U003"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_on_site_personnel",
+              "quote": "on-site floor warden",
+              "unitId": "U002",
+              "unitRange": [
+                119,
+                139
+              ],
+              "permitRange": [
+                226,
+                246
+              ],
+              "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+              "sourceUnitRange": [
+                107,
+                275
+              ],
+              "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+              "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+              "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+              "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_B_gallery",
+              "sceneId": "S401",
+              "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+              "id": "8e929c91033355b02c905829b3b174702acc021327562b69322ddd16ee0970bc",
+              "title": "Confirm the on-site floor warden remains present throughout the take.",
+              "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+              "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+              "contextUnitIds": [
+                "U001",
+                "U003"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            },
+            {
+              "field": "required_written_documents",
+              "quote": "written collections-team consent",
+              "unitId": "U001",
+              "unitRange": [
+                72,
+                104
+              ],
+              "permitRange": [
+                72,
+                104
+              ],
+              "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+              "sourceUnitRange": [
+                0,
+                105
+              ],
+              "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+              "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+              "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+              "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_B_gallery",
+              "sceneId": "S402",
+              "sceneHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+              "id": "013c522cb5d556b56c7e978d231db96901012fdca0b0c494058efe5258d72321",
+              "title": "Locate and verify written collections-team consent.",
+              "sourceTaskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+              "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED",
+              "sourceState": "CURRENT_REVIEW_ONLY"
+            }
+          ],
+          "comparison": {
+            "basis": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "aiOff": [
+              {
+                "id": "S401:DATE_UNKNOWN",
+                "sceneId": "S401",
+                "code": "DATE_UNKNOWN",
+                "severity": "review",
+                "title": "Date authority not established",
+                "detail": "Confirm that the issued conditions apply to this shoot date.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 6,
+                    "end": 9,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S401:LOCATION_UNKNOWN",
+                "sceneId": "S401",
+                "code": "LOCATION_UNKNOWN",
+                "severity": "review",
+                "title": "Location scope requires source review",
+                "detail": "No trustworthy issued location reading is available.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 12,
+                    "end": 19,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S401:END_UNKNOWN",
+                "sceneId": "S401",
+                "code": "END_UNKNOWN",
+                "severity": "review",
+                "title": "Filming deadline not source-backed",
+                "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 22,
+                    "end": 33,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S402:DATE_UNKNOWN",
+                "sceneId": "S402",
+                "code": "DATE_UNKNOWN",
+                "severity": "review",
+                "title": "Date authority not established",
+                "detail": "Confirm that the issued conditions apply to this shoot date.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 86,
+                    "end": 89,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S402:LOCATION_UNKNOWN",
+                "sceneId": "S402",
+                "code": "LOCATION_UNKNOWN",
+                "severity": "review",
+                "title": "Location scope requires source review",
+                "detail": "No trustworthy issued location reading is available.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 92,
+                    "end": 99,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              },
+              {
+                "id": "S402:END_UNKNOWN",
+                "sceneId": "S402",
+                "code": "END_UNKNOWN",
+                "severity": "review",
+                "title": "Filming deadline not source-backed",
+                "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                "evidence": {
+                  "permit": null,
+                  "scene": {
+                    "start": 102,
+                    "end": 113,
+                    "doc": "call sheet",
+                    "quote": null
+                  }
+                },
+                "reviewed": false
+              }
+            ],
+            "aiOffLiteralTaskCount": 0,
+            "modelDerivedTaskCount": 4,
+            "humanEffortSeconds": null,
+            "semanticAccuracy": "NOT_MEASURED_BY_ENGINEERING_TESTS"
+          }
+        }
+      ],
+      "candidates": [
+        {
+          "field": "required_written_documents",
+          "quote": "written collections-team consent",
+          "unitId": "U001",
+          "unitRange": [
+            72,
+            104
+          ],
+          "permitRange": [
+            72,
+            104
+          ],
+          "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "sourceUnitRange": [
+            0,
+            105
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+          "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+          "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+          "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+          "title": "Locate and verify written collections-team consent.",
+          "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_physical_protections",
+          "quote": "sacrificial runner sheets",
+          "unitId": "U002",
+          "unitRange": [
+            86,
+            111
+          ],
+          "permitRange": [
+            193,
+            218
+          ],
+          "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+          "sourceUnitRange": [
+            107,
+            275
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+          "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+          "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+          "id": "f8508caf5607232900ad20808501d27b35026bd94aae0192f7e00857427e3b65",
+          "title": "Confirm sacrificial runner sheets.",
+          "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_on_site_personnel",
+          "quote": "on-site floor warden",
+          "unitId": "U002",
+          "unitRange": [
+            119,
+            139
+          ],
+          "permitRange": [
+            226,
+            246
+          ],
+          "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+          "sourceUnitRange": [
+            107,
+            275
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+          "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+          "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+          "id": "8e929c91033355b02c905829b3b174702acc021327562b69322ddd16ee0970bc",
+          "title": "Confirm the on-site floor warden remains present throughout the take.",
+          "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        },
+        {
+          "field": "required_written_documents",
+          "quote": "written collections-team consent",
+          "unitId": "U001",
+          "unitRange": [
+            72,
+            104
+          ],
+          "permitRange": [
+            72,
+            104
+          ],
+          "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "sourceUnitRange": [
+            0,
+            105
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+          "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+          "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S402",
+          "sceneHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+          "id": "013c522cb5d556b56c7e978d231db96901012fdca0b0c494058efe5258d72321",
+          "title": "Locate and verify written collections-team consent.",
+          "sourceTaskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED"
+        }
+      ],
+      "notClearance": true
+    }
+  },
+  "actionQueue": {
+    "schema": "beforeroll-production-action-queue-v1",
+    "productionId": "live_20261027_B_gallery",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+    "total": 14,
+    "filteredTotal": 14,
+    "byCategory": {
+      "SOURCE": 0,
+      "EXECUTION": 0,
+      "HUMAN": 12,
+      "OPERATIONS": 2,
+      "HISTORY": 0
+    },
+    "byPriority": {
+      "BLOCKED": 0,
+      "UNCERTAIN": 0,
+      "SCOPE": 3,
+      "REVIEW": 11,
+      "PENDING": 0,
+      "HISTORY": 0
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 30,
+      "hasMore": false
+    },
+    "filter": {
+      "kind": "ALL",
+      "sceneId": null
+    },
+    "actions": [
+      {
+        "category": "HUMAN",
+        "priority": 2,
+        "code": "INVESTIGATE_DISCOVERY_UNCERTAINTY",
+        "subject": "S401: discovery requires documentary investigation",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "c25b24296d358b3145d0c6c1f525f5fe4fa3ee71332211e2eb0681df3ca0decb",
+        "detail": "AMBIGUOUS_MANUAL_REVIEW · OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "route": "review",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 2,
+        "code": "INVESTIGATE_DISCOVERY_UNCERTAINTY",
+        "subject": "S402: discovery requires documentary investigation",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "taskId": "e67ed278186668d6c5c4eca1755e064e14a203614a43a6419926853d25caa2de",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "e890a2da7e50f123f80838b651011cf8a305499d05920691519c3a3bb4aef812",
+        "detail": "NO_LINK_DETECTED_NOT_EXONERATION · OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "route": "review",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 2,
+        "code": "INVESTIGATE_DISCOVERY_UNCERTAINTY",
+        "subject": "S402: discovery requires documentary investigation",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "taskId": "fc0e995dded177dd8f67b8d2ddfe5a805ea7d9ad802256f447376c1c2e5bdc9c",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "f023f2e73056fd601c184cdc7da3c3874d9bc605e1c85f1c183ab9a928a43bb5",
+        "detail": "RELEVANT_REVIEW_ONLY · NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "route": "review",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S401: confirm scene schedule",
+        "sceneId": "S401",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "522025fcfa31662785ba83a723859c43b7a5863be529b5c962f95e83403f7535",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "OPERATIONS",
+        "priority": 3,
+        "code": "DATE_SCENE",
+        "subject": "S402: confirm scene schedule",
+        "sceneId": "S402",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "7bb5c61194b87b83cd53a8b43e7085f9aaad9c8365855b836d642b0847d1bed5",
+        "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+        "sourceQuote": null,
+        "route": "operations",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "RECORD_DOCUMENT_PROVENANCE",
+        "subject": "Review document PERMIT",
+        "sceneId": null,
+        "documentId": "PERMIT",
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "1801b0bd0659fdc040854b28fec666f3b014c835fb861d5d12be3d60d394f8a6",
+        "detail": "Record claimed issuer, document role and reference from the original source; do not assume authenticity.",
+        "sourceQuote": null,
+        "route": "authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S401: source finding awaits human review",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "taskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "668c0c284bf433c3a911b3024254f80b88941f10396ace7962a752c9bd6a3068",
+        "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+        "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "route": "review",
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S401: source finding awaits human review",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "771b035149bb70689f88dd437c3a1f0aea62148c1ffa2c514b47a88faa9a108f",
+        "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "route": "review",
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S401: source finding awaits human review",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "taskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "92f1beefc7fa6390ac33e408806c56af37f5f19683a9f003334896636fc604a2",
+        "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "route": "review",
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S402: source finding awaits human review",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "taskId": "e67ed278186668d6c5c4eca1755e064e14a203614a43a6419926853d25caa2de",
+        "conditionId": null,
+        "unitId": "U002",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "3122ee58b6f76a294c3f03455f3a1323369675d7aa3c97f6f0230a4b2b199e98",
+        "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+        "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "route": "review",
+        "globalTaskIndex": 4,
+        "sceneTaskIndex": 1,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S402: source finding awaits human review",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "taskId": "fc0e995dded177dd8f67b8d2ddfe5a805ea7d9ad802256f447376c1c2e5bdc9c",
+        "conditionId": null,
+        "unitId": "U003",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "441a48f8dd8d6539d63041d817de400230d25bcaf69ba4a5376ecb4c4343b74e",
+        "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+        "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "route": "review",
+        "globalTaskIndex": 5,
+        "sceneTaskIndex": 2,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_EXACT_SOURCE_TASK",
+        "subject": "S402: source finding awaits human review",
+        "sceneId": "S402",
+        "documentId": "PERMIT",
+        "taskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+        "conditionId": null,
+        "unitId": "U001",
+        "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "id": "87f088b623e38bd6d04eb36996736186c8b82028d598f3c6ab452dc5669cc9bc",
+        "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+        "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "route": "review",
+        "globalTaskIndex": 3,
+        "sceneTaskIndex": 0,
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S401: map permit to scene",
+        "sceneId": "S401",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "4f49b241749d90da353188774df12d1643c5fc103a742ac32597dd27a77e3c41",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      },
+      {
+        "category": "HUMAN",
+        "priority": 3,
+        "code": "REVIEW_SCENE_SCOPE",
+        "subject": "S402: map permit to scene",
+        "sceneId": "S402",
+        "documentId": null,
+        "taskId": null,
+        "conditionId": null,
+        "unitId": null,
+        "sourceHash": null,
+        "id": "47bf06f12ec08a06ec2e6f59dc6b2eadf589c1906fa22835617ff6cfc0fbd951",
+        "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+        "sourceQuote": null,
+        "route": "scene-authority",
+        "notClearance": true
+      }
+    ],
+    "notClearance": true,
+    "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+  },
+  "sceneWorkbench": {
+    "schema": "beforeroll-scene-workbench-v1",
+    "productionId": "live_20261027_B_gallery",
+    "title": "Fictional live acceptance B_GALLERY",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "asOf": "2026-10-27T11:57:49.291Z",
+    "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+    "scene": {
+      "sceneId": "S401",
+      "location": "Gallery",
+      "activity": "motorized tracking base across resin finish",
+      "start": "10:00",
+      "end": "11:00",
+      "originalRow": "Scene 401 | Gallery | 10:00-11:00 | motorized tracking base across resin finish",
+      "schedule": {
+        "sceneId": "S401",
+        "sceneSourceHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "scheduleState": "UNDATED_NO_AUTHORITY",
+        "startUtc": null,
+        "endUtc": null,
+        "timeZone": null,
+        "prerequisiteCount": 0,
+        "currentPrerequisites": 0,
+        "openPrerequisites": 0,
+        "pastDuePrerequisites": 0,
+        "operationsState": "SCHEDULE_REVIEW_REQUIRED",
+        "notClearance": true
+      },
+      "claimIds": [],
+      "currentHumanClaims": 0,
+      "taskIds": [
+        "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+        "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166"
+      ],
+      "documentaryState": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "planned": 3,
+      "modelComplete": 0,
+      "neverAttempted": 3,
+      "interruptedOrBillingUnknown": 0,
+      "humanReviewed": 0,
+      "humanUnresolved": 0,
+      "issues": [
+        "DATED_SCENE_SCHEDULE_NOT_CURRENT",
+        "MODEL_CHECKS_NOT_EVALUATED",
+        "SOURCE_TASKS_AWAIT_HUMAN_REVIEW",
+        "NO_HUMAN_SCENE_SCOPE_ASSERTIONS"
+      ],
+      "readiness": "OUTSTANDING_REVIEW",
+      "notClearance": true
+    },
+    "documents": [
+      {
+        "id": "PERMIT",
+        "name": "B_GALLERY-permit.txt",
+        "sourceSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "originalBytesSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "sourceFormat": "UTF8_TEXT",
+        "requiresPdfTextReview": false,
+        "sourceCoverageGaps": [],
+        "authorityMetadata": null,
+        "plannedSceneChecks": 3,
+        "evaluatedSceneChecks": 0,
+        "reviewedSceneChecks": 0,
+        "notClearance": true
+      }
+    ],
+    "scopeClaims": [],
+    "documentaryLinks": [],
+    "schedules": [],
+    "conditions": [],
+    "coordinatorTasks": {
+      "schema": "beforeroll-coordinator-suggestions-v1",
+      "state": "SOURCE_BOUND_SUGGESTIONS_REVIEW_ONLY",
+      "candidates": [
+        {
+          "field": "required_written_documents",
+          "quote": "written collections-team consent",
+          "unitId": "U001",
+          "unitRange": [
+            72,
+            104
+          ],
+          "permitRange": [
+            72,
+            104
+          ],
+          "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "sourceUnitRange": [
+            0,
+            105
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+          "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+          "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+          "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+          "title": "Locate and verify written collections-team consent.",
+          "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+          "contextUnitIds": [
+            "U002"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": {
+            "sequence": 1,
+            "candidateId": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+            "sceneId": "S401",
+            "source": {
+              "field": "required_written_documents",
+              "quote": "written collections-team consent",
+              "unitId": "U001",
+              "unitRange": [
+                72,
+                104
+              ],
+              "permitRange": [
+                72,
+                104
+              ],
+              "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+              "sourceUnitRange": [
+                0,
+                105
+              ],
+              "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+              "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+              "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+              "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+              "model": "clocked-1.0",
+              "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "issuance": "UNKNOWN",
+              "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+              "notClearance": true,
+              "productionId": "live_20261027_B_gallery",
+              "sceneId": "S401",
+              "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+              "sceneEpoch": 0,
+              "documentId": "PERMIT",
+              "documentRevision": 1,
+              "documentEpoch": 0,
+              "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+              "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+              "title": "Locate and verify written collections-team consent.",
+              "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+              "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+              "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+              "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+              "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+              "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+              "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+              "contextUnitIds": [
+                "U002"
+              ],
+              "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+              "scopeVerification": "HUMAN_REQUIRED",
+              "authenticity": "UNVERIFIED",
+              "fulfillment": "UNVERIFIED"
+            },
+            "reviewer": "Fictional campaign coordinator",
+            "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+            "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+            "at": "2026-10-27T11:38:05.161Z",
+            "workspaceRevision": 2,
+            "notClearance": true,
+            "sha256": "38429bcd18eda5d37593ee0b8ab7a3aec3aa4d562bcb692c67513a7dbd24afdf",
+            "sourceState": "CURRENT_REVIEW_ONLY"
+          }
+        },
+        {
+          "field": "required_physical_protections",
+          "quote": "sacrificial runner sheets",
+          "unitId": "U002",
+          "unitRange": [
+            86,
+            111
+          ],
+          "permitRange": [
+            193,
+            218
+          ],
+          "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+          "sourceUnitRange": [
+            107,
+            275
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+          "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+          "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+          "id": "f8508caf5607232900ad20808501d27b35026bd94aae0192f7e00857427e3b65",
+          "title": "Confirm sacrificial runner sheets.",
+          "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": null
+        },
+        {
+          "field": "required_on_site_personnel",
+          "quote": "on-site floor warden",
+          "unitId": "U002",
+          "unitRange": [
+            119,
+            139
+          ],
+          "permitRange": [
+            226,
+            246
+          ],
+          "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+          "sourceUnitRange": [
+            107,
+            275
+          ],
+          "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+          "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+          "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+          "model": "clocked-1.0",
+          "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "issuance": "UNKNOWN",
+          "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+          "notClearance": true,
+          "productionId": "live_20261027_B_gallery",
+          "sceneId": "S401",
+          "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+          "sceneEpoch": 0,
+          "documentId": "PERMIT",
+          "documentRevision": 1,
+          "documentEpoch": 0,
+          "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+          "id": "8e929c91033355b02c905829b3b174702acc021327562b69322ddd16ee0970bc",
+          "title": "Confirm the on-site floor warden remains present throughout the take.",
+          "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+          "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+          "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+          "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+          "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+          "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+          "contextUnitIds": [
+            "U001",
+            "U003"
+          ],
+          "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+          "scopeVerification": "HUMAN_REQUIRED",
+          "authenticity": "UNVERIFIED",
+          "fulfillment": "UNVERIFIED",
+          "humanReview": null
+        }
+      ],
+      "warnings": [],
+      "fieldStates": [],
+      "reviewHistory": [
+        {
+          "sequence": 1,
+          "candidateId": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+          "sceneId": "S401",
+          "source": {
+            "field": "required_written_documents",
+            "quote": "written collections-team consent",
+            "unitId": "U001",
+            "unitRange": [
+              72,
+              104
+            ],
+            "permitRange": [
+              72,
+              104
+            ],
+            "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+            "sourceUnitRange": [
+              0,
+              105
+            ],
+            "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+            "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+            "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+            "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_B_gallery",
+            "sceneId": "S401",
+            "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+            "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+            "title": "Locate and verify written collections-team consent.",
+            "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+            "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          "reviewer": "Fictional campaign coordinator",
+          "reason": "Reviewed quoted requirement; original issuance, scope and fulfillment still need evidence.",
+          "decision": "SUGGESTION_REVIEWED_NOT_FULFILLMENT",
+          "at": "2026-10-27T11:38:05.161Z",
+          "workspaceRevision": 2,
+          "notClearance": true,
+          "sha256": "38429bcd18eda5d37593ee0b8ab7a3aec3aa4d562bcb692c67513a7dbd24afdf",
+          "sourceState": "CURRENT_REVIEW_ONLY"
+        }
+      ],
+      "provenance": "OWNER_RECORDED_CLOCKED_EXTRACT",
+      "sourceSelection": "RESEARCHER_PRESELECTED_EXPOSED_U01_NOT_AUTONOMOUS",
+      "issuance": "UNKNOWN",
+      "notClearance": true,
+      "humanEffortSeconds": null,
+      "notice": "Model-assisted proposals, not human-confirmed duties or filming authority.",
+      "discovery": {
+        "schema": "beforeroll-core-discovery-projection-v1",
+        "jobs": [
+          {
+            "id": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "state": "COMPLETE_FOR_PLANNED_UNITS_NOT_AUTHORITY",
+            "current": true,
+            "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "createdAt": "2026-10-27T11:37:57.655Z",
+            "updatedAt": "2026-10-27T11:38:04.172Z",
+            "stopReason": null,
+            "coverage": {
+              "pairs": 6,
+              "assessed": 6,
+              "unassessed": 0,
+              "relevant": 4,
+              "ambiguous": 1,
+              "extractedUnits": 3,
+              "totalUnits": 3
+            },
+            "pairs": [
+              {
+                "taskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+                "sceneId": "S401",
+                "documentId": "PERMIT",
+                "unitId": "U001",
+                "quote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+                "range": [
+                  0,
+                  105
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+                "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.9941,
+                "modelGrantClaim": 0.005,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": null,
+                "notClearance": true
+              },
+              {
+                "taskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+                "sceneId": "S401",
+                "documentId": "PERMIT",
+                "unitId": "U002",
+                "quote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+                "range": [
+                  107,
+                  275
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+                "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.9928,
+                "modelGrantClaim": 0.946,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+                },
+                "scopeCaution": null,
+                "notClearance": true
+              },
+              {
+                "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+                "sceneId": "S401",
+                "documentId": "PERMIT",
+                "unitId": "U003",
+                "quote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+                "range": [
+                  277,
+                  404
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "AMBIGUOUS_MANUAL_REVIEW",
+                "decideRequestSha256": "0e1efdee260ccbe01d8ac96a85ea6a06dc711e06ce9617cec09ce604b8d13d42",
+                "decideResponseSha256": "e0931619bbd3916fcb491c6f7d8036ee04c476385d249076cbf428a7e5d7a423",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.5956,
+                "modelGrantClaim": 0.0036,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+                "sceneId": "S402",
+                "documentId": "PERMIT",
+                "unitId": "U001",
+                "quote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+                "range": [
+                  0,
+                  105
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+                "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.9945,
+                "modelGrantClaim": 0.005,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": null,
+                "notClearance": true
+              },
+              {
+                "taskId": "e67ed278186668d6c5c4eca1755e064e14a203614a43a6419926853d25caa2de",
+                "sceneId": "S402",
+                "documentId": "PERMIT",
+                "unitId": "U002",
+                "quote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+                "range": [
+                  107,
+                  275
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "NO_LINK_DETECTED_NOT_EXONERATION",
+                "decideRequestSha256": "9ba2e852973202272bed7e5125218534e4f7bc39bb51866d241c2f5a5a9f8ad3",
+                "decideResponseSha256": "2b82fbb371a6e49ad761a0ce6545c624ab73728506f1aae058f4eae29c35af65",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.1192,
+                "modelGrantClaim": 0.0043,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+                  "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+                },
+                "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              },
+              {
+                "taskId": "fc0e995dded177dd8f67b8d2ddfe5a805ea7d9ad802256f447376c1c2e5bdc9c",
+                "sceneId": "S402",
+                "documentId": "PERMIT",
+                "unitId": "U003",
+                "quote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+                "range": [
+                  277,
+                  404
+                ],
+                "decideStatus": "ACCEPTED",
+                "route": "RELEVANT_REVIEW_ONLY",
+                "decideRequestSha256": "de62f169a7106d16fc779797dd05e0df838165b41c848f3e7198dbcd8008f93d",
+                "decideResponseSha256": "dfd626d4983659074ac7a72f5272b615c23a10b9477e5928847e2a3cae2ce1f7",
+                "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "relevance": 0.8144,
+                "modelGrantClaim": 0.003,
+                "extractStatus": "ACCEPTED",
+                "literalFieldStates": {
+                  "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+                  "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+                },
+                "scopeCaution": "NARRATIVE_OR_UNISSUED_SCOPE_REQUIRES_MANUAL_REVIEW",
+                "notClearance": true
+              }
+            ],
+            "attempts": 9,
+            "unknownBilling": 0,
+            "reportedCredits": 17,
+            "unknownCreditEntries": 0,
+            "latencyMs": 6032.292200000001,
+            "notClearance": true,
+            "candidates": [
+              {
+                "field": "required_written_documents",
+                "quote": "written collections-team consent",
+                "unitId": "U001",
+                "unitRange": [
+                  72,
+                  104
+                ],
+                "permitRange": [
+                  72,
+                  104
+                ],
+                "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+                "sourceUnitRange": [
+                  0,
+                  105
+                ],
+                "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+                "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+                "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+                "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_B_gallery",
+                "sceneId": "S401",
+                "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+                "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+                "title": "Locate and verify written collections-team consent.",
+                "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+                "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+                "contextUnitIds": [
+                  "U002"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_physical_protections",
+                "quote": "sacrificial runner sheets",
+                "unitId": "U002",
+                "unitRange": [
+                  86,
+                  111
+                ],
+                "permitRange": [
+                  193,
+                  218
+                ],
+                "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+                "sourceUnitRange": [
+                  107,
+                  275
+                ],
+                "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+                "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+                "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+                "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_B_gallery",
+                "sceneId": "S401",
+                "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+                "id": "f8508caf5607232900ad20808501d27b35026bd94aae0192f7e00857427e3b65",
+                "title": "Confirm sacrificial runner sheets.",
+                "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+                "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+                "contextUnitIds": [
+                  "U001",
+                  "U003"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_on_site_personnel",
+                "quote": "on-site floor warden",
+                "unitId": "U002",
+                "unitRange": [
+                  119,
+                  139
+                ],
+                "permitRange": [
+                  226,
+                  246
+                ],
+                "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+                "sourceUnitRange": [
+                  107,
+                  275
+                ],
+                "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+                "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+                "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+                "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_B_gallery",
+                "sceneId": "S401",
+                "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+                "id": "8e929c91033355b02c905829b3b174702acc021327562b69322ddd16ee0970bc",
+                "title": "Confirm the on-site floor warden remains present throughout the take.",
+                "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+                "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+                "contextUnitIds": [
+                  "U001",
+                  "U003"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              },
+              {
+                "field": "required_written_documents",
+                "quote": "written collections-team consent",
+                "unitId": "U001",
+                "unitRange": [
+                  72,
+                  104
+                ],
+                "permitRange": [
+                  72,
+                  104
+                ],
+                "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+                "sourceUnitRange": [
+                  0,
+                  105
+                ],
+                "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+                "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+                "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+                "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+                "model": "clocked-1.0",
+                "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+                "issuance": "UNKNOWN",
+                "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+                "notClearance": true,
+                "productionId": "live_20261027_B_gallery",
+                "sceneId": "S402",
+                "sceneHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+                "sceneEpoch": 0,
+                "documentId": "PERMIT",
+                "documentRevision": 1,
+                "documentEpoch": 0,
+                "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+                "id": "013c522cb5d556b56c7e978d231db96901012fdca0b0c494058efe5258d72321",
+                "title": "Locate and verify written collections-team consent.",
+                "sourceTaskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+                "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+                "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+                "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+                "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+                "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+                "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+                "contextUnitIds": [
+                  "U002"
+                ],
+                "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+                "scopeVerification": "HUMAN_REQUIRED",
+                "authenticity": "UNVERIFIED",
+                "fulfillment": "UNVERIFIED",
+                "sourceState": "CURRENT_REVIEW_ONLY"
+              }
+            ],
+            "comparison": {
+              "basis": "OWNER_CLOCKED_CORE_DISCOVERY",
+              "aiOff": [
+                {
+                  "id": "S401:DATE_UNKNOWN",
+                  "sceneId": "S401",
+                  "code": "DATE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Date authority not established",
+                  "detail": "Confirm that the issued conditions apply to this shoot date.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 6,
+                      "end": 9,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S401:LOCATION_UNKNOWN",
+                  "sceneId": "S401",
+                  "code": "LOCATION_UNKNOWN",
+                  "severity": "review",
+                  "title": "Location scope requires source review",
+                  "detail": "No trustworthy issued location reading is available.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 12,
+                      "end": 19,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S401:END_UNKNOWN",
+                  "sceneId": "S401",
+                  "code": "END_UNKNOWN",
+                  "severity": "review",
+                  "title": "Filming deadline not source-backed",
+                  "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 22,
+                      "end": 33,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S402:DATE_UNKNOWN",
+                  "sceneId": "S402",
+                  "code": "DATE_UNKNOWN",
+                  "severity": "review",
+                  "title": "Date authority not established",
+                  "detail": "Confirm that the issued conditions apply to this shoot date.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 86,
+                      "end": 89,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S402:LOCATION_UNKNOWN",
+                  "sceneId": "S402",
+                  "code": "LOCATION_UNKNOWN",
+                  "severity": "review",
+                  "title": "Location scope requires source review",
+                  "detail": "No trustworthy issued location reading is available.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 92,
+                      "end": 99,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                },
+                {
+                  "id": "S402:END_UNKNOWN",
+                  "sceneId": "S402",
+                  "code": "END_UNKNOWN",
+                  "severity": "review",
+                  "title": "Filming deadline not source-backed",
+                  "detail": "No trusted time-limit evidence is available; do not interpret this as unrestricted filming.",
+                  "evidence": {
+                    "permit": null,
+                    "scene": {
+                      "start": 102,
+                      "end": 113,
+                      "doc": "call sheet",
+                      "quote": null
+                    }
+                  },
+                  "reviewed": false
+                }
+              ],
+              "aiOffLiteralTaskCount": 0,
+              "modelDerivedTaskCount": 4,
+              "humanEffortSeconds": null,
+              "semanticAccuracy": "NOT_MEASURED_BY_ENGINEERING_TESTS"
+            }
+          }
+        ],
+        "candidates": [
+          {
+            "field": "required_written_documents",
+            "quote": "written collections-team consent",
+            "unitId": "U001",
+            "unitRange": [
+              72,
+              104
+            ],
+            "permitRange": [
+              72,
+              104
+            ],
+            "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+            "sourceUnitRange": [
+              0,
+              105
+            ],
+            "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+            "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+            "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+            "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_B_gallery",
+            "sceneId": "S401",
+            "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+            "id": "63eb6a7c8cdd08d47aaad2c94be136e8aa4f79cace439fbd2ef8a00c9961a64d",
+            "title": "Locate and verify written collections-team consent.",
+            "sourceTaskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+            "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_physical_protections",
+            "quote": "sacrificial runner sheets",
+            "unitId": "U002",
+            "unitRange": [
+              86,
+              111
+            ],
+            "permitRange": [
+              193,
+              218
+            ],
+            "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+            "sourceUnitRange": [
+              107,
+              275
+            ],
+            "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+            "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+            "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+            "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_B_gallery",
+            "sceneId": "S401",
+            "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+            "id": "f8508caf5607232900ad20808501d27b35026bd94aae0192f7e00857427e3b65",
+            "title": "Confirm sacrificial runner sheets.",
+            "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+            "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_on_site_personnel",
+            "quote": "on-site floor warden",
+            "unitId": "U002",
+            "unitRange": [
+              119,
+              139
+            ],
+            "permitRange": [
+              226,
+              246
+            ],
+            "sourceSentence": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+            "sourceUnitRange": [
+              107,
+              275
+            ],
+            "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+            "unitSha256": "95ed2e236eddd097eca7d0bc619e207860a79a6eac3c290f5f6ded94b59b989e",
+            "requestSha256": "e94e5f35846229d22e8d958b14a9ec7f4533c2794c1bde3fa0099cd1346e150b",
+            "responseSha256": "c94915fba36794d95d35dd4c68c43fb44a663f651966085ebe9e3d227055fe13",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_B_gallery",
+            "sceneId": "S401",
+            "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+            "id": "8e929c91033355b02c905829b3b174702acc021327562b69322ddd16ee0970bc",
+            "title": "Confirm the on-site floor warden remains present throughout the take.",
+            "sourceTaskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+            "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+            "contextUnitIds": [
+              "U001",
+              "U003"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          },
+          {
+            "field": "required_written_documents",
+            "quote": "written collections-team consent",
+            "unitId": "U001",
+            "unitRange": [
+              72,
+              104
+            ],
+            "permitRange": [
+              72,
+              104
+            ],
+            "sourceSentence": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+            "sourceUnitRange": [
+              0,
+              105
+            ],
+            "permitSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+            "unitSha256": "9922296c71d0a5afd83f59f5b4770705d649deeb8292c0ddecfc841035af9f65",
+            "requestSha256": "9d0282934b8b123e4e064e59e2ec13179a21ff6145d1ddf5b197637bf0513cb4",
+            "responseSha256": "8b629b854e4fd039c15bf8298e1ad383248c11a20ddf151294a1b311e5457b00",
+            "model": "clocked-1.0",
+            "provenance": "OWNER_CLOCKED_CORE_DISCOVERY",
+            "issuance": "UNKNOWN",
+            "status": "MODEL_SUGGESTED_NOT_HUMAN_CONFIRMED",
+            "notClearance": true,
+            "productionId": "live_20261027_B_gallery",
+            "sceneId": "S402",
+            "sceneHash": "d472ddf0f64b4383d0ae3d60bf228b67bca7d9ffcf36a1859341dd6ecebd12df",
+            "sceneEpoch": 0,
+            "documentId": "PERMIT",
+            "documentRevision": 1,
+            "documentEpoch": 0,
+            "decideResponseSha256": "f68304a0b18248409d2495439cb9e0bf8af759f191da5c8cacd47d6431b300f1",
+            "id": "013c522cb5d556b56c7e978d231db96901012fdca0b0c494058efe5258d72321",
+            "title": "Locate and verify written collections-team consent.",
+            "sourceTaskId": "38483342ad194295c26cf32592a8768540e5e4e4d5891731988edf0485cda92b",
+            "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+            "sourceReviewState": "HUMAN_VERIFICATION_REQUIRED",
+            "sourceSelection": "EXHAUSTIVE_UNIT_INVENTORY_THEN_CLOCKED_RELEVANCE",
+            "applicability": "MODEL_ROUTED_SCOPE_UNVERIFIED",
+            "supportCoverage": "INCOMPLETE_OR_UNASSESSED",
+            "decideRequestSha256": "1defad014e1d014e178c3a075675c7e15217bf1f8a9aac3313fe1dab1757dae3",
+            "contextUnitIds": [
+              "U002"
+            ],
+            "decideRoutingBasis": "RELEVANT_REVIEW_ONLY",
+            "scopeVerification": "HUMAN_REQUIRED",
+            "authenticity": "UNVERIFIED",
+            "fulfillment": "UNVERIFIED"
+          }
+        ],
+        "notClearance": true
+      }
+    },
+    "tasks": [
+      {
+        "id": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "documentHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "unitId": "U001",
+        "sourceRange": [
+          0,
+          105
+        ],
+        "quote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+        "requestHash": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "unitId": "U001",
+          "quote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "range": [
+            0,
+            105
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "RELEVANT_REVIEW_ONLY",
+          "decideRequestSha256": "de9c83a5aa5f1fa58e1564d9f9b439cec9315f514d60246861e9597604b6ec59",
+          "decideResponseSha256": "ac1b4ae77e5b8e57ce94b64c6bbbb7326d4c18b2073cc8e8508620181790224c",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.9941,
+          "modelGrantClaim": 0.005,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "LITERAL_REQUIREMENTS_FOUND",
+            "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+            "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+          },
+          "scopeCaution": null,
+          "notClearance": true,
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38"
+        },
+        "globalTaskIndex": 0,
+        "sceneTaskIndex": 0,
+        "currentHumanReview": null,
+        "evidenceClass": "CLOCKED_DISCOVERY_RECORDED_NOT_AUTHORITY"
+      },
+      {
+        "id": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "documentHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "unitId": "U002",
+        "sourceRange": [
+          107,
+          275
+        ],
+        "quote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+        "requestHash": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "unitId": "U002",
+          "quote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+          "range": [
+            107,
+            275
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "RELEVANT_REVIEW_ONLY",
+          "decideRequestSha256": "858d3091477e3fb6a54415ebf02cb3517fc1d673c854a6e8ea581b727d8df917",
+          "decideResponseSha256": "ecb5649c567102d1607c1e7b23135f21edeb481d5648e54705836dce415941ba",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.9928,
+          "modelGrantClaim": 0.946,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+            "required_physical_protections": "LITERAL_REQUIREMENTS_FOUND",
+            "required_on_site_personnel": "LITERAL_REQUIREMENTS_FOUND"
+          },
+          "scopeCaution": null,
+          "notClearance": true,
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38"
+        },
+        "globalTaskIndex": 1,
+        "sceneTaskIndex": 1,
+        "currentHumanReview": null,
+        "evidenceClass": "CLOCKED_DISCOVERY_RECORDED_NOT_AUTHORITY"
+      },
+      {
+        "id": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "documentHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "sceneHash": "63721226f53b2ad4465e642fe13520d850aba80bd0d77b82ffc608e48f000d0b",
+        "unitId": "U003",
+        "sourceRange": [
+          277,
+          404
+        ],
+        "quote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+        "requestHash": "0e1efdee260ccbe01d8ac96a85ea6a06dc711e06ce9617cec09ce604b8d13d42",
+        "modelState": "NOT_ATTEMPTED",
+        "modelOrigin": "NO_MODEL_RECORDING",
+        "model": null,
+        "reportedCredits": null,
+        "error": null,
+        "inheritedFromPlanKey": null,
+        "notClearance": true,
+        "discoveryCheck": {
+          "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "unitId": "U003",
+          "quote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+          "range": [
+            277,
+            404
+          ],
+          "decideStatus": "ACCEPTED",
+          "route": "AMBIGUOUS_MANUAL_REVIEW",
+          "decideRequestSha256": "0e1efdee260ccbe01d8ac96a85ea6a06dc711e06ce9617cec09ce604b8d13d42",
+          "decideResponseSha256": "e0931619bbd3916fcb491c6f7d8036ee04c476385d249076cbf428a7e5d7a423",
+          "origin": "OWNER_CLOCKED_CORE_DISCOVERY",
+          "relevance": 0.5956,
+          "modelGrantClaim": 0.0036,
+          "extractStatus": "ACCEPTED",
+          "literalFieldStates": {
+            "required_written_documents": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+            "required_physical_protections": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD",
+            "required_on_site_personnel": "NO_LITERAL_REQUIREMENT_FOUND_IN_THIS_FIELD"
+          },
+          "scopeCaution": "OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW",
+          "notClearance": true,
+          "discoveryId": "d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38"
+        },
+        "globalTaskIndex": 2,
+        "sceneTaskIndex": 2,
+        "currentHumanReview": null,
+        "evidenceClass": "CLOCKED_DISCOVERY_RECORDED_NOT_AUTHORITY"
+      }
+    ],
+    "taskPagination": {
+      "offset": 0,
+      "limit": 40,
+      "total": 3,
+      "hasMore": false
+    },
+    "actions": {
+      "schema": "beforeroll-production-action-queue-v1",
+      "productionId": "live_20261027_B_gallery",
+      "workspaceRevision": 3,
+      "persistedVersion": 4,
+      "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+      "total": 14,
+      "filteredTotal": 6,
+      "byCategory": {
+        "SOURCE": 0,
+        "EXECUTION": 0,
+        "HUMAN": 12,
+        "OPERATIONS": 2,
+        "HISTORY": 0
+      },
+      "byPriority": {
+        "BLOCKED": 0,
+        "UNCERTAIN": 0,
+        "SCOPE": 3,
+        "REVIEW": 11,
+        "PENDING": 0,
+        "HISTORY": 0
+      },
+      "pagination": {
+        "offset": 0,
+        "limit": 30,
+        "hasMore": false
+      },
+      "filter": {
+        "kind": "ALL",
+        "sceneId": "S401"
+      },
+      "actions": [
+        {
+          "category": "HUMAN",
+          "priority": 2,
+          "code": "INVESTIGATE_DISCOVERY_UNCERTAINTY",
+          "subject": "S401: discovery requires documentary investigation",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "id": "c25b24296d358b3145d0c6c1f525f5fe4fa3ee71332211e2eb0681df3ca0decb",
+          "detail": "AMBIGUOUS_MANUAL_REVIEW · OTHER_OR_MIXED_SCENE_SCOPE_REQUIRES_MANUAL_REVIEW. Review the exact source; no applicability or authority established.",
+          "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+          "route": "review",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "OPERATIONS",
+          "priority": 3,
+          "code": "DATE_SCENE",
+          "subject": "S401: confirm scene schedule",
+          "sceneId": "S401",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "522025fcfa31662785ba83a723859c43b7a5863be529b5c962f95e83403f7535",
+          "detail": "Record a source-linked date, timezone and overnight decision before evaluating time-bound conditions.",
+          "sourceQuote": null,
+          "route": "operations",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S401: source finding awaits human review",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "taskId": "8ef287fb28c21c2baf1899057f1592b4140505dfda8752206c16e88822eb4009",
+          "conditionId": null,
+          "unitId": "U001",
+          "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "id": "668c0c284bf433c3a911b3024254f80b88941f10396ace7962a752c9bd6a3068",
+          "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+          "sourceQuote": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.",
+          "route": "review",
+          "globalTaskIndex": 0,
+          "sceneTaskIndex": 0,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S401: source finding awaits human review",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "taskId": "44cd743247b7c54b38740c5d22658ccec1c5a4c05da5b710a58406452d6a6166",
+          "conditionId": null,
+          "unitId": "U003",
+          "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "id": "771b035149bb70689f88dd437c3a1f0aea62148c1ffa2c514b47a88faa9a108f",
+          "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+          "sourceQuote": "An unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+          "route": "review",
+          "globalTaskIndex": 2,
+          "sceneTaskIndex": 2,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_EXACT_SOURCE_TASK",
+          "subject": "S401: source finding awaits human review",
+          "sceneId": "S401",
+          "documentId": "PERMIT",
+          "taskId": "013588502b6d2bb2b2c6979faa987920f85a4a1ec7de95952fb0c7c1081c5c45",
+          "conditionId": null,
+          "unitId": "U002",
+          "sourceHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+          "id": "92f1beefc7fa6390ac33e408806c56af37f5f19683a9f003334896636fc604a2",
+          "detail": "Inspect the original passage, model result and documentary scope. Human review is not clearance.",
+          "sourceQuote": "The issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.",
+          "route": "review",
+          "globalTaskIndex": 1,
+          "sceneTaskIndex": 1,
+          "notClearance": true
+        },
+        {
+          "category": "HUMAN",
+          "priority": 3,
+          "code": "REVIEW_SCENE_SCOPE",
+          "subject": "S401: map permit to scene",
+          "sceneId": "S401",
+          "documentId": null,
+          "taskId": null,
+          "conditionId": null,
+          "unitId": null,
+          "sourceHash": null,
+          "id": "4f49b241749d90da353188774df12d1643c5fc103a742ac32597dd27a77e3c41",
+          "detail": "Record relevant exact source clauses and review their applicability to this scene.",
+          "sourceQuote": null,
+          "route": "scene-authority",
+          "notClearance": true,
+          "globalTaskIndex": null,
+          "sceneTaskIndex": null
+        }
+      ],
+      "notClearance": true,
+      "notice": "Prioritized human work list derived from the same current original sources and model journal. Never evidence of permission to film."
+    },
+    "documentaryReasoning": {
+      "sceneId": "S401",
+      "state": "NO_REVIEWED_CURRENT_DOCUMENTARY_SCOPE",
+      "originalActivity": "motorized tracking base across resin finish",
+      "originalLocation": "Gallery",
+      "restrictions": [],
+      "requests": [],
+      "amendments": [],
+      "requirements": [],
+      "conflicts": [],
+      "claims": [],
+      "modelOnlyFindings": [],
+      "openPrerequisites": 0,
+      "documentaryConflicts": 0,
+      "humanRecordedIssuedClaims": 0,
+      "unresolvedGrantClaims": 0,
+      "clockedModelEvidenceCount": 0,
+      "notClearance": true,
+      "notice": "A human-entered issued amendment is not authenticated, signatures and legal precedence are unverified, and model scores confer no permission."
+    },
+    "summary": {
+      "planned": 3,
+      "completedModelChecks": 0,
+      "uncertainModelChecks": 0,
+      "currentTaskReviews": 0,
+      "currentScopeClaims": 0,
+      "staleScopeClaims": 0,
+      "currentPrerequisites": 0,
+      "openPrerequisites": 0,
+      "actionCount": 6
+    },
+    "sceneReviewState": "OUTSTANDING_REVIEW",
+    "notClearance": true,
+    "notice": "Single source-linked scene review, NOT a filming clearance, legal interpretation, authenticated permit or fulfilled condition.",
+    "sha256": "eb193a5cda85d9a7adc8719e3ed8c802a1727b4241f3a1821074085d26f71bf1"
+  },
+  "journey": {
+    "schema": "beforeroll-production-journey-v1",
+    "productionId": "live_20261027_B_gallery",
+    "workspaceRevision": 3,
+    "persistedVersion": 4,
+    "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+    "checkpoints": [
+      {
+        "id": "sources",
+        "number": "01",
+        "title": "Import and verify",
+        "description": "Load originals, transcribe where needed and confirm source coverage.",
+        "status": "CURRENT",
+        "summary": "1 documents · 2 scenes · 0 originals missing",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "scope",
+        "number": "02",
+        "title": "Map authority",
+        "description": "Review documentary provenance and exact scene applicability.",
+        "status": "ATTENTION",
+        "summary": "1 document roles unreviewed · 2 scenes without scope assertions",
+        "blockers": [
+          "Documentary provenance or scene scope needs responsible human review."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "analysis",
+        "number": "03",
+        "title": "Run source checks",
+        "description": "Perform current source-to-scene Clocked comparisons.",
+        "status": "CURRENT",
+        "summary": "6/6 source checks recorded (including discovery Decide) · 0 uncertain",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "review",
+        "number": "04",
+        "title": "Investigate findings",
+        "description": "Record source-bound human decisions and follow-up.",
+        "status": "ATTENTION",
+        "summary": "0/6 current human reviews · 0 follow-ups",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "operations",
+        "number": "05",
+        "title": "Resolve prerequisites",
+        "description": "Confirm scene dates, operating conditions and outstanding work.",
+        "status": "ATTENTION",
+        "summary": "0/2 scenes dated · 0 open prerequisites · 0 overdue",
+        "blockers": [],
+        "notClearance": true
+      },
+      {
+        "id": "changes",
+        "number": "06",
+        "title": "Reconcile revisions",
+        "description": "Preview and commit changed originals, then revisit affected checks.",
+        "status": "AVAILABLE",
+        "summary": "0 historical human reviews · 0 archived Clocked runs",
+        "blockers": [
+          "Every replacement requires a separate source-bound impact preview and exact commit."
+        ],
+        "notClearance": true
+      },
+      {
+        "id": "evidence",
+        "number": "07",
+        "title": "Export evidence",
+        "description": "Inspect and export current and historical production evidence.",
+        "status": "ATTENTION",
+        "summary": "3 outstanding evidence classes · project version 4",
+        "blockers": [
+          "Exports document recorded evidence and limitations; never filming clearance."
+        ],
+        "notClearance": true
+      }
+    ],
+    "suggestedStage": "scope",
+    "allCheckpointsCurrent": false,
+    "caveat": "Operational checkpoints are not approval, authorization, calibrated model confidence or filming clearance.",
+    "notClearance": true,
+    "sha256": "52cc835105ceaf426f76f213366e05cc728c7df56e953f14bfa3e52985f1f925"
+  },
+  "consistency": {
+    "schema": "beforeroll-production-consistency-v1",
+    "productionId": "live_20261027_B_gallery",
+    "persistedVersion": 4,
+    "workspaceRevision": 3,
+    "asOf": "2026-10-27T11:57:49.291Z",
+    "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+    "currentSourceInventory": {
+      "documents": 1,
+      "scenes": 2,
+      "sourcePlanTasks": 6
+    },
+    "currentEvidence": {
+      "modelComplete": 0,
+      "modelPending": 6,
+      "modelUncertain": 0,
+      "humanReviewed": 0,
+      "openHumanReviews": 0
+    },
+    "historicalEvidence": {
+      "humanReviews": 0,
+      "archivedModelRuns": 0,
+      "staleScopeClaims": 0
+    },
+    "originals": {
+      "referenced": 2,
+      "preserved": 2,
+      "missing": 0
+    },
+    "checks": [
+      "ORIGINAL_SOURCE_REFERENCES",
+      "PLAN_TO_DOSSIER_TASKS",
+      "SCENE_TOTALS",
+      "CURRENT_VS_HISTORICAL_REVIEWS",
+      "MODEL_ATTEMPT_ACCOUNTING",
+      "OPERATIONS_COUNTS",
+      "ORIGINAL_FILE_CUSTODY",
+      "ACTION_AND_WORKBENCH_ALIGNMENT",
+      "JOURNEY_ALIGNMENT"
+    ],
+    "state": "INTERNAL_RECONCILIATION_PASS_NOT_SOURCE_AUTHENTICATION",
+    "notClearance": true,
+    "limitation": "Checks internal source and recorded evidence consistency only; not external document authenticity, comprehensive permit coverage, model accuracy, legal authority or filming clearance.",
+    "sha256": "f4eeb63089156b412b68215a7cfe7f8f642d77dd2073b8ba8316a5ca714e7a1b"
+  },
+  "history": {
+    "schema": "beforeroll-production-history-v1",
+    "productionId": "live_20261027_B_gallery",
+    "persistedVersion": 4,
+    "dossierSha256": "227f9cfc9f4365af5d8dde2b2a9b0a98fdd6ee2dd0185e03669c6ec9613e740a",
+    "total": 4,
+    "filteredTotal": 4,
+    "filter": {
+      "kind": "ALL",
+      "state": "ALL",
+      "search": ""
+    },
+    "pagination": {
+      "offset": 0,
+      "limit": 20,
+      "shown": 4,
+      "hasMore": false
+    },
+    "records": [
+      {
+        "category": "MODEL",
+        "id": "discovery:d23ffbf775a875f7ab08e762e542788e5c18f0248d69020d3464cef55eb65e38",
+        "title": "Source discovery: 6/6 scene links assessed",
+        "status": "CURRENT",
+        "notClearance": true
+      },
+      {
+        "category": "SOURCES",
+        "id": "source:0:ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "title": "permit: B_GALLERY-permit.txt",
+        "status": "CURRENT",
+        "documentId": "PERMIT",
+        "originalHash": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+        "notClearance": true
+      },
+      {
+        "category": "SOURCES",
+        "id": "source:1:19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "title": "callSheet: B_GALLERY-call.txt",
+        "status": "CURRENT",
+        "documentId": null,
+        "originalHash": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+        "notClearance": true
+      },
+      {
+        "category": "REVIEWS",
+        "id": "suggestion-review:1",
+        "title": "Suggestion reviewed by Fictional campaign coordinator (not fulfillment)",
+        "status": "CURRENT",
+        "sceneId": "S401",
+        "documentId": "PERMIT",
+        "notClearance": true
+      }
+    ],
+    "selected": null,
+    "notClearance": true,
+    "sha256": "8d6dcde046e641ec713cf365695b7fe147a1d2f37700c3f8b18bc0fcb7971f0b"
+  },
+  "notClearance": true
+}

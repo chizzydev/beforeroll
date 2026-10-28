@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-27T11:44:48.108Z",
+  "sourceScenarioHash": "82400dba81240e38c6159e9f081a48fb58055c382f062363fa51e808672d5a9e",
+  "previewSha256": "b5e54b9a2ac88ebd0ca4924f5ccf902c8ce873cf47ef5770b03df73bf7e05afc",
+  "productionId": "live_20261027_F_collection",
+  "budgetBefore": {
+    "requests": 47,
+    "reportedCredits": 86,
+    "unknownCreditRequests": 0
+  },
+  "ceiling": {
+    "requests": 60,
+    "credits": 500
+  }
+}

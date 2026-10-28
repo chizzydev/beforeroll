@@ -1,0 +1,165 @@
+{
+  "id": "fill-v4-3",
+  "gold": {
+    "documentId": "CORRESPONDENCE",
+    "unitIndex": 0,
+    "role": "request_only",
+    "sceneIds": [
+      "S32"
+    ],
+    "claimQuote": "has not been issued as an amendment",
+    "reference": "Variation VA-17",
+    "scope": "during the interview",
+    "unitId": "U001",
+    "unitRange": [
+      0,
+      238
+    ],
+    "payload": {
+      "text": "UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.",
+      "instructions": "Read only the supplied original passage. Classify what the passage CLAIMS, never its authenticity, actual issuance, legal force, permission or fulfillment. A request or unsigned draft is not an issued variation. Historical descriptions are not current obligations. Copy source evidence verbatim with infer:false; leave absent source fields null. Distinguish a current condition concerning an old object from a historical description of past arrangements. Do not reproduce the prerequisite lists handled by Extract. Scene associations are investigation leads, not verified applicability.",
+      "fields": {
+        "claimed_role": {
+          "type": "choice",
+          "description": "The documentary role expressly claimed by this passage. claims_issued_variation means the source claims issuance of a narrow variation; it is never independent proof of issue. request_only includes unsigned proposals or extensions awaiting approval. historical_reference describes past records only. current_condition states current documentary arrangements. unrelated_or_unclear when none is established.",
+          "options": [
+            "claims_issued_variation",
+            "request_only",
+            "historical_reference",
+            "current_condition",
+            "unrelated_or_unclear"
+          ]
+        },
+        "claim_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Copy the original clause that establishes the selected documentary role: the mandatory wording for a current condition, the claimed issuance wording for a variation, the request or awaiting-approval wording for a request, or the past-record wording for history. Include sufficient original words to evidence the role. Null only if no such words exist."
+        },
+        "referenced_instrument": {
+          "type": "extract",
+          "infer": false,
+          "description": "The exact name or identifier of ONE referenced supporting consent, letter, schedule, annex or authorization that a human should locate and inspect. Not physical equipment or personnel. Null when no supporting instrument is referenced."
+        },
+        "scope_quote": {
+          "type": "extract",
+          "infer": false,
+          "description": "Exact words specifying which planned activity or scene the documentary claim concerns; null when scope is not stated."
+        },
+        "scene_scope": {
+          "type": "multiselect",
+          "description": "Identify the target scene(s) of this documentary investigation. For current conditions and variations, match the described activity. For a request or proposal, identify WHICH existing scene the proposed change asks to alter, even when the requested action contradicts that scene's current plan; e.g. a proposed change to an interview targets the interview scene, not a different scene already doing the requested action. This association does NOT mean approval or an imposed obligation. Do not match merely by shared location. Historical-only records need no current target. Leave empty when no target can be established. Planned scenes: [{\"id\":\"S31\",\"row\":\"Scene 31 | Morrow Observatory Archive | 08:00-09:00 | insert: a performer opens the borrowed celestial atlas and unfolds a chart on the reading table\"},{\"id\":\"S32\",\"row\":\"Scene 32 | Morrow Observatory Archive | 09:00-10:00 | interview beside the closed display case; the atlas stays inside and nobody touches it\"}]",
+          "options": [
+            "S31",
+            "S32"
+          ],
+          "threshold": 0.7
+        }
+      }
+    },
+    "requestSha256": "ab7195263b87483718d2216ee366f89bc3d06f4a589152ff253e69e71b8e94e1",
+    "expectedSpans": {
+      "claimQuote": [
+        169,
+        204
+      ],
+      "reference": [
+        110,
+        125
+      ],
+      "scope": [
+        71,
+        91
+      ]
+    }
+  },
+  "decoded": {
+    "schema": "beforeroll-documentary-claim-v1",
+    "role": "request_only",
+    "fields": {
+      "claimed_role": {
+        "value": "request_only",
+        "confidence": 0.992,
+        "probabilities": {
+          "claims_issued_variation": 0.00156827056819913,
+          "request_only": 0.9935239102444519,
+          "historical_reference": 0.0017646547768296334,
+          "current_condition": 0.0015164859885702612,
+          "unrelated_or_unclear": 0.0016266784219491177
+        }
+      },
+      "claim_quote": {
+        "value": "the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response",
+        "unitRange": [
+          19,
+          237
+        ],
+        "permitRange": [
+          19,
+          237
+        ],
+        "confidence": 0.9999999984641283
+      },
+      "referenced_instrument": {
+        "value": "Variation VA-17",
+        "unitRange": [
+          110,
+          125
+        ],
+        "permitRange": [
+          110,
+          125
+        ],
+        "confidence": 0.9998302839419582
+      },
+      "scope_quote": {
+        "value": "move the atlas out of the case during the interview",
+        "unitRange": [
+          40,
+          91
+        ],
+        "permitRange": [
+          40,
+          91
+        ],
+        "confidence": 0.9999999988042774
+      },
+      "scene_scope": {
+        "value": [
+          "S31",
+          "S32"
+        ],
+        "confidence": 0.694,
+        "probabilities": {
+          "S31": 0.847049657245171,
+          "S32": 0.9277351039083687
+        }
+      }
+    },
+    "sceneIds": [
+      "S31",
+      "S32"
+    ],
+    "documentId": "CORRESPONDENCE",
+    "unitId": "U001",
+    "sourceSentence": "UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.",
+    "requestSha256": "ab7195263b87483718d2216ee366f89bc3d06f4a589152ff253e69e71b8e94e1",
+    "responseSha256": "08843381e83442ed351a50891be1b30f9772130d06ea5535c1796cb364b78120",
+    "model": "clocked-1.0",
+    "actualIssuance": "UNVERIFIED",
+    "authenticity": "UNVERIFIED",
+    "supportingEvidence": "UNESTABLISHED_REQUIRES_HUMAN_INVENTORY",
+    "fulfillment": "UNVERIFIED",
+    "notClearance": true
+  },
+  "error": null,
+  "roleMatch": true,
+  "referenceMatch": true,
+  "pass": false,
+  "budget": {
+    "requests": 8,
+    "credits": 41,
+    "remainingRequests": 72,
+    "remainingCredits": 359
+  },
+  "semanticReview": "Exact alternative quote boundaries require human inspection; no issuance/authenticity established."
+}

@@ -1,0 +1,202 @@
+{
+  "schema": "beforeroll-live-campaign-frozen-scenarios-v1",
+  "authorization": "Owner live campaign: at most 60 provider requests or 500 cumulative reported credits",
+  "frozenBeforeProviderResults": true,
+  "cases": [
+    {
+      "id": "A_DOCK",
+      "productionId": "live_20261027_A_dock",
+      "permit": "Scene 301 quay filming must wait until a signed electrical isolation certificate and written dock access approval are presented.\n\nDuring Scene 301 the cable run must have load-rated cable covers and anti-slip interlocking panels, and a qualified marine electrician must remain at the distribution board throughout the take.\n\nFor Scene 302 pedestrian close-ups, written pier manager consent and non-marking shoe covers are mandatory.\n\nVisitor information: the souvenir kiosk opens at noon and sells tide charts.",
+      "callSheet": "Scene 301 | Quay | 06:00-07:00 | powered cable run for night-to-dawn crane shot\nScene 302 | Quay | 07:00-08:00 | pedestrian close-ups on the pier",
+      "expected": [
+        [
+          "S301",
+          "required_written_documents",
+          "signed electrical isolation certificate"
+        ],
+        [
+          "S301",
+          "required_written_documents",
+          "written dock access approval"
+        ],
+        [
+          "S301",
+          "required_physical_protections",
+          "load-rated cable covers"
+        ],
+        [
+          "S301",
+          "required_physical_protections",
+          "anti-slip interlocking panels"
+        ],
+        [
+          "S301",
+          "required_on_site_personnel",
+          "qualified marine electrician"
+        ],
+        [
+          "S302",
+          "required_written_documents",
+          "written pier manager consent"
+        ],
+        [
+          "S302",
+          "required_physical_protections",
+          "non-marking shoe covers"
+        ]
+      ],
+      "excludedQuotes": [
+        "tide charts"
+      ],
+      "uncertainty": "All documentary authenticity and physical fulfillment remain unverified.",
+      "sourceSha256": "5993bcdfe733b2e26a947ebed3885ef5598da0faecf6f9842bc743823283827e",
+      "callSheetSha256": "b0021345318e0c8fa4b8586e83c3843af737920e453d119c7f788aa0bd1cb810",
+      "acceptance": {
+        "allExpectedReviewCandidates": true,
+        "noUnsupportedCandidates": true,
+        "allOffsetsExact": true,
+        "noAuthorityOrFulfillment": true,
+        "allPairsAccounted": true,
+        "humanReviewPersists": true,
+        "noUniversalReliabilityClaim": true
+      }
+    },
+    {
+      "id": "B_GALLERY",
+      "productionId": "live_20261027_B_gallery",
+      "permit": "Powered moving platforms may not cross the gallery resin finish without written collections-team consent.\n\nThe issued variation for Scene 401 alone allows the motorized tracking base only with sacrificial runner sheets and an on-site floor warden present throughout the take.\n\nAn unsigned application asks to extend this variation to Scene 402; the application has not been issued as a binding amendment.",
+      "callSheet": "Scene 401 | Gallery | 10:00-11:00 | motorized tracking base across resin finish\nScene 402 | Gallery | 11:00-12:00 | battery-powered camera pod across resin finish",
+      "expected": [
+        [
+          "S401",
+          "required_written_documents",
+          "written collections-team consent"
+        ],
+        [
+          "S402",
+          "required_written_documents",
+          "written collections-team consent"
+        ],
+        [
+          "S401",
+          "required_physical_protections",
+          "sacrificial runner sheets"
+        ],
+        [
+          "S401",
+          "required_on_site_personnel",
+          "on-site floor warden"
+        ]
+      ],
+      "excludedAssociations": [
+        [
+          "S402",
+          "sacrificial runner sheets"
+        ],
+        [
+          "S402",
+          "on-site floor warden"
+        ]
+      ],
+      "uncertainty": "Scene 402 unsigned extension remains documentary review; no model grant authenticates the stated issued variation.",
+      "sourceSha256": "ec24f38dce9fe310f00880dc13b415d8f066536d5282143b33b9b33c37008056",
+      "callSheetSha256": "19702dfa556d0a5a99738f2383f1ef5b208f1fbc27b76a24b0b9e5c6003ba452",
+      "acceptance": {
+        "allExpectedReviewCandidates": true,
+        "noUnsupportedCandidates": true,
+        "allOffsetsExact": true,
+        "noAuthorityOrFulfillment": true,
+        "allPairsAccounted": true,
+        "humanReviewPersists": true,
+        "noUniversalReliabilityClaim": true
+      }
+    },
+    {
+      "id": "C_ORCHARD",
+      "productionId": "live_20261027_C_orchard",
+      "permit": "The historical exhibition caption describes last season's orchard photographs showing a leather ground blanket and a retired arborist; these are reference images, not current filming conditions.\n\nAn unsigned proposal for Scene 502 asks for a drone survey with a radio spotter and a signed aviation waiver; this proposal creates no current requirement or approval.\n\nScene 501 starlight rigging requires a current written estate access licence and a staffed wildlife lookout beside the hedge for the entire take.\n\nBackground correspondence asks whether Scene 502 could borrow the earlier conditions; no issued replacement is supplied in this correspondence.",
+      "callSheet": "Scene 501 | Orchard | 20:00-21:00 | starlight rigging beside hedge\nScene 502 | Orchard | 21:00-22:00 | proposed drone survey",
+      "expected": [
+        [
+          "S501",
+          "required_written_documents",
+          "current written estate access licence"
+        ],
+        [
+          "S501",
+          "required_on_site_personnel",
+          "staffed wildlife lookout"
+        ]
+      ],
+      "excludedQuotes": [
+        "leather ground blanket",
+        "retired arborist",
+        "radio spotter",
+        "signed aviation waiver"
+      ],
+      "uncertainty": "Scene 502 correspondence and proposal must remain unresolved source review, without current extracted duties.",
+      "sourceSha256": "9878e47b4145db9f8af96f4866ef543d60531416304f06b3f2d040369c65e39f",
+      "callSheetSha256": "b6064797e1739196517b87313ed377f89d1d16a11240a7cb8972b896fd4bd04d",
+      "acceptance": {
+        "allExpectedReviewCandidates": true,
+        "noUnsupportedCandidates": true,
+        "allOffsetsExact": true,
+        "noAuthorityOrFulfillment": true,
+        "allPairsAccounted": true,
+        "humanReviewPersists": true,
+        "noUniversalReliabilityClaim": true
+      }
+    },
+    {
+      "id": "D_ROAD",
+      "productionId": "live_20261027_D_road",
+      "permit": "Road filming must not start until a signed road-closure order has been presented; amber barrier lamps must separate the filming lane while a named traffic steward remains at the gate.\n\nThe filing office cannot locate the closure order and cannot confirm whether the permit covers this access road because the referenced site map is missing.\n\nAn unsigned draft for Scene 602 claims filming may proceed without closure; nobody has verified that this draft supersedes the operations memo.",
+      "callSheet": "Scene 601 | Access road | 22:00-23:00 | travelling camera along temporary filming lane\nScene 602 | Access road | 23:00-23:30 | tripod filming beside temporary filming lane",
+      "expected": [
+        [
+          "S601",
+          "required_written_documents",
+          "signed road-closure order"
+        ],
+        [
+          "S601",
+          "required_physical_protections",
+          "amber barrier lamps"
+        ],
+        [
+          "S601",
+          "required_on_site_personnel",
+          "named traffic steward"
+        ],
+        [
+          "S602",
+          "required_written_documents",
+          "signed road-closure order"
+        ],
+        [
+          "S602",
+          "required_physical_protections",
+          "amber barrier lamps"
+        ],
+        [
+          "S602",
+          "required_on_site_personnel",
+          "named traffic steward"
+        ]
+      ],
+      "excludedQuotes": [],
+      "uncertainty": "Missing order, missing map and disputed supersession stay unresolved; extracted clauses are candidates for applicability investigation, not verified duties.",
+      "sourceSha256": "eb4b1ea372d597d4ca9a2575b9c580d57cf60760170b4268469eccea1c99e224",
+      "callSheetSha256": "0dd69258f1896a86e2f2f3b14b1334c9bec93855425075cbef2fb42c94c0b7a1",
+      "acceptance": {
+        "allExpectedReviewCandidates": true,
+        "noUnsupportedCandidates": true,
+        "allOffsetsExact": true,
+        "noAuthorityOrFulfillment": true,
+        "allPairsAccounted": true,
+        "humanReviewPersists": true,
+        "noUniversalReliabilityClaim": true
+      }
+    }
+  ]
+}

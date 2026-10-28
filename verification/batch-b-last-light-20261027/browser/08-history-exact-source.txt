@@ -1,0 +1,100 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - button "BeforeRoll overview": BeforeRoll.
+  - 'button "FICTIONAL — The Last Light: A Borrowed Star Atlas"':
+    - 'generic "FICTIONAL — The Last Light: A Borrowed Star Atlas"'
+    - generic: ⌄
+  - navigation "Workspace":
+    - button "Overview"
+    - button "Scenes"
+    - button "Work"
+    - button "Evidence"
+- generic: "FICTIONAL — The Last Light: A Borrowed Star Atlas / version 7"
+- generic: Private local production
+- main:
+  - navigation "Evidence":
+    - button "Sources"
+    - button "Documentary scope"
+    - button "History"
+    - button "Exports & recovery"
+  - generic: Evidence history
+  - heading "What was recorded, and against what." [level=1]
+  - region "Complete evidence history":
+    - paragraph: Original records retain their source identity. Human decisions, model interpretations and recovery receipts are distinct evidence.
+    - text: Record type
+    - combobox "Record type":
+      - option "All" [selected]
+      - option "Model"
+      - option "Sources"
+      - option "Reviews"
+      - option "Authority"
+      - option "Operations"
+      - option "Recovery"
+    - text: Evidence state
+    - combobox "Evidence state":
+      - option "All" [selected]
+      - option "Current"
+      - option "Historical"
+      - option "Uncertain"
+    - text: Find a record
+    - searchbox "Find a record"
+    - button "Filter history"
+    - status: 1–7 of 7 matching records · 7 total · version 7. This page is not the complete history.
+    - 'button "Model Source discovery: 14/14 scene links assessed Model · Current Inspect ↗"':
+      - generic: Model
+      - strong: "Source discovery: 14/14 scene links assessed"
+      - generic: Model ·
+      - text: Current
+      - generic: Inspect ↗
+    - 'button "VENUE permit: Morrow_VenueAccess_FICTIONAL.txt Sources · VENUE Current Inspect ↗"':
+      - generic: VENUE
+      - strong: "permit: Morrow_VenueAccess_FICTIONAL.txt"
+      - generic: Sources · VENUE
+      - text: Current
+      - generic: Inspect ↗
+    - 'button "LENDER permit: Atlas_LenderConditions_FICTIONAL.txt Sources · LENDER Current Inspect ↗"':
+      - generic: LENDER
+      - strong: "permit: Atlas_LenderConditions_FICTIONAL.txt"
+      - generic: Sources · LENDER
+      - text: Current
+      - generic: Inspect ↗
+    - 'button "CORRESPONDENCE permit: Atlas_Correspondence_FICTIONAL.txt Sources · CORRESPONDENCE Current Inspect ↗"':
+      - generic: CORRESPONDENCE
+      - strong: "permit: Atlas_Correspondence_FICTIONAL.txt"
+      - generic: Sources · CORRESPONDENCE
+      - text: Current
+      - generic: Inspect ↗
+    - 'button "VISITOR permit: Morrow_VisitorInformation_FICTIONAL.txt Sources · VISITOR Current Inspect ↗"':
+      - generic: VISITOR
+      - strong: "permit: Morrow_VisitorInformation_FICTIONAL.txt"
+      - generic: Sources · VISITOR
+      - text: Current
+      - generic: Inspect ↗
+    - 'button "Sources callSheet: LastLight_PlannedScenes_FICTIONAL.txt Sources · Current Inspect ↗"':
+      - generic: Sources
+      - strong: "callSheet: LastLight_PlannedScenes_FICTIONAL.txt"
+      - generic: Sources ·
+      - text: Current
+      - generic: Inspect ↗
+    - button "S32 Suggestion reviewed by Fictional Last Light coordinator (not fulfillment) Reviews · CORRESPONDENCE Current Inspect ↗":
+      - generic: S32
+      - strong: Suggestion reviewed by Fictional Last Light coordinator (not fulfillment)
+      - generic: Reviews · CORRESPONDENCE
+      - text: Current
+      - generic: Inspect ↗
+    - navigation:
+      - button "Previous history page" [disabled]
+      - button "Next history page" [disabled]
+    - article "Selected history record" [active]:
+      - generic: Current / Reviews
+      - heading "Suggestion reviewed by Fictional Last Light coordinator (not fulfillment)" [level=2]
+      - blockquote:
+        - paragraph: UNSIGNED REQUEST — the producer asks to move the atlas out of the case during the interview and requests that Variation VA-17 be extended to that activity; this request has not been issued as an amendment and awaits the lender's response.
+        - generic: CORRESPONDENCE / U001
+      - paragraph: Read the unsigned interview-handling request. Locate an independently issued instrument; no approval or fulfillment is established.
+      - generic "Original source identity"
+      - generic "Exact historical record and provenance"
+- contentinfo:
+  - generic: BeforeRoll · Editorial Intelligence Studio
+  - generic: Model interpretation · original documentary language · human work

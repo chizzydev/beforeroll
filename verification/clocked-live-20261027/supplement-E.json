@@ -1,0 +1,49 @@
+{
+  "schema": "beforeroll-live-campaign-supplement-v1",
+  "reason": "Adversarial false-abstention probe: historical word as present subject matter, not past authority",
+  "frozenBeforeProviderResults": true,
+  "cases": [
+    {
+      "id": "E_PRESENT_PHOTO",
+      "productionId": "live_20261027_E_present_photo",
+      "permit": "Scene 701 close-ups of the historical photograph require written image-owner consent, lint-free cotton gloves and a paper conservator beside the table throughout the take.\n\nScene 702 interviews require written sound-stage access consent.\n\nAn unsigned proposal for Scene 703 lists a smoke observer; this draft imposes no current filming requirements.",
+      "callSheet": "Scene 701 | Conservation room | 09:00-10:00 | close-ups of historical photograph on table\nScene 702 | Interview stage | 10:00-11:00 | recorded interviews",
+      "expected": [
+        [
+          "S701",
+          "required_written_documents",
+          "written image-owner consent"
+        ],
+        [
+          "S701",
+          "required_physical_protections",
+          "lint-free cotton gloves"
+        ],
+        [
+          "S701",
+          "required_on_site_personnel",
+          "paper conservator"
+        ],
+        [
+          "S702",
+          "required_written_documents",
+          "written sound-stage access consent"
+        ]
+      ],
+      "excludedQuotes": [
+        "smoke observer"
+      ],
+      "uncertainty": "Current filming of historical objects must not be confused with historical requirements; all actual authorization and fulfillment remain unverified.",
+      "acceptance": {
+        "allExpectedReviewCandidates": true,
+        "noUnsupportedCandidates": true,
+        "allOffsetsExact": true,
+        "noAuthorityOrFulfillment": true,
+        "allPairsAccounted": true,
+        "humanReviewPersists": true
+      },
+      "sourceSha256": "235af7b61f7f1b5c1761985ebc5ea571af30e70e71f0cffc9f1638026cb478c1",
+      "callSheetSha256": "5f55a9ed84cc607f14468abd56374e75149a5615dc10ad8f9f0f4e9245c024c2"
+    }
+  ]
+}

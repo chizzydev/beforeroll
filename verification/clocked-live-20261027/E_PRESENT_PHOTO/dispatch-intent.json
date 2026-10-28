@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-27T11:41:06.068Z",
+  "sourceScenarioHash": "1941863d3aa41d3c5c1d7e1243afbeb82d579bd1eb206b94b7cd7598d5fd8a52",
+  "previewSha256": "fb66c4f31e2c8e688d4cf53032da5ba2fff4af3478695fc96cb48904bf6364c2",
+  "productionId": "live_20261027_E_present_photo",
+  "budgetBefore": {
+    "requests": 39,
+    "reportedCredits": 72,
+    "unknownCreditRequests": 0
+  },
+  "ceiling": {
+    "requests": 60,
+    "credits": 500
+  }
+}
