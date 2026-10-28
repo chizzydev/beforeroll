@@ -48,7 +48,7 @@ Private/encrypted backups, disposable stores and unnecessary duplicate dispatch 
 
 770distinct public cases (661+109), plus one passing protected archive assertion:771complete engineering/frozen cases. Repeats are not added. Accepted657native cases retained; five new release HTTP/security/isolation cases added. Only an obsolete production denial message changed, acknowledging Last Light while preserving “No fresh” and the same403fence. Core/contracts/recording/UI remain intact.
 
-Initial failures remain in logs: missing frozen gold dependency corrected with exact original file; denial-message expectation preserved without changing old test; wrong new-test routes/header assumptions corrected to actual routes/rawHTTP; archive absence resolved by authorized scope split. A wrong copy working directory was corrected before final passing gates. No fabricated backup or fixture made tests green.
+Initial failures remain in logs: missing frozen gold dependency corrected with exact original file; denial-message expectation preserved without changing old test; wrong new-test routes/header assumptions corrected to actual routes/rawHTTP; archive absence resolved by authorized scope split. A wrong copy working directory was corrected before final passing gates. Final Git-clone byte comparison also found14ignored P0-B owner-execution artifacts in the staging folder: Git had correctly not committed them. The public builder/auditor now explicitly excludes that directory, preserving the entire original frozen execution locally. Clone comparison is repeated on the corrected selected tree. No fabricated backup or fixture made tests green.
 
 ## Actual browser and media evidence
 
