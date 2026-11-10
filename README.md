@@ -6,6 +6,19 @@ BeforeRoll turns filming paperwork and planned scene activities into **scene-spe
 
 ![BeforeRoll's Last Light production overview](docs/submission/images/overview.png)
 
+### The key distinction in 30 seconds
+
+Two scenes in *The Last Light* share an observatory archive, but involve different activities.
+
+| Scene | Planned activity | Prerequisites BeforeRoll identifies |
+|---|---|---|
+| **Scene 31 — Atlas handling** | A performer opens a borrowed historical atlas. | Five: a venue duty officer, written lender consent, a book cradle, a padded transfer tray, and a collections conservator. |
+| **Scene 32 — Closed-case interview** | Nobody handles the atlas. | Only the shared venue duty-officer prerequisite remains. The handling requirements do not automatically transfer. |
+
+Two documentary investigations also remain: the missing Consent Schedule CS-9 and an unissued Variation VA-17 extension.
+
+**Why Clocked matters:** Decide identifies relevant documentary relationships, Extract identifies concrete requirements, and Fill distinguishes documentary claims from requirements. BeforeRoll combines them into source-grounded human-review work without granting filming clearance.
+
 ## The real problem
 
 A location manager can arrange access to a building without resolving every activity planned inside it. A lender may separately require written consent before an object is handled. Conservation conditions can specify protective equipment or specialist supervision. A request to extend an agreement is not the issued amendment itself, and an old production photograph is not evidence that yesterday's arrangements apply today.
@@ -267,7 +280,7 @@ The published history is the previously audited derivative excluding 13 unrelate
 
 The showcase is a small, exposed, developer-authored **fictional** packet, not a held-out benchmark or real-production trial. Generalized reliability, commercial adoption and productivity gains have not been measured. Exact quotations can still be misclassified; routing, limited Fill target-subset expressiveness and the disclosed venue-scope disagreement remain constraints.
 
-Humans must verify documentary authenticity, actual issuance, applicability, missing supporting instruments, physical fulfillment and filming authority. No automatic permit issuance or filming clearance occurs. Evaluation is local replay, not fresh model output or public multi-user hosting. The completed video and public source are available; **official competition submission is a separate action and has not been claimed**.
+Humans must verify documentary authenticity, actual issuance, applicability, missing supporting instruments, physical fulfillment and filming authority. No automatic permit issuance or filming clearance occurs. Evaluation is local replay, not fresh model output or public multi-user hosting. The BeforeRoll entry was officially saved for the Clocked Build Challenge on October 28, 2026. The completed demonstration video and public source repository remain available for judging.
 
 ## The central idea
 
